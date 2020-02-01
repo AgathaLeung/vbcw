@@ -1,0 +1,133 @@
+﻿capital = 86
+
+OOB = "MNX_1936"
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_naval_oob = "MNX_1936_naval_mtg"
+	else = {
+		set_naval_oob = "MNX_1936_naval_legacy"
+	}
+}
+
+set_research_slots = 2
+
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_recon = 1
+	tech_support = 1		
+	tech_engineers = 1
+	tech_mountaineers = 1
+	gw_artillery = 1
+	early_fighter = 1
+	early_bomber = 1
+	naval_bomber1 = 1
+	guerilla_warfare = 1
+}
+
+#########################
+###SHIP TECH - VANILLA###
+#########################
+
+if = {
+	limit = {
+		not = { has_dlc = "Man the Guns" }
+	}
+	set_technology = {	
+		early_trawler = 1
+		early_corvette = 1
+		early_motor_boat = 1
+		basic_motor_boat = 1
+		transport = 1
+	}
+}
+
+#########################
+###  SHIP TECH - MTG  ###
+#########################
+
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_technology = {
+		basic_naval_mines = 1
+		submarine_mine_laying = 1
+		early_ship_hull_trawler = 1
+		basic_ship_hull_trawler = 1
+		improved_ship_hull_trawler = 1
+		advanced_ship_hull_trawler = 1
+		early_ship_hull_sloop = 1
+		basic_ship_hull_sloop = 1
+		improved_ship_hull_sloop = 1
+		advanced_ship_hull_sloop = 1
+		early_ship_hull_light = 1
+		basic_ship_hull_light = 1
+		early_ship_hull_submarine = 1
+		basic_ship_hull_submarine = 1
+		early_ship_hull_cruiser = 1
+		basic_ship_hull_cruiser = 1
+		early_ship_hull_heavy = 1
+		basic_ship_hull_heavy = 1
+		early_ship_hull_carrier = 1
+		basic_ship_hull_carrier = 1
+		basic_battery = 1
+		basic_light_battery = 1
+		basic_medium_battery = 1
+		basic_heavy_battery = 1
+		basic_torpedo = 1
+		sonar = 1
+		smoke_generator = 1
+		basic_depth_charges = 1
+		basic_secondary_battery = 1
+		basic_cruiser_armor_scheme = 1
+		basic_heavy_armor_scheme = 1
+		mtg_transport = 1
+		improved_secondary_battery = 1
+		basic_fire_control_system = 1
+	}
+}
+
+set_politics = {	
+	ruling_party = fascist
+	last_election = "1933.3.5"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+    fascist = 90
+    autocratic = 10
+    conservative = 0
+    liberal = 0
+    democratic_socialist = 0
+    communist = 0
+    anarcho_syndicalist = 0
+    civic_nationalist = 0
+}
+
+set_convoys = 50
+
+create_country_leader = {
+	name = "Rotha Linton-Orman"
+	desc = "POLITICS_KING_ZOG_DESC"
+	picture = "gfx/leaders/VBCW/MNX/MNX-Linton-Orman.dds"
+	expire = "1965.1.1"
+	ideology = fascist_subtype
+	traits = {
+		#
+	}
+}
+
+create_field_marshal = {
+	name = "Manxy McManxface"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
+	traits = { }
+	skill = 2
+	attack_skill = 1
+    defense_skill = 3
+    planning_skill = 2
+    logistics_skill = 1
+}

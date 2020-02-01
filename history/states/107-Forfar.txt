@@ -1,0 +1,30 @@
+state={
+	id=107
+	name="STATE_107"
+	provinces={
+		1814 1818 1821 1829 1832 1836 1845 1851 1861 1863 2424 2425
+	}
+	manpower=100000
+	
+	state_category = town
+	
+	history={
+		owner = SCO
+		add_core_of = SCO
+		add_claim_by = ROY
+		add_claim_by = YRK
+		add_claim_by = JAC
+		victory_points = { 1814 10 }
+		victory_points = { 1818 5 }
+		victory_points = { 1832 5 }
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+			dockyard = 2
+			1832 = {
+				naval_base = 3
+			}
+		}
+	}
+}
+

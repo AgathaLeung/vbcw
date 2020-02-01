@@ -1,0 +1,27 @@
+state={
+	id=109
+	name="STATE_109"
+	provinces={
+		1914 1930 1939 1973 1988 1990 
+	}
+	manpower=75000
+	
+	resources = {
+		steel = 4
+		tungsten = 4
+	}
+	
+	state_category = pastoral
+	
+	history={
+		owner = SCO
+		add_core_of = SCO
+		add_claim_by = ROY
+		add_claim_by = YRK
+		add_claim_by = JAC
+		buildings = {
+			infrastructure = 2
+		}
+	}
+}
+

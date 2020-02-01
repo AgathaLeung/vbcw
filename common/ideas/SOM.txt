@@ -1,0 +1,512 @@
+ideas = {
+
+	country = {
+		SOM_strike_up_the_band = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = FRA_national_mobilization_focus
+			
+			modifier = {
+				army_org_factor = 0.1
+				recon_factor = -0.1
+			}
+		}
+		
+		SOM_foundries_and_forges = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_production_bonus
+			
+			modifier = {
+				conscription_factor = -0.25
+				industrial_capacity_factory = 0.25
+				production_speed_buildings_factor = 0.25
+			}
+		}
+	}
+	
+	###ADVISORS###
+	political_advisor = {
+		SOM_morrison = {
+			
+			allowed = {
+				original_tag = SOM
+			}
+			
+			traits = { fortification_engineer }
+		}
+		SOM_cripps = {
+			
+			allowed = {
+				original_tag = SOM
+			}
+			
+			traits = { captain_of_industry }
+		}
+		SOM_platts_mills = {
+			
+			allowed = {
+				original_tag = SOM
+			}
+			
+			traits = { silent_workhorse }
+		}
+		SOM_mikardo = {
+			
+			allowed = {
+				original_tag = SOM
+			}
+			
+			traits = { ideological_crusader }
+		}
+		SOM_greenwood = {
+			
+			allowed = {
+				original_tag = SOM
+			}
+			
+			traits = { quartermaster_general }
+		}
+		SOM_philby = {
+			
+			allowed = {
+				original_tag = SOM
+			}
+			
+			traits = { backroom_backstabber }
+		}
+		SOM_pritt = {
+			
+			allowed = {
+				original_tag = SOM
+			}
+			
+			traits = { smooth_talking_charmer }
+		}
+		SOM_isaacs = {
+			
+			allowed = {
+				original_tag = SOM
+			}
+			
+			traits = { war_industrialist }
+		}
+		SOM_orwell = {
+			
+			allowed = {
+				original_tag = SOM
+			}
+			
+			traits = { propaganda_expert }
+		}
+		SOM_wells = {
+			
+			allowed = {
+				original_tag = SOM
+			}
+			
+			traits = { popular_figurehead }
+		}
+		SOM_demsoc_booster = {
+			
+			picture = demsoc_booster
+			
+			allowed = {
+				original_tag = SOM
+			}
+			
+			traits = { demsoc_booster }
+		}
+		SOM_communist_booster = {
+			
+			picture = communist_booster
+			
+			allowed = {
+				original_tag = SOM
+			}
+			
+			traits = { communist_booster }
+		}
+		SOM_radical_booster = {
+			
+			picture = radsoc_booster
+			
+			allowed = {
+				original_tag = SOM
+			}
+			
+			traits = { radsoc_booster }
+		}
+	}
+		
+	###MILITARY###
+	army_chief = {
+		SOM_alexander_b = {
+			allowed = {
+				original_tag = SOM
+			}
+			
+			traits = { army_chief_defensive_2 }
+			
+			ai_will_do = {
+				factor = 2
+			}
+		}
+		
+		SOM_wintringham = {
+			
+			allowed = {
+				original_tag = SOM
+			}
+			
+			traits = { army_chief_drill_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}		
+	}
+	navy_chief = {
+		
+		SOM_alexander_a = {
+			
+			allowed = {
+				original_tag = SOM
+			}
+			
+			traits = { navy_chief_reform_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	air_chief = {
+		
+		SOM_benn = {
+			
+			allowed = {
+				original_tag = SOM
+			}
+			
+			traits = { air_chief_reform_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	
+	high_command = {
+
+		SOM_copeman = {
+			
+			allowed = {
+				original_tag = SOM
+			}
+			
+			traits = { navy_amphibious_assault_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		SOM_penrose = {
+			
+			allowed = {
+				original_tag = SOM
+			}
+			
+			traits = { army_concealment_3 }
+			
+			ai_will_do = {
+				factor = 2
+			}
+		}
+		
+		SOM_wintringham_2 = {
+			
+			allowed = {
+				original_tag = SOM
+			}
+			
+			picture = SOM_wintringham
+			
+			traits = { army_entrenchment_2 }
+			
+			ai_will_do = {
+				factor = 2
+			}
+		}
+	
+		SOM_wilson = {
+			
+			allowed = {
+				original_tag = SOM
+			}
+			
+			traits = { army_regrouping_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		SOM_jones = {
+			
+			allowed = {
+				original_tag = SOM
+			}
+			
+			traits = { army_infantry_1 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		SOM_levy = {
+			
+			allowed = {
+				original_tag = SOM
+			}
+			
+			traits = { army_commando_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}	
+		
+		SOM_scanlon = {
+			
+			allowed = {
+				original_tag = SOM
+			}
+			
+			traits = { army_armored_1 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}	
+	
+	naval_manufacturer = {
+		
+		designer = yes
+		
+		SOM_fellows_and_morton = {
+		
+			picture = designer_fellows_morton
+			
+			allowed = {
+				original_TAG = SOM
+			}
+			
+			research_bonus = {
+				naval_equipment = 0.10
+			}
+			
+			traits = { small_vessel_manufacturer_2 }
+
+		}
+		
+		SOM_goole_shipbuilding = {
+		
+			picture = designer_goole
+			
+			allowed = {
+				original_TAG = SOM
+			}
+			
+			research_bonus = {
+				naval_equipment = 0.10
+			}
+			
+			traits = { large_vessel_manufacturer_3 }
+		}
+	}
+	
+	aircraft_manufacturer = {
+			
+		designer = yes
+		
+		SOM_boulton_paul = {
+		
+			picture = designer_boulton_paul
+			
+			allowed = {
+				original_TAG = SOM
+			}
+			
+			research_bonus = {
+				air_equipment = 0.10
+			}
+			
+			traits = { fighter_manufacturer_2 }
+			
+			modifier = {
+			}
+		}
+		
+		SOM_avro = {
+		
+			picture = avro
+			
+			allowed = {
+				original_TAG = SOM
+			}
+			
+			research_bonus = {
+				air_equipment = 0.10
+			}
+			
+			traits = { bomber_manufacturer_1 }
+			
+			modifier = {
+				air_night_penalty = -0.10
+			}
+		}			
+	}
+	
+	materiel_manufacturer = {
+			
+		designer = yes
+		
+		SOM_BSA = {
+		
+			picture = designer_bsa
+			
+			allowed = {
+				original_TAG = SOM
+			}
+			
+			research_bonus = {
+				infantry_weapons = 0.10
+			}
+			
+			traits = { infantry_equipment_manufacturer_1 }
+			
+			modifier = {
+			}
+		}
+		
+		SOM_raleigh = {
+		
+			picture = designer_raleigh
+			
+			allowed = {
+				original_TAG = SOM
+			}
+			
+			research_bonus = {
+				support_tech = 0.10
+			}
+			
+			traits = { artillery_manufacturer_3 }
+			
+			modifier = {
+			}
+		}
+	}	
+	
+	tank_manufacturer = {
+			
+		designer = yes
+		
+		SOM_austin = {
+		
+			picture = designer_austin
+			
+			allowed = {
+				original_TAG = SOM
+			}
+			
+			research_bonus = {
+				motorized_equipment = 0.10
+			}
+			
+			traits = { motorised_manufacturer_3 }
+			
+			modifier = {
+			}
+		}
+		
+		SOM_nuffield = {
+		
+			picture = designer_nuffield
+			
+			allowed = {
+				original_TAG = SOM
+			}
+			
+			research_bonus = {
+				armor = 0.10
+			}
+			
+			traits = { tank_manufacturer_2 }
+			
+			modifier = {
+			}
+		}
+	}
+	
+	industrial_concern = {
+		
+		SOM_dunlop = {
+		
+			picture = designer_dunlop
+			
+			allowed = {
+				original_TAG = SOM
+			}
+			
+			research_bonus = {
+				synth_resources = 0.10
+			}
+			
+			traits = { industrial_concern_3 }
+			
+			modifier = {
+			}
+		}
+		
+		SOM_telsen = {
+		
+			picture = designer_telsen
+			
+			allowed = {
+				original_TAG = SOM
+			}
+			
+			research_bonus = {
+				electronics = 0.10
+			}
+			
+			traits = { electronics_concern_1 }
+			
+			modifier = {
+			}
+		}		
+	}
+}

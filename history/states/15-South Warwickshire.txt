@@ -1,0 +1,25 @@
+state={
+	id=15
+	name="STATE_15"
+	provinces={
+		445 480 506 510 518 533 2400 2407
+	}
+	manpower=150000
+	
+	state_category = rural
+	
+	history={
+		victory_points = { 2400 10 }
+		victory_points = { 2407 10 }
+		victory_points = { 518 5 }
+		victory_points = { 506 5 }
+		owner = ROY
+		add_core_of = ROY
+		add_claim_by = YRK
+		add_claim_by = ANG
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 1
+		}
+	}
+}

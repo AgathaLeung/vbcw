@@ -1,0 +1,28 @@
+KER_foreign_volunteers = {
+	recruit_breton_volunteers = {
+
+		icon = generic_ignite_civil_war
+
+        allowed = {
+            always = yes
+        }
+
+        cost = 25
+        fire_only_once = yes
+
+        available = {
+			has_completed_focus = KER_foreign_volunteers
+        }
+
+        visible = {
+			has_completed_focus = KER_foreign_volunteers}
+
+        complete_effect = {			
+			country_event = { }			
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+    }
+}

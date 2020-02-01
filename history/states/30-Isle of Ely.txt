@@ -1,0 +1,23 @@
+state={
+	id=30
+	name="STATE_30"
+	provinces={
+		607 631 651 667 692 
+	}
+	manpower=100000
+	
+	state_category = rural
+	
+	history={
+		victory_points = { 607 5 }
+		victory_points = { 692 5 }
+		owner = ANG
+		add_core_of = ANG
+		add_claim_by = ROY
+		add_claim_by = YRK
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 1
+		}
+	}
+}

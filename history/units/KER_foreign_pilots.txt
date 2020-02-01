@@ -1,0 +1,17 @@
+﻿air_wings = {
+	
+	1= {	fighter_equipment_0 =  {		
+				owner = "FRA" 
+				amount = 12
+			}
+			name = "103rd Squadron"
+		
+	}
+	1= {	fighter_equipment_0 =  {		
+				owner = "ENG" 
+				amount = 12
+			}
+			name = "103rd Squadron"
+		
+	}
+}

@@ -1,0 +1,27 @@
+state={
+	id=78
+	name="STATE_78"
+	provinces={
+		1305 1315 1349 1354 1358 1362 1383 1384 1388 1406 1407 1423 
+	}
+	manpower=100000
+	
+	resources = {
+		chromium = 4
+		tungsten = 4
+	}
+	
+	state_category = rural
+	
+	history={
+		owner = YRK
+		add_core_of = YRK
+		add_claim_by = ROY
+		add_claim_by = ANG
+		victory_points = { 1349 10 }
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+	}
+}

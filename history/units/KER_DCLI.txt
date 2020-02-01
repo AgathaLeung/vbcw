@@ -1,0 +1,24 @@
+﻿units = {
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 103
+		}
+		location = 55
+		division_template = "Infantry Regiment"
+		start_experience_factor = 0.5
+		force_equipment_variants = { infantry_equipment_1 = { owner = "ENG" } }
+		force_equipment_variants = { mortar_equipment_1 = { owner = "ENG" } }
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 102
+		}
+		location = 55
+		division_template = "Infantry Regiment"
+		start_experience_factor = 0.5
+		force_equipment_variants = { infantry_equipment_1 = { owner = "ENG" } }
+		force_equipment_variants = { mortar_equipment_1 = { owner = "ENG" } }
+	}
+}

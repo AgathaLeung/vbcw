@@ -1,0 +1,36 @@
+state={
+	id=50
+	name="STATE_50"
+	provinces={
+		953 979 984 991 1017 
+	}
+	manpower=850000
+	
+	resources = {
+		oil = 16
+		rubber = 8
+		steel = 8
+		tungsten = 4
+	}
+	
+	state_category = large_city
+		
+	history={
+		add_extra_state_shared_building_slots = 4
+		owner = LIV
+		victory_points = { 979 10 }
+		buildings = {
+			infrastructure = 8
+			air_base = 1
+			industrial_complex = 6
+			arms_factory = 3
+			953 = {
+				naval_base = 5
+			}
+		}
+		add_core_of = LIV
+		add_claim_by = ROY
+		add_claim_by = ANG
+		add_claim_by = YRK
+	}
+}

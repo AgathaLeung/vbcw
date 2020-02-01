@@ -1,0 +1,23 @@
+state={
+	id=134
+	name="STATE_134"
+	provinces={
+		1389 1415 1443 1467 1475 1490 1492 1501 1523 1526 1546 1547 1551 1572 1602 
+	}
+	manpower=150000
+	
+	resources = {
+		tungsten = 4
+	}
+	
+	state_category = town
+	
+	history={
+		owner = IRL
+		add_core_of = IRL
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 2
+		}
+	}
+}

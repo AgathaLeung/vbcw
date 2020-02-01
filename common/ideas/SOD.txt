@@ -1,0 +1,24 @@
+ideas = {
+	country = {
+		SOD_miners_militia = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = ast_all_in
+			
+			modifier = {
+				max_dig_in = 25
+				production_speed_coastal_bunker_factor = 0.25
+				production_speed_bunker_factor = 0.25
+			}
+		}
+	}
+}

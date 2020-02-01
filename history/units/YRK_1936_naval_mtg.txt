@@ -1,0 +1,83 @@
+﻿units = {	
+	######################
+	##### NAVY - MTG #####
+	######################
+	
+	fleet = {				
+		name = "Navy of the Lord Protector"			
+		naval_base = 1272
+		task_force = {				
+			name = "Irish Sea Squadron"	
+			location = 1272 # Barrow
+			ship = { name = "Courageous" definition = carrier equipment = { ship_hull_carrier_conversion_bb = { amount = 1 owner = ENG version_name = "Courageous Class" } }
+				air_wings = {
+					cv_fighter_equipment_0 =  { owner = "YRK" amount = 24 }
+					cv_nav_bomber_equipment_1 =  { owner = "YRK" amount = 12 }
+				}
+			}
+			ship = { name = "Nelson" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = ENG version_name = "Nelson Class" } } }				
+			ship = { name = "Rodney" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = ENG version_name = "Nelson Class" } } }		
+			ship = { name = "Hood" pride_of_the_fleet = yes definition = battle_cruiser equipment = { ship_hull_heavy_1 = { amount = 1 owner = ENG version_name = "Admiral Class" } } }
+			ship = { name = "Whitshed" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ENG version_name = "V/W Class" } } }
+			ship = { name = "Wild Swan" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ENG version_name = "V/W Class" } } }
+			ship = { name = "Wolfhound" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ENG version_name = "V/W Class" } } }
+			ship = { name = "Vanquisher" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ENG version_name = "V/W Class" } } }
+			ship = { name = "Vanoc" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ENG version_name = "V/W Class" } } }
+			ship = { name = "Winchelsea" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ENG version_name = "V/W Class" } } }
+			ship = { name = "Whirlwind" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ENG version_name = "V/W Class" } } }
+			ship = { name = "Warwick" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ENG version_name = "V/W Class" } } }
+		}
+		
+		task_force = {				
+			name = "North Sea Squadron"		
+			location = 1571 # Northumbria
+			ship = { name = "Pegasus" definition = light_carrier equipment = { ship_hull_light_carrier_conversion_ca = { amount = 1 owner = ENG version_name = "Pegasus Class" } } 
+				air_wings = {
+					cv_nav_bomber_equipment_1 =  { owner = "YRK" amount = 10 }
+				}
+			}
+			ship = { name = "Berwick" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ENG version_name = "County Class" } } }
+			ship = { name = "Suffolk" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ENG version_name = "County Class" } } }
+			ship = { name = "Viceroy" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ENG version_name = "V/W Class" } } }
+			ship = { name = "Verdun" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ENG version_name = "V/W Class" } } }
+			ship = { name = "Vimy" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ENG version_name = "V/W Class" } } }
+			ship = { name = "Vivien" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ENG version_name = "V/W Class" } } }
+			ship = { name = "Walpole" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ENG version_name = "V/W Class" } } }
+			ship = { name = "Walker" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ENG version_name = "V/W Class" } } }
+		}
+		
+		task_force = {				
+			name = "Pembroke Squadron"	
+			location = 2414 # Pembroke
+			ship = { name = "Esk" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = ENG version_name = "E/F/G/H Class"} } }
+			ship = { name = "Express" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = ENG version_name = "E/F/G/H Class"} } }
+			ship = { name = "Faulkner" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = ENG version_name = "E/F/G/H Class"} } }
+			ship = { name = "Fearless" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = ENG version_name = "E/F/G/H Class"} } }
+			ship = { name = "Forester" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = ENG version_name = "E/F/G/H Class"} } }
+			ship = { name = "Foxhound" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = ENG version_name = "E/F/G/H Class"} } }	
+		}
+		
+		task_force = {				
+			name = "Tees Squadron"	
+			location = 1412 # Middlesbrough
+			ship = { name = "Stork" definition = sloop equipment = { ship_hull_sloop_1 = { amount = 1 owner = ENG version_name = "Kingfisher Class" } } }
+			ship = { name = "Halcyon" definition = sloop equipment = { ship_hull_sloop_2 = { amount = 1 owner = ENG version_name = "Halcyon Class" } } }
+			ship = { name = "Hazard" definition = sloop equipment = { ship_hull_sloop_2 = { amount = 1 owner = ENG version_name = "Halcyon Class" } } }
+			ship = { name = "Courtier" definition = trawler equipment = { ship_hull_trawler_1 = { amount = 1 owner = CIV version_name = "Civilian Trawler" } } }
+			ship = { name = "British" definition = trawler equipment = { ship_hull_trawler_1 = { amount = 1 owner = CIV version_name = "Civilian Trawler" } } }
+			ship = { name = "Malay" definition = trawler equipment = { ship_hull_trawler_1 = { amount = 1 owner = CIV version_name = "Civilian Trawler" } } }
+			ship = { name = "Cypress" definition = trawler equipment = { ship_hull_trawler_1 = { amount = 1 owner = CIV version_name = "Civilian Trawler" } } }
+			ship = { name = "Cedar" definition = trawler equipment = { ship_hull_trawler_1 = { amount = 1 owner = CIV version_name = "Civilian Trawler" } } }
+		}
+		
+		task_force = {				
+			name = "Submarine Squadron"	
+			location = 2405 # Felixstowe
+			ship = { name = "HMS H43" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = ENG version_name = "O/P/R Class" } } }
+			ship = { name = "HMS H44" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = ENG version_name = "O/P/R Class" } } }
+			ship = { name = "HMS H49" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = ENG version_name = "O/P/R Class" } } }
+			ship = { name = "HMS H50" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = ENG version_name = "O/P/R Class" } } }
+			ship = { name = "HMS L23" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = ENG version_name = "O/P/R Class" } } }
+		}
+	}
+}	

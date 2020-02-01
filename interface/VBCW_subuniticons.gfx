@@ -1,0 +1,101 @@
+spriteTypes = {	
+
+###ONMAP LARGE###
+	
+	spriteType = { 
+		name = "GFX_unit_yeomanry_icon_medium"
+		textureFile = "gfx/interface/counters/divisions_large/unit_yeomanry_icon.dds" noOfFrames = 2 
+	}
+	
+	spriteType = { 
+		name = "GFX_unit_militia_icon_medium"
+		textureFile = "gfx/interface/counters/divisions_large/unit_militia_icon.dds" noOfFrames = 2 
+	}
+	
+	spriteType = { 
+		name = "GFX_unit_guards_icon_medium"
+		textureFile = "gfx/interface/counters/divisions_large/unit_guards_icon.dds" noOfFrames = 2 
+	}
+	
+	spriteType = { 
+		name = "GFX_unit_marching_band_icon_medium"
+		textureFile = "gfx/interface/counters/divisions_large/support_unit_marching_band_icon.dds" noOfFrames = 2 
+	}
+	
+	spriteType = { 
+		name = "GFX_unit_mortar_icon_medium"
+		textureFile = "gfx/interface/counters/divisions_large/support_unit_mortar_icon.dds" noOfFrames = 2 
+	}
+	
+	spriteType = { 
+		name = "GFX_unit_mortar_brigade_icon_medium"
+		textureFile = "gfx/interface/counters/divisions_large/unit_mortar_icon.dds" noOfFrames = 2 
+	}
+	
+	spriteType = { 
+		name = "GFX_unit_machinegun_icon_medium"
+		textureFile = "gfx/interface/counters/divisions_large/support_unit_MG_icon.dds" noOfFrames = 2 
+	}
+	
+	spriteType = { 
+		name = "GFX_unit_machinegun_brigade_icon_medium"
+		textureFile = "gfx/interface/counters/divisions_large/unit_MG_icon.dds" noOfFrames = 2 
+	}
+
+	spriteType = { 
+		name = "GFX_unit_mechanised_recon_icon_medium"							
+		textureFile = "gfx/interface/counters/divisions_large/unit_mech_recon_icon.dds" noOfFrames = 2 
+	}
+
+	spriteType = { 
+		name = "GFX_unit_armoured_car_icon_medium"							
+		textureFile = "gfx/interface/counters/divisions_large/unit_armored_car_icon.dds" noOfFrames = 2 
+	}
+	
+###ONMAP SMALL###
+
+	spriteType = { 
+		name = "GFX_unit_yeomanry_icon_medium_white"
+		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_yeomanry_icon.dds" noOfFrames = 2 
+	}
+	
+	spriteType = { 
+		name = "GFX_unit_militia_icon_medium_white"
+		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_militia_icon.dds" noOfFrames = 2 
+	}
+	
+	spriteType = { 
+		name = "GFX_unit_guards_icon_medium_white"
+		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_guards_icon.dds" noOfFrames = 2 
+	}
+	
+	spriteType = { 
+		name = "GFX_unit_mortar_icon_medium_white"						
+		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_mortar_icon.dds" noOfFrames = 2
+	}
+	
+	spriteType = { 
+		name = "GFX_unit_mortar_brigade_icon_medium_white"				
+		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_mortar_icon.dds" noOfFrames = 2
+	}
+	
+	spriteType = { 
+		name = "GFX_unit_machinegun_icon_medium_white"						
+		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_MG_icon.dds" noOfFrames = 2
+	}
+	
+	spriteType = { 
+		name = "GFX_unit_machinegun_brigade_icon_medium_white"				
+		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_MG_icon.dds" noOfFrames = 2
+	}
+	
+	spriteType = { 
+		name = "GFX_unit_mechanised_recon_icon_medium_white"						
+		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_mech_recon_icon.dds" noOfFrames = 2
+	}
+	
+	spriteType = { 
+		name = "GFX_unit_armoured_car_icon_medium_white"						
+		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_armored_car_icon.dds" noOfFrames = 2
+	}
+}

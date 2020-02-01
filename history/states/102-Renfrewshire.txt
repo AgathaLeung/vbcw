@@ -1,0 +1,39 @@
+state={
+	id=102
+	name="STATE_102"
+	provinces={
+		1659 1673 1681 1688 1710 1719 
+	}
+	manpower=300000
+	
+	resources = {
+		oil = 8
+		steel = 16
+		tungsten = 4
+	}
+	
+	state_category = city
+	
+	history={
+		add_extra_state_shared_building_slots = 4
+		owner = SOG
+		add_core_of = SOG
+		add_claim_by = SCO
+		add_claim_by = ROY
+		add_claim_by = YRK
+		add_claim_by = JAC
+		victory_points = { 1688 5 }
+		victory_points = { 1719 10 }
+		buildings = {
+			infrastructure = 6
+			air_base = 1
+			industrial_complex = 1
+			arms_factory = 1
+			dockyard = 8
+			1719 = {
+				naval_base = 5
+			}
+		}
+	}
+}
+

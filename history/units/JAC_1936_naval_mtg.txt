@@ -1,0 +1,29 @@
+﻿units = {	
+	######################
+	##### NAVY - MTG #####
+	######################
+	
+	fleet = {				
+		name = "Jacobite Fleet"			
+		naval_base = 2003
+		task_force = {				
+			name = "Invergordon Flotilla"	
+			location = 2003
+			ship = { name = "Delhi" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ENG version_name = "Danae Class" } } }
+			ship = { name = "Keith" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ENG version_name = "A/B/C/D Class" } } }
+			ship = { name = "Volunteer" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ENG version_name = "V/W Class" } } }
+			ship = { name = "Verity" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ENG version_name = "V/W Class" } } }
+			ship = { name = "Hastings" definition = sloop equipment = { ship_hull_sloop_1 = { amount = 1 owner = ENG version_name = "Hastings Class" } } }
+			ship = { name = "Enchantress" definition = sloop equipment = { ship_hull_sloop_1 = { amount = 1 owner = ENG version_name = "Kingfisher Class" } } }
+			ship = { name = "Jasper" definition = trawler equipment = { ship_hull_trawler_2 = { amount = 1 owner = ENG version_name = "Castle Class" } } }
+		}
+		task_force = {				
+			name = "Submarine Force"	
+			location = 2003
+			ship = { name = "Oxley" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = ENG version_name = "O/P/R Class" } } }
+			ship = { name = "H32" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = ENG version_name = "O/P/R Class" } } }
+			ship = { name = "L26" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = ENG version_name = "O/P/R Class" } } }
+			ship = { name = "L27" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = ENG version_name = "O/P/R Class" } } }
+		}
+	}
+}	

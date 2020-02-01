@@ -1,0 +1,33 @@
+state={
+	id=49
+	name="STATE_49"
+	provinces={
+		923 932 951 963 2408
+	}
+	manpower=350000
+	
+	resources = {
+		oil = 8
+		steel = 8
+		chromium = 8
+	}
+	
+	state_category = large_town
+	
+	history={
+		victory_points = { 2408 10 }
+		owner = LIV
+		add_core_of = LIV
+		add_claim_by = ROY
+		add_claim_by = ANG
+		add_claim_by = YRK
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 2
+			dockyard = 2
+			963 = {
+				naval_base = 2
+			}
+		}
+	}
+}

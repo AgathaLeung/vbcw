@@ -1,0 +1,38 @@
+
+state={
+	id=67
+	name="STATE_67"
+	resources={
+		steel=16.000
+		chromium=24.000
+		tungsten=16.000
+	}
+
+	history={
+		victory_points = { 2419 10 }
+		owner = WAL
+		add_core_of = WAL
+		add_claim_by = ROY
+		add_claim_by = YRK
+		buildings = {
+			infrastructure = 6
+			air_base = 1
+			industrial_complex = 2
+			arms_factory = 1
+			dockyard = 1
+			914 = {
+				naval_base = 2
+
+			}
+
+		}
+
+	}
+
+	provinces={
+		795 824 857 884 895 914 922 2419
+	}
+	manpower=200000
+	buildings_max_level_factor=1.000
+	state_category=town
+}

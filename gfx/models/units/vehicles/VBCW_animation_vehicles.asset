@@ -1,0 +1,69 @@
+animation = {
+	name = "ROY_mechanized_01_idle_animation"
+	file = "ROY_mechanized_01_idle.anim"
+}
+
+animation = {
+	name = "ROY_mechanized_01_move_animation"
+	file = "ROY_mechanized_01_moving.anim"
+}
+
+animation = {
+	name = "ROY_mechanized_01_attack_animation"
+	file = "ROY_mechanized_01_attack.anim"
+}
+
+animation = {
+	name = "BUF_mechanized_01_idle_animation"
+	file = "BUF_mechanized_01_idle.anim"
+}
+
+animation = {
+	name = "BUF_mechanized_01_move_animation"
+	file = "BUF_mechanized_01_moving.anim"
+}
+
+animation = {
+	name = "BUF_mechanized_01_attack_animation"
+	file = "BUF_mechanized_01_attack.anim"
+}
+
+animation = {
+	name = "YK_mechanized_01_idle_animation"
+	file = "YK_mechanized_01_idle.anim"
+}
+
+animation = {
+	name = "YK_mechanized_01_move_animation"
+	file = "YK_mechanized_01_moving.anim"
+}
+
+animation = {
+	name = "YK_mechanized_01_attack_animation"
+	file = "YK_mechanized_01_attack.anim"
+}
+
+animation = {
+	name = "YK_motorized_01_idle_animation"
+	file = "YK_motorized_01_idle.anim"
+}
+
+animation = {
+	name = "YK_motorized_01_move_animation"
+	file = "YK_motorized_01_moving.anim"
+}
+
+animation = {
+	name = "SOC_mechanized_01_idle_animation"
+	file = "SOC_mechanized_01_idle.anim"
+}
+
+animation = {
+	name = "SOC_mechanized_01_move_animation"
+	file = "SOC_mechanized_01_moving.anim"
+}
+
+animation = {
+	name = "SOC_mechanized_01_attack_animation"
+	file = "SOC_mechanized_01_attack.anim"
+}

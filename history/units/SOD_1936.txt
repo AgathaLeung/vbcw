@@ -1,0 +1,290 @@
+﻿division_template = {
+	name = "General Workers' Regiment"			
+	division_names_group = SOD_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+        infantry = { x = 0 y = 3 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+        infantry = { x = 1 y = 3 }
+	}
+	support = {
+       	engineer = { x = 0 y = 0 }
+       	artillery = { x = 0 y = 1 }
+	}
+}
+
+division_template = {
+	name = "Workers' Mounted Regiment"
+	division_names_group = SOD_CAV_01
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 1 y = 2 }
+	}
+	support = {
+        recon = { x = 0 y = 0 }
+	}
+}
+
+division_template = {
+	name = "Flying Column"			
+	division_names_group = SOD_MOT_01
+
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+	}
+}
+
+division_template = {
+	name = "People's Militia"
+	division_names_group = SOD_GAR_01
+	
+	regiments = {
+		militia = { x = 0 y = 0 }
+		militia = { x = 0 y = 1 }
+		militia = { x = 0 y = 2 }
+		militia = { x = 1 y = 0 }
+		militia = { x = 1 y = 1 }
+		militia = { x = 1 y = 2 }
+	}
+	support = {
+        marching_band = { x = 0 y = 0 }
+	}
+	priority = 0
+}
+
+division_template = {
+	name = "Mounted People's Militia"
+	division_names_group = SOD_YEO_01
+
+	regiments = {
+		yeomanry = { x = 0 y = 0 }
+		yeomanry = { x = 0 y = 1 }
+		yeomanry = { x = 0 y = 2 }
+		yeomanry = { x = 1 y = 0 }
+		yeomanry = { x = 1 y = 1 }
+		yeomanry = { x = 1 y = 2 }
+	}
+	priority = 0
+}
+
+units = {
+	division= {	
+		name = "1st Durham Revolutionary Miners’ Regiment"
+		location = 1474
+		division_template = "General Workers' Regiment"
+		start_experience_factor = 0.1
+		force_equipment_variants = { infantry_equipment_1 = { owner = "ENG" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "ENG" } }
+	}
+	division= {	
+		name = "2nd Durham Revolutionary Miners’ Regiment"
+		location = 1461
+		division_template = "People's Militia"
+		start_experience_factor = 0.0
+		start_equipment_factor = 0.95
+		force_equipment_variants = { infantry_equipment_0 = { owner = "CIV" } }
+	}
+	division= {	
+		name = "3rd Durham Revolutionary Miners’ Regiment"
+		location = 1410
+		division_template = "People's Militia"
+		start_experience_factor = 0.0
+		start_equipment_factor = 0.90
+		force_equipment_variants = { infantry_equipment_0 = { owner = "CIV" } }
+	}
+	division= {	
+		name = "4th Durham Revolutionary Miners’ Regiment"
+		location = 1446
+		division_template = "People's Militia"
+		start_experience_factor = 0.0
+		start_equipment_factor = 0.95
+		force_equipment_variants = { infantry_equipment_0 = { owner = "CIV" } }
+	}
+	division= {	
+		name = "5th Durham Revolutionary Miners’ Regiment"
+		location = 1447
+		division_template = "People's Militia"
+		start_experience_factor = 0.0
+		start_equipment_factor = 0.88
+		force_equipment_variants = { infantry_equipment_0 = { owner = "CIV" } }
+	}
+	division= {	
+		name = "1st Hartlepool Shipbuilders’ Militia"
+		location = 1452
+		division_template = "People's Militia"
+		start_experience_factor = 0.0
+		start_equipment_factor = 0.92
+		force_equipment_variants = { infantry_equipment_0 = { owner = "CIV" } }
+	}
+	division= {	
+		name = "2nd Hartlepool Shipbuilders’ Militia"
+		location = 1434
+		division_template = "People's Militia"
+		start_experience_factor = 0.0
+		start_equipment_factor = 0.88
+		force_equipment_variants = { infantry_equipment_0 = { owner = "CIV" } }
+	}
+	division= {	
+		name = "Hartlepool Metalworkers' Brigade"
+		location = 1452
+		division_template = "Flying Column"
+		start_experience_factor = 0.0
+		force_equipment_variants = { motorized_equipment_1 = { owner = "CIV" } }
+		force_equipment_variants = { infantry_equipment_0 = { owner = "CIV" } }
+	}
+	division= {	
+		name = "Stockton Railwaymen's Militia"
+		location = 1418
+		division_template = "People's Militia"
+		start_experience_factor = 0.0
+		start_equipment_factor = 0.88
+		force_equipment_variants = { infantry_equipment_0 = { owner = "CIV" } }
+	}
+	division= {	
+		name = "Darlington Railwaymen's Militia"
+		location = 1393
+		division_template = "People's Militia"
+		start_experience_factor = 0.0
+		start_equipment_factor = 0.88
+		force_equipment_variants = { infantry_equipment_0 = { owner = "CIV" } }
+	}
+	division= {	
+		name = "Darlington Locomotive Works Regiment"
+		location = 1405
+		division_template = "General Workers' Regiment"
+		start_experience_factor = 0.1
+		force_equipment_variants = { infantry_equipment_1 = { owner = "ENG" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "ENG" } }
+	}
+
+	
+	################
+	##### NAVY #####
+	################
+	
+#	navy = {				
+#		name = "Tees Fleet"			
+#		base = 1452
+#		location = 1452
+#		ship = { name = "Fame" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG version_name = "E/F/G/H Class" } } }			
+#		ship = { name = "Firedrake" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG version_name = "E/F/G/H Class" } } }	
+#		ship = { name = "Halo" definition = sloop equipment = { sloop_1 = { amount = 1 owner = ENG } } }	
+#		ship = { name = "Horizon" definition = sloop equipment = { sloop_1 = { amount = 1 owner = ENG } } }		
+#		ship = { name = "Mist" definition = sloop equipment = { sloop_1 = { amount = 1 owner = ENG } } }	
+#		ship = { name = "Moontide" definition = sloop equipment = { sloop_1 = { amount = 1 owner = ENG } } }	
+#		ship = { name = "Bramble" definition = trawler equipment = { trawler_2 = { amount = 1 owner = ENG } } }	
+#		ship = { name = "Hazard" definition = trawler equipment = { trawler_2 = { amount = 1 owner = ENG } } }	
+#	}
+}	
+
+
+	#####################
+	##### AIR FORCE #####
+	#####################
+	
+air_wings = {
+
+	82 = { 
+		fighter_equipment_0 = {
+			owner = "SOD" 
+			amount = 10
+		}
+	}	
+	82 = { 
+		nav_bomber_equipment_1 = {
+			owner = "SOD" 
+			amount = 4
+		}
+	}
+}
+
+	#########################
+	## STARTING PRODUCTION ##
+	#########################
+instant_effect = {
+
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "SOD"
+		}
+		requested_factories = 3
+		progress = 0.9
+		efficiency = 65
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = "SOD"
+		}
+		requested_factories = 1
+		progress = 0.1
+		efficiency = 60
+	}
+	
+	add_equipment_to_stockpile = {
+		type = infantry_equipment_0
+		amount = 350
+		producer = CIV
+	}
+	
+	add_equipment_to_stockpile = {
+		type = infantry_equipment_0
+		amount = 450
+		producer = SOV
+	}
+	
+	add_equipment_to_stockpile = {
+		type = infantry_equipment_1
+		amount = 300
+		producer = ENG
+	}
+	
+	add_equipment_to_stockpile = {
+		type = motorized_equipment_1
+		amount = 45
+		producer = CIV
+	}
+	
+	add_equipment_to_stockpile = {
+		type = mortar_equipment_1
+		amount = 4
+		producer = ENG
+	}
+	
+	add_equipment_to_stockpile = {
+		type = MG_equipment_1
+		amount = 16
+		producer = SOV
+	}
+	
+	add_equipment_to_stockpile = {
+		type = mechanized_equipment_1
+		amount = 15
+		producer = ENG
+	}
+	
+	add_equipment_to_stockpile = {
+		type = artillery_equipment_1
+		amount = 12
+		producer = ENG
+	}
+}
+	#####################

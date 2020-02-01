@@ -1,0 +1,1741 @@
+focus_tree = {
+	id = SCO_Coolstuff
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = SCO
+		}
+	}
+	
+	default = no
+
+##############
+###industry###
+##############
+
+		focus = {
+			id = SCO_prepare_for_the_struggle
+			icon = GFX_goal_generic_construct_civilian
+			cost = 5
+			x = 6
+			y = 0
+			continue_if_invalid = yes
+			available_if_capitulated = yes
+			completion_reward = {
+				add_tech_bonus = {
+					name = industrial_bonus
+					bonus = 0.5
+					uses = 1
+					category = industry
+				}
+			}
+		}
+
+		focus = {
+			id = SCO_northern_industry
+			icon = GFX_goal_generic_construction
+			cost = 5
+			x = 2
+			y = 1
+			available = {controls_state = 105}
+			available = {controls_state = 115}
+			available = {controls_state = 108}
+			available = {controls_state = 109}
+			prerequisite = {focus = SCO_prepare_for_the_struggle}
+			continue_if_invalid = yes
+			available_if_capitulated = yes
+			completion_reward = {
+				105 = {
+				add_extra_state_shared_building_slots = 3
+				}
+				115 = {
+				add_extra_state_shared_building_slots = 3
+				}
+				108 = {
+				add_extra_state_shared_building_slots = 3
+				}
+				109 = {
+				add_extra_state_shared_building_slots = 3
+				}
+			}
+		}
+
+		focus = {
+			id = SCO_dundee_textiles
+			icon = GFX_goal_generic_consumer_goods
+			cost = 5
+			x = 0
+			y = 2
+			available = {controls_state = 107}
+			prerequisite = {focus = SCO_northern_industry}
+			continue_if_invalid = yes
+			available_if_capitulated = yes
+			completion_reward = {
+				107 = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+		}
+
+		focus = {
+			id = SCO_highland_distilleries
+			icon = GFX_goal_generic_consumer_goods
+			cost = 5
+			x = 0
+			y = 3
+			available = {controls_state = 110}
+			available = {controls_state = 113}
+			available = {controls_state = 115}
+			available = {controls_state = 114}
+			prerequisite = {focus = SCO_dundee_textiles}
+			continue_if_invalid = yes
+			available_if_capitulated = yes
+			completion_reward = {
+				113 = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+				}
+				110 = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+				}
+				115 = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+				}
+				114 = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+				}
+
+				hidden_effect = { set_global_flag = sco_whisky_islands
+				}
+			}
+		}
+
+		focus = {
+			id = SCO_reopen_the_GNSR
+			icon = GFX_goal_generic_construct_infrastructure
+			cost = 5
+			x = 2
+			y = 2
+			available = {controls_state = 109}
+			available = {controls_state = 110}
+			prerequisite = { focus = SCO_northern_industry }
+			continue_if_invalid = yes
+			available_if_capitulated = yes
+			completion_reward = {
+				109 = {				
+					add_building_construction = {
+						type = infrastructure
+						level = 3
+						instant_build = yes
+					}
+				}
+				110 = {				
+					add_building_construction = {
+						type = infrastructure
+						level = 3
+						instant_build = yes
+					}
+				}		
+			}
+		}
+
+		focus = {
+			id = SCO_east_coast_mainline
+			icon = GFX_goal_generic_construct_infrastructure
+			cost = 5
+			x = 2
+			y = 3
+			available = {controls_state = 87}
+			available = {controls_state = 96}
+			available = {controls_state = 97}
+			available = {controls_state = 98}
+			available = {controls_state = 105}
+			available = {controls_state = 106}
+			available = {controls_state = 107}
+			available = {controls_state = 108}
+			available = {controls_state = 109}
+			prerequisite = { focus = SCO_reopen_the_GNSR}
+			continue_if_invalid = yes
+			available_if_capitulated = yes
+			completion_reward = {
+				custom_effect_tooltip = SCO_build_railway_tt
+			hidden_effect = {
+				87 = {				
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+				96 = {				
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+				97 = {				
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+				98 = {				
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+				105 = {				
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+				106 = {				
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+				107 = {				
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+				108 = {				
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+					109 = {				
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+			}		
+		}
+
+
+		focus = {
+			id = SCO_tay_shipbuilding
+			icon = GFX_goal_generic_construct_naval_dockyard
+			cost = 5
+			x = 4
+			y = 2
+			prerequisite = {focus = SCO_northern_industry}
+			continue_if_invalid = yes
+			available_if_capitulated = yes
+			completion_reward = {
+				107 = {
+				add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = dockyard
+						level = 2
+						instant_build = yes
+					}
+				}
+			}	
+		}
+
+		focus = {
+			id = SCO_port_of_aberdeen
+			icon = GFX_goal_generic_build_navy
+			cost = 5
+			x = 4
+			y = 3
+			prerequisite = {focus = SCO_tay_shipbuilding}
+			continue_if_invalid = yes
+			available_if_capitulated = yes
+			completion_reward = {
+				110 = {
+					add_building_construction = {
+						type = naval_base
+						level = 3
+						province = 1940
+						instant_build = yes
+					}
+				}
+			}
+		}
+
+
+		focus = {
+			id = SCO_southern_industry
+			icon = GFX_goal_generic_construction
+			cost = 5
+			x = 10
+			y = 1
+			available = {controls_state = 91}
+			available = {controls_state = 90}
+			available = {controls_state = 87}
+			prerequisite = {focus = SCO_prepare_for_the_struggle}
+			continue_if_invalid = yes
+			available_if_capitulated = yes
+			completion_reward = {
+				91 = {
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+				}
+				90 = {
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+				}
+				87 = {
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+		}
+
+		focus = {
+			id = SCO_leith_shipbuilding
+			icon = GFX_goal_generic_construct_naval_dockyard
+			cost = 5
+			x = 8
+			y = 2
+			prerequisite = {focus = SCO_southern_industry}
+			continue_if_invalid = yes
+			available_if_capitulated = yes
+			completion_reward = {
+				97 = {
+				add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = dockyard
+						level = 2
+						instant_build = yes
+					}
+				}
+			}	
+		}
+
+		focus = {
+			id = SCO_rosyth_shipbuilding
+			icon = GFX_goal_generic_construct_naval_dockyard
+			cost = 5
+			x = 8
+			y = 3
+			prerequisite = {focus = SCO_leith_shipbuilding}
+			continue_if_invalid = yes
+			available_if_capitulated = yes
+			completion_reward = {
+				105 = {
+				add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = dockyard
+						level = 3
+						instant_build = yes
+					}
+				}
+			}	
+		}
+
+		focus = {
+			id = SCO_port_of_leith
+			icon = GFX_goal_generic_build_navy
+			cost = 5
+			x = 8
+			y = 4
+			prerequisite = {focus = SCO_rosyth_shipbuilding}
+			continue_if_invalid = yes
+			available_if_capitulated = yes
+			completion_reward = {
+				97 = {
+					add_building_construction = {
+						type = naval_base
+						level = 4
+						province = 1711
+						instant_build = yes
+					}
+				}
+			}
+		}
+
+		focus = {
+			id = SCO_lothian_collieries
+			icon = GFX_goal_generic_construction2
+			cost = 5
+			x = 10
+			y = 2
+			prerequisite = {focus = SCO_southern_industry}
+			continue_if_invalid = yes
+			available_if_capitulated = yes
+			completion_reward = {
+				98 = {
+					add_resource = {
+							type = chromium
+							amount = 24
+					}
+				}
+			}
+		}
+
+		focus = {
+			id = SCO_ayrshire_collieries
+			icon = GFX_goal_generic_construction2
+			cost = 5
+			x = 10
+			y = 3
+			prerequisite = {focus = SCO_lothian_collieries}
+			continue_if_invalid = yes
+			available_if_capitulated = yes
+			completion_reward = {
+				92 = {
+					add_resource = {
+							type = chromium
+							amount = 24
+					}
+				}
+			}
+		}
+
+		focus = {
+			id = SCO_edinburgh_industries
+			icon = GFX_goal_generic_construct_civ_factory
+			cost = 5
+			x = 12
+			y = 2
+			available = {controls_state = 97}
+			prerequisite = {focus = SCO_southern_industry}
+			continue_if_invalid = yes
+			available_if_capitulated = yes
+			completion_reward = {
+				97 = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+				}
+				97 = {
+					add_extra_state_shared_building_slots = 4
+					add_building_construction = {
+						type = arms_factory
+						level = 4
+						instant_build = yes
+					}
+				}
+			}
+		}
+
+		focus = {
+			id = SCO_local_industries
+			icon = GFX_goal_generic_construct_civ_factory
+			cost = 5
+			x = 12
+			y = 3
+			available = {controls_state = 97}
+			prerequisite = {focus = SCO_southern_industry}
+			continue_if_invalid = yes
+			available_if_capitulated = yes
+			completion_reward = {
+				random_owned_controlled_state = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+				}
+				random_owned_controlled_state = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+				}
+				random_owned_controlled_state = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+				}
+				random_owned_controlled_state = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+		}
+
+		focus = {
+			id = SCO_reconcile_irish
+			icon = GFX_goal_generic_consumer_goods
+			cost = 5
+			x = 12
+			y = 4
+			bypass = {has_government = fascist}
+			prerequisite = {focus = SCO_local_industries}
+			continue_if_invalid = yes
+			available_if_capitulated = yes
+			completion_reward = {
+				add_ideas = SCO_irish_reconciled
+			}
+		}
+
+##############
+###politics###
+##############
+
+#peaceful#
+
+
+		focus = {
+			id = SCO_peaceful_methods
+			icon = GFX_goal_support_democracy
+			cost = 5
+			x = 18
+			y = 0
+			mutually_exclusive = {focus = SCO_desperate_measures}
+			continue_if_invalid = yes
+			available_if_capitulated = yes
+			completion_reward = {
+				add_political_power = 200
+			}
+		}
+
+		focus = {
+			id = SCO_status_quo
+			icon = GFX_goal_tripartite_pact
+			cost = 5
+			x = 16
+			y = 1
+			mutually_exclusive = {focus = SCO_back_to_the_fold}
+			prerequisite = {focus = SCO_peaceful_methods}
+			continue_if_invalid = yes
+			available_if_capitulated = yes
+			completion_reward = {
+				add_political_power = 100
+			}
+		}
+
+		focus = {
+			id = SCO_secure_the_nation
+			icon = GFX_goal_generic_propaganda
+			cost = 5
+			x = 16
+			y = 2
+			prerequisite = {focus = SCO_status_quo}
+			continue_if_invalid = yes
+			available_if_capitulated = yes
+			completion_reward = {
+				custom_effect_tooltip = SCO_SNP_loyalists
+				hidden_effect = {
+					random_owned_controlled_state = {
+						limit = { ROOT = { has_full_control_of_state = PREV } }
+						prioritize = { 97 }
+						create_unit = {
+							division = "name = \"MacEwan Battalion\" division_template = \"Local Defence Volunteers\" start_experience_factor = 0.1"
+							owner = SCO
+						}
+						create_unit = {
+							division = "name = \"MacCormick Battalion\" division_template = \"Local Defence Volunteers\" start_experience_factor = 0.1"
+							owner = SCO
+						}
+						create_unit = {
+							division = "name = \"Wallace Battalion\" division_template = \"Local Defence Volunteers\" start_experience_factor = 0.1"
+							owner = SCO
+						}
+						create_unit = {
+							division = "name = \"Bruce Battalion\" division_template = \"Local Defence Volunteers\" start_experience_factor = 0.1"
+							owner = SCO
+						}
+					}
+				}
+			}
+		}
+
+		focus = {
+			id = SCO_maintain_the_republic
+			icon = GFX_goal_generic_demand_territory
+			cost = 5
+			x = 15
+			y = 3
+			mutually_exclusive = {focus = SCO_constitutional_monarch}
+			prerequisite = {focus = SCO_secure_the_nation}
+			continue_if_invalid = yes
+			available_if_capitulated = yes
+			completion_reward = {
+				add_political_power = 50
+				add_stability = 0.1
+			}
+		}
+
+		focus = {
+			id = SCO_special_elections
+			icon = GFX_goal_tripartite_pact
+			cost = 5
+			x = 15
+			y = 4
+			available = { JAC = { exists = no }}
+			prerequisite = {focus = SCO_maintain_the_republic}
+			continue_if_invalid = yes
+			available_if_capitulated = yes
+			completion_reward = {
+				add_political_power = 25
+				country_event = SCO_events.3
+			}
+		}
+
+		focus = {
+			id = SCO_compromise_with_clydeside
+			icon = GFX_goal_generic_national_unity
+			cost = 5
+			x = 14
+			y = 5
+			available = {has_government = democratic_socialist}
+			mutually_exclusive = {focus = SCO_crush_clydeside}
+			prerequisite = {focus = SCO_special_elections}
+			continue_if_invalid = yes
+			available_if_capitulated = yes
+			completion_reward = {
+				annex_country = {
+   					target = SOG
+    				transfer_troops = yes
+				}
+				add_popularity = {
+    			ideology = communist
+    			popularity = 0.25
+				}
+				country_event = SCO_events.4
+			}
+		}
+
+		focus = {
+			id = SCO_crush_clydeside
+			icon = GFX_goal_generic_occupy_states_ongoing_war
+			cost = 5
+			x = 16
+			y = 5
+			bypass = {has_government = democratic_socialist}
+			available = { SOG = { exists = no }}
+			mutually_exclusive = {focus = SCO_compromise_with_clydeside}
+			prerequisite = {focus = SCO_special_elections}
+			continue_if_invalid = yes
+			available_if_capitulated = yes
+			completion_reward = {
+				create_wargoal = {
+   					type = annex_everything
+    				target = SOG
+				}
+			}
+		}
+
+		focus = {
+			id = SCO_national_consolidation
+			icon = GFX_goal_generic_defence
+			cost = 5
+			x = 15
+			y = 6
+			prerequisite = {
+			focus = SCO_crush_clydeside
+			focus = SCO_compromise_with_clydeside
+			}
+			continue_if_invalid = yes
+			available_if_capitulated = yes
+			completion_reward = {
+				add_timed_idea = {
+					idea = SCO_national_consolidation_idea
+					days = 180
+				}
+				SOG = {
+					remove_state_core = 100
+					remove_state_core = 101
+					remove_state_core = 103
+					remove_state_core = 102
+					remove_state_core = 104
+				}
+			}
+		}
+
+		focus = {
+			id = SCO_scotland_the_brave
+			icon = GFX_goal_scotland_the_brave
+			cost = 5
+			x = 15
+			y = 7
+			prerequisite = {focus = SCO_national_consolidation}
+			continue_if_invalid = yes
+			available_if_capitulated = yes
+			completion_reward = {
+				add_ideas = SCO_scotland_the_brave_idea
+			}
+		}
+
+		focus = {
+			id = SCO_constitutional_monarch
+			icon = GFX_goal_generic_intelligence_exchange
+			cost = 5
+			x = 19
+			y = 3
+			mutually_exclusive = {focus = SCO_maintain_the_republic}
+			prerequisite = {focus = SCO_secure_the_nation}
+			continue_if_invalid = yes
+			available_if_capitulated = yes
+			completion_reward = {
+				add_popularity = {
+    			ideology = conservative
+    			popularity = 0.05
+				}
+				add_political_power = 50
+				add_opinion_modifier = { target = YRK modifier = SCO_constitutional_monarch_opinion }
+			}
+		}
+
+		focus = {
+			id = SCO_steal_the_stone
+			icon = GFX_focus_SCO_steal_the_stone
+			cost = 5
+			x = 17
+			y = 4
+			prerequisite = {
+			focus = SCO_constitutional_monarch
+			focus = SCO_maintain_the_republic
+			}
+			continue_if_invalid = yes
+			available_if_capitulated = yes
+			completion_reward = {
+				country_event = {
+    				id = SCO.events.5
+    				days = 10
+				}
+    		}
+		}
+
+		focus = {
+			id = SCO_new_constitution
+			icon = GFX_focus_renounce_the_treaty_of_trianon
+			cost = 5
+			x = 19
+			y = 4
+			prerequisite = {focus = SCO_constitutional_monarch}
+			continue_if_invalid = yes
+			available_if_capitulated = yes
+			completion_reward = {
+				add_ideas = SCO_new_constitution_idea
+    		}
+		}
+
+		focus = {
+			id = SCO_invite_albert
+			icon = GFX_goal_tfv_strengthen_commonwealth_ties
+			cost = 5
+			x = 19
+			y = 5
+			prerequisite = {focus = SCO_new_constitution}
+			continue_if_invalid = yes
+			available_if_capitulated = yes
+			completion_reward = {
+				YRK = {
+					country_event = {
+    					id = YRK.events.5
+    					days = 10
+    				}
+				}
+    		}
+		}
+
+		focus = {
+			id = SCO_the_coronation
+			icon = GFX_focus_rom_royal_dictatorship
+			cost = 5
+			x = 18
+			y = 6
+			available = { JAC = { exists = no } }
+			prerequisite = {focus = SCO_invite_albert}
+			continue_if_invalid = yes
+			available_if_capitulated = yes
+			completion_reward = {
+				country_event = {
+    				id = SCO.events.6
+    				days = 10
+				}
+			}
+		}
+
+		focus = {
+			id = SCO_end_the_rebellion
+			icon = GFX_goal_generic_occupy_states_ongoing_war
+			cost = 5
+			x = 18
+			y = 7
+			available = {has_global_flag = SCO_monarch1}
+			prerequisite = {focus = SCO_the_coronation}
+			continue_if_invalid = yes
+			available_if_capitulated = yes
+			completion_reward = {
+				create_wargoal = {
+   					type = annex_everything
+    				target = SOG
+				}
+			}
+		}
+
+		focus = {
+			id = SCO_the_plan_fails
+			icon = GFX_focus_generic_strike_at_democracy2
+			cost = 5
+			x = 20
+			y = 7
+			available = {has_global_flag = SCO_rejected}
+			prerequisite = {focus = SCO_the_coronation}
+			continue_if_invalid = yes
+			available_if_capitulated = yes
+			completion_reward = {
+				unlock_national_focus = SCO_maintain_the_republic
+			}
+		}
+
+
+		focus = {
+			id = SCO_back_to_the_fold
+			icon = GFX_goal_tfv_strengthen_commonwealth_ties
+			cost = 5
+			x = 22
+			y = 1
+			mutually_exclusive = {focus = SCO_status_quo}
+			prerequisite = {focus = SCO_peaceful_methods}
+			continue_if_invalid = yes
+			available_if_capitulated = yes
+			completion_reward = {
+				add_popularity = {
+   					ideology = conservative
+    				popularity = 0.35
+				}
+				set_politics = {
+				ruling_party = conservative
+				elections_allowed = yes
+				}
+			}
+		}
+
+		focus = {
+			id = SCO_support_the_royalists
+			icon = GFX_focus_generic_home_defense
+			cost = 5
+			x = 20
+			y = 2
+			mutually_exclusive = {focus = SCO_support_the_yorkists}
+			prerequisite = {focus = SCO_back_to_the_fold}
+			continue_if_invalid = yes
+			available_if_capitulated = yes
+			completion_reward = {
+				add_opinion_modifier = { target = ROY modifier = SCO_support_the_royalists_opinion }
+				ROY = { add_to_faction = SCO }
+			}
+		}
+
+		focus = {
+			id = SCO_support_the_yorkists
+			icon = GFX_goal_support_democracy
+			cost = 5
+			x = 24
+			y = 2
+			mutually_exclusive = {focus = SCO_support_the_yorkists}
+			prerequisite = {focus = SCO_back_to_the_fold}
+			continue_if_invalid = yes
+			available_if_capitulated = yes
+			completion_reward = {
+				add_opinion_modifier = { target = YRK modifier = SCO_support_the_royalists_opinion }
+				YRK = { add_to_faction = SCO }
+			}
+		}
+
+		focus = {
+			id = SCO_second_act_of_union_roy
+			icon = GFX_focus_generic_treaty
+			cost = 5
+			x = 21
+			y = 3
+			prerequisite = { focus = SCO_support_the_royalists }
+			continue_if_invalid = yes
+			available_if_capitulated = yes
+			completion_reward = {
+				ROY = { annex_country = {
+    					target = SCO
+    					transfer_troops = yes
+					} 				
+				}
+			}
+		}
+
+		focus = {
+			id = SCO_second_act_of_union_yrk
+			icon = GFX_focus_generic_treaty
+			cost = 5
+			x = 23
+			y = 3
+			prerequisite = { focus = SCO_support_the_yorkists }
+			continue_if_invalid = yes
+			available_if_capitulated = yes
+			completion_reward = {
+				YRK = { annex_country = {
+    					target = SCO
+    					transfer_troops = yes
+					} 				
+				}
+			}
+		}
+
+
+		#fashandcommie#
+
+
+		focus = {
+			id = SCO_desperate_measures
+			icon = GFX_goal_demand_sudetenland
+			cost = 5
+			x = 29
+			y = 0
+			mutually_exclusive = {focus = SCO_peaceful_methods}
+			continue_if_invalid = yes
+			available_if_capitulated = yes
+			completion_reward = {
+				add_political_power = 150
+			}
+		}
+
+		focus = {
+			id = SCO_march_on_holyrood
+			icon = GFX_goal_generic_small_arms
+			cost = 5
+			x = 29
+			y = 1
+			prerequisite = {focus = SCO_desperate_measures}
+			continue_if_invalid = yes
+			available_if_capitulated = yes
+			completion_reward = {
+				add_stability = -0.2
+				country_event = {
+    				id = SCO.events.7
+    				days = 10
+				}
+			}
+		}
+
+		focus = {
+			id = SCO_the_left_victorious
+			icon = GFX_goal_support_communism
+			cost = 5
+			x = 32
+			y = 2
+			available = {has_global_flag = SCO_commies_win}
+			mutually_exclusive = {focus = SCO_the_right_victorious}
+			prerequisite = {focus = SCO_march_on_holyrood}
+			continue_if_invalid = yes
+			available_if_capitulated = yes
+			completion_reward = {
+				add_popularity = {
+   					ideology = communist
+    				popularity = 0.35
+				}
+				set_politics = {
+				ruling_party = communist
+				elections_allowed = no
+				}
+				add_stability = -0.05
+			}
+		}
+
+		focus = {
+			id = SCO_stamp_out_liberalism
+			icon = GFX_goal_generic_political_pressure
+			cost = 5
+			x = 32
+			y = 3
+			prerequisite = {focus = SCO_the_left_victorious}
+			continue_if_invalid = yes
+			available_if_capitulated = yes
+			completion_reward = {
+				add_popularity = {
+   					ideology = civic_nationalist
+    				popularity = -0.05
+				}
+				add_popularity = {
+   					ideology = conservative
+    				popularity = -0.05
+				}
+				add_popularity = {
+   					ideology = democratic_socialist
+    				popularity = -0.05
+				}
+				add_popularity = {
+   					ideology = liberal
+    				popularity = -0.05
+				}
+				add_popularity = {
+   					ideology = communist
+    				popularity = 0.15
+				}
+				add_ideas = SCO_stamp_out_liberalism_idea
+			}
+		}
+
+
+		focus = {
+			id = SCO_smash_the_fash
+			icon = GFX_focus_generic_strike_at_democracy2
+			cost = 5
+			x = 32
+			y = 4
+			prerequisite = {focus = SCO_stamp_out_liberalism}
+			continue_if_invalid = yes
+			available_if_capitulated = yes
+			completion_reward = {
+				add_popularity = {
+   					ideology = fascist
+    				popularity = -0.1
+				}
+				add_popularity = {
+   					ideology = communist
+    				popularity = 0.1
+				}
+				add_stability = 0.1
+				add_political_power = 100
+				add_opinion_modifier = { target = BUF modifier = SCO_bash_the_fash_opinion }
+			}
+		}
+
+		focus = {
+			id = SCO_destroy_the_north
+			icon = GFX_focus_generic_support_the_left_right
+			cost = 5
+			x = 32
+			y = 5
+			prerequisite = {focus = SCO_smash_the_fash}
+			continue_if_invalid = yes
+			available_if_capitulated = yes
+			completion_reward = {
+				add_ideas = SCO_destroy_the_north_idea
+			}
+		}
+
+		focus = {
+			id = SCO_unity_with_clydeside
+			icon = GFX_goal_generic_national_unity
+			cost = 5
+			x = 31
+			y = 6
+			mutually_exclusive = {focus = SCO_split_with_clydeside}
+			available = {JAC = {exists = no}}
+			available = {SOG = {has_government = communist}}
+			prerequisite = {focus = SCO_destroy_the_north}
+			continue_if_invalid = yes
+			available_if_capitulated = yes
+			completion_reward = {
+				add_opinion_modifier = { target = SOG modifier = SCO_unity_with_clydeside_opinion }
+				SOM = { add_to_faction = SCO }
+			}
+		}
+
+		focus = {
+			id = SCO_the_stirling_accords
+			icon = GFX_focus_generic_join_comintern
+			cost = 5
+			x = 31
+			y = 7
+			prerequisite = {focus = SCO_unity_with_clydeside}
+			continue_if_invalid = yes
+			available_if_capitulated = yes
+			completion_reward = {
+				SOG = { 
+					annex_country = {
+    					target = SCO
+    					transfer_troops = yes
+					}				
+				}
+				SOG = { change_tag_from = ROOT }
+			}
+		}
+
+		focus = {
+			id = SCO_split_with_clydeside
+			icon = GFX_focus_generic_soviet_politics
+			cost = 5
+			x = 34
+			y = 6
+			mutually_exclusive = {focus = SCO_unity_with_clydeside}
+			prerequisite = {focus = SCO_destroy_the_north}
+			continue_if_invalid = yes
+			available_if_capitulated = yes
+			completion_reward = {
+				add_opinion_modifier = { target = SOG modifier = SCO_split_with_clydeside_opinion }
+				add_political_power = 100
+			}
+		}	
+
+		focus = {
+			id = SCO_crush_the_nonconformists
+			icon = GFX_goal_generic_war_with_comintern
+			cost = 5
+			x = 34
+			y = 7
+			prerequisite = {focus = SCO_split_with_clydeside}
+			continue_if_invalid = yes
+			available_if_capitulated = yes
+			completion_reward = {
+				create_wargoal = {
+   					type = annex_everything
+    				target = SOG
+				}
+			}
+		}
+
+		focus = {
+			id = SCO_strike_the_south
+			icon = GFX_goal_generic_occupy_states_ongoing_war
+			cost = 5
+			x = 34
+			y = 8
+			prerequisite = {focus = SCO_crush_the_nonconformists}
+			continue_if_invalid = yes
+			available_if_capitulated = yes
+			completion_reward = {
+				create_wargoal = {
+   					type = annex_everything
+    				target = YRK
+				}
+			}
+		}
+
+		focus = {
+			id = SCO_the_right_victorious
+			icon = GFX_goal_support_fascism
+			cost = 5
+			x = 29
+			y = 2
+			available = {has_global_flag = SCO_fash_win}
+			mutually_exclusive = {focus = SCO_the_left_victorious}
+			prerequisite = {focus = SCO_march_on_holyrood}
+			continue_if_invalid = yes
+			available_if_capitulated = yes
+			completion_reward = {
+				add_popularity = {
+   					ideology = fascist
+    				popularity = 0.2
+				}
+				set_politics = {
+				ruling_party = fascist
+				elections_allowed = no
+				}
+				add_stability = -0.1
+			}
+		}
+
+		focus = {
+			id = SCO_stamp_out_opposition
+			icon = GFX_goal_generic_territory_or_war
+			cost = 5
+			x = 27
+			y = 3
+			mutually_exclusive = {focus = SCO_ramsay's_loyalists}
+			prerequisite = {focus = SCO_the_right_victorious}
+			continue_if_invalid = yes
+			available_if_capitulated = yes
+			completion_reward = {
+				add_popularity = {
+   					ideology = civic_nationalist
+    				popularity = -0.05
+				}
+				add_popularity = {
+   					ideology = conservative
+    				popularity = -0.05
+				}
+				add_popularity = {
+   					ideology = democratic_socialist
+    				popularity = -0.05
+				}
+				add_popularity = {
+   					ideology = liberal
+    				popularity = -0.05
+				}
+				add_popularity = {
+   					ideology = communist
+    				popularity = -0.05
+    			}
+    			add_political_power = 50
+    			add_stability = 0.05
+			}
+		}
+
+		focus = {
+			id = SCO_anti_catholocism
+			icon = GFX_focus_generic_strike_at_democracy1
+			cost = 5
+			x = 27
+			y = 4
+			prerequisite = {focus = SCO_stamp_out_opposition}
+			continue_if_invalid = yes
+			available_if_capitulated = yes
+			completion_reward = {
+				add_ideas = SCO_anti_catholocism_idea
+			}
+		}
+
+		focus = {
+			id = SCO_smash_the_jacobites
+			icon = GFX_goal_rhineland
+			cost = 5
+			x = 27
+			y = 5
+			prerequisite = {focus = SCO_anti_catholocism}
+			continue_if_invalid = yes
+			available_if_capitulated = yes
+			completion_reward = {
+				add_ideas = SCO_smash_the_jacobites_idea
+			}
+		}
+
+		focus = {
+			id = SCO_reconcile_the_BUF
+			icon = GFX_goal_generic_dangerous_deal
+			cost = 5
+			x = 23
+			y = 6
+			mutually_exclusive = {focus = SCO_scottish_fascism}
+			prerequisite = {focus = SCO_smash_the_jacobites}
+			continue_if_invalid = yes
+			available_if_capitulated = yes
+			completion_reward = {
+				add_opinion_modifier = { target = BUF modifier = SCO_reconcile_the_BUF_opinion }
+				BUF = { add_to_faction = SCO }
+			}
+		}
+
+		focus = {
+			id = SCO_scottish_fascism
+			icon = GFX_goal_generic_propaganda
+			cost = 5
+			x = 27
+			y = 6
+			mutually_exclusive = {focus = SCO_reconcile_the_BUF}
+			prerequisite = {focus = SCO_smash_the_jacobites}
+			continue_if_invalid = yes
+			available_if_capitulated = yes
+			completion_reward = {
+				add_opinion_modifier = { target = BUF modifier = SCO_scottish_fascism_opinion }
+				set_rule = {
+    				can_create_factions = yes
+				}
+				create_faction = "Protestant Fascist Front"
+			}
+		}
+
+		focus = {
+			id = SCO_strike_the_south2
+			icon = GFX_goal_generic_occupy_states_ongoing_war
+			cost = 5
+			x = 23
+			y = 7
+			prerequisite = {
+			focus = SCO_reconcile_the_BUF
+			focus = SCO_scottish_fascism
+			}
+			continue_if_invalid = yes
+			available_if_capitulated = yes
+			completion_reward = {
+				create_wargoal = {
+   					type = annex_everything
+    				target = YRK
+				}
+			}
+		}
+
+		focus = {
+			id = SCO_smash_the_socialists
+			icon = GFX_goal_generic_occupy_states_ongoing_war
+			cost = 5
+			x = 25
+			y = 7
+			prerequisite = {
+			focus = SCO_reconcile_the_BUF
+			focus = SCO_scottish_fascism
+			}
+			continue_if_invalid = yes
+			available_if_capitulated = yes
+			completion_reward = {
+				create_wargoal = {
+   					type = annex_everything
+    				target = SOG
+				}
+			}
+		}
+
+		focus = {
+			id = SCO_liberate_ulster
+			icon = GFX_goal_generic_occupy_states_ongoing_war
+			cost = 5
+			x = 27
+			y = 7
+			prerequisite = {
+			focus = SCO_reconcile_the_BUF
+			focus = SCO_scottish_fascism
+			}
+			continue_if_invalid = yes
+			available_if_capitulated = yes
+			completion_reward = {
+				create_wargoal = {
+   					type = annex_everything
+    				target = IRL
+				}
+				create_wargoal = {
+   					type = annex_everything
+    				target = IRA
+				}
+			}
+		}
+
+
+		focus = {
+			id = SCO_ramsay's_loyalists
+			icon = GFX_focus_generic_home_defense
+			cost = 5
+			x = 29
+			y = 3
+			mutually_exclusive = {focus = SCO_stamp_out_opposition}
+			prerequisite = {focus = SCO_the_right_victorious}
+			continue_if_invalid = yes
+			available_if_capitulated = yes
+			completion_reward = {
+				add_popularity = {
+   					ideology = fascist
+    				popularity = 0.2
+				}
+				set_party_name = { 
+    				ideology = fascist
+   		 			long_name = "Tory Loyalists"
+    				name = "Tory Loyalists"
+				}
+				create_country_leader = {
+					name = "Archibald Maule Ramsay"
+					desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+					picture = "gfx/leaders/VBCW/SCO/SCO-Ramsay.dds"
+					expire = "1965.1.1"
+					ideology = fascist_subtype
+					traits = {
+		
+					}
+				}
+			}
+		}
+
+		focus = {
+			id = SCO_win_over_SDFP
+			icon = GFX_goal_generic_dangerous_deal
+			cost = 5
+			x = 29
+			y = 4
+			prerequisite = {focus = SCO_ramsay's_loyalists}
+			continue_if_invalid = yes
+			available_if_capitulated = yes
+			completion_reward = {
+				add_political_power = 50
+				add_stability = 0.1
+			}
+		}
+
+		focus = {
+			id = SCO_defeat_the_pretender
+			icon = GFX_focus_generic_support_the_left_right
+			cost = 5
+			x = 29
+			y = 5
+			bypass = {JAC = {exists = no}}
+			prerequisite = {focus = SCO_win_over_SDFP}
+			continue_if_invalid = yes
+			available_if_capitulated = yes
+			completion_reward = {
+				add_timed_idea = {
+				idea = SCO_defeat_the_pretender_idea
+				days = 180
+				}
+			}
+		}
+
+		focus = {
+			id = SCO_the_loyal_north
+			icon = GFX_focus_chi_british_cooperation
+			cost = 5
+			x = 29
+			y = 6
+			available = {JAC = {exists = no}}
+			prerequisite = {focus = SCO_defeat_the_pretender}
+			continue_if_invalid = yes
+			available_if_capitulated = yes
+			completion_reward = {
+				ROY = { annex_country = {
+    					target = SCO
+    					transfer_troops = yes
+					} 				
+				}
+			}
+		}
+
+##################
+###ARMED FORCES###
+##################
+
+
+		focus = {
+			id = SCO_scottish_armed_forces
+			icon = GFX_focus_secret_rearmament
+			cost = 5
+			x = 40
+			y = 0
+			continue_if_invalid = yes
+			available_if_capitulated = yes
+			completion_reward = {
+				army_experience = 25
+				add_tech_bonus = {
+				name = land_doc_bonus
+				uses = 2
+				bonus = 0.5
+				category = land_doctrine
+				}
+			}
+		}
+
+		focus = {
+			id = SCO_land_focus
+			icon = GFX_focus_generic_commonwealth_build_infantry
+			cost = 5
+			x = 35
+			y = 1
+			prerequisite = {focus = SCO_scottish_armed_forces}
+			continue_if_invalid = yes
+			available_if_capitulated = yes
+			completion_reward = {
+				army_experience = 15
+				add_tech_bonus = {
+				name = land_doc_bonus
+				uses = 1
+				bonus = 0.5
+				category = land_doctrine
+				}
+			}
+		}
+
+		focus = {
+			id = SCO_highland_levies
+			icon = GFX_goal_highland_levies
+			cost = 5
+			x = 35
+			y = 2
+			prerequisite = {focus = SCO_land_focus}
+			continue_if_invalid = yes
+			available_if_capitulated = yes
+			completion_reward = {
+				army_experience = 10
+				custom_effect_tooltip = SCO_highland_levies
+					hidden_effect = {
+					random_owned_controlled_state = {
+						limit = { ROOT = { has_full_control_of_state = PREV } }
+						prioritize = { 111 }
+						create_unit = {
+							division = "name = \"Clan Campbell Battalion\" division_template = \"Local Defence Volunteers\" start_experience_factor = 0.2"
+							owner = SCO
+						}
+						create_unit = {
+							division = "name = \"Clan Fraser Battalion\" division_template = \"Local Defence Volunteers\" start_experience_factor = 0.2"
+							owner = SCO
+						}
+						create_unit = {
+							division = "name = \"Clan MacDonald Battalion\" division_template = \"Local Defence Volunteers\" start_experience_factor = 0.2"
+							owner = SCO
+						}
+						create_unit = {
+							division = "name = \"Clan Sutherland Battalion\" division_template = \"Local Defence Volunteers\" start_experience_factor = 0.2"
+							owner = SCO
+						}
+						create_unit = {
+							division = "name = \"Clan MacKenzie Battalion\" division_template = \"Local Defence Volunteers\" start_experience_factor = 0.2"
+							owner = SCO
+						}
+						create_unit = {
+							division = "name = \"Clan Cameron Battalion\" division_template = \"Local Defence Volunteers\" start_experience_factor = 0.2"
+							owner = SCO
+						}
+						create_unit = {
+							division = "name = \"Clan MacLean Battalion\" division_template = \"Local Defence Volunteers\" start_experience_factor = 0.2"
+							owner = SCO
+						}
+						create_unit = {
+							division = "name = \"Atholl Highlanders\" division_template = \"Infantry Regiment\" start_experience_factor = 0.5"
+							owner = SCO
+						}
+						create_corps_commander = {
+							name = "John Stewart-Murray, 8th Duke of Atholl"
+							picture = "gfx/leaders/VBCW/SCO/SCO-Atholl.dds"
+							traits = { old_guard cavalry_officer career_officer unionist_sympathies }
+							skill = 3
+							attack_skill = 4
+							defense_skill = 2
+							planning_skill = 2
+							logistics_skill = 3
+						}
+					}
+				}
+			}
+		}
+
+
+		focus = {
+			id = SCO_officer_schools
+			icon = GFX_focus_generic_military_mission
+			cost = 5
+			x = 35
+			y = 3
+			prerequisite = {focus = SCO_scottish_armed_forces}
+			continue_if_invalid = yes
+			available_if_capitulated = yes
+			completion_reward = {
+				army_experience = 30
+				add_tech_bonus = {
+				name = land_doc_bonus
+				uses = 2
+				bonus = 0.5
+				category = land_doctrine
+				}
+				add_ideas = SCO_officer_schools_idea
+			}
+		}
+
+		focus = {
+			id = SCO_soviet_aid
+			icon = GFX_focus_chi_mission_to_the_soviet_union
+			cost = 5
+			x = 37
+			y = 3
+			prerequisite = {focus = SCO_scottish_armed_forces}
+			continue_if_invalid = yes
+			available_if_capitulated = yes
+			completion_reward = {
+				unlock_decision_tooltip = SCO_soviet_aid_decision
+			}
+		}
+
+		focus = {
+			id = SCO_sea_focus
+			icon = GFX_goal_generic_occupy_states_coastal
+			cost = 5
+			x = 39
+			y = 1
+			prerequisite = {focus = SCO_scottish_armed_forces}
+			continue_if_invalid = yes
+			available_if_capitulated = yes
+			completion_reward = {
+				navy_experience = 30
+				add_tech_bonus = {
+				name = navy_doc_bonus
+				uses = 2
+				bonus = 0.5
+				category = naval_doctrine
+				}
+			}
+		}
+
+		focus = {
+			id = SCO_draft_trawler_fleets
+			icon = GFX_goal_generic_navy_cruiser
+			cost = 5
+			x = 39
+			y = 2
+			prerequisite = {focus = SCO_sea_focus}
+			continue_if_invalid = yes
+			available_if_capitulated = yes
+			completion_reward = {
+				load_oob = "SCO_trawler_fleet"
+			}
+		}
+
+		focus = {
+			id = SCO_modern_craft
+			icon = GFX_goal_generic_navy_doctrines_tactics
+			cost = 5
+			x = 39
+			y = 3
+			prerequisite = {focus = SCO_draft_trawler_fleets}
+			continue_if_invalid = yes
+			available_if_capitulated = yes
+			completion_reward = {
+				add_tech_bonus = {
+				name = SCO_boats
+				bonus = 0.5
+				uses = 4
+				category = dd_tech
+				category = cl_tech
+				category = sloop_tech
+				category = corvette_tech
+				}
+			}
+		}
+
+		focus = {
+			id = SCO_air_focus
+			icon = GFX_goal_generic_air_fighter2
+			cost = 5
+			x = 41
+			y = 1
+			prerequisite = {focus = SCO_scottish_armed_forces}
+			continue_if_invalid = yes
+			available_if_capitulated = yes
+			completion_reward = {
+				air_experience = 25
+				add_tech_bonus = {
+				name = air_doc_bonus
+				uses = 2
+				bonus = 0.5
+				category = air_doctrine
+				}
+			}
+		}
+
+		focus = {
+			id = SCO_expand_montrose
+			icon = GFX_goal_generic_air_production
+			cost = 5
+			x = 41
+			y = 2
+			prerequisite = {focus = SCO_air_focus}
+			continue_if_invalid = yes
+			available_if_capitulated = yes
+			completion_reward = {
+				107 = {
+					add_building_construction = {
+						type = air_base
+						level = 4
+						instant_build = yes
+					}
+				}
+			}
+		}
+
+		focus = {
+			id = SCO_aviation_development
+			icon = GFX_goal_generic_air_fighter
+			cost = 5
+			x = 41
+			y = 3
+			prerequisite = {focus = SCO_expand_montrose}
+			continue_if_invalid = yes
+			available_if_capitulated = yes
+			completion_reward = {
+				add_tech_bonus = {
+				name = SCO_planes
+				bonus = 0.5
+				uses = 4
+				category = tactical_bomber
+				category = light_fighter
+				category = light_air
+				}
+			}
+		}
+
+		focus = {
+			id = SCO_german_aid
+			icon = GFX_focus_chi_mission_to_germany
+			cost = 5
+			x = 43
+			y = 3
+			prerequisite = {focus = SCO_scottish_armed_forces}
+			continue_if_invalid = yes
+			available_if_capitulated = yes
+			completion_reward = {
+				unlock_decision_tooltip = SCO_german_aid_decision
+			}
+		}
+
+		focus = {
+			id = SCO_rekindle_auld_alliance
+			icon = GFX_focus_chi_reach_out_to_france
+			cost = 5
+			x = 45
+			y = 1
+			prerequisite = {focus = SCO_scottish_armed_forces}
+			continue_if_invalid = yes
+			available_if_capitulated = yes
+			completion_reward = {
+				unlock_decision_tooltip = SCO_french_aid_decision
+			}
+		}
+
+		focus = {
+			id = SCO_irish_friendship
+			icon = GFX_goal_irish_relations
+			cost = 5
+			x = 45
+			y = 2
+			prerequisite = {focus = SCO_rekindle_auld_alliance}
+			continue_if_invalid = yes
+			available_if_capitulated = yes
+			completion_reward = {
+				unlock_decision_tooltip = SCO_french_aid_decision
+			}
+		}
+
+		focus = {
+			id = SCO_scandinavian_legions
+			icon = GFX_goal_conscription_act
+			cost = 5
+			x = 45
+			y = 3
+			prerequisite = {focus = SCO_irish_friendship}
+			continue_if_invalid = yes
+			available_if_capitulated = yes
+			completion_reward = {
+				unlock_decision_tooltip = SCO_french_aid_decision
+			}
+		}
+	}

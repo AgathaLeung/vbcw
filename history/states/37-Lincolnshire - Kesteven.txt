@@ -1,0 +1,29 @@
+state={
+	id=37
+	name="STATE_37"
+	provinces={
+		716 749 754 774 777 804 814 815 822 853 877 896 899 931 
+	}
+	manpower=150000
+	
+	resources = {
+		steel = 8
+		chromium = 8
+	}
+	
+	state_category = rural
+	
+	history={
+		owner = ANG
+		add_core_of = ANG
+		add_claim_by = YRK
+		add_claim_by = ROY
+		victory_points = { 804 10 }
+		victory_points = { 931 20 }
+		buildings = {
+			infrastructure = 6
+			air_base = 2
+			industrial_complex = 1
+		}
+	}
+}

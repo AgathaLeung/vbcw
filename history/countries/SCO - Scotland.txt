@@ -1,0 +1,374 @@
+﻿capital = 97
+
+OOB = "SCO_1936"
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_naval_oob = "SCO_1936_naval_mtg"
+	else = {
+		set_naval_oob = "SCO_1936_naval_legacy"
+	}
+}
+
+set_research_slots = 3
+
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_support = 1		
+	tech_engineers = 1
+	tech_recon = 1
+	motorised_infantry = 1
+	mechanised_infantry = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+	gwtank = 1
+	basic_light_tank = 1
+	early_fighter = 1
+	cv_early_fighter = 1
+	cv_naval_bomber1 = 1
+	naval_bomber1 = 1
+	early_bomber = 1
+	CAS1 = 1
+	trench_warfare = 1
+	fleet_in_being = 1
+	electronic_mechanical_engineering = 1
+	radio = 1
+	radio_detection = 1
+	support_weapons = 1
+	early_armoured_car = 1
+}
+
+#########################
+###SHIP TECH - VANILLA###
+#########################
+
+if = {
+	limit = {
+		not = { has_dlc = "Man the Guns" }
+	}
+	set_technology = {
+		early_trawler = 1
+		early_corvette = 1
+		early_sloop = 1
+		early_submarine = 1
+		early_destroyer = 1
+		basic_destroyer = 1
+		early_light_cruiser = 1
+		early_heavy_cruiser = 1
+		early_monitor = 1
+	}
+}
+
+#########################
+###  SHIP TECH - MTG  ###
+#########################
+
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_technology = {		
+		basic_naval_mines = 1
+		submarine_mine_laying = 1
+		early_ship_hull_trawler = 1
+		early_ship_hull_sloop = 1
+		early_ship_hull_light = 1
+		basic_ship_hull_light = 1
+		early_ship_hull_submarine = 1
+		early_ship_hull_cruiser = 1
+		basic_ship_hull_cruiser = 1
+		basic_battery = 1
+		basic_light_battery = 1
+		basic_medium_battery = 1
+		basic_heavy_battery = 1
+		basic_torpedo = 1
+		sonar = 1
+		smoke_generator = 1
+		basic_depth_charges = 1
+		basic_secondary_battery = 1
+		basic_cruiser_armor_scheme = 1
+		mtg_transport = 1
+		improved_secondary_battery = 1
+		basic_fire_control_system = 1
+	}
+}
+
+set_politics = {	
+	ruling_party = civic_nationalist
+	last_election = "1933.3.5"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+    fascist = 1
+    autocratic = 0
+    conservative = 30
+    liberal = 4
+    democratic_socialist = 9
+    communist = 4
+    anarcho_syndicalist = 0
+    civic_nationalist = 52
+}
+
+add_ideas = {
+	SCO_renaissance
+	SCO_unionist_officers
+	limited_conscription
+}
+
+set_convoys = 50
+
+create_country_leader = {
+	name = "Alexander MacEwan"
+	desc = "POLITICS_KING_ZOG_DESC"
+	picture = "gfx/leaders/VBCW/SCO/SCO-MacEwan.dds"
+	expire = "1965.1.1"
+	ideology = civic_nationalist_subtype
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "James Graham, Duke of Montrose"
+	desc = "POLITICS_KING_ZOG_DESC"
+	picture = "gfx/leaders/VBCW/SCO/SCO-Montrose.dds"
+	expire = "1965.1.1"
+	ideology = liberal_subtype
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Alexander Cambridge, Earl of Athlone"
+	desc = "POLITICS_KING_ZOG_DESC"
+	picture = "gfx/leaders/VBCW/SCO/SCO-Cambridge.dds"
+	expire = "1965.1.1"
+	ideology = conservative_subtype
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "David Kirkwood"
+	desc = "POLITICS_KING_ZOG_DESC"
+	picture = "gfx/leaders/VBCW/SCO/SCO-Kirkwood.dds"
+	expire = "1965.1.1"
+	ideology = democratic_socialist_subtype
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Hugh McDiarmid"
+	desc = "POLITICS_KING_ZOG_DESC"
+	picture = "gfx/leaders/VBCW/SCO/SCO-MacDiarmid2.dds"
+	expire = "1965.1.1"
+	ideology = communist_subtype
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "William Weir Gilmour"
+	desc = "POLITICS_KING_ZOG_DESC"
+	picture = "gfx/leaders/VBCW/SCO/SCO-WGilmour.dds"
+	expire = "1965.1.1"
+	ideology = fascist_subtype
+	traits = {
+		#
+	}
+}
+
+create_field_marshal = {
+	name = "Charles Fergusson"
+	portrait_path = "gfx/leaders/VBCW/SCO/SCO-CFergusson.dds"
+	traits = { infantry_officer cavalry_leader }
+	skill = 4
+	attack_skill = 2
+    defense_skill = 5
+    planning_skill = 3
+    logistics_skill = 3
+}
+
+create_field_marshal = {
+	name = "Bernard Fergusson"
+	portrait_path = "gfx/leaders/VBCW/SCO/SCO-Fergusson.dds"
+	traits = { infantry_officer commando }
+	skill = 4
+	attack_skill = 3
+    defense_skill = 3
+    planning_skill = 5
+    logistics_skill = 5
+}
+
+create_field_marshal = {
+	name = "Harold Carrington"
+	portrait_path = "gfx/leaders/VBCW/SCO/SCO-Carrington.dds"
+	traits = { old_guard bearer_of_artillery }
+	skill = 3
+	attack_skill = 2
+    defense_skill = 2
+    planning_skill = 3
+    logistics_skill = 3
+}
+create_corps_commander = {
+	name = "Alexander Cambridge"
+	portrait_path = "gfx/leaders/VBCW/SCO/SCO-CambridgeA.dds"
+	traits = { media_personality war_hero unionist_sympathies ranger infantry_leader }
+	skill = 5
+	attack_skill = 5
+    defense_skill = 4
+    planning_skill = 4
+    logistics_skill = 5
+}
+
+create_corps_commander = {
+	name = "Colin Muir Barber"
+	portrait_path = "gfx/leaders/VBCW/SCO/SCO-Barber.dds"
+	traits = { war_hero infantry_officer trait_engineer }
+	skill = 4
+	attack_skill = 4
+    defense_skill = 3
+    planning_skill = 3
+    logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Philip 	Christison"
+	portrait_path = "gfx/leaders/VBCW/SCO/SCO-Christison.dds"
+	traits = { media_personality politically_connected trickster }
+	skill = 5
+	attack_skill = 5
+    defense_skill = 3
+    planning_skill = 4
+    logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "Edmund Hakewell-Smith"
+	portrait_path = "gfx/leaders/VBCW/SCO/SCO-Hakewill-Smith.dds"
+	traits = { war_hero trait_mountaineer }
+	skill = 3
+	attack_skill = 4
+    defense_skill = 3
+    planning_skill = 2
+    logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Tom Rennie"
+	portrait_path = "gfx/leaders/VBCW/SCO/SCO-Rennie.dds"
+	traits = { infantry_officer }
+	skill = 2
+	attack_skill = 2
+    defense_skill = 1
+    planning_skill = 3
+    logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Colin Gubbins"
+	portrait_path = "gfx/leaders/VBCW/SCO/SCO-Gubbins.dds"
+	traits = { trickster commando camouflage_expert }
+	skill = 5
+	attack_skill = 5
+    defense_skill = 4
+    planning_skill = 2
+    logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Fitzroy MacLean"
+	portrait_path = "gfx/leaders/VBCW/SCO/SCO-MacLean.dds"
+	traits = { politically_connected trickster trait_reckless commando unionist_sympathies }
+	skill = 4
+	attack_skill = 3
+    defense_skill = 2
+    planning_skill = 2
+    logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "Douglas Douglas-Hamilton"
+	portrait_path = "gfx/leaders/VBCW/SCO/SCO-Douglas-Hamilton.dds"
+	traits = { politically_connected trait_reckless unionist_sympathies }
+	skill = 3
+	attack_skill = 4
+    defense_skill = 2
+    planning_skill = 3
+    logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Aylmer Haldane"
+	portrait_path = "gfx/leaders/VBCW/SCO/SCO-Haldane.dds"
+	traits = { old_guard infantry_officer organizer }
+	skill = 3
+	attack_skill = 2
+    defense_skill = 4
+    planning_skill = 4
+    logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "James MacAndrew"
+	portrait_path = "gfx/leaders/VBCW/SCO/SCO-MacAndrew.dds"
+	traits = { old_guard trait_cautious unionist_sympathies }
+	skill = 2
+	attack_skill = 2
+    defense_skill = 2
+    planning_skill = 3
+    logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Walter Maxwell-Scott"
+	portrait_path = "gfx/leaders/VBCW/SCO/SCO-Maxwell-Scott.dds"
+	traits = { old_guard unionist_sympathies }
+	skill = 2
+	attack_skill = 3
+    defense_skill = 2
+    planning_skill = 2
+    logistics_skill = 2
+}
+
+create_navy_leader = {
+	name = "Robert Burnett"
+	portrait_path = "gfx/leaders/VBCW/SCO/SCO-Burnett.dds"
+	traits = { blockade_runner }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	maneuvering_skill = 2
+	coordination_skill = 1
+}
+
+create_navy_leader = {
+	name = "William Scott-Chalmers"
+	portrait_path = "gfx/leaders/VBCW/SCO/SCO-Chalmers.dds"
+	traits = { old_guard }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	maneuvering_skill = 3
+	coordination_skill = 2
+}
+
+create_navy_leader = {
+	name = "Bertram Ramsay"
+	portrait_path = "gfx/leaders/VBCW/SCO/SCO-Ramsay.dds"
+	traits = { blockade_runner superior_tactician }
+	skill = 3
+	attack_skill = 4
+	defense_skill = 2
+	maneuvering_skill = 4
+	coordination_skill = 3
+}

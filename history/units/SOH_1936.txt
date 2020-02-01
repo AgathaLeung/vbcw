@@ -1,0 +1,292 @@
+﻿division_template = {
+	name = "General Workers' Regiment"			
+	division_names_group = SOH_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+        infantry = { x = 0 y = 3 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+        infantry = { x = 1 y = 3 }
+	}
+	support = {
+       	engineer = { x = 0 y = 0 }
+       	artillery = { x = 0 y = 1 }
+	}
+}
+
+division_template = {
+	name = "Workers' Mounted Regiment"
+	division_names_group = SOH_CAV_01
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 1 y = 2 }
+	}
+	support = {
+        recon = { x = 0 y = 0 }
+	}
+}
+
+division_template = {
+	name = "Flying Column"			
+	division_names_group = SOH_MOT_01
+
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+	}
+}
+
+division_template = {
+	name = "People's Militia"
+	division_names_group = SOH_GAR_01
+	
+	regiments = {
+		militia = { x = 0 y = 0 }
+		militia = { x = 0 y = 1 }
+		militia = { x = 0 y = 2 }
+		militia = { x = 1 y = 0 }
+		militia = { x = 1 y = 1 }
+		militia = { x = 1 y = 2 }
+	}
+	support = {
+        marching_band = { x = 0 y = 0 }
+	}
+	priority = 0
+}
+
+division_template = {
+	name = "Mounted People's Militia"
+	division_names_group = SOH_YEO_01
+
+	regiments = {
+		yeomanry = { x = 0 y = 0 }
+		yeomanry = { x = 0 y = 1 }
+		yeomanry = { x = 0 y = 2 }
+		yeomanry = { x = 1 y = 0 }
+		yeomanry = { x = 1 y = 1 }
+		yeomanry = { x = 1 y = 2 }
+	}
+	priority = 0
+}
+
+
+
+units = {
+	division= {	
+		name = "Hull Dockworkers’ Regiment"
+		location = 1149
+		division_template = "General Workers' Regiment"
+		start_experience_factor = 0.2
+		force_equipment_variants = { infantry_equipment_1 = { owner = "ENG" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "ENG" } }
+	}
+	division= {	
+		name = "1st Hull Seamen’s Militia"
+		location = 1148
+		division_template = "People's Militia"
+		start_experience_factor = 0.0
+		start_equipment_factor = 0.95
+		force_equipment_variants = { infantry_equipment_0 = { owner = "CIV" } }
+	}
+	division= {	
+		name = "2nd Hull Seamen’s Militia"
+		location = 1148
+		division_template = "People's Militia"
+		start_experience_factor = 0.0
+		start_equipment_factor = 0.90
+		force_equipment_variants = { infantry_equipment_0 = { owner = "CIV" } }
+	}
+	division= {	
+		name = "I Hull General Workers’ Union"
+		location = 1149
+		division_template = "People's Militia"
+		start_experience_factor = 0.0
+		start_equipment_factor = 0.95
+		force_equipment_variants = { infantry_equipment_0 = { owner = "CIV" } }
+	}
+	division= {	
+		name = "II Hull General Workers’ Union"
+		location = 1154
+		division_template = "People's Militia"
+		start_experience_factor = 0.0
+		start_equipment_factor = 0.85
+		force_equipment_variants = { infantry_equipment_0 = { owner = "CIV" } }
+	}
+	division= {	
+		name = "III Hull General Workers’ Union"
+		location = 1154
+		division_template = "People's Militia"
+		start_experience_factor = 0.0
+		start_equipment_factor = 0.95
+		force_equipment_variants = { infantry_equipment_0 = { owner = "CIV" } }
+	}
+	division= {	
+		name = "Hull Transport Workers’ Brigade"
+		location = 1149
+		division_template = "Flying Column"
+		start_experience_factor = 0.0
+		force_equipment_variants = { motorized_equipment_1 = { owner = "CIV" } }
+		force_equipment_variants = { infantry_equipment_0 = { owner = "CIV" } }
+	}
+	division= {	
+		name = "Grimsby Mercantile Militia"
+		location = 1089
+		division_template = "People's Militia"
+		start_experience_factor = 0.0
+		start_equipment_factor = 0.90
+		force_equipment_variants = { infantry_equipment_0 = { owner = "CIV" } }
+	}
+	division= {	
+		name = "Grimsby Dockers’ and Fishpackers’ Brigade"
+		location = 1089
+		division_template = "People's Militia"
+		start_experience_factor = 0.0
+		force_equipment_variants = { infantry_equipment_0 = { owner = "CIV" } }
+	}
+	division= {	
+		name = "Grimsby General Workers’ Soviet"
+		location = 1069
+		division_template = "People's Militia"
+		start_experience_factor = 0.0
+		force_equipment_variants = { infantry_equipment_0 = { owner = "CIV" } }
+	}
+	division= {	
+		name = "Lincolnshire Socialist Volunteers"
+		location = 1073
+		division_template = "Mounted People's Militia"
+		start_experience_factor = 0.0
+		force_equipment_variants = { infantry_equipment_0 = { owner = "CIV" } }
+	}
+
+	
+	################
+	##### NAVY #####
+	################
+	
+#	navy = {				
+#		name = "Hull Fleet"			
+#		base = 1148
+#		location = 1148
+#		ship = { name = "Southampton" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = ENG } } }
+#		ship = { name = "Echo" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG version_name = "E/F/G/H Class" } } }
+#		ship = { name = "Garry" definition = trawler equipment = { trawler_2 = { amount = 1 owner = ENG } } }	
+#		ship = { name = "Liffey" definition = trawler equipment = { trawler_2 = { amount = 1 owner = ENG } } }
+#		ship = { name = "Buckingham" definition = trawler equipment = { trawler_2 = { amount = 1 owner = ENG } } }
+#		ship = { name = "Glen Kidson" definition = trawler equipment = { trawler_2 = { amount = 1 owner = ENG } } }	
+#	}
+#	
+#	navy = {				
+#		name = "Grimsby Fleet"			
+#		base = 1089
+#		location = 1089	
+#		ship = { name = "Glasgow" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = ENG } } }	
+#		ship = { name = "Sandringham" definition = trawler equipment = { trawler_2 = { amount = 1 owner = ENG } } }	
+#		ship = { name = "Malayan" definition = trawler equipment = { trawler_2 = { amount = 1 owner = ENG } } }	
+#		ship = { name = "Lune" definition = trawler equipment = { trawler_1 = { amount = 1 owner = ENG } } }
+#		ship = { name = "Fane" definition = trawler equipment = { trawler_1 = { amount = 1 owner = ENG } } }
+#	}
+}	
+
+
+	#####################
+	##### AIR FORCE #####
+	#####################
+	
+air_wings = {
+
+	72 = { 
+		fighter_equipment_0 = {
+			owner = "SOH" 
+			amount = 8
+		}
+	}
+}
+
+	#########################
+	## STARTING PRODUCTION ##
+	#########################
+instant_effect = {	
+
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "SOH"
+		}
+		requested_factories = 2
+		progress = 0.2
+		efficiency = 60
+	}	
+
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = "SOH"
+		}
+		requested_factories = 1
+		progress = 0.1
+		efficiency = 65
+	}
+	
+	add_equipment_to_stockpile = {
+		type = infantry_equipment_0
+		amount = 150
+		producer = CIV
+	}
+	
+	add_equipment_to_stockpile = {
+		type = infantry_equipment_0
+		amount = 240
+		producer = SOV
+	}
+	
+	add_equipment_to_stockpile = {
+		type = infantry_equipment_1
+		amount = 160
+		producer = ENG
+	}
+	
+	add_equipment_to_stockpile = {
+		type = motorized_equipment_1
+		amount = 30
+		producer = CIV
+	}
+	
+	add_equipment_to_stockpile = {
+		type = mortar_equipment_1
+		amount = 4
+		producer = ENG
+	}
+	
+	add_equipment_to_stockpile = {
+		type = MG_equipment_1
+		amount = 8
+		producer = SOV
+	}
+	
+	add_equipment_to_stockpile = {
+		type = mechanized_equipment_1
+		amount = 3
+		producer = ENG
+	}
+	
+	add_equipment_to_stockpile = {
+		type = artillery_equipment_1
+		amount = 4
+		producer = ENG
+	}
+}
+	#####################

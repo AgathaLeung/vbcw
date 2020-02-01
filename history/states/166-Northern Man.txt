@@ -1,0 +1,36 @@
+
+state={
+	id=166
+	name="STATE_166"
+	resources={
+		steel=4.000
+		chromium=8.000
+	}
+
+	history={
+		owner = MNX
+		add_core_of = MNX
+		add_claim_by = ROY
+		add_claim_by = YRK
+		victory_points = {
+			2147 10 
+		}
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+			dockyard = 1
+			2147 = {
+				naval_base = 1
+
+			}
+
+		}
+
+	}
+	provinces={
+		1318 1324 1342 2145 2147 
+	}
+	manpower=35000
+	buildings_max_level_factor=1.000
+	state_category=town
+}

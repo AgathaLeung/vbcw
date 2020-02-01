@@ -1,0 +1,33 @@
+state={
+	id=79
+	name="STATE_79"
+	provinces={
+		1251 1262 1272 1287 1293 1300 1322 1326 1334 1340 1370 1380 
+	}
+	manpower=150000
+	
+	resources = {
+		oil = 16
+		steel = 16
+		tungsten = 4
+	}
+	
+	state_category = town
+	
+	history={
+		add_extra_state_shared_building_slots = 2
+		owner = YRK
+		add_core_of = YRK
+		add_claim_by = ROY
+		add_claim_by = ANG
+		victory_points = { 1272 10 }
+		buildings = {
+			infrastructure = 4
+			arms_factory = 2
+			dockyard = 2
+			1272 = {
+				naval_base = 4
+			}
+		}
+	}
+}

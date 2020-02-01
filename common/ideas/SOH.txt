@@ -1,0 +1,34 @@
+ideas = {
+	country = {
+		SOH_fishermens_friends = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_coastal_navy
+			
+			equipment_bonus = {
+
+				trawler = {
+					build_cost_ic = -0.25 
+					instant = yes
+				}
+				corvette = {
+					build_cost_ic = -0.25 
+					instant = yes
+				}
+				sloop = {
+					build_cost_ic = -0.25 
+					instant = yes
+				}
+			}
+		}
+	}
+}

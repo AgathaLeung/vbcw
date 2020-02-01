@@ -1,0 +1,34 @@
+
+state={
+	id=66
+	name="STATE_66"
+	resources={
+		oil=16.000
+		chromium=8.000
+		tungsten=4.000
+		steel=4.000
+	}
+
+	history={
+		victory_points = { 2139 5 }
+		owner = WAL
+		add_core_of = WAL
+		add_claim_by = ROY
+		add_claim_by = YRK
+		buildings = {
+			air_base = 1
+			infrastructure = 4
+			dockyard = 1
+			2139 = {
+				naval_base = 4
+			}
+		}
+	}
+
+	provinces={
+		872 892 900 901 921 947 2138 2139 
+	}
+	manpower=750000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

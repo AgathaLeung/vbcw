@@ -1,0 +1,184 @@
+# equipments = {
+
+	# gunboat = {
+		# is_archetype = yes
+		# is_buildable = no
+		# sprite = gunboat
+		# type = screen_ship
+		
+		# interface_category = interface_category_screen_ships
+		
+		# upgrades = {
+			# ship_gun_upgrade
+			# destroyer_engine_upgrade
+			# ship_reliability_upgrade
+			# ship_anti_air_upgrade
+		# }
+
+		# ap_attack = 0.5
+		# attack = 0.5
+		# fire_range = 8
+		# torpedo_attack = 0
+		# sub_attack = 1
+		
+		# anti_air_attack = 0.2
+		
+		# armor_value = 0
+		# evasion = 80
+		
+		# surface_detection = 10
+		# sub_detection = 15
+		# surface_visibility = 2
+		# naval_speed = 30
+		# reliability = 0.60
+		
+		# naval_range = 600
+		
+		# max_strength = 1		
+		
+		# port_capacity_usage = 0.1
+		
+		# build_cost_ic = 100
+		# resources = {
+			# steel = 1
+		# }
+		
+		# manpower = 20
+	# }
+
+	# gunboat_1 = {
+		# year = 1922
+
+		# archetype = gunboat
+		# priority = 20
+		# type = { 
+			# screen_ship
+			# anti_air
+		# }
+
+	# }
+	
+	# gunboat_2 = {
+		# year = 1936
+
+		# archetype = gunboat
+		# parent = gunboat_1
+		# priority = 20
+		
+		# ap_attack = 0.5
+		# attack = 1
+		# fire_range = 10
+		# torpedo_attack = 0
+		# sub_attack = 2
+		
+		# anti_air_attack = 0.4
+		
+		# armor_value = 0
+		# evasion = 85
+		
+		# surface_detection = 15
+		# sub_detection = 30
+		# surface_visibility = 2
+		# naval_speed = 36
+		# reliability = 0.80
+
+		# naval_range = 800
+		
+		# max_strength = 4
+		
+		# port_capacity_usage = 0.1
+		
+		# type = { 
+			# screen_ship
+			# anti_air
+		# }
+
+		# build_cost_ic = 100
+		# resources = {
+			# steel = 1
+		# }		
+		# manpower = 25
+	# }
+	
+	# gunboat_3 = {
+		# year = 1940
+
+		# archetype = gunboat
+		# parent = gunboat_2
+		# priority = 20
+		
+		# ap_attack = 0.8
+		# attack = 1.5
+		# fire_range = 12
+		# torpedo_attack = 0
+		# sub_attack = 4
+		
+		# anti_air_attack = 0.7
+		
+		# armor_value = 0
+		# evasion = 90
+		
+		# surface_detection = 20
+		# sub_detection = 35
+		# surface_visibility = 2
+		# naval_speed = 38
+		# reliability = 0.85
+
+		# naval_range = 1000
+		
+		# max_strength = 6
+		
+		# port_capacity_usage = 0.1
+		
+		# type = { 
+			# screen_ship
+			# anti_air
+		# }
+		# build_cost_ic = 125
+		# resources = {
+			# steel = 1
+		# }
+		# manpower = 30
+	# }
+	
+	# gunboat_4 = {
+		# year = 1944
+
+		# archetype = gunboat
+		# parent = gunboat_3
+		# priority = 20
+		
+		# ap_attack = 1.2
+		# attack = 2
+		# fire_range = 14
+		# torpedo_attack = 0
+		# sub_attack = 6
+		
+		# anti_air_attack = 1
+		
+		# armor_value = 0
+		# evasion = 95
+		
+		# surface_detection = 25
+		# sub_detection = 40
+		# surface_visibility = 2
+		# naval_speed = 40
+		# reliability = 0.90
+
+		# naval_range = 1200
+		
+		# max_strength = 8
+		
+		# port_capacity_usage = 0.1
+		
+		# type = { 
+			# screen_ship
+			# anti_air
+		# }
+		# build_cost_ic = 150
+		# resources = {
+			# steel = 1
+		# }
+		# manpower = 35
+	# }
+# }

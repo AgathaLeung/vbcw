@@ -1,0 +1,1009 @@
+﻿division_template = {
+	name = "Infantry Regiment"			
+	division_names_group = ROY_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+        infantry = { x = 0 y = 3 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+        infantry = { x = 1 y = 3 }
+	}
+	support = {
+       	engineer = { x = 0 y = 0 }
+       	mortar = { x = 0 y = 1 }
+       	mechanised_recon = { x = 0 y = 2 }
+	}
+}
+
+division_template = {
+	name = "Motor Regiment"			
+	division_names_group = ROY_MOT_01
+
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		motorized = { x = 0 y = 3 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+		motorized = { x = 1 y = 3 }
+	}
+	support = {
+       	engineer = { x = 0 y = 0 }
+       	mortar = { x = 0 y = 1 }
+       	mechanised_recon = { x = 0 y = 2 }
+	}
+}
+
+division_template = {
+	name = "Field Regiment Royal Artillery"			
+	division_names_group = ROY_ART_01
+
+	regiments = {
+		artillery_brigade = { x = 0 y = 0 }
+		artillery_brigade = { x = 0 y = 1 }
+		artillery_brigade = { x = 0 y = 2 }
+		artillery_brigade = { x = 1 y = 0 }
+		artillery_brigade = { x = 1 y = 1 }
+		artillery_brigade = { x = 1 y = 2 }
+	}
+}
+
+division_template = {
+	name = "Cavalry Regiment"
+	division_names_group = ROY_CAV_01
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 1 y = 2 }
+	}
+	support = {
+        machinegun = { x = 0 y = 0 }
+        signal_company = { x = 0 y = 1 }
+	}
+}
+
+division_template = {
+	name = "Armoured Car Regiment"
+	division_names_group = ROY_CAV_01
+	regiments = {
+		armoured_car = { x = 0 y = 0 }
+		armoured_car = { x = 0 y = 1 }
+		armoured_car = { x = 0 y = 2 }
+		armoured_car = { x = 1 y = 0 }
+		armoured_car = { x = 1 y = 1 }
+		armoured_car = { x = 1 y = 2 }
+	}
+	support = {
+        signal_company = { x = 0 y = 0 }
+        maintenance_company = { x = 0 y = 1 }
+	}
+}
+
+division_template = {
+	name = "Light Armoured Regiment"
+	division_names_group = ROY_ARM_01
+	regiments = {
+		light_armor = { x = 0 y = 0 }
+		light_armor = { x = 0 y = 1 }
+		medium_armor = { x = 0 y = 2 }
+		light_armor = { x = 1 y = 0 }
+		light_armor = { x = 1 y = 1 }
+		medium_armor = { x = 1 y = 2 }
+		mechanized = { x = 2 y = 0 }
+		mechanized = { x = 2 y = 1 }
+	}
+	support = {
+       	engineer = { x = 0 y = 0 }
+       	artillery = { x = 0 y = 1 }
+	}
+}
+
+division_template = {
+	name = "Heavy Armoured Regiment"
+	division_names_group = ROY_ARM_01
+	regiments = {
+		medium_armor = { x = 0 y = 0 }
+		medium_armor = { x = 0 y = 1 }
+		medium_armor = { x = 0 y = 2 }
+		medium_armor = { x = 1 y = 0 }
+		medium_armor = { x = 1 y = 1 }
+		medium_armor = { x = 1 y = 2 }
+		mechanized = { x = 2 y = 0 }
+		mechanized = { x = 2 y = 1 }
+	}
+	support = {
+       	engineer = { x = 0 y = 0 }
+       	artillery = { x = 0 y = 1 }
+	}
+}
+
+division_template = {
+	name = "Royal Tank Regiment"
+	division_names_group = ROY_TAN_01
+	regiments = {
+		heavy_armor = { x = 0 y = 0 }
+		heavy_armor = { x = 0 y = 1 }
+		heavy_armor = { x = 0 y = 2 }
+		heavy_armor = { x = 1 y = 0 }
+		heavy_armor = { x = 1 y = 1 }
+		heavy_armor = { x = 1 y = 2 }
+	}
+}
+
+division_template = {
+	name = "Local Defence Volunteers"
+	division_names_group = ROY_GAR_01
+	
+	regiments = {
+		militia = { x = 0 y = 0 }
+		militia = { x = 0 y = 1 }
+		militia = { x = 0 y = 2 }
+		militia = { x = 1 y = 0 }
+		militia = { x = 1 y = 1 }
+		militia = { x = 1 y = 2 }
+	}
+	priority = 0
+}
+
+division_template = {
+	name = "Yeomanry Regiment"
+	division_names_group = ROY_YEO_01
+
+	regiments = {
+		yeomanry = { x = 0 y = 0 }
+		yeomanry = { x = 0 y = 1 }
+		yeomanry = { x = 0 y = 2 }
+		yeomanry = { x = 1 y = 0 }
+		yeomanry = { x = 1 y = 1 }
+		yeomanry = { x = 1 y = 2 }
+	}
+	priority = 0
+}
+
+
+units = {
+
+###CAVALRY/ARMOURED CARS###
+	division= {	
+		name = "The Life Guards"
+		location = 315
+ 		division_template = "Cavalry Regiment"
+		start_experience_factor = 0.3
+	}	
+	division= {	
+		name = "1st King's Dragoon Guards"
+		location = 511
+ 		division_template = "Cavalry Regiment"
+		start_experience_factor = 0.2
+	}		
+	division= {	
+		name = "3rd/6th Dragoon Guards"
+		location = 1124
+ 		division_template = "Cavalry Regiment"
+		start_experience_factor = 0.2
+	}		
+	division= {	
+		name = "4th/7th Dragoon Guards"
+		location = 706
+ 		division_template = "Armoured Car Regiment"
+		start_experience_factor = 0.1
+	}		
+	division= {	
+		name = "1st Royal Dragoons"
+		location = 558
+ 		division_template = "Cavalry Regiment"
+		start_experience_factor = 0.2
+	}	
+	division= {	
+		name = "3rd King's Own Hussars"
+		location = 377
+ 		division_template = "Armoured Car Regiment"
+		start_experience_factor = 0.1
+	}	
+	division= {	
+		name = "8th King's Royal Irish Hussars"
+		location = 885
+ 		division_template = "Cavalry Regiment"
+		start_experience_factor = 0.2
+	}	
+	division= {	
+		name = "10th Royal Hussars (Prince of Wales' Own)"
+		location = 100
+ 		division_template = "Armoured Car Regiment"
+		start_experience_factor = 0.1
+	}	
+	division= {	
+		name = "12th (Prince of Wales' Royal) Lancers"
+		location = 384
+ 		division_template = "Cavalry Regiment"
+		start_experience_factor = 0.2
+	}	
+	division= {	
+		name = "15th/19th The King’s Royal Hussars"
+		location = 70
+ 		division_template = "Cavalry Regiment"
+		start_experience_factor = 0.1
+	}	
+	division= {	
+		name = "14th/20th The King’s Royal Hussars"
+		location = 349
+ 		division_template = "Cavalry Regiment"
+		start_experience_factor = 0.1
+	}
+	division= {	
+		name = "17th/21st Lancers"
+		location = 2091
+ 		division_template = "Cavalry Regiment"
+		start_experience_factor = 0.1
+	}
+###INFANTRY###
+	division= {	
+		name = "Queen's (Royal West Surrey) Regiment"
+		location = 2395
+		division_template = "Infantry Regiment"
+		start_experience_factor = 0.2
+	}
+	division= {	
+		name = "Royal Warwickshire Regiment"
+		location = 2400
+		division_template = "Infantry Regiment"
+		start_experience_factor = 0.2
+	}
+	division= {	
+		name = "The Royal Fusiliers (City of London Regiment)"
+		location = 316
+		division_template = "Infantry Regiment"
+		start_experience_factor = 0.2
+	}
+	division= {	
+		name = "The Devonshire Regiment"
+		location = 86
+		division_template = "Infantry Regiment"
+		start_experience_factor = 0.2
+	}
+	division= {	
+		name = "The Bedfordshire and Hertfordshire Regiment"
+		location = 508
+		division_template = "Infantry Regiment"
+		start_experience_factor = 0.2
+	}
+	division= {	
+		name = "The Leicestershire Regiment"
+		location = 575
+		division_template = "Infantry Regiment"
+		start_experience_factor = 0.2
+	}
+	division= {	
+		name = "The Lancashire Fusiliers"
+		location = 1124
+		division_template = "Infantry Regiment"
+		start_experience_factor = 0.2
+	}
+	division= {	
+		name = "The Cheshire Regiment"
+		location = 867
+		division_template = "Infantry Regiment"
+		start_experience_factor = 0.2
+	}
+	division= {	
+		name = "The South Wales Borderers"
+		location = 2416
+		division_template = "Infantry Regiment"
+		start_experience_factor = 0.2
+	}
+	division= {	
+		name = "Royal Inniskilling Fusiliers"
+		location = 1469
+		division_template = "Infantry Regiment"
+		start_experience_factor = 0.2
+	}
+	division= {	
+		name = "The Worcestershire Regiment"
+		location = 468
+		division_template = "Infantry Regiment"
+		start_experience_factor = 0.2
+	}
+	division= {	
+		name = "The East Lancashire Regiment"
+		location = 1220
+		division_template = "Infantry Regiment"
+		start_experience_factor = 0.2
+	}
+	division= {	
+		name = "The South Staffordshire Regiment"
+		location = 724
+		division_template = "Infantry Regiment"
+		start_experience_factor = 0.2
+	}
+	division= {	
+		name = "The Prince of Wales’s Volunteers (South Lancashire Regiment)"
+		location = 1048
+		division_template = "Infantry Regiment"
+		start_experience_factor = 0.2
+	}
+	division= {	
+		name = "Oxfordshire and Buckinghamshire Light Infantry"
+		location = 377
+		division_template = "Infantry Regiment"
+		start_experience_factor = 0.2
+	}	
+	division= {	
+		name = "The Essex Regiment"
+		location = 2404
+		division_template = "Infantry Regiment"
+		start_experience_factor = 0.2
+	}
+	division= {	
+		name = "The Loyal Regiment (North Lancashire)"
+		location = 2409
+		division_template = "Infantry Regiment"
+		start_experience_factor = 0.2
+	}	
+	division= {	
+		name = "The Northhamptonshire Regiment"
+		location = 558
+		division_template = "Infantry Regiment"
+		start_experience_factor = 0.2
+	}
+	division= {	
+		name = "The King's Shropshire Light Infantry"
+		location = 567
+		division_template = "Infantry Regiment"
+		start_experience_factor = 0.2
+	}
+	division= {	
+		name = "The Middlesex Regiment (Duke of Cambridge's Own)"
+		location = 2395
+		division_template = "Infantry Regiment"
+		start_experience_factor = 0.2
+	}
+	division= {	
+		name = "The Manchester Regiment"
+		location = 992
+		division_template = "Infantry Regiment"
+		start_experience_factor = 0.2
+	}
+	division= {	
+		name = "The North Staffordshire Regiment (Prince of Wales')"
+		location = 1240
+		division_template = "Infantry Regiment"
+		start_experience_factor = 0.2
+	}
+	division= {	
+		name = "The Royal Air Force Rifles"
+		location = 1242
+		division_template = "Infantry Regiment"
+		start_experience_factor = 0.1
+	}
+	division= {	
+		name = "The Royal Naval Infantry Brigade"
+		location = 83
+		division_template = "Infantry Regiment"
+		start_experience_factor = 0.1
+	}
+###MILITIA###
+	division= {	
+		name = "1st LDV 'Oxford and Cambridge'"
+		location = 448
+		division_template = "Local Defence Volunteers"
+		start_experience_factor = 0.0
+	}
+	division= {	
+		name = "2nd LDV Warwickshire 'The Bard's Own'"
+		location = 518
+		division_template = "Local Defence Volunteers"
+		start_experience_factor = 0.0
+	}
+	division= {	
+		name = "3rd LDV 'Bucks Volunteers'"
+		location = 2397
+		division_template = "Local Defence Volunteers"
+		start_experience_factor = 0.0
+	}
+	division= {	
+		name = "4th LDV 'Evesham Irregulars'"
+		location = 468
+		division_template = "Local Defence Volunteers"
+		start_experience_factor = 0.0
+	}
+	division= {	
+		name = "14th LDV 'City of Bristol'"
+		location = 289
+		division_template = "Local Defence Volunteers"
+		start_experience_factor = 0.0
+	}
+	division= {	
+		name = "23rd LDV 'Royal South Gloucesters'"
+		location = 384
+		division_template = "Local Defence Volunteers"
+		start_experience_factor = 0.0
+	}
+	division= {	
+		name = "27th LDV 'Middlesex'"
+		location = 320
+		division_template = "Local Defence Volunteers"
+		start_experience_factor = 0.0
+	}
+	division= {	
+		name = "31st LDV 'Royal Brecon'"
+		location = 2416
+		division_template = "Local Defence Volunteers"
+		start_experience_factor = 0.0
+	}
+	division= {	
+		name = "33rd LDV 'Royal Wiltshire'"
+		location = 359
+		division_template = "Local Defence Volunteers"
+		start_experience_factor = 0.0
+	}
+	
+	division= {	
+		name = "44th LDV 'Glamorgan'"
+		location = 376
+		division_template = "Local Defence Volunteers"
+		start_experience_factor = 0.0
+	}
+	division= {	
+		name = "52nd LDV 'Herefordshire'"
+		location = 475
+		division_template = "Local Defence Volunteers"
+		start_experience_factor = 0.0
+	}
+	division= {	
+		name = "54th LDV 'Shropshire'"
+		location = 623
+		division_template = "Local Defence Volunteers"
+		start_experience_factor = 0.0
+	}
+	division= {	
+		name = "57th LDV 'Monmouthshire'"
+		location = 398
+		division_template = "Local Defence Volunteers"
+		start_experience_factor = 0.0
+	}
+	division= {	
+		name = "67th LDV 'Worcester'"
+		location = 398
+		division_template = "Local Defence Volunteers"
+		start_experience_factor = 0.0
+	}
+	division= {	
+		name = "15th Middlesex 'Docks and Customs'"
+		location = 311
+		division_template = "Local Defence Volunteers"
+		start_experience_factor = 0.0
+	}
+	division= {	
+		name = "Eton Cadets"
+		location = 707
+		division_template = "Local Defence Volunteers"
+		start_experience_factor = 0.0
+	}
+	division= {	
+		name = "Cambridge Militia"
+		location = 483
+		division_template = "Local Defence Volunteers"
+		start_experience_factor = 0.0
+	}
+	division= {	
+		name = "Hereford Constabulary"
+		location = 475
+		division_template = "Local Defence Volunteers"
+		start_experience_factor = 0.0
+	}
+	division= {	
+		name = "Devon Volunteers"
+		location = 101
+		division_template = "Yeomanry Regiment"
+		start_experience_factor = 0.0
+	}	
+	division= {	
+		name = "Devon Irregulars"
+		location = 77
+		division_template = "Local Defence Volunteers"
+		start_experience_factor = 0.0
+	}	
+	division= {	
+		name = "Dorset Volunteers"
+		location = 118
+		division_template = "Local Defence Volunteers"
+		start_experience_factor = 0.0
+	}		
+	division= {	
+		name = "Dorset Irregulars"
+		location = 107
+		division_template = "Yeomanry Regiment"
+		start_experience_factor = 0.0
+	}	
+	division= {	
+		name = "Isle of Wight Irregulars"
+		location = 102
+		division_template = "Local Defence Volunteers"
+		start_experience_factor = 0.0
+	}	
+	division= {	
+		name = "Gloucestershire Volunteers"
+		location = 256
+		division_template = "Yeomanry Regiment"
+		start_experience_factor = 0.0
+	}	
+	division= {	
+		name = "Gloucestershire Irregulars"
+		location = 256
+		division_template = "Local Defence Volunteers"
+		start_experience_factor = 0.0
+	}	
+	division= {	
+		name = "Oxfordshire Volunteers"
+		location = 361
+		division_template = "Local Defence Volunteers"
+		start_experience_factor = 0.0
+	}		
+	division= {	
+		name = "Oxfordshire Irregulars"
+		location = 350
+		division_template = "Yeomanry Regiment"
+		start_experience_factor = 0.0
+	}	
+	division= {	
+		name = "South Warwickshire Volunteers"
+		location = 533
+		division_template = "Local Defence Volunteers"
+		start_experience_factor = 0.0
+	}
+	division= {	
+		name = "South Warwickshire Irregulars"
+		location = 2407
+		division_template = "Local Defence Volunteers"
+		start_experience_factor = 0.0
+	}	
+	division= {	
+		name = "Worcestershire Volunteers"
+		location = 589
+		division_template = "Local Defence Volunteers"
+		start_experience_factor = 0.0
+	}	
+	division= {	
+		name = "Worcestershire Irregulars"
+		location = 568
+		division_template = "Local Defence Volunteers"
+		start_experience_factor = 0.0
+	}
+	division= {	
+		name = "Buckinghamshire Volunteers"
+		location = 2396
+		division_template = "Local Defence Volunteers"
+		start_experience_factor = 0.0		
+	}
+	division= {	
+		name = "Buckinghamshire Irregulars"
+		location = 2397
+		division_template = "Local Defence Volunteers"
+		start_experience_factor = 0.0		
+	}	
+	division= {	
+		name = "Bedfordshire Volunteers"
+		location = 483
+		division_template = "Yeomanry Regiment"
+		start_experience_factor = 0.0
+	}	
+	division= {	
+		name = "Bedfordshire Irregulars"
+		location = 2401
+		division_template = "Local Defence Volunteers"
+		start_experience_factor = 0.0
+	}	
+	division= {	
+		name = "Huntingdonshire Volunteers"
+		location = 566
+		division_template = "Local Defence Volunteers"
+		start_experience_factor = 0.0
+	}	
+	division= {	
+		name = "Huntingdonshire Irregulars"
+		location = 643
+		division_template = "Local Defence Volunteers"
+		start_experience_factor = 0.0
+	}	
+	division= {	
+		name = "Northamptonshire Volunteers"
+		location = 575
+		division_template = "Yeomanry Regiment"
+		start_experience_factor = 0.0
+	}	
+	division= {	
+		name = "Northamptonshire Irregulars"
+		location = 600
+		division_template = "Yeomanry Regiment"
+		start_experience_factor = 0.0
+	}	
+	division= {	
+		name = "Rutland Irregulars"
+		location = 701
+		division_template = "Local Defence Volunteers"
+		start_experience_factor = 0.0
+	}	
+	division= {	
+		name = "Herefordshire Volunteers"
+		location = 417
+		division_template = "Yeomanry Regiment"
+		start_experience_factor = 0.0
+	}	
+	division= {	
+		name = "Herefordshire Irregulars"
+		location = 398
+		division_template = "Local Defence Volunteers"
+		start_experience_factor = 0.0
+	}	
+	division= {	
+		name = "Shropshire Volunteers"
+		location = 723
+		division_template = "Local Defence Volunteers"
+		start_experience_factor = 0.0
+	}	
+	division= {	
+		name = "Shropshire Irregulars"
+		location = 664
+		division_template = "Yeomanry Regiment"
+		start_experience_factor = 0.0
+	}	
+	division= {	
+		name = "Cheshire Volunteers"
+		location = 967
+		division_template = "Local Defence Volunteers"
+		start_experience_factor = 0.0
+	}	
+	division= {	
+		name = "Cheshire Irregulars"
+		location = 898
+		division_template = "Yeomanry Regiment"
+		start_experience_factor = 0.0
+	}	
+	division= {	
+		name = "Lancashire Volunteers"
+		location = 1060
+		division_template = "Local Defence Volunteers"
+		start_experience_factor = 0.0
+	}	
+	division= {	
+		name = "Lancashire Irregulars"
+		location = 1131
+		division_template = "Yeomanry Regiment"
+		start_experience_factor = 0.0
+	}	
+	division= {	
+		name = "Carmarthenshire Volunteers"
+		location = 375
+		division_template = "Local Defence Volunteers"
+		start_experience_factor = 0.0
+	}	
+	division= {	
+		name = "Carmarthenshire Irregulars"
+		location = 386
+		division_template = "Yeomanry Regiment"
+		start_experience_factor = 0.0
+	}		
+	division= {	
+		name = "Brecknockshire Irregulars"
+		location = 388
+		division_template = "Local Defence Volunteers"
+		start_experience_factor = 0.0
+	}	
+	division= {	
+		name = "North Yorkshire Volunteers"
+		location = 1246
+		division_template = "Local Defence Volunteers"
+		start_experience_factor = 0.0
+	}	
+	division= {	
+		name = "North Yorkshire Irregulars"
+		location = 1230
+		division_template = "Yeomanry Regiment"
+		start_experience_factor = 0.0
+	}	
+###ARTILLERY###	
+	division= {	
+		name = "16th Royal Artillery (Harewood)"
+		location = 533 
+		division_template = "Field Regiment Royal Artillery"
+		start_experience_factor = 0.0
+	}	
+	division= {	
+		name = "2nd Royal Regiment Artillery (Royal Victorian Order)"
+		location = 1116
+		division_template = "Field Regiment Royal Artillery"
+		start_experience_factor = 0.0
+	}	
+	division= {	
+		name = "5th Artillery Royal Regiment ‘Order of St John’"
+		location = 84
+		division_template = "Field Regiment Royal Artillery"
+		start_experience_factor = 0.0
+	}	
+###TANKS###
+	division= {	
+		name = "33rd Armoured Regiment"
+		location = 551
+		division_template = "Royal Tank Regiment"
+		start_experience_factor = 0.0
+	}	
+	division= {	
+		name = "51st Heavy Armour Regiment"
+		location = 621
+		division_template = "Heavy Armoured Regiment"
+		start_experience_factor = 0.0
+	}	
+	division= {	
+		name = "28th Royal Light Armour"
+		location = 131
+		division_template = "Light Armoured Regiment"
+		start_experience_factor = 0.0
+	}
+	division= {	
+		name = "16th Armoured Regiment"
+		location = 701
+		division_template = "Royal Tank Regiment"
+		start_experience_factor = 0.0
+	}		
+	division= {	
+		name = "5th Royal Heavy Armour Battalion"
+		location = 1278
+		division_template = "Heavy Armoured Regiment"
+		start_experience_factor = 0.0
+	}	
+	division= {	
+		name = "20th Motor Battalion"
+		location = 1241
+		division_template = "Motor Regiment"
+		start_experience_factor = 0.0
+	}	
+	division= {	
+		name = "9th Motor Battalion ‘Wurttemburg Cross’"
+		location = 1264
+		division_template = "Motor Regiment"
+		start_experience_factor = 0.0
+	}	
+	division= {	
+		name = "1st Armoured Car Regiment"
+		location = 1321
+		division_template = "Armoured Car Regiment"
+		start_experience_factor = 0.0
+	}	
+	
+
+	################
+	##### NAVY #####
+	################
+	
+#	navy = {				
+#		name = "Home Fleet"			
+#		base = 2091
+#		location = 2091 # Scapa Flow
+#		ship = { name = "HMS Furious" definition = carrier equipment = { carrier_1 = { amount = 1 owner = ENG } } 
+#			air_wings = {
+#				cv_fighter_equipment_0 =  { owner = "ROY" amount = 24 }
+#				cv_nav_bomber_equipment_1 =  { owner = "ROY" amount = 12 }
+#			}
+#		}	
+#		ship = { name = "HMS Ark Royal" definition = carrier equipment = { carrier_2 = { amount = 1 owner = ENG } } 
+#			air_wings = {
+#				cv_fighter_equipment_0 =  { owner = "ROY" amount = 30 }
+#				cv_nav_bomber_equipment_1 =  { owner = "ROY" amount = 18 }
+#			}
+#		}			
+#		ship = { name = "HMS Royal Oak" definition = battleship equipment = { battleship_1 = { amount = 1 owner = ENG } } }				
+#		ship = { name = "HMS Royal Sovereign" definition = battleship equipment = { battleship_1 = { amount = 1 owner = ENG } } }			
+#		ship = { name = "HMS Repulse" definition = battle_cruiser equipment = { battle_cruiser_1 = { amount = 1 owner = ENG  } } }
+#		ship = { name = "HMS Renown" definition = battle_cruiser equipment = { battle_cruiser_1 = { amount = 1 owner = ENG } } }
+#		ship = { name = "HMS Norfolk" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = ENG version_name = "County Class" } } }
+#		ship = { name = "HMS Matabale" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = ENG version_name = "Tribal Class" } } }
+#		ship = { name = "HMS Ashanti" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = ENG version_name = "Tribal Class" } } }
+#		ship = { name = "HMS Mashona" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = ENG version_name = "Tribal Class" } } }
+#		ship = { name = "HMS Somali" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = ENG version_name = "Tribal Class" } } }
+#	}
+#	
+#	navy = {				
+#		name = "Channel Squadron"			
+#		base = 83
+#		location = 83 # Portland
+#		ship = { name = "HMS London" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = ENG version_name = "County Class" } } }
+#		ship = { name = "HMS Exeter" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = ENG version_name = "County Class" } } }
+#		ship = { name = "HMS Curacoa" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = ENG } } }
+#		ship = { name = "HMS Calcutta" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = ENG } } }
+#		ship = { name = "HMS Carlisle" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = ENG } } }
+#		ship = { name = "HMS Amazon" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG version_name = "A/B/C/D Class" } } }
+#		ship = { name = "HMS Arrow" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG version_name = "A/B/C/D Class" } } }
+#	}
+#	
+#	navy = {				
+#		name = "Nore Squadron"			
+#		base = 327
+#		location = 327 # Chatham
+#		ship = { name = "HMS Diomede" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = ENG version_name = "Danae Class" } } }
+#		ship = { name = "HMS Dragon" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = ENG version_name = "Danae Class" } } }
+#		ship = { name = "HMS Calypso" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = ENG } } }
+#		ship = { name = "HMS Effingham" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = ENG version_name = "Emerald Class" } } }
+#		ship = { name = "HMS Beagle" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG version_name = "A/B/C/D Class" } } }
+#		ship = { name = "HMS Boreas" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG version_name = "A/B/C/D Class" } } }
+#		ship = { name = "HMS Basilisk" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG version_name = "A/B/C/D Class" } } }
+#	}
+#	
+#	navy = {				
+#		name = "Wight Squadron"			
+#		base = 103
+#		location = 103 # Wight
+#		ship = { name = "Gleaner" definition = sloop equipment = { sloop_1 = { amount = 1 owner = ENG } } }
+#		ship = { name = "Hebe" definition = trawler equipment = { trawler_1 = { amount = 1 owner = ENG } } }
+#		ship = { name = "Hussar" definition = trawler equipment = { trawler_1 = { amount = 1 owner = ENG } } }
+#		ship = { name = "Boyne" definition = trawler equipment = { trawler_1 = { amount = 1 owner = ENG } } }
+#		ship = { name = "Mastiff" definition = trawler equipment = { trawler_1 = { amount = 1 owner = ENG } } }
+#		ship = { name = "Colne" definition = trawler equipment = { trawler_1 = { amount = 1 owner = ENG } } }
+#		ship = { name = "Gossamer" definition = trawler equipment = { trawler_1 = { amount = 1 owner = ENG } } }
+#	}
+}	
+
+
+	#####################
+	##### AIR FORCE #####
+	#####################
+	
+air_wings = {	
+
+	2 = { 
+		fighter_equipment_0 = {
+			owner = "ROY" 
+			amount = 12
+		}
+	}
+	2 = { 
+		CAS_equipment_1 = {
+			owner = "ROY" 
+			amount = 8
+		}
+	}
+	16 = { 
+		fighter_equipment_1 = {
+			owner = "ROY" 
+			amount = 12
+		}
+	}	
+	16 = { 
+		fighter_equipment_0 = {
+			owner = "ROY" 
+			amount = 12
+		}
+	}	
+	53 = { 
+		fighter_equipment_0 = {
+			owner = "ROY" 
+			amount = 12
+		}
+	}	
+	53 = { 
+		tac_bomber_equipment_0 = {
+			owner = "ROY" 
+			amount = 8
+		}
+	}	
+	119 = { 
+		nav_bomber_equipment_1 = {
+			owner = "ROY" 
+			amount = 8
+		}
+	}
+}
+
+	#########################
+	## STARTING PRODUCTION ##
+	#########################
+instant_effect = {	
+
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "ROY"
+		}
+		requested_factories = 3
+		progress = 0.1
+		efficiency = 60
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = "ROY"
+		}
+		requested_factories = 1
+		progress = 0.25
+		efficiency = 60
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = artillery_equipment_1
+			creator = "ROY"
+		}
+		requested_factories = 1
+		progress = 0.4
+		efficiency = 55
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = motorized_equipment_1
+			creator = "ROY"
+		}
+		requested_factories = 1
+		progress = 0.3
+		efficiency = 50
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = mechanized_equipment_1
+			creator = "ROY"
+		}
+		requested_factories = 1
+		progress = 0.2
+		efficiency = 50
+	}
+	
+	add_equipment_to_stockpile = {
+		type = infantry_equipment_0
+		amount = 1200
+		producer = ENG
+	}
+	
+	add_equipment_to_stockpile = {
+		type = infantry_equipment_1
+		amount = 600
+		producer = ENG
+	}
+	
+	add_equipment_to_stockpile = {
+		type = support_equipment
+		amount = 160
+		producer = ENG
+	}
+	
+	add_equipment_to_stockpile = {
+		type = mortar_equipment_1
+		amount = 48
+		producer = ENG
+	}
+	
+	add_equipment_to_stockpile = {
+		type = MG_equipment_1
+		amount = 30
+		producer = ENG
+	}
+	
+	add_equipment_to_stockpile = {
+		type = mechanized_equipment_1
+		amount = 56
+		producer = ENG
+	}
+	
+	add_equipment_to_stockpile = {
+		type = artillery_equipment_1
+		amount = 36
+		producer = ENG
+	}
+	
+	add_equipment_to_stockpile = {
+		type = motorized_equipment_1
+		amount = 450
+		producer = CIV
+	}
+}
+	#####################

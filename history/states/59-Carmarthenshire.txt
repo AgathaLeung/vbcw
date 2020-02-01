@@ -1,0 +1,32 @@
+state={
+	id=59
+	name="STATE_59"
+	provinces={
+		340 359 375 380 383 386 427 428 433 2415
+	}
+	manpower=200000
+	
+	resources = {
+		steel = 16
+		tungsten = 16
+		chromium = 16
+	}
+	
+	state_category = town
+	
+	history={
+		victory_points = { 2415 10 }
+		owner = ROY
+		add_core_of = ROY
+		add_claim_by = WAL
+		add_claim_by = YRK
+		buildings = {
+			infrastructure = 4
+			air_base = 1
+			industrial_complex = 2
+			359 = {
+				naval_base = 2
+			}
+		}
+	}
+}

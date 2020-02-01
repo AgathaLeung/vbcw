@@ -1,0 +1,27 @@
+state={
+	id=17
+	name="STATE_17"
+	provinces={
+		267 320 334 378 382 399 435 441 482 2395 2396 2397 2398
+	}
+	manpower=400000
+	
+	state_category = town
+	
+	history={
+		victory_points = { 2395 10 }
+		victory_points = { 320 5 }
+		victory_points = { 378 5 }
+		victory_points = { 2397 10 }
+		owner = ROY
+		add_core_of = ROY
+		add_claim_by = YRK
+		add_claim_by = ANG
+		buildings = {
+			infrastructure = 6
+			air_base = 3
+			industrial_complex = 2
+			arms_factory = 1
+		}
+	}
+}

@@ -1,0 +1,444 @@
+spriteTypes = {	
+
+####SOCIALISTS####
+	###MIDLANDS###
+		##MINISTERS##
+
+	spriteType = {
+		name = "GFX_idea_SOM_morrison"
+		texturefile = "gfx/interface/ideas/ministers/SOM/SOM_minister_morrison.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_SOM_cripps"
+		texturefile = "gfx/interface/ideas/ministers/SOM/SOM_minister_cripps.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_SOM_platts_mills"
+		texturefile = "gfx/interface/ideas/ministers/SOM/SOM_minister_platts_mills.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_SOM_mikardo"
+		texturefile = "gfx/interface/ideas/ministers/SOM/SOM_minister_mikardo.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_SOM_greenwood"
+		texturefile = "gfx/interface/ideas/ministers/SOM/SOM_minister_greenwood.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_SOM_philby"
+		texturefile = "gfx/interface/ideas/ministers/SOM/SOM_minister_philby.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_SOM_pritt"
+		texturefile = "gfx/interface/ideas/ministers/SOM/SOM_minister_pritt.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_SOM_isaacs"
+		texturefile = "gfx/interface/ideas/ministers/SOM/SOM_minister_isaacs.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_SOM_orwell"
+		texturefile = "gfx/interface/ideas/ministers/SOM/SOM_minister_orwell.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_SOM_wells"
+		texturefile = "gfx/interface/ideas/ministers/SOM/SOM_minister_wells.dds"
+	}
+	
+		##HIGH COMMAND##
+
+	spriteType = {
+		name = "GFX_idea_SOM_alexander_b"
+		texturefile = "gfx/interface/ideas/ministers/SOM/SOM_minister_alexander_b.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_SOM_wintringham"
+		texturefile = "gfx/interface/ideas/ministers/SOM/SOM_minister_wintringham.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_SOM_benn"
+		texturefile = "gfx/interface/ideas/ministers/SOM/SOM_minister_benn.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_SOM_alexander_a"
+		texturefile = "gfx/interface/ideas/ministers/SOM/SOM_minister_alexander_a.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_SOM_copeman"
+		texturefile = "gfx/interface/ideas/ministers/SOM/SOM_minister_copeman.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_SOM_penrose"
+		texturefile = "gfx/interface/ideas/ministers/SOM/SOM_minister_penrose.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_SOM_wilson"
+		texturefile = "gfx/interface/ideas/ministers/SOM/SOM_minister_wilson.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_SOM_jones"
+		texturefile = "gfx/interface/ideas/ministers/SOM/SOM_minister_jones.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_SOM_levy"
+		texturefile = "gfx/interface/ideas/ministers/SOM/SOM_minister_levy.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_SOM_scanlon"
+		texturefile = "gfx/interface/ideas/ministers/SOM/SOM_minister_scanlon.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_SOM_trotsky"
+		texturefile = "gfx/interface/ideas/ministers/SOM/SOM_minister_trotsky.dds"
+	}
+	
+	###GLESGAE###	
+
+	spriteType = {
+		name = "GFX_idea_SOG_buchanan"
+		texturefile = "gfx/interface/ideas/ministers/SOG/SOG_minister_buchanan.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_SOG_johnston"
+		texturefile = "gfx/interface/ideas/ministers/SOG/SOG_minister_johnston.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_SOG_macdonald"
+		texturefile = "gfx/interface/ideas/ministers/SOG/SOG_minister_macdonald.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_SOG_maxton"
+		texturefile = "gfx/interface/ideas/ministers/SOG/SOG_minister_maxton.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_SOG_mcgovern"
+		texturefile = "gfx/interface/ideas/ministers/SOG/SOG_minister_mcgovern.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_SOG_moffat"
+		texturefile = "gfx/interface/ideas/ministers/SOG/SOG_minister_moffat.dds"
+	}
+
+####YORKISTS####
+	###MINISTERS###
+
+	spriteType = {
+		name = "GFX_idea_YRK_chamberlain"
+		texturefile = "gfx/interface/ideas/ministers/YRK/YRK_minister_chamberlain.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_YRK_attlee"
+		texturefile = "gfx/interface/ideas/ministers/YRK/YRK_minister_attlee.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_YRK_lloyd_george"
+		texturefile = "gfx/interface/ideas/ministers/YRK/YRK_minister_lloyd_george.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_YRK_sinclair"
+		texturefile = "gfx/interface/ideas/ministers/YRK/YRK_minister_sinclair.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_YRK_eden"
+		texturefile = "gfx/interface/ideas/ministers/YRK/YRK_minister_eden.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_YRK_churchill"
+		texturefile = "gfx/interface/ideas/ministers/YRK/YRK_minister_churchill.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_YRK_aitken"
+		texturefile = "gfx/interface/ideas/ministers/YRK/YRK_minister_aitken.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_YRK_margesson"
+		texturefile = "gfx/interface/ideas/ministers/YRK/YRK_minister_margesson.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_YRK_simon"
+		texturefile = "gfx/interface/ideas/ministers/YRK/YRK_minister_simon.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_YRK_appleby"
+		texturefile = "gfx/interface/ideas/ministers/YRK/YRK_minister_appleby.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_YRK_anderson"
+		texturefile = "gfx/interface/ideas/ministers/YRK/YRK_minister_anderson.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_YRK_wood"
+		texturefile = "gfx/interface/ideas/ministers/YRK/YRK_minister_wood.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_YRK_elizabeth"
+		texturefile = "gfx/interface/ideas/ministers/YRK/YRK_minister_elizabeth.dds"
+	}
+	
+	###HIGH COMMAND###
+
+	spriteType = {
+		name = "GFX_idea_YRK_alanbrooke"
+		texturefile = "gfx/interface/ideas/ministers/YRK/YRK_minister_alanbrooke.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_YRK_wavell"
+		texturefile = "gfx/interface/ideas/ministers/YRK/YRK_minister_wavell.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_YRK_horrocks"
+		texturefile = "gfx/interface/ideas/ministers/YRK/YRK_minister_horrocks.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_YRK_portal"
+		texturefile = "gfx/interface/ideas/ministers/YRK/YRK_minister_portal.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_YRK_tedder"
+		texturefile = "gfx/interface/ideas/ministers/YRK/YRK_minister_tedder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_YRK_auchinleck"
+		texturefile = "gfx/interface/ideas/ministers/YRK/YRK_minister_auchinleck.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_YRK_power"
+		texturefile = "gfx/interface/ideas/ministers/YRK/YRK_minister_power.dds"
+	}
+	
+####SCOOATLAN####
+
+	spriteType = {
+		name = "GFX_idea_SCO_muirhead"
+		texturefile = "gfx/interface/ideas/ministers/SCO/SCO_minister_muirhead.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_SCO_gibb"
+		texturefile = "gfx/interface/ideas/ministers/SCO/SCO_minister_gibb.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_SCO_mason"
+		texturefile = "gfx/interface/ideas/ministers/SCO/SCO_minister_mason.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_SCO_hamilton"
+		texturefile = "gfx/interface/ideas/ministers/SCO/SCO_minister_hamilton.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_SCO_young"
+		texturefile = "gfx/interface/ideas/ministers/SCO/SCO_minister_young.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_SCO_grimond"
+		texturefile = "gfx/interface/ideas/ministers/SCO/SCO_minister_grimond.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_SCO_bannerman"
+		texturefile = "gfx/interface/ideas/ministers/SCO/SCO_minister_bannerman.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_SCO_brooksbank"
+		texturefile = "gfx/interface/ideas/ministers/SCO/SCO_minister_brooksbank.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_SCO_kerr"
+		texturefile = "gfx/interface/ideas/ministers/SCO/SCO_minister_kerr.dds"
+	}
+	
+####LIVERPOOL####	
+
+	spriteType = {
+		name = "GFX_idea_LIV_errington"
+		texturefile = "gfx/interface/ideas/ministers/LIV/LIV_minister_errington.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_LIV_rowse"
+		texturefile = "gfx/interface/ideas/ministers/LIV/LIV_minister_rowse.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_LIV_samuel"
+		texturefile = "gfx/interface/ideas/ministers/LIV/LIV_minister_samuel.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_LIV_hubback"
+		texturefile = "gfx/interface/ideas/ministers/LIV/LIV_minister_hubback.dds"
+	}
+	
+####KERNOW####
+
+	spriteType = {
+		name = "GFX_idea_simon_bolitho"
+		texturefile = "gfx/interface/ideas/ministers/KER/KER_simon_bolitho.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_edward_bolitho_airborne"
+		texturefile = "gfx/interface/ideas/ministers/KER/KER_simon_bolitho.dds"
+	}
+
+####GENERIC####
+
+	spriteType = {
+		name = "GFX_idea_fascist_booster" ###Spode###
+		texturefile = "gfx/interface/ideas/ministers/generic/minister_fascist.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_autocratic_booster" ###Paul Smith###
+		texturefile = "gfx/interface/ideas/ministers/generic/minister_autocratic.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_conservative_booster" ###Peter Mannion###
+		texturefile = "gfx/interface/ideas/ministers/generic/minister_conservative.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_liberal_booster" ###Fergus Willams###
+		texturefile = "gfx/interface/ideas/ministers/generic/minister_liberal.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_demsoc_booster" ###Fred Dibnah###
+		texturefile = "gfx/interface/ideas/ministers/generic/minister_demsoc.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_communist_booster" ###Peaky Blinders bloke###
+		texturefile = "gfx/interface/ideas/ministers/generic/minister_communist.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_radsoc_booster" ###Alastair Sim###
+		texturefile = "gfx/interface/ideas/ministers/generic/minister_radsoc.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_civnat_booster" ###Stewart Pearson###
+		texturefile = "gfx/interface/ideas/ministers/generic/minister_civnat.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_prince_of_terror" ###Malcolm Tucker###
+		texturefile = "gfx/interface/ideas/ministers/generic/minister_prince_of_terror.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_captain_of_industry" ###Steve Fleming###
+		texturefile = "gfx/interface/ideas/ministers/generic/minister_captain_of_industry.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_silent_workhorse" ###Glenn Cullen###
+		texturefile = "gfx/interface/ideas/ministers/generic/minister_silent_workhorse.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_smooth_talking_charmer" ###Sir Humphrey Appleby###
+		texturefile = "gfx/interface/ideas/ministers/generic/minister_smooth_talker.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_war_industrialist" ###Sir Desmond Glazebrook###
+		texturefile = "gfx/interface/ideas/ministers/generic/minister_war_industrialist.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_popular_figurehead" ###Jim Hacker###
+		texturefile = "gfx/interface/ideas/ministers/generic/minister_popular_figurehead.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_propaganda_expert" ###Jamie McDonald###
+		texturefile = "gfx/interface/ideas/ministers/generic/minister_propaganda_expert.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_compassionate_gentleman" ###Julius Nicholson###
+		texturefile = "gfx/interface/ideas/ministers/generic/minister_compassionate_gentleman.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_backroom_backstabber" ###Bernard Woolley###
+		texturefile = "gfx/interface/ideas/ministers/generic/minister_backroom_backstabber.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ideological_crusader" 
+		texturefile = "gfx/interface/ideas/ministers/generic/minister_ideological_crusader.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_fortification_engineer" ###Terry Thomas###
+		texturefile = "gfx/interface/ideas/ministers/generic/minister_fortification_engineer.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_financial_expert" ###Hugh Abbott###
+		texturefile = "gfx/interface/ideas/ministers/generic/minister_financial_expert.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_armaments_organizer" ###Sir Arnold Robinson###
+		texturefile = "gfx/interface/ideas/ministers/generic/minister_armaments_organizer.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_quartermaster_general" 
+		texturefile = "gfx/interface/ideas/ministers/generic/minister_quartermaster_general.dds"
+	}
+	
+}

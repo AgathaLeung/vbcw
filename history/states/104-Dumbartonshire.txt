@@ -1,0 +1,29 @@
+state={
+	id=104
+	name="STATE_104"
+	provinces={
+		1722 1727 1738 1742 1751 2128 
+	}
+	manpower=150000
+	
+	state_category = town
+	
+	history={
+		add_extra_state_shared_building_slots = 2
+		victory_points = { 2128 10 }
+		owner = SOG
+		add_core_of = SOG
+		add_claim_by = SCO
+		add_claim_by = ROY
+		add_claim_by = YRK
+		add_claim_by = JAC
+		buildings = {
+			infrastructure = 4
+			dockyard = 2
+			1727 = {
+				naval_base = 2
+			}
+		}
+	}
+}
+

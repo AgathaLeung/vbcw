@@ -1,0 +1,370 @@
+﻿capital = 71
+
+OOB = "YRK_1936"
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_naval_oob = "YRK_1936_naval_mtg"
+	else = {
+		set_naval_oob = "YRK_1936_naval_legacy"
+	}
+}
+
+set_research_slots = 4
+
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	support_weapons = 1
+	tech_support = 1		
+	tech_engineers = 1
+	tech_recon = 1
+	motorised_infantry = 1
+	mechanised_infantry = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+	gwtank = 1
+	basic_light_tank = 1
+	early_fighter = 1
+	fighter1 = 1
+	cv_early_fighter = 1
+	cv_naval_bomber1 = 1
+	naval_bomber1 = 1
+	early_bomber = 1
+	CAS1 = 1
+	superior_firepower = 1
+	fleet_in_being = 1
+	electronic_mechanical_engineering = 1
+	radio = 1
+	radio_detection = 1
+	early_armoured_car = 1
+	basic_armoured_car = 1
+	basic_medium_tank = 1
+	basic_heavy_tank = 1
+}
+
+#########################
+###SHIP TECH - VANILLA###
+#########################
+
+if = {
+	limit = {
+		not = { has_dlc = "Man the Guns" }
+	}
+	set_technology = {
+		early_trawler = 1
+		early_corvette = 1
+		early_sloop = 1
+		early_submarine = 1
+		early_destroyer = 1
+		basic_destroyer = 1
+		early_light_cruiser = 1
+		early_heavy_cruiser = 1
+		early_monitor = 1
+	}
+}
+
+#########################
+###  SHIP TECH - MTG  ###
+#########################
+
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_technology = {		
+		basic_naval_mines = 1
+		submarine_mine_laying = 1
+		early_ship_hull_motorboat = 1
+		basic_ship_hull_motorboat = 1
+		early_ship_hull_trawler = 1
+		basic_ship_hull_trawler = 1
+		early_ship_hull_sloop = 1
+		basic_ship_hull_sloop = 1
+		early_ship_hull_light = 1
+		basic_ship_hull_light = 1
+		early_ship_hull_submarine = 1
+		early_ship_hull_cruiser = 1
+		basic_ship_hull_cruiser = 1
+		basic_battery = 1
+		basic_light_battery = 1
+		basic_medium_battery = 1
+		basic_heavy_battery = 1
+		basic_torpedo = 1
+		sonar = 1
+		smoke_generator = 1
+		basic_depth_charges = 1
+		basic_secondary_battery = 1
+		basic_cruiser_armor_scheme = 1
+		mtg_transport = 1
+		improved_secondary_battery = 1
+		basic_fire_control_system = 1
+	}
+}
+
+set_politics = {	
+	ruling_party = conservative
+	last_election = "1933.3.5"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+    fascist = 0
+    autocratic = 10
+    conservative = 60
+    liberal = 25
+    democratic_socialist = 5
+    communist = 0
+    anarcho_syndicalist = 0
+    civic_nationalist = 0
+}
+
+add_ideas = {
+	YRK_peoples_prince
+	limited_conscription
+}
+
+set_convoys = 50
+
+create_country_leader = {
+	name = "Winston Churchill"
+	desc = "POLITICS_KING_ZOG_DESC"
+	picture = "gfx/Leaders/VBCW/YRK/YRK-Churchill.dds"
+	expire = "1965.1.1"
+	ideology = conservative_subtype
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Clement Attlee"
+	desc = "POLITICS_KING_ZOG_DESC"
+	picture = "gfx/Leaders/VBCW/YRK/YRK-Attlee.dds"
+	expire = "1965.1.1"
+	ideology = democratic_socialist_subtype
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Archibald Sinclair"
+	desc = "POLITICS_KING_ZOG_DESC"
+	picture = "gfx/Leaders/VBCW/YRK/YRK-Sinclair.dds"
+	expire = "1965.1.1"
+	ideology = liberal_subtype
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Prince Albert"
+	desc = "POLITICS_KING_ZOG_DESC"
+	picture = "gfx/Leaders/VBCW/YRK/YRK-Albert.dds"
+	expire = "1965.1.1"
+	ideology = autocratic_subtype
+	traits = {
+		#
+	}
+}
+
+create_field_marshal = {
+	name = "Prince Albert"
+	portrait_path = "gfx/Leaders/VBCW/YRK/YRK-AlbertCommand.dds"
+	traits = { }
+	skill = 2
+	attack_skill = 2
+    defense_skill = 2
+    planning_skill = 1
+    logistics_skill = 1
+}
+
+create_field_marshal = {
+	name = "Nevil MacReady"
+	portrait_path = "gfx/Leaders/VBCW/YRK/YRK-MacReady.dds"
+	traits = { war_hero trickster guerilla_fighter }
+	skill = 4
+	attack_skill = 4
+    defense_skill = 3
+    planning_skill = 4
+    logistics_skill = 4
+}
+
+create_field_marshal = {
+	name = "Alan Brooke"
+	portrait_path = "gfx/Leaders/VBCW/YRK/YRK-Alanbrooke.dds"
+	traits = { defensive_doctrine trait_cautious career_officer }
+	skill = 5
+	attack_skill = 3
+    defense_skill = 5
+    planning_skill = 5
+    logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Claude Auchinleck"
+	portrait_path = "gfx/Leaders/VBCW/YRK/YRK-Auchinleck.dds"
+	traits = { inflexible_strategist career_officer }
+	skill = 5
+	attack_skill = 3
+    defense_skill = 5
+    planning_skill = 3
+    logistics_skill = 5
+}
+
+create_corps_commander = {
+	name = "Alan Cunningham"
+	portrait_path = "gfx/Leaders/VBCW/YRK/YRK-Cunningham.dds"
+	traits = {  }
+	skill = 4
+	attack_skill = 4
+    defense_skill = 1
+    planning_skill = 4
+    logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "George Giffard"
+	portrait_path = "gfx/Leaders/VBCW/YRK/YRK-Giffard.dds"
+	traits = { career_officer }
+	skill = 3
+	attack_skill = 2
+    defense_skill = 2
+    planning_skill = 3
+    logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Brian Horrocks"
+	portrait_path = "gfx/Leaders/VBCW/YRK/YRK-Horrocks.dds"
+	traits = { war_hero career_officer armor_officer }
+	skill = 3
+	attack_skill = 1
+    defense_skill = 3
+    planning_skill = 3
+    logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Archibald Wavell"
+	portrait_path = "gfx/Leaders/VBCW/YRK/YRK-Wavell.dds"
+	traits = { career_officer }
+	skill = 4
+	attack_skill = 4
+    defense_skill = 2
+    planning_skill = 3
+    logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "Adrian Carton de Wiart"
+	portrait_path = "gfx/Leaders/VBCW/YRK/YRK-deWiart.dds"
+	traits = { war_hero old_guard trait_reckless }
+	skill = 5
+	attack_skill = 3
+    defense_skill = 2
+    planning_skill = 3
+    logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "Jock Campbell"
+	portrait_path = "gfx/Leaders/VBCW/YRK/YRK_Campbell.dds"
+	traits = { armor_officer }
+	skill = 4
+	attack_skill = 4
+    defense_skill = 3
+    planning_skill = 2
+    logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "Miles Dempsey"
+	portrait_path = "gfx/Leaders/VBCW/YRK/YRK_Dempsey.dds"
+	traits = { brilliant_strategist career_officer infantry_officer }
+	skill = 4
+	attack_skill = 3
+    defense_skill = 4
+    planning_skill = 4
+    logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Oliver Leese"
+	portrait_path = "gfx/Leaders/VBCW/YRK/YRK_Leese.dds"
+	traits = { inflexible_strategist career_officer }
+	skill = 4
+	attack_skill = 4
+    defense_skill = 3
+    planning_skill = 2
+    logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "Richard O'Connor"
+	portrait_path = "gfx/Leaders/VBCW/YRK/YRK_OConnor.dds"
+	traits = {  }
+	skill = 4
+	attack_skill = 2
+    defense_skill = 4
+    planning_skill = 4
+    logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Henry Pownall"
+	portrait_path = "gfx/Leaders/VBCW/YRK/YRK_Pownall.dds"
+	traits = { trickster }
+	skill = 2
+	attack_skill = 1
+    defense_skill = 2
+    planning_skill = 2
+    logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Neil Ritchie"
+	portrait_path = "gfx/Leaders/VBCW/YRK/YRK_Ritchie.dds"
+	traits = { inflexible_strategist politically_connected armor_officer }
+	skill = 4
+	attack_skill = 3
+    defense_skill = 4
+    planning_skill = 3
+    logistics_skill = 3
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

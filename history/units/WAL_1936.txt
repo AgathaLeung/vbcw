@@ -1,0 +1,494 @@
+﻿division_template = {
+	name = "Gatrawd"			
+	division_names_group = WAL_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+        infantry = { x = 0 y = 3 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+        infantry = { x = 1 y = 3 }
+	}
+	support = {
+       	engineer = { x = 0 y = 0 }
+       	mortar = { x = 0 y = 1 }
+	}
+}
+
+division_template = {
+	name = "Garddwriaeth"			
+	division_names_group = WAL_INF_01
+	is_locked = yes
+
+	regiments = {
+		guards = { x = 0 y = 0 }
+		guards = { x = 0 y = 1 }
+		guards = { x = 0 y = 2 }
+        guards = { x = 0 y = 3 }
+		guards = { x = 1 y = 0 }
+		guards = { x = 1 y = 1 }
+		guards = { x = 1 y = 2 }
+        guards = { x = 1 y = 3 }
+	}
+	support = {
+       	signal_company = { x = 0 y = 0 }
+       	marching_band = { x = 0 y = 1 }
+	}
+}
+
+division_template = {
+	name = "Gatrawd Enedigol"
+	division_names_group = WAL_CAV_01
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 1 y = 2 }
+	}
+	support = {
+        recon = { x = 0 y = 0 }
+	}
+}
+division_template = {
+	name = "Milisia Milwyr"
+	division_names_group = WAL_YEO_01
+
+	regiments = {
+		yeomanry = { x = 0 y = 0 }
+		yeomanry = { x = 0 y = 1 }
+		yeomanry = { x = 0 y = 2 }
+		yeomanry = { x = 1 y = 0 }
+		yeomanry = { x = 1 y = 1 }
+		yeomanry = { x = 1 y = 2 }
+	}
+	priority = 0
+}
+
+division_template = {
+	name = "Milisia Sirol"
+	division_names_group = WAL_GAR_01
+	
+	regiments = {
+		militia = { x = 0 y = 0 }
+		militia = { x = 0 y = 1 }
+		militia = { x = 0 y = 2 }
+		militia = { x = 1 y = 0 }
+		militia = { x = 1 y = 1 }
+		militia = { x = 1 y = 2 }
+		militia = { x = 2 y = 0 }
+		militia = { x = 2 y = 1 }
+		militia = { x = 2 y = 2 }
+	}
+	priority = 0
+}
+
+
+units = {
+
+##GUARDS##
+	
+	division= {	
+		name = "1st Battalion Welsh Guards"
+		location = 634
+		division_template = "Garddwriaeth"
+		start_experience_factor = 0.3
+		force_equipment_variants = { infantry_equipment_1 = { owner = "ENG" } }
+		force_equipment_variants = { motorized_equipment_1 = { owner = "CIV" } }
+	}
+	
+	division= {	
+		name = "2nd Battalion Welsh Guards"
+		location = 873
+		division_template = "Garddwriaeth"
+		start_experience_factor = 0.3
+		force_equipment_variants = { infantry_equipment_1 = { owner = "ENG" } }
+		force_equipment_variants = { motorized_equipment_1 = { owner = "CIV" } }
+	}
+	
+##REGULARS##
+	
+	division= {	
+		name = "1st Battalion Welch Fusiliers"
+		location = 2419
+		division_template = "Gatrawd"
+		start_experience_factor = 0.2
+		force_equipment_variants = { infantry_equipment_1 = { owner = "ENG" } }
+		force_equipment_variants = { mortar_equipment_1 = { owner = "ENG" } }
+	}
+	
+	division= {	
+		name = "2nd Battalion Welch Fusiliers"
+		location = 800
+		division_template = "Gatrawd"
+		start_experience_factor = 0.2
+		force_equipment_variants = { infantry_equipment_1 = { owner = "ENG" } }
+		force_equipment_variants = { mortar_equipment_1 = { owner = "ENG" } }
+	}
+	
+##MILITIA##
+	
+	division= {	
+		name = "1st Anglesey Volunteers"
+		location = 2139
+		division_template = "Milisia Sirol"
+		start_experience_factor = 0.0
+		force_equipment_variants = { infantry_equipment_0 = { owner = "CIV" } }
+	}
+	
+	division= {	
+		name = "1st Caernarfon Volunteers"
+		location = 773
+		division_template = "Milisia Sirol"
+		start_experience_factor = 0.0
+		force_equipment_variants = { infantry_equipment_0 = { owner = "CIV" } }
+	}
+	
+	division= {	
+		name = "2nd Caernarfon Volunteers"
+		location = 913
+		division_template = "Milisia Sirol"
+		start_experience_factor = 0.0
+		force_equipment_variants = { infantry_equipment_0 = { owner = "CIV" } }
+	}
+	
+	division= {	
+		name = "1st Fflint Volunteers"
+		location = 895
+		division_template = "Milisia Sirol"
+		start_experience_factor = 0.0
+		force_equipment_variants = { infantry_equipment_0 = { owner = "CIV" } }
+	}
+	
+	division= {	
+		name = "2nd Fflint Volunteers"
+		location = 795
+		division_template = "Milisia Sirol"
+		start_experience_factor = 0.0
+		force_equipment_variants = { infantry_equipment_0 = { owner = "CIV" } }
+	}
+	
+	division= {	
+		name = "3rd Fflint Volunteers"
+		location = 922
+		division_template = "Milisia Sirol"
+		start_experience_factor = 0.0
+		force_equipment_variants = { infantry_equipment_0 = { owner = "CIV" } }
+	}
+	
+	division= {	
+		name = "1st Denbigh Volunteers"
+		location = 807
+		division_template = "Milisia Sirol"
+		start_experience_factor = 0.0
+		force_equipment_variants = { infantry_equipment_0 = { owner = "CIV" } }
+	}
+	
+	division= {	
+		name = "2nd Denbigh Volunteers"
+		location = 748
+		division_template = "Milisia Sirol"
+		start_experience_factor = 0.0
+		force_equipment_variants = { infantry_equipment_0 = { owner = "CIV" } }
+	}
+	
+	division= {	
+		name = "1st Merioneth Volunteers"
+		location = 793
+		division_template = "Milisia Sirol"
+		start_experience_factor = 0.0
+		force_equipment_variants = { infantry_equipment_0 = { owner = "CIV" } }
+	}
+	
+	division= {	
+		name = "2nd Merioneth Volunteers"
+		location = 646
+		division_template = "Milisia Sirol"
+		start_experience_factor = 0.0
+		force_equipment_variants = { infantry_equipment_0 = { owner = "CIV" } }
+	}
+	
+	division= {	
+		name = "3rd Merioneth Volunteers"
+		location = 758
+		division_template = "Milisia Sirol"
+		start_experience_factor = 0.0
+		force_equipment_variants = { infantry_equipment_0 = { owner = "CIV" } }
+	}
+	
+	division= {	
+		name = "1st Montgomery Volunteers"
+		location = 659
+		division_template = "Milisia Sirol"
+		start_experience_factor = 0.0
+		force_equipment_variants = { infantry_equipment_0 = { owner = "CIV" } }
+	}
+	
+	division= {	
+		name = "2nd Montgomery Volunteers"
+		location = 613
+		division_template = "Milisia Sirol"
+		start_experience_factor = 0.0
+		force_equipment_variants = { infantry_equipment_0 = { owner = "CIV" } }
+	}
+	
+	division= {	
+		name = "Sons of Glyndwr"
+		location = 634
+		division_template = "Milisia Sirol"
+		start_experience_factor = 0.3
+		force_equipment_variants = { infantry_equipment_0 = { owner = "CIV" } }
+	}
+	
+	division= {	
+		name = "1st Cardigan Volunteers"
+		location = 2417
+		division_template = "Milisia Sirol"
+		start_experience_factor = 0.0
+		force_equipment_variants = { infantry_equipment_0 = { owner = "CIV" } }
+	}
+	
+	division= {	
+		name = "2nd Cardigan Volunteers"
+		location = 476
+		division_template = "Milisia Sirol"
+		start_experience_factor = 0.0
+		force_equipment_variants = { infantry_equipment_0 = { owner = "CIV" } }
+	}
+	
+	division= {	
+		name = "Aberystwyth Bar Kickers"
+		location = 2133
+		division_template = "Milisia Sirol"
+		start_experience_factor = 0.1
+		force_equipment_variants = { infantry_equipment_0 = { owner = "CIV" } }
+	}
+
+##YEOMANRY##
+	
+	division= {	
+		name = "1st Anglesey Yeomanry"
+		location = 900
+		division_template = "Milisia Milwyr"
+		start_experience_factor = 0.0
+		force_equipment_variants = { infantry_equipment_0 = { owner = "CIV" } }
+	}
+	
+	division= {	
+		name = "1st Caernarfon Yeomanry"
+		location = 835
+		division_template = "Milisia Milwyr"
+		start_experience_factor = 0.0
+		force_equipment_variants = { infantry_equipment_0 = { owner = "CIV" } }
+	}
+	
+	division= {	
+		name = "1st Fflint Yeomanry"
+		location = 857
+		division_template = "Milisia Milwyr"
+		start_experience_factor = 0.0
+		force_equipment_variants = { infantry_equipment_0 = { owner = "CIV" } }
+	}
+	
+	division= {	
+		name = "2nd Fflint Yeomanry"
+		location = 884
+		division_template = "Milisia Milwyr"
+		start_experience_factor = 0.0
+		force_equipment_variants = { infantry_equipment_0 = { owner = "CIV" } }
+	}
+	
+	division= {	
+		name = "1st Denbigh Yeomanry"
+		location = 841
+		division_template = "Milisia Milwyr"
+		start_experience_factor = 0.0
+		force_equipment_variants = { infantry_equipment_0 = { owner = "CIV" } }
+	}
+	
+	division= {	
+		name = "2nd Denbigh Yeomanry"
+		location = 907
+		division_template = "Milisia Milwyr"
+		start_experience_factor = 0.0
+		force_equipment_variants = { infantry_equipment_0 = { owner = "CIV" } }
+	}
+	
+	division= {	
+		name = "3rd Denbigh Yeomanry"
+		location = 781
+		division_template = "Milisia Milwyr"
+		start_experience_factor = 0.0
+		force_equipment_variants = { infantry_equipment_0 = { owner = "CIV" } }
+	}
+	
+	division= {	
+		name = "1st Merioneth Yeomanry"
+		location = 646
+		division_template = "Milisia Milwyr"
+		start_experience_factor = 0.0
+		force_equipment_variants = { infantry_equipment_0 = { owner = "CIV" } }
+	}
+	
+	division= {	
+		name = "1st Montgomery Yeomanry"
+		location = 663
+		division_template = "Milisia Milwyr"
+		start_experience_factor = 0.0
+		force_equipment_variants = { infantry_equipment_0 = { owner = "CIV" } }
+	}
+	
+	division= {	
+		name = "1st Radnor Yeomanry"
+		location = 463
+		division_template = "Milisia Milwyr"
+		start_experience_factor = 0.0
+		force_equipment_variants = { infantry_equipment_0 = { owner = "CIV" } }
+	}
+	
+	division= {	
+		name = "2nd Radnor Yeomanry"
+		location = 537
+		division_template = "Milisia Milwyr"
+		start_experience_factor = 0.0
+		force_equipment_variants = { infantry_equipment_0 = { owner = "CIV" } }
+	}
+	
+	division= {	
+		name = "3rd Radnor Yeomanry"
+		location = 539
+		division_template = "Milisia Milwyr"
+		start_experience_factor = 0.0
+		force_equipment_variants = { infantry_equipment_0 = { owner = "CIV" } }
+	}
+	
+	division= {	
+		name = "4th Radnor Yeomanry"
+		location = 505
+		division_template = "Milisia Milwyr"
+		start_experience_factor = 0.0
+		force_equipment_variants = { infantry_equipment_0 = { owner = "CIV" } }
+	}
+	
+	division= {	
+		name = "1st Cardigan Yeomanry"
+		location = 529
+		division_template = "Milisia Milwyr"
+		start_experience_factor = 0.0
+		force_equipment_variants = { infantry_equipment_0 = { owner = "CIV" } }
+	}
+	
+	division= {	
+		name = "2nd Cardigan Yeomanry"
+		location = 497
+		division_template = "Milisia Milwyr"
+		start_experience_factor = 0.0
+		force_equipment_variants = { infantry_equipment_0 = { owner = "CIV" } }
+	}
+
+	
+	################
+	##### NAVY #####
+	################
+	
+#	navy = {				
+#		name = "Holyhead Fleet"			
+#		base = 879
+#		location = 879
+#		ship = { name = "Aurora" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = ENG version_name = "Amphion Class" } } }
+#		ship = { name = "Venetia" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }			
+#		ship = { name = "Vanessa" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }	
+#		ship = { name = "Wessex" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }	
+#		ship = { name = "Viscount" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+#		ship = { name = "Mallard" definition = sloop equipment = { sloop_2 = { amount = 1 owner = ENG } } }			
+#		ship = { name = "Conway Castle" definition = trawler equipment = { trawler_1 = { amount = 1 owner = ENG } } }	
+#		ship = { name = "Caernarvon Castle" definition = trawler equipment = { trawler_1 = { amount = 1 owner = ENG } } }	
+#		ship = { name = "Cardiff Castle" definition = trawler equipment = { trawler_1 = { amount = 1 owner = ENG } } }	
+#		ship = { name = "Caerphilly Castle" definition = trawler equipment = { trawler_1 = { amount = 1 owner = ENG } } }		
+#	}
+}	
+
+
+	#####################
+	##### AIR FORCE #####
+	#####################
+	
+air_wings = {
+
+	66 = { 
+		fighter_equipment_0 = {
+			owner = "CIV" 
+			amount = 12
+		}
+	}
+	67 = { 
+		fighter_equipment_0 = {
+			owner = "WAL" 
+			amount = 12
+		}
+	}
+}
+
+	#########################
+	## STARTING PRODUCTION ##
+	#########################
+instant_effect = {	
+
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "WAL"
+		}
+		requested_factories = 1
+		progress = 0.8
+		efficiency = 60
+	}
+	
+	add_equipment_to_stockpile = {
+		type = infantry_equipment_0
+		amount = 720
+		producer = ENG
+	}
+	
+	add_equipment_to_stockpile = {
+		type = infantry_equipment_1
+		amount = 300
+		producer = ENG
+	}
+	
+	add_equipment_to_stockpile = {
+		type = support_equipment
+		amount = 72
+		producer = ENG
+	}
+	
+	add_equipment_to_stockpile = {
+		type = mortar_equipment_1
+		amount = 20
+		producer = ENG
+	}
+	
+	add_equipment_to_stockpile = {
+		type = MG_equipment_1
+		amount = 14
+		producer = ENG
+	}
+	
+	add_equipment_to_stockpile = {
+		type = mechanized_equipment_1
+		amount = 18
+		producer = ENG
+	}
+	
+	add_equipment_to_stockpile = {
+		type = artillery_equipment_1
+		amount = 12
+		producer = ENG
+	}
+}
+	#####################

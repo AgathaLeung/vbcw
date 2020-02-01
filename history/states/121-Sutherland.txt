@@ -1,0 +1,30 @@
+state={
+	id=121
+	name="STATE_121"
+	provinces={
+		2022 2025 2026 2031 2033 2035 2043 2046 2047 2050 2051 2059 2068 2069 2070 2071 2431 2432 2433 2434
+	}
+	manpower=25000
+	
+	resources = {
+		steel = 4
+		tungsten = 4
+		chromium = 8
+	}
+	
+	state_category = pastoral
+	
+	history={
+		owner = JAC
+		add_core_of = JAC
+		add_claim_by = ROY
+		add_claim_by = YRK
+		add_claim_by = SCO
+		buildings = {
+			infrastructure = 2
+			2047 = {
+				naval_base = 1
+			}
+		}
+	}
+}

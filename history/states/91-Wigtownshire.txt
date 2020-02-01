@@ -1,0 +1,23 @@
+state={
+	id=91
+	name="STATE_91"
+	provinces={
+		1441 1458 1480 1493 1498 1503 
+	}
+	manpower=50000
+	
+	state_category = pastoral
+	
+	history={
+		victory_points = { 1480 5 }
+		owner = SCO
+		add_core_of = SCO
+		add_claim_by = ROY
+		add_claim_by = YRK
+		buildings = {
+			infrastructure = 2
+			air_base = 1
+		}
+	}
+}
+

@@ -1,0 +1,6 @@
+﻿l_english:
+ arms_factory:0 "Military Workshop"
+ arms_factory_plural:0 "Military Workshops"
+ dockyard:0 "Naval Slipway"
+ dockyard_plural:0 "Naval Slipways"
+ dockyard_desc:0 "This building provides the state with industry for building new naval vessels."

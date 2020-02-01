@@ -1,0 +1,44 @@
+sub_units = {
+	marching_band = {
+		sprite = infantry
+		map_icon_category = infantry
+		priority = 0
+		ai_priority = 0
+		active = yes
+
+		type = {
+			infantry
+			support
+		}
+		
+		group = support
+		
+		categories = {
+			category_support_battalions
+			category_army
+		}
+	
+		combat_width = 0
+	
+		#Size Definitions
+		max_strength = 1
+		max_organisation = 20
+		default_morale = 0.5
+		manpower = 50
+		training_time = 40
+
+		#Misc Abilities
+		weight = 0.1
+		supply_consumption = 0.02
+		can_be_parachuted = yes
+		
+		essential = {
+			support_equipment
+		}
+
+		need = {
+			support_equipment = 8
+		}
+
+	}
+}

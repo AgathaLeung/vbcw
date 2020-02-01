@@ -1,0 +1,30 @@
+state={
+	id=85
+	name="STATE_85"
+	provinces={
+		1556 1559 1562 1571 1577 1585 1587 1601 1604 1608 1621 1632 1633 1647 1662 1666 
+	}
+	manpower=100000
+	
+	resources = {
+		chromium = 12
+	}
+	
+	state_category = rural
+	
+	history={
+		owner = YRK
+		add_core_of = YRK
+		add_claim_by = ROY
+		add_claim_by = ANG
+		victory_points = { 1666 5 }	
+		victory_points = { 1571 10 }		
+		buildings = {
+			infrastructure = 4
+			air_base = 2
+			1571 = {
+				naval_base = 2
+			}
+		}
+	}
+}

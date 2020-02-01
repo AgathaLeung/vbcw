@@ -1,0 +1,27 @@
+state={
+	id=147
+	name="STATE_147"
+	provinces={
+		851 852 882 883 909 910 916 952 956 959 961 965 968 989 993 995 1001 1018 1033 1043 1047 1054 1074 1086 1094 2129 
+	}
+	manpower=150000
+	
+	state_category = town
+	
+	history={
+		owner = IRL
+		add_core_of = IRL
+		victory_points = { 961 10 }
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 2
+			arms_factory = 1
+			882 = {
+				naval_base = 1
+			}
+			961 = {
+				naval_base = 1
+			}
+		}
+	}
+}

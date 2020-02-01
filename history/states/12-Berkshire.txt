@@ -1,0 +1,31 @@
+state={
+	id=12
+	name="STATE_12"
+	provinces={
+		233 242 247 248 249 262 275 276 278 314 319 339 2394
+	}
+	manpower=400000
+	
+	resources = {
+		oil = 8
+	}
+	
+	state_category = town
+	
+	history={
+		victory_points = { 249 5 }
+		victory_points = { 2394 10 }
+		victory_points = { 275 20 }
+		victory_points = { 276 5 }
+		owner = ANG
+		add_core_of = ANG
+		add_claim_by = ROY
+		add_claim_by = YRK
+		buildings = {
+			infrastructure = 6
+			air_base = 3
+			industrial_complex = 2
+			arms_factory = 1
+		}
+	}
+}

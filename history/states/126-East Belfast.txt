@@ -1,0 +1,33 @@
+state={
+	id=126
+	name="STATE_126"
+	provinces={
+		1421 1430 1436 
+	}
+	manpower=200000
+	
+	resources = {
+		oil = 8
+		steel = 16
+	}
+	
+	state_category = city
+		
+	history={
+		owner = IRL
+		add_claim_by = IRL
+		add_claim_by = ROY
+		add_claim_by = YRK
+		victory_points = { 1436 10 }
+		buildings = {
+			infrastructure = 8
+			air_base = 1
+			industrial_complex = 2
+			arms_factory = 1
+			dockyard = 2
+			1430 = {
+				naval_base = 3
+			}
+		}
+	}
+}

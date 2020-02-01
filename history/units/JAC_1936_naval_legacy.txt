@@ -1,0 +1,21 @@
+﻿units = {	
+	##########################
+	##### NAVY - VANILLA #####
+	##########################
+	
+	fleet = {				
+		name = "Jacobite Fleet"			
+		naval_base = 2003
+		task_force = {				
+			name = "Invergordon Flotilla"	
+			location = 2003
+			ship = { name = "Cameron" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = ENG } } }	
+			ship = { name = "Delhi" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = ENG version_name = "Danae Class" } } }
+			ship = { name = "Volunteer" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Verity" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }	
+			ship = { name = "Hastings" definition = sloop equipment = { sloop_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Enchantress" definition = sloop equipment = { sloop_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Jasper" definition = trawler equipment = { trawler_1 = { amount = 1 owner = ENG } } }
+		}
+	}
+}

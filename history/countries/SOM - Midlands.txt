@@ -1,0 +1,166 @@
+﻿capital = 42
+
+OOB = "SOM_1936"
+
+set_research_slots = 4
+
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	support_weapons = 1
+	tech_support = 1		
+	tech_engineers = 1
+	tech_recon = 1
+	tech_signal_company = 1
+	tech_maintenance_company = 1
+	motorised_infantry = 1
+	mechanised_infantry = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+	gwtank = 1
+	basic_light_tank = 1
+	early_fighter = 1
+	fighter1 = 1
+	naval_bomber1 = 1
+	early_bomber = 1
+	CAS1 = 1
+	electronic_mechanical_engineering = 1
+	radio = 1
+	radio_detection = 1
+	superior_firepower = 1
+	basic_machine_tools = 1
+	construction1 = 1
+	early_armoured_car = 1
+	basic_armoured_car = 1
+	fuel_silos = 1
+	synth_oil_experiments = 1
+	concentrated_industry = 1
+}
+
+if = {
+	limit = { has_dlc = "Together for Victory" }
+
+	add_to_tech_sharing_group = socialist_research
+}
+
+set_politics = {	
+	ruling_party = democratic_socialist
+	last_election = "1933.3.5"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+    fascist = 0
+    autocratic = 0
+    conservative = 0
+    liberal = 0
+    democratic_socialist = 60
+    communist = 25
+    anarcho_syndicalist = 15
+    civic_nationalist = 0
+}
+
+add_ideas = {
+	SOM_strike_up_the_band
+	SOM_foundries_and_forges
+}
+
+create_faction = "People's Armies"
+add_to_faction = SOM
+add_to_faction = SOC
+add_to_faction = SOD
+add_to_faction = SOH
+add_to_faction = SON
+add_to_faction = SOG
+
+set_convoys = 50
+
+create_country_leader = {
+	name = "Ernest Bevin"
+	desc = "POLITICS_KING_ZOG_DESC"
+	picture = "gfx/leaders/VBCW/SOM/SOM-Bevin.dds"
+	expire = "1965.1.1"
+	ideology = democratic_socialist_subtype
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Harry Pollitt"
+	desc = "POLITICS_KING_ZOG_DESC"
+	picture = "gfx/leaders/VBCW/SOM/SOM-Pollitt.dds"
+	expire = "1965.1.1"
+	ideology = communist_subtype
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Ethel Mannin"
+	desc = "POLITICS_KING_ZOG_DESC"
+	picture = "gfx/leaders/VBCW/SOM/SOM-Mannin.dds"
+	expire = "1965.1.1"
+	ideology = anarchist_subtype
+	traits = {
+		#
+	}
+}
+
+create_corps_commander = {
+	name = "Fred Copeman"
+	portrait_path = "gfx/leaders/VBCW/SOM/SOM-Copeman.dds"
+	traits = { naval_invader naval_liason }
+	skill = 3
+	attack_skill = 4
+    defense_skill = 3
+    planning_skill = 2
+    logistics_skill = 5
+}
+
+create_corps_commander = {
+	name = "Jack Jones"
+	portrait_path = "gfx/leaders/VBCW/SOM/SOM-Jones.dds"
+	traits = { politically_connected war_hero trickster guerilla_fighter }
+	skill = 3
+	attack_skill = 4
+    defense_skill = 4
+    planning_skill = 3
+    logistics_skill = 5
+}
+
+create_corps_commander = {
+	name = "Tom Wintringham"
+	portrait_path = "gfx/leaders/VBCW/SOM/SOM-Wintringham.dds"
+	traits = { war_hero trickster guerilla_fighter infantry_officer infantry_leader }
+	skill = 4
+	attack_skill = 5
+    defense_skill = 4
+    planning_skill = 5
+    logistics_skill = 5
+}
+
+create_corps_commander = {
+	name = "Yank Levy"
+	portrait_path = "gfx/leaders/VBCW/SOM/SOM-Levy.dds"
+	traits = { trickster guerilla_fighter commando camouflage_expert }
+	skill = 4
+	attack_skill = 5
+    defense_skill = 3
+    planning_skill = 5
+    logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "Harold Wilson"
+	portrait_path = "gfx/leaders/VBCW/SOM/SOM-Wilson.dds"
+	traits = { trait_cautious peoples_soldier }
+	skill = 2
+	attack_skill = 2
+    defense_skill = 1
+    planning_skill = 3
+    logistics_skill = 2
+}
+

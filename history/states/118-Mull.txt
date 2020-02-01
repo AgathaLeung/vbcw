@@ -1,0 +1,25 @@
+state={
+	id=118
+	name="STATE_118"
+	provinces={
+		1791 1794 1799 1820 1824
+	}
+	manpower=25000
+	
+	state_category = pastoral
+	
+	history={
+		victory_points = { 1824 5 }
+		owner = JAC
+		add_core_of = JAC
+		add_claim_by = ROY
+		add_claim_by = YRK
+		add_claim_by = SCO
+		buildings = {
+			infrastructure = 2
+			1799 = {
+				naval_base = 1
+			}
+		}
+	}
+}

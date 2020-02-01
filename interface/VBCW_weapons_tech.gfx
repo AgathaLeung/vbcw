@@ -1,0 +1,547 @@
+spriteTypes = {
+	
+	SpriteType = {
+		name = "GFX_gw_artillery_medium"
+		texturefile = "gfx/interface/technologies/Art_1_allies.dds"
+	}			
+	
+	SpriteType = {
+		name = "GFX_support_weapons4_medium"
+		texturefile = "gfx/interface/technologies/support_weapons_1.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_support_weapons3_medium"
+		texturefile = "gfx/interface/technologies/support_weapons_1.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_support_weapons2_medium"
+		texturefile = "gfx/interface/technologies/support_weapons_1.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_support_weapons_medium"
+		texturefile = "gfx/interface/technologies/support_weapons_1.dds"
+	}			
+	
+	SpriteType = {
+		name = "GFX_mortar_equipment_1_medium"
+		texturefile = "gfx/interface/technologies/mortar_1.dds"
+	}			
+	
+	SpriteType = {
+		name = "GFX_mortar_equipment_2_medium"
+		texturefile = "gfx/interface/technologies/mortar_1.dds"
+	}			
+	
+	SpriteType = {
+		name = "GFX_mortar_equipment_3_medium"
+		texturefile = "gfx/interface/technologies/mortar_1.dds"
+	}			
+	
+	SpriteType = {
+		name = "GFX_mortar_equipment_4_medium"
+		texturefile = "gfx/interface/technologies/mortar_1.dds"
+	}				
+	
+	SpriteType = {
+		name = "GFX_MG_equipment_1_medium"
+		texturefile = "gfx/interface/technologies/MG_1.dds"
+	}			
+	
+	SpriteType = {
+		name = "GFX_MG_equipment_2_medium"
+		texturefile = "gfx/interface/technologies/MG_1.dds"
+	}			
+	
+	SpriteType = {
+		name = "GFX_MG_equipment_3_medium"
+		texturefile = "gfx/interface/technologies/MG_1.dds"
+	}			
+	
+	SpriteType = {
+		name = "GFX_MG_equipment_4_medium"
+		texturefile = "gfx/interface/technologies/MG_1.dds"
+	}
+	
+	###ROYALISTS###	
+
+	SpriteType = {
+		name = "GFX_ROY_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/infantry/ROY_smle_mk3.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_ROY_infantry_weapons1_medium"
+		texturefile = "gfx/interface/technologies/infantry/ROY_smle_no4.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_ROY_improved_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/infantry/ROY_sten_gun.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_ROY_advanced_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/infantry/ROY_sterling.dds"
+	}
+	
+	###FASCISTS###	
+
+	SpriteType = {
+		name = "GFX_BUF_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/infantry/ROY_smle_mk3.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_BUF_infantry_weapons1_medium"
+		texturefile = "gfx/interface/technologies/infantry/ROY_smle_no4.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_BUF_improved_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/infantry/ROY_sten_gun.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_BUF_advanced_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/infantry/ROY_sterling.dds"
+	}
+	
+	###YORKISTS###	
+
+	SpriteType = {
+		name = "GFX_YRK_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/infantry/ROY_smle_mk3.dds"
+	}		
+	
+	SpriteType = {
+		name = "GFX_YRK_infantry_weapons1_medium"
+		texturefile = "gfx/interface/technologies/infantry/ROY_smle_no4.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_YRK_improved_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/infantry/YRK_thompson.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_YRK_advanced_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/infantry/YRK_m2_carbine.dds"
+	}
+	
+	###ANGLICANS###	
+
+	SpriteType = {
+		name = "GFX_ANG_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/infantry/ROY_smle_mk3.dds"
+	}		
+	
+	SpriteType = {
+		name = "GFX_ANG_infantry_weapons1_medium"
+		texturefile = "gfx/interface/technologies/infantry/ANG_mas_36.dds"
+	}	
+
+	SpriteType = {
+		name = "GFX_ANG_improved_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/infantry/ANG_mas_40.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_ANG_advanced_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/infantry/ANG_mas_44.dds"
+	}
+	
+	###SOCIALISTS###	
+
+	SpriteType = {
+		name = "GFX_SOC_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/infantry/ROY_smle_mk3.dds"
+	}			
+	
+	SpriteType = {
+		name = "GFX_SOC_infantry_weapons1_medium"
+		texturefile = "gfx/interface/technologies/infantry/SOC_mosin.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_SOC_improved_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/infantry/SOC_ppsh.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_SOC_advanced_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/infantry/SOC_sks.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_SOC_artillery4_medium"
+		texturefile = "gfx/interface/technologies/Art_3_comintern.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_SOC_artillery1_medium"
+		texturefile = "gfx/interface/technologies/Art_2_comintern.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_SOC_gw_artillery_medium"
+		texturefile = "gfx/interface/technologies/Art_1_allies.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_SOC_antitank5_medium"
+		texturefile = "gfx/interface/technologies/AT_3_comintern.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_SOC_antitank2_medium"
+		texturefile = "gfx/interface/technologies/AT_2_comintern.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_SOC_interwar_antitank_medium"
+		texturefile = "gfx/interface/technologies/AT_1_allies.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_SOC_antiair5_medium"
+		texturefile = "gfx/interface/technologies/AA_3_comintern.dds"
+	}		
+	
+	SpriteType = {
+		name = "GFX_SOC_antiair2_medium"
+		texturefile = "gfx/interface/technologies/AA_2_comintern.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_SOC_interwar_antiair_medium"
+		texturefile = "gfx/interface/technologies/AA_1_allies.dds"
+	}	
+
+	SpriteType = {
+		name = "GFX_SOD_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/infantry/ROY_smle_mk3.dds"
+	}			
+	
+	SpriteType = {
+		name = "GFX_SOD_infantry_weapons1_medium"
+		texturefile = "gfx/interface/technologies/infantry/SOC_mosin.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_SOD_improved_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/infantry/SOC_ppsh.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_SOD_advanced_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/infantry/SOC_sks.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_SOD_artillery4_medium"
+		texturefile = "gfx/interface/technologies/Art_3_comintern.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_SOD_artillery1_medium"
+		texturefile = "gfx/interface/technologies/Art_2_comintern.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_SOD_gw_artillery_medium"
+		texturefile = "gfx/interface/technologies/Art_1_allies.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_SOD_antitank5_medium"
+		texturefile = "gfx/interface/technologies/AT_3_comintern.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_SOD_antitank2_medium"
+		texturefile = "gfx/interface/technologies/AT_2_comintern.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_SOD_interwar_antitank_medium"
+		texturefile = "gfx/interface/technologies/AT_1_allies.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_SOD_antiair5_medium"
+		texturefile = "gfx/interface/technologies/AA_3_comintern.dds"
+	}		
+	
+	SpriteType = {
+		name = "GFX_SOD_antiair2_medium"
+		texturefile = "gfx/interface/technologies/AA_2_comintern.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_SOD_interwar_antiair_medium"
+		texturefile = "gfx/interface/technologies/AA_1_allies.dds"
+	}	
+
+	SpriteType = {
+		name = "GFX_SOG_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/infantry/ROY_smle_mk3.dds"
+	}			
+	
+	SpriteType = {
+		name = "GFX_SOG_infantry_weapons1_medium"
+		texturefile = "gfx/interface/technologies/infantry/SOC_mosin.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_SOG_improved_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/infantry/SOC_ppsh.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_SOG_advanced_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/infantry/SOC_sks.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_SOG_artillery4_medium"
+		texturefile = "gfx/interface/technologies/Art_3_comintern.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_SOG_artillery1_medium"
+		texturefile = "gfx/interface/technologies/Art_2_comintern.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_SOG_gw_artillery_medium"
+		texturefile = "gfx/interface/technologies/Art_1_allies.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_SOG_antitank5_medium"
+		texturefile = "gfx/interface/technologies/AT_3_comintern.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_SOG_antitank2_medium"
+		texturefile = "gfx/interface/technologies/AT_2_comintern.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_SOG_interwar_antitank_medium"
+		texturefile = "gfx/interface/technologies/AT_1_allies.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_SOG_antiair5_medium"
+		texturefile = "gfx/interface/technologies/AA_3_comintern.dds"
+	}		
+	
+	SpriteType = {
+		name = "GFX_SOG_antiair2_medium"
+		texturefile = "gfx/interface/technologies/AA_2_comintern.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_SOG_interwar_antiair_medium"
+		texturefile = "gfx/interface/technologies/AA_1_allies.dds"
+	}	
+
+	SpriteType = {
+		name = "GFX_SOH_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/infantry/ROY_smle_mk3.dds"
+	}			
+	
+	SpriteType = {
+		name = "GFX_SOH_infantry_weapons1_medium"
+		texturefile = "gfx/interface/technologies/infantry/SOC_mosin.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_SOH_improved_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/infantry/SOC_ppsh.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_SOH_advanced_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/infantry/SOC_sks.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_SOH_artillery4_medium"
+		texturefile = "gfx/interface/technologies/Art_3_comintern.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_SOH_artillery1_medium"
+		texturefile = "gfx/interface/technologies/Art_2_comintern.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_SOH_gw_artillery_medium"
+		texturefile = "gfx/interface/technologies/Art_1_allies.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_SOH_antitank5_medium"
+		texturefile = "gfx/interface/technologies/AT_3_comintern.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_SOH_antitank2_medium"
+		texturefile = "gfx/interface/technologies/AT_2_comintern.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_SOH_interwar_antitank_medium"
+		texturefile = "gfx/interface/technologies/AT_1_allies.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_SOH_antiair5_medium"
+		texturefile = "gfx/interface/technologies/AA_3_comintern.dds"
+	}		
+	
+	SpriteType = {
+		name = "GFX_SOH_antiair2_medium"
+		texturefile = "gfx/interface/technologies/AA_2_comintern.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_SOH_interwar_antiair_medium"
+		texturefile = "gfx/interface/technologies/AA_1_allies.dds"
+	}	
+
+	SpriteType = {
+		name = "GFX_SOM_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/infantry/ROY_smle_mk3.dds"
+	}			
+	
+	SpriteType = {
+		name = "GFX_SOM_infantry_weapons1_medium"
+		texturefile = "gfx/interface/technologies/infantry/SOC_mosin.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_SOM_improved_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/infantry/SOC_ppsh.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_SOM_advanced_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/infantry/SOC_sks.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_SOM_artillery4_medium"
+		texturefile = "gfx/interface/technologies/Art_3_comintern.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_SOM_artillery1_medium"
+		texturefile = "gfx/interface/technologies/Art_2_comintern.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_SOM_gw_artillery_medium"
+		texturefile = "gfx/interface/technologies/Art_1_allies.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_SOM_antitank5_medium"
+		texturefile = "gfx/interface/technologies/AT_3_comintern.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_SOM_antitank2_medium"
+		texturefile = "gfx/interface/technologies/AT_2_comintern.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_SOM_interwar_antitank_medium"
+		texturefile = "gfx/interface/technologies/AT_1_allies.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_SOM_antiair5_medium"
+		texturefile = "gfx/interface/technologies/AA_3_comintern.dds"
+	}		
+	
+	SpriteType = {
+		name = "GFX_SOM_antiair2_medium"
+		texturefile = "gfx/interface/technologies/AA_2_comintern.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_SOM_interwar_antiair_medium"
+		texturefile = "gfx/interface/technologies/AA_1_allies.dds"
+	}	
+
+	SpriteType = {
+		name = "GFX_SON_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/infantry/ROY_smle_mk3.dds"
+	}			
+	
+	SpriteType = {
+		name = "GFX_SON_infantry_weapons1_medium"
+		texturefile = "gfx/interface/technologies/infantry/SOC_mosin.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_SON_improved_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/infantry/SOC_ppsh.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_SON_advanced_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/infantry/SOC_sks.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_SON_artillery4_medium"
+		texturefile = "gfx/interface/technologies/Art_3_comintern.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_SON_artillery1_medium"
+		texturefile = "gfx/interface/technologies/Art_2_comintern.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_SON_gw_artillery_medium"
+		texturefile = "gfx/interface/technologies/Art_1_allies.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_SON_antitank5_medium"
+		texturefile = "gfx/interface/technologies/AT_3_comintern.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_SON_antitank2_medium"
+		texturefile = "gfx/interface/technologies/AT_2_comintern.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_SON_interwar_antitank_medium"
+		texturefile = "gfx/interface/technologies/AT_1_allies.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_SON_antiair5_medium"
+		texturefile = "gfx/interface/technologies/AA_3_comintern.dds"
+	}		
+	
+	SpriteType = {
+		name = "GFX_SON_antiair2_medium"
+		texturefile = "gfx/interface/technologies/AA_2_comintern.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_SON_interwar_antiair_medium"
+		texturefile = "gfx/interface/technologies/AA_1_allies.dds"
+	}
+}

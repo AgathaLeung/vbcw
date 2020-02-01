@@ -1,0 +1,546 @@
+﻿division_template = {
+	name = "Constabulary"
+	division_names_group = BUF_INF_01
+	
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+	priority = 0
+}
+
+division_template = {
+	name = "Mounted Constabulary"
+	division_names_group = BUF_CAV_01
+	
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+	}
+	priority = 0
+}
+
+division_template = {
+	name = "Mobile Constabulary"			
+	division_names_group = BUF_MOT_01
+
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		armoured_car = { x = 2 y = 0 }
+		armoured_car = { x = 2 y = 1 }
+	}
+}
+
+division_template = {
+	name = "Auxiliary Legion"
+	division_names_group = BUF_GAR_01
+	
+	regiments = {
+		militia = { x = 0 y = 0 }
+		militia = { x = 0 y = 1 }
+		militia = { x = 0 y = 2 }
+		militia = { x = 1 y = 0 }
+		militia = { x = 1 y = 1 }
+		militia = { x = 1 y = 2 }
+	}
+	support = {
+        marching_band = { x = 0 y = 0 }
+	}
+	priority = 0
+}
+
+division_template = {
+	name = "Mounted Auxiliaries"
+	division_names_group = BUF_YEO_01
+
+	regiments = {
+		yeomanry = { x = 0 y = 0 }
+		yeomanry = { x = 0 y = 1 }
+		yeomanry = { x = 0 y = 2 }
+		yeomanry = { x = 1 y = 0 }
+		yeomanry = { x = 1 y = 1 }
+		yeomanry = { x = 1 y = 2 }
+	}
+	priority = 0
+}
+
+
+units = {
+
+###INFANTRY###
+	division= {	
+		name = "City of London Constabulary"
+		location = 316
+		division_template = "Constabulary"
+		start_experience_factor = 0.1
+	}
+	division= {	
+		name = "Metropolitan Constabulary Westminster Division"
+		location = 315
+		division_template = "Constabulary"
+		start_experience_factor = 0.1
+	}
+	division= {	
+		name = "Metropolitan Constabulary Hackney Division"
+		location = 305
+		division_template = "Constabulary"
+		start_experience_factor = 0.1
+	}
+	division= {	
+		name = "Metropolitan Constabulary Lewisham Division"
+		location = 268
+		division_template = "Constabulary"
+		start_experience_factor = 0.1
+	}
+	division= {	
+		name = "Metropolitan Constabulary Wandsworth Division"
+		location = 291
+		division_template = "Constabulary"
+		start_experience_factor = 0.1
+	}
+	division= {	
+		name = "Metropolitan Constabulary Hammersmith Division"
+		location = 307
+		division_template = "Constabulary"
+		start_experience_factor = 0.1
+	}
+	division= {	
+		name = "Metropolitan Constabulary Woolwich Division"
+		location = 281
+		division_template = "Constabulary"
+		start_experience_factor = 0.1
+	}
+	division= {	
+		name = "Metropolitan Constabulary Fulham Division"
+		location = 279
+		division_template = "Constabulary"
+		start_experience_factor = 0.1
+	}
+	division= {	
+		name = "Middlesex Constabulary Harrow Division"
+		location = 321
+		division_template = "Constabulary"
+		start_experience_factor = 0.1
+	}
+	division= {	
+		name = "Middlesex Constabulary Enfield Division"
+		location = 349
+		division_template = "Constabulary"
+		start_experience_factor = 0.1
+	}
+	division= {	
+		name = "Hertfordshire Constabulary"
+		location = 2302
+		division_template = "Constabulary"
+		start_experience_factor = 0.1
+	}
+	division= {	
+		name = "Essex Constabulary Southern Division"
+		location = 2404
+		division_template = "Constabulary"
+		start_experience_factor = 0.1
+	}
+	division= {	
+		name = "Essex Constabulary Northern Division"
+		location = 303
+		division_template = "Constabulary"
+		start_experience_factor = 0.1
+	}
+###CAVALRY###
+	division= {	
+		name = "City of London Constabulary Mounted Division"
+		location = 316
+		division_template = "Mounted Constabulary"
+		start_experience_factor = 0.1
+	}
+	division= {	
+		name = "Metropolitan Constabulary Mounted Division"
+		location = 315
+		division_template = "Mounted Constabulary"
+		start_experience_factor = 0.1
+	}
+	division= {	
+		name = "Hertfordshire Constabulary Mounted Division"
+		location = 407
+		division_template = "Mounted Constabulary"
+		start_experience_factor = 0.1
+	}
+	division= {	
+		name = "Essex Constabulary Mounted Division"
+		location = 449
+		division_template = "Mounted Constabulary"
+		start_experience_factor = 0.1
+	}
+	division= {	
+		name = "Middlesex Constabulary Mounted Division"
+		location = 336
+		division_template = "Constabulary"
+		start_experience_factor = 0.1
+	}
+###MOTORISED###
+	division= {	
+		name = "City of London Constabulary Mobile Division"
+		location = 316
+		division_template = "Mobile Constabulary"
+		start_experience_factor = 0.1
+	}
+	division= {	
+		name = "Metropolitan Constabulary Mobile Division"
+		location = 315
+		division_template = "Mobile Constabulary"
+		start_experience_factor = 0.1
+	}
+###AUXILIARIES###
+	division= {	
+		name = "City of London Auxiliary"
+		location = 316
+		division_template = "Auxiliary Legion"
+		start_experience_factor = 0.0
+	}
+	division= {	
+		name = "Westminster Auxiliary"
+		location = 315
+		division_template = "Auxiliary Legion"
+		start_experience_factor = 0.0
+	}
+	division= {	
+		name = "St Pancras Auxiliary"
+		location = 335
+		division_template = "Auxiliary Legion"
+		start_experience_factor = 0.0
+	}
+	division= {	
+		name = "Islington Auxiliary"
+		location = 335
+		division_template = "Auxiliary Legion"
+		start_experience_factor = 0.0
+	}
+	division= {	
+		name = "Lambeth Auxiliary"
+		location = 265
+		division_template = "Auxiliary Legion"
+		start_experience_factor = 0.0
+	}
+	division= {	
+		name = "Southwark Auxiliary"
+		location = 301
+		division_template = "Auxiliary Legion"
+		start_experience_factor = 0.0
+	}
+	division= {	
+		name = "Camberwell Auxiliary"
+		location = 244
+		division_template = "Auxiliary Legion"
+		start_experience_factor = 0.0
+	}
+	division= {	
+		name = "Lewisham Auxiliary"
+		location = 251
+		division_template = "Auxiliary Legion"
+		start_experience_factor = 0.0
+	}
+	division= {	
+		name = "Greenwich Auxiliary"
+		location = 272
+		division_template = "Auxiliary Legion"
+		start_experience_factor = 0.0
+	}
+	division= {	
+		name = "Battersea Auxiliary"
+		location = 291
+		division_template = "Auxiliary Legion"
+		start_experience_factor = 0.0
+	}
+	division= {	
+		name = "Hammersmith Auxiliary"
+		location = 307
+		division_template = "Auxiliary Legion"
+		start_experience_factor = 0.0
+	}
+	division= {	
+		name = "Willesden Auxiliary"
+		location = 331
+		division_template = "Auxiliary Legion"
+		start_experience_factor = 0.0
+	}
+	division= {	
+		name = "Fulham Auxiliary"
+		location = 279
+		division_template = "Auxiliary Legion"
+		start_experience_factor = 0.0
+	}
+	division= {	
+		name = "Ealing Auxiliary"
+		location = 290
+		division_template = "Auxiliary Legion"
+		start_experience_factor = 0.0
+	}
+	division= {	
+		name = "Harrow Auxiliary"
+		location = 321
+		division_template = "Auxiliary Legion"
+		start_experience_factor = 0.0
+	}
+	division= {	
+		name = "Finchley Auxiliary"
+		location = 336
+		division_template = "Auxiliary Legion"
+		start_experience_factor = 0.0
+	}
+	division= {	
+		name = "Tottenham Auxiliary"
+		location = 349
+		division_template = "Auxiliary Legion"
+		start_experience_factor = 0.0
+	}
+	division= {	
+		name = "Ilford Auxiliary"
+		location = 346
+		division_template = "Auxiliary Legion"
+		start_experience_factor = 0.0
+	}
+	division= {	
+		name = "Barking Auxiliary"
+		location = 310
+		division_template = "Auxiliary Legion"
+		start_experience_factor = 0.0
+	}
+	division= {	
+		name = "Romford Auxiliary"
+		location = 310
+		division_template = "Auxiliary Legion"
+		start_experience_factor = 0.0
+	}
+	division= {	
+		name = "West Ham Auxiliary"
+		location = 326
+		division_template = "Auxiliary Legion"
+		start_experience_factor = 0.0
+	}
+	division= {	
+		name = "Croydon Auxiliary"
+		location = 246
+		division_template = "Auxiliary Legion"
+		start_experience_factor = 0.0
+	}
+	division= {	
+		name = "Wimbledon Auxiliary"
+		location = 263
+		division_template = "Auxiliary Legion"
+		start_experience_factor = 0.0
+	}
+	division= {	
+		name = "Richmond Auxiliary"
+		location = 261
+		division_template = "Auxiliary Legion"
+		start_experience_factor = 0.0
+	}
+	division= {	
+		name = "Bromley Auxiliary"
+		location = 244
+		division_template = "Auxiliary Legion"
+		start_experience_factor = 0.0
+	}
+	division= {	
+		name = "Hertford Auxiliary"
+		location = 2402
+		division_template = "Auxiliary Legion"
+		start_experience_factor = 0.0
+	}
+	division= {	
+		name = "Watford Auxiliary"
+		location = 345
+		division_template = "Auxiliary Legion"
+		start_experience_factor = 0.0
+	}
+	division= {	
+		name = "St Albans Auxiliary"
+		location = 2403
+		division_template = "Auxiliary Legion"
+		start_experience_factor = 0.0
+	}
+	division= {	
+		name = "Hemel Hempstead Auxiliary"
+		location = 316
+		division_template = "Auxiliary Legion"
+		start_experience_factor = 0.0
+	}
+	division= {	
+		name = "Southend Auxiliary"
+		location = 327
+		division_template = "Auxiliary Legion"
+		start_experience_factor = 0.0
+	}
+	division= {	
+		name = "Maldon Auxiliary"
+		location = 391
+		division_template = "Auxiliary Legion"
+		start_experience_factor = 0.0
+	}
+	division= {	
+		name = "Colchester Auxiliary"
+		location = 303
+		division_template = "Auxiliary Legion"
+		start_experience_factor = 0.0
+	}
+	division= {	
+		name = "Chelmsford Auxiliary"
+		location = 2404
+		division_template = "Auxiliary Legion"
+		start_experience_factor = 0.0
+	}
+	division= {	
+		name = "Saffron Walden Auxiliary"
+		location = 457
+		division_template = "Auxiliary Legion"
+		start_experience_factor = 0.0
+	}
+###MOUNTED AUXILIARIES###
+	division= {	
+		name = "I Hertforshire Mounted Auxiliary"
+		location = 446
+		division_template = "Mounted Auxiliaries"
+		start_experience_factor = 0.0
+	}
+	division= {	
+		name = "II Hertforshire Mounted Auxiliary"
+		location = 371
+		division_template = "Mounted Auxiliaries"
+		start_experience_factor = 0.0
+	}
+	division= {	
+		name = "III Hertforshire Mounted Auxiliary"
+		location = 345
+		division_template = "Mounted Auxiliaries"
+		start_experience_factor = 0.0
+	}
+	division= {	
+		name = "I Essex Mounted Auxiliary"
+		location = 387
+		division_template = "Mounted Auxiliaries"
+		start_experience_factor = 0.0
+	}
+	division= {	
+		name = "II Essex Mounted Auxiliary"
+		location = 432
+		division_template = "Mounted Auxiliaries"
+		start_experience_factor = 0.0
+	}
+	division= {	
+		name = "III Essex Mounted Auxiliary"
+		location = 422
+		division_template = "Mounted Auxiliaries"
+		start_experience_factor = 0.0
+	}
+	division= {	
+		name = "IV Essex Mounted Auxiliary"
+		location = 2404
+		division_template = "Mounted Auxiliaries"
+		start_experience_factor = 0.0
+	}
+	division= {	
+		name = "I Middlesex Mounted Auxiliary"
+		location = 321
+		division_template = "Mounted Auxiliaries"
+		start_experience_factor = 0.0
+	}
+	division= {	
+		name = "II Middlesex Mounted Auxiliary"
+		location = 209
+		division_template = "Mounted Auxiliaries"
+		start_experience_factor = 0.0
+	}
+
+
+	
+	################
+	##### NAVY #####
+	################
+	
+#	navy = {				
+#		name = "Thames Squadron"			
+#		base = 327
+#		location = 327
+#		ship = { name = "HMS Curlew" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = ENG } } }
+#		ship = { name = "HMS Worcester" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+#		ship = { name = "HMS Campbell" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+#		ship = { name = "MGB-13" definition = gunboat equipment = { gunboat_2 = { amount = 1 owner = BUF } } }
+#		ship = { name = "MGB-18" definition = gunboat equipment = { gunboat_2 = { amount = 1 owner = BUF } } }
+#		ship = { name = "MGB-24" definition = gunboat equipment = { gunboat_2 = { amount = 1 owner = BUF } } }
+#		ship = { name = "MGB-26" definition = gunboat equipment = { gunboat_2 = { amount = 1 owner = BUF } } }
+#		ship = { name = "MTB-06" definition = torpedo_boat equipment = { torpedo_boat_2 = { amount = 1 owner = BUF } } }
+#		ship = { name = "MTB-09" definition = torpedo_boat equipment = { torpedo_boat_2 = { amount = 1 owner = BUF } } }
+#	}
+}	
+
+
+	#####################
+	##### AIR FORCE #####
+	#####################
+	
+air_wings = {
+
+	19 = { 
+		fighter_equipment_0 = {
+			owner = "BUF" 
+			amount = 12
+		}
+	}
+	20 = { 
+		fighter_equipment_1 = {
+			owner = "BUF" 
+			amount = 12
+		}
+	}
+}
+
+	#########################
+	## STARTING PRODUCTION ##
+	#########################
+instant_effect = {
+	
+
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "BUF"
+		}
+		requested_factories = 3
+		progress = 0.1
+		efficiency = 50
+	}
+	
+	add_equipment_to_stockpile = {
+		type = infantry_equipment_0
+		amount = 1600
+		producer = ENG
+	}
+	
+	add_equipment_to_stockpile = {
+		type = infantry_equipment_1
+		amount = 250
+		producer = ENG
+	}
+	
+	add_equipment_to_stockpile = {
+		type = support_equipment
+		amount = 160
+		producer = ENG
+	}
+	
+	add_equipment_to_stockpile = {
+		type = motorized_equipment_1
+		amount = 650
+		producer = CIV
+	}
+}
+	#####################

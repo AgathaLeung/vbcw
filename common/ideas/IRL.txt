@@ -1,0 +1,25 @@
+ideas = {
+
+	country = {
+		IRL_limited_intervention = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_war_preparation
+			
+			modifier = {
+				lend_lease_tension = -0.5
+				send_volunteers_tension = -0.5
+				send_volunteer_divisions_required = -0.5
+			}
+		}
+	}
+}

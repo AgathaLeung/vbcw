@@ -1,0 +1,34 @@
+state={
+	id=100
+	name="STATE_100"
+	provinces={
+		1642 1654 1663 1671 1674 1695 1698 1705 1708 
+	}
+	manpower=400000
+	
+	resources = {
+		rubber = 8
+		steel = 16
+		chromium = 16
+	}
+	
+	state_category = city
+	
+	history={
+		add_extra_state_shared_building_slots = 2
+		owner = SOG
+		add_core_of = SOG
+		add_claim_by = ROY
+		add_claim_by = YRK
+		add_claim_by = JAC
+		add_claim_by = SCO
+		victory_points = { 1674 10 }
+		victory_points = { 1695 10 }
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 3
+			arms_factory = 2
+		}
+	}
+}
+

@@ -1,0 +1,35 @@
+﻿l_english:
+ ###Opinion Modifiers###
+ VBCW_opposed_ideology:0 "Opposed Ideology"
+ VBCW_different_ideology:0 "Different Ideology"
+ VBCW_similar_ideology:0 "Similar Ideology"
+ VBCW_same_ideology:0 "Same Ideology"
+ same_ruling_party:0 "Base"
+ different_party_types:0 "Base"
+ cultural_ties:0 "Cultural Ties"
+ VBCW_enemy_of_my_enemy:0 "Enemy of my Enemy"
+ 
+ ###Difficulty Sliders###
+ custom_diff_strong_roy:0 "Strengthen Legitimists"
+ custom_diff_strong_ang:0 "Strengthen Anglicans"
+ custom_diff_strong_soc:0 "Strengthen People's Armies"
+ custom_diff_strong_yrk:0 "Strengthen Yorkists"
+ custom_diff_strong_sco:0 "Strengthen Scotland"
+ custom_diff_strong_jac:0 "Strengthen Jacobites"
+ custom_diff_strong_cel:0 "Strengthen Celts"
+ custom_diff_strong_irl:0 "Strengthen Ireland"
+ 
+ ###MISC###
+ category_regular:0 "Regular Troops"
+ category_irregular:0 "Militia & Yeomanry"
+ 
+ ###UNIT MODIFIERS###
+ modifier_army_sub_unit_category_cavalry_attack_factor:0 "Cavalry & Armoured Car Attack"
+ modifier_army_sub_unit_category_cavalry_defence_factor:0 "Cavalry & Armoured Car Defense"
+ modifier_army_sub_unit_category_cavalry_speed_factor:0 "Cavalry & Armoured Car Movement"
+ modifier_army_sub_unit_category_regular_attack_factor:0 "Regular Troops Attack"
+ modifier_army_sub_unit_category_regular_defence_factor:0 "Regular Troops Defense"
+ modifier_army_sub_unit_category_regular_speed_factor:0 "Regular Troops Movement"
+ modifier_army_sub_unit_category_irregular_attack_factor:0 "Militia & Yeomanry Attack"
+ modifier_army_sub_unit_category_irregular_defence_factor:0 "Militia & Yeomanry Defense"
+ modifier_army_sub_unit_category_irregular_speed_factor:0 "Militia & Yeomanry Movement"

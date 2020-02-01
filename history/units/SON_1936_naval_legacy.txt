@@ -1,0 +1,22 @@
+﻿units = {	
+	##########################
+	##### NAVY - VANILLA #####
+	##########################
+	
+	fleet = {				
+		name = "People's Navy"			
+		naval_base = 1148
+		task_force = {				
+			name = "Tyne Fleet"	
+			location = 1533
+			ship = { name = "Newcastle" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = ENG } } }
+			ship = { name = "Edinburgh" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = ENG version_name = "Town Class" } } }
+			ship = { name = "Manchester" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = ENG } } }
+			ship = { name = "Sheffield" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = ENG } } }	
+			ship = { name = "Foresight" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG version_name = "E/F/G/H Class" } } }		
+			ship = { name = "Fortune" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG version_name = "E/F/G/H Class" } } }			
+			ship = { name = "Cloud" definition = trawler equipment = { trawler_1 = { amount = 1 owner = ENG } } }	
+			ship = { name = "Coldsnap" definition = trawler equipment = { trawler_1 = { amount = 1 owner = ENG } } }	
+		}
+	}
+}

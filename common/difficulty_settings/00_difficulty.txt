@@ -1,0 +1,50 @@
+difficulty_settings = {
+	difficulty_setting = {
+		key = "custom_diff_strong_roy"
+		modifier = diff_strong_ai_generic
+		countries = { ROY BUF }
+		multiplier = 2.0
+	}
+	difficulty_setting = {
+		key = "custom_diff_strong_ang"
+		modifier = diff_strong_ai_generic
+		countries = { ANG }
+		multiplier = 2.0
+	}
+	difficulty_setting = {
+		key = "custom_diff_strong_soc"
+		modifier = diff_strong_ai_generic
+		countries = { SOC SOD SOG SOH SOM SON }
+		multiplier = 2.0
+	}
+	difficulty_setting = {
+		key = "custom_diff_strong_yrk"
+		modifier = diff_strong_ai_generic
+		countries = { YRK }
+		multiplier = 2.0
+	}
+	difficulty_setting = {
+		key = "custom_diff_strong_sco"
+		modifier = diff_strong_ai_generic
+		countries = { SCO }
+		multiplier = 2.0
+	}
+	difficulty_setting = {
+		key = "custom_diff_strong_jac"
+		modifier = diff_strong_ai_generic
+		countries = { JAC }
+		multiplier = 2.0
+	}
+	difficulty_setting = {
+		key = "custom_diff_strong_cel"
+		modifier = diff_strong_ai_generic
+		countries = { KER WAL }
+		multiplier = 2.0
+	}
+	difficulty_setting = {
+		key = "custom_diff_strong_irl"
+		modifier = diff_strong_ai_generic
+		countries = { IRL }
+		multiplier = 2.0
+	}
+}

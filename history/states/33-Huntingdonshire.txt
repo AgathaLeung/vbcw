@@ -1,0 +1,22 @@
+state={
+	id=33
+	name="STATE_33"
+	provinces={
+		538 563 566 586 621 643 
+	}
+	manpower=75000
+	
+	state_category = rural
+	
+	history={
+		victory_points = { 566 5 }
+		owner = ROY
+		add_core_of = ROY
+		add_claim_by = YRK
+		add_claim_by = ANG
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+		}
+	}
+}

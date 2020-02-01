@@ -1,0 +1,34 @@
+state={
+	id=20
+	name="STATE_20"
+	provinces={
+		302 327 351 355 356 362 363 387 390 2124 2125 2376 2377 2404
+	}
+	manpower=500000
+	
+	resources = {
+		oil = 16
+	}
+	
+	state_category = large_town
+	
+	history={
+		victory_points = { 2404 10 }
+		victory_points = { 327 20 }
+		owner = BUF
+		add_core_of = BUF
+		add_claim_by = YRK
+		add_claim_by = ANG
+		add_claim_by = ROY
+		buildings = {
+			infrastructure = 6
+			air_base = 1
+			industrial_complex = 1
+			arms_factory = 1
+			dockyard = 2
+			327 = {
+				naval_base = 2
+			}
+		}
+	}
+}

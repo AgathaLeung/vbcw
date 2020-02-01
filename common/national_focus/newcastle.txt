@@ -1,0 +1,861 @@
+focus_tree = {
+	id = SON_Coolstuff
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = SON
+		}
+	}
+	
+	default = no
+	
+	focus = {
+		id = SON_prepare_for_the_struggle
+		icon = GFX_goal_generic_propaganda
+		cost = 2
+		x = 12
+		y = 0
+		
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+
+###INDUSTRY###
+	
+	focus = {
+		id = SON_industrial_organisation
+		icon = GFX_goal_generic_construct_civilian
+		cost = 5
+		x = 4
+		y = 1
+		prerequisite = {focus = SON_prepare_for_the_struggle}
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		completion_reward = {
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 0.5
+				uses = 1
+				category = industry
+			}
+		}
+	}
+	
+
+	focus = {
+		id = SON_newcastle_industry
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 5
+		x = 2
+		y = 2
+		prerequisite = {focus = SON_industrial_organisation}
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		completion_reward = {
+				83 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+				add_ideas = SON_newcastle_industry		
+		}	
+	}
+	
+	focus = {
+		id = SON_rejuvenate_local_coal_mining
+		icon = GFX_goal_generic_construction2
+		cost = 5
+		x = 2
+		y = 3
+		prerequisite = {focus = SON_newcastle_industry}
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		completion_reward = {
+			random_owned_state = {
+				add_resource = {
+						type = chromium
+						amount = 16
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = SON_caccies
+		icon = GFX_goal_generic_construct_civilian
+		cost = 5
+		x = 2
+		y = 4
+		prerequisite = {focus = SON_rejuvenate_local_coal_mining}
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		completion_reward = {
+			add_ideas = SON_council_houses
+		}
+	}
+	
+
+	focus = {
+		id = SON_alleviate_gateshead_unemployment
+		icon = GFX_focus_generic_military_academy
+		cost = 5
+		x = 2
+		y = 5
+		prerequisite = {focus = SON_caccies}
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		completion_reward = {
+			add_ideas = SON_alleviate_gateshead_unemployment_idea
+		}
+	}
+	
+	focus = {
+		id = SON_expand_the_wear_shipyards
+		icon = GFX_goal_generic_construct_naval_dockyard
+		cost = 5
+		x = 6
+		y = 2
+		prerequisite = {focus = SON_industrial_organisation}
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		completion_reward = {
+			165 = {
+				add_building_construction = {
+					type = naval_base
+					level = 3
+					instant_build = yes
+				}
+			}
+			165 = {
+				add_building_construction = {
+					type = naval_base
+					level = 3
+					province = 1510
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	
+	focus = {
+		id = SON_mercantile_focus
+		icon = GFX_goal_generic_trade
+		cost = 5
+		x = 5
+		y = 3
+		prerequisite = {focus = SON_expand_the_wear_shipyards}
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		completion_reward = {
+			add_ideas = SON_mercantile_focus_idea
+		}
+	}
+
+	focus = {
+		id = SON_trade_interdiction
+		icon = GFX_goal_generic_navy_submarine
+		cost = 5
+		x = 5
+		y = 4
+		prerequisite = {focus = SON_mercantile_focus}
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		completion_reward = {
+			add_ideas = SON_mercantile_focus_idea
+			add_tech_bonus = {
+				name = newcastle_subs
+				uses = 2
+				bonus = 0.5
+				category = ss_tech
+			}
+		}
+	}
+
+	focus = {
+		id = SON_surface_fleet_focus
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		cost = 5
+		x = 7
+		y = 3
+		prerequisite = {focus = SON_expand_the_wear_shipyards}
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		completion_reward = {
+			add_ideas = SON_surface_fleet_focus_idea
+		}
+	}
+
+	focus = {
+		id = SON_a_larger_force
+		icon = GFX_goal_generic_navy_battleship
+		cost = 5
+		x = 7
+		y = 4
+		prerequisite = {focus = SON_surface_fleet_focus}
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		completion_reward = {
+			add_ideas = SON_a_larger_force_idea
+			add_tech_bonus = {
+				name = newcastle_boats
+				uses = 2
+				bonus = 0.5
+				category = dd_tech
+			}
+			add_tech_bonus = {
+				name = newcastle_boats
+				uses = 2
+				bonus = 0.5
+				category = cl_tech
+			}
+		}
+	}
+
+	focus = {
+		id = SON_expand_the_tyne_shipyards
+		icon = GFX_goal_generic_construct_naval_dockyard
+		cost = 5
+		x = 6
+		y = 5
+		prerequisite = {focus = SON_expand_the_wear_shipyards}	
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		completion_reward = {
+			83 = {
+				add_building_construction = {
+					type = naval_base
+					level = 3
+					instant_build = yes
+				}
+			}
+			83 = {
+				add_building_construction = {
+					type = naval_base
+					level = 3
+					province = 1545
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+
+
+
+
+
+
+
+
+
+	focus = {
+		id = SON_political_alignment
+		icon = GFX_goal_generic_neutrality_focus
+		cost = 2
+		x = 12
+		y = 1
+		prerequisite = { focus = SON_prepare_for_the_struggle }
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	
+	focus = {
+		id = SON_anarchist_commune
+		icon = GFX_goal_generic_national_unity
+		cost = 5
+		x = 9
+		y = 2
+		prerequisite = {focus = SON_political_alignment}
+		mutually_exclusive = {focus = SON_communist_commune}
+		mutually_exclusive = {focus = SON_labour_commune}
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		completion_reward = {
+			add_political_power = 50
+
+			set_politics = {
+				ruling_party = anarcho_syndicalist
+				elections_allowed = no
+			}
+			add_popularity = {
+				popularity = 0.35
+				ideology = anarcho_syndicalist
+			}
+
+		}
+	}
+	
+	focus = {
+		id = SON_aid_from_IWW
+		icon = GFX_focus_chi_mission_to_the_us
+		cost = 5
+		x = 9
+		y = 3
+		prerequisite = { focus = SON_anarchist_commune }
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		completion_reward = {
+			add_political_power = 25
+			unlock_decision_category_tooltip = SON_IWW_aid
+		}
+	}
+
+	
+	
+	focus = {
+		id = SON_radical_protestantism
+		icon = GFX_focus_generic_concessions
+		cost = 5
+		x = 9
+		y = 4
+		prerequisite = {focus = SON_aid_from_IWW}
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		completion_reward = {
+			add_ideas = SON_radical_protestantism
+			ANG = { add_opinion_modifier = { target = ROOT modifier = SON_radical_protestantism } }
+		}
+	}
+	
+
+	focus = {
+		id = SON_emulate_diggers_and_levellers
+		icon = GFX_goal_continuous_increase_nu
+		cost = 5
+		x = 9
+		y = 5
+		prerequisite = { focus = SON_radical_protestantism }
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		completion_reward = {
+			remove_ideas = SON_radical_protestantism
+			add_ideas = SON_christian_socialism			
+		}
+	}
+
+	focus = {
+		id = SON_equal_before_god
+		icon = GFX_goal_continuous_boost_freedom
+		cost = 5
+		x = 9
+		y = 6
+		prerequisite = { focus = SON_emulate_diggers_and_levellers }
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		completion_reward = {
+			add_ideas = SON_equal_before_god
+			add_popularity = {
+				popularity = 0.2
+				ideology = anarcho_syndicalist
+			}
+			add_stability = 0.1
+		}
+	}
+	
+	focus = {
+		id = SON_communist_commune
+		icon = GFX_goal_support_communism
+		cost = 5
+		x = 12
+		y = 2
+		prerequisite = {focus = SON_political_alignment}
+		mutually_exclusive = {focus = SON_anarchist_commune}
+		mutually_exclusive = {focus = SON_labour_commune}
+		continue_if_invalid = yes	
+		available_if_capitulated = yes
+		completion_reward = {
+			add_political_power = 50
+
+			set_politics = {
+				ruling_party = communist
+				elections_allowed = no
+			}
+			add_popularity = {
+				popularity = 0.35
+				ideology = communist
+			}
+		}
+	}
+	
+	focus = {
+		id = SON_follow_moscow
+		icon = GFX_focus_chi_mission_to_the_soviet_union
+		cost = 5
+		x = 12
+		y = 3
+		prerequisite = {focus = SON_communist_commune}
+		continue_if_invalid = yes
+			
+		available_if_capitulated = yes
+		completion_reward = {
+			add_political_power = 25
+			unlock_decision_category_tooltip = SON_soviet_aid	
+			}
+	}
+	
+	focus = {
+		id = SON_institutional_atheism
+		icon = GFX_focus_renounce_the_treaty_of_trianon
+		cost = 5
+		x = 12
+		y = 4
+		prerequisite = {focus = SON_follow_moscow}
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		completion_reward = {
+			add_ideas = SON_institutional_atheism
+			ANG = { add_opinion_modifier = { target = ROOT modifier = SON_institutional_atheism } }
+		}
+
+	}
+	
+	focus = {
+		id = SON_political_commissars
+		icon = GFX_goal_generic_war_with_comintern
+		cost = 5
+		x = 12
+		y = 5
+		prerequisite = {focus = SON_institutional_atheism}
+		continue_if_invalid = yes					
+		available_if_capitulated = yes
+		completion_reward = {
+			add_ideas = SON_political_commissars
+		}
+	}
+	
+	focus = {
+		id = SON_stamp_out_the_church
+		icon = GFX_focus_generic_strike_at_democracy1
+		cost = 5
+		x = 12
+		y = 6
+		prerequisite = {focus = SON_political_commissars}
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		completion_reward = {
+			add_stability = -0.1
+			ANG = { add_opinion_modifier = { target = ROOT modifier = SON_outlawed_church} }
+		}
+	}
+	
+	focus = {
+		id = SON_labour_commune
+		icon = GFX_goal_generic_support_democracy
+		cost = 5
+		x = 15
+		y = 2
+		prerequisite = {focus = SON_political_alignment}
+		mutually_exclusive = {focus = SON_communist_commune}
+		mutually_exclusive = {focus = SON_anarchist_commune}
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		completion_reward = {
+			add_popularity = {
+				ideology = democratic_socialist
+				popularity = 0.1
+			}
+			add_political_power = 100
+		}
+	}
+	
+	focus = {
+		id = SON_indigenous_production
+		icon = GFX_goal_generic_construct_civillian
+		cost = 5
+		x = 15
+		y = 3
+		prerequisite = {focus = SON_labour_commune}
+		continue_if_invalid = yes		
+		available_if_capitulated = yes
+		completion_reward = {
+			 add_ideas = SON_indigenous_production
+			 add_political_power = 25
+		}
+	}
+
+
+	focus = {
+		id = SON_new_jeruselum
+		icon = GFX_focus_rom_royal_dictatorship
+		cost = 5
+		x = 15
+		y = 4
+		prerequisite = {focus = SON_indigenous_production}
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		completion_reward = {
+			ANG = { add_opinion_modifier = { target = ROOT modifier = SON_new_jeruselum } }
+			add_stability = 0.05		
+		}
+	}
+	
+	focus = {
+		id = SON_egalitarian_society
+		icon = GFX_goal_molotov_ribbentrop_pact
+		cost = 5
+		x = 15
+		y = 5
+		prerequisite = {focus = SON_new_jeruselum}
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		completion_reward = {
+			add_ideas = SON_meritocracy	
+		}
+	}
+
+	focus = {
+		id = SON_religous_tolerance
+		icon = GFX_goal_anschluss
+		cost = 5
+		x = 15
+		y = 6
+		prerequisite = {focus = SON_egalitarian_society}
+		continue_if_invalid = yes		
+		available_if_capitulated = yes
+		completion_reward = {
+			add_ideas = SON_tolerant_society
+			add_stability = 0.1	
+		}
+	}
+	
+	focus = {
+		id = SON_national_position
+		icon = GFX_goal_generic_intelligence_exchange
+		cost = 1
+		x = 12
+		y = 7
+		prerequisite = {
+			focus = SON_equal_before_god
+			focus = SON_stamp_out_the_church
+			focus = SON_religous_tolerance
+		}
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		completion_reward = {
+			add_political_power = 25
+		}
+	}
+	
+	focus = {
+		id = SON_recognise_midlands
+		icon = GFX_focus_generic_treaty
+		cost = 2
+		x = 9
+		y = 8
+		prerequisite = {focus = SON_national_position}
+		mutually_exclusive = {focus = SON_go_it_alone}
+		available = { SOM = {exists = yes}}
+		bypass = { SOM = {exists = no}}
+		continue_if_invalid = yes
+		
+		available_if_capitulated = yes
+		completion_reward = {
+			add_political_power = 50
+
+		}
+	}
+	
+	
+	focus = {
+		id = SON_national_cooperation
+		icon = GFX_goal_tripartite_pact
+		cost = 5
+		x = 9
+		y = 9
+		prerequisite = {focus = SON_recognise_midlands}
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		completion_reward = {
+			add_ideas = SON_national_cooperation
+		}
+	}
+	
+	focus = {
+		id = SON_national_consolidation
+		icon = GFX_focus_yug_pan_slavic_congress
+		cost = 7
+		x = 9
+		y = 10
+		prerequisite = {focus = SON_national_cooperation}
+		bypass = { SOM = {has_government = anarcho_syndicalist}}
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		completion_reward = {
+			SOM = { annex_country = {
+    					target = ROOT
+    					transfer_troops = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = SON_go_it_alone
+		icon = GFX_goal_generic_dangerous_deal
+		cost = 2
+		x = 15
+		y = 8
+		prerequisite = {focus = SON_national_position}
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		completion_reward = {
+			add_political_power = 100
+			SOM = { add_opinion_modifier = { target = ROOT modifier = SON_go_it_alone } }
+		}
+	}
+	
+	focus = {
+		id = SON_independent_commune
+		icon = GFX_goal_generic_forceful_treaty
+		cost = 5
+		x = 15
+		y = 9
+		prerequisite = {focus = SON_go_it_alone}
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		completion_reward = {
+			add_ideas = SON_independent_commune
+			leave_faction = yes
+		}
+	}
+	
+	focus = {
+		id = SON_local_consolidation
+		icon = GFX_goal_generic_defence
+		cost = 7
+		x = 15
+		y = 10
+		prerequisite = {focus = SON_independent_commune}
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		completion_reward = {
+			add_ideas = SON_local_power
+			add_stability = 0.2
+		}
+	}
+	
+
+
+	focus = {
+		id = SON_establish_a_force
+		icon = GFX_goal_generic_small_arms
+		cost = 5
+		x = 20
+		y = 1
+		prerequisite = {focus = SON_prepare_for_the_struggle}
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		completion_reward = {
+			army_experience = 20
+			add_ideas = SON_establish_a_force_idea
+		}
+	}
+	
+	focus = {
+		id = SON_a_workers'_army
+		icon = GFX_goal_generic_military_sphere
+		cost = 5
+		x = 20
+		y = 2
+		prerequisite = {focus = SON_establish_a_force}
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		completion_reward = {
+			custom_effect_tooltip = SON_a_workers'_army_tt
+				hidden_effect = {
+				random_owned_controlled_state = {
+					limit = { ROOT = { has_full_control_of_state = PREV } }
+					prioritize = { 83 }
+					create_unit = {
+						division = "name = \"wip1\" division_template = \"People's Militia\" start_experience_factor = 1.0"
+						owner = SON
+					}
+					create_unit = {
+						division = "name = \"WIP2\" division_template = \"People's Militia\" start_experience_factor = 1.0"
+						owner = SON
+					}
+					create_unit = {
+						division = "name = \"WIP3\" division_template = \"People's Militia\" start_experience_factor = 1.0"
+						owner = SON
+					}
+					create_unit = {
+						division = "name = \"WIP4\" division_template = \"People's Militia\" start_experience_factor = 1.0"
+						owner = SON
+					}
+					create_unit = {
+						division = "name = \"WIP5\" division_template = \"People's Militia\" start_experience_factor = 1.0"
+						owner = SON
+					}
+					create_unit = {
+						division = "name = \"WIP6\" division_template = \"People's Militia\" start_experience_factor = 1.0"
+						owner = SON
+					}
+				}
+			}
+		}	
+	}
+
+
+	focus = {
+		id = SON_offensive_focus
+		icon = GFX_focus_prc_infiltration
+		cost = 5
+		x = 18
+		y = 3
+		prerequisite = {focus = SON_a_workers'_army}
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		completion_reward = {
+			add_tech_bonus = {
+				name = newcastle_guns
+				uses = 1
+				bonus = 0.5
+				category = infantry_weapons
+			}
+			add_ideas = SON_offensive_focus_idea
+		}	
+	}
+
+	focus = {
+		id = SON_improvised_weaponry
+		icon = GFX_focus_NZL_bob_semple_tank
+		cost = 5
+		x = 18
+		y = 4
+		prerequisite = {focus = SON_offensive_focus}
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		completion_reward = {
+				add_ideas = SON_improvised_weaponry_idea
+		}
+	}
+	
+	focus = {
+		id = SON_defensive_focus
+		icon = GFX_focus_generic_commonwealth_build_infantry
+		cost = 5
+		x = 22
+		y = 3
+		prerequisite = {focus = SON_a_workers'_army}
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		completion_reward = {
+			add_tech_bonus = {
+				name = newcastle_guns
+				uses = 1
+				bonus = 0.5
+				category = infantry_tech
+			}
+			add_ideas = SON_defensive_focus_idea
+		}
+	}
+	
+	focus = {
+		id = SON_defend_the_revolution
+		icon = GFX_focus_generic_join_comintern
+		cost = 5
+		x = 22
+		y = 4
+		prerequisite = {focus = SON_defensive_focus}
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		completion_reward = {
+			custom_effect_tooltip = SON_defend_the_revolution_tt
+			hidden_effect = {
+				83 = {
+					add_building_construction = {
+						type = bunker
+						level = 3
+						province = 1545
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 3
+						province = 1543
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 1
+						province = 1534
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 1
+						province = 1548
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 1
+						province = 1534
+						instant_build = yes
+					}
+				}
+				164 = {
+					add_building_construction = {
+						type = bunker
+						level = 3
+						province = 1529
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 3
+						province = 1504
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 1
+						province = 1516
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 1
+						province = 1511
+						instant_build = yes
+					}
+				}
+				165 = {
+					add_building_construction = {
+						type = bunker
+						level = 3
+						province = 1533
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 3
+						province = 1522
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 1
+						province = 1510
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 1
+						province = 1517
+						instant_build = yes
+					}
+				}
+			}
+	}
+}

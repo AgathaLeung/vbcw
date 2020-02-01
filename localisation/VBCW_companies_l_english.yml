@@ -1,0 +1,75 @@
+﻿l_english:
+###ROYALISTS##
+ ROY_RSAF:0 "Royal Small Arms Factory"
+ ROY_ROF:0 "Royal Ordnance"
+ ROY_morris:0 "Morris Motors"
+ ROY_leyland:0 "Leyland Motors"
+ ROY_appledore:0 "Appledore Shipbuilders"
+ ROY_barclay:0 "Barclay Curle"
+ ROY_supermarine:0 "Supermarine"
+ ROY_de_haviland:0 "de Haviland"
+ ROY_ecko:0 "ECKO"
+ ROY_aioc:0 "Anglo-Iranian Oil"
+ 
+###FASCISTS##
+ BUF_london_small_arms:0 "London Small Arms Co."
+ BUF_woolwich:0 "Woolwich Arsenal"
+ BUF_AEC:0 "AEC"
+ BUF_bedford:0 "Bedford Vehicles"
+ BUF_thames_ironworks:0 "Thames Ironworks"
+ BUF_dudgeon:0 "J.W. Dudgeon"
+ BUF_hawker:0 "Hawker"
+ BUF_handley_page:0 "Handley Page"
+ BUF_decca:0 "Decca Electrics"
+ BUF_btr:0 "British Tyre and Rubber Co."
+ 
+###ANGLICANS##
+ ANG_greener:0 "W.W. Greener"
+ ANG_bmarc:0 "BMARC"
+ ANG_dennis:0 "Dennis Specialist Vehicles"
+ ANG_crossley:0 "Crossley Motors"
+ ANG_dover_dockyard:0 "Dover Dockyard"
+ ANG_vosper:0 "Vosper & Co."
+ ANG_gloster:0 "Gloster Aircraft Co."
+ ANG_bristol:0 "Bristol Aeroplane Co."
+ ANG_english_electric:0 "English Electric"
+ ANG_crystalate:0 "Crystalate Plastics and Electrics"
+ 
+###YORKISTS##
+ YRK_holland_and_holland:0 "Holland and Holland"
+ YRK_ROF:0 "Royal Ordnance Factory Drigg"
+ YRK_vauxhall:0 "Vauxhall Motors"
+ YRK_alvis:0 "Alvis"
+ YRK_vickers_armstrongs:0 "Vickers-Armstrongs"
+ YRK_thornycroft:0 "Thornycroft & Co."
+ YRK_blackburn:0 "Blackburn Aircraft"
+ YRK_armstrong_whitworth:0 "Armstrong Whitworth"
+ YRK_lind:0 "Lind & Co."
+ YRK_dynatron:0 "Dynatron Radio"
+ 
+###MIDLANDS###
+ SOM_fellows_and_morton: "Fellows, Morton and Clayton"
+ SOM_goole_shipbuilding: "Goole Shipbuilding and Repair"
+ SOM_boulton_paul: "Boulton Paul Aircraft"
+ SOM_avro: "Avro"
+ SOM_BSA: "Birmingham Small Arms"
+ SOM_raleigh: "Raleigh Bicycle Company"
+ SOM_austin: "Austin Motors"
+ SOM_nuffield: "Nuffield Mechanizations Ltd" 
+ SOM_dunlop: "Dunlop Rubber"
+ SOM_telsen: "Telsen Electric Company"
+
+###LIVERPOOL###
+ LIV_cammell_laird:0 "Cammell Laird"
+ LIV_rj_evans:0 "R & J Evans"
+
+###KERNOW###
+ ker_arvwisk_vehicles:0 "Arvwisk Vehicles"
+ ker_truro_motors:0 "Truro Motors"
+ ker_lanhydrock:0 "Renault d'Cornwall"
+ ker_menheniot:0 "Opel Cornwall"
+ ker_pendennis_shipyard:0 "Pendennis Shipyard"
+ ker_falmouth_boat_co:0 "Falmouth Boat Co."
+ ker_padstow_model_flying_club:0 "Padstow Model Flying Club"
+ ker_camborne_school_of_mines:0 "Camborne School of Mines"
+ ker_redruth_wireless_co:0 "Redruth Radio"

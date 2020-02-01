@@ -1,0 +1,22 @@
+state={
+	id=108
+	name="STATE_108"
+	provinces={
+		1864 1868 1876 1884 1895 
+	}
+	manpower=50000
+	
+	state_category = pastoral
+	
+	history={
+		owner = SCO
+		add_core_of = SCO
+		add_claim_by = ROY
+		add_claim_by = YRK
+		add_claim_by = JAC
+		buildings = {
+			infrastructure = 2
+		}
+	}
+}
+

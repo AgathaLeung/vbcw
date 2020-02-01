@@ -1,0 +1,222 @@
+ideas = {
+
+	country = {
+		LIV_city_under_siege = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_fortify_the_borders
+			
+			modifier = {
+				industrial_capacity_dockyard = 0.25
+				attrition = 0.25
+			}
+		}
+		
+		LIV_super_construction = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_navy_bonus
+			
+			modifier = {
+				
+				industrial_capacity_dockyard = 0.25
+				
+			}
+		}
+		LIV_work_for_all = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_production_bonus
+			
+			modifier = {
+				
+				conscription = 0.05
+				industrial_capacity_factory = 0.1
+				
+			}
+		}
+		
+			
+		LIV_welfare_state = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_foreign_capital
+			
+			modifier = {
+				stability_factor = 0.15	
+				war_support_factor = 0.05
+				consumer_goods_factor = 0.1
+				conscription = 0.05				
+			}
+		}	
+	
+		LIV_socialist_haven = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.15	
+				consumer_goods_factor = 0.1
+				political_power_cost = -0.05
+				research_speed_factor = 0.05
+			}
+		}
+		
+		LIV_organised_militias = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_manpower_bonus
+			
+			modifier = {
+				army_morale_factor = 0.10
+				conscription = 0.05
+				army_org = 5
+			}		
+		}
+	}
+		
+	political_advisor = {
+	
+		LIV_errington = {
+			
+			allowed = {
+				original_tag = LIV
+			}
+			
+			traits = { silent_workhorse }
+		}
+		
+		LIV_samuel = {
+			
+			allowed = {
+				original_tag = LIV
+			}
+			
+			traits = { popular_figurehead }
+		}
+		
+		LIV_rankin = {
+			
+			picture = war_industrialist
+			
+			allowed = {
+				original_tag = LIV
+			}
+			
+			traits = { war_industrialist }
+		}
+		
+		LIV_rowse = {
+			
+			allowed = {
+				original_tag = LIV
+			}
+			
+			traits = { quartermaster_general }
+		}
+		
+		LIV_hubback = {
+			
+			allowed = {
+				original_tag = LIV
+			}
+			
+			traits = { captain_of_industry }
+		}
+	}
+	
+	naval_manufacturer = { 
+		
+		designer = yes
+		
+		LIV_cammell_laird = {
+			picture = cammell_laird
+
+			
+			allowed = {
+				original_tag = LIV
+			}
+			
+			research_bonus = {
+				naval_equipment = 0.10
+			}
+			
+			equipment_bonus = {
+				
+			}
+			
+			traits = { large_vessel_manufacturer_1 }
+		}
+
+		LIV_rj_evans = {
+			picture = generic_naval_manufacturer_3
+
+			
+			allowed = {
+				original_tag = LIV
+			}
+			
+			research_bonus = {
+				naval_equipment = 0.10
+			}
+			
+			equipment_bonus = {
+			}
+			
+			traits = { small_vessel_manufacturer_2 }
+		}
+	}
+}

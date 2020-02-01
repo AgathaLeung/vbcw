@@ -1,0 +1,81 @@
+ideas = {
+
+	country = {
+		SOG_collectivised_shipyards = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = maizuru_naval_arsenal
+			
+			modifier = {
+				industrial_capacity_dockyard = 0.25
+				conscription_factor = -0.1
+			}
+		}
+	}
+	
+	political_advisor = {
+	
+		SOG_buchanan = {
+			
+			allowed = {
+				original_tag = SOG
+			}
+			
+			traits = { financial_expert }
+		}
+		
+		SOG_johnston = {
+			
+			allowed = {
+				original_tag = SOG
+			}
+			
+			traits = { fortification_engineer }
+		}
+		
+		SOG_macdonald = {
+			
+			allowed = {
+				original_tag = SOG
+			}
+			
+			traits = { ideological_crusader }
+		}
+		
+		SOG_maxton = {
+			
+			allowed = {
+				original_tag = SOG
+			}
+			
+			traits = { silent_workhorse }
+		}
+		
+		SOG_mcgovern = {
+			
+			allowed = {
+				original_tag = SOG
+			}
+			
+			traits = { war_industrialist }
+		}
+		
+		SOG_moffat = {
+			
+			allowed = {
+				original_tag = SOG
+			}
+			
+			traits = { captain_of_industry }
+		}
+	}
+}

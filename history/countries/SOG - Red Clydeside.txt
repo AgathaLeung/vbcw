@@ -1,0 +1,178 @@
+﻿capital = 101
+
+OOB = "SOG_1936"
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_naval_oob = "SOG_1936_naval_mtg"
+	else = {
+		set_naval_oob = "SOG_1936_naval_legacy"
+	}
+}
+
+set_research_slots = 2
+
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	support_weapons = 1
+	tech_recon = 1
+	tech_support = 1		
+	tech_engineers = 1
+	tech_mountaineers = 1
+	gw_artillery = 1
+	early_fighter = 1
+	early_bomber = 1
+	CAS1 = 1
+	naval_bomber1 = 1
+	guerilla_warfare = 1
+	basic_machine_tools = 1
+	construction1 = 1
+	early_armoured_car = 1
+	concentrated_industry = 1
+	electronic_mechanical_engineering = 1
+	radio = 1
+	tech_signal_company = 1
+	motorised_infantry = 1
+}
+
+#########################
+###SHIP TECH - VANILLA###
+#########################
+
+if = {
+	limit = {
+		not = { has_dlc = "Man the Guns" }
+	}
+	set_technology = {	
+		early_trawler = 1
+		early_corvette = 1
+		early_sloop = 1
+		early_destroyer = 1
+		basic_destroyer = 1
+		early_light_cruiser = 1
+		early_heavy_cruiser = 1
+		transport = 1
+	}
+}
+
+#########################
+###  SHIP TECH - MTG  ###
+#########################
+
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_technology = {	
+		basic_naval_mines = 1
+		early_ship_hull_trawler = 1
+		early_ship_hull_sloop = 1
+		basic_ship_hull_sloop = 1
+		early_ship_hull_light = 1
+		basic_ship_hull_light = 1
+		early_ship_hull_submarine = 1
+		early_ship_hull_cruiser = 1
+		basic_battery = 1
+		basic_light_battery = 1
+		basic_medium_battery = 1
+		basic_torpedo = 1
+		sonar = 1
+		smoke_generator = 1
+		basic_depth_charges = 1
+		basic_secondary_battery = 1
+		basic_cruiser_armor_scheme = 1
+		mtg_transport = 1
+		basic_fire_control_system = 1
+	}
+}
+
+if = {
+	limit = { has_dlc = "Together for Victory" }
+
+	add_to_tech_sharing_group = socialist_research
+}
+
+set_politics = {	
+	ruling_party = communist
+	last_election = "1933.3.5"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+    fascist = 0
+    autocratic = 0
+    conservative = 0
+    liberal = 0
+    democratic_socialist = 20
+    communist = 70
+    anarcho_syndicalist = 10
+    civic_nationalist = 0
+}
+
+add_ideas = {
+	SOG_collectivised_shipyards
+}
+
+set_convoys = 50
+
+create_country_leader = {
+	name = "Willie Gallacher"
+	desc = "POLITICS_KING_ZOG_DESC"
+	picture = "gfx/leaders/VBCW/SOG/SOG-Gallacher.dds"
+	expire = "1965.1.1"
+	ideology = communist_subtype
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "James Maxton"
+	desc = "POLITICS_KING_ZOG_DESC"
+	picture = "gfx/leaders/VBCW/SOG/SOG-Maxton.dds"
+	expire = "1965.1.1"
+	ideology = democratic_socialist_subtype
+	traits = {
+		#
+	}
+}
+
+
+
+create_country_leader = {
+	name = "Ethel MacDonald"
+	desc = "POLITICS_KING_ZOG_DESC"
+	picture = "gfx/leaders/VBCW/SOG/SOG-MacDonald.dds"
+	expire = "1965.1.1"
+	ideology = anarchist_subtype
+	traits = {
+		#
+	}
+}
+
+create_corps_commander = {
+	name = "Robert 'Rob Roy' Urquhart"
+	portrait_path = "gfx/leaders/VBCW/SOG/SOG-Urquhart.png"
+	traits = { commando trickster}
+	skill = 4
+	attack_skill = 4
+    defense_skill = 3
+    planning_skill = 5
+    logistics_skill = 2
+}
+
+
+create_corps_commander = {
+	name = "Hamish Henderson"
+	portrait_path = "gfx/leaders/VBCW/SOG/SOG-Henderson.png"
+	traits = { media_personality }
+	skill = 2
+	attack_skill = 1
+    defense_skill = 2
+    planning_skill = 2
+    logistics_skill = 2
+}
+

@@ -1,0 +1,25 @@
+state={
+	id=169
+	name="STATE_169"
+	provinces={
+		1908 1916 1942 1961 1972 1981 1985 1986 2006 
+	}
+	manpower=25000
+	
+	state_category = pastoral
+	
+	history={
+		owner = JAC
+		add_core_of = JAC
+		add_claim_by = ROY
+		add_claim_by = YRK
+		add_claim_by = SCO
+		buildings = {
+			infrastructure = 2
+			1981 = {
+				naval_base = 1
+			}
+			
+		}
+	}
+}

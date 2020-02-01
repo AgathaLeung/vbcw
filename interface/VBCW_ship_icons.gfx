@@ -1,0 +1,106 @@
+spriteTypes = {
+	
+	###Naval Combat GFX##
+	
+	spriteType = { name = "GFX_navalcombat_ship_icon_sloop"					texturefile = "gfx/interface/navalcombat/ships/sloop.dds"						noOfFrames = 2 }
+	spriteType = { name = "GFX_navalcombat_ship_icon_corvette"				texturefile = "gfx/interface/navalcombat/ships/corvette.dds"					noOfFrames = 2 }
+	# spriteType = { name = "GFX_navalcombat_ship_icon_escort"				texturefile = "gfx/interface/navalcombat/ships/sloop.dds"						noOfFrames = 2 }
+	spriteType = { name = "GFX_navalcombat_ship_icon_trawler"				texturefile = "gfx/interface/navalcombat/ships/trawler.dds"						noOfFrames = 2 }
+	spriteType = { name = "GFX_navalcombat_ship_icon_gunboat"				texturefile = "gfx/interface/navalcombat/ships/gunboat.dds"						noOfFrames = 2 }
+	spriteType = { name = "GFX_navalcombat_ship_icon_torpedo_boat"			texturefile = "gfx/interface/navalcombat/ships/torpedo_boat.dds"				noOfFrames = 2 }
+	# spriteType = { name = "GFX_navalcombat_ship_icon_motorboat"				texturefile = "gfx/interface/navalcombat/ships/torpedo_boat.dds"				noOfFrames = 2 }
+	spriteType = { name = "GFX_navalcombat_ship_icon_monitor"				texturefile = "gfx/interface/navalcombat/ships/monitor.dds"						noOfFrames = 2 }
+	spriteType = { name = "GFX_navalcombat_ship_icon_light_carrier"			texturefile = "gfx/interface/navalcombat/ships/light_carrier.dds"				noOfFrames = 2 }	
+	
+	###On-Map Counter GFX - White###
+	
+	spriteType = { name = "GFX_unit_sloop_icon_medium_white"				texturefile = "gfx/interface/counters/ships_small/onmap_sloop.dds" }
+	spriteType = { name = "GFX_unit_corvette_icon_medium_white"				texturefile = "gfx/interface/counters/ships_small/onmap_corvette.dds" }
+	# spriteType = { name = "GFX_unit_escort_icon_medium_white"				texturefile = "gfx/interface/counters/ships_small/onmap_sloop.dds" }
+	spriteType = { name = "GFX_unit_trawler_icon_medium_white"				texturefile = "gfx/interface/counters/ships_small/onmap_trawler.dds" }
+	spriteType = { name = "GFX_unit_gunboat_icon_medium_white"				texturefile = "gfx/interface/counters/ships_small/onmap_gunboat.dds" }
+	spriteType = { name = "GFX_unit_torpedo_boat_icon_medium_white"			texturefile = "gfx/interface/counters/ships_small/onmap_torpedo_boat.dds" }
+	# spriteType = { name = "GFX_unit_motorboat_icon_medium_white"			texturefile = "gfx/interface/counters/ships_small/onmap_torpedo_boat.dds" }
+	spriteType = { name = "GFX_unit_monitor_icon_medium_white"				texturefile = "gfx/interface/counters/ships_small/onmap_monitor.dds" }
+	spriteType = { name = "GFX_unit_light_carrier_icon_medium_white"		texturefile = "gfx/interface/counters/ships_small/onmap_light_carrier.dds" }
+
+	
+	###On-Map Counter GFX - Black###
+	
+	spriteType = { name = "GFX_unit_sloop_icon_medium_black"				texturefile = "gfx/interface/counters/ships_small/onmap_sloop_inverted.dds" }
+	spriteType = { name = "GFX_unit_corvette_icon_medium_black"				texturefile = "gfx/interface/counters/ships_small/onmap_corvette_inverted.dds" }
+	# spriteType = { name = "GFX_unit_escort_icon_medium_black"				texturefile = "gfx/interface/counters/ships_small/onmap_sloop_inverted.dds" }
+	spriteType = { name = "GFX_unit_trawler_icon_medium_black"				texturefile = "gfx/interface/counters/ships_small/onmap_trawler_inverted.dds" }
+	spriteType = { name = "GFX_unit_gunboat_icon_medium_black"				texturefile = "gfx/interface/counters/ships_small/onmap_gunboat_inverted.dds" }
+	spriteType = { name = "GFX_unit_torpedo_boat_icon_medium_black"			texturefile = "gfx/interface/counters/ships_small/onmap_torpedo_boat_inverted.dds" }
+	# spriteType = { name = "GFX_unit_motorboat_icon_medium_black"			texturefile = "gfx/interface/counters/ships_small/onmap_torpedo_boat_inverted.dds" }
+	spriteType = { name = "GFX_unit_monitor_icon_medium_black"				texturefile = "gfx/interface/counters/ships_small/onmap_monitor_inverted.dds" }
+	spriteType = { name = "GFX_unit_light_carrier_icon_medium_black"		texturefile = "gfx/interface/counters/ships_small/onmap_light_carrier_inverted.dds" }
+	
+	###Text Icons###
+	
+	spriteType = { name = "GFX_ship_sloop_icon_small"						texturefile = "gfx/interface/counters/ships_small/onmap_sloop.dds"				legacy_lazy_load = no }	
+	spriteType = { name = "GFX_ship_corvette_icon_small"					texturefile = "gfx/interface/counters/ships_small/onmap_corvette.dds"			legacy_lazy_load = no }	
+	# spriteType = { name = "GFX_ship_escort_icon_small"						texturefile = "gfx/interface/counters/ships_small/onmap_sloop.dds"				legacy_lazy_load = no }
+	spriteType = { name = "GFX_ship_trawler_icon_small"						texturefile = "gfx/interface/counters/ships_small/onmap_trawler.dds"			legacy_lazy_load = no }	
+	spriteType = { name = "GFX_ship_gunboat_icon_small"						texturefile = "gfx/interface/counters/ships_small/onmap_gunboat.dds"			legacy_lazy_load = no }	
+	spriteType = { name = "GFX_ship_torpedo_boat_icon_small"				texturefile = "gfx/interface/counters/ships_small/onmap_torpedo_boat.dds"		legacy_lazy_load = no }
+	# spriteType = { name = "GFX_ship_motorboat_icon_small"					texturefile = "gfx/interface/counters/ships_small/onmap_torpedo_boat.dds"		legacy_lazy_load = no }
+	spriteType = { name = "GFX_ship_monitor_icon_small"						texturefile = "gfx/interface/counters/ships_small/onmap_monitor.dds"			legacy_lazy_load = no }
+	spriteType = { name = "GFX_ship_light_carrier_icon_small"				texturefile = "gfx/interface/counters/ships_small/onmap_light_carrier.dds"		legacy_lazy_load = no }
+		
+	###Unit GFX###
+	
+	spriteType = { name = "GFX_unit_corvette_icon_medium"					texturefile = "gfx/interface/navalcombat/ships/corvette.dds"					noOfFrames = 2 }	
+	spriteType = { name = "GFX_unit_corvette_1_icon_medium"					texturefile = "gfx/interface/navalcombat/ships/corvette_I.dds"					noOfFrames = 2 }	
+	spriteType = { name = "GFX_unit_corvette_2_icon_medium"					texturefile = "gfx/interface/navalcombat/ships/corvette_II.dds"					noOfFrames = 2 }	
+	spriteType = { name = "GFX_unit_corvette_3_icon_medium"					texturefile = "gfx/interface/navalcombat/ships/corvette_III.dds"				noOfFrames = 2 }	
+	spriteType = { name = "GFX_unit_corvette_4_icon_medium"					texturefile = "gfx/interface/navalcombat/ships/corvette_IV.dds"					noOfFrames = 2 }
+	
+	spriteType = { name = "GFX_unit_sloop_icon_medium"						texturefile = "gfx/interface/navalcombat/ships/sloop.dds"						noOfFrames = 2 }	
+	spriteType = { name = "GFX_unit_sloop_1_icon_medium"					texturefile = "gfx/interface/navalcombat/ships/sloop_I.dds"						noOfFrames = 2 }	
+	spriteType = { name = "GFX_unit_sloop_2_icon_medium"					texturefile = "gfx/interface/navalcombat/ships/sloop_II.dds"					noOfFrames = 2 }	
+	spriteType = { name = "GFX_unit_sloop_3_icon_medium"					texturefile = "gfx/interface/navalcombat/ships/sloop_III.dds"					noOfFrames = 2 }	
+	spriteType = { name = "GFX_unit_sloop_4_icon_medium"					texturefile = "gfx/interface/navalcombat/ships/sloop_IV.dds"					noOfFrames = 2 }
+	
+	# spriteType = { name = "GFX_unit_escort_icon_medium"						texturefile = "gfx/interface/navalcombat/ships/sloop.dds"						noOfFrames = 2 }	
+	# spriteType = { name = "GFX_unit_escort_1_icon_medium"					texturefile = "gfx/interface/navalcombat/ships/sloop_I.dds"						noOfFrames = 2 }	
+	# spriteType = { name = "GFX_unit_escort_2_icon_medium"					texturefile = "gfx/interface/navalcombat/ships/sloop_II.dds"					noOfFrames = 2 }	
+	# spriteType = { name = "GFX_unit_escort_3_icon_medium"					texturefile = "gfx/interface/navalcombat/ships/sloop_III.dds"					noOfFrames = 2 }	
+	# spriteType = { name = "GFX_unit_escort_4_icon_medium"					texturefile = "gfx/interface/navalcombat/ships/sloop_IV.dds"					noOfFrames = 2 }
+	
+	spriteType = { name = "GFX_unit_trawler_icon_medium"					texturefile = "gfx/interface/navalcombat/ships/trawler.dds"						noOfFrames = 2 }	
+	spriteType = { name = "GFX_unit_trawler_1_icon_medium"					texturefile = "gfx/interface/navalcombat/ships/trawler_I.dds"					noOfFrames = 2 }	
+	spriteType = { name = "GFX_unit_trawler_2_icon_medium"					texturefile = "gfx/interface/navalcombat/ships/trawler_II.dds"					noOfFrames = 2 }	
+	spriteType = { name = "GFX_unit_trawler_3_icon_medium"					texturefile = "gfx/interface/navalcombat/ships/trawler_III.dds"					noOfFrames = 2 }	
+	spriteType = { name = "GFX_unit_trawler_4_icon_medium"					texturefile = "gfx/interface/navalcombat/ships/trawler_IV.dds"					noOfFrames = 2 }
+	
+	spriteType = { name = "GFX_unit_gunboat_icon_medium"					texturefile = "gfx/interface/navalcombat/ships/gunboat.dds"						noOfFrames = 2 }	
+	spriteType = { name = "GFX_unit_gunboat_1_icon_medium"					texturefile = "gfx/interface/navalcombat/ships/gunboat_I.dds"					noOfFrames = 2 }	
+	spriteType = { name = "GFX_unit_gunboat_2_icon_medium"					texturefile = "gfx/interface/navalcombat/ships/gunboat_II.dds"					noOfFrames = 2 }	
+	spriteType = { name = "GFX_unit_gunboat_3_icon_medium"					texturefile = "gfx/interface/navalcombat/ships/gunboat_III.dds"					noOfFrames = 2 }	
+	spriteType = { name = "GFX_unit_gunboat_4_icon_medium"					texturefile = "gfx/interface/navalcombat/ships/gunboat_IV.dds"					noOfFrames = 2 }
+	
+	spriteType = { name = "GFX_unit_torpedo_boat_icon_medium"				texturefile = "gfx/interface/navalcombat/ships/torpedo_boat.dds"				noOfFrames = 2 }	
+	spriteType = { name = "GFX_unit_torpedo_boat_1_icon_medium"				texturefile = "gfx/interface/navalcombat/ships/torpedo_boat_I.dds"				noOfFrames = 2 }	
+	spriteType = { name = "GFX_unit_torpedo_boat_2_icon_medium"				texturefile = "gfx/interface/navalcombat/ships/torpedo_boat_II.dds"				noOfFrames = 2 }	
+	spriteType = { name = "GFX_unit_torpedo_boat_3_icon_medium"				texturefile = "gfx/interface/navalcombat/ships/torpedo_boat_III.dds"			noOfFrames = 2 }	
+	spriteType = { name = "GFX_unit_torpedo_boat_4_icon_medium"				texturefile = "gfx/interface/navalcombat/ships/torpedo_boat_IV.dds"				noOfFrames = 2 }
+	
+	# spriteType = { name = "GFX_unit_motorboat_icon_medium"					texturefile = "gfx/interface/navalcombat/ships/torpedo_boat.dds"				noOfFrames = 2 }	
+	# spriteType = { name = "GFX_unit_motorboat_1_icon_medium"				texturefile = "gfx/interface/navalcombat/ships/torpedo_boat_I.dds"				noOfFrames = 2 }	
+	# spriteType = { name = "GFX_unit_motorboat_2_icon_medium"				texturefile = "gfx/interface/navalcombat/ships/torpedo_boat_II.dds"				noOfFrames = 2 }	
+	# spriteType = { name = "GFX_unit_motorboat_3_icon_medium"				texturefile = "gfx/interface/navalcombat/ships/torpedo_boat_III.dds"			noOfFrames = 2 }	
+	# spriteType = { name = "GFX_unit_motorboat_4_icon_medium"				texturefile = "gfx/interface/navalcombat/ships/torpedo_boat_IV.dds"				noOfFrames = 2 }
+	
+	spriteType = { name = "GFX_unit_monitor_icon_medium"					texturefile = "gfx/interface/navalcombat/ships/monitor.dds"						noOfFrames = 2 }	
+	spriteType = { name = "GFX_unit_monitor_1_icon_medium"					texturefile = "gfx/interface/navalcombat/ships/monitor_I.dds"					noOfFrames = 2 }	
+	spriteType = { name = "GFX_unit_monitor_2_icon_medium"					texturefile = "gfx/interface/navalcombat/ships/monitor_II.dds"					noOfFrames = 2 }
+	
+	spriteType = { name = "GFX_unit_light_carrier_icon_medium"				texturefile = "gfx/interface/navalcombat/ships/light_carrier.dds"				noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_light_carrier_1_icon_medium"			texturefile = "gfx/interface/navalcombat/ships/light_carrier_I.dds"				noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_light_carrier_2_icon_medium"			texturefile = "gfx/interface/navalcombat/ships/light_carrier_II.dds"			noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_light_carrier_3_icon_medium"			texturefile = "gfx/interface/navalcombat/ships/light_carrier_III.dds"			noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_light_carrier_4_icon_medium"			texturefile = "gfx/interface/navalcombat/ships/light_carrier_IV.dds"			noOfFrames = 2 }
+	
+}

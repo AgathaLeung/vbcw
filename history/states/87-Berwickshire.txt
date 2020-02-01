@@ -1,0 +1,21 @@
+state={
+	id=87
+	name="STATE_87"
+	provinces={
+		1648 1651 1655 1658 1670 1676 1679 1697 
+	}
+	manpower=50000
+	
+	state_category = pastoral
+	
+	history={
+		owner = SCO
+		add_core_of = SCO
+		add_claim_by = ROY
+		add_claim_by = YRK
+		add_claim_by = JAC
+		buildings = {
+			infrastructure = 2
+		}
+	}
+}

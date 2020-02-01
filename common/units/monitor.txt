@@ -1,0 +1,24 @@
+sub_units = {
+	monitor = {
+		sprite = monitor
+		map_icon_category = ship
+		priority = 2
+		active = yes
+		type = { screen_ship }
+		need = { ship_hull_light = 1 }
+		need_equipment_modules = {
+			any = {
+				ship_shore_bombardment_battery_1 = 1
+				ship_shore_bombardment_battery_2 = 1
+			}
+		}
+		
+		max_organisation = 40
+		
+		supply_consumption = 0.05
+		critical_parts = { rudder_jammed destroyed_ammo_storage broken_propeller on_fire }
+		critical_part_damage_chance_mult = 1
+		
+		hit_profile_mult = 1.0
+	}
+}

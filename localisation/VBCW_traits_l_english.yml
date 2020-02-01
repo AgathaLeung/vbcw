@@ -1,0 +1,59 @@
+﻿l_english:
+ ### Political Minister Traits ###
+ fascist_booster:0 "Fascist Demagogue"
+ fascist_booster_desc:0 "Driven by a will to unite the people under a strong state, this politician emphasizes nationalist and militarist rhetoric."
+ autocratic_booster:0 "Staunch Monarchist"
+ autocratic_booster_desc:0 "This politician believes that a hereditary ruler serves as a powerful icon to unite the country."
+ conservative_booster:0 "Traditionalist"
+ conservative_booster_desc:0 "Convinced of the upper-classes' right to rule, this politician strives to promote traditional values and maintain the status quo."
+ liberal_booster:0 "Democratic Reformer"
+ liberal_booster_desc:0 "A firm believer in the people's right to rule themselves, this politician sees empowering them as the first priority and aims for the country to be ruled with their mandate."
+ demsoc_booster:0 "Shop Steward"
+ demsoc_booster_desc: "An ex Trade Unionist, this politician devotes his energies to campaigning for the working mand."
+ communist_booster:0 "Communist Revolutionary"
+ communist_booster_desc:0 "A supporter of the international revolution hoping to aid the country's, and eventually the world's, transition to a communist society."
+ radsoc_booster:0 "Free Radical"
+ radsoc_booster_desc:0 "A \"true\" socialist, at least in his eyes, this politician believes in a radical change in society and the redistrubition of wealth."
+ civnat_booster:0 "Cultural Champion"
+ civnat_booster_desc:0 "Less a politcian, and more a poet, this person extols the virtues of their native language and culture above all else."
+ 
+ fascist_drift:0 "Daily Fascism Support"
+ autocratic_drift:0 "Daily Autocracy Support"
+ conservative_drift:0 "Daily Conservatism Support"
+ liberal_drift:0 "Daily Liberalism Support"
+ democratic_socialist_drift:0 "Daily Democratic Socialism Support"
+ communist_drift:0 "Daily Communism Support"
+ anarcho_syndicalist_drift:0 "Daily Radical Socialism Support"
+ civic_nationalist_drift:0 "Daily Civic Nationalism Support"
+ 
+ fascist_booster_govt:0 "Fascist Sympathiser"
+ fascist_booster_govt_desc:0 "Driven by a will to unite the people under a strong state, this politician emphasizes nationalist and militarist rhetoric."
+ communist_booster_govt:0 "Communist Agitator"
+ communist_booster_govt_desc:0 "A supporter of the international revolution hoping to aid the country's, and eventually the world's, transition to a communist society."
+ 
+ ### Misc Ministers ###
+ 
+ duchess_of_york:0 "Duchess of York"
+ duchess_of_york_desc:0 "Loyal wife of Prince Albert"
+ 
+ ### Leader Traits ###
+ royal_connections:0 "Royal Connections"
+ royal_connections_desc:0 "Edward VII uses his long standing connections both on the Continent and Abroad to secure cheaper imports, exports and magnify his influence over the territoru the Royalists directly control."
+ 
+ ### Unit Traits ###
+ gambling_addict:0 "Gambling Addict"
+ gambling_addict_desc:0 "This officer has a crippling addiction to gambling, and is seldom seen on the battlefield, preferring the roulette table."
+ veteran_of_spain:0 "Veteran of Spain"
+ veteran_of_spain_desc:0 "This officer fought for the Republic in the hills and mountains of Spain, and gained valuable experience of irregular warfare."
+ peoples_soldier:0 "People's Soldier"
+ peoples_soldier_desc:0 "What this officer lacks in military experience, he makes up for in enthusiasm, and is able to stir the spirits of any impromptu fighting force."
+ auxiliary_constable:0 "Auxiliary Constable"
+ auxiliary_constable_desc:0 "This officer is a Policeman first and foremost, and thus more accustomed to keeping the peace than waging war."
+ clan_chief:0 "Clan Chief"
+ clan_chief_desc:0 "This officer is the chief of a traditional Scottish clan. He is accustomed to highland, mountainous fighting."
+ hero_of_the_october_revolution:0 "Hero of The October Revolution"
+ hero_of_the_october_revolution_desc:0 "This general is none other than the architect of the Great October Socialist Revolution, and is held in awe by all apart from Stalin. Watch out for icepicks."
+ unionist_sympathies:0 "Unionist Sympathies"
+ unionist_sympathies_desc:0 "Although willing to fight for Scotland as the best hope for democracy in the region, this officer’s heart is still with the United Kingdom; a clean break with the English is likely to result in an unfavourable reaction."
+ hunstman:0 "Huntsman"
+ hunstman_desc:0 "A veteran of many a county hunt, this officer lives for the charge, and may get carried away."

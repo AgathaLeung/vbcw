@@ -1,0 +1,34 @@
+ideas = {
+	country = {
+		SON_rule_the_waves = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_sea_focused_navy
+			
+			equipment_bonus = {
+
+				destroyer = {
+					build_cost_ic = -0.25 
+					instant = yes
+				}
+				light_cruiser = {
+					build_cost_ic = -0.25 
+					instant = yes
+				}
+				heavy_cruiser = {
+					build_cost_ic = -0.25 
+					instant = yes
+				}
+			}
+		}
+	}
+}

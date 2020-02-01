@@ -1,0 +1,23 @@
+state={
+	id=98
+	name="STATE_98"
+	provinces={
+		1656 1667 1675 1680 1682 1692 1699 
+	}
+	manpower=100000
+	
+	state_category = rural
+	
+	history={
+		owner = SCO
+		add_core_of = SCO
+		add_claim_by = ROY
+		add_claim_by = YRK
+		add_claim_by = JAC
+		buildings = {
+			infrastructure = 4
+			air_base = 1
+		}
+	}
+}
+

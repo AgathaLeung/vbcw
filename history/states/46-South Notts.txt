@@ -1,0 +1,31 @@
+
+state={
+	id=46
+	name="STATE_46"
+	provinces={
+		767 768 803 812 823 828 832 833 834 859 2132 
+	}
+	manpower=500000
+	
+	resources = {
+		steel = 16
+		chromium = 16
+	}
+	
+	state_category=large_town
+	
+	history={
+		owner = SOM
+		add_core_of = SOM
+		add_claim_by = ROY
+		add_claim_by = ANG
+		add_claim_by = YRK
+		victory_points = { 823 20 }
+		buildings = {
+			infrastructure = 6
+			air_base = 1
+			industrial_complex = 2
+			arms_factory = 2
+		}
+	}
+}

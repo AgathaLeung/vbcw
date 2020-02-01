@@ -1,0 +1,28 @@
+state={
+	id=93
+	name="STATE_93"
+	provinces={
+		1603 1624 1627 1650 2422
+	}
+	manpower=100000
+	
+	resources = {
+		chromium = 8
+	}
+	
+	state_category = rural
+	
+	history={
+		victory_points = { 2422 10 }
+		owner = SCO
+		add_core_of = SCO
+		add_claim_by = ROY
+		add_claim_by = YRK
+		add_claim_by = JAC
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+		}
+	}
+}
+

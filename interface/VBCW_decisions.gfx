@@ -1,0 +1,15 @@
+spriteTypes = {	
+
+	### categories
+	
+
+	
+	
+	spriteType = {
+		name = "GFX_decision_cat_foreign_volunteers"
+		texturefile = "gfx/interface/decisions/decision_cat_picture_foreign_volunteers.dds"
+	}
+	
+	
+	
+}

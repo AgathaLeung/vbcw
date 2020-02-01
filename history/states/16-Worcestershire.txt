@@ -1,0 +1,31 @@
+state={
+	id=16
+	name="STATE_16"
+	provinces={
+		440 450 468 499 511 519 530 531 551 568 589 
+	}
+	manpower=400000
+	
+	resources = {
+		steel = 8
+		chromium = 16
+	}
+	
+	state_category = town
+	
+	history={
+		victory_points = { 468 5 }
+		victory_points = { 511 25 }
+		victory_points = { 589 5 }
+		owner = ROY
+		add_core_of = ROY
+		add_claim_by = YRK
+		add_claim_by = ANG
+		buildings = {
+			infrastructure = 6
+			air_base = 1
+			industrial_complex = 2
+			arms_factory = 1
+		}
+	}
+}

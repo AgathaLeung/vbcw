@@ -1,0 +1,67 @@
+﻿add_namespace = SCO_events
+
+#MacEwan fucking dies
+country_event = {
+	id = SCO_events.1
+	title = SCO_events.1.t
+	desc = SCO_events.1.d
+	picture = GFX_report_event_generic_funeral
+
+	fire_only_once = yes
+	
+	trigger = {
+		tag = SCO
+		has_government = civic_nationalist
+		date > 1939.6.1
+	}	
+	mean_time_to_happen = {
+		days = 30
+		
+	}
+
+
+	option = {
+		name = SCO_events.1.a
+		kill_country_leader = yes
+		create_country_leader = {
+			name = "John MacCormick"
+			desc = "POLITICS_AUGUST_VON_MACKENSEN_DESC"
+			picture = "gfx/leaders/VBCW/SCO/SCO-MacCormick.dds"
+			expire = "1965.1.1"
+			ideology = civic_nationalist_subtype
+			traits = {
+				#
+			}
+		}
+	}
+
+	option = {
+		name = SCO_events.1.b
+		kill_country_leader = yes
+		create_country_leader = {
+			name = "Andrew Dewar Gibb"
+			desc = "POLITICS_AUGUST_VON_MACKENSEN_DESC"
+			picture = "gfx/leaders/VBCW/SCO/SCO-Dewar-Gibb.dds"
+			expire = "1965.1.1"
+			ideology = civic_nationalist_subtype
+			traits = {
+				#
+			}
+		}
+	}
+
+	option = {
+		name = SCO_events.1.c
+		kill_country_leader = yes
+		create_country_leader = {
+			name = "Robert Mcintyre"
+			desc = "POLITICS_AUGUST_VON_MACKENSEN_DESC"
+			picture = "gfx/leaders/VBCW/SCO/SCO-Mcintyre.dds"
+			expire = "1965.1.1"
+			ideology = civic_nationalist_subtype
+			traits = {
+				#
+			}
+		}
+	}
+}

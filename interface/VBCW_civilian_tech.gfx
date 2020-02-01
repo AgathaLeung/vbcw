@@ -1,0 +1,39 @@
+spriteTypes = {
+	
+	###CIVILIANS###	
+	
+	SpriteType = {
+		name = "GFX_CIV_motorized_equipment_1_medium"
+		texturefile = "gfx/interface/technologies/mech/CIV_motorized_equipment_1.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_CIV_mechanised_infantry_medium"
+		texturefile = "gfx/interface/technologies/mech/CIV_mechanized_equipment_1.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_CIV_infantry_equipment_0_medium"
+		texturefile = "gfx/interface/technologies/infantry/CIV_infantry_equipment_0.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_CIV_early_bomber_medium"
+		texturefile = "gfx/interface/technologies/planes/CIV_early_bomber.dds"
+	}		
+	
+	SpriteType = {
+		name = "GFX_CIV_early_fighter_medium"
+		texturefile = "gfx/interface/technologies/planes/CIV_early_fighter.dds"
+	}		
+	
+	SpriteType = {
+		name = "GFX_CIV_early_armoured_car_medium"
+		texturefile = "gfx/interface/technologies/tanks/CIV/CIV_early_armored_car.dds"
+	}		
+	
+	SpriteType = {
+		name = "GFX_CIV_gwtank_medium"
+		texturefile = "gfx/interface/technologies/tanks/CIV/CIV_gwtank.dds"
+	}
+}

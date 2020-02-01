@@ -1,0 +1,27 @@
+state={
+	id=63
+	name="STATE_63"
+	provinces={
+		582 597 613 629 634 659 663 715 
+	}
+	manpower=50000
+	
+	resources = {
+		steel = 4
+		tungsten = 8
+	}
+	
+	state_category = rural	
+	
+	history={
+		owner = WAL
+		add_core_of = WAL
+		add_claim_by = ROY
+		add_claim_by = YRK
+		victory_points = { 634 25 }
+		victory_points = { 659 5 }
+		buildings = {
+			infrastructure = 4
+		}
+	}
+}

@@ -1,0 +1,26 @@
+state={
+	id=6
+	name="STATE_6"
+	provinces={
+		88 99 102 103 111 
+	}
+	manpower=100000
+	
+	state_category = rural
+	history={
+		owner = ROY
+		victory_points = { 102 5 }
+		victory_points = { 103 5 }
+		add_core_of = ROY
+		add_claim_by = YRK
+		add_claim_by = ANG
+		buildings = {
+			infrastructure = 4
+			air_base = 1
+			dockyard = 1
+			103 = {
+				naval_base = 2
+			}
+		}
+	}
+}

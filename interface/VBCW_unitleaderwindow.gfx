@@ -1,0 +1,34 @@
+spriteTypes = {	
+
+		#### Leader trait icons ####
+
+	spriteType = {
+		name = "GFX_trait_hero_of_the_october_revolution"
+		texturefile = "gfx/interface/traits/personal/trait_october_hero.dds"
+	}	
+
+	spriteType = {
+		name = "GFX_trait_veteran_of_spain"
+		texturefile = "gfx/interface/traits/personal/trait_veteran_of_spain.dds"
+	}		
+
+	spriteType = {
+		name = "GFX_trait_peoples_soldier"
+		texturefile = "gfx/interface/traits/personal/trait_peoples_soldier.dds"
+	}			
+
+	spriteType = {
+		name = "GFX_trait_auxiliary_constable"
+		texturefile = "gfx/interface/traits/personal/trait_constable.dds"
+	}			
+
+	spriteType = {
+		name = "GFX_trait_clan_chief"
+		texturefile = "gfx/interface/traits/personal/trait_clan_chief.dds"
+	}			
+
+	spriteType = {
+		name = "GFX_trait_unionist_sympathies"
+		texturefile = "gfx/interface/traits/personal/trait_unionist_sympathies.dds"
+	}
+}

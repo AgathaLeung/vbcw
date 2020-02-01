@@ -1,0 +1,208 @@
+﻿l_english:
+
+ ###TECH TREE
+ 
+    ##Technologies
+ tech_recon:0 "Recon Platoon I"
+ tech_recon2:0 "Recon Platoon II"
+ tech_recon3:0 "Recon Platoon III"
+ tech_recon4:0 "Recon Platoon IV"
+ tech_engineers:0 "Engineer Platoon I"
+ tech_engineers2:0 "Engineer Platoon II"
+ tech_engineers3:0 "Engineer Platoon III"
+ tech_engineers4:0 "Engineer Platoon IV"
+ tech_logistics_company:0 "Logistics Platoon I"
+ tech_logistics_company2:0 "Logistics Platoon II"
+ tech_logistics_company3:0 "Logistics Platoon III"
+ tech_logistics_company4:0 "Logistics Platoon IV"
+ tech_signal_company:0 "Signal Platoon I"
+ tech_signal_company2:0 "Signal Platoon II"
+ tech_signal_company3:0 "Signal Platoon III"
+ tech_signal_company4:0 "Signal Platoon IV"
+ tech_maintenance_company:0 "Maintenance Platoon I"
+ tech_maintenance_company2:0 "Maintenance Platoon II"
+ tech_maintenance_company3:0 "Maintenance Platoon III"
+ tech_maintenance_company4:0 "Maintenance Platoon IV"
+
+    ##Tech Tree Labels
+
+ armour_folder:0 "Armour"
+ armour_folder_desc:0 "Tanks and their variants."
+ ARMOUR_TITLE:0 "ARMOUR"
+ ARMOUR_TITLE_SPAA:0 "MOBILE AA"
+ ARMOUR_TITLE_TD:0 "MOBILE AT"
+ ARMOUR_TITLE_SPG:0 "GUN CARRIERS"
+ ARMOUR_TITLE_HEAVY:0 "INFANTRY TANKS"
+ ARMOUR_TITLE_MEDIUM:0 "CRUISER TANKS"
+ ARMOUR_TITLE_LIGHT:0 "LIGHT TANKS"
+ ARMOUR_TITLE_CAR:0 "ARMOURED CARS"
+ 
+    ##Tech Categories
+ 
+ armor:0 "Armour technology"
+ cat_armoured_car:0 "Armoured Car models"
+ cat_light_armor:0 "Light Tank models"
+ cat_medium_armor:0 "Cruiser Tank models"
+ cat_heavy_armor:0 "Infantry Tank models"
+ cat_self_propelled:0 "Self-Propelled Gun models"
+ big_tanks_tech:0 "Bloody Big Tanks"
+ 
+    ##Research Bonuses
+ 
+ armoured_car_tech_research:0 "Armoured Car Research Time"
+ 
+ ###Unit Types
+ 
+    ##Armour
+ 
+ armoured_car:0 "Armoured Car"
+ armoured_car_desc:0 "Armoured cars are highly mobile, lightly armed vehicles intended to perform the traditional cavalry roles of scouting and reconnaisance."
+ light_armor:0 "Light Tank"
+ light_armor_desc:0 "Light tanks are small, agile tanks which are able to both scout and fight lightly armored opponents."
+ medium_armor:0 "Cruiser Tank"
+ medium_armor_desc:0 "Cruiser tanks are fast, agile tanks intended to engage enemy armour, and exploit gaps in the enemy's lines and cause havoc in their rear."
+ heavy_armor:0 "Infantry Tank"
+ heavy_armor_desc:0 "Infantry tanks are slow, heavily armoured tanks intended to support infantry assault and attack enemy fortifications."
+ super_heavy_tank:0 "Bloody Big Tank"
+ super_heavy_tank_desc:0 "The Bloody Big Tank is a true monstrosity. Huge, heavily armoured and slow, it is intended to support infantry assaults and demolish enemy positions."
+ medium_sp_artillery_brigade:0 "Gun Carrier"
+ medium_sp_artillery_brigade_desc:0 "Mobile artillery"
+ medium_tank_destroyer_brigade:0 "Mobile AT"
+ medium_tank_destroyer_brigade_desc:0 "Mobile Anti-Tank guns"
+ medium_sp_anti_air_brigade:0 "Mobile AA"
+ medium_sp_anti_air_brigade_desc:0 "Mobile Anti-Aircraft guns"
+ 
+    ##Support Units
+    
+ recon:0 "Recon Platoon"
+ engineer:0 "Engineer Platoon"
+ logistics_company:0 "Logistics Platoon"
+ signal_company:0 "Signals Platoon"
+ maintenance_company:0 "Maintenance Platoon"
+ 
+ ###Equipment Types
+ 
+    ##Armoured Cars
+ 
+ armoured_car_equipment:0 "Armoured Car"
+ armoured_car_equipment_desc:0 "Armoured cars are highly mobile, lightly armed vehicles intended to perform the traditional cavalry roles of scouting and reconnaisance."
+ improvised_armoured_car_equipment:0 "Improvised Armoured Car"
+ improvised_armoured_car_equipment_short:0 "Improvised Armoured Car"
+ improvised_armoured_car_equipment_desc:0 "Civlian vehicles hastily fitted with light weaponry and rudimentary armoured plating."
+ early_armoured_car_equipment:0 "Early Armoured Car"
+ early_armoured_car_equipment_short:0 "Early Armoured Car"
+ early_armoured_car_equipment_desc:0 "Armoured cars are highly mobile, lightly armed vehicles intended to perform the traditional cavalry roles of scouting and reconnaisance."
+ armoured_car_equipment_1:0 "Armoured Car I"
+ armoured_car_equipment_1_short:0 "Armoured Car I"
+ armoured_car_equipment_1_desc:0 "Armoured cars are highly mobile, lightly armed vehicles intended to perform the traditional cavalry roles of scouting and reconnaisance."
+ armoured_car_equipment_2:0 "Armoured Car II"
+ armoured_car_equipment_2_short:0 "Armoured Car II"
+ armoured_car_equipment_2_desc:0 "Armoured cars are highly mobile, lightly armed vehicles intended to perform the traditional cavalry roles of scouting and reconnaisance."
+ armoured_car_equipment_3:0 "Armoured Car III"
+ armoured_car_equipment_3_short:0 "Armoured Car III"
+ armoured_car_equipment_3_desc:0 "Armoured cars are highly mobile, lightly armed vehicles intended to perform the traditional cavalry roles of scouting and reconnaisance."
+ 
+    ##Tanks
+ 
+ gw_tank_equipment:0 "Inter-War Tank"
+ gw_tank_equipment_short:0 "Inter-War Tank"
+ gw_tank_equipment_desc:0 "Tank development after the Great War was a slow process, with little innovation or production."
+  
+ light_tank_equipment:0 "Light Tank"
+ light_tank_equipment_desc:0 "Light tanks are small, agile tanks which are able to both scout and fight lightly armored opponents."
+ light_tank_equipment_1:0 "Light Tank I"
+ light_tank_equipment_1_short:0 "L. Tank I"
+ light_tank_equipment_1_desc:0 "Light tanks are small, agile tanks which are able to both scout and fight lightly armored opponents."
+ light_tank_equipment_2:0 "Light Tank II"
+ light_tank_equipment_2_short:0 "L. Tank II"
+ light_tank_equipment_2_desc:0 "Light tanks are small, agile tanks which are able to both scout and fight lightly armored opponents."
+ light_tank_equipment_3:0 "Light Tank III"
+ light_tank_equipment_3_short:0 "L. Tank III"
+ light_tank_equipment_3_desc:0 "Light tanks are small, agile tanks which are able to both scout and fight lightly armored opponents."
+ light_tank_equipment_4:0 "Light Tank IV"
+ light_tank_equipment_4_short:0 "L. Tank IV"
+ light_tank_equipment_4_desc:0 "Light tanks are small, agile tanks which are able to both scout and fight lightly armored opponents."
+ 
+ medium_tank_equipment:0 "Cruiser Tank"
+ medium_tank_equipment_desc:0 "Cruiser tanks are fast, agile tanks intended to engage enemy armour, and exploit gaps in the enemy's lines and cause havoc in their rear."
+ medium_tank_equipment_1:0 "Cruiser Tank I"
+ medium_tank_equipment_1_short:0 "C. Tank I"
+ medium_tank_equipment_1_desc:0 "Cruiser tanks are fast, agile tanks intended to engage enemy armour, and exploit gaps in the enemy's lines and cause havoc in their rear."
+ medium_tank_equipment_2:0 "Cruiser Tank II"
+ medium_tank_equipment_2_short:0 "C. Tank II"
+ medium_tank_equipment_2_desc:0 "Cruiser tanks are fast, agile tanks intended to engage enemy armour, and exploit gaps in the enemy's lines and cause havoc in their rear."
+ medium_tank_equipment_3:0 "Cruiser Tank III"
+ medium_tank_equipment_3_short:0 "C. Tank III"
+ medium_tank_equipment_3_desc:0 "Cruiser tanks are fast, agile tanks intended to engage enemy armour, and exploit gaps in the enemy's lines and cause havoc in their rear."
+ medium_tank_equipment_4:0 "Cruiser Tank IV"
+ medium_tank_equipment_4_short:0 "C. Tank IV"
+ medium_tank_equipment_4_desc:0 "Cruiser tanks are fast, agile tanks intended to engage enemy armour, and exploit gaps in the enemy's lines and cause havoc in their rear."
+ medium_tank_equipment_5:0 "Cruiser Tank V"
+ medium_tank_equipment_5_short:0 "C. Tank V"
+ medium_tank_equipment_5_desc:0 "Cruiser tanks are fast, agile tanks intended to engage enemy armour, and exploit gaps in the enemy's lines and cause havoc in their rear."
+ 
+ heavy_tank_equipment:0 "Infantry Tank"
+ heavy_tank_equipment_desc:0 "Infantry tanks are slow, heavily armoured tanks intended to support infantry assault and attack enemy fortifications."
+ heavy_tank_equipment_1:0 "Infantry Tank I"
+ heavy_tank_equipment_1_short:0 "I. Tank I"
+ heavy_tank_equipment_1_desc:0 "Infantry tanks are slow, heavily armoured tanks intended to support infantry assault and attack enemy fortifications."
+ heavy_tank_equipment_2:0 "Infantry Tank II"
+ heavy_tank_equipment_2_short:0 "I. Tank II"
+ heavy_tank_equipment_2_desc:0 "Infantry tanks are slow, heavily armoured tanks intended to support infantry assault and attack enemy fortifications."
+ heavy_tank_equipment_3:0 "Infantry Tank III"
+ heavy_tank_equipment_3_short:0 "I. Tank III"
+ heavy_tank_equipment_3_desc:0 "Infantry tanks are slow, heavily armoured tanks intended to support infantry assault and attack enemy fortifications."
+ heavy_tank_equipment_4:0 "Infantry Tank IV"
+ heavy_tank_equipment_4_short:0 "I. Tank IV"
+ heavy_tank_equipment_4_desc:0 "Infantry tanks are slow, heavily armoured tanks intended to support infantry assault and attack enemy fortifications."
+ heavy_tank_equipment_5:0 "Infantry Tank V"
+ heavy_tank_equipment_5_short:0 "I. Tank V"
+ heavy_tank_equipment_5_desc:0 "Infantry tanks are slow, heavily armoured tanks intended to support infantry assault and attack enemy fortifications."
+  
+ super_heavy_tank_equipment:0 "Bloody Big Tank"
+ super_heavy_tank_equipment_desc:0 "The Bloody Big Tank is a true monstrosity. Huge, heavily armoured and slow, it is intended to support infantry assaults and demolish enemy positions."
+ super_heavy_tank_equipment_1:0 "Bloody Big Tank"
+ super_heavy_tank_equipment_1_short:0 "B.B. Tank"
+ super_heavy_tank_equipment_1_desc:0 "The Bloody Big Tank is a true monstrosity. Huge, heavily armoured and slow, it is intended to support infantry assaults and demolish enemy positions."
+ 
+    ##SP Weapons
+ 
+ medium_tank_artillery_equipment:0 "Gun Carrier"
+ medium_tank_artillery_equipment_short:0 "Gun Carrier"
+ medium_tank_artillery_equipment_desc:0 "A field artilliery piece mounted on a self-propelled carriage."
+ medium_tank_artillery_equipment_1:0 "Gun Carrier I"
+ medium_tank_artillery_equipment_1_short:0 "Gun Carrier I"
+ medium_tank_artillery_equipment_1_desc:0 "A field artilliery piece mounted on a self-propelled carriage."
+ medium_tank_artillery_equipment_2:0 "Gun Carrier II"
+ medium_tank_artillery_equipment_2_short:0 "Gun Carrier II"
+ medium_tank_artillery_equipment_2_desc:0 "A field artilliery piece mounted on a self-propelled carriage."
+ medium_tank_artillery_equipment_3:0 "Gun Carrier III"
+ medium_tank_artillery_equipment_3_short:0 "Gun Carrier III"
+ medium_tank_artillery_equipment_3_desc:0 "A field artilliery piece mounted on a self-propelled carriage."
+ 
+ medium_tank_destroyer_equipment:0 "Mobile Anti-Tank Gun"
+ medium_tank_destroyer_equipment_short:0 "Mobile AT"
+ medium_tank_destroyer_equipment_desc:0 "Mobile Anti-Tank guns are just that, anti-tank guns mounted on a self-propelled carriage, enabling them to engage enemy armour and quickly relocate."
+ medium_tank_destroyer_equipment_1:0 "Mobile Anti-Tank Gun I"
+ medium_tank_destroyer_equipment_1_short:0 "Mobile AT I"
+ medium_tank_destroyer_equipment_1_desc:0 "Mobile Anti-Tank guns are just that, anti-tank guns mounted on a self-propelled carriage, enabling them to engage enemy armour and quickly relocate."
+ medium_tank_destroyer_equipment_2:0 "Mobile Anti-Tank Gun II"
+ medium_tank_destroyer_equipment_2_short:0 "Mobile AT II"
+ medium_tank_destroyer_equipment_2_desc:0 "Mobile Anti-Tank guns are just that, anti-tank guns mounted on a self-propelled carriage, enabling them to engage enemy armour and quickly relocate."
+ medium_tank_destroyer_equipment_3:0 "Mobile Anti-Tank Gun III"
+ medium_tank_destroyer_equipment_3_short:0 "Mobile AT III"
+ medium_tank_destroyer_equipment_3_desc:0 "Mobile Anti-Tank guns are just that, anti-tank guns mounted on a self-propelled carriage, enabling them to engage enemy armour and quickly relocate."
+ 
+ medium_tank_aa_equipment:0 "Mobile Anti-Aircraft Gun"
+ medium_tank_aa_equipment_short:0 "Mobile AA"
+ medium_tank_aa_equipment_desc:0 "Mobile anti-aircraft guns are intended to provide cover for armoured columns and other mobile forces."
+ medium_tank_aa_equipment_1:0 "Mobile Anti-Aircraft Gun I"
+ medium_tank_aa_equipment_1_short:0 "Mobile AA I"
+ medium_tank_aa_equipment_1_desc:0 "Mobile anti-aircraft guns are intended to provide cover for armoured columns and other mobile forces."
+ medium_tank_aa_equipment_2:0 "Mobile Anti-Aircraft Gun II"
+ medium_tank_aa_equipment_2_short:0 "Mobile AA II"
+ medium_tank_aa_equipment_2_desc:0 "Mobile anti-aircraft guns are intended to provide cover for armoured columns and other mobile forces."
+ medium_tank_aa_equipment_3:0 "Mobile Anti-Aircraft Gun III"
+ medium_tank_aa_equipment_3_short:0 "Mobile AA III"
+ medium_tank_aa_equipment_3_desc:0 "Mobile anti-aircraft guns are intended to provide cover for armoured columns and other mobile forces."
+ 

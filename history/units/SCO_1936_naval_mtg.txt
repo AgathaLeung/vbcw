@@ -1,0 +1,48 @@
+﻿units = {	
+	######################
+	##### NAVY - MTG #####
+	######################
+	
+	fleet = {				
+		name = "Scottish Navy"			
+		naval_base = 1743
+		task_force = {				
+			name = "Rosyth Squadron"
+			location = 1743
+			ship = { name = "Ramillies" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = ENG version_name = "Revenge Class"} } }				
+			ship = { name = "Emerald" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ENG version_name = "Emerald Class" } } }
+			ship = { name = "Enterprise" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ENG version_name = "Emerald Class" } } }
+			ship = { name = "Broke" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ENG version_name = "A/B/C/D Class" } } }
+			ship = { name = "Wanderer" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ENG version_name = "V/W Class" } } }
+			ship = { name = "Whitehall" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ENG version_name = "V/W Class" } } }
+			ship = { name = "Wolverine" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ENG version_name = "V/W Class" } } }
+			ship = { name = "Witherington" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ENG version_name = "V/W Class" } } }
+			ship = { name = "Wallace" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ENG version_name = "V/W Class" } } }
+		}
+		
+		task_force = {				
+			name = "Escort Squadron"
+			location = 1617		
+			ship = { name = "Vanity" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ENG version_name = "V/W Class" } } }
+			ship = { name = "Valorous" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ENG version_name = "V/W Class" } } }
+			ship = { name = "Skipjack" definition = sloop equipment = { ship_hull_sloop_2 = { amount = 1 owner = ENG version_name = "Halcyon Class" } } }
+			ship = { name = "Speedwell" definition = sloop equipment = { ship_hull_sloop_2 = { amount = 1 owner = ENG version_name = "Halcyon Class" } } }
+			ship = { name = "Amethyst" definition = trawler equipment = { ship_hull_trawler_1 = { amount = 1 owner = CIV version_name = "Civilian Trawler" } } }
+			ship = { name = "Agate" definition = trawler equipment = { ship_hull_trawler_1 = { amount = 1 owner = CIV version_name = "Civilian Trawler" } } }
+			ship = { name = "Flanders" definition = trawler equipment = { ship_hull_trawler_2 = { amount = 1 owner = ENG version_name = "Castle Class" } } }
+			ship = { name = "Gunner" definition = trawler equipment = { ship_hull_trawler_2 = { amount = 1 owner = ENG version_name = "Castle Class" } } }
+			ship = { name = "Hawthorn" definition = trawler equipment = { ship_hull_trawler_2 = { amount = 1 owner = ENG version_name = "Castle Class" } } }
+			ship = { name = "Willow" definition = trawler equipment = { ship_hull_trawler_2 = { amount = 1 owner = ENG version_name = "Castle Class" } } }
+			ship = { name = "Windward" definition = trawler equipment = { ship_hull_trawler_2 = { amount = 1 owner = ENG version_name = "Castle Class" } } }
+		}
+		
+		task_force = {				
+			name = "Leith Squadron"
+			location = 1617		
+			ship = { name = "Mackay" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ENG version_name = "V/W Class" } } }
+			ship = { name = "Malcolm" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ENG version_name = "V/W Class" } } }
+			ship = { name = "Whitley" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ENG version_name = "V/W Class" } } }
+			ship = { name = "Vimiera" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ENG version_name = "V/W Class" } } }
+		}
+	}
+}	

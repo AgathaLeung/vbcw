@@ -1,0 +1,36 @@
+state={
+	id=103
+	name="STATE_103"
+	provinces={
+		1720 1725 1726 1729 1739 1740 1745 1748 1753 1754 1763 
+	}
+	manpower=200000
+	
+	resources = {
+		steel = 4
+		tungsten = 4
+	}
+	
+	state_category = town
+	
+	history={
+		add_extra_state_shared_building_slots = 2
+		owner = SOG
+		add_core_of = SOG
+		add_claim_by = SCO
+		add_claim_by = ROY
+		add_claim_by = YRK
+		add_claim_by = JAC
+		victory_points = { 1739 10 }
+		victory_points = { 1754 10 }
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 2
+			arms_factory = 2
+			1740 = {
+				naval_base = 2
+			}
+		}
+	}
+}
+

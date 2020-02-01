@@ -1,0 +1,39 @@
+﻿units = {	
+	##########################
+	##### NAVY - VANILLA #####
+	##########################
+	
+	fleet = {				
+		name = "Scottish Navy"			
+		naval_base = 1743
+		task_force = {				
+			name = "Forth Fleet"
+			location = 1743
+			ship = { name = "Ramillies" definition = battleship equipment = { battleship_1 = { amount = 1 owner = ENG } } }	
+			ship = { name = "Emerald" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = ENG version_name = "Emerald Class" } } }
+			ship = { name = "Enterprise" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = ENG version_name = "Emerald Class" } } }		
+			ship = { name = "Broke" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }	
+			ship = { name = "Wanderer" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }	
+			ship = { name = "Whitehall" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Wolverine" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }	
+			ship = { name = "Witherington" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Wallace" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }		
+			ship = { name = "Pelican" definition = sloop equipment = { sloop_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Bittern" definition = sloop equipment = { sloop_1 = { amount = 1 owner = ENG } } }
+		}
+		
+		task_force = {				
+			name = "Escort Fleet"
+			location = 1832			
+			ship = { name = "Vanity" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Valorous" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }	
+			ship = { name = "Amethyst" definition = trawler equipment = { trawler_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Agate" definition = trawler equipment = { trawler_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Flanders" definition = trawler equipment = { trawler_2 = { amount = 1 owner = ENG } } }
+			ship = { name = "Gunner" definition = trawler equipment = { trawler_2 = { amount = 1 owner = ENG } } }
+			ship = { name = "Hawthorn" definition = trawler equipment = { trawler_2 = { amount = 1 owner = ENG } } }
+			ship = { name = "Willow" definition = trawler equipment = { trawler_2 = { amount = 1 owner = ENG } } }
+			ship = { name = "Windward" definition = trawler equipment = { trawler_2 = { amount = 1 owner = ENG } } }
+		}
+	}
+}

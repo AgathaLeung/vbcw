@@ -1,0 +1,769 @@
+﻿division_template = {
+	name = "General Workers' Regiment"			
+	division_names_group = SOM_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+        infantry = { x = 0 y = 3 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+        infantry = { x = 1 y = 3 }
+	}
+	support = {
+       	engineer = { x = 0 y = 0 }
+       	artillery = { x = 0 y = 1 }
+	}
+}
+
+division_template = {
+	name = "Workers' Mounted Regiment"
+	division_names_group = SOM_CAV_01
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 1 y = 2 }
+	}
+	support = {
+        recon = { x = 0 y = 0 }
+	}
+}
+
+division_template = {
+	name = "Tank Battalion"
+	division_names_group = SOM_ARM_01
+	regiments = {
+		light_armor = { x = 0 y = 0 }
+		light_armor = { x = 0 y = 1 }
+		light_armor = { x = 0 y = 2 }
+		mechanized = { x = 1 y = 0 }
+		mechanized = { x = 1 y = 1 }
+		mechanized = { x = 1 y = 2 }
+	}
+}
+
+division_template = {
+	name = "People's Militia"
+	division_names_group = SOM_GAR_01
+	
+	regiments = {
+		militia = { x = 0 y = 0 }
+		militia = { x = 0 y = 1 }
+		militia = { x = 0 y = 2 }
+		militia = { x = 1 y = 0 }
+		militia = { x = 1 y = 1 }
+		militia = { x = 1 y = 2 }
+	}
+	priority = 0
+}
+
+division_template = {
+	name = "Mounted People's Militia"
+	division_names_group = SOM_YEO_01
+
+	regiments = {
+		yeomanry = { x = 0 y = 0 }
+		yeomanry = { x = 0 y = 1 }
+		yeomanry = { x = 0 y = 2 }
+		yeomanry = { x = 1 y = 0 }
+		yeomanry = { x = 1 y = 1 }
+		yeomanry = { x = 1 y = 2 }
+	}
+	priority = 0
+}
+
+division_template = {
+	name = "People's Motor Battalion"
+	division_names_group = SOM_MOT_01
+
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+	}
+	support = {
+       	engineer = { x = 0 y = 0 }
+       	mortar = { x = 0 y = 1 }
+       	mechanised_recon = { x = 0 y = 2 }
+	}
+}
+
+division_template = {
+	name = "Worker's Car Corps"
+	division_names_group = SOM_CAV_01
+	regiments = {
+		armoured_car = { x = 0 y = 0 }
+		armoured_car = { x = 0 y = 1 }
+		armoured_car = { x = 0 y = 2 }
+		armoured_car = { x = 1 y = 0 }
+		armoured_car = { x = 1 y = 1 }
+		armoured_car = { x = 1 y = 2 }
+	}
+	support = {
+        signal_company = { x = 0 y = 0 }
+        maintenance_company = { x = 0 y = 1 }
+	}
+}
+
+units = {
+	division= {	
+		name = "Manchester Textile Workers’ Brigade"
+		location = 1021
+		division_template = "General Workers' Regiment"
+		start_experience_factor = 0.1
+		force_equipment_variants = { infantry_equipment_1 = { owner = "ENG" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "ENG" } }
+	}	
+	division= {	
+		name = "1st Manchester Transport Workers’ Regiment"
+		location = 1062
+		division_template = "People's Militia"
+		start_experience_factor = 0.0
+	}	
+	division= {	
+		name = "2nd Manchester Transport Workers’ Regiment"
+		location = 1009
+		division_template = "People's Militia"
+		start_experience_factor = 0.0
+	}
+	division= {	
+		name = "3rd Manchester Transport Workers’ Regiment"
+		location = 994
+		division_template = "People's Militia"
+		start_experience_factor = 0.0
+	}	
+	division= {	
+		name = "4th Manchester Transport Workers’ Regiment"
+		location = 1087
+		division_template = "People's Militia"
+		start_experience_factor = 0.0
+	}	
+	division= {	
+		name = "5th Manchester Transport Workers’ Regiment"
+		location = 1032
+		division_template = "People's Militia"
+		start_experience_factor = 0.0
+	}	
+	division= {	
+		name = "1st Manchester Chemical Workers’ Militia"
+		location = 1037
+		division_template = "People's Militia"
+		start_experience_factor = 0.0
+	}	
+	division= {	
+		name = "2nd Manchester Chemical Workers’ Militia"
+		location = 1030
+		division_template = "People's Militia"
+		start_experience_factor = 0.0
+	}	
+	division= {	
+		name = "Peterloo Memorial Militia"
+		location = 1000
+		division_template = "People's Militia"
+		start_experience_factor = 0.0
+	}	
+	division= {	
+		name = "Manchester Engels Brigade"
+		location = 1068
+		division_template = "People's Militia"
+		start_experience_factor = 0.0
+	}		
+	division= {	
+		name = "Manchester Women’s Workers’ Militia"
+		location = 1072
+		division_template = "People's Militia"
+		start_experience_factor = 0.0
+	}	
+	division= {	
+		name = "Manchester Canal Brigade"
+		location = 1030
+		division_template = "People's Militia"
+		start_experience_factor = 0.0
+	}	
+	division= {	
+		name = "1st Coventry Automotive Workers’ Militia"
+		location = 584
+		division_template = "People's Militia"
+		start_experience_factor = 0.0
+	}	
+	division= {	
+		name = "2nd Coventry Automotive Workers’ Militia"
+		location = 574
+		division_template = "People's Militia"
+		start_experience_factor = 0.0
+	}	
+	division= {	
+		name = "3rd Coventry Automotive Workers’ Militia"
+		location = 569
+		division_template = "People's Militia"
+		start_experience_factor = 0.0
+	}	
+	division= {	
+		name = "4th Coventry Automotive Workers’ Militia"
+		location = 573
+		division_template = "People's Militia"
+		start_experience_factor = 0.0
+	}	
+	division= {	
+		name = "5th Coventry Automotive Workers’ Militia"
+		location = 591
+		division_template = "People's Militia"
+		start_experience_factor = 0.0
+	}	
+	division= {	
+		name = "Coventry Cycle Workers’ Regiment"
+		location = 572
+		division_template = "People's Militia"
+		start_experience_factor = 0.0
+	}	
+	division= {	
+		name = "1st Coventry General Workers’ Brigade"
+		location = 624
+		division_template = "General Workers' Regiment"
+		start_experience_factor = 0.1
+		force_equipment_variants = { infantry_equipment_1 = { owner = "ENG" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "ENG" } }
+	}	
+	division= {	
+		name = "2nd Coventry General Workers’ Brigade"
+		location = 598
+		division_template = "General Workers' Regiment"
+		start_experience_factor = 0.1
+		force_equipment_variants = { infantry_equipment_1 = { owner = "ENG" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "ENG" } }
+	}		
+	division= {	
+		name = "I Birmingham Tradesmen’s Regiment"
+		location = 647
+		division_template = "People's Militia"
+		start_experience_factor = 0.0
+	}	
+	division= {	
+		name = "II Birmingham Tradesmen’s Regiment"
+		location = 617
+		division_template = "People's Militia"
+		start_experience_factor = 0.0
+	}	
+	division= {	
+		name = "III Birmingham Tradesmen’s Regiment"
+		location = 633
+		division_template = "People's Militia"
+		start_experience_factor = 0.0
+	}	
+	division= {	
+		name = "IV Birmingham Tradesmen’s Regiment"
+		location = 620
+		division_template = "People's Militia"
+		start_experience_factor = 0.0
+	}	
+	division= {	
+		name = "1st Birmingham General Workers’ Brigade"
+		location = 669
+		division_template = "People's Militia"
+		start_experience_factor = 0.0
+	}	
+	division= {	
+		name = "2nd Birmingham General Workers’ Brigade"
+		location = 661
+		division_template = "People's Militia"
+		start_experience_factor = 0.0
+	}	
+	division= {	
+		name = "3rd Birmingham General Workers’ Brigade"
+		location = 635
+		division_template = "People's Militia"
+		start_experience_factor = 0.0
+	}	
+	division= {	
+		name = "4th Birmingham General Workers’ Brigade"
+		location = 615
+		division_template = "People's Militia"
+		start_experience_factor = 0.0
+	}	
+	division= {	
+		name = "5th Birmingham General Workers’ Brigade"
+		location = 614
+		division_template = "People's Militia"
+		start_experience_factor = 0.0
+	}	
+	division= {	
+		name = "6th Birmingham General Workers’ Brigade"
+		location = 653
+		division_template = "People's Militia"
+		start_experience_factor = 0.0
+	}	
+	division= {	
+		name = "7th Birmingham General Workers’ Brigade"
+		location = 681
+		division_template = "People's Militia"
+		start_experience_factor = 0.0
+	}	
+	division= {	
+		name = "8th Birmingham General Workers’ Brigade"
+		location = 620
+		division_template = "People's Militia"
+		start_experience_factor = 0.0
+	}
+	division= {	
+		name = "1st Birmingham Steel Workers’ Militia"
+		location = 647
+		division_template = "People's Militia"
+		start_experience_factor = 0.0
+	}
+	division= {	
+		name = "2nd Birmingham Steel Workers’ Militia"
+		location = 633
+		division_template = "People's Militia"
+		start_experience_factor = 0.0
+	}	
+	division= {	
+		name = "3rd Birmingham Steel Workers’ Militia"
+		location = 669
+		division_template = "People's Militia"
+		start_experience_factor = 0.0
+	}	
+	division= {	
+		name = "1st Nottingham Miners’ Brigade"
+		location = 823
+		division_template = "People's Militia"
+		start_experience_factor = 0.0
+	}	
+	division= {	
+		name = "2nd Nottingham Miners’ Brigade"
+		location = 803
+		division_template = "People's Militia"
+		start_experience_factor = 0.0
+	}	
+	division= {	
+		name = "3rd Nottingham Miners’ Brigade"
+		location = 834
+		division_template = "People's Militia"
+		start_experience_factor = 0.0
+	}	
+	division= {	
+		name = "4th Nottingham Miners’ Brigade"
+		location = 859
+		division_template = "People's Militia"
+		start_experience_factor = 0.0
+	}	
+	division= {	
+		name = "1st Derby Railwaymen’s Soviet"
+		location = 802
+		division_template = "People's Militia"
+		start_experience_factor = 0.0
+	}	
+	division= {	
+		name = "2nd Derby Railwaymen’s Soviet"
+		location = 802
+		division_template = "People's Militia"
+		start_experience_factor = 0.0
+	}	
+	division= {	
+		name = "Leeds Metalworkers’ Brigade"
+		location = 1177
+		division_template = "General Workers' Regiment"
+		start_experience_factor = 0.1
+		force_equipment_variants = { infantry_equipment_1 = { owner = "ENG" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "ENG" } }
+	}	
+	division= {	
+		name = "1st Leeds General Workers’ Militia"
+		location = 1120
+		division_template = "People's Militia"
+		start_experience_factor = 0.0
+	}	
+	division= {	
+		name = "2nd Leeds General Workers’ Militia"
+		location = 1215
+		division_template = "People's Militia"
+		start_experience_factor = 0.0
+	}		
+	division= {	
+		name = "3rd Leeds General Workers’ Militia"
+		location = 1196
+		division_template = "People's Militia"
+		start_experience_factor = 0.0
+	}	
+	division= {	
+		name = "1st Leeds Transport Workers’ Brigade"
+		location = 1193
+		division_template = "People's Militia"
+		start_experience_factor = 0.0
+	}		
+	division= {	
+		name = "2nd Leeds Transport Workers’ Brigade"
+		location = 1211
+		division_template = "People's Militia"
+		start_experience_factor = 0.0
+	}	
+	division= {	
+		name = "Leeds Railwaymen’s Regiment"
+		location = 1191
+		division_template = "People's Militia"
+		start_experience_factor = 0.0
+	}		
+	division= {	
+		name = "Bradford Textile Workers’ Soviet"
+		location = 1176
+		division_template = "People's Militia"
+		start_experience_factor = 0.0
+	}	
+	division= {	
+		name = "Bradford Brigade"
+		location = 1120
+		division_template = "General Workers' Regiment"
+		start_experience_factor = 0.1
+		force_equipment_variants = { infantry_equipment_1 = { owner = "ENG" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "ENG" } }
+	}	
+	division= {	
+		name = "1st Sheffield Steelworkers’ Union"
+		location = 1006
+		division_template = "People's Militia"
+		start_experience_factor = 0.0
+	}	
+	division= {	
+		name = "2nd Sheffield Steelworkers’ Union"
+		location = 1022
+		division_template = "People's Militia"
+		start_experience_factor = 0.0
+	}	
+	division= {	
+		name = "3rd Sheffield Steelworkers’ Union"
+		location = 983
+		division_template = "People's Militia"
+		start_experience_factor = 0.0
+	}	
+	division= {	
+		name = "4th Sheffield Steelworkers’ Union"
+		location = 988
+		division_template = "People's Militia"
+		start_experience_factor = 0.0
+	}	
+	division= {	
+		name = "Sheffield Transport Workers’ Soviet"
+		location = 1029
+		division_template = "General Workers' Regiment"
+		start_experience_factor = 0.1
+		force_equipment_variants = { infantry_equipment_1 = { owner = "ENG" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "ENG" } }
+	}	
+	division= {	
+		name = "I Sheffield General Workers’ Brigade"
+		location = 982
+		division_template = "People's Militia"
+		start_experience_factor = 0.0
+	}	
+	division= {	
+		name = "II Sheffield General Workers’ Brigade"
+		location = 1042
+		division_template = "People's Militia"
+		start_experience_factor = 0.0
+	}		
+	division= {	
+		name = "III Sheffield General Workers’ Brigade"
+		location = 1063
+		division_template = "People's Militia"
+		start_experience_factor = 0.0
+	}	
+	division= {	
+		name = "IV Sheffield General Workers’ Brigade"
+		location = 1052
+		division_template = "People's Militia"
+		start_experience_factor = 0.0
+	}
+	division= {	
+		name = "V Sheffield General Workers’ Brigade"
+		location = 964
+		division_template = "People's Militia"
+		start_experience_factor = 0.0
+	}	
+	division= {	
+		name = "1st Leicester Soviet"
+		location = 678
+		division_template = "People's Militia"
+		start_experience_factor = 0.0
+	}	
+	division= {	
+		name = "2nd Leicester Soviet"
+		location = 742
+		division_template = "People's Militia"
+		start_experience_factor = 0.0
+	}	
+	division= {	
+		name = "Wolverhampton Workers’ Militia"
+		location = 614
+		division_template = "General Workers' Regiment"
+		start_experience_factor = 0.1
+		force_equipment_variants = { infantry_equipment_1 = { owner = "ENG" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "ENG" } }
+	}	
+	division= {	
+		name = "Stoke Tyre Workers’ Soviet"
+		location = 845
+		division_template = "General Workers' Regiment"
+		start_experience_factor = 0.1
+		force_equipment_variants = { infantry_equipment_1 = { owner = "ENG" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "ENG" } }
+	}		
+	division= {	
+		name = "1st Stoke Steelworkers’ Regiment"
+		location = 837
+		division_template = "People's Militia"
+		start_experience_factor = 0.0
+	}		
+	division= {	
+		name = "2nd Stoke Steelworkers’ Regiment"
+		location = 875
+		division_template = "People's Militia"
+		start_experience_factor = 0.0
+	}		
+	division= {	
+		name = "Stafford People’s Militia"
+		location = 740
+		division_template = "People's Militia"
+		start_experience_factor = 0.0
+	}		
+	division= {	
+		name = "Macclesfield Revolutionary Brigade"
+		location = 919
+		division_template = "People's Militia"
+		start_experience_factor = 0.0
+	}	
+	division= {	
+		name = "1st Huddersfield People’s Brigade"
+		location = 1102
+		division_template = "People's Militia"
+		start_experience_factor = 0.0
+	}	
+	division= {	
+		name = "2nd Huddersfield People’s Brigade"
+		location = 1125
+		division_template = "People's Militia"
+		start_experience_factor = 0.0
+	}	
+	division= {	
+		name = "Winstanley Regiment"
+		location = 958
+		division_template = "General Workers' Regiment"
+		start_experience_factor = 0.1
+		force_equipment_variants = { infantry_equipment_1 = { owner = "ENG" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "ENG" } }
+	}		
+	division= {	
+		name = "Bevin Brigade"
+		location = 869
+		division_template = "General Workers' Regiment"
+		start_experience_factor = 0.1
+		force_equipment_variants = { infantry_equipment_1 = { owner = "ENG" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "ENG" } }
+	}	
+	division= {	
+		name = "Hardie Revolutionary Workers’ Militia"
+		location = 802
+		division_template = "People's Militia"
+		start_experience_factor = 0.0
+	}	
+	division= {	
+		name = "British Revolutionary Trotskyite Brigade"
+		location = 785
+		division_template = "People's Militia"
+		start_experience_factor = 0.0
+	}	
+	division= {	
+		name = "1st Coventry Motor Works Battalion"
+		location = 584
+		division_template = "People's Motor Battalion"
+		start_experience_factor = 0.0
+		force_equipment_variants = { motorized_equipment_1 = { owner = "CIV" } }
+	}	
+	division= {	
+		name = "2nd Coventry Motor Works Battalion"
+		location = 591
+		division_template = "People's Motor Battalion"
+		start_experience_factor = 0.0
+		force_equipment_variants = { motorized_equipment_1 = { owner = "CIV" } }
+	}	
+	division= {	
+		name = "Derby Mobile Battalion"
+		location = 802
+		division_template = "People's Motor Battalion"
+		start_experience_factor = 0.0
+		force_equipment_variants = { motorized_equipment_1 = { owner = "CIV" } }
+	}	
+	division= {	
+		name = "I Manchester Mechanised Battalion"
+		location = 1053
+		division_template = "Worker's Car Corps"
+		start_experience_factor = 0.0
+	}	
+	division= {	
+		name = "II Manchester Mechanised Battalion"
+		location = 998
+		division_template = "Worker's Car Corps"
+		start_experience_factor = 0.0
+	}	
+	division= {	
+		name = "Sheffield Armoured Force"
+		location = 1006
+		division_template = "Tank Battalion"
+		start_experience_factor = 0.0
+		force_equipment_variants = { gw_tank_equipment = { owner = "CIV" } }
+		force_equipment_variants = { mechanized_equipment_1 = { owner = "CIV" } }
+	}		
+	division= {	
+		name = "Leeds Flying Column"
+		location = 1183
+		division_template = "Tank Battalion"
+		start_experience_factor = 0.0
+		force_equipment_variants = { gw_tank_equipment = { owner = "CIV" } }
+		force_equipment_variants = { mechanized_equipment_1 = { owner = "CIV" } }
+	}	
+	division= {	
+		name = "Nottingham Tracked Battalion"
+		location = 803
+		division_template = "Tank Battalion"
+		start_experience_factor = 0.0
+		force_equipment_variants = { gw_tank_equipment = { owner = "CIV" } }
+		force_equipment_variants = { mechanized_equipment_1 = { owner = "CIV" } }
+	}	
+	division= {	
+		name = "I Postal Lancers"
+		location = 787
+ 		division_template = "Mounted People's Militia"
+		start_experience_factor = 0.0
+	}
+	division= {	
+		name = "II Postal Lancers"
+		location = 785
+ 		division_template = "Mounted People's Militia"
+		start_experience_factor = 0.0
+	}
+	division= {	
+		name = "1st Agricultural Workers’ Yeomanry"
+		location = 927
+ 		division_template = "Mounted People's Militia"
+		start_experience_factor = 0.0
+	}
+	division= {	
+		name = "2nd Agricultural Workers’ Yeomanry"
+		location = 1195
+ 		division_template = "Mounted People's Militia"
+		start_experience_factor = 0.0
+	}
+	division= {	
+		name = "Manchester People’s Dragoons 'Remember Peterloo'"
+		location = 1046
+ 		division_template = "Workers' Mounted Regiment"
+		start_experience_factor = 0.1
+	}
+	division= {	
+		name = "Leeds Workers’ Mounted Force"
+		location = 1114
+ 		division_template = "Workers' Mounted Regiment"
+		start_experience_factor = 0.1
+	}
+	division= {	
+		name = "Derby Scouts"
+		location = 802
+ 		division_template = "Mounted People's Militia"
+		start_experience_factor = 0.0
+	}
+	division= {	
+		name = "First Nottinghamshire Mounted Infantry"
+		location = 823
+ 		division_template = "Mounted People's Militia"
+		start_experience_factor = 0.0
+	}
+	division= {	
+		name = "Second Nottinghamshire Mounted Infantry"
+		location = 833
+ 		division_template = "Mounted People's Militia"
+		start_experience_factor = 0.0
+	}
+	division= {	
+		name = "Sheffield Transport Workers’ Mounted Force"
+		location = 1039
+ 		division_template = "Mounted People's Militia"
+		start_experience_factor = 0.0
+	}	
+}	
+
+
+	#####################
+	##### AIR FORCE #####
+	#####################
+	
+air_wings = {
+
+	41 = { 
+		fighter_equipment_0 = {
+			owner = "SOM" 
+			amount = 12
+		}
+	}
+	41 = { 
+		tac_bomber_equipment_0 = {
+			owner = "SOM" 
+			amount = 12
+		}
+	}
+	51 = { 
+		fighter_equipment_1 = {
+			owner = "SOM" 
+			amount = 8
+		}
+	}
+}
+
+	#########################
+	## STARTING PRODUCTION ##
+	#########################
+instant_effect = {	
+
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "SOM"
+		}
+		requested_factories = 3
+		progress = 0.3
+		efficiency = 65
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = "SOM"
+		}
+		requested_factories = 2
+		progress = 0.3
+		efficiency = 60
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = artillery_equipment_1
+			creator = "SOM"
+		}
+		requested_factories = 1
+		progress = 0.3
+		efficiency = 65
+	}
+	
+	add_equipment_to_stockpile = {
+		type = motorized_equipment_1
+		amount = 750
+		producer = CIV
+	}
+}
+	#####################

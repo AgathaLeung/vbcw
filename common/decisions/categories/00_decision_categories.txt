@@ -1,0 +1,19 @@
+emergency_construction = {
+	icon = generic_industry
+}
+
+black_market = {
+	icon = generic_economy
+}
+
+commandeer_civilian_equipment = {
+	icon = ger_military_buildup
+}
+
+desperate_measures = {
+	icon = generic_crisis
+}
+KER_foreign_volunteers = {
+	icon = generic_army_support
+	picture = GFX_decision_cat_foreign_volunteers
+}

@@ -1,0 +1,27 @@
+state={
+	id=60
+	name="STATE_60"
+	provinces={
+		370 376 388 400 413 429 434 438 473 2416
+	}
+	manpower=75000
+	
+	resources = {
+		steel = 8
+		chromium = 8
+	}
+	
+	state_category = rural
+	
+	history={
+		victory_points = { 2416 10 }
+		owner = ROY
+		add_core_of = ROY
+		add_claim_by = WAL
+		add_claim_by = YRK
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+		}
+	}
+}

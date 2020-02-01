@@ -1,0 +1,45 @@
+
+state={
+	id=167
+	name="STATE_167"
+	resources={
+		oil=16.000
+		steel=32.000
+		chromium=8.000
+		tungsten=8.000
+	}
+
+	history={
+		owner = SOD
+		add_core_of = SOD
+		add_claim_by = ROY
+		add_claim_by = YRK
+		add_claim_by = ANG
+		victory_points = {
+			1418 10 
+		}
+		victory_points = {
+			1452 10 
+		}
+		buildings = {
+			infrastructure = 6
+			air_base = 1
+			industrial_complex = 2
+			arms_factory = 3
+			dockyard = 2
+			1452 = {
+				naval_base = 3
+
+			}
+
+		}
+
+	}
+
+	provinces={
+		1393 1418 1434 1446 1452 1462 1483 1487 
+	}
+	manpower=500000
+	buildings_max_level_factor=1.000
+	state_category=large_city
+}

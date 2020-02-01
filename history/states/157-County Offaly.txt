@@ -1,0 +1,18 @@
+state={
+	id=157
+	name="STATE_157"
+	provinces={
+		806 840 866 887 888 897 912 917 924 929 945 949 
+	}
+	manpower=50000
+	
+	state_category = rural
+	
+	history={
+		owner = IRL
+		add_core_of = IRL
+		buildings = {
+			infrastructure = 4
+		}
+	}
+}

@@ -1,0 +1,22 @@
+state={
+	id=142
+	name="STATE_142"
+	provinces={
+		436 453 478 479 487 502 532 536 546
+	}
+	manpower=75000
+	
+	state_category = rural
+	
+	history={
+		owner = IRL
+		add_core_of = IRL
+		victory_points = { 546 10 }
+		buildings = {
+			infrastructure = 4
+			479 = {
+				naval_base = 1
+			}
+		}
+	}
+}

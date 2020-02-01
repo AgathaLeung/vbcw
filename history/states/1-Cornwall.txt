@@ -1,0 +1,48 @@
+state={
+	id=1
+	name="STATE_1"
+	
+	provinces={
+		33 39 45 48 50 51 53 55 56 68 75 76 78 82 97 112 2381
+	}
+	manpower=350000
+	
+	resources = {
+		steel = 32
+		oil = 8
+		tungsten = 32
+		chromium = 8
+	}
+	
+	state_category = large_town
+	
+	history={
+		add_extra_state_shared_building_slots = 5
+		owner = KER
+		victory_points = { 55 25 }
+		victory_points = { 78 5 }
+		victory_points = { 75 5 }
+		victory_points = { 2381 10 }
+		victory_points = { 39 5 }
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 3
+			arms_factory = 3
+			dockyard = 2
+			air_base = 1
+			45 = {
+				naval_base = 2
+			}
+			68 = {
+				naval_base = 3
+			}
+			75 = {
+				naval_base = 1
+			}
+		}
+		add_core_of = KER
+		add_claim_by = ROY
+		add_claim_by = ANG
+		add_claim_by = YRK
+	}
+}

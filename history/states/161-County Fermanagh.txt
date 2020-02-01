@@ -1,0 +1,20 @@
+state={
+	id=161
+	name="STATE_161"
+	provinces={
+		1289 1328 1341 1356 1368 1374 
+	}
+	manpower=50000
+	
+	state_category = rural
+	
+	history={
+		owner = IRL
+		add_claim_by = IRL
+		add_claim_by = ROY
+		add_claim_by = YRK
+		buildings = {
+			infrastructure = 4
+		}
+	}
+}

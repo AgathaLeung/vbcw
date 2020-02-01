@@ -1,0 +1,595 @@
+﻿division_template = {
+	name = "Infantry Regiment"			
+	division_names_group = SCO_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+        infantry = { x = 0 y = 3 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+        infantry = { x = 1 y = 3 }
+	}
+	support = {
+       	engineer = { x = 0 y = 0 }
+       	mortar = { x = 0 y = 1 }
+       	mechanised_recon = { x = 0 y = 2 }
+	}
+}
+
+division_template = {
+	name = "Guards Regiment"			
+	division_names_group = SCO_INF_01
+	is_locked = yes
+
+	regiments = {
+		guards = { x = 0 y = 0 }
+		guards = { x = 0 y = 1 }
+		guards = { x = 0 y = 2 }
+        guards = { x = 0 y = 3 }
+		guards = { x = 1 y = 0 }
+		guards = { x = 1 y = 1 }
+		guards = { x = 1 y = 2 }
+        guards = { x = 1 y = 3 }
+	}
+	support = {
+       	signal_company = { x = 0 y = 0 }
+       	marching_band = { x = 0 y = 1 }
+	}
+}
+
+division_template = {
+	name = "Cavalry Regiment"
+	division_names_group = SCO_CAV_01
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 1 y = 2 }
+	}
+	support = {
+        recon = { x = 0 y = 0 }
+	}
+}
+
+division_template = {
+	name = "Tank Battlion"
+	division_names_group = SCO_ARM_01
+	regiments = {
+		light_armor = { x = 0 y = 0 }
+		light_armor = { x = 0 y = 1 }
+		light_armor = { x = 0 y = 2 }
+	}
+}
+
+division_template = {
+	name = "Local Defence Volunteers"
+	division_names_group = SCO_GAR_01
+	
+	regiments = {
+		militia = { x = 0 y = 0 }
+		militia = { x = 0 y = 1 }
+		militia = { x = 0 y = 2 }
+		militia = { x = 1 y = 0 }
+		militia = { x = 1 y = 1 }
+		militia = { x = 1 y = 2 }
+		militia = { x = 2 y = 0 }
+		militia = { x = 2 y = 1 }
+		militia = { x = 2 y = 2 }
+	}
+	priority = 0
+}
+
+division_template = {
+	name = "Yeomanry Regiment"
+	division_names_group = SCO_YEO_01
+
+	regiments = {
+		yeomanry = { x = 0 y = 0 }
+		yeomanry = { x = 0 y = 1 }
+		yeomanry = { x = 0 y = 2 }
+		yeomanry = { x = 1 y = 0 }
+		yeomanry = { x = 1 y = 1 }
+		yeomanry = { x = 1 y = 2 }
+	}
+	priority = 0
+}
+
+division_template = {
+	name = "Armoured Car Regiment"
+	division_names_group = SCO_CAV_01
+	regiments = {
+		armoured_car = { x = 0 y = 0 }
+		armoured_car = { x = 0 y = 1 }
+		armoured_car = { x = 0 y = 2 }
+		armoured_car = { x = 1 y = 0 }
+		armoured_car = { x = 1 y = 1 }
+		armoured_car = { x = 1 y = 2 }
+	}
+	support = {
+        signal_company = { x = 0 y = 0 }
+        maintenance_company = { x = 0 y = 1 }
+	}
+}
+
+division_template = {
+	name = "Motor Regiment"			
+	division_names_group = SCO_MOT_01
+
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		motorized = { x = 0 y = 3 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+		motorized = { x = 1 y = 3 }
+	}
+	support = {
+       	engineer = { x = 0 y = 0 }
+       	mortar = { x = 0 y = 1 }
+       	mechanised_recon = { x = 0 y = 2 }
+	}
+}
+
+units = {
+	division= {	
+		name = "Scots Guards"
+		location = 1707
+		division_template = "Guards Regiment"
+		start_experience_factor = 0.3
+	}
+	division= {	
+		name = "The Royal Scots Fusiliers"
+		location = 1728
+		division_template = "Infantry Regiment"
+		start_experience_factor = 0.1
+	}
+	division= {	
+		name = "The Black Watch (Royal Highlanders)"
+		location = 1929
+		division_template = "Infantry Regiment"
+		start_experience_factor = 0.1
+	}
+	division= {	
+		name = "Highland Light Infantry"
+		location = 1814
+		division_template = "Infantry Regiment"
+		start_experience_factor = 0.1
+	}
+	division= {	
+		name = "The Gordon Highlanders"
+		location = 1764
+		division_template = "Infantry Regiment"
+		start_experience_factor = 0.1
+	}
+	division= {	
+		name = "The Argyll and Sutherland Highlanders (Princess Louise’s)"
+		location = 1929
+		division_template = "Infantry Regiment"
+		start_experience_factor = 0.1
+	}
+	division= {	
+		name = "The Edinburgh Rifles"
+		location = 1711
+		division_template = "Infantry Regiment"
+		start_experience_factor = 0.1
+	}	
+	division= {	
+		name = "Tay Light Infantry"
+		location = 1806
+		division_template = "Infantry Regiment"
+		start_experience_factor = 0.1
+	}
+	division= {	
+		name = "Berwick Volunteers"
+		location = 1635
+		division_template = "Local Defence Volunteers"
+		start_experience_factor = 0.0
+	}	
+	division= {	
+		name = "Roxburgh Volunteers"
+		location = 1605
+		division_template = "Local Defence Volunteers"
+		start_experience_factor = 0.0
+	}
+	division= {	
+		name = "Dumfries Volunteers"
+		location = 1542
+		division_template = "Local Defence Volunteers"
+		start_experience_factor = 0.0
+	}
+	division= {	
+		name = "Ayrshire Volunteers"
+		location = 1617
+		division_template = "Local Defence Volunteers"
+		start_experience_factor = 0.0
+	}
+	division= {	
+		name = "South Lanark Volunteers"
+		location = 2422
+		division_template = "Local Defence Volunteers"
+		start_experience_factor = 0.0
+	}
+	division= {	
+		name = "Peebles Volunteers"
+		location = 1652
+		division_template = "Local Defence Volunteers"
+		start_experience_factor = 0.0
+	}	
+	division= {	
+		name = "Selkirk Volunteers"
+		location = 1635
+		division_template = "Local Defence Volunteers"
+		start_experience_factor = 0.0
+	}	
+	division= {	
+		name = "Haddingtonshire Volunteers"
+		location = 1735
+		division_template = "Local Defence Volunteers"
+		start_experience_factor = 0.0
+	}	
+	division= {	
+		name = "1st Edinburgh Volunteers"
+		location = 1728
+		division_template = "Local Defence Volunteers"
+		start_experience_factor = 0.0
+	}
+	division= {	
+		name = "2nd Edinburgh Volunteers"
+		location = 1711
+		division_template = "Local Defence Volunteers"
+		start_experience_factor = 0.0
+	}
+	division= {	
+		name = "3rd Edinburgh Volunteers"
+		location = 1707
+		division_template = "Local Defence Volunteers"
+		start_experience_factor = 0.0
+	}	
+	division= {	
+		name = "4th Edinburgh Volunteers"
+		location = 1721
+		division_template = "Local Defence Volunteers"
+		start_experience_factor = 0.0
+	}	
+	division= {	
+		name = "5th Edinburgh Volunteers"
+		location = 1724
+		division_template = "Local Defence Volunteers"
+		start_experience_factor = 0.0
+	}	
+	division= {	
+		name = "Midlothian Volunteers"
+		location = 1667
+		division_template = "Local Defence Volunteers"
+		start_experience_factor = 0.0
+	}	
+	division= {	
+		name = "Linlithgow Volunteers"
+		location = 1686
+		division_template = "Local Defence Volunteers"
+		start_experience_factor = 0.0
+	}
+	division= {	
+		name = "Kinross Volunteers"
+		location = 1743
+		division_template = "Local Defence Volunteers"
+		start_experience_factor = 0.0
+	}		
+	division= {	
+		name = "1st Fife Volunteers"
+		location = 1716
+		division_template = "Local Defence Volunteers"
+		start_experience_factor = 0.0
+	}		
+	division= {	
+		name = "2nd Fife Volunteers"
+		location = 1784
+		division_template = "Local Defence Volunteers"
+		start_experience_factor = 0.0
+	}		
+	division= {	
+		name = "Forfar Volunteers"
+		location = 1818
+		division_template = "Local Defence Volunteers"
+		start_experience_factor = 0.0
+	}		
+	division= {	
+		name = "Kincardine Volunteers"
+		location = 1884
+		division_template = "Local Defence Volunteers"
+		start_experience_factor = 0.0
+	}		
+	division= {	
+		name = "Banff Volunteers"
+		location = 1990
+		division_template = "Local Defence Volunteers"
+		start_experience_factor = 0.0
+	}		
+	division= {	
+		name = "1st Aberdeen Volunteers"
+		location = 1929
+		division_template = "Local Defence Volunteers"
+		start_experience_factor = 0.0
+	}		
+	division= {	
+		name = "2nd Aberdeen Volunteers"
+		location = 1940
+		division_template = "Local Defence Volunteers"
+		start_experience_factor = 0.0
+	}		
+	division= {	
+		name = "3rd Aberdeen Volunteers"
+		location = 1941
+		division_template = "Local Defence Volunteers"
+		start_experience_factor = 0.0
+	}		
+	division= {	
+		name = "1st Dundee Volunteers"
+		location = 1814
+		division_template = "Local Defence Volunteers"
+		start_experience_factor = 0.0
+	}		
+	division= {	
+		name = "2nd Dundee Volunteers"
+		location = 2424
+		division_template = "Local Defence Volunteers"
+		start_experience_factor = 0.0
+	}	
+	division= {	
+		name = "Perth Volunteers"
+		location = 1806
+		division_template = "Local Defence Volunteers"
+		start_experience_factor = 0.0
+	}	
+	division= {	
+		name = "Kintyre Volunteers"
+		location = 1599
+		division_template = "Local Defence Volunteers"
+		start_experience_factor = 0.0
+	}		
+	division= {	
+		name = "Inner Hebridies Volunteers"
+		location = 1677
+		division_template = "Local Defence Volunteers"
+		start_experience_factor = 0.0
+	}		
+	division= {	
+		name = "Argyll Volunteers"
+		location = 1687
+		division_template = "Local Defence Volunteers"
+		start_experience_factor = 0.0
+	}		
+	division= {	
+		name = "Wigtownshire Volunteers"
+		location = 1480
+		division_template = "Local Defence Volunteers"
+		start_experience_factor = 0.0
+	}		
+	division= {	
+		name = "The Scottish Horse"
+		location = 1721
+		division_template = "Cavalry Regiment"
+		start_experience_factor = 0.2
+	}	
+	division= {	
+		name = "Dunbar Scouts"
+		location = 1718
+		division_template = "Cavalry Regiment"
+		start_experience_factor = 0.1
+	}	
+	division= {	
+		name = "Angus Mounted Infantry"
+		location = 1845
+		division_template = "Cavalry Regiment"
+		start_experience_factor = 0.3
+	}
+	division= {	
+		name = "Argyll Dragoons"
+		location = 1764
+		division_template = "Cavalry Regiment"
+		start_experience_factor = 0.3
+	}	
+	division= {	
+		name = "Ayrshire (Earl of Carrick’s Own) Yeomanry"
+		location = 1640
+		division_template = "Yeomanry Regiment"
+		start_experience_factor = 0.0
+	}	
+	division= {	
+		name = "1st Borders Volunteer Yeomanry"
+		location = 1635
+		division_template = "Yeomanry Regiment"
+		start_experience_factor = 0.0
+	}	
+	division= {	
+		name = "2nd Borders Volunteer Yeomanry"
+		location = 1574
+		division_template = "Yeomanry Regiment"
+		start_experience_factor = 0.0
+	}		
+	division= {	
+		name = "Fife Volunteer Yeomanry"
+		location = 1771
+		division_template = "Yeomanry Regiment"
+		start_experience_factor = 0.0
+	}		
+	division= {	
+		name = "Edinburgh Yeomanry"
+		location = 1707
+		division_template = "Yeomanry Regiment"
+		start_experience_factor = 0.0
+	}		
+	division= {	
+		name = "Lothian Volunteer Yeomanry"
+		location = 1680
+		division_template = "Yeomanry Regiment"
+		start_experience_factor = 0.0
+	}		
+	division= {	
+		name = "1st Aberdeenshire Yeomanry"
+		location = 1929
+		division_template = "Yeomanry Regiment"
+		start_experience_factor = 0.0
+	}		
+	division= {	
+		name = "2nd Aberdeenshire Yeomanry"
+		location = 1883
+		division_template = "Yeomanry Regiment"
+		start_experience_factor = 0.0
+	}	
+	division= {	
+		name = "Perthshire Volunteer Yeomanry"
+		location = 1883
+		division_template = "Yeomanry Regiment"
+		start_experience_factor = 0.0
+	}	
+	division= {	
+		name = "Angus Volunteer Yeomanry"
+		location = 2425
+		division_template = "Yeomanry Regiment"
+		start_experience_factor = 0.0
+	}	
+	division= {	
+		name = "Fife Flying Column"
+		location = 1784
+		division_template = "Armoured Car Regiment"
+		start_experience_factor = 0.2
+	}	
+	division= {	
+		name = "Edinburgh and Midlothian Rifles"
+		location = 1682
+		division_template = "Motor Regiment"
+		start_experience_factor = 0.2
+	}		
+	
+	################
+	##### NAVY #####
+	################
+	
+#	navy = {				
+#		name = "Forth Fleet"			
+#		base = 1743
+#		location = 1743
+#		ship = { name = "Ramillies" definition = battleship equipment = { battleship_1 = { amount = 1 owner = ENG } } }	
+#		ship = { name = "Emerald" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = ENG version_name = "Emerald Class" } } }
+#		ship = { name = "Enterprise" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = ENG version_name = "Emerald Class" } } }		
+#		ship = { name = "Broke" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }	
+#		ship = { name = "Wanderer" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }	
+#		ship = { name = "Whitehall" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+#		ship = { name = "Wolverine" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }	
+#		ship = { name = "Witherington" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+#		ship = { name = "Wallace" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }		
+#		ship = { name = "Pelican" definition = sloop equipment = { sloop_1 = { amount = 1 owner = ENG } } }
+#		ship = { name = "Bittern" definition = sloop equipment = { sloop_1 = { amount = 1 owner = ENG } } }
+#	}
+#	
+#	navy = {				
+#		name = "Escort Fleet"			
+#		base = 1832
+#		location = 1832		
+#		ship = { name = "Vanity" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+#		ship = { name = "Valorous" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }	
+#		ship = { name = "Amethyst" definition = corvette equipment = { corvette_1 = { amount = 1 owner = ENG } } }
+#		ship = { name = "Agate" definition = corvette equipment = { corvette_1 = { amount = 1 owner = ENG } } }
+#		ship = { name = "Flanders" definition = trawler equipment = { trawler_2 = { amount = 1 owner = ENG } } }
+#		ship = { name = "Gunner" definition = trawler equipment = { trawler_2 = { amount = 1 owner = ENG } } }
+#		ship = { name = "Hawthorn" definition = trawler equipment = { trawler_2 = { amount = 1 owner = ENG } } }
+#		ship = { name = "Willow" definition = trawler equipment = { trawler_2 = { amount = 1 owner = ENG } } }
+#		ship = { name = "Windward" definition = trawler equipment = { trawler_2 = { amount = 1 owner = ENG } } }
+#	}
+}	
+
+
+	#####################
+	##### AIR FORCE #####
+	#####################
+	
+air_wings = {
+
+	96 = { 
+		fighter_equipment_0 = {
+			owner = "SCO" 
+			amount = 12
+		}
+	}
+	106 = { 
+		CAS_equipment_1 = {
+			owner = "SCO" 
+			amount = 6
+		}
+	}
+}
+
+	#########################
+	## STARTING PRODUCTION ##
+	#########################
+instant_effect = {
+	
+
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "SCO"
+		}
+		requested_factories = 3
+		progress = 0.1
+		efficiency = 50
+	}
+	
+	add_equipment_to_stockpile = {
+		type = infantry_equipment_0
+		amount = 720
+		producer = ENG
+	}
+	
+	add_equipment_to_stockpile = {
+		type = infantry_equipment_1
+		amount = 400
+		producer = ENG
+	}
+	
+	add_equipment_to_stockpile = {
+		type = support_equipment
+		amount = 72
+		producer = ENG
+	}
+	
+	add_equipment_to_stockpile = {
+		type = mortar_equipment_1
+		amount = 40
+		producer = ENG
+	}
+	
+	add_equipment_to_stockpile = {
+		type = MG_equipment_1
+		amount = 18
+		producer = ENG
+	}
+	
+	add_equipment_to_stockpile = {
+		type = mechanized_equipment_1
+		amount = 32
+		producer = ENG
+	}
+	
+	add_equipment_to_stockpile = {
+		type = artillery_equipment_1
+		amount = 24
+		producer = ENG
+	}
+	
+	add_equipment_to_stockpile = {
+		type = motorized_equipment_1
+		amount = 260
+		producer = CIV
+	}
+}
+	#####################

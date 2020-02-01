@@ -1,0 +1,43 @@
+state={
+	id=10
+	name="STATE_10"
+	provinces={
+		174 189 195 196 201 204 205 212 216 218 220 223 228 229 234 250 252 255 266 2130 2391 2392
+	}
+	manpower=700000
+	
+	resources = {
+		chromium = 24
+	}
+	
+	state_category=city
+	
+	history={
+		victory_points = { 2391 10 }
+		victory_points = { 201 20 }
+		victory_points = { 220 5 }
+		victory_points = { 229 25 }
+		victory_points = { 2392 10 }
+		victory_points = { 252 5 }
+		owner = ANG
+		add_core_of = ANG
+		add_claim_by = YRK
+		add_claim_by = ROY
+		buildings = {
+			infrastructure = 6
+			air_base = 3
+			industrial_complex = 2
+			arms_factory = 1
+			dockyard = 2
+			201 = {
+				naval_base = 5
+			}
+			255 = {
+				naval_base = 2
+			}
+			250 = {
+				naval_base = 4
+			}
+		}
+	}	
+}

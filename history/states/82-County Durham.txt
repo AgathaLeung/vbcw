@@ -1,0 +1,40 @@
+
+state={
+	id=82
+	name="STATE_82"
+	resources={
+		chromium=40.000
+	}
+
+	history={
+		add_extra_state_shared_building_slots = 4
+		owner = SOD
+		add_core_of = SOD
+		add_claim_by = ROY
+		add_claim_by = YRK
+		add_claim_by = ANG
+		victory_points = {
+			1405 10 
+		}
+		victory_points = {
+			1418 10 
+		}
+		victory_points = {
+			1474 25 
+		}
+		buildings = {
+			infrastructure = 6
+			air_base = 1
+			industrial_complex = 2
+			arms_factory = 3
+		}
+
+	}
+
+	provinces={
+		1405 1410 1417 1447 1448 1459 1461 1463 1474 1478 1479 1484 
+	}
+	manpower=250000
+	buildings_max_level_factor=1.000
+	state_category=city
+}

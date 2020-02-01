@@ -1,0 +1,35 @@
+state={
+	id=110
+	name="STATE_110"
+	provinces={
+		1875 1883 1888 1894 1897 1913 1927 1928 1929 1940 1941 1948 1964 1970 
+	}
+	manpower=250000
+	
+	resources = {
+		steel = 16
+		oil = 4
+	}
+	
+	state_category = town
+	
+	history={
+		owner = SCO
+		add_core_of = SCO
+		add_claim_by = ROY
+		add_claim_by = YRK
+		add_claim_by = JAC
+		victory_points = { 1929 10 }
+		buildings = {
+			infrastructure = 4
+			air_base = 1
+			industrial_complex = 1
+			arms_factory = 1
+			dockyard = 2
+			1940 = {
+				naval_base = 4
+			}
+		}
+	}
+}
+

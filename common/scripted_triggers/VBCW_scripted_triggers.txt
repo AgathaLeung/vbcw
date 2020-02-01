@@ -1,0 +1,147 @@
+# checks whether the country in scope has the same government as ROOT (the country running the event/focus)
+has_same_government_as_ROOT = {
+	OR = {
+		AND = {
+			has_government = fascist
+			ROOT = { has_government = fascist }
+		}
+		AND = {
+			has_government = autocratic
+			ROOT = { has_government = autocratic }
+		}
+		AND = {
+			has_government = conservative
+			ROOT = { has_government = conservative }
+		}
+		AND = {
+			has_government = liberal
+			ROOT = { has_government = liberal }
+		}
+		AND = {
+			has_government = democratic_socialist
+			ROOT = { has_government = democratic_socialist }
+		}
+		AND = {
+			has_government = communist
+			ROOT = { has_government = communist }
+		}
+		AND = {
+			has_government = anarcho_syndicalist
+			ROOT = { has_government = anarcho_syndicalist }
+		}
+		AND = {
+			has_government = civic_nationalist
+			ROOT = { has_government = civic_nationalist }
+		}
+	}
+}
+
+has_socialist_government = {
+	OR = {
+		has_government = communist
+		has_government = anarcho_syndicalist
+		has_government = democratic_socialist
+	}
+}
+
+has_far_left_government = {
+	OR = {
+		has_government = communist
+		has_government = anarcho_syndicalist
+	}
+}
+
+has_moderate_left_government = {
+	OR = {
+		has_government = democratic_socialist
+		has_government = civic_nationalist
+	}
+}
+
+has_democratic_government = {
+	OR = {
+		has_government = liberal
+	}
+}
+
+has_right_wing_government = {
+	OR = {
+		has_government = conservative
+	}
+}
+
+has_authoritarian_government = {
+	OR = {
+		has_government = fascist
+		has_government = autocratic
+	}
+}
+
+# checks whether the country in scope has the same government type as ROOT (the country running the event/focus)
+# note that it's not the exact same government - just the general type, as above
+same_government_type_as_ROOT = {
+	OR = {
+		AND = {
+			has_far_left_government = yes
+			ROOT = { has_far_left_government = yes }
+		}
+		AND = {
+			has_moderate_left_government = yes
+			ROOT = { has_moderate_left_government = yes }
+		}
+		AND = {
+			has_democratic_government = yes
+			ROOT = { has_democratic_government = yes }
+		}
+		AND = {
+			has_right_wing_government = yes
+			ROOT = { has_right_wing_government = yes }
+		}
+		AND = {
+			has_authoritarian_government = yes
+			ROOT = { has_authoritarian_government = yes }
+		}
+	}
+}
+
+ai_air_doctrine_tier_1_trigger = {
+	OR = {
+		has_tech = naval_strike_tactics
+		has_tech = direct_ground_support
+		has_tech = low_echelon_support
+	}
+}
+
+ai_air_doctrine_tier_2_trigger = {
+	OR = {
+		has_tech = multialtitude_flying
+		has_tech = hunt_and_destroy
+		has_tech = operational_destruction
+	}
+}
+ai_air_doctrine_tier_3_trigger = {
+	OR = {
+		has_tech = flying_fortress
+		has_tech = naval_strike_torpedo_tactics
+		has_tech = infiltration_bombing
+	}
+}
+
+ai_land_doctrine_tier_1_trigger = {
+	OR = {
+		has_tech = elastic_defence
+		has_tech = mobile_defence
+		has_tech = grand_assault
+		has_tech = guerilla_warfare
+	}
+}
+
+ai_land_doctrine_tier_2_trigger = {
+	OR = {
+		has_tech = kampfgruppe
+		has_tech = mechanised_offensive
+		has_tech = branch_interoperation
+		has_tech = infiltration_assault
+		has_tech = local_knowledge
+	}
+}

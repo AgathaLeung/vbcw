@@ -1,0 +1,32 @@
+state={
+	id=48
+	name="STATE_48"
+	provinces={
+		821 836 861 863 867 881 885 889 894 898 903 906 925 926 928 933 934 937 948 954 966 967 
+	}
+	manpower=550000
+	
+	resources = {
+		steel = 8
+		chromium = 8
+	}
+	
+	state_category = large_town
+	
+	history={
+		owner = ROY
+		add_core_of = ROY
+		add_claim_by = ANG
+		add_claim_by = YRK
+		victory_points = { 867 10 }
+		victory_points = { 885 20 }
+		victory_points = { 926 5 }
+		victory_points = { 928 10 }
+		buildings = {
+			infrastructure = 6
+			air_base = 2
+			industrial_complex = 2
+			arms_factory = 2
+		}
+	}
+}

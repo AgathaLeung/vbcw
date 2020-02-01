@@ -1,0 +1,36 @@
+﻿units = {	
+	##########################
+	##### NAVY - VANILLA #####
+	##########################
+	
+	fleet = {				
+		name = "People's Navy"			
+		naval_base = 1148
+		task_force = {				
+			name = "Hull Fleet"
+			location = 1148
+			ship = { name = "Southampton" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = ENG } } }
+			ship = { name = "Echo" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG version_name = "E/F/G/H Class" } } }
+			ship = { name = "Garry" definition = trawler equipment = { trawler_1 = { amount = 1 owner = ENG } } }	
+			ship = { name = "Liffey" definition = trawler equipment = { trawler_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Buckingham" definition = trawler equipment = { trawler_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Glen Kidson" definition = trawler equipment = { trawler_1 = { amount = 1 owner = ENG } } }	
+		}
+		
+		task_force = {				
+			name = "Grimsby Fleet"
+			location = 1089	
+			ship = { name = "Glasgow" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = ENG } } }	
+			ship = { name = "Sandringham" definition = trawler equipment = { trawler_1 = { amount = 1 owner = ENG } } }	
+			ship = { name = "Malayan" definition = trawler equipment = { trawler_1 = { amount = 1 owner = ENG } } }	
+			ship = { name = "Lune" definition = trawler equipment = { trawler_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Fane" definition = trawler equipment = { trawler_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Rosie" definition = trawler equipment = { trawler_1 = { amount = 1 owner = CIV } } }
+			ship = { name = "Sunbeam" definition = trawler equipment = { trawler_1 = { amount = 1 owner = CIV } } }
+			ship = { name = "Sweet Surprise II" definition = trawler equipment = { trawler_1 = { amount = 1 owner = CIV } } }
+			ship = { name = "Clee" definition = trawler equipment = { trawler_1 = { amount = 1 owner = CIV } } }
+			ship = { name = "Portia" definition = trawler equipment = { trawler_1 = { amount = 1 owner = CIV } } }
+			ship = { name = "Habbakuk" definition = trawler equipment = { trawler_1 = { amount = 1 owner = CIV } } }
+		}
+	}
+}

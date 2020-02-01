@@ -1,0 +1,23 @@
+state={
+	id=95
+	name="STATE_95"
+	provinces={
+		1613 1615 1622 1635 
+	}
+	manpower=50000
+	
+	state_category = rural
+	
+	history={
+		victory_points = { 1635 5 }
+		owner = SCO
+		add_core_of = SCO
+		add_claim_by = ROY
+		add_claim_by = YRK
+		add_claim_by = JAC
+		buildings = {
+			infrastructure = 4
+		}
+	}
+}
+

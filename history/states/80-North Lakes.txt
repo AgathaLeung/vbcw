@@ -1,0 +1,36 @@
+state={
+	id=80
+	name="STATE_80"
+	provinces={
+		1350 1353 1366 1371 1379 1390 1397 1398 1401 1402 1403 1409 1413 1419 1438 1439 1442 1450 1471 1495 
+	}
+	manpower=150000
+	
+	resources = {
+		steel = 8
+		chromium = 16
+		tungsten = 8
+	}
+	
+	state_category = town
+	
+	history={
+		owner = YRK
+		add_core_of = YRK
+		add_claim_by = ROY
+		add_claim_by = ANG
+		victory_points = { 1401 10 }
+		victory_points = { 1438 10 }
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 2
+			dockyard = 1
+			1401 = {
+				naval_base = 1
+			}
+			1438 = {
+				naval_base = 2
+			}
+		}
+	}
+}

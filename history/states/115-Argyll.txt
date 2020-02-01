@@ -1,0 +1,25 @@
+state={
+	id=115
+	name="STATE_115"
+	provinces={
+		1687 1703 1737 1741 1756 1764 1770 1772 1774 1783 1792 1795 1802 1804 1813 1815 1816 1830 2426 2427
+	}
+	manpower=25000
+	
+	state_category = pastoral
+	
+	history={
+		victory_points = { 1764 5 }
+		owner = SCO
+		add_core_of = SCO
+		add_claim_by = ROY
+		add_claim_by = YRK
+		add_claim_by = JAC
+		buildings = {
+			infrastructure = 2
+			1687 = {
+				naval_base = 2
+			}
+		}
+	}
+}

@@ -1,0 +1,27 @@
+state={
+	id=77
+	name="STATE_77"
+	provinces={
+		1301 1308 1319 1355 1361 1378 1386 
+	}
+	manpower=150000
+	
+	resources = {
+		chromium = 8
+	}
+	
+	state_category = rural
+	
+	history={
+		victory_points = { 1355 5 }
+		owner = YRK
+		add_core_of = YRK
+		add_claim_by = ROY
+		add_claim_by = ANG
+		buildings = {
+			infrastructure = 2
+			air_base = 3
+			industrial_complex = 1
+		}
+	}
+}

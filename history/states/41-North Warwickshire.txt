@@ -1,0 +1,35 @@
+state={
+	id=41
+	name="STATE_41"
+	provinces={
+		569 572 573 574 584 591 598 606 624 675
+	}
+	manpower=500000
+	
+	resources = {
+		oil = 8
+		rubber = 16
+		steel = 16
+		chromium = 8
+	}
+	
+	state_category = large_town
+	
+	history={
+		owner = SOM
+		add_core_of = SOM
+		add_claim_by = ROY
+		add_claim_by = ANG
+		add_claim_by = YRK
+		victory_points = { 584 20 }
+		victory_points = { 573 5 }
+		victory_points = { 624 5 }
+		victory_points = { 675 5 }
+		buildings = {
+			infrastructure = 6
+			air_base = 1
+			industrial_complex = 2
+			arms_factory = 2
+		}
+	}
+}

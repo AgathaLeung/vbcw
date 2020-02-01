@@ -1,0 +1,46 @@
+﻿l_english:
+
+###CATEGORIES###
+ black_market:0 "Black Market Imports"
+ black_market_desc:0 "Although the British Isles are bountiful, there are certain exotic resources that cannot be found domestically, and no shortage of unscrupulous characters willing to sell them."
+ emergency_construction:0 "Emergency Construction"
+ emergency_construction_desc:0 "In such desperate times as these, we must make use of every inch of land."
+ desperate_measures:0 "Desperate Measures"
+ desperate_measures_desc:0 "Circumstances such as these may force us to take drastic steps..."
+ commandeer_civilian_equipment:0 "Commandeer Civilian Equipment"
+ commandeer_civilian_equipment_desc:0 "In times of crisis we must take steps to ease pressure on our industry."
+ 
+###GENERIC###
+ 
+##BLACK MARKET##
+ sumatran_rubber:0 "Sumatran Rubber"
+ sumatran_rubber_desc:0 "The Dutch East Indies have lots of rubber, and no shortage of corrupt civil servants. Why not take advantage while we can?."
+ american_oil:0 "American Oil"
+ american_oil_desc:0 "The United States is full of oil, and boorish Texans willing to sell it."
+ swedish_tungsten:0 "Scandinavian Metals"
+ swedish_tungsten_desc:0 "Even Scandinavians, although famous for their domestic cleanliness, are not above a little bribery here and there."
+ yugoslavian_aluminium:0 "Yugoslavian Aluminium"
+ yugoslavian_aluminium_desc:0 "In a region as turbulent as the Balkans, nobody will notice the occasional shipment of aluminium going missing."
+ german_coal:0 "German Coal"
+ german_coal_desc:0 "Even Herr Hitler can't keep track of every trainload of coal."
+ soviet_steel:0 "Soviet Steel"
+ soviet_steel_desc:0 "Thanks to Stalin, the Soviet economy is so inefficient that we'd be doing them a favour."
+ importing_resources_flag:0 "Currently trading on the black market." 
+ 
+##COMMANDEERING##
+ civilian_vehicles:0 "Civilian Vehicles"
+ civilian_vehicles_desc:0 "The roads are packed with lorries, buses and taxis. It's time we put them to use."
+ civilian_vehicles_flag:0 "Has not already been scoured for vehicles."
+ civilian_weapons:0 "Civilian Weapons"
+ civilian_weapons_desc:0 "Everyone from farmers to farmers' mums seem to be going around armed to the teeth. Our need is greater than theirs."
+ civilian_weapons_flag:0 "Has not already been scoured for weapons."
+ civilian_aircraft:0 "Civilian Aircraft"
+ civilian_aircraft_desc:0 "It's time the local flying clubs played their part in the war effort."
+ civilian_aircraft_flag:0 "Has not already been scoured for aircraft." 
+ 
+##CONSTRUCTION##
+ war_building_slot_desc:0 "That village green looks like a lovely spot for a munitions factory..."
+ 
+###WALES###
+ blow_vyrnwy_damn:0 "Blow the Vyrnwy Dam"
+ blow_vyrnwy_damn_desc:0 "We can't allow the Liverpudlians to continue to drink our water. Cut them off, and they'll soon lose the will to fight."

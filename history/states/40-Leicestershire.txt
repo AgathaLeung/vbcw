@@ -1,0 +1,33 @@
+
+state={
+	id=40
+	name="STATE_40"
+	provinces={
+		605 630 636 656 657 678 689 708 710 736 742 753 2131 
+	}
+	manpower=600000
+	
+	resources = {
+		steel = 16
+		chromium = 8
+	}
+	
+	state_category=city
+	
+	history={
+		owner = SOM
+		add_core_of = SOM
+		add_claim_by = ROY
+		add_claim_by = ANG
+		add_claim_by = YRK
+		victory_points = { 689 20 }
+		victory_points = { 753 10 }
+		victory_points = { 742 5 }
+		buildings = {
+			infrastructure = 6
+			air_base = 2
+			industrial_complex = 2
+			arms_factory = 2
+		}
+	}
+}

@@ -1,0 +1,58 @@
+spriteTypes = {	
+	spriteType = {
+		name = "GFX_idea_WAL_code_talkers"
+		texturefile = "gfx/interface/ideas/idea_code_talkers.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_KER_german_investments"
+		texturefile = "gfx/interface/ideas/idea_german_investments.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_KER_pasty_service"
+		texturefile = "gfx/interface/ideas/idea_generic_secret_police.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_KER_pasty_service_internal"
+		texturefile = "gfx/interface/ideas/idea_generic_secret_police.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_KER_pasty_service_external"
+		texturefile = "gfx/interface/ideas/idea_generic_secret_police.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_KER_pasty_service_external_2"
+		texturefile = "gfx/interface/ideas/idea_generic_secret_police.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_KER_trade_with_the_world"
+		texturefile = "gfx/interface/ideas/idea_can_wartime_prices_and_trade_board.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_KER_french_investments"
+		texturefile = "gfx/interface/ideas/idea_french_investments.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_KER_kernow_bys_vykken"
+		texturefile = "gfx/interface/ideas/idea_cornish_flag.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_KER_national_library"
+		texturefile = "gfx/interface/ideas/idea_big_green_brain.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_KER_militia_armed"
+		texturefile = "gfx/interface/ideas/idea_generic_factory_line.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_KER_war_effort_idea"
+		texturefile = "gfx/interface/ideas/idea_air_land_factory.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_KER_artillery_focus"
+		texturefile = "gfx/interface/ideas/idea_generic_artillery_regiments.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_KER_rifle_reliability"
+		texturefile = "gfx/interface/ideas/idea_ast_volunteer_defence_corps.dds"
+	}
+}

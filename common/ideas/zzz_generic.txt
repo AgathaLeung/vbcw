@@ -1,0 +1,630 @@
+ideas = {
+
+	hidden_ideas = {
+
+		continuous_naval_production = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				industrial_capacity_dockyard = 0.2
+			}
+		}
+
+
+		continuous_air_production = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			equipment_bonus = {
+				fighter_equipment = {
+					instant = yes
+					build_cost_ic = -0.10
+				}
+				cv_fighter_equipment = {
+					instant = yes
+					build_cost_ic = -0.10
+				}
+				jet_fighter_equipment = {
+					instant = yes
+					build_cost_ic = -0.10
+				}
+				cv_CAS_equipment = {
+					instant = yes
+					build_cost_ic = -0.10
+				}
+				CAS_equipment = {
+					instant = yes
+					build_cost_ic = -0.10
+				}
+				nav_bomber_equipment = {
+					instant = yes
+					build_cost_ic = -0.10
+				}
+				cv_nav_bomber_equipment = {
+					instant = yes
+					build_cost_ic = -0.10
+				}
+				rocket_interceptor_equipment = {
+					instant = yes
+					build_cost_ic = -0.10
+				}
+				tac_bomber_equipment = {
+					instant = yes
+					build_cost_ic = -0.10
+				}
+				jet_tac_bomber_equipment = {
+					instant = yes
+					build_cost_ic = -0.10
+				}
+				jet_strat_bomber_equipment = {
+					instant = yes
+					build_cost_ic = -0.10
+				}
+				heavy_fighter_equipment = {
+					instant = yes
+					build_cost_ic = -0.10
+				}
+				strat_bomber_equipment = {
+					instant = yes
+					build_cost_ic = -0.10
+				}
+				transport_plane_equipment = {
+					instant = yes
+					build_cost_ic = -0.10
+				}
+				guided_missile_equipment = {
+					instant = yes
+					build_cost_ic = -0.10
+				}
+			}		
+		}
+	}
+	
+	country = {	
+
+		special_forces = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = FRA_scw_intervention_nationalists_focus
+			
+			modifier = {
+				special_forces_cap = 0.02
+			}
+		}
+	}
+
+	# TECHNOLOGY
+	tank_manufacturer = { 
+	
+		designer = yes
+		
+		generic_tank_manufacturer = {
+
+			picture = generic_tank_manufacturer_1
+			
+			allowed = {
+				NOT ={
+					OR = {
+						has_available_idea_with_traits = { idea = tank_manufacturer_1 limit = 1 }
+						has_available_idea_with_traits = { idea = tank_manufacturer_2 limit = 1 }
+						has_available_idea_with_traits = { idea = tank_manufacturer_3 limit = 1 }
+					}
+				}
+			}
+			
+			cost = 150
+			removal_cost = 10
+			
+			research_bonus = {
+				armor = 0.10
+			}
+			
+			traits = { tank_manufacturer_1 }
+		}
+		
+		generic_motorized_equipment_manufacturer = {
+
+			picture = generic_tank_manufacturer_2
+			
+			allowed = {
+				NOT ={
+					OR = {
+						has_available_idea_with_traits = { idea = motorised_manufacturer_1 limit = 1 }
+						has_available_idea_with_traits = { idea = motorised_manufacturer_2 limit = 1 }
+						has_available_idea_with_traits = { idea = motorised_manufacturer_3 limit = 1 }
+					}
+				}
+			}
+			
+			cost = 150
+			removal_cost = 10
+			
+			research_bonus = {
+				motorized_equipment = 0.10
+			}
+			
+			traits = { motorised_manufacturer_1 }
+		}
+	}
+	
+	naval_manufacturer = { 
+	
+		designer = yes
+	
+		generic_small_vessel_manufacturer = {
+			
+			picture = generic_naval_manufacturer_1
+
+			allowed = {
+				NOT ={
+					OR = {
+						has_available_idea_with_traits = { idea = small_vessel_manufacturer_1 limit = 1 }
+						has_available_idea_with_traits = { idea = small_vessel_manufacturer_2 limit = 1 }
+						has_available_idea_with_traits = { idea = small_vessel_manufacturer_3 limit = 1 }
+					}
+				}
+			}
+			
+			cost = 150
+			removal_cost = 10
+			
+			research_bonus = {
+				naval_equipment = 0.10
+			}
+			
+			traits = { small_vessel_manufacturer_1 }
+		}
+	
+		generic_large_vessel_manufacturer = {
+			
+			picture = generic_naval_manufacturer_2
+
+			allowed = {
+				NOT ={
+					OR = {
+						has_available_idea_with_traits = { idea = large_vessel_manufacturer_1 limit = 1 }
+						has_available_idea_with_traits = { idea = large_vessel_manufacturer_2 limit = 1 }
+						has_available_idea_with_traits = { idea = large_vessel_manufacturer_3 limit = 1 }
+					}
+				}
+			}
+			
+			cost = 150
+			removal_cost = 10
+			
+			research_bonus = {
+				naval_equipment = 0.10
+			}
+			
+			traits = { large_vessel_manufacturer_1 }
+		}
+	}
+
+	aircraft_manufacturer = { 
+	
+		designer = yes
+	
+		generic_light_aircraft_manufacturer = {
+			
+			picture = generic_air_manufacturer_1
+
+			allowed = {
+				NOT ={
+					OR = {
+						has_available_idea_with_traits = { idea = fighter_manufacturer_1 limit = 1 }
+						has_available_idea_with_traits = { idea = fighter_manufacturer_2 limit = 1 }
+						has_available_idea_with_traits = { idea = fighter_manufacturer_3 limit = 1 }
+					}
+				}
+			}
+			
+			cost = 150
+			removal_cost = 10
+			
+			research_bonus = {
+				air_equipment = 0.10
+			}
+			
+			traits = { fighter_manufacturer_1 }
+		}
+		
+		generic_heavy_aircraft_manufacturer = {
+
+			picture = generic_air_manufacturer_2
+			
+			allowed = {
+				NOT ={
+					OR = {
+						has_available_idea_with_traits = { idea = bomber_manufacturer_1 limit = 1 }
+						has_available_idea_with_traits = { idea = bomber_manufacturer_2 limit = 1 }
+						has_available_idea_with_traits = { idea = bomber_manufacturer_3 limit = 1 }
+					}
+				}
+			}
+			
+			cost = 150
+			removal_cost = 10
+			
+			research_bonus = {
+				air_equipment = 0.10
+			}
+			
+			traits = { bomber_manufacturer_1 }
+		}
+	}
+
+	industrial_concern = {
+	
+		generic_industrial_concern = {
+			
+			picture = generic_industrial_concern_1
+
+			allowed = {
+				NOT ={
+					OR = {
+						has_available_idea_with_traits = { idea = industrial_concern_1 limit = 1 }
+						has_available_idea_with_traits = { idea = industrial_concern_2 limit = 1 }
+						has_available_idea_with_traits = { idea = industrial_concern_3 limit = 1 }
+					}
+				}
+			}
+			
+			cost = 150
+			removal_cost = 10
+			
+			research_bonus = {
+				industry = 0.10
+			}
+			
+			traits = { industrial_concern_1 }
+		}
+
+		generic_electronics_concern = {
+			
+			picture = generic_electronics_concern_1
+
+			allowed = {
+				NOT ={
+					OR = {
+						has_available_idea_with_traits = { idea = electronics_concern_1 limit = 1 }
+						has_available_idea_with_traits = { idea = electronics_concern_2 limit = 1 }
+					}
+				}
+			}
+			
+			cost = 150
+			removal_cost = 10
+			
+			research_bonus = {
+				electronics = 0.10
+			}
+			
+			traits = { electronics_concern_2 }
+		}
+	}
+
+	materiel_manufacturer = {
+	
+		designer = yes
+		
+		generic_infantry_equipment_manufacturer = {
+			
+			picture = generic_infantry_equipment_manufacturer_2
+
+			allowed = {
+				NOT ={
+					OR = {
+						has_available_idea_with_traits = { idea = infantry_equipment_manufacturer_1 limit = 1 }
+						has_available_idea_with_traits = { idea = infantry_equipment_manufacturer_2 limit = 1 }
+						has_available_idea_with_traits = { idea = infantry_equipment_manufacturer_3 limit = 1 }
+						tag = KER
+					}
+				}
+			}
+			
+			cost = 150
+			removal_cost = 10
+			
+			research_bonus = {
+				infantry_weapons = 0.10
+			}
+			
+			traits = { infantry_equipment_manufacturer_1 }
+		}
+		
+		generic_artillery_manufacturer = {
+			
+			picture = generic_artillery_manufacturer_2
+
+			allowed = {
+				NOT ={
+					OR = {
+						has_available_idea_with_traits = { idea = artillery_manufacturer_1 limit = 1 }
+						has_available_idea_with_traits = { idea = artillery_manufacturer_2 limit = 1 }
+						has_available_idea_with_traits = { idea = artillery_manufacturer_3 limit = 1 }
+						tag = KER
+					}
+				}
+			}
+			
+			cost = 150
+			removal_cost = 10
+			
+			research_bonus = {
+				artillery = 0.10
+			}
+			
+			traits = { artillery_manufacturer_1 }
+		}
+	}
+
+	political_advisor = {
+
+		generic_fascist_booster = {
+			
+			picture = fascist_booster
+
+			allowed = {
+				fascist > 0.01
+			}
+			
+			traits = { fascist_booster }
+		}
+
+		generic_autocratic_booster = {
+			
+			picture = autocratic_booster
+
+			allowed = {
+				autocratic > 0.01
+			}
+			
+			traits = { autocratic_booster }
+		}
+
+		generic_captain_of_industry = {
+			
+			picture = captain_of_industry
+
+			allowed = {
+				NOT = {
+					has_available_idea_with_traits = { idea = captain_of_industry limit = 1 }
+				}
+			}
+			
+			traits = { captain_of_industry }
+		}
+		
+		generic_fortification_engineer = {
+			
+			picture = fortification_engineer
+
+			allowed = {
+				NOT = {
+					has_available_idea_with_traits = { idea = fortification_engineer limit = 1 }
+				}
+			}
+			
+			traits = { fortification_engineer }
+		}
+		
+		generic_silent_workhorse = {
+			
+			picture = silent_workhorse
+
+			allowed = {
+				NOT = {
+					has_available_idea_with_traits = { idea = silent_workhorse limit = 1 }
+				}
+			}
+			
+			traits = { silent_workhorse }
+		}
+
+		generic_war_industrialist = {
+			
+			picture = war_industrialist
+
+			allowed = {
+				NOT = {
+					has_available_idea_with_traits = { idea = war_industrialist limit = 1 }
+				}
+			}
+			
+			traits = { war_industrialist }
+		}
+	}
+
+	army_chief = {
+		
+		generic_army_chief_off = {
+			
+			picture = generic_army_europe_3
+			
+			allowed = {
+				NOT = { OR = { tag = YRK tag = KER } }
+			}
+			
+			traits = { army_chief_offensive_1 }
+		}
+
+		generic_army_chief_def = {
+			
+			picture = generic_army_europe_1
+			
+			allowed = {
+				NOT = { OR = { tag = YRK tag = KER } }
+			}
+			
+			traits = { army_chief_defensive_1 }
+		}
+	}
+
+	navy_chief = {		
+
+		generic_navy_chief_decisive_bat = {
+			
+			picture = generic_navy_europe_3
+			
+			allowed = {
+				NOT = { OR = { tag = YRK tag = KER } }
+			}
+			
+			traits = { navy_chief_decisive_battle_2 }
+		}
+
+		generic_navy_anti_submarine = {
+			
+			picture = generic_navy_europe_1
+			
+			allowed = {
+				NOT = { OR = { tag = YRK tag = KER } }
+			}
+			
+			traits = { navy_anti_submarine_2 }
+		}
+	}
+
+	air_chief = {
+
+		generic_air_close_air_sup = {
+			
+			picture = generic_air_europe_3
+			
+			allowed = {
+				NOT = { OR = { tag = YRK tag = KER } }
+			}
+			
+			traits = { air_close_air_support_2 }
+		}
+	
+		generic_air_chief_all_weather = {
+			
+			picture = generic_air_europe_1
+			
+			allowed = {
+				NOT = { OR = { tag = YRK tag = KER } }
+			}
+			
+			traits = { air_chief_all_weather_2 }			
+		}
+	}
+
+	high_command = {
+
+		generic_army_art = {
+			
+			picture = generic_army_europe_3
+			
+			allowed = {
+				NOT = { OR = { tag = YRK tag = KER } }
+			}
+			
+			traits = { army_artillery_1 }			
+		}
+		
+		generic_army_log = {
+			
+			picture = generic_army_europe_2
+
+			allowed = {
+				NOT = { OR = { tag = YRK tag = KER } }
+			}
+			
+			traits = { army_logistics_2 }			
+		}
+
+		generic_navy_fleet_log = {
+			
+			picture = generic_navy_europe_2
+
+			allowed = {
+				NOT = { OR = { tag = YRK tag = KER } }
+			}
+			
+			traits = { navy_fleet_logistics_1 }			
+		}
+
+		generic_air_air_combat_trainer = {
+			
+			picture = generic_air_europe_2
+
+			allowed = {
+				NOT = { OR = { tag = YRK tag = KER } }
+			}
+			
+			traits = { air_air_combat_training_2 }			
+		}
+	}
+
+	theorist = {
+
+		generic_military_theorist = {
+			
+			picture = generic_army_europe_2
+			
+			allowed = { 
+				NOT = { OR = { tag = YRK tag = KER } }
+			}
+			
+			research_bonus = {
+				land_doctrine = 0.07
+			}
+			
+			traits = { military_theorist }
+		}
+	
+		generic_naval_theorist = {
+			
+			picture = generic_navy_europe_2
+			
+			allowed = {
+				NOT = { OR = { tag = YRK tag = KER } }
+			}
+			
+			research_bonus = {
+				naval_doctrine = 0.07
+			}
+			
+			traits = { naval_theorist }
+		}
+
+		generic_air_warfare_theorist = {
+			
+			picture = generic_air_europe_2
+			
+			allowed = {
+				NOT = { OR = { tag = YRK tag = KER } }
+			}
+			
+			research_bonus = {
+				air_warfare_doctrine = 0.07
+			}
+			
+			traits = { air_warfare_theorist }
+		}
+	}
+}

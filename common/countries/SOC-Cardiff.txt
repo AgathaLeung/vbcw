@@ -1,0 +1,4 @@
+
+
+graphical_culture = socialist_armies_gfx
+graphical_culture_2d = socialist_armies_2d

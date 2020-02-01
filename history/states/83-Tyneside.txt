@@ -1,0 +1,35 @@
+
+state={
+	id=83
+	name="STATE_83"
+	resources={
+		oil = 16
+		steel = 32
+		chromium = 48
+	}
+
+	history={
+		owner = SON
+		add_core_of = SON
+		add_claim_by = ROY
+		add_claim_by = YRK
+		add_claim_by = ANG
+		victory_points = { 1534 25 }
+		victory_points = { 1545 10 }
+		buildings = {
+			infrastructure = 8
+			air_base = 1
+			industrial_complex = 2
+			arms_factory = 3
+			dockyard = 2
+		}
+
+	}
+
+	provinces={
+		1534 1535 1543 1545 1548 
+	}
+	manpower=500000
+	buildings_max_level_factor=1.000
+	state_category=large_city
+}

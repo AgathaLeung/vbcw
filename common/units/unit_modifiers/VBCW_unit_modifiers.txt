@@ -1,0 +1,21 @@
+#list all modifiers that will be used for specific sub unit or sub unit categories
+
+# modifier_army_sub_unit_[sub_unit or sub_unit_category]_attack_factor
+# modifier_army_sub_unit_[sub_unit or sub_unit_category]_defence_factor
+# modifier_army_sub_unit_[sub_unit or sub_unit_category]_speed_factor
+# will be being used by armies if they are included here
+
+#example
+sub_unit_modifiers = {
+	modifier_army_sub_unit_category_cavalry_attack_factor
+	modifier_army_sub_unit_category_cavalry_defence_factor
+	modifier_army_sub_unit_category_cavalry_speed_factor
+	
+	modifier_army_sub_unit_category_irregular_attack_factor
+	modifier_army_sub_unit_category_irregular_defence_factor
+	modifier_army_sub_unit_category_irregular_speed_factor
+	
+	modifier_army_sub_unit_category_regular_attack_factor  
+	modifier_army_sub_unit_category_regular_defence_factor
+	modifier_army_sub_unit_category_regular_speed_factor
+}

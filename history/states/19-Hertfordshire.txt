@@ -1,0 +1,27 @@
+state={
+	id=19
+	name="STATE_19"
+	provinces={
+		345 369 371 372 373 405 407 410 446 2402 2403
+	}
+	manpower=600000
+	
+	state_category = city
+	
+	history={
+		victory_points = { 345 5 }
+		victory_points = { 2403 10 }
+		victory_points = { 2402 10 }
+		owner = BUF
+		add_core_of = BUF
+		add_claim_by = YRK
+		add_claim_by = ANG
+		add_claim_by = ROY
+		buildings = {
+			infrastructure = 6
+			air_base = 2
+			industrial_complex = 2
+			arms_factory = 2
+		}
+	}
+}

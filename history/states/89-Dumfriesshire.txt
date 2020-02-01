@@ -1,0 +1,32 @@
+state={
+	id=89
+	name="STATE_89"
+	provinces={
+		1521 1525 1542 1552 1553 1554 1555 1563 1573 1574 1576 1586 1591 1598 1605 
+	}
+	manpower=100000
+	
+	resources = {
+		steel = 8
+		tungsten = 8
+	}
+	
+	state_category = rural
+	
+	history={
+		owner = SCO
+		add_core_of = SCO
+		add_claim_by = ROY
+		add_claim_by = YRK
+		add_claim_by = JAC
+		victory_points = { 1542 10 }
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+			1525 = {
+				naval_base = 2
+			}
+		}
+	}
+}
+

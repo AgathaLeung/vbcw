@@ -1,0 +1,197 @@
+﻿###########################
+# News Events
+###########################
+
+add_namespace = vbcw_news
+
+news_event = {
+	id = vbcw_news.1
+	title = vbcw_news.1.t
+	desc = vbcw_news.1.d
+	picture = GFX_news_event_definetely_not_berlin_parade
+	
+	major = yes
+	
+	trigger = {
+		1 = { is_controlled_by = ROY }
+		1 = { is_owned_by = KER }
+		KER = { has_war_with = ROY }
+		NOT = { has_global_flag = fall_of_plymouth_ker }
+	}
+	
+	immediate = {
+		set_global_flag = fall_of_plymouth_ker
+	}
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	option = {
+		name = vbcw_news.1.a
+		trigger = {
+			NOT = {
+				TAG = KER
+				TAG = ROY
+			}
+		}
+	}
+	option = {
+		name = vbcw_news.1.b
+		trigger = { TAG = KER }
+	}
+	option = {
+		name = vbcw_news.1.c
+		trigger = { TAG = ROY }
+	}
+}
+news_event = {
+	id = vbcw_news.2
+	title = vbcw_news.2.t
+	desc = vbcw_news.2.d
+	picture = GFX_news_event_infantry_parade
+	
+	major = yes
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	option = {
+		name = vbcw_news.2.a
+		trigger = {
+			NOT = {
+				TAG = KER
+				TAG = ANG
+			}
+		}
+	}
+	option = {
+		name = vbcw_news.2.b
+		trigger = { TAG = KER }
+	}
+	option = {
+		name = vbcw_news.2.c
+		trigger = { TAG = ANG }
+	}
+}
+news_event = {
+	id = vbcw_news.3
+	title = vbcw_news.3.t
+	desc = vbcw_news.3.d
+	picture = GFX_news_event_people_fucking_about_in_city
+	
+	major = yes
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	
+	
+	mean_time_to_happen = {
+		days = 3
+	}
+	
+	option = {
+		name = vbcw_news.3.a
+		trigger = {
+			NOT = {
+				TAG = KER
+				TAG = ROY
+			}
+		}
+	}
+	option = {
+		name = vbcw_news.3.b
+		trigger = { TAG = KER }
+	}
+	option = {
+		name = vbcw_news.3.c
+		trigger = { TAG = ROY }
+	}
+}
+
+news_event = {
+	id = vbcw_news.4 ### Paul Robeson Tour
+	title = vbcw_news.4.t
+	desc = { 
+		text = vbcw_news.4.d_positive
+		trigger = {
+			OR = {
+				tag = SOM
+				is_in_faction_with = SOM
+			}
+		}
+	}
+	desc = { 
+		text = vbcw_news.4.d_neutral
+		trigger = {
+			not = {
+				tag = SOM
+				tag = BUF
+				is_in_faction_with = SOM
+				is_in_faction_with = BUF
+				has_government = fascist
+			}
+		}
+	}
+	desc = { 
+		text = vbcw_news.4.d_negative
+		trigger = {
+			OR = {
+				tag = BUF
+				is_in_faction_with = BUF
+				has_government = fascist
+			}
+		}
+	}
+	picture = GFX_news_event_paul_robeson
+	
+	fire_only_once = yes
+	
+	mean_time_to_happen = {
+		days = 275
+	}
+
+	option = {
+		name = vbcw_news.4.a #Positive
+		trigger = {
+			OR = {
+				tag = SOM
+				is_in_faction_with = SOM
+			}
+		}
+		set_global_flag = paul_robeson_tour
+	}
+
+	option = {
+		name = vbcw_news.4.b #Neutral
+		trigger = {
+			not = {
+				tag = SOM
+				tag = BUF
+				is_in_faction_with = SOM
+				is_in_faction_with = BUF
+				has_government = fascist
+			}
+		}
+		set_global_flag = paul_robeson_tour
+	}
+
+	option = {
+		name = vbcw_news.4.c #Negative
+		trigger = {
+			OR = {
+				tag = BUF
+				is_in_faction_with = BUF
+				has_government = fascist
+			}
+		}
+		set_global_flag = paul_robeson_tour
+	}
+}

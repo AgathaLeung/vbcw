@@ -1,0 +1,25 @@
+state={
+	id=168
+	name="STATE_168"
+	provinces={
+		1869 1880 
+	}
+	manpower=4000
+	
+	state_category = pastoral
+	
+	history={
+		victory_points = { 1880 5 }
+		owner = JAC
+		add_core_of = JAC
+		add_claim_by = ROY
+		add_claim_by = YRK
+		add_claim_by = SCO
+		buildings = {
+			infrastructure = 1
+			1880 = {
+				naval_base = 1
+			}
+		}
+	}
+}

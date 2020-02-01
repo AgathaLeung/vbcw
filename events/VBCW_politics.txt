@@ -1,0 +1,1113 @@
+﻿###Intro###
+
+add_namespace = vbcw.politics
+
+country_event = {
+	id = vbcw.politics.1
+	immediate = {log = "[GetDateText]: [Root.GetName]: event vbcw.politics.1"}
+	title = vbcw.politics.1.t
+	desc = vbcw.politics.1.d
+	picture = GFX_report_event_palace
+
+	is_triggered_only = yes
+
+	option = {
+		name = vbcw.politics.1.a #And then what happened?
+		hidden_effect = {
+			add_threat = 5
+		}
+		country_event = { id = vbcw.politics.2 }
+	}
+
+	option = {
+		name = vbcw.politics.1.b #Shut up already
+		hidden_effect = {
+			add_threat = 30
+		}
+		country_event = { id = vbcw.politics.7 }
+	}
+}
+
+country_event = {
+	id = vbcw.politics.2
+	immediate = {log = "[GetDateText]: [Root.GetName]: event vbcw.politics.2"}
+	title = vbcw.politics.2.t
+	desc = vbcw.politics.2.d
+	picture = GFX_report_event_auxiliaries
+
+	is_triggered_only = yes
+
+	option = {
+		name = vbcw.politics.2.a #And then what happened?
+		hidden_effect = {
+			add_threat = 5
+		}
+		country_event = { id = vbcw.politics.3 }
+	}
+
+	option = {
+		name = vbcw.politics.2.b #Shut up already
+		hidden_effect = {
+			add_threat = 25
+		}
+		country_event = { id = vbcw.politics.7 }
+	}
+}
+
+country_event = {
+	id = vbcw.politics.3
+	immediate = {log = "[GetDateText]: [Root.GetName]: event vbcw.politics.3"}
+	title = vbcw.politics.3.t
+	desc = vbcw.politics.3.d
+	picture = GFX_report_event_coronation
+
+	is_triggered_only = yes
+
+	option = {
+		name = vbcw.politics.3.a #And then what happened?
+		hidden_effect = {
+			add_threat = 5
+		}
+		country_event = { id = vbcw.politics.4 }
+	}
+
+	option = {
+		name = vbcw.politics.3.b #Shut up already
+		hidden_effect = {
+			add_threat = 20
+		}
+		country_event = { id = vbcw.politics.7 }
+	}
+}
+
+country_event = {
+	id = vbcw.politics.4
+	immediate = {log = "[GetDateText]: [Root.GetName]: event vbcw.politics.4"}
+	title = vbcw.politics.4.t
+	desc = vbcw.politics.4.d
+	picture = GFX_report_event_deployment
+
+	is_triggered_only = yes
+
+	option = {
+		name = vbcw.politics.4.a #And then what happened?
+		hidden_effect = {
+			add_threat = 5
+		}
+		country_event = { id = vbcw.politics.5 }
+	}
+
+	option = {
+		name = vbcw.politics.4.b #Shut up already
+		hidden_effect = {
+			add_threat = 15
+		}
+		country_event = { id = vbcw.politics.7 }
+	}
+}
+
+country_event = {
+	id = vbcw.politics.5
+	immediate = {log = "[GetDateText]: [Root.GetName]: event vbcw.politics.5"}
+	title = vbcw.politics.5.t
+	desc = vbcw.politics.5.d
+	picture = GFX_report_event_rally
+
+	is_triggered_only = yes
+
+	option = {
+		name = vbcw.politics.5.a #And then what happened?
+		hidden_effect = {
+			add_threat = 5
+		}
+		country_event = { id = vbcw.politics.6 }
+	}
+
+	option = {
+		name = vbcw.politics.5.b #Shut up already
+		hidden_effect = {
+			add_threat = 10
+		}
+		country_event = { id = vbcw.politics.7 }
+	}
+}
+
+country_event = {
+	id = vbcw.politics.6
+	immediate = {log = "[GetDateText]: [Root.GetName]: event vbcw.politics.6"}
+	title = vbcw.politics.6.t
+	desc = vbcw.politics.6.d
+	picture = GFX_report_event_tamar
+
+	is_triggered_only = yes
+
+	option = {
+		name = vbcw.politics.6.a #And then what happened?
+		hidden_effect = {
+			add_threat = 5
+		}
+		country_event = { id = vbcw.politics.7 }
+	}
+
+	option = {
+		name = vbcw.politics.6.b #Shut up already
+		hidden_effect = {
+			add_threat = 5
+		}
+		country_event = { id = vbcw.politics.7 }
+	}
+}
+
+country_event = {
+	id = vbcw.politics.7
+	immediate = {log = "[GetDateText]: [Root.GetName]: event vbcw.politics.6"}
+	title = vbcw.politics.7.t
+	desc = vbcw.politics.7.d
+	picture = GFX_report_event_truce
+
+	is_triggered_only = yes
+
+	option = {
+		name = vbcw.politics.7.a #Honour the truce!
+		hidden_effect = {
+			add_threat = 5
+		}
+		country_event = { id = vbcw.politics.35 }
+	}
+
+	option = {
+		name = vbcw.politics.7.b #Defy the truce!
+		hidden_effect = {
+			add_threat = 50
+		}
+		country_event = { id = vbcw.politics.45 }
+	}
+}
+
+###Starting Ideological Opinion Modifiers###
+country_event = {
+	id = vbcw.politics.25
+	immediate = {log = "[GetDateText]: [Root.GetName]: event vbcw.politics.25"}
+
+	hidden = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		if = {
+			limit = {
+				has_far_left_government = yes
+			}
+			every_country = {
+				limit = {
+					has_far_left_government = yes
+					NOT = { has_same_government_as_ROOT = yes }
+				}
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = VBCW_different_ideology
+				}
+			}
+			every_country = {
+				limit = {
+					has_moderate_left_government = yes
+				}
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = VBCW_similar_ideology
+				}
+			}
+			every_country = {
+				limit = {
+					OR = {
+						has_right_wing_government = yes
+						has_democratic_government = yes
+					}
+				}
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = VBCW_different_ideology
+				}
+			}
+			every_country = {
+				limit = {
+					has_authoritarian_government = yes
+				}
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = VBCW_opposed_ideology
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_moderate_left_government = yes
+			}
+			every_country = {
+				limit = {
+					has_moderate_left_government = yes
+					NOT = { has_same_government_as_ROOT = yes }
+				}
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = VBCW_similar_ideology
+				}
+			}
+			every_country = {
+				limit = {
+					OR = {
+						has_far_left_government = yes
+						has_democratic_government = yes
+					}
+				}
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = VBCW_similar_ideology
+				}
+			}
+			every_country = {
+				limit = {
+					has_right_wing_government = yes
+				}
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = VBCW_different_ideology
+				}
+			}
+			every_country = {
+				limit = {
+					has_authoritarian_government = yes
+				}
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = VBCW_opposed_ideology
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_democratic_government = yes
+			}
+			every_country = {
+				limit = {
+					has_democratic_government = yes
+					NOT = { has_same_government_as_ROOT = yes }
+				}
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = VBCW_similar_ideology
+				}
+			}
+			every_country = {
+				limit = {
+					OR = {
+						has_moderate_left_government = yes
+						has_right_wing_government = yes
+					}
+				}
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = VBCW_similar_ideology
+				}
+			}
+			every_country = {
+				limit = {
+					OR = {
+						has_far_left_government = yes
+						has_authoritarian_government = yes
+					}
+				}
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = VBCW_different_ideology
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_right_wing_government = yes
+			}
+			every_country = {
+				limit = {
+					has_right_wing_government = yes
+					NOT = { has_same_government_as_ROOT = yes }
+				}
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = VBCW_similar_ideology
+				}
+			}
+			every_country = {
+				limit = {
+					OR = {
+						has_democratic_government = yes
+						has_authoritarian_government = yes
+					}
+				}
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = VBCW_similar_ideology
+				}
+			}
+			every_country = {
+				limit = {
+					has_moderate_left_government = yes
+				}
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = VBCW_different_ideology
+				}
+			}
+			every_country = {
+				limit = {
+					has_far_left_government = yes
+				}
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = VBCW_opposed_ideology
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_authoritarian_government = yes
+			}
+			every_country = {
+				limit = {
+					has_authoritarian_government = yes
+					NOT = { has_same_government_as_ROOT = yes }
+				}
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = VBCW_similar_ideology
+				}
+			}
+			every_country = {
+				limit = {
+					has_right_wing_government = yes
+				}
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = VBCW_similar_ideology
+				}
+			}
+			every_country = {
+				limit = {
+					has_democratic_government = yes
+				}
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = VBCW_different_ideology
+				}
+			}
+			every_country = {
+				limit = {
+					OR = {
+						has_moderate_left_government = yes
+						has_far_left_government = yes
+					}
+				}
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = VBCW_opposed_ideology
+				}
+			}
+		}
+		every_country = {
+			limit = {
+				has_same_government_as_ROOT = yes
+			}
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = VBCW_same_ideology
+			}
+		}
+		if = {
+			limit = {
+				has_government = fascist
+			}
+			set_country_flag = fascist_opinion
+		}
+		if = {
+			limit = {
+				has_government = autocratic
+			}
+			set_country_flag = autocratic_opinion
+		}
+		if = {
+			limit = {
+				has_government = conservative
+			}
+			set_country_flag = conservative_opinion
+		}
+		if = {
+			limit = {
+				has_government = liberal
+			}
+			set_country_flag = liberal_opinion
+		}
+		if = {
+			limit = {
+				has_government = democratic_socialist
+			}
+			set_country_flag = democratic_socialist_opinion
+		}
+		if = {
+			limit = {
+				has_government = communist
+			}
+			set_country_flag = communist_opinion
+		}
+		if = {
+			limit = {
+				has_government = anarcho_syndicalist
+			}
+			set_country_flag = anarcho_syndicalist_opinion
+		}
+		if = {
+			limit = {
+				has_government = civic_nationalist
+			}
+			set_country_flag = civic_nationalist_opinion
+		}
+	}
+
+	option = {
+	}
+
+}
+
+###Government Change Ideological Opinion Modifiers###
+country_event = {
+	id = vbcw.politics.26
+	immediate = {log = "[GetDateText]: [Root.GetName]: event vbcw.politics.26"}
+
+	hidden = yes
+
+	trigger = {
+		OR = {
+			AND = {
+				NOT = { has_government = fascist }
+				has_country_flag = fascist_opinion
+			}
+			AND = {
+				NOT = { has_government = autocratic }
+				has_country_flag = autocratic_opinion
+			}
+			AND = {
+				NOT = { has_government = conservative }
+				has_country_flag = conservative_opinion
+			}
+			AND = {
+				NOT = { has_government = liberal }
+				has_country_flag = liberal_opinion
+			}
+			AND = {
+				NOT = { has_government = democratic_socialist }
+				has_country_flag = democratic_socialist_opinion
+			}
+			AND = {
+				NOT = { has_government = communist }
+				has_country_flag = communist_opinion
+			}
+			AND = {
+				NOT = { has_government = anarcho_syndicalist }
+				has_country_flag = anarcho_syndicalist_opinion
+			}
+			AND = {
+				NOT = { has_government = civic_nationalist }
+				has_country_flag = civic_nationalist_opinion
+			}
+			AND = {
+				NOT = { has_country_flag = fascist_opinion }
+				NOT = { has_country_flag = autocratic_opinion }
+				NOT = { has_country_flag = conservative_opinion }
+				NOT = { has_country_flag = liberal_opinion }
+				NOT = { has_country_flag = democratic_socialist_opinion }
+				NOT = { has_country_flag = communist_opinion }
+				NOT = { has_country_flag = anarcho_syndicalist_opinion }
+				NOT = { has_country_flag = civic_nationalist_opinion }
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 2
+	}
+
+	immediate = {
+		clr_country_flag = fascist_opinion
+		clr_country_flag = autocratic_opinion
+		clr_country_flag = conservative_opinion
+		clr_country_flag = liberal_opinion
+		clr_country_flag = democratic_socialist_opinion
+		clr_country_flag = communist_opinion
+		clr_country_flag = anarcho_syndicalist_opinion
+		clr_country_flag = civic_nationalist_opinion
+		every_country = {
+			remove_opinion_modifier = {
+				target = ROOT
+				modifier = VBCW_opposed_ideology
+			}
+			ROOT = {
+				remove_opinion_modifier = {
+					target = PREV
+					modifier = VBCW_opposed_ideology
+				}
+			}
+			remove_opinion_modifier = {
+				target = ROOT
+				modifier = VBCW_different_ideology
+			}
+			ROOT = {
+				remove_opinion_modifier = {
+					target = PREV
+					modifier = VBCW_different_ideology
+				}
+			}
+			remove_opinion_modifier = {
+				target = ROOT
+				modifier = VBCW_similar_ideology
+			}
+			ROOT = {
+				remove_opinion_modifier = {
+					target = PREV
+					modifier = VBCW_similar_ideology
+				}
+			}
+			remove_opinion_modifier = {
+				target = ROOT
+				modifier = VBCW_same_ideology
+			}
+			ROOT = {
+				remove_opinion_modifier = {
+					target = PREV
+					modifier = VBCW_same_ideology
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_far_left_government = yes
+			}
+			every_country = {
+				limit = {
+					has_far_left_government = yes
+					NOT = { has_same_government_as_ROOT = yes }
+				}
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = VBCW_different_ideology
+				}
+				reverse_add_opinion_modifier = {
+					target = ROOT
+					modifier = VBCW_different_ideology
+				}
+			}
+			every_country = {
+				limit = {
+					has_moderate_left_government = yes
+				}
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = VBCW_similar_ideology
+				}
+				reverse_add_opinion_modifier = {
+					target = ROOT
+					modifier = VBCW_similar_ideology
+				}
+			}
+			every_country = {
+				limit = {
+					OR = {
+						has_right_wing_government = yes
+						has_democratic_government = yes
+					}
+				}
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = VBCW_different_ideology
+				}
+				reverse_add_opinion_modifier = {
+					target = ROOT
+					modifier = VBCW_different_ideology
+				}
+			}
+			every_country = {
+				limit = {
+					has_authoritarian_government = yes
+				}
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = VBCW_opposed_ideology
+				}
+				reverse_add_opinion_modifier = {
+					target = ROOT
+					modifier = VBCW_opposed_ideology
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_moderate_left_government = yes
+			}
+			every_country = {
+				limit = {
+					has_moderate_left_government = yes
+					NOT = { has_same_government_as_ROOT = yes }
+				}
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = VBCW_similar_ideology
+				}
+				reverse_add_opinion_modifier = {
+					target = ROOT
+					modifier = VBCW_similar_ideology
+				}
+			}
+			every_country = {
+				limit = {
+					OR = {
+						has_far_left_government = yes
+						has_democratic_government = yes
+					}
+				}
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = VBCW_similar_ideology
+				}
+				reverse_add_opinion_modifier = {
+					target = ROOT
+					modifier = VBCW_similar_ideology
+				}
+			}
+			every_country = {
+				limit = {
+					has_right_wing_government = yes
+				}
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = VBCW_different_ideology
+				}
+				reverse_add_opinion_modifier = {
+					target = ROOT
+					modifier = VBCW_different_ideology
+				}
+			}
+			every_country = {
+				limit = {
+					has_authoritarian_government = yes
+				}
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = VBCW_opposed_ideology
+				}
+				reverse_add_opinion_modifier = {
+					target = ROOT
+					modifier = VBCW_opposed_ideology
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_democratic_government = yes
+			}
+			every_country = {
+				limit = {
+					has_democratic_government = yes
+					NOT = { has_same_government_as_ROOT = yes }
+				}
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = VBCW_similar_ideology
+				}
+				reverse_add_opinion_modifier = {
+					target = ROOT
+					modifier = VBCW_similar_ideology
+				}
+			}
+			every_country = {
+				limit = {
+					OR = {
+						has_moderate_left_government = yes
+						has_right_wing_government = yes
+					}
+				}
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = VBCW_similar_ideology
+				}
+				reverse_add_opinion_modifier = {
+					target = ROOT
+					modifier = VBCW_similar_ideology
+				}
+			}
+			every_country = {
+				limit = {
+					OR = {
+						has_far_left_government = yes
+						has_authoritarian_government = yes
+					}
+				}
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = VBCW_different_ideology
+				}
+				reverse_add_opinion_modifier = {
+					target = ROOT
+					modifier = VBCW_different_ideology
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_right_wing_government = yes
+			}
+			every_country = {
+				limit = {
+					has_right_wing_government = yes
+					NOT = { has_same_government_as_ROOT = yes }
+				}
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = VBCW_similar_ideology
+				}
+				reverse_add_opinion_modifier = {
+					target = ROOT
+					modifier = VBCW_similar_ideology
+				}
+			}
+			every_country = {
+				limit = {
+					OR = {
+						has_democratic_government = yes
+						has_authoritarian_government = yes
+					}
+				}
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = VBCW_similar_ideology
+				}
+				reverse_add_opinion_modifier = {
+					target = ROOT
+					modifier = VBCW_similar_ideology
+				}
+			}
+			every_country = {
+				limit = {
+					has_moderate_left_government = yes
+				}
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = VBCW_different_ideology
+				}
+				reverse_add_opinion_modifier = {
+					target = ROOT
+					modifier = VBCW_different_ideology
+				}
+			}
+			every_country = {
+				limit = {
+					has_far_left_government = yes
+				}
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = VBCW_opposed_ideology
+				}
+				reverse_add_opinion_modifier = {
+					target = ROOT
+					modifier = VBCW_opposed_ideology
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_authoritarian_government = yes
+			}
+			every_country = {
+				limit = {
+					has_authoritarian_government = yes
+					NOT = { has_same_government_as_ROOT = yes }
+				}
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = VBCW_similar_ideology
+				}
+				reverse_add_opinion_modifier = {
+					target = ROOT
+					modifier = VBCW_similar_ideology
+				}
+			}
+			every_country = {
+				limit = {
+					has_right_wing_government = yes
+				}
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = VBCW_similar_ideology
+				}
+				reverse_add_opinion_modifier = {
+					target = ROOT
+					modifier = VBCW_similar_ideology
+				}
+			}
+			every_country = {
+				limit = {
+					has_democratic_government = yes
+				}
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = VBCW_different_ideology
+				}
+				reverse_add_opinion_modifier = {
+					target = ROOT
+					modifier = VBCW_different_ideology
+				}
+			}
+			every_country = {
+				limit = {
+					OR = {
+						has_moderate_left_government = yes
+						has_far_left_government = yes
+					}
+				}
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = VBCW_opposed_ideology
+				}
+				reverse_add_opinion_modifier = {
+					target = ROOT
+					modifier = VBCW_opposed_ideology
+				}
+			}
+		}
+		every_country = {
+			limit = {
+				has_same_government_as_ROOT = yes
+			}
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = VBCW_same_ideology
+			}
+			reverse_add_opinion_modifier = {
+				target = ROOT
+				modifier = VBCW_same_ideology
+			}
+		}
+		if = {
+			limit = {
+				has_government = fascist
+			}
+			set_country_flag = fascist_opinion
+		}
+		if = {
+			limit = {
+				has_government = autocratic
+			}
+			set_country_flag = autocratic_opinion
+		}
+		if = {
+			limit = {
+				has_government = conservative
+			}
+			set_country_flag = conservative_opinion
+		}
+		if = {
+			limit = {
+				has_government = liberal
+			}
+			set_country_flag = liberal_opinion
+		}
+		if = {
+			limit = {
+				has_government = democratic_socialist
+			}
+			set_country_flag = democratic_socialist_opinion
+		}
+		if = {
+			limit = {
+				has_government = communist
+			}
+			set_country_flag = communist_opinion
+		}
+		if = {
+			limit = {
+				has_government = anarcho_syndicalist
+			}
+			set_country_flag = anarcho_syndicalist_opinion
+		}
+		if = {
+			limit = {
+				has_government = civic_nationalist
+			}
+			set_country_flag = civic_nationalist_opinion
+		}
+	}
+
+	option = {
+	}
+
+}
+
+country_event = {
+	id = vbcw.politics.35
+	immediate = {log = "[GetDateText]: [Root.GetName]: event vbcw.politics.35"}
+
+	hidden = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		ROY = {
+			set_truce = {
+				target = ANG
+				days = 30
+			}
+			set_truce = {
+				target = YRK
+				days = 30
+			}
+			set_truce = {
+				target = WAL
+				days = 30
+			}
+		}
+		ANG = {
+			diplomatic_relation = {
+				country = YRK
+				relation = non_aggression_pact
+				active = yes
+			}
+		}
+		SCO = {
+			diplomatic_relation = {
+				country = KER
+				relation = non_aggression_pact
+				active = yes
+			}
+			diplomatic_relation = {
+				country = WAL
+				relation = non_aggression_pact
+				active = yes
+			}
+		}
+		WAL = {
+			diplomatic_relation = {
+				country = KER
+				relation = non_aggression_pact
+				active = yes
+			}
+		}
+	}
+}
+
+country_event = {
+	id = vbcw.politics.45
+	immediate = {log = "[GetDateText]: [Root.GetName]: event vbcw.politics.45"}
+
+	hidden = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		ROY = {
+			declare_war_on = {
+				target = ANG
+				type = take_core_state
+			}
+			declare_war_on = {
+				target = YRK
+				type = take_core_state
+			}
+			declare_war_on = {
+				target = SOM
+				type = take_core_state
+			}
+			declare_war_on = {
+				target = KER
+				type = take_core_state
+			}
+			declare_war_on = {
+				target = SCO
+				type = take_core_state
+			}
+			declare_war_on = {
+				target = WAL
+				type = take_core_state
+			}
+			declare_war_on = {
+				target = JAC
+				type = take_core_state
+			}
+		}
+		BUF = {
+			add_to_war = {
+				targeted_alliance = ROY
+				enemy = ANG
+				hostility_reason = asked_to_join
+			}
+			add_to_war = {
+				targeted_alliance = ROY
+				enemy = YRK
+				hostility_reason = asked_to_join
+			}
+			add_to_war = {
+				targeted_alliance = ROY
+				enemy = SOM
+				hostility_reason = asked_to_join
+			}
+			add_to_war = {
+				targeted_alliance = ROY
+				enemy = KER
+				hostility_reason = asked_to_join
+			}
+			add_to_war = {
+				targeted_alliance = ROY
+				enemy = SCO
+				hostility_reason = asked_to_join
+			}
+			add_to_war = {
+				targeted_alliance = ROY
+				enemy = WAL
+				hostility_reason = asked_to_join
+			}
+			add_to_war = {
+				targeted_alliance = ROY
+				enemy = JAC
+				hostility_reason = asked_to_join
+			}
+		}
+		JAC = {
+			declare_war_on = {
+				target = SCO
+				type = annex_everything
+			}
+		}
+		ANG = {
+			diplomatic_relation = {
+				country = YRK
+				relation = non_aggression_pact
+				active = yes
+			}
+		}
+		SCO = {
+			diplomatic_relation = {
+				country = KER
+				relation = non_aggression_pact
+				active = yes
+			}
+			diplomatic_relation = {
+				country = WAL
+				relation = non_aggression_pact
+				active = yes
+			}
+		}
+		WAL = {
+			diplomatic_relation = {
+				country = KER
+				relation = non_aggression_pact
+				active = yes
+			}
+		}
+	}
+}

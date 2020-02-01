@@ -1,0 +1,25 @@
+state={
+	id=7
+	name="STATE_7"
+	provinces={
+		160 165 168 176 182 185 200 202 213 224 241 243 274 277 309 2389
+	}
+	manpower=350000
+	
+	state_category = town
+	history={
+		victory_points = { 176 10 }
+		victory_points = { 224 5 }
+		victory_points = { 2389 10 }
+		owner = ANG
+		add_core_of = ANG
+		add_claim_by = YRK
+		add_claim_by = ROY
+		buildings = {
+			infrastructure = 4
+			air_base = 3
+			industrial_complex = 1
+			arms_factory = 1
+		}	
+	}
+}

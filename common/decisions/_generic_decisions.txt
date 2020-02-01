@@ -1,0 +1,735 @@
+emergency_construction = {
+	infrastructure_building_slot = {
+
+		icon = generic_construction
+
+        allowed = {
+            always = yes
+        }
+
+        cost = 100
+        fire_only_once = no
+
+        days_re_enable = 30
+
+        available = {
+            any_state = {
+            	NOT = { has_state_flag = infrastructure_building_slot_flag }
+            	is_fully_controlled_by = ROOT
+            	is_owned_by = ROOT
+				free_building_slots = {
+					building = infrastructure
+					size < 1
+				}
+            }
+            has_war = yes
+        }
+
+        visible = {
+			any_state = {
+            	NOT = { has_state_flag = infrastructure_building_slot_flag }
+            	is_fully_controlled_by = ROOT
+            	is_owned_by = ROOT
+				free_building_slots = {
+					building = infrastructure
+					size < 1
+				}
+            }
+            has_war = yes
+		}
+
+        complete_effect = {
+			random_owned_state = {
+				limit = {
+					is_fully_controlled_by = ROOT
+					is_owned_by = ROOT
+            		free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+					free_building_slots = {
+						building = infrastructure
+						size < 1
+					}
+					NOT = { has_state_flag = infrastructure_building_slot_flag }
+				}
+				add_extra_state_shared_building_slots = 1
+				set_state_flag = infrastructure_building_slot_flag
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 10
+				any_owned_state = { free_building_slots = { building = industrial_complex size < 1 include_locked = no } }
+			}
+		}
+    }
+
+    war_building_slot = {
+
+    	icon = generic_construction
+
+        allowed = {
+            always = yes
+        }
+
+        cost = 50
+        fire_only_once = no
+
+        available = {
+            any_state = {
+            	NOT = { has_state_flag = war_building_slot_flag }
+            	is_fully_controlled_by = ROOT
+            	is_owned_by = ROOT
+            }
+            has_war = yes
+        }
+
+        visible = {
+        	any_state = {
+            	NOT = { has_state_flag = war_building_slot_flag }
+            	is_fully_controlled_by = ROOT
+            	is_owned_by = ROOT
+            }
+            has_war = yes
+		}
+
+        complete_effect = {
+        	add_war_support = -0.025
+			add_stability = -0.025
+			random_owned_state = {
+				limit = {
+					is_fully_controlled_by = ROOT
+					is_owned_by = ROOT
+            		free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+					NOT = { has_state_flag = war_building_slot_flag }
+				}
+				add_extra_state_shared_building_slots = 1
+				set_state_flag = war_building_slot_flag
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 10
+				any_owned_state = { free_building_slots = { building = industrial_complex size < 1 include_locked = no } }
+			}
+		}
+    }
+	
+	emergency_factory_conversion_defensive = {
+
+		icon = generic_industry
+
+		available = {
+			num_of_civilian_factories > 5 #Change this if amount of factories change
+		}
+
+		visible = {
+			has_defensive_war = yes
+			has_offensive_war = no			
+		}
+
+		fire_only_once = yes
+		days_remove = 30
+
+		cost = 100
+
+		remove_effect = {
+			replace_civ_with_arms_factories = yes
+			add_war_support = -0.05
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	emergency_factory_conversion_offensive = {
+
+		icon = generic_industry
+
+		available = {
+			num_of_civilian_factories > 5 #Change this if amount of factories change
+		}
+
+		visible = {
+			has_offensive_war = yes
+		}
+
+		fire_only_once = yes
+		days_remove = 30
+
+		cost = 100
+
+		remove_effect = {
+			replace_civ_with_arms_factories = yes
+			add_war_support = -0.05
+			add_stability = -0.03
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}
+
+commandeer_civilian_equipment = {
+
+	civilian_vehicles = {
+	
+		icon = rubber
+		
+		available = {
+            any_state = {
+            	NOT = { has_state_flag = civilian_vehicles_flag }
+            	is_fully_controlled_by = ROOT
+            	is_owned_by = ROOT
+            }
+            has_war = yes
+		}
+		
+		visible = {
+            any_state = {
+            	NOT = { has_state_flag = civilian_vehicles_flag }
+            	is_fully_controlled_by = ROOT
+            	is_owned_by = ROOT
+            }
+            has_war = yes
+		}
+
+        cost = 100
+        fire_only_once = no
+		
+		days_remove = 30
+        days_re_enable = 60
+
+		modifier = {
+			war_support_weekly = -0.005
+		}
+		
+		remove_effect = {	
+			random_owned_state = {
+				limit = {
+					is_fully_controlled_by = ROOT
+					is_owned_by = ROOT
+					NOT = { has_state_flag = civilian_vehicles_flag }
+				}
+				set_state_flag = civilian_vehicles_flag
+			}		
+			add_equipment_to_stockpile = {
+				type = motorized_equipment_1
+				amount = 100
+				producer = CIV
+			}
+		}
+	}
+
+	civilian_weapons = {
+	
+		icon = generic_prepare_civil_war
+		
+		available = {
+            any_state = {
+            	NOT = { has_state_flag = civilian_weapons_flag }
+            	is_fully_controlled_by = ROOT
+            	is_owned_by = ROOT
+            }
+            has_war = yes
+		}
+		
+		visible = {
+            any_state = {
+            	NOT = { has_state_flag = civilian_weapons_flag }
+            	is_fully_controlled_by = ROOT
+            	is_owned_by = ROOT
+            }
+            has_war = yes
+		}
+
+        cost = 100
+        fire_only_once = no
+		
+		days_remove = 30
+        days_re_enable = 60
+
+		modifier = {
+			war_support_weekly = -0.005
+		}
+		
+		remove_effect = {		
+			random_owned_state = {
+				limit = {
+					is_fully_controlled_by = ROOT
+					is_owned_by = ROOT
+					NOT = { has_state_flag = civilian_weapons_flag }
+				}
+				set_state_flag = civilian_weapons_flag
+			}		
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_0
+				amount = 1000
+				producer = CIV
+			}
+		}
+	}
+
+	civilian_aircraft = {
+	
+		icon = generic_air
+		
+		available = {
+            any_state = {
+            	NOT = { has_state_flag = civilian_aircraft_flag }
+            	is_fully_controlled_by = ROOT
+            	is_owned_by = ROOT
+            }
+            has_war = yes
+		}
+		
+		visible = {
+            any_state = {
+            	NOT = { has_state_flag = civilian_aircraft_flag }
+            	is_fully_controlled_by = ROOT
+            	is_owned_by = ROOT
+            }
+            has_war = yes
+		}
+
+        cost = 100
+        fire_only_once = no
+		
+		days_remove = 30
+        days_re_enable = 60
+
+		modifier = {
+			war_support_weekly = -0.005
+		}
+		
+		remove_effect = {			
+			random_owned_state = {
+				limit = {
+					is_fully_controlled_by = ROOT
+					is_owned_by = ROOT
+					NOT = { has_state_flag = civilian_aircraft_flag }
+				}
+				set_state_flag = civilian_aircraft_flag
+			}			
+			add_equipment_to_stockpile = {
+				type = fighter_equipment_0
+				amount = 12
+				producer = CIV
+			}			
+			add_equipment_to_stockpile = {
+				type = tac_bomber_equipment_0
+				amount = 6
+				producer = CIV
+			}
+		}
+	}
+}
+			
+
+black_market = {
+
+	sumatran_rubber = { 
+		
+		icon = rubber
+
+		available = {
+			NOT = { has_country_flag = importing_resources_flag }
+            any_state = {
+            	is_fully_controlled_by = ROOT
+            	is_owned_by = ROOT
+				naval_base > 0
+            }
+		}
+
+		visible = {
+			NOT = { has_country_flag = importing_resources_flag }
+            any_state = {
+            	is_fully_controlled_by = ROOT
+            	is_owned_by = ROOT
+				naval_base > 0
+            }
+		}
+
+		fire_only_once = no
+
+		cost = 100
+		days_remove = 180
+
+		modifier = {
+			stability_factor = -0.05
+			political_power_gain = -0.1
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = { 
+			random_owned_state = {
+				limit = {
+					is_fully_controlled_by = ROOT
+					is_owned_by = ROOT
+					naval_base > 0
+				}
+				add_resource = {
+					type = rubber
+					amount = 12
+				}
+			}
+			set_country_flag = importing_resources_flag
+		}
+		
+		remove_effect = { 
+			random_owned_state = {
+				limit = {
+					is_fully_controlled_by = ROOT
+					is_owned_by = ROOT
+					naval_base > 0
+				}
+				add_resource = {
+					type = rubber
+					amount = -12
+				}
+			}
+			clr_country_flag = importing_resources_flag
+		}
+	}
+	
+	american_oil = { 
+		
+		icon = oil
+
+		available = {
+			NOT = { has_country_flag = importing_resources_flag }
+            any_state = {
+            	is_fully_controlled_by = ROOT
+            	is_owned_by = ROOT
+				naval_base > 0
+            }
+		}
+
+		visible = {
+			NOT = { has_country_flag = importing_resources_flag }
+            any_state = {
+            	is_fully_controlled_by = ROOT
+            	is_owned_by = ROOT
+				naval_base > 0
+            }
+		}
+
+		fire_only_once = no
+
+		cost = 100
+		days_remove = 180
+
+		modifier = {
+			stability_factor = -0.05
+			political_power_gain = -0.1
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = { 
+			random_owned_state = {
+				limit = {
+					is_fully_controlled_by = ROOT
+					is_owned_by = ROOT
+					naval_base > 0
+				}
+				add_resource = {
+					type = oil
+					amount = 12
+				}
+			}
+			set_country_flag = importing_resources_flag
+		}
+		
+		remove_effect = { 
+			random_owned_state = {
+				limit = {
+					is_fully_controlled_by = ROOT
+					is_owned_by = ROOT
+					naval_base > 0
+				}
+				add_resource = {
+					type = oil
+					amount = -12
+				}
+			}
+			clr_country_flag = importing_resources_flag
+		}
+	}
+	
+	swedish_tungsten = { 
+		
+		icon = tungsten
+
+		available = {
+			NOT = { has_country_flag = importing_resources_flag }
+            any_state = {
+            	is_fully_controlled_by = ROOT
+            	is_owned_by = ROOT
+				naval_base > 0
+            }
+		}
+
+		visible = {
+			NOT = { has_country_flag = importing_resources_flag }
+            any_state = {
+            	is_fully_controlled_by = ROOT
+            	is_owned_by = ROOT
+				naval_base > 0
+            }
+		}
+
+		fire_only_once = no
+
+		cost = 100
+		days_remove = 180
+
+		modifier = {
+			stability_factor = -0.05
+			political_power_gain = -0.1
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = { 
+			random_owned_state = {
+				limit = {
+					is_fully_controlled_by = ROOT
+					is_owned_by = ROOT
+					naval_base > 0
+				}
+				add_resource = {
+					type = tungsten
+					amount = 12
+				}
+			}
+			set_country_flag = importing_resources_flag
+		}
+		
+		remove_effect = { 
+			random_owned_state = {
+				limit = {
+					is_fully_controlled_by = ROOT
+					is_owned_by = ROOT
+					naval_base > 0
+				}
+				add_resource = {
+					type = tungsten
+					amount = -12
+				}
+			}
+			clr_country_flag = importing_resources_flag
+		}
+	}
+	
+	yugoslavian_aluminium = { 
+		
+		icon = aluminium
+
+		available = {
+			NOT = { has_country_flag = importing_resources_flag }
+            any_state = {
+            	is_fully_controlled_by = ROOT
+            	is_owned_by = ROOT
+				naval_base > 0
+            }
+		}
+
+		visible = {
+			NOT = { has_country_flag = importing_resources_flag }
+            any_state = {
+            	is_fully_controlled_by = ROOT
+            	is_owned_by = ROOT
+				naval_base > 0
+            }
+		}
+
+		fire_only_once = no
+
+		cost = 100
+		days_remove = 180
+
+		modifier = {
+			stability_factor = -0.05
+			political_power_gain = -0.1
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = { 
+			random_owned_state = {
+				limit = {
+					is_fully_controlled_by = ROOT
+					is_owned_by = ROOT
+					naval_base > 0
+				}
+				add_resource = {
+					type = aluminium
+					amount = 12
+				}
+			}
+			set_country_flag = importing_resources_flag
+		}
+		
+		remove_effect = { 
+			random_owned_state = {
+				limit = {
+					is_fully_controlled_by = ROOT
+					is_owned_by = ROOT
+					naval_base > 0
+				}
+				add_resource = {
+					type = aluminium
+					amount = -12
+				}
+			}
+			clr_country_flag = importing_resources_flag
+		}
+	}
+	
+	german_coal = { 
+		
+		icon = chromium
+
+		available = {
+			NOT = { has_country_flag = importing_resources_flag }
+            any_state = {
+            	is_fully_controlled_by = ROOT
+            	is_owned_by = ROOT
+				naval_base > 0
+            }
+		}
+
+		visible = {
+			NOT = { has_country_flag = importing_resources_flag }
+            any_state = {
+            	is_fully_controlled_by = ROOT
+            	is_owned_by = ROOT
+				naval_base > 0
+            }
+		}
+
+		fire_only_once = no
+
+		cost = 100
+		days_remove = 180
+
+		modifier = {
+			stability_factor = -0.05
+			political_power_gain = -0.1
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = { 
+			random_owned_state = {
+				limit = {
+					is_fully_controlled_by = ROOT
+					is_owned_by = ROOT
+					naval_base > 0
+				}
+				add_resource = {
+					type = chromium
+					amount = 12
+				}
+			}
+			set_country_flag = importing_resources_flag
+		}
+		
+		remove_effect = { 
+			random_owned_state = {
+				limit = {
+					is_fully_controlled_by = ROOT
+					is_owned_by = ROOT
+					naval_base > 0
+				}
+				add_resource = {
+					type = chromium
+					amount = -12
+				}
+			}
+			clr_country_flag = importing_resources_flag
+		}
+	}
+	
+	soviet_steel = { 
+		
+		icon = steel
+
+		available = {
+			NOT = { has_country_flag = importing_resources_flag }
+            any_state = {
+            	is_fully_controlled_by = ROOT
+            	is_owned_by = ROOT
+				naval_base > 0
+            }
+		}
+
+		visible = {
+			NOT = { has_country_flag = importing_resources_flag }
+            any_state = {
+            	is_fully_controlled_by = ROOT
+            	is_owned_by = ROOT
+				naval_base > 0
+            }
+		}
+
+		fire_only_once = no
+
+		cost = 100
+		days_remove = 180
+
+		modifier = {
+			stability_factor = -0.05
+			political_power_gain = -0.1
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+		
+		complete_effect = { 
+			random_owned_state = {
+				limit = {
+					is_fully_controlled_by = ROOT
+					is_owned_by = ROOT
+					naval_base > 0
+				}
+				add_resource = {
+					type = steel
+					amount = 12
+				}
+			}
+			set_country_flag = importing_resources_flag
+		}
+		
+		remove_effect = { 
+			random_owned_state = {
+				limit = {
+					is_fully_controlled_by = ROOT
+					is_owned_by = ROOT
+					naval_base > 0
+				}
+				add_resource = {
+					type = steel
+					amount = -12
+				}
+			}
+			clr_country_flag = importing_resources_flag
+		}
+	}
+}

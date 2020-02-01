@@ -1,0 +1,33 @@
+state={
+	id=38
+	name="STATE_38"
+	provinces={
+		904 911 935 936 955 974 975 986 1010 1023 1024 1040 158 1088 1093 1097 2122 
+	}
+	manpower=300000
+	
+	resources = {
+		steel = 24
+		oil = 8
+	}
+	
+	state_category = town
+	
+	history={
+		owner = YRK
+		add_core_of = YRK
+		add_claim_by = ANG
+		add_claim_by = ROY
+		victory_points = { 158 10 }
+		buildings = {
+			infrastructure = 6
+			air_base = 4
+			industrial_complex = 1
+			arms_factory = 1
+			dockyard = 1
+			1093 = {
+				naval_base = 2
+			}
+		}
+	}
+}

@@ -1,0 +1,37 @@
+state={
+	id=56
+	name="STATE_56"
+	provinces={
+		271 288 298 308 325 338 365 367 2410
+	}
+	manpower=450000
+	
+	resources = {
+		steel = 16
+		chromium = 24
+	}
+	
+	state_category = large_town
+	
+	history={
+		add_extra_state_shared_building_slots = 2
+		owner = SOC
+		add_core_of = SOC
+		add_claim_by = ROY
+		add_claim_by = WAL
+		add_claim_by = YRK
+		victory_points = { 298 10 }
+		victory_points = { 365 5 }
+		victory_points = { 2410 10 }
+		buildings = {
+			infrastructure = 6
+			air_base = 1
+			industrial_complex = 3
+			arms_factory = 2
+			dockyard = 1
+			288 = {
+				naval_base = 3
+			}
+		}
+	}
+}

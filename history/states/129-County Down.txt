@@ -1,0 +1,30 @@
+state={
+	id=129
+	name="STATE_129"
+	provinces={
+		1250 1267 1283 1320 1333 1338 1352 1357 1364 1376 1400 1404 
+	}
+	manpower=200000
+	
+	resources = {
+		steel = 8
+	}
+	
+	state_category = town
+	
+	history={
+		owner = IRL
+		add_claim_by = IRL
+		add_claim_by = ROY
+		add_claim_by = YRK
+		buildings = {
+			infrastructure = 6
+			air_base = 2
+			industrial_complex = 1
+			arms_factory = 1
+			1320 = {
+				naval_base = 2
+			}
+		}
+	}
+}

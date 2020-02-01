@@ -1,0 +1,26 @@
+﻿units = {	
+	######################
+	##### NAVY - MTG #####
+	######################
+	
+	fleet = {				
+		name = "Welsh Fleet"			
+		naval_base = 879
+		task_force = {				
+			name = "Holyhead Squadron"	
+			location = 879
+			ship = { name = "Aurora" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = ENG version_name = "Leander Class" } } }
+			ship = { name = "Venetia" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ENG version_name = "V/W Class" } } }
+			ship = { name = "Vanessa" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ENG version_name = "V/W Class" } } }
+			ship = { name = "Wessex" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ENG version_name = "V/W Class" } } }
+			ship = { name = "Viscount" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ENG version_name = "V/W Class" } } }
+			ship = { name = "Vansittart" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ENG version_name = "V/W Class" } } }
+			ship = { name = "Venomous" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ENG version_name = "V/W Class" } } }
+			ship = { name = "Mallard" definition = sloop equipment = { ship_hull_sloop_1 = { amount = 1 owner = ENG version_name = "Kingfisher Class" } } }
+			ship = { name = "Conway Castle" definition = trawler equipment = { ship_hull_trawler_2 = { amount = 1 owner = ENG version_name = "Castle Class" } } }
+			ship = { name = "Caernarvon Castle" definition = trawler equipment = { ship_hull_trawler_2 = { amount = 1 owner = ENG version_name = "Castle Class" } } }
+			ship = { name = "Cardiff Castle" definition = trawler equipment = { ship_hull_trawler_2 = { amount = 1 owner = ENG version_name = "Castle Class" } } }
+			ship = { name = "Caerphilly Castle" definition = trawler equipment = { ship_hull_trawler_2 = { amount = 1 owner = ENG version_name = "Castle Class" } } }
+		}
+	}
+}	

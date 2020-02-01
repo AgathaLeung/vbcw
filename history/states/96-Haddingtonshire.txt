@@ -1,0 +1,28 @@
+state={
+	id=96
+	name="STATE_96"
+	provinces={
+		1696 1706 1717 1718 1735 
+	}
+	manpower=50000
+	
+	resources = {
+		steel = 4
+	}
+	
+	state_category = pastoral
+	
+	history={
+		victory_points = { 1718 5 }
+		owner = SCO
+		add_core_of = SCO
+		add_claim_by = ROY
+		add_claim_by = YRK
+		add_claim_by = JAC
+		buildings = {
+			infrastructure = 4
+			air_base = 1
+		}
+	}
+}
+

@@ -1,0 +1,27 @@
+state={
+	id=112
+	name="STATE_112"
+	provinces={
+		1599 1618 1639 1653 1665 1678 1712 
+	}
+	manpower=25000
+	
+	resources = {
+		tungsten = 4
+	}
+	
+	state_category = pastoral
+	
+	history={
+		victory_points = { 1599 5 }
+		owner = SCO
+		add_core_of = SCO
+		add_claim_by = ROY
+		add_claim_by = YRK
+		add_claim_by = JAC
+		buildings = {
+			infrastructure = 2
+		}
+	}
+}
+

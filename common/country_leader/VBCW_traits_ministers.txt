@@ -1,0 +1,265 @@
+leader_traits = {
+	
+	fascist_booster = {
+		random = no
+		sprite = 13
+		fascist_drift = 0.1
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	autocratic_booster = {
+		random = no
+		sprite = 13
+		autocratic_drift = 0.1
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	conservative_booster = {
+		random = no
+		sprite = 13
+		conservative_drift = 0.1
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	liberal_booster = {
+		random = no
+		sprite = 13
+		liberal_drift = 0.1
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	demsoc_booster = {
+		random = no
+		sprite = 13
+		democratic_socialist_drift = 0.1
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	communist_booster = {
+		random = no
+		sprite = 13
+		communist_drift = 0.1
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	radsoc_booster = {
+		random = no
+		sprite = 13
+		anarcho_syndicalist_drift = 0.1
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	civnat_booster = {
+		random = no
+		sprite = 13
+		civic_nationalist_drift = 0.1
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	fascist_booster_govt = {
+		random = no
+		sprite = 13
+		stability_factor = 0.05
+		political_power_factor = 0.15	
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	communist_booster_govt = {
+		random = no
+		sprite = 13
+		stability_factor = 0.05 
+		political_power_factor = 0.15	
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	popular_figurehead = {
+		sprite = 13
+		stability_factor = 0.15 
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	propaganda_expert = {
+		sprite = 13
+		war_support_factor = 0.10 
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	silent_workhorse = {
+		random = yes
+		sprite = 13
+		political_power_factor = 0.15
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	prince_of_terror = {
+		sprite = 13
+		enemy_partisan_effect = -0.25
+		foreign_subversive_activites = -0.3
+		non_core_manpower = 0.02
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	compassionate_gentleman = {
+		random = yes
+		sprite = 13
+		opinion_gain_monthly_factor = 0.15
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	backroom_backstabber = {
+		sprite = 13
+		political_power_factor = 0.05
+		drift_defence_factor = 0.15
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	smooth_talking_charmer = {
+		random = yes
+		sprite = 13
+		trade_opinion_factor = 0.10
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	ideological_crusader = {
+		random = yes
+		sprite = 13
+		opinion_gain_monthly_same_ideology_factor = 1.0
+		
+		ai_will_do = {
+			factor = 0.2
+		}
+	}
+	
+	fortification_engineer = {
+		sprite = 10
+		random = yes
+		production_speed_bunker_factor = 0.2
+		production_speed_coastal_bunker_factor = 0.2
+		production_speed_anti_air_building_factor = 0.2
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	war_industrialist = {
+		sprite = 10
+		random = yes
+		production_speed_arms_factory_factor = 0.1
+		production_speed_dockyard_factor = 0.1
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
+	
+	captain_of_industry = {
+		sprite = 10
+		random = yes
+		production_speed_industrial_complex_factor = 0.1
+		production_speed_infrastructure_factor = 0.1
+		production_speed_synthetic_refinery_factor = 0.1
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	financial_expert = {
+		sprite = 10
+		random = yes
+		consumer_goods_factor = -0.05
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
+	
+	armaments_organizer = {
+		sprite = 10
+		random = yes
+		conversion_cost_civ_to_mil_factor= -0.2
+		# civ_to_mil_industry_conversion_rate = -1
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	quartermaster_general = {
+		sprite = 10
+		random = yes
+		production_speed_air_base_factor = 0.15
+		production_speed_naval_base_factor = 0.15
+		production_speed_rocket_site_factor = 0.15
+		production_speed_radar_station_factor = 0.15
+		production_speed_nuclear_reactor_factor = 0.15
+		
+		ai_will_do = {
+			factor = 0.2
+		}
+	}
+
+	duchess_of_york = {
+		random = no
+		sprite = 12
+
+		war_support_factor = 0.05
+		stability_factor = 0.05
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

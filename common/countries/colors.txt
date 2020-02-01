@@ -1,0 +1,76 @@
+ROY = {
+	color = rgb { 200  200  200 }
+    color_ui = rgb { 200  200  200 }
+}
+BUF = {
+	color = rgb { 100  100  100 }
+    color_ui = rgb { 100  100  100 }
+}
+ANG = {
+	color = rgb { 0  120  200 }
+    color_ui = rgb { 0  120 200 }
+}
+YRK = {
+	color = rgb { 140  0  100 }
+    color_ui = rgb { 140  0  100 }
+}
+SCO = {
+	color = rgb { 0  40  220 }
+    color_ui = rgb { 0  40  220 }
+}
+JAC = {
+	color = rgb { 100  200  250 }
+    color_ui = rgb { 100  20  250 }
+}
+SOG = {
+	color = rgb { 250  0  0 }
+    color_ui = rgb { 250  0  0 }
+}
+SOM = {
+	color = rgb { 185  0  10 }
+    color_ui = rgb { 185  0  10 }
+}
+SOD = {
+	color = rgb { 180  0  15 }
+    color_ui = rgb { 180  0  15 }
+}
+SOC = {
+	color = rgb { 175  0  10 }
+    color_ui = rgb { 175  0  10 }
+}
+SOH = {
+	color = rgb { 170  0  10 }
+    color_ui = rgb { 170  0  10 }
+}
+SON = {
+	color = rgb { 165  0  10 }
+    color_ui = rgb { 165  0  10 }
+}
+WAL = {
+	color = rgb { 20  180  0 }
+    color_ui = rgb { 20  180 0 }
+}
+KER = {
+	color = rgb { 20  20  20 }
+    color_ui = rgb { 20  20  20 }
+}
+LIV = {
+	color = rgb { 230  60  25 }
+    color_ui = rgb { 230  60  25 }
+}
+ULS = {
+	color = rgb { 250  120  0 }
+    color_ui = rgb { 250  120  0 }
+}
+IRA = {
+	color = rgb { 0  130  90 }
+    color_ui = rgb { 0  130  90 }
+}
+IRL = {
+	color = rgb { 0 160 20 }
+	color_ui = rgb { 0 160 20 }
+}
+MNX = {
+	color = rgb { 240 0 80 }
+	color_ui = rgb { 240 0 80 }
+}

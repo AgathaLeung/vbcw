@@ -1,0 +1,231 @@
+﻿capital = 21
+
+OOB = "BUF_1936"
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_naval_oob = "BUF_1936_naval_mtg"
+	else = {
+		set_naval_oob = "BUF_1936_naval_legacy"
+	}
+}
+
+set_research_slots = 3
+
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	support_weapons = 1
+	tech_support = 1		
+	tech_engineers = 1
+	tech_recon = 1
+	motorised_infantry = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+	gwtank = 1
+	basic_light_tank = 1
+	early_fighter = 1
+	fighter1 = 1
+	cv_early_fighter = 1
+	cv_naval_bomber1 = 1
+	naval_bomber1 = 1
+	early_bomber = 1
+	CAS1 = 1
+	mobile_warfare = 1
+	fleet_in_being = 1
+	electronic_mechanical_engineering = 1
+	radio = 1
+	radio_detection = 1
+	early_armoured_car = 1
+	basic_armoured_car = 1
+}
+
+#########################
+###SHIP TECH - VANILLA###
+#########################
+
+if = {
+	limit = {
+		not = { has_dlc = "Man the Guns" }
+	}
+	set_technology = {	
+		early_destroyer = 1
+		early_trawler = 1
+		early_corvette = 1
+		early_motor_boat = 1
+		basic_motor_boat = 1
+		transport = 1
+	}
+}
+
+#########################
+###  SHIP TECH - MTG  ###
+#########################
+
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_technology = {	
+		early_ship_hull_motorboat = 1
+		basic_ship_hull_motorboat = 1
+		early_ship_hull_trawler = 1
+		early_ship_hull_sloop = 1	
+		early_ship_hull_light = 1
+		basic_battery = 1
+		basic_light_battery = 1
+		basic_torpedo = 1
+		sonar = 1
+		smoke_generator = 1
+		basic_depth_charges = 1
+		basic_secondary_battery = 1
+		mtg_transport = 1
+		basic_fire_control_system = 1
+	}
+}
+
+set_politics = {	
+	ruling_party = fascist
+	last_election = "1933.3.5"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+    fascist = 80
+    autocratic = 10
+    conservative = 10
+    liberal = 0
+    democratic_socialist = 0
+    communist = 0
+    anarcho_syndicalist = 0
+    civic_nationalist = 0
+}
+
+add_ideas = {
+	BUF_auxiliary_constabularies
+}
+
+set_convoys = 50
+
+create_country_leader = {
+	name = "Oswald Mosley"
+	desc = "POLITICS_KING_ZOG_DESC"
+	picture = "gfx/leaders/ENG/Portrait_Britain_Oswald_Mosley.dds"
+	expire = "1965.1.1"
+	ideology = fascist_subtype
+	traits = {
+		#
+	}
+}
+
+create_field_marshal = {
+	name = "J.F.C Fuller"
+	portrait_path = "gfx/leaders/VBCW/BUF/BUF-Fuller.tga"
+	traits = { panzer_leader panzer_expert}
+	skill = 5
+	attack_skill = 6
+    defense_skill = 3
+    planning_skill = 3
+    logistics_skill = 4
+}
+
+create_field_marshal = {
+	name = "Philip Game"
+	portrait_path = "gfx/leaders/VBCW/BUF/BUF-Game.tga"
+	traits = { auxiliary_constable }
+	skill = 2
+	attack_skill = 1
+    defense_skill = 2
+    planning_skill = 2
+    logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Arnold Leese"
+	portrait_path = "gfx/leaders/VBCW/BUF/BUF-Leese.tga"
+	traits = { politically_connected cavalry_leader }
+	skill = 2
+	attack_skill = 2
+    defense_skill = 1
+    planning_skill = 2
+    logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Wyndham Lewis"
+	portrait_path = "gfx/leaders/VBCW/BUF/BUF-Lewis.tga"
+	traits = {  }
+	skill = 1
+	attack_skill = 1
+    defense_skill = 1
+    planning_skill = 1
+    logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Harold Scott"
+	portrait_path = "gfx/leaders/VBCW/BUF/BUF-Scott.tga"
+	traits = { auxiliary_constable }
+	skill = 1
+	attack_skill = 1
+    defense_skill = 1
+    planning_skill = 2
+    logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "John Nott Bower"
+	portrait_path = "gfx/leaders/VBCW/BUF/BUF-Nott-Bower.tga"
+	traits = { auxiliary_constable }
+	skill = 1
+	attack_skill = 1
+    defense_skill = 1
+    planning_skill = 2
+    logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "R.C.M Jenkins"
+	portrait_path = "gfx/leaders/VBCW/BUF/BUF-Jenkins.tga"
+	traits = { auxiliary_constable }
+	skill = 1
+	attack_skill = 1
+    defense_skill = 1
+    planning_skill = 2
+    logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Arthur Young"
+	portrait_path = "gfx/leaders/VBCW/BUF/BUF-Young.tga"
+	traits = { auxiliary_constable }
+	skill = 1
+	attack_skill = 1
+    defense_skill = 1
+    planning_skill = 2
+    logistics_skill = 1
+}
+
+create_navy_leader = {
+	name = "Barry Domville"
+	portrait_path = "gfx/leaders/VBCW/BUF/BUF-Domville.dds"
+	traits = { spotter }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 2
+	maneuvering_skill = 3
+	coordination_skill = 3
+}
+
+create_navy_leader = {
+	name = "Patrick Boyle"
+	portrait_path = "gfx/leaders/VBCW/BUF/BUF-Boyle.dds"
+	traits = {  }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	maneuvering_skill = 2
+	coordination_skill = 2
+}

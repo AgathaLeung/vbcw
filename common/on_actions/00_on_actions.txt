@@ -1,0 +1,20 @@
+on_actions = {
+	on_startup = {
+		effect = {			
+			every_country = {
+				limit = { is_ai = no }
+				country_event = vbcw.politics.1 ###Intro Lore etc###
+			}
+			every_country = { 
+				country_event = vbcw.politics.25 ###Opinion Modifiers### 
+			}
+		}
+	}
+	
+	# ROOT is capitulated country, FROM is winner
+	on_capitulation = {
+		effect = {
+			news_event = { id = country_capitulated.0 days = 0 }
+		}
+	}
+}

@@ -1,0 +1,138 @@
+ideas = {
+
+	country = {
+		JAC_highlanders = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_war_preparation
+		}
+	
+		JAC_undivided_nation = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_political_support
+			
+			modifier = {
+				
+				production_speed_industrial_complex_factor = 0.1
+				production_speed_arms_factory_factor = 0.05
+			}
+		}
+		
+		JAC_italian_advisors = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_intel_bonus
+			
+			modifier = {
+				army_defence_factor = 0.1
+				training_time_army_factor = -0.07				
+				}
+		}
+		
+		JAC_empowered_catholics = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = FRA_scw_intervention_nationalists_focus
+			
+			modifier = {
+				conscription = 0.15
+				}
+		}
+		
+		JAC_traditional_beliefs = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = victors_of_the_great_war
+			
+			modifier = {
+				conscription = 0.05
+				drift_defence_factor = 0.25
+				stability_factor = 0.05
+				}
+		}
+		
+		JAC_propaganda_campaign = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_manpower_bonus
+			
+			modifier = {
+				conscription = 0.2
+				}
+		}
+		
+		JAC_conservation_for_a_cause = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = idea_generic_agrigarian_reform
+			
+			modifier = {
+				conscription = 0.2
+				}
+		}
+	}
+}

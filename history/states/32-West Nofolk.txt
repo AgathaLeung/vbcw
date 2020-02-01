@@ -1,0 +1,26 @@
+state={
+	id=32
+	name="STATE_32"
+	provinces={
+		622 625 644 652 688 690 709 730 755 757 761 788 801 
+	}
+	manpower=200000
+	
+	state_category = town
+	
+	history={
+		owner = ANG
+		add_core_of = ANG
+		add_claim_by = ROY
+		add_claim_by = YRK
+		victory_points = { 755 10 }
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 1
+			arms_factory = 1
+			761 = {
+				naval_base = 2
+			}
+		}
+	}
+}

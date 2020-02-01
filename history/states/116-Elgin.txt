@@ -1,0 +1,30 @@
+state={
+	id=116
+	name="STATE_116"
+	provinces={
+		1947 1952 1962 1974 1976 1984 
+	}
+	manpower=50000
+	
+	resources = {
+		steel = 8
+	}
+	
+	state_category = rural
+	
+	history={
+		victory_points = { 1984 5 }
+		owner = JAC
+		add_core_of = JAC
+		add_claim_by = ROY
+		add_claim_by = YRK
+		add_claim_by = SCO
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			1976 = {
+				naval_base = 1
+			}
+		}
+	}
+}

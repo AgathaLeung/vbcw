@@ -1,0 +1,20 @@
+state={
+	id=36
+	name="STATE_36"
+	provinces={
+		658 682 701 707 
+	}
+	manpower=50000
+	
+	state_category = rural
+	
+	history={
+		owner = ROY
+		add_core_of = ROY
+		add_claim_by = YRK
+		add_claim_by = ANG
+		buildings = {
+			infrastructure = 4
+		}
+	}
+}

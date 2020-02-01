@@ -1,0 +1,1305 @@
+focus_tree = {
+	id = SOM_Coolstuff
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = SOM
+		}
+	}
+	
+	default = no
+	
+	###############
+	##☭industry☭##
+	###############
+
+
+	focus = {
+		id = SOM_prepare_for_the_struggle
+		icon = GFX_goal_generic_propaganda
+		cost = 2
+		x = 12
+		y = 0
+		
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+
+###INDUSTRY###
+	
+	focus = {
+		id = SOM_industrial_organisation
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 5
+		x = 4
+		y = 1
+		prerequisite = {focus = SOM_prepare_for_the_struggle}
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		completion_reward = {
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 0.5
+				uses = 1
+				category = industry
+			}
+		}
+	}
+	
+
+	focus = {
+		id = SOM_take_over_bsa
+		icon = GFX_focus_secret_rearmament
+		cost = 5
+		x = 2
+		y = 2
+		prerequisite = {focus = SOM_industrial_organisation}
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		completion_reward = {
+				add_tech_bonus = {
+				name = infantry_equipment_bonus
+				bonus = 0.5
+				uses = 2
+				category = infantry_weapons
+			}
+				add_ideas = SOM_bsa_takeover	
+
+		42 = {
+			add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}	
+		}	
+	}
+	
+	focus = {
+		id = SOM_coventry_motor_industry
+		icon = GFX_goal_generic_army_motorized
+		cost = 5
+		x = 2
+		y = 3
+		prerequisite = {focus = SOM_take_over_bsa}
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		completion_reward = {
+				add_tech_bonus = {
+				name = cars_bonus
+				bonus = 0.5
+				uses = 4
+				category = motorized_equipment
+				category = cat_mechanized_equipment
+				category = cat_armoured_car
+
+			}
+				add_ideas = SOM_coventry_takeover	
+
+			41 = {
+			add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}	
+		}
+	}
+	
+	focus = {
+		id = SOM_raleigh_bycycles
+		icon = GFX_goal_generic_production2
+		cost = 5
+		x = 2
+		y = 4
+		prerequisite = {focus = SOM_coventry_motor_industry}
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		completion_reward = {
+			add_tech_bonus = {
+				name = support_equipment_bonus
+				bonus = 0.5
+				uses = 4
+				category = support_tech
+
+			}
+
+		46 = {
+			add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+
+	focus = {
+		id = SOM_dunlop_rubber
+		icon = GFX_focus_generic_rubber
+		cost = 5
+		x = 2
+		y = 5
+		prerequisite = {focus = SOM_raleigh_bycycles}
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		completion_reward = {
+			42 = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = synthetic_refinery
+						level = 2
+						instant_build = yes
+				}
+			}
+			51 = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = synthetic_refinery
+						level = 2
+						instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = SOM_sheffield_steel
+		icon = GFX_focus_generic_steel
+		cost = 5
+		x = 6
+		y = 2
+		prerequisite = {focus = SOM_industrial_organisation}
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		completion_reward = {
+			69 = {
+				add_resource = {
+						type = steel
+						amount = 32
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = SOM_nottingham_coal
+		icon = GFX_goal_generic_construction2
+		cost = 5
+		x = 6
+		y = 3
+		prerequisite = {focus = SOM_sheffield_steel}
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		completion_reward = {
+			69 = {
+				add_resource = {
+						type = chromium
+						amount = 8
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = SOM_derby_rail_engineering
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 5
+		x = 6
+		y = 4
+		prerequisite = {focus = SOM_nottingham_coal}
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		completion_reward = {
+			custom_effect_tooltip = SOM_railway_desc
+			hidden_effect = {
+				70 = {				
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+				}
+				51 = {				
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+				}
+				69 = {				
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+				}
+				54 = {				
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+				}
+				47 = {				
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+				}
+				45 = {				
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+				}
+				55 = {				
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+				}
+				46 = {				
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+				}
+				40 = {				
+						add_building_construction = {
+							type = infrastructure
+							level = 2
+							instant_build = yes
+					}
+				}
+				41 = {				
+						add_building_construction = {
+							type = infrastructure
+							level = 2
+							instant_build = yes
+					}
+				}
+				42 = {				
+						add_building_construction = {
+							type = infrastructure
+							level = 2
+							instant_build = yes
+					}
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = SOM_leeds_bradford_aerodrome
+		icon = GFX_goal_generic_air_production
+		cost = 5
+		x = 6
+		y = 5
+		prerequisite = {focus = SOM_derby_rail_engineering}
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		completion_reward = {
+				70= {
+					limit = {
+						free_building_slots = {
+							building = air_base
+							size > 1
+						}
+					}
+					add_building_construction = {
+						type = air_base
+						level = 3
+						instant_build = yes
+				}
+			}
+		}
+	}
+
+focus = {
+		id = SOM_workshop_of_the_world
+		icon = GFX_goal_generic_positive_trade_relations
+		cost = 5
+		x = 4
+		y = 6
+		prerequisite = {focus = SOM_dunlop_rubber}
+		prerequisite = {focus = SOM_leeds_bradford_aerodrome}
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		completion_reward = {
+				add_ideas = SOM_workshop_of_the_world_idea
+		}
+	}
+
+	
+	###############
+	##☭politics☭##
+	###############
+
+
+
+	focus = {
+		id = SOM_political_alignment
+		icon = GFX_goal_generic_neutrality_focus
+		cost = 2
+		x = 12
+		y = 1
+		prerequisite = { focus = SOM_prepare_for_the_struggle }
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	
+	focus = {
+		id = SOM_anarchist_commune
+		icon = GFX_goal_generic_national_unity
+		cost = 5
+		x = 9
+		y = 2
+		prerequisite = {focus = SOM_political_alignment}
+		mutually_exclusive = {focus = SOM_communist_commune}
+		mutually_exclusive = {focus = SOM_labour_commune}
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		completion_reward = {
+			add_political_power = 50
+
+			set_politics = {
+				ruling_party = anarcho_syndicalist
+				elections_allowed = no
+			}
+			add_popularity = {
+				popularity = 0.35
+				ideology = anarcho_syndicalist
+			}
+
+		}
+	}
+	
+	focus = {
+		id = SOM_aid_from_IWW
+		icon = GFX_focus_chi_mission_to_the_us
+		cost = 5
+		x = 9
+		y = 3
+		prerequisite = { focus = SOM_anarchist_commune }
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		completion_reward = {
+			add_political_power = 25
+			unlock_decision_category_tooltip = SOD_IWW_aid
+		}
+	}
+
+	
+	
+	focus = {
+		id = SOM_radical_protestantism
+		icon = GFX_focus_generic_concessions
+		cost = 5
+		x = 9
+		y = 4
+		prerequisite = {focus = SOM_aid_from_IWW}
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		completion_reward = {
+			add_ideas = SOM_radical_protestantism
+			ANG = { add_opinion_modifier = { target = ROOT modifier = SOM_radical_protestantism } }
+		}
+	}
+	
+
+	focus = {
+		id = SOM_emulate_diggers_and_levellers
+		icon = GFX_goal_continuous_increase_nu
+		cost = 5
+		x = 9
+		y = 5
+		prerequisite = { focus = SOM_radical_protestantism }
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		completion_reward = {
+			remove_ideas = SOM_radical_protestantism
+			add_ideas = SOM_christian_socialism			
+		}
+	}
+
+	focus = {
+		id = SOM_equal_before_god
+		icon = GFX_goal_continuous_boost_freedom
+		cost = 5
+		x = 9
+		y = 6
+		prerequisite = { focus = SOM_emulate_diggers_and_levellers }
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		completion_reward = {
+			add_ideas = SOM_equal_before_god
+			add_popularity = {
+				popularity = 0.2
+				ideology = anarcho_syndicalist
+			}
+			add_stability = 0.1
+		}
+	}
+	
+	focus = {
+		id = SOM_communist_commune
+		icon = GFX_goal_support_communism
+		cost = 5
+		x = 12
+		y = 2
+		prerequisite = {focus = SOM_political_alignment}
+		mutually_exclusive = {focus = SOM_anarchist_commune}
+		mutually_exclusive = {focus = SOM_labour_commune}
+		continue_if_invalid = yes	
+		available_if_capitulated = yes
+		completion_reward = {
+			add_political_power = 50
+
+			set_politics = {
+				ruling_party = communist
+				elections_allowed = no
+			}
+			add_popularity = {
+				popularity = 0.35
+				ideology = communist
+			}
+		}
+	}
+	
+	focus = {
+		id = SOM_follow_moscow
+		icon = GFX_focus_chi_mission_to_the_soviet_union
+		cost = 5
+		x = 12
+		y = 3
+		prerequisite = {focus = SOM_communist_commune}
+		continue_if_invalid = yes
+			
+		available_if_capitulated = yes
+		completion_reward = {
+			add_political_power = 25
+			unlock_decision_category_tooltip = SOD_soviet_aid	
+			}
+	}
+	
+	focus = {
+		id = SOM_institutional_atheism
+		icon = GFX_focus_renounce_the_treaty_of_trianon
+		cost = 5
+		x = 12
+		y = 4
+		prerequisite = {focus = SOM_follow_moscow}
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		completion_reward = {
+			add_ideas = SOM_institutional_atheism
+			ANG = { add_opinion_modifier = { target = ROOT modifier = SOM_institutional_atheism } }
+		}
+
+	}
+	
+	focus = {
+		id = SOM_political_commissars
+		icon = GFX_goal_generic_war_with_comintern
+		cost = 5
+		x = 12
+		y = 5
+		prerequisite = {focus = SOM_institutional_atheism}
+		continue_if_invalid = yes					
+		available_if_capitulated = yes
+		completion_reward = {
+			add_ideas = SOM_political_commissars
+		}
+	}
+	
+	focus = {
+		id = SOM_stamp_out_the_church
+		icon = GFX_focus_mex_triumph_over_the_cristeros
+		cost = 5
+		x = 12
+		y = 6
+		prerequisite = {focus = SOM_political_commissars}
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		completion_reward = {
+			add_stability = -0.1
+			ANG = { add_opinion_modifier = { target = ROOT modifier = SOM_outlawed_church} }
+		}
+	}
+	
+	focus = {
+		id = SOM_labour_commune
+		icon = GFX_goal_generic_support_democracy
+		cost = 5
+		x = 15
+		y = 2
+		prerequisite = {focus = SOM_political_alignment}
+		mutually_exclusive = {focus = SOM_communist_commune}
+		mutually_exclusive = {focus = SOM_anarchist_commune}
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		completion_reward = {
+			add_popularity = {
+				ideology = democratic_socialist
+				popularity = 0.1
+			}
+			add_political_power = 100
+		}
+	}
+	
+	focus = {
+		id = SOM_indigenous_production
+		icon = GFX_goal_generic_construct_civilian
+		cost = 5
+		x = 15
+		y = 3
+		prerequisite = {focus = SOM_labour_commune}
+		continue_if_invalid = yes		
+		available_if_capitulated = yes
+		completion_reward = {
+			 add_ideas = SOM_indigenous_production
+			 add_political_power = 25
+		}
+	}
+
+
+	focus = {
+		id = SOM_new_jeruselum
+		icon = GFX_focus_rom_royal_dictatorship
+		cost = 5
+		x = 15
+		y = 4
+		prerequisite = {focus = SOM_indigenous_production}
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		completion_reward = {
+			ANG = { add_opinion_modifier = { target = ROOT modifier = SOM_new_jeruselum } }
+			add_stability = 0.05		
+		}
+	}
+	
+	focus = {
+		id = SOM_egalitarian_society
+		icon = GFX_goal_molotov_ribbentrop_pact
+		cost = 5
+		x = 15
+		y = 5
+		prerequisite = {focus = SOM_new_jeruselum}
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		completion_reward = {
+			add_ideas = SOM_meritocracy	
+		}
+	}
+
+	focus = {
+		id = SOM_religous_tolerance
+		icon = GFX_goal_anschluss
+		cost = 5
+		x = 15
+		y = 6
+		prerequisite = {focus = SOM_egalitarian_society}
+		continue_if_invalid = yes		
+		available_if_capitulated = yes
+		completion_reward = {
+			add_ideas = SOM_tolerant_society
+			add_stability = 0.1	
+		}
+	}
+	
+	focus = {
+		id = SOM_national_position
+		icon = GFX_goal_generic_intelligence_exchange
+		cost = 1
+		x = 12
+		y = 7
+		prerequisite = {
+			focus = SOM_equal_before_god
+			focus = SOM_stamp_out_the_church
+			focus = SOM_religous_tolerance
+		}
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		completion_reward = {
+			add_political_power = 25
+		}
+	}
+	
+	focus = {
+		id = SOM_federal_commune
+		icon = GFX_focus_generic_soviet_politics
+		cost = 5
+		x = 9
+		y = 8
+		prerequisite = {focus = SOM_national_position}
+		mutually_exclusive = {focus = SOM_unitary_commune}
+		continue_if_invalid = yes
+		
+		available_if_capitulated = yes
+		completion_reward = {
+			custom_effect_tooltip = SOM_cores_on_england
+			hidden_effect = {
+				add_state_core = 1
+				add_state_core = 2
+				add_state_core = 3
+				add_state_core = 4
+				add_state_core = 5
+				add_state_core = 6
+				add_state_core = 7
+				add_state_core = 8
+				add_state_core = 9
+				add_state_core = 10
+				add_state_core = 11
+				add_state_core = 12
+				add_state_core = 13
+				add_state_core = 14
+				add_state_core = 15
+				add_state_core = 16
+				add_state_core = 17
+				add_state_core = 18
+				add_state_core = 19
+				add_state_core = 20
+				add_state_core = 21
+				add_state_core = 22
+				add_state_core = 23
+				add_state_core = 24
+				add_state_core = 25
+				add_state_core = 26
+				add_state_core = 27
+				add_state_core = 28
+				add_state_core = 29
+				add_state_core = 30
+				add_state_core = 31
+				add_state_core = 32
+				add_state_core = 33
+				add_state_core = 34
+				add_state_core = 35
+				add_state_core = 36
+				add_state_core = 37
+				add_state_core = 38
+				add_state_core = 39
+				add_state_core = 40
+				add_state_core = 41
+				add_state_core = 42
+				add_state_core = 43
+				add_state_core = 44
+				add_state_core = 45
+				add_state_core = 46
+				add_state_core = 47
+				add_state_core = 48
+				add_state_core = 49
+				add_state_core = 50
+				add_state_core = 51
+				add_state_core = 52
+				add_state_core = 53
+				add_state_core = 54
+				add_state_core = 55
+				SOC = { add_state_core = 
+				add_state_core = 56
+				add_state_core = 57 
+				add_state_core = 58
+				add_state_core = 59
+				add_state_core = 60 
+				add_state_core = 61
+				add_state_core = 62
+				add_state_core = 63 
+				add_state_core = 64
+				add_state_core = 65
+				add_state_core = 66 
+				add_state_core = 67 }				
+				add_state_core = 68 
+				add_state_core = 69
+				add_state_core = 70
+				add_state_core = 71
+				add_state_core = 72
+				add_state_core = 73
+				add_state_core = 74
+				add_state_core = 75
+				add_state_core = 76
+				add_state_core = 77
+				add_state_core = 78
+				add_state_core = 79
+				add_state_core = 80
+				add_state_core = 81
+				add_state_core = 82
+				add_state_core = 83
+				add_state_core = 84
+				add_state_core = 85
+				add_state_core = 87
+				add_state_core = 164
+				add_state_core = 165
+				add_state_core = 167
+				add_state_core = 85
+				add_state_core = 87
+				SOG = { add_state_core = 88
+				add_state_core = 89
+				add_state_core = 90 
+				add_state_core = 91
+				add_state_core = 92
+				add_state_core = 93
+				add_state_core = 94
+				add_state_core = 95
+				add_state_core = 96
+				add_state_core = 97
+				add_state_core = 98
+				add_state_core = 99
+				add_state_core = 100
+				add_state_core = 101
+				add_state_core = 102
+				add_state_core = 103
+				add_state_core = 104
+				add_state_core = 105
+				add_state_core = 106
+				add_state_core = 107
+				add_state_core = 108
+				add_state_core = 109
+				add_state_core = 110
+				add_state_core = 111
+				add_state_core = 112
+				add_state_core = 113
+				add_state_core = 114
+				add_state_core = 115
+				add_state_core = 116
+				add_state_core = 117
+				add_state_core = 118
+				add_state_core = 119
+				add_state_core = 120
+				add_state_core = 121
+				add_state_core = 122
+				add_state_core = 123
+				add_state_core = 124
+				add_state_core = 125
+				add_state_core = 168
+				add_state_core = 169
+				add_state_core = 170
+				add_state_core = 171
+				}
+			}
+		}
+	}
+	
+	
+	focus = {
+		id = SOM_english_regions
+		icon = GFX_goal_generic_forceful_treaty
+		cost = 5
+		x = 9
+		y = 9
+		prerequisite = {focus = SOM_federal_commune}
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		completion_reward = {
+			SOD = { country_event = { id = SOD.midlands.1 } }
+			SOH = { country_event = { id = SOH.midlands.1 } }
+			SON = { country_event = { id = SON.midlands.1 } }
+		}
+	}
+	
+	focus = {
+		id = SOM_enforce_regionalisation
+		icon = GFX_goal_generic_alliance
+		cost = 5
+		x = 9
+		y = 10
+		prerequisite = {focus = SOM_english_regions}
+		bypass = { SOM = {has_government = anarcho_syndicalist}}
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		completion_reward = {
+			create_wargoal = {
+   					type = annex_everything
+    				target = SCO
+				}
+				create_wargoal = {
+   					type = annex_everything
+    				target = WAL
+			}
+		}
+	}
+	
+	focus = {
+		id = SOM_unitary_commune
+		icon = GFX_focus_generic_join_comintern
+		cost = 5
+		x = 15
+		y = 8
+		prerequisite = {focus = SOM_national_position}
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		completion_reward = {
+			custom_effect_tooltip = SOM_cores_on_britain
+			hidden_effect = {
+				add_state_core = 1
+				add_state_core = 2
+				add_state_core = 3
+				add_state_core = 4
+				add_state_core = 5
+				add_state_core = 6
+				add_state_core = 7
+				add_state_core = 8
+				add_state_core = 9
+				add_state_core = 10
+				add_state_core = 11
+				add_state_core = 12
+				add_state_core = 13
+				add_state_core = 14
+				add_state_core = 15
+				add_state_core = 16
+				add_state_core = 17
+				add_state_core = 18
+				add_state_core = 19
+				add_state_core = 20
+				add_state_core = 21
+				add_state_core = 22
+				add_state_core = 23
+				add_state_core = 24
+				add_state_core = 25
+				add_state_core = 26
+				add_state_core = 27
+				add_state_core = 28
+				add_state_core = 29
+				add_state_core = 30
+				add_state_core = 31
+				add_state_core = 32
+				add_state_core = 33
+				add_state_core = 34
+				add_state_core = 35
+				add_state_core = 36
+				add_state_core = 37
+				add_state_core = 38
+				add_state_core = 39
+				add_state_core = 40
+				add_state_core = 41
+				add_state_core = 42
+				add_state_core = 43
+				add_state_core = 44
+				add_state_core = 45
+				add_state_core = 46
+				add_state_core = 47
+				add_state_core = 48
+				add_state_core = 49
+				add_state_core = 50
+				add_state_core = 51
+				add_state_core = 52
+				add_state_core = 53
+				add_state_core = 54
+				add_state_core = 55
+				add_state_core = 56
+				add_state_core = 57 
+				add_state_core = 58
+				add_state_core = 59
+				add_state_core = 60 
+				add_state_core = 61
+				add_state_core = 62
+				add_state_core = 63 
+				add_state_core = 64
+				add_state_core = 65
+				add_state_core = 66 
+				add_state_core = 67 				
+				add_state_core = 68 
+				add_state_core = 69
+				add_state_core = 70
+				add_state_core = 71
+				add_state_core = 72
+				add_state_core = 73
+				add_state_core = 74
+				add_state_core = 75
+				add_state_core = 76
+				add_state_core = 77
+				add_state_core = 78
+				add_state_core = 79
+				add_state_core = 80
+				add_state_core = 81
+				add_state_core = 82
+				add_state_core = 83
+				add_state_core = 84
+				add_state_core = 85
+				add_state_core = 87
+				add_state_core = 164
+				add_state_core = 165
+				add_state_core = 167
+				add_state_core = 85
+				add_state_core = 87
+				add_state_core = 88
+				add_state_core = 89
+				add_state_core = 90 
+				add_state_core = 91
+				add_state_core = 92
+				add_state_core = 93
+				add_state_core = 94
+				add_state_core = 95
+				add_state_core = 96
+				add_state_core = 97
+				add_state_core = 98
+				add_state_core = 99
+				add_state_core = 100
+				add_state_core = 101
+				add_state_core = 102
+				add_state_core = 103
+				add_state_core = 104
+				add_state_core = 105
+				add_state_core = 106
+				add_state_core = 107
+				add_state_core = 108
+				add_state_core = 109
+				add_state_core = 110
+				add_state_core = 111
+				add_state_core = 112
+				add_state_core = 113
+				add_state_core = 114
+				add_state_core = 115
+				add_state_core = 116
+				add_state_core = 117
+				add_state_core = 118
+				add_state_core = 119
+				add_state_core = 120
+				add_state_core = 121
+				add_state_core = 122
+				add_state_core = 123
+				add_state_core = 124
+				add_state_core = 125
+				add_state_core = 168
+				add_state_core = 169
+				add_state_core = 170
+				add_state_core = 171
+					
+				}
+			}
+		}
+	#####################################
+	#suck my ass baldrick i did it twice#
+	#####################################
+	
+	focus = {
+		id = SOM_deal_with_the_regions
+		icon = GFX_goal_anti_comintern_pact
+		cost = 5
+		x = 15
+		y = 9
+		prerequisite = {focus = SOM_unitary_commune}
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		completion_reward = {
+			SOD = { country_event = { id = SOD.midlands.2 } }
+			SOH = { country_event = { id = SOH.midlands.2 } }
+			SON = { country_event = { id = SON.midlands.2 } }
+			SOC = { country_event = { id = SOC.midlands.2 } }
+			SOG = { country_event = { id = SOG.midlands.2 } }
+		}
+	}
+
+	focus = {
+		id = SOM_deal_with_independents 
+		icon = GFX_goal_generic_political_pressure
+		cost = 5
+		x = 15
+		y = 10
+		prerequisite = {focus = SOM_deal_with_the_regions}
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		completion_reward = {
+			create_wargoal = {
+   					type = annex_everything
+    				target = SCO
+				}
+				create_wargoal = {
+   					type = annex_everything
+    				target = WAL
+				}
+				create_wargoal = {
+   					type = annex_everything
+    				target = KER
+			}
+		}
+	}
+	
+	focus = {
+		id = SOM_the_parliament_question
+		icon = GFX_focus_rom_royal_dictatorship
+		cost = 5
+		x = 12
+		y = 11
+		prerequisite = {
+			focus = SOM_deal_with_independents 
+			focus = SOM_enforce_regionalisation
+			}
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		completion_reward = {
+			create_wargoal = {
+   					type = annex_everything
+    				target = YRK
+			}
+		}
+	}
+
+	focus = {
+		id = SOM_ultimatum_to_merseyside
+		icon = GFX_goal_generic_territory_or_war
+		cost = 5
+		x = 12
+		y = 12
+		prerequisite = {focus = SOM_the_parliament_question}
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		completion_reward = {
+			create_wargoal = {
+   					type = annex_everything
+    				target = LIV
+			}
+		}
+	}
+
+	focus = {
+		id = SOM_crush_the_church
+		icon = GFX_focus_mex_triumph_over_the_cristeros
+		cost = 5
+		x = 12
+		y = 13
+		prerequisite = {focus = SOM_ultimatum_to_merseyside}
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		completion_reward = {
+			create_wargoal = {
+   					type = annex_everything
+    				target = ANG
+			}
+		}
+	}
+
+	###############
+	##☭military☭##
+	###############
+
+
+
+	focus = {
+		id = SOM_mobilise_the_people
+		icon = GFX_goal_generic_fortify_city
+		cost = 5
+		x = 20
+		y = 1
+		prerequisite = {focus = SOM_prepare_for_the_struggle}
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		completion_reward = {
+			army_experience = 20
+			add_ideas = SOM_mobilise_the_people_idea
+		}
+	}
+	
+	focus = {
+		id = SOM_weapons_donation_drive
+		icon = GFX_goal_generic_propaganda
+		cost = 5
+		x = 18
+		y = 2
+		prerequisite = {focus = SOM_mobilise_the_people}
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment 
+				amount = 15000
+				producer = CIV
+			}
+		}	
+	}
+
+
+	focus = {
+		id = SOM_vehicle_improvisation
+		icon = GFX_focus_NZL_bob_semple_tank
+		cost = 5
+		x = 18
+		y = 3
+		prerequisite = {focus = SOM_weapons_donation_drive}
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		completion_reward = {
+			add_tech_bonus = {
+				name = imp_armour
+				uses = 2
+				bonus = 0.5
+				category = armour
+			}
+		}	
+	}
+
+	focus = {
+		id = SOM_BSA_research
+		icon = GFX_focus_secret_rearmament
+		cost = 5
+		x = 18
+		y = 4
+		prerequisite = {focus = SOM_vehicle_improvisation}
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		completion_reward = {
+				add_tech_bonus = {
+				name = SOM_infantry_bonus
+				uses = 2
+				bonus = 0.5
+				category = infantry_weapons
+			}
+		}
+	}
+	
+	focus = {
+		id = SOM_armoured_cars
+		icon = GFX_goal_generic_defence
+		cost = 5
+		x = 18
+		y = 5
+		prerequisite = {focus = SOM_BSA_research}
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		completion_reward = {
+			add_tech_bonus = {
+				name = SOM_armoured_cars
+				uses = 2
+				bonus = 0.5
+				category = cat_armoured_car
+			}
+		}
+	}
+	
+	focus = {
+		id = SOM_militarise_the_unions
+		icon = GFX_focus_generic_little_entente
+		cost = 5
+		x = 22
+		y = 2
+		prerequisite = {focus = SOM_mobilise_the_people}
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		completion_reward = {
+			add_ideas = SOM_armed_unions_idea
+			custom_effect_tooltip = SOM_armed_unions
+				hidden_effect = {
+				random_owned_controlled_state = {
+					limit = { ROOT = { has_full_control_of_state = PREV } }
+					prioritize = { 42 }
+					create_unit = {
+						division = "name = \"WIP1\" division_template = \"People's Militia\" start_experience_factor = 1.0"
+						owner = SOM
+					}
+					create_unit = {
+						division = "name = \"WIP2\" division_template = \"People's Militia\" start_experience_factor = 1.0"
+						owner = SOM
+					}
+					create_unit = {
+						division = "name = \"WIP3\" division_template = \"People's Militia\" start_experience_factor = 1.0"
+						owner = SOM
+					}
+					create_unit = {
+						division = "name = \"WIP4\" division_template = \"People's Militia\" start_experience_factor = 1.0"
+						owner = SOM
+					}
+					create_unit = {
+						division = "name = \"WIP5\" division_template = \"People's Militia\" start_experience_factor = 1.0"
+						owner = SOM
+					}
+					create_unit = {
+						division = "name = \"WIP6\" division_template = \"People's Militia\" start_experience_factor = 1.0"
+						owner = SOM
+					}
+					create_unit = {
+						division = "name = \"WIP7\" division_template = \"People's Militia\" start_experience_factor = 1.0"
+						owner = SOM
+					}
+					create_unit = {
+						division = "name = \"WIP8\" division_template = \"People's Militia\" start_experience_factor = 1.0"
+						owner = SOM
+					}
+					create_unit = {
+						division = "name = \"WIP9\" division_template = \"People's Militia\" start_experience_factor = 1.0"
+						owner = SOM
+					}
+					create_unit = {
+						division = "name = \"WIP10\" division_template = \"People's Militia\" start_experience_factor = 1.0"
+						owner = SOM
+					}
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = SOM_enlist_spanish_cw_vets
+		icon = GFX_focus_generic_strike_at_democracy2
+		cost = 5
+		x = 22
+		y = 3
+		prerequisite = {focus = SOM_militarise_the_unions}
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		completion_reward = {
+			add_ideas = SOM_spanish_cw_vets_idea
+		}
+	}
+	
+	focus = {
+		id = SOM_soviet_advisors
+		icon = GFX_focus_generic_socialist_science
+		cost = 5
+		x = 22
+		y = 4
+		prerequisite = {focus = SOM_enlist_spanish_cw_vets}
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		completion_reward = {
+			army_experience = 20
+			add_ideas = SOM_soviet_advisors_idea
+	}
+}
+
+focus = {
+		id = SOM_local_tactics
+		icon = GFX_goal_generic_fortify_city
+		cost = 5
+		x = 22
+		y = 5
+		prerequisite = {focus = SOM_soviet_advisors}
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		completion_reward = {
+			add_tech_bonus = {
+				name = SOM_local_tactics_tech
+				uses = 3
+				bonus = 0.5
+				category = cat_guerilla_warfare
+		}
+	}
+}
+
+focus = {
+		id = SOM_people's_army
+		icon = GFX_goal_continuous_def_against_influence
+		cost = 5
+		x = 20
+		y = 6
+		prerequisite = {focus = SOM_armoured_cars}
+		prerequisite = {focus = SOM_local_tactics}
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		completion_reward = {
+				add_ideas = SOM_people's_army_idea
+		}
+	}

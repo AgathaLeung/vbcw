@@ -1,0 +1,36 @@
+state={
+	id=51
+	name="STATE_51"
+	provinces={
+		994 998 1000 1003 1009 1021 1030 1032 1037 1046 1053 1057 1062 1065 1068 1072 1080 1087 1096 
+	}
+	manpower=1500000
+	
+	resources = {
+		steel = 32
+		chromium = 16
+		oil = 8
+	}
+	
+	state_category = metropolis
+	
+	history={
+		owner = SOM
+		add_core_of = SOM
+		add_claim_by = ROY
+		add_claim_by = ANG
+		add_claim_by = YRK
+		victory_points = { 994 10 }
+		victory_points = { 1021 30 }
+		victory_points = { 1062 10 }
+		victory_points = { 1065 10 }
+		victory_points = { 1068 10 }
+		victory_points = { 1096 10 }
+		buildings = {
+			infrastructure = 10
+			air_base = 1
+			industrial_complex = 4
+			arms_factory = 5
+		}
+	}
+}

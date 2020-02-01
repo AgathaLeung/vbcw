@@ -1,0 +1,589 @@
+ideas = {
+
+	country = {
+		KER_kernow_bys_vykken = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1			
+			
+			modifier = {
+				army_core_attack_factor = 0.25
+				army_core_defence_factor = 0.25
+			}
+		}
+		KER_science_investments = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			
+			
+			modifier = {
+				consumer_goods_factor = 0.05
+			}
+		}
+		KER_pasty_service = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			
+			
+			modifier = {
+				drift_defence_factor = 0.1
+				political_power_gain = 0.05
+			}
+		}
+		KER_pasty_service_internal = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			
+			
+			modifier = {
+				drift_defence_factor = 0.1
+				political_power_gain = 0.15
+			}
+		}
+		KER_pasty_service_external = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			
+			
+			modifier = {
+				drift_defence_factor = 0.2
+				war_support_factor = 0.1
+			}
+		}
+		KER_pasty_service_external_2 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			
+			
+			modifier = {
+				drift_defence_factor = 0.2
+				war_support_factor = 0.1
+				special_forces_cap = 0.05
+			}
+		}
+	
+	
+		KER_trade_with_the_world = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = idea_can_wartime_prices_and_trade_board
+			
+			modifier = {
+				
+				trade_opinion_factor = 0.10
+			}
+		}
+		KER_artillery_focus = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			
+			
+			equipment_bonus = {
+				artillery_equipment = {
+					build_cost_ic = -0.05 instant = yes
+				}
+			}
+		}
+		KER_national_library = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			
+			
+			modifier = { research_speed_factor = 0.05 }
+		}
+		KER_rifle_reliability = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			
+			
+			equipment_bonus = {
+				infantry_equipment = {
+					reliability = 0.1   instant = yes
+				}
+			}
+		}
+		KER_trade_cooperation = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = idea_sent_attache
+			
+			modifier = {
+				consumer_goods_factor = -0.03
+				production_factory_max_efficiency_factor = 0.05
+			}
+		}
+		KER_cornish_militiaman = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_infantry_bonus
+			
+			modifier = {
+				army_morale_factor = 0.1
+				attrition = -0.2
+				
+				land_reinforce_rate = 0.05
+			}
+		}
+		KER_mills = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_production_bonus
+			
+			modifier = {
+				production_factory_max_efficiency_factor = 0.1
+				production_speed_buildings_factor = 0.05
+			}
+		}
+		KER_war_effort_idea = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			
+			
+			modifier = {
+				conversion_cost_civ_to_mil_factor = -0.2
+				   }
+			modifier = {
+				lend_lease_tension = -0.2
+			}
+			modifier = {
+				production_speed_arms_factory_factor = 0.1
+				
+			}
+		}
+		KER_german_investments = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			
+			
+			modifier = {
+				production_speed_synthetic_refinery_factor = 0.15
+				consumer_goods_factor = -0.03
+				
+			}
+		}
+		KER_french_investments = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			
+			
+			modifier = {
+				industrial_capacity_factory =  0.10
+				consumer_goods_factor = -0.03
+				production_factory_efficiency_gain_factor = 0.05
+				
+				
+			}
+		}
+		KER_militia_armed = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.1 instant = yes
+				}
+			}
+		}
+	}
+	
+	###ADVISORS###
+	political_advisor = {
+		KER_vance = {
+			
+			picture = generic_political_advisor_europe_1
+			
+			allowed = {
+				original_tag = KER
+			}
+			
+			traits = { popular_figurehead }
+		}
+	}
+	
+	army_chief = {
+
+		simon_bolitho = {
+
+			
+			allowed = {
+				original_tag = KER
+			}
+			
+			traits = { army_chief_organizational_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+	
+		}
+	}
+
+	high_command = {
+
+
+		edward_bolitho_airborne = {
+
+
+
+			
+			allowed = {
+				original_tag = KER
+			}
+			available = {
+				has_completed_focus = KER_cornish_special_forces
+			}
+			traits = { air_airborne_3 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+	
+		}
+	}
+	# TECHNOLOGY
+	tank_manufacturer = {
+		
+		designer = yes
+		
+		ker_arvwisk_vehicles = {
+
+			picture = generic_tank_manufacturer_1
+			
+			allowed = {
+				original_tag = KER
+			}
+			
+			research_bonus = {
+				armor = 0.10
+			}
+			
+			traits = { tank_manufacturer_1 }
+		}
+		
+		ker_truro_motors = {
+
+			picture = generic_tank_manufacturer_1
+			
+			allowed = {
+				original_tag = KER
+			}
+			
+			research_bonus = {
+				motorized_equipment = 0.10
+			}
+			
+			traits = { motorised_manufacturer_2 }
+		}
+	}
+
+	industrial_concern = {		
+
+		ker_camborne_school_of_mines = {
+
+			picture = generic_industrial_concern_1
+			
+			allowed = {
+				original_tag = KER
+			}
+			
+			available = {
+				has_completed_focus = KER_resource_exploitation
+			}
+			
+			research_bonus = {
+				industry = 0.10
+			}
+			
+			traits = { industrial_concern_2 }
+		}		
+
+		ker_redruth_wireless_co = {
+
+			picture = generic_electronics_concern_1
+			
+			allowed = {
+				original_TAG = KER
+			}
+			
+			research_bonus = {
+				electronics = 0.10
+			}
+			
+			traits = { electronics_concern_1 }
+		}
+	}
+
+	materiel_manufacturer = {
+			
+		designer = yes
+		
+		ker_lanhydrock = {
+			
+			picture = renault
+	
+			available = {
+				has_completed_focus = KER_renault_investments
+			}
+			allowed = {
+				original_TAG = KER
+			}
+			cost = 50
+			
+			equipment_bonus = {
+				motorized_equipment = {
+					reliability = 0.1
+				}
+				mechanized_equipment = {
+					reliability = 0.1
+				}
+			}
+			
+			traits = { motorised_manufacturer_1 }			
+			
+		}	
+
+		ker_menheniot = {
+
+			picture = opel
+			cost = 50
+			allowed = {
+				original_TAG = KER
+				
+			}
+			available = {
+				has_completed_focus = KER_opel_investments
+			}
+			traits = {  motorised_manufacturer_2   }
+			equipment_bonus = {
+				motorized_equipment = {
+					maximum_speed = 0.05
+				}
+				mechanized_equipment = {
+					maximum_speed = 0.05
+				}
+			}
+			
+			
+			
+		}
+		
+		
+	}
+	
+	naval_manufacturer = { 
+		
+		designer = yes
+		
+		ker_pendennis_shipyard = {
+			picture = generic_naval_manufacturer_2
+
+			
+			allowed = {
+				original_tag = KER
+			}
+			
+			research_bonus = {
+				naval_equipment = 0.10
+			}
+			
+			equipment_bonus = {
+				
+			}
+			
+			traits = { large_vessel_manufacturer_2 }
+		}
+
+		ker_falmouth_boat_co = {
+			picture = generic_naval_manufacturer_3
+
+			
+			allowed = {
+				original_tag = KER
+			}
+			
+			research_bonus = {
+				naval_equipment = 0.10
+			}
+			
+			equipment_bonus = {
+			}
+			
+			traits = { small_vessel_manufacturer_3 }
+		}
+	}
+	
+	aircraft_manufacturer = { 
+			
+		designer = yes
+
+		ker_padstow_model_flying_club = {
+			picture = generic_air_manufacturer_2
+
+			
+			allowed = {
+				original_tag = KER
+			}
+			
+			research_bonus = {
+				air_equipment = 0.10
+			}
+			
+			traits = { fighter_manufacturer_2 }
+						
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+}

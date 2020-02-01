@@ -1,0 +1,20 @@
+﻿units = {	
+	##########################
+	##### NAVY - VANILLA #####
+	##########################
+	
+	fleet = {				
+		name = "People's Navy"			
+		naval_base = 1452
+		task_force = {				
+			name = "Tees Fleet"	
+			location = 1452
+			ship = { name = "Fame" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG version_name = "E/F/G/H Class" } } }			
+			ship = { name = "Firedrake" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG version_name = "E/F/G/H Class" } } }	
+			ship = { name = "Halo" definition = trawler equipment = { trawler_1 = { amount = 1 owner = CIV } } }	
+			ship = { name = "Horizon" definition = trawler equipment = { trawler_1 = { amount = 1 owner = CIV } } }	
+			ship = { name = "Mist" definition = trawler equipment = { trawler_1 = { amount = 1 owner = CIV } } }	
+			ship = { name = "Noontide" definition = trawler equipment = { trawler_1 = { amount = 1 owner = CIV } } }	
+		}
+	}
+}

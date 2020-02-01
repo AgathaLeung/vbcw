@@ -1,0 +1,135 @@
+leader_traits = {
+	
+	hero_of_the_october_revolution = {
+		type = land
+		
+		trait_type = personality_trait
+		
+		modifier = {
+			army_morale_factor = 0.15
+		}
+		
+		new_commander_weight = {
+			factor = 0
+		}
+	}
+	
+	veteran_of_spain = {
+		type = land
+		
+		trait_type = personality_trait
+		
+		modifier = {
+			hills = {
+				movement = 0.05
+				attack = 0.1
+				defence = 0.1
+			}
+			mountain = {
+				movement = 0.05
+				attack = 0.05
+				defence = 0.05
+			}
+			army_org_factor = 0.05
+		}
+		
+		new_commander_weight = {
+			factor = 0
+		}
+	}
+	
+	peoples_soldier = {
+		type = land
+		
+		trait_type = personality_trait
+		
+		modifier = {
+			modifier_army_sub_unit_category_regular_attack_factor = -0.10
+			modifier_army_sub_unit_category_regular_defence_factor = -0.10
+			modifier_army_sub_unit_category_irregular_attack_factor = 0.10
+			modifier_army_sub_unit_category_irregular_defence_factor = 0.10
+		}
+		
+		new_commander_weight = {
+			factor = 0
+		}
+	}
+	
+	huntsman = {
+		type = land
+		
+		trait_type = personality_trait
+		
+		modifier = {
+			modifier_army_sub_unit_category_cavalry_attack_factor = 0.25
+			wounded_chance_factor = 0.5
+		}
+		
+		new_commander_weight = {
+			factor = 0
+		}
+	}
+	
+	auxiliary_constable = {
+		type = land
+		
+		trait_type = personality_trait
+		
+		modifier = {
+			army_org_factor = 0.20
+			army_attack_factor = -0.05
+			army_defence_factor = -0.05
+		}
+		
+		new_commander_weight = {
+			factor = 0
+		}
+	}
+	
+	clan_chief = {
+		type = land
+		
+		trait_type = personality_trait
+		
+		modifier = {
+			hills = {
+				movement = 0.05
+				attack = 0.1
+				defence = 0.1
+			}
+			mountain = {
+				movement = 0.05
+				attack = 0.05
+				defence = 0.05
+			}
+			forest = {
+				movement = 0.05
+				attack = 0.10
+				defence = 0.10
+			}
+		}
+		
+		new_commander_weight = {
+			factor = 0
+		}
+	}
+	
+	unionist_sympathies = { 
+		type = land
+		trait_type = personality_trait
+		gain_xp = {
+			always = no # not gainable
+		}
+		
+		modifier = {
+			
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		new_commander_weight = {
+			factor = 0
+		}
+	}
+}

@@ -1,0 +1,24 @@
+state={
+	id=113
+	name="STATE_113"
+	provinces={
+		1620 1637 1664 
+	}
+	manpower=25000
+	
+	state_category = pastoral
+	
+	history={
+		owner = SCO
+		add_core_of = SCO
+		add_claim_by = ROY
+		add_claim_by = YRK
+		add_claim_by = JAC
+		buildings = {
+			infrastructure = 2
+			1620 = {
+				naval_base = 1
+			}
+		}
+	}
+}

@@ -1,0 +1,42 @@
+﻿units = {	
+	######################
+	##### NAVY - MTG #####
+	######################
+	
+	fleet = {				
+		name = "Lightning Fleet"			
+		naval_base = 327
+		task_force = {				
+			name = "Thames Squadron"	
+			location = 327
+			ship = { name = "HMS Valiant" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = ENG version_name = "Queen Elizabeth Class" } } }
+			ship = { name = "HMS London" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ENG version_name = "County Class" } } }
+			ship = { name = "HMS Curlew" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ENG version_name = "C-Class" } } }
+			ship = { name = "HMS Worcester" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ENG version_name = "V/W Class" } } }
+			ship = { name = "HMS Woolston" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ENG version_name = "V/W Class" } } }
+			ship = { name = "HMS Campbell" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ENG version_name = "V/W Class" } } }
+		}
+		task_force = {				
+			name = "Coastal Squadron"	
+			location = 422
+			ship = { name = "HMS Erebus" definition = monitor equipment = { ship_hull_monitor_1 = { amount = 1 owner = ENG version_name = "Erebus Class" } } }
+			ship = { name = "HMS Terror" definition = monitor equipment = { ship_hull_monitor_1 = { amount = 1 owner = ENG version_name = "Erebus Class" } } }
+			ship = { name = "MGB-13" definition = gunboat equipment = { ship_hull_motorboat_1 = { amount = 1 owner = ENG version_name = "Motor Gun Boat" } } }
+			ship = { name = "MGB-18" definition = gunboat equipment = { ship_hull_motorboat_1 = { amount = 1 owner = ENG version_name = "Motor Gun Boat" } } }
+			ship = { name = "MGB-24" definition = gunboat equipment = { ship_hull_motorboat_1 = { amount = 1 owner = ENG version_name = "Motor Gun Boat" } } }
+			ship = { name = "MGB-26" definition = gunboat equipment = { ship_hull_motorboat_1 = { amount = 1 owner = ENG version_name = "Motor Gun Boat" } } }
+			ship = { name = "MTB-06" definition = torpedo_boat equipment = { ship_hull_motorboat_1 = { amount = 1 owner = ENG version_name = "Motor Torpedo Boat" } } }
+			ship = { name = "MTB-09" definition = torpedo_boat equipment = { ship_hull_motorboat_1 = { amount = 1 owner = ENG version_name = "Motor Torpedo Boat" } } }
+		}
+		task_force = {				
+			name = "Submarine Force"	
+			location = 422
+			ship = { name = "HMS Oberon" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = ENG version_name = "O/P/R Class" } } }
+			ship = { name = "HMS Thames" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = ENG version_name = "O/P/R Class" } } }
+			ship = { name = "HMS Swordfish" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = ENG version_name = "S Class" } } }
+			ship = { name = "HMS Sturgeon" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = ENG version_name = "S Class" } } }
+			ship = { name = "HMS Sterlet" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = ENG version_name = "S Class" } } }
+			ship = { name = "HMS Sunfish" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = ENG version_name = "S Class" } } }
+		}
+	}
+}	

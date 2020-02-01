@@ -1,0 +1,34 @@
+state={
+	id=53
+	name="STATE_53"
+	provinces={
+		1124 1136 1137 1142 1161 1164 1165 1184 1185 1203 1204 1205 1234 1242 1278 2409
+	}
+	manpower=400000
+	
+	resources = {
+		tungsten = 16
+		chromium = 16
+		steel = 8
+	}
+	
+	state_category = town
+	
+	history={
+		owner = ROY
+		add_core_of = ROY
+		add_claim_by = ANG
+		add_claim_by = YRK
+		victory_points = { 1124 20 }
+		victory_points = { 2409 10 }
+		buildings = {
+			infrastructure = 6
+			air_base = 2
+			industrial_complex = 2
+			arms_factory = 1
+			1234 = {
+				naval_base = 2
+			}
+		}
+	}
+}

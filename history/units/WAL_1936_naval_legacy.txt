@@ -1,0 +1,24 @@
+﻿units = {	
+	##########################
+	##### NAVY - VANILLA #####
+	##########################
+	
+	fleet = {				
+		name = "Welsh Fleet"			
+		naval_base = 879
+		task_force = {				
+			name = "Holyhead Squadron"	
+			location = 879
+			ship = { name = "Aurora" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = ENG version_name = "Amphion Class" } } }
+			ship = { name = "Venetia" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }			
+			ship = { name = "Vanessa" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }	
+			ship = { name = "Wessex" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }	
+			ship = { name = "Viscount" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Mallard" definition = sloop equipment = { sloop_1 = { amount = 1 owner = ENG } } }					
+			ship = { name = "Conway Castle" definition = trawler equipment = { trawler_1 = { amount = 1 owner = ENG } } }	
+			ship = { name = "Caernarvon Castle" definition = trawler equipment = { trawler_1 = { amount = 1 owner = ENG } } }	
+			ship = { name = "Cardiff Castle" definition = trawler equipment = { trawler_1 = { amount = 1 owner = ENG } } }	
+			ship = { name = "Caerphilly Castle" definition = trawler equipment = { trawler_1 = { amount = 1 owner = ENG } } }
+		}
+	}
+}

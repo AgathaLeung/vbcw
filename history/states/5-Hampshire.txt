@@ -1,0 +1,46 @@
+state={
+	id=5
+	name="STATE_5"
+	provinces={
+		109 113 121 122 125 128 129 140 157 163 164 186 192 198 214 215 222 2123 2375 2388
+	}
+	manpower=1050000
+	
+	resources = {
+		oil = 16
+		steel = 8
+	}
+	
+	state_category = large_city
+	
+	history={
+		victory_points = { 121 20 }
+		victory_points = { 125 5 }
+		victory_points = { 140 20 }
+		victory_points = { 164 5 }
+		victory_points = { 2388 10 }
+		victory_points = { 215 5 }
+		victory_points = { 2123 10 }
+		victory_points = { 2375 20 }
+		owner = ANG
+		add_core_of = ANG
+		add_claim_by = ROY
+		add_claim_by = YRK
+		buildings = {
+			infrastructure = 6
+			air_base = 3
+			industrial_complex = 1
+			arms_factory = 2
+			dockyard = 4
+			140 = {
+				naval_base = 4
+			}
+			121 = {
+				naval_base = 4
+			}
+			122 = {
+				naval_base = 3
+			}
+		}
+	}
+}

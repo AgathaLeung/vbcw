@@ -1,0 +1,61 @@
+﻿capital = 127
+
+OOB = "IRA_1936"
+
+set_research_slots = 2
+
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_recon = 1
+	tech_support = 1		
+	tech_engineers = 1
+	tech_mountaineers = 1
+	gw_artillery = 1
+	early_fighter = 1
+	early_bomber = 1
+	guerilla_warfare = 1
+}
+
+set_politics = {	
+	ruling_party = autocratic
+	last_election = "1933.3.5"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+    fascist = 0
+    autocratic = 60
+    conservative = 20
+    liberal = 0
+    democratic_socialist = 5
+    communist = 5
+    anarcho_syndicalist = 0
+    civic_nationalist = 10
+}
+
+set_convoys = 50
+
+create_country_leader = {
+	name = "Seamus O'Donovan"
+	desc = "POLITICS_KING_ZOG_DESC"
+	picture = "gfx/leaders/VBCW/IRA/IRA-O'Donovan.dds"
+	expire = "1965.1.1"
+	ideology = conservative_subtype
+	traits = {
+		#
+	}
+}
+
+create_field_marshal = {
+	name = "Paddy O'Paddface"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
+	traits = { }
+	skill = 2
+	attack_skill = 1
+    defense_skill = 3
+    planning_skill = 2
+    logistics_skill = 1
+}
+

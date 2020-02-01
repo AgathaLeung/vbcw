@@ -1,0 +1,140 @@
+default = {
+	#navy = {
+		#male = {
+		#}
+		#female = {
+		#}
+	#}
+	
+	#army = {
+		#male = {
+		#}
+		#female = {
+		#}
+	#}
+	
+	male = {
+		"gfx/leaders/leader_unknown.dds"
+	}
+	female = {
+		"gfx/leaders/leader_unknown.dds"
+	}
+}
+
+continent = {
+	name = europe
+	army = {
+		male = {
+			"gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
+			"gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+			"gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
+			"gfx/leaders/Europe/Portrait_Europe_Generic_land_4.dds"
+			"gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"
+			"gfx/leaders/VBCW/GEN/GEN-Mainwaring.dds"
+			"gfx/leaders/VBCW/GEN/GEN-Spode.dds"
+			"gfx/leaders/VBCW/GEN/GEN-Colonel.dds"
+		}
+	}
+	
+	navy = {
+		male = {
+			"gfx/leaders/Europe/Portrait_Europe_Generic_navy_1.dds"
+			"gfx/leaders/Europe/Portrait_Europe_Generic_navy_2.dds"
+			"gfx/leaders/Europe/Portrait_Europe_Generic_navy_3.dds"
+		}
+	}
+	
+	political = {
+		fascist = {
+				male = { 
+					"gfx/leaders/Europe/portrait_Europe_Generic_land_13.dds"
+			}
+		}
+		autocratic = {
+				male = { 
+					"gfx/leaders/GER/Portrait_Germany_Generic_3.dds" 
+			}
+		}
+		conservative = {
+				male = { 
+					"gfx/leaders/USA/Portrait_USA_Generic_2.dds" 
+			}
+		}
+		liberal = {
+				male = { 
+					"gfx/leaders/ITA/Portrait_Italy_Generic_2.dds" 
+			}
+		}
+		democratic_socialist = {
+				male = { 
+					"gfx/leaders/SOV/Portrait_Soviet_Generic_3.dds" 
+			}
+		}
+		communist = {
+				male = { 
+					"gfx/leaders/Europe/Portrait_Europe_Generic_1.dds" 
+			}
+		}
+		anarcho_syndicalist = {
+				male = { 
+					"gfx/leaders/FRA/Portrait_France_Generic_3.dds" 
+			}
+		}
+		civic_nationalist = {
+				male = { 
+					"gfx/leaders/ENG/Portrait_Great_Britain_Generic_3.dds" 
+			}
+		}
+	}
+}
+
+ROY = {
+	army = {
+		male = {
+			"gfx/leaders/VBCW/ROY/Portrait_Britain_Generic_land_3.dds"
+			"gfx/leaders/VBCW/GEN/GEN-Melchett.dds"
+		}
+	}
+	
+	navy = {
+		male = {
+			"gfx/leaders/ENG/Portrait_Britain_Generic_navy_1.dds"
+			"gfx/leaders/ENG/Portrait_Britain_Generic_navy_2.dds"
+			"gfx/leaders/ENG/Portrait_Britain_Generic_navy_3.dds"
+		}
+	}
+}
+
+YRK = {
+	army = {
+		male = {
+			"gfx/leaders/VBCW/YRK/Portrait_Britain_Generic_land_1.dds"
+			"gfx/leaders/VBCW/YRK/Portrait_Britain_Generic_land_2.dds"
+		}
+	}
+	
+	navy = {
+		male = {
+			"gfx/leaders/ENG/Portrait_Britain_Generic_navy_1.dds"
+			"gfx/leaders/ENG/Portrait_Britain_Generic_navy_2.dds"
+			"gfx/leaders/ENG/Portrait_Britain_Generic_navy_3.dds"
+		}
+	}
+}
+
+ANG = {
+	army = {
+		male = {
+			"gfx/leaders/VBCW/ANG/Portrait_Britain_Generic_land_4.dds"
+			"gfx/leaders/VBCW/ANG/Portrait_Britain_Generic_land_5.dds"
+		}
+	}
+	
+	navy = {
+		male = {
+			"gfx/leaders/ENG/Portrait_Britain_Generic_navy_1.dds"
+			"gfx/leaders/ENG/Portrait_Britain_Generic_navy_2.dds"
+			"gfx/leaders/ENG/Portrait_Britain_Generic_navy_3.dds"
+		}
+	}
+}

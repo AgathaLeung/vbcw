@@ -1,0 +1,20 @@
+﻿units = {	
+	##########################
+	##### NAVY - VANILLA #####
+	##########################
+	
+	fleet = {				
+		name = "Liverpool Fleet"			
+		naval_base = 953
+		task_force = {				
+			name = "Mersey Squadron"	
+			location = 953
+			ship = { name = "Hardy" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = ENG } } }
+			ship = { name = "Inglefield" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = ENG } } }
+			ship = { name = "Valentine" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Cornelian" definition = trawler equipment = { trawler_1 = { amount = 1 owner = CIV } } }	
+			ship = { name = "Pearl" definition = trawler equipment = { trawler_1 = { amount = 1 owner = CIV } } }	
+			ship = { name = "Ruby" definition = trawler equipment = { trawler_1 = { amount = 1 owner = CIV } } }		
+		}
+	}
+}

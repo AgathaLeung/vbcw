@@ -1,0 +1,56 @@
+﻿units = {	
+	##########################
+	##### NAVY - VANILLA #####
+	##########################
+	
+	fleet = {				
+		name = "Anglican Fleet"			
+		naval_base = 122
+		task_force = {				
+			name = "Portsmouth Squadron"
+			location = 122 # Portsmouth	
+			ship = { name = "Argus" definition = light_carrier equipment = { light_carrier_1 = { amount = 1 owner = ENG } } 
+				air_wings = {
+					cv_fighter_equipment_0 =  { owner = "ANG" amount = 12 }
+					cv_nav_bomber_equipment_1 =  { owner = "ANG" amount = 6 }
+				}
+			}	
+			ship = { name = "Hermes" definition = light_carrier equipment = { light_carrier_2 = { amount = 1 owner = ENG } } 
+				air_wings = {
+					cv_fighter_equipment_0 =  { owner = "ANG" amount = 16 }
+					cv_nav_bomber_equipment_1 =  { owner = "ANG" amount = 8 }
+				}
+			}		
+			ship = { name = "Resolution" definition = battleship equipment = { battleship_1 = { amount = 1 owner = ENG } } }				
+			ship = { name = "Revenge" definition = battleship equipment = { battleship_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Hawkins" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Frobisher" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Acasta" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG version_name = "A/B/C/D Class" } } }
+			ship = { name = "Antelope" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG version_name = "A/B/C/D Class" } } }
+			ship = { name = "Ardent" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG version_name = "A/B/C/D Class" } } }
+			ship = { name = "Acheron" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG version_name = "A/B/C/D Class" } } }
+			ship = { name = "Versatile" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Vimy" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+		 	ship = { name = "Rosemary" definition = sloop equipment = { sloop_1 = { amount = 1 owner = ENG } } }
+		 	ship = { name = "Lupin" definition = sloop equipment = { sloop_1 = { amount = 1 owner = ENG } } }
+		 	ship = { name = "Foxglove" definition = sloop equipment = { sloop_1 = { amount = 1 owner = ENG } } }
+		}
+	
+	
+		task_force = {				
+			name = "Dover Squadron"	
+			location = 201 # Dover		
+			ship = { name = "Cairo" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = ENG } } }	
+			ship = { name = "Caradoc" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Ceres" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Blanche" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG version_name = "A/B/C/D Class" } } }
+			ship = { name = "Brazen" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG version_name = "A/B/C/D Class" } } }
+			ship = { name = "Brilliant" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG version_name = "A/B/C/D Class" } } }
+			ship = { name = "Boadicea" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG version_name = "A/B/C/D Class" } } }
+			ship = { name = "Hussar" definition = sloop equipment = { sloop_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Niger" definition = sloop equipment = { sloop_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Salamander" definition = sloop equipment = { sloop_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Harrier" definition = sloop equipment = { sloop_1 = { amount = 1 owner = ENG } } }
+		}
+	}
+}

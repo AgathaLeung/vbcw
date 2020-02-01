@@ -1,0 +1,37 @@
+spriteTypes = {
+###################################################
+# Ship hulls
+###################################################
+	spriteType = {
+		name = "GFX_SD_tv_carrier_conversion"
+		textureFile = "gfx/interface/equipmentdesigner/naval/topviews/topview_carrier_conversion.dds"
+	}
+	spriteType = {
+		name = "GFX_SD_tv_light_carrier_conversion"
+		textureFile = "gfx/interface/equipmentdesigner/naval/topviews/topview_light_carrier_conversion.dds"
+	}
+	spriteType = {
+		name = "GFX_SD_tv_light_carrier"
+		textureFile = "gfx/interface/equipmentdesigner/naval/topviews/topview_light_carrier.dds"
+	}
+	spriteType = {
+		name = "GFX_SD_tv_monitor"
+		textureFile = "gfx/interface/equipmentdesigner/naval/topviews/topview_monitor.dds"
+	}
+	spriteType = {
+		name = "GFX_SD_tv_sloop"
+		textureFile = "gfx/interface/equipmentdesigner/naval/topviews/topview_sloop.dds"
+	}
+	spriteType = {
+		name = "GFX_SD_tv_corvette"
+		textureFile = "gfx/interface/equipmentdesigner/naval/topviews/topview_corvette.dds"
+	}
+	spriteType = {
+		name = "GFX_SD_tv_trawler"
+		textureFile = "gfx/interface/equipmentdesigner/naval/topviews/topview_trawler.dds"
+	}
+	spriteType = {
+		name = "GFX_SD_tv_motorboat"
+		textureFile = "gfx/interface/equipmentdesigner/naval/topviews/topview_motorboat.dds"
+	}
+}

@@ -1,0 +1,40 @@
+desperate_measures = {
+	blow_vyrnwy_damn = {
+
+		icon = generic_ignite_civil_war
+
+        allowed = {
+            always = yes
+        }
+
+        cost = 500
+        fire_only_once = yes
+
+        available = {
+			owns_state = 63
+			controls_state = 63
+            has_war_with = LIV
+        }
+
+        visible = {
+			owns_state = 63
+			controls_state = 63
+            has_war_with = LIV
+			NOT = { has_global_flag = vyrnwy_dam_blown_flag }
+		}
+
+        complete_effect = {
+			sound_effect = "boom"
+			set_global_flag = vyrnwy_dam_blown_flag
+			add_war_support = -0.05
+			add_stability = -0.05
+			LIV = {				
+				add_war_support = -0.2
+				add_stability = -0.2
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+    }
+}

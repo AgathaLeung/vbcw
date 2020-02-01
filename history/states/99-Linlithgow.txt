@@ -1,0 +1,30 @@
+state={
+	id=99
+	name="STATE_99"
+	provinces={
+		1686 1709 1724 1730 
+	}
+	manpower=150000
+	
+	resources = {
+		oil = 8
+		steel = 8
+		tungsten = 4
+	}
+	
+	state_category = town
+	
+	history={
+		owner = SCO
+		add_core_of = SCO
+		add_claim_by = ROY
+		add_claim_by = YRK
+		add_claim_by = JAC
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+			arms_factory = 1
+		}
+	}
+}
+

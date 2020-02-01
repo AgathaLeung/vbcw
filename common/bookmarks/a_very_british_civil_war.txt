@@ -1,0 +1,137 @@
+bookmarks = {
+	bookmark = {
+		name = "VBCW_NAME"
+		desc = "VBCW_DESC"
+		date = 1937.12.24.12
+		picture = "GFX_select_date_1936"
+		default_country = "ROY"
+		default = yes
+		
+		"ROY"={
+			history = "ROY_VBCW_DESC"
+			ideology = conservative
+			ideas = {
+				ROY_cavalry_elan
+			}
+		}
+		"BUF"={
+			history = "BUF_VBCW_DESC"
+			ideology = fascist
+			ideas = {
+				BUF_auxiliary_constabularies
+			}
+		}
+		"ANG"={
+			history = "ANG_VBCW_DESC"
+			ideology = conservative
+			ideas = {
+				ANG_jam_and_jerusalem
+			}
+		}
+		"YRK"={
+			history = "YRK_VBCW_DESC"
+			ideology = conservative
+			ideas = {
+				YRK_peoples_prince
+			}
+		}
+		"SCO"={
+			history = "SCO_VBCW_DESC"
+			ideology = civic_nationalist
+			ideas = {
+				SCO_renaissance
+				SCO_unionist_officers
+			}
+		}
+		"SOM"={
+			history = "SOM_VBCW_DESC"
+			ideology = democratic_socialist	
+			ideas = {
+				SOM_strike_up_the_band
+				SOM_foundries_and_forges
+			}		
+		}		
+		"JAC"={
+			history = "JAC_VBCW_DESC"
+			ideology = autocratic
+			ideas = {
+				JAC_highlanders
+			}
+		}
+		"---"={
+			history = "OTHER_VBCW_DESC"
+		}
+
+
+
+		# minors ####
+		"IRL"={
+			minor = yes
+			history = "IRL_VBCW_DESC"
+			ideology = conservative	
+			ideas = {
+				IRL_limited_intervention
+			}
+		}
+		"WAL"={
+			minor = yes
+			history = "WAL_VBCW_DESC"
+			ideology = civic_nationalist
+		}	
+		"KER"={
+			minor = yes
+			history = "KER_VBCW_DESC"
+			ideology = civic_nationalist
+			ideas = {
+				KER_kernow_bys_vykken
+			}
+		}
+		"LIV"={
+			minor = yes
+			history = "LIV_VBCW_DESC"
+			ideology = democratic_socialist
+			ideas = {
+				LIV_city_under_siege
+			}
+		}
+		"SOG"={
+			minor = yes
+			history = "SOG_VBCW_DESC"
+			ideology = communist
+		}
+		"SOD"={
+			minor = yes
+			history = "SOD_VBCW_DESC"
+			ideology = democratic_socialist
+			ideas = {
+				SOD_miners_militia
+				SOM_strike_up_the_band
+			}
+		}
+		"SOC"={
+			minor = yes
+			history = "SOC_VBCW_DESC"
+			ideology = democratic_socialist
+		}
+		"SOH"={
+			minor = yes
+			history = "SOH_VBCW_DESC"
+			ideology = democratic_socialist
+		}
+		"SON"={
+			minor = yes
+			history = "SON_VBCW_DESC"
+			ideology = democratic_socialist
+		}	
+		"MNX"={
+			minor = yes
+			history = "MNX_VBCW_DESC"
+			ideology = fascist
+		}
+
+		effect = {
+			randomize_weather = 22345 # <- Obligatory in every bookmark !
+			#123 = { rain_light = yes }
+		}
+	}
+}

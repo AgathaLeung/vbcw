@@ -1,0 +1,39 @@
+
+state={
+	id=86
+	name="STATE_86"
+	resources={
+		steel=8.000
+		tungsten=12.000
+	}
+
+	history={
+		owner = MNX
+		add_core_of = MNX
+		add_claim_by = ROY
+		add_claim_by = YRK
+		victory_points = {
+			1277 25 
+		}
+		buildings = {
+			infrastructure = 4
+			air_base = 2
+			industrial_complex = 1
+			arms_factory = 1
+			dockyard = 1
+			1277 = {
+				naval_base = 2
+
+			}
+
+		}
+
+	}
+
+	provinces={
+		1254 1277 1292 1296 2142 2143
+	}
+	manpower=65000
+	buildings_max_level_factor=1.000
+	state_category=town
+}

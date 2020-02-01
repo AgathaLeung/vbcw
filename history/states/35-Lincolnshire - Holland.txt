@@ -1,0 +1,26 @@
+state={
+	id=35
+	name="STATE_35"
+	provinces={
+		720 725 760 769 809 813 844 854 865 871 
+	}
+	manpower=150000
+	
+	state_category = rural
+	
+	history={
+		owner = ANG
+		add_core_of = ANG
+		add_claim_by = YRK
+		add_claim_by = ROY
+		victory_points = { 854 10 }
+		buildings = {
+			infrastructure = 4
+			air_base = 1
+			dockyard = 1
+			871 = {
+				naval_base = 2
+			}
+		}
+	}
+}

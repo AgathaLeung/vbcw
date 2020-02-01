@@ -1,0 +1,18 @@
+state={
+	id=154
+	name="STATE_154"
+	provinces={
+		778 838 862 878 891 943 944 946 
+	}
+	manpower=50000
+	
+	state_category = rural
+	
+	history={
+		owner = IRL
+		add_core_of = IRL
+		buildings = {
+			infrastructure = 4
+		}
+	}
+}

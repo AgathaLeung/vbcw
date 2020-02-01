@@ -1,0 +1,41 @@
+state={
+	id=3
+	name="STATE_3"
+	provinces={
+		120 124 142 155 166 167 175 181 184 188 190 191 203 225 226 227 232 260 2385
+	}
+	manpower=550000
+	
+	resources = {
+		steel = 24
+		tungsten = 16
+		chromium = 12
+	}
+	
+	state_category = large_town
+	
+	history={
+		victory_points = { 142 5 }
+		victory_points = { 155 5 }
+		victory_points = { 175 5 }
+		victory_points = { 2385 10 }
+		victory_points = { 260 20 }
+		victory_points = { 226 10 }
+		owner = ANG
+		add_core_of = ANG
+		add_claim_by = YRK
+		add_claim_by = ROY
+		buildings = {
+			infrastructure = 4
+			air_base = 1
+			industrial_complex = 1
+			arms_factory = 2
+			191	 = {
+				naval_base = 2
+			}
+			260 = {
+				naval_base = 3
+			}
+		}
+	}
+}

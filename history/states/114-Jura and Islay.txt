@@ -1,0 +1,32 @@
+state={
+	id=114
+	name="STATE_114"
+	provinces={
+		1644 1661 1677 1684 1731 1744 1749 
+	}
+	manpower=25000
+	
+	resources = {
+		tungsten = 8
+	}
+	
+	state_category = pastoral
+	
+	history={
+		owner = SCO
+		add_core_of = SCO
+		add_claim_by = ROY
+		add_claim_by = YRK
+		add_claim_by = JAC
+		buildings = {
+			infrastructure = 2
+			air_base = 1
+			1744 = {
+				naval_base = 1
+			}
+			1677 = {
+				naval_base = 1
+			}
+		}
+	}
+}

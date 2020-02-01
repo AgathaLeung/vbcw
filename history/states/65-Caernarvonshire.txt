@@ -1,0 +1,36 @@
+state={
+	id=65
+	name="STATE_65"
+	provinces={
+		721 773 786 819 831 835 873 879 902 913 
+	}
+	manpower=150000
+	
+	resources = {
+		steel = 8
+		tungsten = 16
+	}
+	
+	state_category = town
+	
+	history={
+		add_extra_state_shared_building_slots = 2
+		owner = WAL
+		add_core_of = WAL
+		add_claim_by = ROY
+		add_claim_by = YRK
+		victory_points = { 773 5 }
+		victory_points = { 873 10 }
+		victory_points = { 902 10 }
+		victory_points = { 913 5 }
+		buildings = {
+			infrastructure = 6
+			air_base = 1
+			industrial_complex = 2
+			arms_factory = 1
+			879 = {
+				naval_base = 2
+			}
+		}
+	}
+}

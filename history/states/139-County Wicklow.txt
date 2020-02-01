@@ -1,0 +1,22 @@
+state={
+	id=139
+	name="STATE_139"
+	provinces={
+		687 718 729 751 790 811 830 846 870 
+	}
+	manpower=50000
+	
+	resources = {
+		tungsten = 4
+	}
+	
+	state_category = rural
+	
+	history={
+		owner = IRL
+		add_core_of = IRL
+		buildings = {
+			infrastructure = 4
+		}
+	}
+}

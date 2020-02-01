@@ -1,0 +1,217 @@
+ideas = {
+
+	country = {
+		ANG_jam_and_jerusalem = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_goods_red_bonus
+			
+			modifier = {
+				out_of_supply_factor = -0.25
+				army_speed_factor = -0.1
+			}
+		}
+	}	
+	
+	materiel_manufacturer = {
+			
+		designer = yes
+		
+		ANG_greener = {
+			
+			allowed = {
+				original_TAG = ANG
+			}
+			
+			research_bonus = {
+				infantry_weapons = 0.10
+			}
+			
+			traits = { infantry_equipment_manufacturer_3 }
+			
+			modifier = {
+			}
+		}
+		
+		ANG_bmarc = {
+			
+			allowed = {
+				original_TAG = ANG
+			}
+			
+			research_bonus = {
+				artillery = 0.10
+			}
+			
+			traits = { artillery_manufacturer_1 }
+			
+			modifier = {
+			}
+		}
+	}	
+	
+	tank_manufacturer = {
+			
+		designer = yes
+		
+		ANG_dennis = {
+		
+			picture = designer_dennis
+			
+			allowed = {
+				original_TAG = ANG
+			}
+			
+			research_bonus = {
+				motorized_equipment = 0.10
+			}
+			
+			traits = { motorised_manufacturer_2 }
+			
+			modifier = {
+			}
+		}
+		
+		ANG_crossley = {
+		
+			picture = designer_crossley
+			
+			allowed = {
+				original_TAG = ANG
+			}
+			
+			research_bonus = {
+				armor = 0.10
+			}
+			
+			traits = { tank_manufacturer_1 }
+			
+			modifier = {
+				army_armor_speed_factor = 0.05
+			}
+		}
+	}
+	
+	naval_manufacturer = {
+		
+		designer = yes
+		
+		ANG_vosper = {
+		
+			picture = designer_vosper
+			
+			allowed = {
+				original_TAG = ANG
+			}
+			
+			research_bonus = {
+				naval_equipment = 0.10
+			}
+			
+			traits = { small_vessel_manufacturer_3 }
+
+		}
+		
+		ANG_dover_dockyard = {
+					
+			allowed = {
+				original_TAG = ANG
+			}
+			
+			research_bonus = {
+				naval_equipment = 0.10
+			}
+			
+			traits = { large_vessel_manufacturer_2 }
+		}
+	}
+	
+	aircraft_manufacturer = {
+			
+		designer = yes
+		
+		ANG_gloster = {
+		
+			picture = designer_gloster
+			
+			allowed = {
+				original_TAG = ANG
+			}
+			
+			research_bonus = {
+				air_equipment = 0.10
+			}
+			
+			traits = { fighter_manufacturer_1 }
+			
+			modifier = {
+				air_accidents_factor = -0.10
+			}
+		}
+		
+		ANG_bristol = {
+		
+			picture = designer_bristol
+			
+			allowed = {
+				original_TAG = ANG
+			}
+			
+			research_bonus = {
+				air_equipment = 0.10
+			}
+			
+			traits = { bomber_manufacturer_2 }
+			
+			modifier = {
+			}
+		}			
+	}
+	
+	industrial_concern = {
+		
+		ANG_english_electric = {
+		
+			picture = english_electric
+			
+			allowed = {
+				original_TAG = ANG
+			}
+			
+			research_bonus = {
+				electronics = 0.10
+			}
+			
+			traits = { electronics_concern_1 }
+			
+			modifier = {
+			}
+		}	
+		
+		ANG_crystalate = {
+			
+			allowed = {
+				original_TAG = ANG
+			}
+			
+			research_bonus = {
+				electronics = 0.05
+				synth_resources = 0.05
+			}
+			
+			traits = { industrial_concern_3 }
+			
+			modifier = {
+			}
+		}	
+	}
+}

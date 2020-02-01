@@ -1,0 +1,32 @@
+state={
+	id=26
+	name="STATE_26"
+	provinces={
+		303 391 408 411 412 422 431 432 449 457 
+	}
+	manpower=500000
+	
+	state_category = large_town
+	
+	history={
+		victory_points = { 303 10 }
+		victory_points = { 391 5 }
+		victory_points = { 457 5 }
+		victory_points = { 422 5 }
+		owner = BUF
+		add_core_of = BUF
+		add_claim_by = YRK
+		add_claim_by = ANG
+		add_claim_by = ROY
+		buildings = {
+			infrastructure = 6
+			air_base = 2
+			industrial_complex = 1
+			arms_factory = 1
+			dockyard = 2
+			422 = {
+				naval_base = 2
+			}                    
+		}
+	}
+}

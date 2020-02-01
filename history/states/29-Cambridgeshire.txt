@@ -1,0 +1,24 @@
+state={
+	id=29
+	name="STATE_29"
+	provinces={
+		472 500 543 550 557 577 
+	}
+	manpower=250000
+	
+	state_category = town
+	
+	history={
+		owner = ANG
+		add_core_of = ANG
+		add_claim_by = YRK
+		add_claim_by = ROY
+		victory_points = { 543 20 }
+		buildings = {
+			infrastructure = 6
+			air_base = 4
+			industrial_complex = 2
+			arms_factory = 1
+		}
+	}
+}

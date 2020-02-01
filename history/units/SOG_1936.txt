@@ -1,0 +1,518 @@
+﻿division_template = {
+	name = "General Workers' Regiment"			
+	division_names_group = SOG_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+        infantry = { x = 0 y = 3 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+        infantry = { x = 1 y = 3 }
+	}
+	support = {
+       	engineer = { x = 0 y = 0 }
+       	artillery = { x = 0 y = 1 }
+	}
+}
+
+division_template = {
+	name = "Workers' Mounted Regiment"
+	division_names_group = SOG_CAV_01
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 1 y = 2 }
+	}
+	support = {
+        recon = { x = 0 y = 0 }
+	}
+}
+
+division_template = {
+	name = "Flying Column"			
+	division_names_group = SOG_MOT_01
+
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		armoured_car = { x = 2 y = 0 }
+		armoured_car = { x = 2 y = 1 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+	}
+}
+
+division_template = {
+	name = "People's Militia"
+	division_names_group = SOG_GAR_01
+	
+	regiments = {
+		militia = { x = 0 y = 0 }
+		militia = { x = 0 y = 1 }
+		militia = { x = 0 y = 2 }
+		militia = { x = 1 y = 0 }
+		militia = { x = 1 y = 1 }
+		militia = { x = 1 y = 2 }
+	}
+	priority = 0
+}
+
+division_template = {
+	name = "Mounted People's Militia"
+	division_names_group = SOG_YEO_01
+
+	regiments = {
+		yeomanry = { x = 0 y = 0 }
+		yeomanry = { x = 0 y = 1 }
+		yeomanry = { x = 0 y = 2 }
+		yeomanry = { x = 1 y = 0 }
+		yeomanry = { x = 1 y = 1 }
+		yeomanry = { x = 1 y = 2 }
+	}
+	priority = 0
+}
+
+units = {
+##REGULARS##
+
+	division= {
+		name = "1st Glasgow General Workers’ Union"
+		location = 1701
+		division_template = "General Workers' Regiment"
+		start_experience_factor = 0.1
+		force_equipment_variants = { infantry_equipment_1 = { owner = "ENG" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "ENG" } }
+	}
+
+	division= {	
+		name = "I Clyde Shipbuilders’ Militia"
+		location = 2423
+		division_template = "General Workers' Regiment"
+		start_experience_factor = 0.1
+		force_equipment_variants = { infantry_equipment_1 = { owner = "ENG" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "ENG" } }
+	}
+
+	division= {	
+		name = "1st Clyde Dockers’ Brigade"
+		location = 1719
+		division_template = "General Workers' Regiment"
+		start_experience_factor = 0.1
+		force_equipment_variants = { infantry_equipment_1 = { owner = "ENG" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "ENG" } }
+	}
+
+	division= {	
+		name =  "Paisley General Workers’ Regiment" 
+		location = 1673
+		division_template = "General Workers' Regiment"
+		start_experience_factor = 0.1
+		force_equipment_variants = { infantry_equipment_1 = { owner = "ENG" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "ENG" } }
+	}
+	
+##MILITIA##
+
+	division= {	
+		name = "II Clyde Shipbuilders’ Militia"
+		location = 1722
+		division_template = "People's Militia"
+		start_experience_factor = 0.0
+		start_equipment_factor = 0.89
+		force_equipment_variants = { infantry_equipment_0 = { owner = "CIV" } }
+	}
+
+	division= {	
+		name = "III Clyde Shipbuilders’ Militia"
+		location = 1704
+		division_template = "People's Militia"
+		start_experience_factor = 0.0
+		start_equipment_factor = 0.92
+		force_equipment_variants = { infantry_equipment_0 = { owner = "CIV" } }
+	}
+
+	division= {	
+		name = "IV Clyde Shipbuilders’ Militia"
+		location = 1738
+		division_template = "People's Militia"
+		start_experience_factor = 0.0
+		start_equipment_factor = 0.90
+		force_equipment_variants = { infantry_equipment_0 = { owner = "CIV" } }
+	}
+
+	division= {	
+		name = "V Clyde Shipbuilders’ Militia"
+		location = 1700
+		division_template = "People's Militia"
+		start_experience_factor = 0.0
+		start_equipment_factor = 0.95
+		force_equipment_variants = { infantry_equipment_0 = { owner = "CIV" } }
+	}
+
+	division= {	
+		name = "VI Clyde Shipbuilders’ Militia"
+		location = 1659
+		division_template = "People's Militia"
+		start_experience_factor = 0.0
+		start_equipment_factor = 0.92
+		force_equipment_variants = { infantry_equipment_0 = { owner = "CIV" } }
+	}
+
+	division= {	
+		name = "2nd Clyde Dockers’ Brigade"
+		location = 1710
+		division_template = "People's Militia"
+		start_experience_factor = 0.0
+		start_equipment_factor = 0.89
+		force_equipment_variants = { infantry_equipment_0 = { owner = "CIV" } }
+	}
+
+	division= {	
+		name = "3rd Clyde Dockers’ Brigade"
+		location = 1751
+		division_template = "People's Militia"
+		start_experience_factor = 0.0
+		start_equipment_factor = 0.92
+		force_equipment_variants = { infantry_equipment_0 = { owner = "CIV" } }
+	}
+
+	division= {	
+		name = "4th Clyde Dockers’ Brigade"
+		location = 1753
+		division_template = "People's Militia"
+		start_experience_factor = 0.0
+		start_equipment_factor = 0.90
+		force_equipment_variants = { infantry_equipment_0 = { owner = "CIV" } }
+	}
+
+	division= {	
+		name = "5th Clyde Dockers’ Brigade"
+		location = 1704
+		division_template = "People's Militia"
+		start_experience_factor = 0.0
+		start_equipment_factor = 0.95
+		force_equipment_variants = { infantry_equipment_0 = { owner = "CIV" } }
+	}
+
+	division= {	
+		name = "1st Clyde Sailors’ Soviet"
+		location = 1719
+		division_template = "People's Militia"
+		start_experience_factor = 0.1
+		force_equipment_variants = { infantry_equipment_0 = { owner = "CIV" } }
+	}
+
+	division= {	
+		name = "2nd Clyde Sailors’ Soviet"
+		location = 1719
+		division_template = "People's Militia"
+		start_experience_factor = 0.0
+		start_equipment_factor = 0.97
+		force_equipment_variants = { infantry_equipment_0 = { owner = "CIV" } }
+	}
+
+	division= {	
+		name = "3rd Clyde Sailors’ Soviet"
+		location = 1727
+		division_template = "People's Militia"
+		start_experience_factor = 0.0
+		start_equipment_factor = 0.90
+		force_equipment_variants = { infantry_equipment_0 = { owner = "CIV" } }
+	}
+
+	division= {	
+		name = "2nd Glasgow General Workers’ Union"
+		location = 1685
+		division_template = "People's Militia"
+		start_experience_factor = 0.0
+		start_equipment_factor = 0.89
+		force_equipment_variants = { infantry_equipment_0 = { owner = "CIV" } }
+	}
+
+	division= {	
+		name = "3rd Glasgow General Workers’ Union"
+		location = 1685
+		division_template = "People's Militia"
+		start_experience_factor = 0.0
+		start_equipment_factor = 0.92
+		force_equipment_variants = { infantry_equipment_0 = { owner = "CIV" } }
+	}
+
+	division= {	
+		name = "4th Glasgow General Workers’ Union"
+		location = 1723
+		division_template = "People's Militia"
+		start_experience_factor = 0.0
+		start_equipment_factor = 0.90
+		force_equipment_variants = { infantry_equipment_0 = { owner = "CIV" } }
+	}
+
+	division= {	
+		name = "5th Glasgow General Workers’ Union"
+		location = 1698
+		division_template = "People's Militia"
+		start_experience_factor = 0.0
+		start_equipment_factor = 0.95
+		force_equipment_variants = { infantry_equipment_0 = { owner = "CIV" } }
+	}
+
+	division= {	
+		name = "6th Glasgow General Workers’ Union"
+		location = 1701
+		division_template = "People's Militia"
+		start_experience_factor = 0.0
+		start_equipment_factor = 0.92
+		force_equipment_variants = { infantry_equipment_0 = { owner = "CIV" } }
+	}
+
+	division= {	
+		name = "7th Glasgow General Workers’ Union"
+		location = 1700
+		division_template = "People's Militia"
+		start_experience_factor = 0.0
+		start_equipment_factor = 0.85
+		force_equipment_variants = { infantry_equipment_0 = { owner = "CIV" } }
+	}
+
+	division= {	
+		name = "8th Glasgow General Workers’ Union"
+		location = 1701
+		division_template = "People's Militia"
+		start_experience_factor = 0.0
+		start_equipment_factor = 0.83
+		force_equipment_variants = { infantry_equipment_0 = { owner = "CIV" } }
+	}
+
+	division= {	
+		name = "Glasgow Women's Brigade"
+		location = 1701
+		division_template = "People's Militia"
+		start_experience_factor = 0.0
+		force_equipment_variants = { infantry_equipment_0 = { owner = "CIV" } }
+	}
+
+	division= {	
+		name = "Dumbarton Local Militia"
+		location = 2128
+		division_template = "People's Militia"
+		start_experience_factor = 0.0
+		start_equipment_factor = 0.91
+		force_equipment_variants = { infantry_equipment_0 = { owner = "CIV" } }
+	}
+
+	division= {	
+		name = "Stirling General Workers’ Militia"
+		location = 1754
+		division_template = "People's Militia"
+		start_experience_factor = 0.0
+		start_equipment_factor = 0.89
+		force_equipment_variants = { infantry_equipment_0 = { owner = "CIV" } }
+	}
+
+	division= {	
+		name = "Falkirk Metalworkers’ Brigade"
+		location = 1739
+		division_template = "People's Militia"
+		start_experience_factor = 0.0
+		start_equipment_factor = 0.87
+		force_equipment_variants = { infantry_equipment_0 = { owner = "CIV" } }
+	}
+
+	division= {	
+		name = "1st Paisley Textile Workers’ Soviet"
+		location = 1688
+		division_template = "People's Militia"
+		start_experience_factor = 0.0
+		start_equipment_factor = 0.91
+		force_equipment_variants = { infantry_equipment_0 = { owner = "CIV" } }
+	}
+
+	division= {	
+		name = "2nd Paisley Textile Workers’ Soviet"
+		location = 1659
+		division_template = "People's Militia"
+		start_experience_factor = 0.0
+		start_equipment_factor = 0.92
+		force_equipment_variants = { infantry_equipment_0 = { owner = "CIV" } }
+	}
+
+	division= {	
+		name = "Paisley Shipbuilders’ Brigade"
+		location = 1681
+		division_template = "People's Militia"
+		start_experience_factor = 0.0
+		start_equipment_factor = 0.92
+		force_equipment_variants = { infantry_equipment_0 = { owner = "CIV" } }
+	}
+
+	division= {	
+		name = "Motherwell Brigade"
+		location = 1674
+		division_template = "People's Militia"
+		start_experience_factor = 0.0
+		start_equipment_factor = 0.92
+		force_equipment_variants = { infantry_equipment_0 = { owner = "CIV" } }
+	}
+	
+##MOBILE FORCES##
+
+
+	division= {	
+		name = "1st Glasgow Transport Workers’ Regiment"
+		location = 1701
+		division_template = "Flying Column"
+		start_experience_factor = 0.1
+		force_equipment_variants = { motorized_equipment_1 = { owner = "CIV" } }
+		force_equipment_variants = { early_armoured_car_equipment = { owner = "CIV" } }
+		force_equipment_variants = { infantry_equipment_0 = { owner = "CIV" } }
+	}
+	
+	division= {	
+		name = "2nd Glasgow Transport Workers’ Regiment"
+		location = 1701
+		division_template = "Flying Column"
+		start_experience_factor = 0.0
+		force_equipment_variants = { motorized_equipment_1 = { owner = "CIV" } }
+		force_equipment_variants = { early_armoured_car_equipment = { owner = "CIV" } }
+		force_equipment_variants = { infantry_equipment_0 = { owner = "CIV" } }
+	}
+	
+	division= {	
+		name = "Falkirk Transport and General Workers’ Union"
+		location = 1739
+		division_template = "Flying Column"
+		start_experience_factor = 0.0
+		force_equipment_variants = { motorized_equipment_1 = { owner = "CIV" } }
+		force_equipment_variants = { early_armoured_car_equipment = { owner = "CIV" } }
+		force_equipment_variants = { infantry_equipment_0 = { owner = "CIV" } }
+	}	
+	
+	################
+	##### NAVY #####
+	################
+	
+#	navy = {				
+#		name = "Clyde Fleet"			
+#		base = 1719
+#		location = 1719
+#		ship = { name = "Liverpool" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = ENG } } }
+#		ship = { name = "Sturdy" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+#		ship = { name = "Vega" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+#		ship = { name = "Westminster" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+#		ship = { name = "Montrose" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+#	}
+#	
+#	navy = {				
+#		name = "Clyde Escort Fleet"			
+#		base = 1740
+#		location = 1740
+#		ship = { name = "Kittiwake" definition = sloop equipment = { sloop_2 = { amount = 1 owner = ENG } } }	
+#		ship = { name = "Puffin" definition = sloop equipment = { sloop_2 = { amount = 1 owner = ENG } } }	
+#		ship = { name = "Pearl" definition = trawler equipment = { trawler_2 = { amount = 1 owner = ENG } } }	
+#		ship = { name = "Ruby" definition = trawler equipment = { trawler_2 = { amount = 1 owner = ENG } } }		
+#		ship = { name = "Magnolia" definition = trawler equipment = { trawler_1 = { amount = 1 owner = ENG } } }	
+#		ship = { name = "Sycamore" definition = trawler equipment = { trawler_1 = { amount = 1 owner = ENG } } }
+#	}
+}	
+
+
+	#####################
+	##### AIR FORCE #####
+	#####################
+	
+air_wings = {
+
+	102 = { 
+		CAS_equipment_1 = {
+			owner = "SOG" 
+			amount = 8
+		}
+	}	
+	102 = { 
+		fighter_equipment_0 = {
+			owner = "SOG" 
+			amount = 8
+		}
+	}
+}
+
+	#########################
+	## STARTING PRODUCTION ##
+	#########################
+instant_effect = {	
+
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "SOG"
+		}
+		requested_factories = 2
+		progress = 0.8
+		efficiency = 62
+	}
+	
+	add_equipment_to_stockpile = {
+		type = infantry_equipment_0
+		amount = 240
+		producer = CIV
+	}
+	
+	add_equipment_to_stockpile = {
+		type = infantry_equipment_0
+		amount = 720
+		producer = SOV
+	}
+	
+	add_equipment_to_stockpile = {
+		type = infantry_equipment_0
+		amount = 650
+		producer = ENG
+	}
+	
+	add_equipment_to_stockpile = {
+		type = infantry_equipment_1
+		amount = 400
+		producer = ENG
+	}
+	
+	add_equipment_to_stockpile = {
+		type = motorized_equipment_1
+		amount = 75
+		producer = CIV
+	}
+	
+	add_equipment_to_stockpile = {
+		type = mortar_equipment_1
+		amount = 6
+		producer = ENG
+	}
+	
+	add_equipment_to_stockpile = {
+		type = MG_equipment_1
+		amount = 8
+		producer = ENG
+	}
+	
+	add_equipment_to_stockpile = {
+		type = mechanized_equipment_1
+		amount = 15
+		producer = ENG
+	}
+	
+	add_equipment_to_stockpile = {
+		type = artillery_equipment_1
+		amount = 12
+		producer = ENG
+	}
+}
+	#####################

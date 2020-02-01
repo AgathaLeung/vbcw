@@ -1,0 +1,34 @@
+state={
+	id=138
+	name="STATE_138"
+	provinces={
+		905 918 950 962 978 1020 1027 
+	}
+	manpower=600000
+	
+	Id = 138
+	resources = {
+		oil = 8
+		aluminium = 4
+		steel = 16
+		tungsten = 4
+	}
+	
+	state_category = city
+		
+	history={
+		owner = IRL
+		victory_points = { 950 25 }
+		buildings = {
+			infrastructure = 6
+			air_base = 2
+			industrial_complex = 2
+			arms_factory = 2
+			dockyard = 2
+			950 = {
+				naval_base = 4
+			}
+		}
+		add_core_of = IRL
+	}
+}

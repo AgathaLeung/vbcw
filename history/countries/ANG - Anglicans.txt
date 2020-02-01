@@ -1,0 +1,250 @@
+﻿capital = 10
+
+OOB = "ANG_1936"
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_naval_oob = "ANG_1936_naval_mtg"
+	else = {
+		set_naval_oob = "ANG_1936_naval_legacy"
+	}
+}
+
+set_research_slots = 3
+
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	support_weapons = 1
+	tech_support = 1		
+	tech_engineers = 1
+	tech_recon = 1
+	tech_signal_company = 1
+	motorised_infantry = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+	gwtank = 1
+	basic_light_tank = 1
+	early_fighter = 1
+	cv_early_fighter = 1
+	cv_naval_bomber1 = 1
+	naval_bomber1 = 1
+	early_bomber = 1
+	CAS1 = 1
+	fleet_in_being = 1
+	electronic_mechanical_engineering = 1
+	radio = 1
+	radio_detection = 1
+	early_armoured_car = 1
+	trench_warfare = 1
+}
+
+#########################
+###SHIP TECH - VANILLA###
+#########################
+
+if = {
+	limit = {
+		not = { has_dlc = "Man the Guns" }
+	}
+	set_technology = {	
+		early_trawler = 1
+		early_corvette = 1
+		early_sloop = 1
+		early_submarine = 1
+		early_destroyer = 1
+		basic_destroyer = 1
+		early_light_cruiser = 1
+		early_heavy_cruiser = 1
+		transport = 1
+	}
+}
+
+#########################
+###  SHIP TECH - MTG  ###
+#########################
+
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_technology = {	
+		basic_naval_mines = 1
+		submarine_mine_laying = 1
+		early_ship_hull_trawler = 1
+		early_ship_hull_corvette = 1
+		early_ship_hull_sloop = 1
+		early_ship_hull_light = 1
+		basic_ship_hull_light = 1
+		early_ship_hull_submarine = 1
+		early_ship_hull_cruiser = 1
+		basic_battery = 1
+		basic_light_battery = 1
+		basic_medium_battery = 1
+		basic_torpedo = 1
+		sonar = 1
+		smoke_generator = 1
+		basic_depth_charges = 1
+		basic_secondary_battery = 1
+		basic_cruiser_armor_scheme = 1
+		mtg_transport = 1
+		basic_fire_control_system = 1
+	}
+}
+
+set_politics = {	
+	ruling_party = conservative
+	last_election = "1933.3.5"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+    fascist = 0
+    autocratic = 0
+    conservative = 50
+    liberal = 30
+    democratic_socialist = 20
+    communist = 0
+    anarcho_syndicalist = 0
+    civic_nationalist = 0
+}
+
+add_ideas = {
+	ANG_jam_and_jerusalem
+}
+
+set_convoys = 50
+
+create_country_leader = {
+	name = "Cosmo Gordon Lang"
+	desc = "POLITICS_KING_ZOG_DESC"
+	picture = "gfx/leaders/VBCW/ANG/ANG-Lang.dds"
+	expire = "1965.1.1"
+	ideology = conservative_subtype
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Appointment Commission"
+	desc = "POLITICS_KING_ZOG_DESC"
+	picture = "gfx/leaders/VBCW/ANG/ANG-Appointment.dds"
+	expire = "1965.1.1"
+	ideology = conservative_subtype
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "William Temple"
+	desc = "POLITICS_KING_ZOG_DESC"
+	picture = "gfx/leaders/VBCW/ANG/ANG-Temple.dds"
+	expire = "1965.1.1"
+	ideology = democratic_socialist_subtype
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Hensley Henson"
+	desc = "POLITICS_KING_ZOG_DESC"
+	picture = "gfx/leaders/VBCW/ANG/ANG-Henson.dds"
+	expire = "1965.1.1"
+	ideology = liberal_subtype
+	traits = {
+		#
+	}
+}
+
+create_field_marshal = {
+	name = "William Dobbie"
+	portrait_path = "gfx/leaders/VBCW/ANG/ANG-Dobbie.dds"
+	traits = { }
+	skill = 2
+	attack_skill = 1
+    defense_skill = 3
+    planning_skill = 2
+    logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Bernard Montgomery"
+	portrait_path = "gfx/leaders/VBCW/ANG/ANG-Monty.dds"
+	traits = { }
+	skill = 4 
+	attack_skill = 2
+	defense_skill = 4
+	planning_skill = 3
+	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "William Slim"
+	portrait_path = "gfx/leaders/VBCW/ANG/ANG-Slim.dds"
+	traits = {  }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 5
+	logistics_skill = 5
+}
+
+create_corps_commander = {
+	name = "Harold Alexander"
+	portrait_path = "gfx/leaders/VBCW/ANG/ANG-Alexander.dds"
+	traits = {  }
+	skill = 5
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 3
+	logistics_skill = 5
+}
+
+create_corps_commander = {
+	name = "Eric Miles"
+	portrait_path = "gfx/leaders/VBCW/ANG/ANG-Miles.dds"
+	traits = { }
+	skill = 2
+	attack_skill = 1
+    defense_skill = 3
+    planning_skill = 2
+    logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "John Hawkesworth"
+	portrait_path = "gfx/leaders/VBCW/ANG/ANG-Hawkesworth.dds"
+	traits = { }
+	skill = 2
+	attack_skill = 1
+    defense_skill = 3
+    planning_skill = 2
+    logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Harold Redman"
+	portrait_path = "gfx/leaders/VBCW/ANG/ANG-Redman.dds"
+	traits = { }
+	skill = 2
+	attack_skill = 1
+    defense_skill = 3
+    planning_skill = 2
+    logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Nevil Brownjohn"
+	portrait_path = "gfx/leaders/VBCW/ANG/ANG-Brownjohn.dds"
+	traits = { }
+	skill = 2
+	attack_skill = 1
+    defense_skill = 3
+    planning_skill = 2
+    logistics_skill = 1
+}

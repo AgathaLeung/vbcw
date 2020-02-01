@@ -1,0 +1,30 @@
+state={
+	id=111
+	name="STATE_111"
+	provinces={
+		1765 1766 1775 1780 1782 1785 1787 1788 1800 1801 1803 1805 1806 1807 1817 1822 1823 1833 1835 1837 1844 1849 1850 1852 1865 1867 
+	}
+	manpower=150000
+	
+	resources = {
+		tungsten = 4
+	}
+	
+	state_category = town
+	
+	history={
+		owner = SCO
+		add_core_of = SCO
+		add_claim_by = ROY
+		add_claim_by = YRK
+		add_claim_by = JAC
+		victory_points = { 1806 10 }
+		buildings = {
+			infrastructure = 4
+			air_base = 1
+			industrial_complex = 2
+			arms_factory = 1
+		}
+	}
+}
+

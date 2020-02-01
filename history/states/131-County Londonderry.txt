@@ -1,0 +1,23 @@
+state={
+	id=131
+	name="STATE_131"
+	provinces={
+		1457 1489 1502 1520 1560 
+	}
+	manpower=100000
+	
+	state_category = town
+	
+	history={
+		owner = IRL
+		add_claim_by = IRL
+		add_claim_by = ROY
+		add_claim_by = YRK
+		buildings = {
+			infrastructure = 6
+			air_base = 1
+			industrial_complex = 2
+			arms_factory = 1
+		}
+	}
+}

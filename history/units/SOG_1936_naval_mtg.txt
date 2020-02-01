@@ -1,0 +1,28 @@
+﻿units = {	
+	######################
+	##### NAVY - MTG #####
+	######################
+	
+	fleet = {				
+		name = "People's Navy"			
+		naval_base = 1719
+		task_force = {				
+			name = "Clyde Fleet"	
+			location = 1719
+			ship = { name = "Dunedin" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ENG version_name = "Danae Class" } } }
+			ship = { name = "Sturdy" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ENG version_name = "V/W Class" } } }
+			ship = { name = "Vega" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ENG version_name = "V/W Class" } } }
+			ship = { name = "Westminster" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ENG version_name = "V/W Class" } } }
+			ship = { name = "Montrose" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ENG version_name = "V/W Class" } } }
+		}
+		
+		task_force = {				
+			name = "Clyde Escort Fleet"	
+			location = 1740
+			ship = { name = "Kittiwake" definition = sloop equipment = { ship_hull_sloop_1 = { amount = 1 owner = ENG version_name = "Kingfisher Class" } } }
+			ship = { name = "Puffin" definition = sloop equipment = { ship_hull_sloop_1 = { amount = 1 owner = ENG version_name = "Kingfisher Class" } } }	
+			ship = { name = "Magnolia" definition = trawler equipment = { ship_hull_trawler_1 = { amount = 1 owner = CIV version_name = "Civilian Trawler" } } }
+			ship = { name = "Sycamore" definition = trawler equipment = { ship_hull_trawler_1 = { amount = 1 owner = CIV version_name = "Civilian Trawler" } } }
+		}
+	}
+}	

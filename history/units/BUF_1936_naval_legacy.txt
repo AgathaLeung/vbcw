@@ -1,0 +1,25 @@
+﻿units = {	
+	##########################
+	##### NAVY - VANILLA #####
+	##########################
+	
+	fleet = {				
+		name = "Lightning Fleet"			
+		naval_base = 327
+		task_force = {				
+			name = "Thames Squadron"	
+			location = 327
+			ship = { name = "HMS Curlew" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "HMS Worcester" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "HMS Campbell" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "HMS Erebus" definition = monitor equipment = { monitor_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "HMS Terror" definition = monitor equipment = { monitor_2 = { amount = 1 owner = ENG } } }
+			ship = { name = "MGB-13" definition = gunboat equipment = { gunboat_1 = { amount = 1 owner = BUF } } }
+			ship = { name = "MGB-18" definition = gunboat equipment = { gunboat_1 = { amount = 1 owner = BUF } } }
+			ship = { name = "MGB-24" definition = gunboat equipment = { gunboat_1 = { amount = 1 owner = BUF } } }
+			ship = { name = "MGB-26" definition = gunboat equipment = { gunboat_1 = { amount = 1 owner = BUF } } }
+			ship = { name = "MTB-06" definition = torpedo_boat equipment = { torpedo_boat_1 = { amount = 1 owner = BUF } } }
+			ship = { name = "MTB-09" definition = torpedo_boat equipment = { torpedo_boat_1 = { amount = 1 owner = BUF } } }
+		}
+	}
+}

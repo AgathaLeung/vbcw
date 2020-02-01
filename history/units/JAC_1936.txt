@@ -1,0 +1,214 @@
+﻿division_template = {
+	name = "Infantry Regiment"			
+	division_names_group = JAC_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+        infantry = { x = 0 y = 3 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+        infantry = { x = 1 y = 3 }
+	}
+	support = {
+       	engineer = { x = 0 y = 0 }
+       	mortar = { x = 0 y = 1 }
+	}
+}
+division_template = {
+	name = "Cavalry Regiment"
+	division_names_group = JAC_CAV_01
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 1 y = 2 }
+	}
+	support = {
+        recon = { x = 0 y = 0 }
+	}
+}
+division_template = {
+	name = "Yeomanry Regiment"
+	division_names_group = JAC_YEO_01
+
+	regiments = {
+		yeomanry = { x = 0 y = 0 }
+		yeomanry = { x = 0 y = 1 }
+		yeomanry = { x = 0 y = 2 }
+		yeomanry = { x = 1 y = 0 }
+		yeomanry = { x = 1 y = 1 }
+		yeomanry = { x = 1 y = 2 }
+	}
+	priority = 0
+}
+
+division_template = {
+	name = "Highland Militia"
+	division_names_group = JAC_GAR_01
+	
+	regiments = {
+		militia = { x = 0 y = 0 }
+		militia = { x = 0 y = 1 }
+		militia = { x = 0 y = 2 }
+		militia = { x = 1 y = 0 }
+		militia = { x = 1 y = 1 }
+		militia = { x = 1 y = 2 }
+		militia = { x = 2 y = 0 }
+		militia = { x = 2 y = 1 }
+		militia = { x = 2 y = 2 }
+	}
+	priority = 0
+}
+
+division_template = {
+	name = "Mountaineers"		
+	division_names_group = JAC_INF_01
+
+	regiments = {
+		mountaineers = { x = 0 y = 0 }
+	   	mountaineers = { x = 0 y = 1 }
+		mountaineers = { x = 0 y = 2 }
+		mountaineers = { x = 1 y = 0 }
+		mountaineers = { x = 1 y = 1 }
+		mountaineers = { x = 1 y = 2 }
+	}
+}
+
+units = {
+	division= {		
+		name = "King's Guard"
+		location = 2003
+		division_template = "Infantry Regiment"
+		start_experience_factor = 0.2
+		force_equipment_variants = { infantry_equipment_0 = { owner = "CIV" } }
+	}
+	division= {		
+		name = "The Cameronians (Scottish Rifles)"
+		location = 1848
+		division_template = "Infantry Regiment"
+		start_experience_factor = 0.1
+	}
+	division= {
+		name = "The Seaforth Highlanders (Ross-shire Buffs, The Duke of Albany’s)"
+		location = 2428
+		division_template = "Infantry Regiment"
+		start_experience_factor = 0.1
+	}	
+	division= {
+		name = "The Queen’s Own Cameron Highlanders"
+		location = 1984
+		division_template = "Infantry Regiment"
+		start_experience_factor = 0.1
+	}		
+	division= {		
+		name = "42nd Regiment of the Foot"
+		location = 1966
+		division_template = "Mountaineers"
+		start_experience_factor = 0.1
+	}	
+	division= {		
+		name = "92nd Highlanders"
+		location = 1910
+		division_template = "Mountaineers"
+		start_experience_factor = 0.1
+	}	
+	division= {	
+		name = "1st Inverness Levy"
+		location = 1969
+		division_template = "Highland Militia"
+		start_experience_factor = 0.1
+	}		
+	
+	
+	
+	################
+	##### NAVY #####
+	################
+	
+#	navy = {				
+#		name = "Invergordon Fleet"			
+#		base = 2003
+#		location = 2003
+#		ship = { name = "Cameron" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = ENG } } }	
+#		ship = { name = "Delhi" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = ENG version_name = "Danae Class" } } }
+#		ship = { name = "Volunteer" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+#		ship = { name = "Verity" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }	
+#		ship = { name = "Hastings" definition = sloop equipment = { sloop_1 = { amount = 1 owner = ENG } } }
+#		ship = { name = "Enchantress" definition = sloop equipment = { sloop_1 = { amount = 1 owner = ENG } } }
+#		ship = { name = "Jasper" definition = corvette equipment = { corvette_1 = { amount = 1 owner = ENG } } }
+#	}
+}	
+
+
+	#####################
+	##### AIR FORCE #####
+	#####################
+	
+air_wings = {
+
+	120 = { 
+		fighter_equipment_0 = {
+			owner = "ENG" 
+			amount = 6
+		}
+	}	
+	120 = { 
+		CAS_equipment_1 = {
+			owner = "ENG" 
+			amount = 4
+		}
+	}
+}
+
+	#########################
+	## STARTING PRODUCTION ##
+	#########################
+instant_effect = {	
+
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "JAC"
+		}
+		requested_factories = 1
+		progress = 0.1
+		efficiency = 55
+	}
+	
+	add_equipment_to_stockpile = {
+		type = infantry_equipment_0
+		amount = 1200
+		producer = ENG
+	}
+	
+	add_equipment_to_stockpile = {
+		type = artillery_equipment_1
+		amount = 18
+		producer = ENG
+	}
+	
+	add_equipment_to_stockpile = {
+		type = support_equipment
+		amount = 40
+		producer = ENG
+	}
+	
+	add_equipment_to_stockpile = {
+		type = mortar_equipment_1
+		amount = 20
+		producer = ENG
+	}
+	
+	add_equipment_to_stockpile = {
+		type = MG_equipment_1
+		amount = 12
+		producer = ENG
+	}
+}
+	#####################

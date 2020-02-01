@@ -1,0 +1,22 @@
+state={
+	id=151
+	name="STATE_151"
+	provinces={
+		1187 1217 1218 1263 1274 1294 1325 1346 1375 1382 
+	}
+	manpower=50000
+	
+	resources = {
+		chromium = 8
+	}
+	
+	state_category = rural
+	
+	history={
+		owner = IRL
+		add_core_of = IRL
+		buildings = {
+			infrastructure = 2
+		}
+	}
+}

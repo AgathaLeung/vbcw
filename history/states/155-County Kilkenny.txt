@@ -1,0 +1,19 @@
+
+state={
+	id=155
+	name="STATE_155"
+	provinces={
+		540 548 604 611 642 672 693 698 739 
+	}
+	manpower=75000
+	
+	state_category = rural
+	
+	history={
+		owner = IRL
+		add_core_of = IRL
+		buildings = {
+			infrastructure = 4
+		}
+	}
+}

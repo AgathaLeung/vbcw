@@ -1,0 +1,827 @@
+﻿division_template = {
+	name = "Infantry Regiment"			
+	division_names_group = ANG_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+        infantry = { x = 0 y = 3 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+        infantry = { x = 1 y = 3 }
+	}
+	support = {
+       	engineer = { x = 0 y = 0 }
+       	mortar = { x = 0 y = 1 }
+	}
+}
+
+division_template = {
+	name = "Cavalry Regiment"
+	division_names_group = ANG_CAV_01
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 1 y = 2 }
+	}
+	support = {
+        recon = { x = 0 y = 0 }
+	}
+}
+
+division_template = {
+	name = "Mobile Force"
+	division_names_group = ANG_CAV_01
+	regiments = {
+		armoured_car = { x = 0 y = 0 }
+		armoured_car = { x = 0 y = 1 }
+		armoured_car = { x = 1 y = 0 }
+		armoured_car = { x = 1 y = 1 }
+		motorized = { x = 2 y = 0 }
+		motorized = { x = 2 y = 1 }
+	}
+	support = {
+        signal_company = { x = 0 y = 0 }
+	}
+}
+
+division_template = {
+	name = "Diocesan Volunteers"
+	division_names_group = ANG_GAR_01
+	
+	regiments = {
+		militia = { x = 0 y = 0 }
+		militia = { x = 0 y = 1 }
+		militia = { x = 0 y = 2 }
+		militia = { x = 1 y = 0 }
+		militia = { x = 1 y = 1 }
+		militia = { x = 1 y = 2 }
+	}
+	support = {
+        marching_band = { x = 0 y = 0 }
+	}
+	priority = 0
+}
+
+division_template = {
+	name = "Mounted Volunteers"
+	division_names_group = ANG_YEO_01
+
+	regiments = {
+		yeomanry = { x = 0 y = 0 }
+		yeomanry = { x = 0 y = 1 }
+		yeomanry = { x = 0 y = 2 }
+		yeomanry = { x = 1 y = 0 }
+		yeomanry = { x = 1 y = 1 }
+		yeomanry = { x = 1 y = 2 }
+	}
+	priority = 0
+}
+
+units = {
+##REGULARS##
+	division= {	
+		name = "East Kent Regiment"
+		location = 201
+		division_template = "Infantry Regiment"
+		start_experience_factor = 0.2
+		force_equipment_variants = { infantry_equipment_1 = { owner = "ENG" } }
+		force_equipment_variants = { mortar_equipment_1 = { owner = "ENG" } }
+	}
+	division= {	
+		name = "Norfolk Regiment"
+		location = 717
+		division_template = "Infantry Regiment"
+		start_experience_factor = 0.2
+		force_equipment_variants = { infantry_equipment_1 = { owner = "ENG" } }
+		force_equipment_variants = { mortar_equipment_1 = { owner = "ENG" } }
+	}
+	division= {	
+		name = "Somerset Light Infantry"
+		location = 142
+		division_template = "Infantry Regiment"
+		start_experience_factor = 0.2
+		force_equipment_variants = { infantry_equipment_1 = { owner = "ENG" } }
+		force_equipment_variants = { mortar_equipment_1 = { owner = "ENG" } }
+	}
+	division= {	
+		name = "East Yorkshire Regiment"
+		location = 1147
+		division_template = "Infantry Regiment"
+		start_experience_factor = 0.2
+		force_equipment_variants = { infantry_equipment_1 = { owner = "ENG" } }
+		force_equipment_variants = { mortar_equipment_1 = { owner = "ENG" } }
+	}
+	division= {	
+		name = "Gloucestershire Regiment"
+		location = 260
+		division_template = "Infantry Regiment"
+		start_experience_factor = 0.2
+		force_equipment_variants = { infantry_equipment_1 = { owner = "ENG" } }
+		force_equipment_variants = { mortar_equipment_1 = { owner = "ENG" } }
+	}
+	division= {	
+		name = "East Surrey Regiment"
+		location = 2393
+		division_template = "Infantry Regiment"
+		start_experience_factor = 0.2
+		force_equipment_variants = { infantry_equipment_1 = { owner = "ENG" } }
+		force_equipment_variants = { mortar_equipment_1 = { owner = "ENG" } }
+	}
+	division= {	
+		name = "Sussex Regiment"
+		location = 119
+		division_template = "Infantry Regiment"
+		start_experience_factor = 0.2
+		force_equipment_variants = { infantry_equipment_1 = { owner = "ENG" } }
+		force_equipment_variants = { mortar_equipment_1 = { owner = "ENG" } }
+	}
+	division= {	
+		name = "Hampshire Regiment"
+		location = 2123
+		division_template = "Infantry Regiment"
+		start_experience_factor = 0.2
+		force_equipment_variants = { infantry_equipment_1 = { owner = "ENG" } }
+		force_equipment_variants = { mortar_equipment_1 = { owner = "ENG" } }
+	}
+	division= {	
+		name = "Dorset Regiment"
+		location = 155
+		division_template = "Infantry Regiment"
+		start_experience_factor = 0.2
+		force_equipment_variants = { infantry_equipment_1 = { owner = "ENG" } }
+		force_equipment_variants = { mortar_equipment_1 = { owner = "ENG" } }
+	}
+	division= {	
+		name = "Berkshire Regiment"
+		location = 275
+		division_template = "Infantry Regiment"
+		start_experience_factor = 0.2
+		force_equipment_variants = { infantry_equipment_1 = { owner = "ENG" } }
+		force_equipment_variants = { mortar_equipment_1 = { owner = "ENG" } }
+	}
+	division= {	
+		name = "West Kent Regiment"
+		location = 220
+		division_template = "Infantry Regiment"
+		start_experience_factor = 0.2
+		force_equipment_variants = { infantry_equipment_1 = { owner = "ENG" } }
+		force_equipment_variants = { mortar_equipment_1 = { owner = "ENG" } }
+	}
+	division= {	
+		name = "Wiltshire Regiment"
+		location = 165
+		division_template = "Infantry Regiment"
+		start_experience_factor = 0.2
+		force_equipment_variants = { infantry_equipment_1 = { owner = "ENG" } }
+		force_equipment_variants = { mortar_equipment_1 = { owner = "ENG" } }
+	}
+	
+###CAVALRY###	
+	division= {	
+		name = "Yorkshire Dragoons"
+		location = 1192
+		division_template = "Mobile Force"
+		start_experience_factor = 0.1
+	}	
+	division= {	
+		name = "Yorkshire Hussars"
+		location = 1152
+		division_template = "Cavalry Regiment"
+		start_experience_factor = 0.2
+	}	
+	division= {	
+		name = "Wiltshire Yeomanry"
+		location = 185
+		division_template = "Cavalry Regiment"
+		start_experience_factor = 0.2
+	}
+
+###MILITIA###	
+	division= {	
+		name = "1st Bath and Wells Volunteers"
+		location = 2385
+		division_template = "Diocesan Volunteers"
+		start_experience_factor = 0.0
+	}	
+	division= {	
+		name = "2nd Bath and Wells Volunteers"
+		location = 226
+		division_template = "Diocesan Volunteers"
+		start_experience_factor = 0.0
+	}		
+	division= {	
+		name = "3rd Bath and Wells Volunteers"
+		location = 175
+		division_template = "Diocesan Volunteers"
+		start_experience_factor = 0.0
+	}
+	division= {	
+		name = "1st Bristol Volunteers"
+		location = 260
+		division_template = "Diocesan Volunteers"
+		start_experience_factor = 0.0
+	}		
+	division= {	
+		name = "2nd Bristol Volunteers"
+		location = 309
+		division_template = "Diocesan Volunteers"
+		start_experience_factor = 0.0
+	}	
+	division= {	
+		name = "1st Portsmouth Volunteers"
+		location = 121
+		division_template = "Diocesan Volunteers"
+		start_experience_factor = 0.0
+	}		
+	division= {	
+		name = "2nd Portsmouth Volunteers"
+		location = 125
+		division_template = "Diocesan Volunteers"
+		start_experience_factor = 0.0
+	}	
+	division= {	
+		name = "1st Salisbury Volunteers"
+		location = 128
+		division_template = "Diocesan Volunteers"
+		start_experience_factor = 0.0
+	}
+	division= {	
+		name = "1st Winchester Volunteers"
+		location = 2123
+		division_template = "Diocesan Volunteers"
+		start_experience_factor = 0.0
+	}	
+	division= {	
+		name = "2nd Winchester Volunteers"
+		location = 2375
+		division_template = "Diocesan Volunteers"
+		start_experience_factor = 0.0
+	}	
+	division= {	
+		name = "3rd Winchester Volunteers"
+		location = 140
+		division_template = "Diocesan Volunteers"
+		start_experience_factor = 0.0
+	}	
+	division= {	
+		name = "1st Chichester Volunteers"
+		location = 119
+		division_template = "Diocesan Volunteers"
+		start_experience_factor = 0.0
+	}	
+	division= {	
+		name = "2nd Chichester Volunteers"
+		location = 137
+		division_template = "Diocesan Volunteers"
+		start_experience_factor = 0.0
+	}	
+	division= {	
+		name = "3rd Chichester Volunteers"
+		location = 127
+		division_template = "Diocesan Volunteers"
+		start_experience_factor = 0.0
+	}		
+	division= {	
+		name = "4th Chichester Volunteers"
+		location = 1066
+		division_template = "Diocesan Volunteers"
+		start_experience_factor = 0.0
+	}	
+	division= {	
+		name = "1st Canterbury Volunteers"
+		location = 150
+		division_template = "Diocesan Volunteers"
+		start_experience_factor = 0.0
+	}	
+	division= {	
+		name = "2nd Canterbury Volunteers"
+		location = 195
+		division_template = "Diocesan Volunteers"
+		start_experience_factor = 0.0
+	}	
+	division= {	
+		name = "3rd Canterbury Volunteers"
+		location = 252
+		division_template = "Diocesan Volunteers"
+		start_experience_factor = 0.0
+	}
+	division= {	
+		name = "1st Guildford Volunteers"
+		location = 2393
+		division_template = "Diocesan Volunteers"
+		start_experience_factor = 0.0
+	}
+	division= {	
+		name = "2nd Guildford Volunteers"
+		location = 2388
+		division_template = "Diocesan Volunteers"
+		start_experience_factor = 0.0
+	}
+	division= {	
+		name = "3rd Guildford Volunteers"
+		location = 230
+		division_template = "Diocesan Volunteers"
+		start_experience_factor = 0.0
+	}
+	division= {	
+		name = "1st Oxford Volunteers"
+		location = 314
+		division_template = "Diocesan Volunteers"
+		start_experience_factor = 0.0
+	}
+	division= {	
+		name = "2nd Oxford Volunteers"
+		location = 2394
+		division_template = "Diocesan Volunteers"
+		start_experience_factor = 0.0
+	}
+	division= {	
+		name = "1st Rochester Volunteers"
+		location = 2391
+		division_template = "Diocesan Volunteers"
+		start_experience_factor = 0.0
+	}
+	division= {	
+		name = "2nd Rochester Volunteers"
+		location = 2392
+		division_template = "Diocesan Volunteers"
+		start_experience_factor = 0.0
+	}
+	division= {	
+		name = "1st St Eds & Ips Volunteers"
+		location = 493
+		division_template = "Diocesan Volunteers"
+		start_experience_factor = 0.0
+	}
+	division= {	
+		name = "2nd St Eds & Ips Volunteers"
+		location = 578
+		division_template = "Diocesan Volunteers"
+		start_experience_factor = 0.0
+	}
+	division= {	
+		name = "1st Norwich Volunteers"
+		location = 622
+		division_template = "Diocesan Volunteers"
+		start_experience_factor = 0.0
+	}
+	division= {	
+		name = "2nd Norwich Volunteers"
+		location = 2406
+		division_template = "Diocesan Volunteers"
+		start_experience_factor = 0.0
+	}
+	division= {	
+		name = "3rd Norwich Volunteers"
+		location = 755
+		division_template = "Diocesan Volunteers"
+		start_experience_factor = 0.0
+	}
+	division= {	
+		name = "1st Ely Volunteers"
+		location = 651
+		division_template = "Diocesan Volunteers"
+		start_experience_factor = 0.0
+	}
+	division= {	
+		name = "2nd Ely Volunteers"
+		location = 543
+		division_template = "Diocesan Volunteers"
+		start_experience_factor = 0.0
+	}
+	division= {	
+		name = "3rd Ely Volunteers"
+		location = 692
+		division_template = "Diocesan Volunteers"
+		start_experience_factor = 0.0
+	}
+	division= {	
+		name = "1st Lincoln Volunteers"
+		location = 931
+		division_template = "Diocesan Volunteers"
+		start_experience_factor = 0.0
+	}
+	division= {	
+		name = "2nd Lincoln Volunteers"
+		location = 804
+		division_template = "Diocesan Volunteers"
+		start_experience_factor = 0.0
+	}
+	division= {	
+		name = "3rd Lincoln Volunteers"
+		location = 815
+		division_template = "Diocesan Volunteers"
+		start_experience_factor = 0.0
+	}
+	division= {	
+		name = "1st York Volunteers"
+		location = 1238
+		division_template = "Diocesan Volunteers"
+		start_experience_factor = 0.0
+	}
+	division= {	
+		name = "2nd York Volunteers"
+		location = 1198
+		division_template = "Diocesan Volunteers"
+		start_experience_factor = 0.0
+	}
+	division= {	
+		name = "3rd York Volunteers"
+		location = 1152
+		division_template = "Diocesan Volunteers"
+		start_experience_factor = 0.0
+	}
+	division= {	
+		name = "4th York Volunteers"
+		location = 1279
+		division_template = "Diocesan Volunteers"
+		start_experience_factor = 0.0
+	}
+###YEOMANRY##	
+	division= {	
+		name = "1st Bath and Wells Mounted Volunteers"
+		location = 224
+		division_template = "Mounted Volunteers"
+		start_experience_factor = 0.0
+	}	
+	division= {	
+		name = "2nd Bath and Wells Mounted Volunteers"
+		location = 226
+		division_template = "Mounted Volunteers"
+		start_experience_factor = 0.0
+	}
+	division= {	
+		name = "1st Bristol Mounted Volunteers"
+		location = 225
+		division_template = "Mounted Volunteers"
+		start_experience_factor = 0.0
+	}		
+	division= {	
+		name = "2nd Bristol Mounted Volunteers"
+		location = 2389
+		division_template = "Mounted Volunteers"
+		start_experience_factor = 0.0
+	}	
+	division= {	
+		name = "1st Portsmouth Mounted Volunteers"
+		location = 121
+		division_template = "Mounted Volunteers"
+		start_experience_factor = 0.0
+	}	
+	division= {	
+		name = "1st Salisbury Mounted Volunteers"
+		location = 176
+		division_template = "Mounted Volunteers"
+		start_experience_factor = 0.0
+	}
+	division= {	
+		name = "1st Winchester Mounted Volunteers"
+		location = 215
+		division_template = "Mounted Volunteers"
+		start_experience_factor = 0.0
+	}	
+	division= {	
+		name = "2nd Winchester Mounted Volunteers"
+		location = 113
+		division_template = "Mounted Volunteers"
+		start_experience_factor = 0.0
+	}	
+	division= {	
+		name = "1st Chichester Mounted Volunteers"
+		location = 183
+		division_template = "Mounted Volunteers"
+		start_experience_factor = 0.0
+	}	
+	division= {	
+		name = "2nd Chichester Mounted Volunteers"
+		location = 137
+		division_template = "Mounted Volunteers"
+		start_experience_factor = 0.0
+	}		
+	division= {	
+		name = "1st Canterbury Mounted Volunteers"
+		location = 150
+		division_template = "Mounted Volunteers"
+		start_experience_factor = 0.0
+	}	
+	division= {	
+		name = "2nd Canterbury Mounted Volunteers"
+		location = 189
+		division_template = "Mounted Volunteers"
+		start_experience_factor = 0.0
+	}	
+	division= {	
+		name = "3rd Canterbury Mounted Volunteers"
+		location = 201
+		division_template = "Mounted Volunteers"
+		start_experience_factor = 0.0
+	}	
+	division= {	
+		name = "4th Canterbury Mounted Volunteers"
+		location = 229
+		division_template = "Mounted Volunteers"
+		start_experience_factor = 0.0
+	}
+	division= {	
+		name = "1st Guildford Mounted Volunteers"
+		location = 210
+		division_template = "Mounted Volunteers"
+		start_experience_factor = 0.0
+	}
+	division= {	
+		name = "2nd Guildford Mounted Volunteers"
+		location = 211
+		division_template = "Mounted Volunteers"
+		start_experience_factor = 0.0
+	}
+	division= {	
+		name = "3rd Guildford Mounted Volunteers"
+		location = 230
+		division_template = "Mounted Volunteers"
+		start_experience_factor = 0.0
+	}
+	division= {	
+		name = "1st Oxford Mounted Volunteers"
+		location = 339
+		division_template = "Mounted Volunteers"
+		start_experience_factor = 0.0
+	}
+	division= {	
+		name = "2nd Oxford Mounted Volunteers"
+		location = 276
+		division_template = "Mounted Volunteers"
+		start_experience_factor = 0.0
+	}
+	division= {	
+		name = "3rd Oxford Mounted Volunteers"
+		location = 319
+		division_template = "Mounted Volunteers"
+		start_experience_factor = 0.0
+	}
+	division= {	
+		name = "1st Rochester Mounted Volunteers"
+		location = 212
+		division_template = "Mounted Volunteers"
+		start_experience_factor = 0.0
+	}
+	division= {	
+		name = "2nd Rochester Mounted Volunteers"
+		location = 2130
+		division_template = "Mounted Volunteers"
+		start_experience_factor = 0.0
+	}
+	division= {	
+		name = "1st St Eds & Ips Mounted Volunteers"
+		location = 504
+		division_template = "Mounted Volunteers"
+		start_experience_factor = 0.0
+	}
+	division= {	
+		name = "2nd St Eds & Ips Mounted Volunteers"
+		location = 469
+		division_template = "Mounted Volunteers"
+		start_experience_factor = 0.0
+	}
+	division= {	
+		name = "3rd St Eds & Ips Mounted Volunteers"
+		location = 578
+		division_template = "Mounted Volunteers"
+		start_experience_factor = 0.0
+	}
+	division= {	
+		name = "1st Norwich Mounted Volunteers"
+		location = 619
+		division_template = "Mounted Volunteers"
+		start_experience_factor = 0.0
+	}
+	division= {	
+		name = "2nd Norwich Mounted Volunteers"
+		location = 782
+		division_template = "Mounted Volunteers"
+		start_experience_factor = 0.0
+	}
+	division= {	
+		name = "1st Ely Mounted Volunteers"
+		location = 607
+		division_template = "Mounted Volunteers"
+		start_experience_factor = 0.0
+	}
+	division= {	
+		name = "2nd Ely Mounted Volunteers"
+		location = 550
+		division_template = "Mounted Volunteers"
+		start_experience_factor = 0.0
+	}
+	division= {	
+		name = "1st Lincoln Mounted Volunteers"
+		location = 822
+		division_template = "Mounted Volunteers"
+		start_experience_factor = 0.0
+	}
+	division= {	
+		name = "2nd Lincoln Mounted Volunteers"
+		location = 749
+		division_template = "Mounted Volunteers"
+		start_experience_factor = 0.0
+	}
+	division= {	
+		name = "3rd Lincoln Mounted Volunteers"
+		location = 720
+		division_template = "Mounted Volunteers"
+		start_experience_factor = 0.0
+	}
+	division= {	
+		name = "4th Lincoln Mounted Volunteers"
+		location = 716
+		division_template = "Mounted Volunteers"
+		start_experience_factor = 0.0
+	}
+	division= {	
+		name = "1st York Mounted Volunteers"
+		location = 1245
+		division_template = "Mounted Volunteers"
+		start_experience_factor = 0.0
+	}
+	division= {	
+		name = "2nd York Mounted Volunteers"
+		location = 1200
+		division_template = "Mounted Volunteers"
+		start_experience_factor = 0.0
+	}
+	division= {	
+		name = "3rd York Mounted Volunteers"
+		location = 1157
+		division_template = "Mounted Volunteers"
+		start_experience_factor = 0.0
+	}
+
+	
+	################
+	##### NAVY #####
+	################
+	
+#	navy = {				
+#		name = "Anglican Fleet"			
+#		base = 122
+#		location = 122 # Portsmouth	
+#		ship = { name = "Argus" definition = light_carrier equipment = { light_carrier_1 = { amount = 1 owner = ENG } } 
+#			air_wings = {
+#				cv_fighter_equipment_0 =  { owner = "ANG" amount = 12 }
+#				cv_nav_bomber_equipment_1 =  { owner = "ANG" amount = 6 }
+#			}
+#		}	
+#		ship = { name = "Hermes" definition = light_carrier equipment = { light_carrier_2 = { amount = 1 owner = ENG } } 
+#			air_wings = {
+#				cv_fighter_equipment_0 =  { owner = "ANG" amount = 16 }
+#				cv_nav_bomber_equipment_1 =  { owner = "ANG" amount = 8 }
+#			}
+#		}		
+#		ship = { name = "Resolution" definition = battleship equipment = { battleship_1 = { amount = 1 owner = ENG } } }				
+#		ship = { name = "Revenge" definition = battleship equipment = { battleship_1 = { amount = 1 owner = ENG } } }
+#		ship = { name = "Hawkins" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = ENG } } }
+#		ship = { name = "Frobisher" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = ENG } } }
+#		ship = { name = "Acasta" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG version_name = "A/B/C/D Class" } } }
+#		ship = { name = "Antelope" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG version_name = "A/B/C/D Class" } } }
+#		ship = { name = "Ardent" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG version_name = "A/B/C/D Class" } } }
+#		ship = { name = "Acheron" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG version_name = "A/B/C/D Class" } } }
+#		ship = { name = "Versatile" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+#		ship = { name = "Vimy" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+#		ship = { name = "Rosemary" definition = corvette equipment = { corvette_1 = { amount = 1 owner = ENG } } }
+#		ship = { name = "Lupin" definition = corvette equipment = { corvette_1 = { amount = 1 owner = ENG } } }
+#		ship = { name = "Foxglove" definition = corvette equipment = { corvette_1 = { amount = 1 owner = ENG } } }
+#	}
+#	
+#	navy = {				
+#		name = "Dover Squadron"			
+#		base = 201
+#		location = 201 # Dover		
+#		ship = { name = "Cairo" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = ENG } } }	
+#		ship = { name = "Caradoc" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = ENG } } }
+#		ship = { name = "Ceres" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = ENG } } }
+#		ship = { name = "Blanche" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG version_name = "A/B/C/D Class" } } }
+#		ship = { name = "Brazen" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG version_name = "A/B/C/D Class" } } }
+#		ship = { name = "Brilliant" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG version_name = "A/B/C/D Class" } } }
+#		ship = { name = "Boadicea" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG version_name = "A/B/C/D Class" } } }
+#		ship = { name = "Sphinx" definition = trawler equipment = { trawler_1 = { amount = 1 owner = ENG } } }
+#		ship = { name = "Niger" definition = trawler equipment = { trawler_1 = { amount = 1 owner = ENG } } }
+#		ship = { name = "Salamander" definition = trawler equipment = { trawler_1 = { amount = 1 owner = ENG } } }
+#		ship = { name = "Harrier" definition = trawler equipment = { trawler_1 = { amount = 1 owner = ENG } } }
+#	}
+}	
+
+
+	#####################
+	##### AIR FORCE #####
+	#####################
+	
+air_wings = {
+
+	5 = { 
+		fighter_equipment_0 = {
+			owner = "ANG" 
+			amount = 12
+		}
+	}	
+	5 = { 
+		nav_bomber_equipment_1 = {
+			owner = "ANG" 
+			amount = 8
+		}
+	}
+	10 = { 
+		fighter_equipment_0 = {
+			owner = "ANG" 
+			amount = 12
+		}
+	}
+	29 = { 
+		fighter_equipment_0 = {
+			owner = "ANG" 
+			amount = 12
+		}
+	}
+	29 = { 
+		tac_bomber_equipment_0 = {
+			owner = "ANG" 
+			amount = 8
+		}
+	}
+	35 = { 
+		tac_bomber_equipment_0 = {
+			owner = "ANG" 
+			amount = 8
+		}
+	}
+}
+
+	#########################
+	## STARTING PRODUCTION ##
+	#########################
+instant_effect = {	
+
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "ANG"
+		}
+		requested_factories = 2
+		progress = 0.1
+		efficiency = 60
+	}
+	
+	add_equipment_to_stockpile = {
+		type = infantry_equipment_0
+		amount = 500
+		producer = ENG
+	}
+	
+	add_equipment_to_stockpile = {
+		type = infantry_equipment_1
+		amount = 300
+		producer = ENG
+	}
+	
+	add_equipment_to_stockpile = {
+		type = support_equipment
+		amount = 80
+		producer = ENG
+	}
+	
+	add_equipment_to_stockpile = {
+		type = mortar_equipment_1
+		amount = 30
+		producer = ENG
+	}
+	
+	add_equipment_to_stockpile = {
+		type = MG_equipment_1
+		amount = 16
+		producer = ENG
+	}
+	
+	add_equipment_to_stockpile = {
+		type = mechanized_equipment_1
+		amount = 30
+		producer = ENG
+	}
+	
+	add_equipment_to_stockpile = {
+		type = artillery_equipment_1
+		amount = 24
+		producer = ENG
+	}
+	
+	add_equipment_to_stockpile = {
+		type = motorized_equipment_1
+		amount = 360
+		producer = CIV
+	}
+}
+	#####################

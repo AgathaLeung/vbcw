@@ -1,0 +1,31 @@
+state={
+	id=47
+	name="STATE_47"
+	provinces={
+		869 876 890 930 940 973 980 2380
+	}
+	manpower=250000
+	
+	resources = {
+		oil = 16
+		steel = 16
+		chromium = 16
+	}
+	
+	state_category = town
+	
+	history={
+		victory_points = { 2380 10 }
+		owner = SOM
+		add_core_of = SOM
+		add_claim_by = ROY
+		add_claim_by = ANG
+		add_claim_by = YRK
+		buildings = {
+			infrastructure = 6
+			air_base = 1
+			industrial_complex = 2
+			arms_factory = 1
+		}
+	}
+}

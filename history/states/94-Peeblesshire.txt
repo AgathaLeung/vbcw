@@ -1,0 +1,23 @@
+state={
+	id=94
+	name="STATE_94"
+	provinces={
+		1616 1636 1638 1641 1652 1660 
+	}
+	manpower=50000
+	
+	state_category = pastoral
+	
+	history={
+		victory_points = { 1652 5 }
+		owner = SCO
+		add_core_of = SCO
+		add_claim_by = ROY
+		add_claim_by = YRK
+		add_claim_by = JAC
+		buildings = {
+			infrastructure = 4
+		}
+	}
+}
+

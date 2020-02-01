@@ -1,0 +1,141 @@
+spriteTypes = {
+	
+	spriteType = {
+		name = "GFX_news_event_paul_robeson"
+		texturefile = "gfx/event_pictures/news_event_paul_robeson.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_TOG"
+		texturefile = "gfx/event_pictures/event_tog.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_hunkin_and_ed"
+		texturefile = "gfx/event_pictures/event_hunkin_and_ed.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_cosmo_and_ed"
+		texturefile = "gfx/event_pictures/event_cosmo_and_ed.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_tophat_bowlerhat"
+		texturefile = "gfx/event_pictures/event_tophat_bowlerhat.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_vestments_suit"
+		texturefile = "gfx/event_pictures/event_vestments_suit.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_cosmo_and_friend"
+		texturefile = "gfx/event_pictures/event_cosmo_and_friend.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_sugar"
+		texturefile = "gfx/event_pictures/event_sugar.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_teacup"
+		texturefile = "gfx/event_pictures/event_teacup.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_edward_sad"
+		texturefile = "gfx/event_pictures/event_edward_sad.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_cosmo_happy"
+		texturefile = "gfx/event_pictures/event_cosmo_happy.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_palace"
+		texturefile = "gfx/event_pictures/event_palace.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_coronation"
+		texturefile = "gfx/event_pictures/event_coronation.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_auxiliaries"
+		texturefile = "gfx/event_pictures/event_auxiliaries.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_deployment"
+		texturefile = "gfx/event_pictures/event_deployment.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_rally"
+		texturefile = "gfx/event_pictures/event_rally.dds"
+	}
+	spriteType = {
+		name = "GFX_report_irish_rainy_day"
+		texturefile = "gfx/event_pictures/event_irish_rainy_day.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_tamar"
+		texturefile = "gfx/event_pictures/event_tamar.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_convoy_ship"
+		texturefile = "gfx/event_pictures/event_convoy_ship.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_standing_watch"
+		texturefile = "gfx/event_pictures/event_standing_watch.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_convoy_blowing"
+		texturefile = "gfx/event_pictures/event_convoy_blowing.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_scout_carriers"
+		texturefile = "gfx/event_pictures/event_scout_carriers.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_bumpy_ride"
+		texturefile = "gfx/event_pictures/event_bumpy_ride.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_women_production_line"
+		texturefile = "gfx/event_pictures/event_women_production_line.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_truce"
+		texturefile = "gfx/event_pictures/event_truce.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_portsmouth"
+		texturefile = "gfx/event_pictures/news_event_portsmouth.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_bombed_tram"
+		texturefile = "gfx/event_pictures/news_event_bombed_tram.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_people_fucking_about_in_city"
+		texturefile = "gfx/event_pictures/news_event_people_fucking_about_in_city.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_troops_entering_coastal_city"
+		texturefile = "gfx/event_pictures/news_event_troops_entering_coastal_city.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_infantry_parade"
+		texturefile = "gfx/event_pictures/news_event_infantry_parade.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_soldier_bikes"
+		texturefile = "gfx/event_pictures/news_event_soldier_bikes.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_definetely_not_berlin_parade"
+		texturefile = "gfx/event_pictures/news_event_definetely_not_berlin_parade.dds"
+	}
+}
+	
+	
+	

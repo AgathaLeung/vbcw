@@ -1,0 +1,30 @@
+
+state={
+	id=43
+	name="STATE_43"
+	resources={
+		steel=12.000
+	}
+
+	history={
+		owner = ROY
+		add_core_of = ROY
+		add_claim_by = ANG
+		add_claim_by = YRK
+		victory_points = { 475 10 }
+		victory_points = { 486 5 }
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+
+		}
+
+	}
+
+	provinces={
+		398 417 430 439 474 475 481 486 541 2378 2379 
+	}
+	manpower=150000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

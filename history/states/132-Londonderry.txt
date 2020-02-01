@@ -1,0 +1,31 @@
+state={
+	id=132
+	name="STATE_132"
+	provinces={
+		1527 1536 1537 
+	}
+	manpower=25000
+	
+	resources = {
+		steel = 8
+	}
+	
+	state_category = town
+	
+	history={
+		owner = IRL
+		add_claim_by = IRL
+		add_claim_by = ROY
+		add_claim_by = YRK
+		victory_points = { 1536 10 }
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 1
+			arms_factory = 1
+			dockyard = 1
+			1537 = {
+				naval_base = 2
+			}
+		}
+	}
+}

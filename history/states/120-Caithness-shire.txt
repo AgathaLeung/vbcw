@@ -1,0 +1,33 @@
+state={
+	id=120
+	name="STATE_120"
+	provinces={
+		2045 2049 2062 2063 2081 2082 
+	}
+	manpower=25000
+	
+	resources = {
+		steel = 4
+	}
+	
+	state_category = pastoral
+	
+	history={
+		add_extra_state_shared_building_slots = 1
+		victory_points = { 2062 5 }
+		victory_points = { 2081 5 }
+		owner = JAC
+		add_core_of = JAC
+		add_claim_by = ROY
+		add_claim_by = YRK
+		add_claim_by = SCO
+		buildings = {
+			industrial_complex = 1
+			infrastructure = 2
+			air_base = 1
+			2082 = {
+				naval_base = 1
+			}
+		}
+	}
+}

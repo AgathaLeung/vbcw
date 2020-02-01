@@ -1,0 +1,21 @@
+﻿units = {	
+	######################
+	##### NAVY - MTG #####
+	######################
+	
+	fleet = {				
+		name = "Liverpool Fleet"			
+		naval_base = 953
+		task_force = {				
+			name = "Mersey Squadron"	
+			location = 953
+			ship = { name = "Penelope" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = ENG version_name = "Leander Class" } } }
+			ship = { name = "Versatile" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ENG version_name = "V/W Class" } } }
+			ship = { name = "Veteran" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ENG version_name = "V/W Class" } } }
+			ship = { name = "Valentine" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ENG version_name = "V/W Class" } } }
+			ship = { name = "Cornelian" definition = trawler equipment = { ship_hull_trawler_1 = { amount = 1 owner = CIV version_name = "Civilian Trawler" } } }
+			ship = { name = "Pearl" definition = trawler equipment = { ship_hull_trawler_1 = { amount = 1 owner = CIV version_name = "Civilian Trawler" } } }
+			ship = { name = "Ruby" definition = trawler equipment = { ship_hull_trawler_1 = { amount = 1 owner = CIV version_name = "Civilian Trawler" } } }
+		}
+	}
+}	

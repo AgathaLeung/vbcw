@@ -1,0 +1,337 @@
+﻿division_template = {
+	name = "General Workers' Regiment"			
+	division_names_group = SON_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+        infantry = { x = 0 y = 3 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+        infantry = { x = 1 y = 3 }
+	}
+	support = {
+       	engineer = { x = 0 y = 0 }
+       	artillery = { x = 0 y = 1 }
+	}
+}
+
+division_template = {
+	name = "Workers' Mounted Regiment"
+	division_names_group = SON_CAV_01
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 1 y = 2 }
+	}
+	support = {
+        recon = { x = 0 y = 0 }
+	}
+}
+
+division_template = {
+	name = "Flying Column"			
+	division_names_group = SON_MOT_01
+
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		armoured_car = { x = 2 y = 0 }
+		armoured_car = { x = 2 y = 1 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+	}
+}
+
+division_template = {
+	name = "People's Militia"
+	division_names_group = SON_GAR_01
+	
+	regiments = {
+		militia = { x = 0 y = 0 }
+		militia = { x = 0 y = 1 }
+		militia = { x = 0 y = 2 }
+		militia = { x = 1 y = 0 }
+		militia = { x = 1 y = 1 }
+		militia = { x = 1 y = 2 }
+	}
+	support = {
+        marching_band = { x = 0 y = 0 }
+	}
+	priority = 0
+}
+
+division_template = {
+	name = "Mounted People's Militia"
+	division_names_group = SON_YEO_01
+
+	regiments = {
+		yeomanry = { x = 0 y = 0 }
+		yeomanry = { x = 0 y = 1 }
+		yeomanry = { x = 0 y = 2 }
+		yeomanry = { x = 1 y = 0 }
+		yeomanry = { x = 1 y = 1 }
+		yeomanry = { x = 1 y = 2 }
+	}
+	priority = 0
+}
+
+
+units = {
+	division= {	
+		name = "1st Tyne Shipbuilders’ Regiment"
+		location = 1534
+		division_template = "General Workers' Regiment"
+		start_experience_factor = 0.1
+		force_equipment_variants = { infantry_equipment_1 = { owner = "ENG" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "ENG" } }
+	}
+	division= {	
+		name = "2nd Tyne Shipbuilders’ Regiment"
+		location = 1545
+		division_template = "General Workers' Regiment"
+		start_experience_factor = 0.1
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ENG" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "ENG" } }
+	}
+	division= {	
+		name = "3rd Tyne Shipbuilders’ Regiment"
+		location = 1535
+		division_template = "People's Militia"
+		start_experience_factor = 0.0
+		start_equipment_factor = 0.95
+		force_equipment_variants = { infantry_equipment_0 = { owner = "CIV" } }
+	}
+	division= {	
+		name = "4th Tyne Shipbuilders’ Regiment"
+		location = 1543
+		division_template = "People's Militia"
+		start_experience_factor = 0.0
+		start_equipment_factor = 0.92
+		force_equipment_variants = { infantry_equipment_0 = { owner = "CIV" } }
+	}
+	division= {	
+		name = "5th Tyne Shipbuilders’ Regiment"
+		location = 1548
+		division_template = "People's Militia"
+		start_experience_factor = 0.0
+		start_equipment_factor = 0.89
+		force_equipment_variants = { infantry_equipment_0 = { owner = "CIV" } }
+	}
+	division= {	
+		name = "1st Wear Shipbuilders’ Regiment"
+		location = 1510
+		division_template = "People's Militia"
+		start_experience_factor = 0.0
+		start_equipment_factor = 0.98
+		force_equipment_variants = { infantry_equipment_0 = { owner = "CIV" } }
+	}
+	division= {	
+		name = "1st Wear Shipbuilders’ Regiment"
+		location = 1510
+		division_template = "People's Militia"
+		start_experience_factor = 0.0
+		start_equipment_factor = 0.90
+		force_equipment_variants = { infantry_equipment_0 = { owner = "CIV" } }
+	}
+	division= {	
+		name = "Newcastle Transport Workers’ Militia"
+		location = 1534
+		division_template = "Flying Column"
+		start_experience_factor = 0.0
+		force_equipment_variants = { motorized_equipment_1 = { owner = "CIV" } }
+		force_equipment_variants = { early_armoured_car_equipment = { owner = "CIV" } }
+		force_equipment_variants = { infantry_equipment_0 = { owner = "CIV" } }
+	}
+	division= {	
+		name = "Newcastle General Workers’ Brigade"
+		location = 1534
+		division_template = "People's Militia"
+		start_experience_factor = 0.0
+		start_equipment_factor = 0.98
+		force_equipment_variants = { infantry_equipment_0 = { owner = "CIV" } }
+	}
+	division= {	
+		name = "Gateshead Unemployed Men’s Militia"
+		location = 1529
+		division_template = "People's Militia"
+		start_experience_factor = 0.0
+		start_equipment_factor = 0.90
+		force_equipment_variants = { infantry_equipment_0 = { owner = "CIV" } }
+	}
+	division= {	
+		name = "Tyne and Wear Sailors’ Soviet"
+		location = 1533
+		division_template = "People's Militia"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.90
+		force_equipment_variants = { infantry_equipment_0 = { owner = "CIV" } }
+	}
+	division= {	
+		name = "1st Tyneside Colliers"
+		location = 1516
+		division_template = "People's Militia"
+		start_experience_factor = 0.0
+		start_equipment_factor = 0.89
+		force_equipment_variants = { infantry_equipment_0 = { owner = "CIV" } }
+	}
+	division= {	
+		name = "2nd Tyneside Colliers"
+		location = 1511
+		division_template = "People's Militia"
+		start_experience_factor = 0.0
+		start_equipment_factor = 0.95
+		force_equipment_variants = { infantry_equipment_0 = { owner = "CIV" } }
+	}
+	division= {	
+		name = "I Sunderland Workers’ Brigade"
+		location = 1510
+		division_template = "People's Militia"
+		start_experience_factor = 0.0
+		start_equipment_factor = 0.89
+		force_equipment_variants = { infantry_equipment_0 = { owner = "CIV" } }
+	}
+	division= {	
+		name = "II Sunderland Workers’ Brigade"
+		location = 1517
+		division_template = "People's Militia"
+		start_experience_factor = 0.0
+		start_equipment_factor = 0.97
+		force_equipment_variants = { infantry_equipment_0 = { owner = "CIV" } }
+	}
+	division= {	
+		name = "III Sunderland Workers’ Brigade"
+		location = 1504
+		division_template = "People's Militia"
+		start_experience_factor = 0.0
+		start_equipment_factor = 0.92
+		force_equipment_variants = { infantry_equipment_0 = { owner = "CIV" } }
+	}
+
+	
+	################
+	##### NAVY #####
+	################
+	
+#	navy = {				
+#		name = "Tyne Fleet"			
+#		base = 1533
+#		location = 1533
+#		ship = { name = "Newcastle" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = ENG } } }
+#		ship = { name = "Edinburgh" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = ENG version_name = "Edinburgh Class" } } }
+#		ship = { name = "Manchester" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = ENG } } }
+#		ship = { name = "Sheffield" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = ENG } } }	
+#		ship = { name = "Foresight" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG version_name = "E/F/G/H Class" } } }		
+#		ship = { name = "Fortune" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG version_name = "E/F/G/H Class" } } }			
+#		ship = { name = "Cloud" definition = sloop equipment = { sloop_1 = { amount = 1 owner = ENG } } }	
+#		ship = { name = "Coldsnap" definition = sloop equipment = { sloop_1 = { amount = 1 owner = ENG } } }	
+#		ship = { name = "Speedy" definition = trawler equipment = { trawler_2 = { amount = 1 owner = ENG } } }	
+#		ship = { name = "Seagull" definition = trawler equipment = { trawler_2 = { amount = 1 owner = ENG } } }	
+#	}
+}	
+
+
+	#####################
+	##### AIR FORCE #####
+	#####################
+	
+air_wings = {
+
+	83 = { 
+		fighter_equipment_0 = {
+			owner = "SON" 
+			amount = 8
+		}
+	}
+}
+
+	#########################
+	## STARTING PRODUCTION ##
+	#########################
+instant_effect = {
+	
+
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "SON"
+		}
+		requested_factories = 3
+		progress = 0.1
+		efficiency = 50
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = "SON"
+		}
+		requested_factories = 1
+		progress = 0.1
+		efficiency = 60
+	}
+	
+	add_equipment_to_stockpile = {
+		type = infantry_equipment_0
+		amount = 120
+		producer = CIV
+	}
+	
+	add_equipment_to_stockpile = {
+		type = infantry_equipment_0
+		amount = 520
+		producer = SOV
+	}
+	
+	add_equipment_to_stockpile = {
+		type = infantry_equipment_0
+		amount = 300
+		producer = ENG
+	}
+	
+	add_equipment_to_stockpile = {
+		type = infantry_equipment_1
+		amount = 120
+		producer = ENG
+	}
+	
+	add_equipment_to_stockpile = {
+		type = motorized_equipment_1
+		amount = 45
+		producer = CIV
+	}
+	
+	add_equipment_to_stockpile = {
+		type = mortar_equipment_1
+		amount = 12
+		producer = ENG
+	}
+	
+	add_equipment_to_stockpile = {
+		type = MG_equipment_1
+		amount = 12
+		producer = ENG
+	}
+	
+	add_equipment_to_stockpile = {
+		type = mechanized_equipment_1
+		amount = 9
+		producer = ENG
+	}
+	
+	add_equipment_to_stockpile = {
+		type = artillery_equipment_1
+		amount = 8
+		producer = ENG
+	}
+}
+	#####################

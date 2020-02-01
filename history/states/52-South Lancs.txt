@@ -1,0 +1,39 @@
+state={
+	id=52
+	name="STATE_52"
+	provinces={
+		957 985 992 999 1005 1008 1015 1031 1035 1036 1041 1048 1060 1064 1071 1101 1106 1116 1119 1129 1131 1138 1153 1162 1171 2126 
+	}
+	manpower=850000
+	
+	resources = {
+		steel = 16
+		tungsten = 16
+		chromium = 32
+	}
+	
+	state_category = large_city
+	
+	history={
+		owner = ROY
+		add_core_of = ROY
+		add_claim_by = ANG
+		add_claim_by = YRK
+		victory_points = { 992 10 }
+		victory_points = { 1008 10 }
+		victory_points = { 1048 10 }
+		victory_points = { 1116 10 }
+		victory_points = { 1129 10 }
+		victory_points = { 1153 10 }
+		victory_points = { 1064 10 }
+		buildings = {
+			infrastructure = 6
+			air_base = 2
+			industrial_complex = 4
+			arms_factory = 3
+			1106 = {
+				naval_base = 2
+			}
+		}
+	}
+}

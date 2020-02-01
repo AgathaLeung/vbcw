@@ -1,0 +1,29 @@
+state={
+	id=18
+	name="STATE_18"
+	provinces={
+		416 443 462 470 483 508 514 534 2401
+	}
+	manpower=300000
+	
+	resources = {
+		oil = 8
+	}
+	
+	state_category = town
+	
+	history={
+		owner = ROY
+		add_core_of = ROY
+		add_claim_by = ANG
+		add_claim_by = YRK
+		victory_points = { 2401 10 }
+		victory_points = { 508 10 }
+		buildings = {
+			infrastructure = 6
+			air_base = 3
+			industrial_complex = 2
+			arms_factory = 1
+		}
+	}
+}

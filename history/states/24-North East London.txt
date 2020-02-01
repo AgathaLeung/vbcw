@@ -1,0 +1,32 @@
+state={
+	id=24
+	name="STATE_24"
+	provinces={
+		310 312 323 326 335 346 349 
+	}
+	manpower=1250000
+	
+	resources = {
+		steel = 16
+	}
+	
+	state_category = metropolis
+	
+	history={
+		victory_points = { 326 5 }
+		victory_points = { 323 5 }
+		victory_points = { 349 5 }
+		owner = BUF
+		add_core_of = BUF
+		add_claim_by = YRK
+		add_claim_by = ANG
+		add_claim_by = ROY
+		buildings = {
+			infrastructure = 8
+			air_base = 2
+			industrial_complex = 4
+			arms_factory = 2
+			dockyard = 1
+		}
+	}
+}

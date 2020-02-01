@@ -1,0 +1,25 @@
+state={
+	id=150
+	name="STATE_150"
+	provinces={
+		1232 1260 1276 1299 1302 1332 
+	}
+	manpower=75000
+	
+	resources = {
+		chromium = 8
+	}
+	
+	state_category = rural
+	
+	history={
+		owner = IRL
+		add_core_of = IRL
+		buildings = {
+			infrastructure = 4
+			1332 = {
+				naval_base = 1
+			}
+		}
+	}
+}

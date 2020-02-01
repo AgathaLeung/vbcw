@@ -1,0 +1,196 @@
+﻿division_template = {
+	name = "Infantry Regiment"			
+	division_names_group = LIV_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+        infantry = { x = 0 y = 3 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+        infantry = { x = 1 y = 3 }
+	}
+	support = {
+       	engineer = { x = 0 y = 0 }
+       	mortar = { x = 0 y = 1 }
+	}
+}
+division_template = {
+	name = "Cavalry Regiment"
+	division_names_group = LIV_CAV_01
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 1 y = 2 }
+	}
+	support = {
+        recon = { x = 0 y = 0 }
+	}
+}
+division_template = {
+	name = "Yeomanry Regiment"
+	division_names_group = LIV_YEO_01
+
+	regiments = {
+		yeomanry = { x = 0 y = 0 }
+		yeomanry = { x = 0 y = 1 }
+		yeomanry = { x = 0 y = 2 }
+		yeomanry = { x = 1 y = 0 }
+		yeomanry = { x = 1 y = 1 }
+		yeomanry = { x = 1 y = 2 }
+	}
+	priority = 0
+}
+division_template = {
+	name = "Tank Battalion"
+	division_names_group = LIV_ARM_01
+	regiments = {
+		light_armor = { x = 0 y = 0 }
+		light_armor = { x = 0 y = 1 }
+		light_armor = { x = 0 y = 2 }
+	}
+}
+division_template = {
+	name = "Local Defence Volunteers"
+	division_names_group = LIV_GAR_01
+	
+	regiments = {
+		militia = { x = 0 y = 0 }
+		militia = { x = 0 y = 1 }
+		militia = { x = 0 y = 2 }
+		militia = { x = 1 y = 0 }
+		militia = { x = 1 y = 1 }
+		militia = { x = 1 y = 2 }
+		militia = { x = 2 y = 0 }
+		militia = { x = 2 y = 1 }
+		militia = { x = 2 y = 2 }
+	}
+	priority = 0
+}
+
+
+units = {
+	division= {	
+		name = "1st Battalion King's Regiment (Liverpool)"
+		location = 953
+		division_template = "Infantry Regiment"
+		start_experience_factor = 0.3
+		force_equipment_variants = { infantry_equipment_1 = { owner = "ENG" } }
+		force_equipment_variants = { mortar_equipment_1 = { owner = "ENG" } }
+	}
+	division= {	
+		name = "2nd Battalion King's Regiment (Liverpool)"
+		location = 951
+		division_template = "Infantry Regiment"
+		start_experience_factor = 0.3
+		force_equipment_variants = { infantry_equipment_1 = { owner = "ENG" } }
+		force_equipment_variants = { mortar_equipment_1 = { owner = "ENG" } }
+	}
+	
+	division= {
+		name = "Mersey Division Submarine Miners"
+		location = 963
+		division_template = "Local Defence Volunteers"
+		start_experience_factor = 0.0
+		force_equipment_variants = { infantry_equipment_0 = { owner = "CIV" } }
+	}
+	
+	division= {	
+		name = "Mersey Division Electrical Engineers"
+		location = 991
+		division_template = "Local Defence Volunteers"
+		start_experience_factor = 0.0
+		force_equipment_variants = { infantry_equipment_0 = { owner = "CIV" } }
+	}
+	
+	division= {	
+		name = "Birkenhead Dockers' Militia"
+		location = 923
+		division_template = "Local Defence Volunteers"
+		start_experience_factor = 0.0
+		force_equipment_variants = { infantry_equipment_0 = { owner = "CIV" } }
+	}
+
+	
+	################
+	##### NAVY #####
+	################
+	
+#	navy = {				
+#		name = "Mersey Fleet"			
+#		base = 953
+#		location = 953
+#		ship = { name = "Hardy" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = ENG } } }
+#		ship = { name = "Inglefield" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = ENG } } }
+#		ship = { name = "Valentine" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+#		ship = { name = "Cornelian" definition = corvette equipment = { corvette_1 = { amount = 1 owner = ENG } } }		
+#	}
+}	
+
+
+	#####################
+	##### AIR FORCE #####
+	#####################
+	
+air_wings = {
+
+	50 = { 
+		fighter_equipment_0 = {
+			owner = "ENG" 
+			amount = 8
+		}
+	}
+}
+
+	#########################
+	## STARTING PRODUCTION ##
+	#########################
+instant_effect = {	
+
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "LIV"
+		}
+		requested_factories = 2
+		progress = 0.1
+		efficiency = 65
+	}
+	
+	add_equipment_to_stockpile = {
+		type = infantry_equipment_0
+		amount = 1200
+		producer = ENG
+	}
+	
+	add_equipment_to_stockpile = {
+		type = mortar_equipment_1
+		amount = 18
+		producer = ENG
+	}
+	
+	add_equipment_to_stockpile = {
+		type = MG_equipment_1
+		amount = 10
+		producer = ENG
+	}
+	
+	add_equipment_to_stockpile = {
+		type = mechanized_equipment_1
+		amount = 16
+		producer = ENG
+	}
+	
+	add_equipment_to_stockpile = {
+		type = artillery_equipment_1
+		amount = 8
+		producer = ENG
+	}
+}
+	#####################

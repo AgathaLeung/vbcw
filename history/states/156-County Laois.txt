@@ -1,0 +1,23 @@
+state={
+	id=156
+	name="STATE_156"
+	provinces={
+		762 772 792 817 829 843 860 
+	}
+	manpower=50000
+	
+	resources = {
+		chromium = 12
+	}
+	
+	state_category = rural
+	
+	history={
+		owner = IRL
+		add_core_of = IRL
+		buildings = {
+			infrastructure = 4
+		}
+	}
+	
+}

@@ -1,0 +1,28 @@
+﻿units = {	
+	##########################
+	##### NAVY - VANILLA #####
+	##########################
+	
+	fleet = {				
+		name = "People's Navy"			
+		naval_base = 1719
+		task_force = {				
+			name = "Clyde Fleet"	
+			location = 1719
+			ship = { name = "Liverpool" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = ENG } } }
+			ship = { name = "Sturdy" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Vega" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Westminster" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Montrose" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+		}
+		
+		task_force = {				
+			name = "Clyde Escort Fleet"		
+			location = 1740
+			ship = { name = "Kittiwake" definition = sloop equipment = { sloop_2 = { amount = 1 owner = ENG } } }	
+			ship = { name = "Puffin" definition = sloop equipment = { sloop_2 = { amount = 1 owner = ENG } } }		
+			ship = { name = "Magnolia" definition = trawler equipment = { trawler_1 = { amount = 1 owner = ENG } } }	
+			ship = { name = "Sycamore" definition = trawler equipment = { trawler_1 = { amount = 1 owner = ENG } } }
+		}
+	}
+}

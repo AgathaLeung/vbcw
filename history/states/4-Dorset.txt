@@ -1,0 +1,38 @@
+state={
+	id=4
+	name="STATE_4"
+	provinces={
+		83 87 98 105 107 108 114 118 131 139 2387 2399
+	}
+	manpower=350000
+	
+	resources = {
+		oil = 8
+	}
+	
+	state_category = town
+	
+	history={
+		victory_points = { 83 5 }
+		victory_points = { 87 5 }
+		victory_points = { 2387 10 }
+		victory_points = { 107 10 }
+		victory_points = { 118 5 }
+		owner = ROY
+		add_core_of = ROY
+		add_claim_by = YRK
+		add_claim_by = ANG
+		buildings = {
+			infrastructure = 6
+			air_base = 1
+			industrial_complex = 2
+			arms_factory = 1
+			108 = {
+				naval_base = 3
+			}
+			83 = {
+				naval_base = 3
+			}
+		}
+	}
+}

@@ -1,0 +1,30 @@
+state={
+	id=76
+	name="STATE_76"
+	provinces={
+		1206 1220 1230 1239 1240 1241 1244 1246 1255 1264 1285 1321 
+	}
+	manpower=250000
+	
+	resources = {
+		steel = 4
+		tungsten = 12
+		chromium = 8
+	}
+	
+	state_category = town
+	
+	history={
+		owner = ROY
+		add_core_of = ROY
+		add_claim_by = YRK
+		add_claim_by = ANG
+		victory_points = { 1220 10 }
+		victory_points = { 1240 10 }
+		victory_points = { 1241 10 }
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+	}
+}

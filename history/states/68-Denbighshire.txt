@@ -1,0 +1,28 @@
+state={
+	id=68
+	name="STATE_68"
+	provinces={
+		748 781 807 820 827 841 856 858 874 907 
+	}
+	manpower=200000
+	
+	resources = {
+		aluminium = 24
+		steel = 16
+		tungsten = 16
+	}
+	
+	state_category = town
+	
+	history={
+		owner = WAL
+		add_core_of = WAL
+		add_claim_by = ROY
+		add_claim_by = YRK
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 2
+			arms_factory = 1
+		}
+	}
+}

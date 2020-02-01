@@ -1,0 +1,37 @@
+state={
+	id=117
+	name="STATE_117"
+	provinces={
+		1848 1859 1862 1866 1870 1878 1879 1881 1882 1906 1910 1912 1920 1926 1938 1944 1950 1968 1969 2428 2429 2430
+	}
+	manpower=100000
+	
+	resources = {
+		aluminium = 16
+		steel = 16
+		oil = 8
+	}
+
+	
+	state_category = large_town
+		
+	history={
+		add_extra_state_shared_building_slots = 3
+		owner = JAC
+		victory_points = { 1969 10 }
+		victory_points = { 1848 5 }
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 3
+			arms_factory = 2
+			dockyard = 1
+			1968 = {
+				naval_base = 3
+			}
+		}
+		add_core_of = JAC
+		add_claim_by = ROY
+		add_claim_by = YRK
+		add_claim_by = SCO
+	}
+}

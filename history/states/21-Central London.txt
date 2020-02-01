@@ -1,0 +1,29 @@
+state={
+	id=21
+	name="STATE_21"
+	provinces={
+		291 300 301 305 315 316 
+	}
+	manpower=2500000
+	
+	state_category = megalopolis
+	
+	history={
+		victory_points = { 291 5 }
+		victory_points = { 300 5 }
+		victory_points = { 301 5 }
+		victory_points = { 305 5 }
+		victory_points = { 315 50 }
+		victory_points = { 316 20 }
+		owner = BUF
+		add_core_of = BUF
+		add_claim_by = YRK
+		add_claim_by = ANG
+		add_claim_by = ROY
+		buildings = {
+			infrastructure = 10
+			industrial_complex = 6
+			arms_factory = 4
+		}
+	}
+}

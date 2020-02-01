@@ -1,0 +1,807 @@
+focus_tree = {
+	id = JAC_Coolstuff
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = JAC
+		}
+	}
+	
+	default = no
+	
+	focus = {
+		id = JAC_invite_rupprecht
+		icon = GFX_focus_generic_military_mission
+		cost = 2
+		x = 5
+		y = 0
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+		
+			create_country_leader = {
+				name = "King Robert VI and I"
+				desc = "POLITICS_WANG_MING_DESC"
+				picture = "gfx/leaders/VBCW/JAC/JAC-Rupprecht.dds"
+				expire = "1965.1.1"
+				ideology = autocratic_subtype
+				traits = { great_war_hero imperial_connections }
+			}
+			     
+     		create_field_marshal = {
+				name = "King Robert VI and I"
+				picture = "gfx/leaders/VBCW/JAC/JAC-Rupprecht.dds"
+				traits = { war_hero inflexible_strategist trait_cautious organizer defensive_doctrine thorough_planner }
+				skill = 6
+				attack_skill = 3
+				defense_skill = 6
+				planning_skill = 5
+				logistics_skill = 4
+			}
+
+     		country_event = JAC_events.1
+     	}
+	}
+	
+	focus = {
+		id = JAC_royal_treachery
+		icon = GFX_focus_rom_royal_dictatorship
+		cost = 10
+		x = 2
+		y = 1
+		prerequisite = { focus = JAC_invite_rupprecht }
+		mutually_exclusive = { focus = JAC_strengthen_rupprecht }
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		completion_reward = {
+		    create_country_leader = {
+				name = "Queen Annis I"
+				desc = "POLITICS_WANG_MING_DESC"
+				picture = "gfx/leaders/VBCW/JAC/JAC-Antonia.dds"
+				expire = "1965.1.1"
+				ideology = autocratic_subtype
+				traits = { }
+			}
+			country_event = JAC_events.2
+        }
+	}
+	
+	focus = {
+		id = JAC_a_new_direction
+		icon = GFX_goal_generic_improve_relations
+		cost = 10
+		x = 0
+		y = 2
+		prerequisite = {focus = JAC_royal_treachery}
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		completion_reward = {
+		 add_stability = 0.1
+		}	
+	}
+	
+	focus = {
+		id = JAC_end_religous_discrimination
+		icon = GFX_focus_generic_self_management
+		cost = 10
+		x = 0
+		y = 3
+		prerequisite = {focus = JAC_a_new_direction}
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		completion_reward = {
+			add_ideas = JAC_undivided_nation
+		}
+	}
+	
+	focus = {
+		id = JAC_reconcile_the_english
+		icon = GFX_focus_chi_british_cooperation
+		cost = 10
+		x = 0
+		y = 4
+		prerequisite = {focus = JAC_end_religous_discrimination}
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		completion_reward = {
+			add_opinion_modifier = { target = ROY modifier = JAC_reconciliation }
+			ROY = { add_opinion_modifier = { target = ROOT modifier = JAC_reconciliation } }   
+			add_opinion_modifier = { target = BUF modifier = JAC_reconciliation }
+			BUF = { add_opinion_modifier = { target = ROOT modifier = JAC_reconciliation } } 
+			add_opinion_modifier = { target = ANG modifier = JAC_reconciliation }
+			ANG = { add_opinion_modifier = { target = ROOT modifier = JAC_reconciliation } }   
+			add_opinion_modifier = { target = YRK modifier = JAC_reconciliation }
+			YRK = { add_opinion_modifier = { target = ROOT modifier = JAC_reconciliation } } 
+			add_opinion_modifier = { target = SOM modifier = JAC_reconciliation }
+			SOM = { add_opinion_modifier = { target = ROOT modifier = JAC_reconciliation } }    
+		}
+	}
+  
+	focus = {
+		id = JAC_york_treaty
+		icon = GFX_focus_generic_treaty
+		cost = 10
+		x = 0
+		y = 5
+		prerequisite = {focus = JAC_reconcile_the_english}
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		completion_reward = {
+			YRK = {
+					country_event =  YRK_events.1		
+			}  
+		}
+	}
+	
+	focus = {
+		id = JAC_break_the_treaty
+		icon = GFX_goal_generic_major_war
+		cost = 10
+		x = 0
+		y = 6
+		prerequisite = {focus = JAC_york_treaty}
+		available = { is_puppet = no }
+		bypass = { has_war_with = YRK }
+		cancel = { NOT = { country_exists = YRK }}
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = YRK
+			}
+		}		
+	}
+	
+	focus = {
+		id = JAC_unify_scotland
+		icon = GFX_goal_generic_national_unity
+		cost = 5
+		x = 2
+		y = 4
+		prerequisite = {focus = JAC_royal_treachery}
+		mutually_exclusive = {}
+		available = { NOT = { country_exists = SCO }}
+		available = { NOT = { country_exists = SOG }}
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		completion_reward = {
+			add_stability = 0.1
+			add_war_support = 0.1		
+		}
+	}
+	
+	focus = {
+		id = JAC_create_a_constitution
+		icon = GFX_focus_generic_treaty
+		cost = 15
+		x = 2
+		y = 5
+		prerequisite = {focus = JAC_unify_scotland} 
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		completion_reward = {
+			set_politics = {
+				ruling_party = conservative
+				elections_allowed = yes
+			}
+			add_popularity = {
+				popularity = 0.6
+				ideology = conservative
+			}
+			create_country_leader = {
+				name = "Queen Annis I"
+				desc = "POLITICS_WANG_MING_DESC"
+				picture = "gfx/leaders/VBCW/JAC/JAC-Antonia.dds"
+				expire = "1965.1.1"
+				ideology = conservative_subtype
+				traits = { }
+			}
+			country_event = JAC_events.3
+        }
+	}
+		
+	focus = {
+		id = JAC_seek_italian_aid
+		icon = GFX_focus_generic_italy_first
+		cost = 5
+		x = 5
+		y = 2	
+		prerequisite = {focus = JAC_invite_rupprecht}
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		completion_reward = {    
+			add_equipment_to_stockpile = {
+				type = infantry_equipment 
+				amount = 5000
+				producer = ITA
+			}
+		}
+	}
+	
+	focus = {
+		id = JAC_italian_scientists
+		icon = GFX_focus_research
+		cost = 5
+		x = 5
+		y = 3
+		prerequisite = {focus = JAC_seek_italian_aid}
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		completion_reward = {
+			add_research_slot = 1
+			add_tech_bonus = {
+				name = secret_bonus
+				bonus = 0.5
+				uses = 2
+				category = electronics
+			}
+		}
+	}
+	
+	focus = {
+		id = JAC_italian_advisors
+		icon = GFX_focus_generic_military_mission
+		cost = 5
+		x = 5
+		y = 4
+		prerequisite = {focus = JAC_italian_scientists}
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		completion_reward = {
+			add_ideas = JAC_italian_advisors
+		}
+	}
+
+
+  focus = {
+		id = JAC_strengthen_rupprecht
+		icon = GFX_focus_rom_royal_dictatorship
+		cost = 10
+		x = 8
+		y = 1
+		prerequisite = { focus = JAC_invite_rupprecht }
+		mutually_exclusive = { focus = JAC_royal_treachery }
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		completion_reward = {
+        add_political_power = 150
+        add_war_support = 0.1    
+		}
+	}
+  
+  	focus = {
+		id = JAC_plea_to_the_vatican
+		icon = GFX_focus_generic_military_academy
+		cost = 10
+		x = 8
+		y = 3
+		prerequisite = {focus = JAC_strengthen_rupprecht}
+		continue_if_invalid = yes	
+		available_if_capitulated = yes
+		completion_reward = {
+	        country_event = JAC_events.4
+        }
+	} 
+  
+	focus = {
+		id = JAC_empower_catholics
+		icon = GFX_goal_holy_war
+		cost = 10
+		x = 10
+		y = 2
+		prerequisite = {focus = JAC_strengthen_rupprecht}
+		continue_if_invalid = yes	
+		available_if_capitulated = yes
+		completion_reward = {
+		    add_war_support = 0.15
+			add_political_power = 150
+			add_ideas = JAC_empowered_catholics
+        }
+	}
+	
+	focus = {
+		id = JAC_traditional_beliefs
+		icon = GFX_goal_generic_defence
+		cost = 10
+		x = 10
+		y = 3
+		prerequisite = {focus = JAC_empower_catholics}
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		completion_reward = {
+		     add_ideas = JAC_traditional_beliefs								
+		}
+	}
+
+	focus = {
+		id = JAC_king_and_country
+		icon = GFX_focus_generic_home_defense
+		cost = 10
+		x = 10
+		y = 4
+		prerequisite = {focus = JAC_traditional_beliefs}
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		completion_reward = {
+		   add_ideas = JAC_propaganda_campaign
+		}
+	}
+	
+	focus = {
+		id = JAC_fyrd_of_fort_william
+		icon = GFX_goal_liverpool_militias
+		cost = 10
+		x = 9
+		y = 5
+		prerequisite = {focus = JAC_king_and_country}
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		completion_reward = {
+		    custom_effect_tooltip = JAC_royal_guards_divisions_tt
+			hidden_effect = {
+				if = {
+					limit = {
+						has_tech = tech_recon
+					}
+					division_template = {
+						name = "Royal Guards Division"
+						priority = 2
+						division_names_group = JAC_INF_01
+						regiments = {
+							infantry = { x = 0 y = 0 }
+							infantry = { x = 0 y = 1 }
+							infantry = { x = 0 y = 2 }
+				
+		    	   		 	infantry = { x = 1 y = 0 }
+							infantry = { x = 1 y = 1 }
+							infantry = { x = 1 y = 2 }
+				
+		    	   		 	infantry = { x = 2 y = 0 }
+							artillery_brigade = { x = 2 y = 1 }
+							artillery_brigade = { x = 2 y = 2 }
+						}
+						support = {
+							engineer = { x = 0 y = 0 }
+							recon = { x = 0 y = 1 }
+						}
+					}
+					else = {
+						division_template = {
+							name = "Royal Guards Division"
+							priority = 2
+							division_names_group = JAC_INF_01
+							regiments = {
+								infantry = { x = 0 y = 0 }
+								infantry = { x = 0 y = 1 }
+								infantry = { x = 0 y = 2 }
+					
+			    	   		 	infantry = { x = 1 y = 0 }
+								infantry = { x = 1 y = 1 }
+								infantry = { x = 1 y = 2 }
+					
+			    	   		 	infantry = { x = 2 y = 0 }
+								artillery_brigade = { x = 2 y = 1 }
+								artillery_brigade = { x = 2 y = 2 }
+							}
+							support = {
+								engineer = { x = 0 y = 0 }
+							}
+						}
+					}
+				}
+				random_owned_controlled_state = {
+					limit = { ROOT = { has_full_control_of_state = PREV } }
+					prioritize = { 117 }
+					create_unit = {
+						division = "name = \"Royal Guards Division\" division_template = \"Royal Guards Division\" start_experience_factor = 1.0" 
+						owner = JAC
+					}
+				}
+			}
+		}
+	}
+  
+	focus = {
+		id = JAC_celtic_identity
+		icon = GFX_goal_generic_propaganda
+		cost = 10
+		x = 9
+		y = 6
+		prerequisite = {focus = JAC_fyrd_of_fort_william}
+		continue_if_invalid = yes
+		
+		available_if_capitulated = yes
+		completion_reward = {
+			  add_war_support = 0.1      
+		 }
+	}
+	
+	focus = {
+		id = JAC_conservation_for_a_cause
+		icon = GFX_focus_rom_parties_end
+		cost = 10
+		x = 12
+		y = 5
+		prerequisite = {focus = JAC_king_and_country}
+		continue_if_invalid = yes
+		
+		available_if_capitulated = yes
+		completion_reward = {
+      add_ideas = JAC_conservation_for_a_cause
+		}
+	}
+	
+	focus = {
+		id = JAC_scrap_old_ships
+		icon = GFX_focus_generic_aluminum
+		cost = 10
+		x = 14
+		y = 5
+		prerequisite = {focus = JAC_king_and_country}
+		available = {
+			has_full_control_of_state = 124
+		}
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		completion_reward = {
+			124 = {
+				add_resource = {
+					type = aluminium
+					amount = 12
+				}
+				add_resource = {
+					type = steel
+					amount = 12
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = JAC_muir_mohr_fleet
+		icon = GFX_focus_generic_destroyer
+		cost = 10
+		x = 16
+		y = 0
+		continue_if_invalid = yes
+		
+		available_if_capitulated = yes
+		completion_reward = {
+			add_tech_bonus = {
+				name = JAC_boats
+				bonus = 0.25
+				uses = 3
+				category = dd_tech
+				category = cl_tech
+				category = sloop_tech
+				category = corvette_tech
+				category = trawler_tech
+				category = motorboat_tech      
+				category = ss_tech
+				category = monitor_tech
+				category = cvl_tech
+         }	
+         
+        add_tech_bonus = {
+				  name = JAC_boats_doctrine
+				  bonus = 0.5
+				  uses = 1
+				  category = naval_doctrine
+			}    
+		}
+	}
+	
+	focus = {
+		id = JAC_convert_docks
+		icon = GFX_goal_generic_construct_naval_dockyard
+		cost = 10
+		x = 14
+		y = 1
+		prerequisite = {focus = JAC_muir_mohr_fleet}
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		completion_reward = {
+			116 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes	
+				}
+			}
+			124 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes	
+				}
+			}
+			117 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes	
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = JAC_hire_sailors
+		icon = GFX_goal_generic_amphibious_assault
+		cost = 10
+		x = 14
+		y = 2
+		prerequisite = {focus = JAC_convert_docks}
+		continue_if_invalid = yes
+		
+		available_if_capitulated = yes
+		completion_reward = {
+			navy_experience = 25
+		}
+	}
+	
+	focus = {
+		id = JAC_lessons_of_the_past
+		icon = GFX_goal_generic_navy_cruiser
+		cost = 10
+		x = 14
+		y = 3
+		prerequisite = {focus = JAC_hire_sailors}
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		completion_reward = {
+			add_tech_bonus = {
+				name = JAC_boats_doctrine_II
+				bonus = 0.3
+				uses = 3
+				category = naval_doctrine
+			}    
+		}
+	}
+	
+	focus = {
+		id = JAC_hire_foreign_naval_officers
+		icon = GFX_focus_generic_military_mission
+		cost = 10
+		x = 16
+		y = 1
+		prerequisite = {focus = JAC_muir_mohr_fleet}
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		completion_reward = {    
+			create_navy_leader = {
+				name = "Inigo Campioni"
+				portrait_path = "gfx/leaders/VBCW/JAC/JAC_Campioni.dds"
+				traits = { superior_tactician spotter }
+				skill = 2
+			}   
+			create_navy_leader = {
+				name = "Angelo Iachino"
+				portrait_path = "gfx/leaders/VBCW/JAC/JAC_Iachino.dds"
+				traits = { superior_tactician spotter }
+				skill = 2
+			}   
+			create_navy_leader = {
+				name = "Jean-Pierre Esteva "
+				portrait_path = "gfx/leaders/VBCW/JAC/JAC_Esteva.dds"
+				traits = { seawolf }
+				skill = 2
+			}   
+		}
+	}
+  
+	focus = {
+		id = JAC_increased_naval_spending
+		icon = GFX_goal_generic_occupy_states_coastal
+		cost = 10
+		x = 16
+		y = 2
+		prerequisite = {focus = JAC_hire_foreign_naval_officers }
+		continue_if_invalid = yes		
+		available_if_capitulated = yes
+		completion_reward = {
+			120 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes	
+				}
+			}
+		}
+	}
+  
+	focus = {
+		id = JAC_secure_the_northern_isles
+		icon = GFX_focus_generic_navy_battleship2
+		cost = 10
+		x = 16
+		y = 3
+		prerequisite = {focus = JAC_increased_naval_spending }
+		continue_if_invalid = yes
+		
+		available_if_capitulated = yes
+		completion_reward = {
+			unlock_decision_tooltip = JAC_secure_orkney
+		}     
+	}
+	
+	focus = {
+		id = JAC_scottish_naval_infantry
+		icon = GFX_goal_generic_amphibious_assault
+		cost = 10
+		x = 18
+		y = 1
+		prerequisite = {focus = JAC_muir_mohr_fleet focus = JAC_royal_scottish_army }
+		continue_if_invalid = yes
+		
+		available_if_capitulated = yes
+		completion_reward = {
+			add_tech_bonus = {
+				name = marines_focus
+				bonus = 0.5
+				uses = 1
+				category = marine_tech
+			}
+		}
+	}
+  
+	focus = {
+		id = JAC_royal_scottish_army
+		icon = GFX_focus_generic_commonwealth_build_infantry
+		cost = 10
+		x = 22
+		y = 0
+		continue_if_invalid = yes
+		
+		available_if_capitulated = yes
+		completion_reward = {
+			army_experience = 25      
+		}
+	}	
+	
+	focus = {
+		id = JAC_army_air_corps
+		icon = GFX_goal_generic_air_fighter
+		cost = 10
+		x = 20
+		y = 1
+		prerequisite = {focus = JAC_royal_scottish_army}
+		continue_if_invalid = yes
+		
+		available_if_capitulated = yes
+		completion_reward = {
+			air_experience = 25      
+			add_tech_bonus = {
+				name = air_corps_jac_focus
+				bonus = 0.5
+				uses = 3
+				category = light_fighter
+				category = cas_bomber
+			}
+		}
+	}
+	
+	focus = {
+		id = JAC_stand_against_fascism
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		cost = 10
+		x = 22
+		y = 1
+		prerequisite = {focus = JAC_royal_scottish_army}
+		continue_if_invalid = yes
+		
+		available_if_capitulated = yes
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = ROY
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = BUF        
+			}
+		}
+	}
+	
+	focus = {
+		id = JAC_kill_the_left
+		icon = GFX_focus_ger_bulwark_against_bolshevism
+		cost = 10
+		x = 22
+		y = 2
+		prerequisite = {focus = JAC_stand_against_fascism}
+		continue_if_invalid = yes
+		
+		available_if_capitulated = yes
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = SOM    	    
+			}
+		}
+	}
+
+	focus = {
+		id = JAC_reclaim_the_birthright
+		icon = GFX_goal_generic_more_territorial_claims
+		cost = 20
+		x = 22
+		y = 3
+		prerequisite = {focus = JAC_kill_the_left}
+		continue_if_invalid = yes
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			every_state = { add_core_of = JAC}           
+        }
+	}
+
+	focus = {
+		id = JAC_royal_support
+		icon = GFX_focus_generic_combined_arms
+		cost = 10
+		x = 24
+		y = 1
+		prerequisite = {focus = JAC_royal_scottish_army}
+		continue_if_invalid = yes
+		
+		available_if_capitulated = yes
+		completion_reward = {
+			add_tech_bonus = {
+				name = support_bonus
+				bonus = 0.25
+				uses = 2
+				category = support_tech
+			  }      
+			}
+		}
+    
+	focus = {
+		id = JAC_scottish_highlanders
+		icon = GFX_goal_highland_levies
+		cost = 10
+		x = 24
+		y = 2
+		prerequisite = {focus = JAC_royal_support}
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		completion_reward = {
+			add_tech_bonus = {
+				name = support_bonus
+				bonus = 0.5
+				uses = 2
+				category = mountaineers_tech
+			}
+		}      			
+	}
+		
+	focus = {
+		id = JAC_royal_artillery_corps
+		icon = GFX_goal_generic_army_artillery2
+		cost = 10
+		x = 24
+		y = 3
+		prerequisite = {focus = JAC_scottish_highlanders}
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		completion_reward = {
+			add_tech_bonus = {
+				name = support_bonus
+				bonus = 0.25
+				uses = 2
+				category = artillery
+			}      
+		}
+	}
+}
+		

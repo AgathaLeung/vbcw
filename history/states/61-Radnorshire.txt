@@ -1,0 +1,25 @@
+state={
+	id=61
+	name="STATE_61"
+	provinces={
+		463 503 505 537 539 553 
+	}
+	manpower=250000
+	
+	resources = {
+		tungsten = 4
+		chromium = 4
+	}
+	
+	state_category = pastoral
+	
+	history={
+		owner = WAL
+		add_core_of = WAL
+		add_claim_by = ROY
+		add_claim_by = YRK
+		buildings = {
+			infrastructure = 2
+		}
+	}
+}

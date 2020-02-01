@@ -1,0 +1,47 @@
+objectTypes = {
+
+	pdxmesh = {
+		name = "ROY_mechanized_mesh"
+		file = "gfx/models/units/vehicles/ROY_mechanized_01.mesh"
+		
+		animation = { id = "idle"			type = "ROY_mechanized_01_idle_animation" }
+		animation = { id = "move"			type = "ROY_mechanized_01_move_animation" }
+		animation = { id = "attack"			type = "ROY_mechanized_01_attack_animation" }
+	}
+
+	pdxmesh = {
+		name = "BUF_mechanized_mesh"
+		file = "gfx/models/units/vehicles/BUF_mechanized_01.mesh"
+		
+		animation = { id = "idle"			type = "BUF_mechanized_01_idle_animation" }
+		animation = { id = "move"			type = "BUF_mechanized_01_move_animation" }
+		animation = { id = "attack"			type = "BUF_mechanized_01_attack_animation" }
+	}
+	
+	pdxmesh = {
+		name = "YK_mechanized_mesh"
+		file = "gfx/models/units/vehicles/YK_mechanized_01.mesh"
+		
+		animation = { id = "idle"			type = "YK_mechanized_01_idle_animation" }
+		animation = { id = "move"			type = "YK_mechanized_01_move_animation" }
+		animation = { id = "attack"			type = "YK_mechanized_01_attack_animation" }
+	}
+	
+	pdxmesh = {
+		name = "YK_motorized_mesh"
+		file = "gfx/models/units/vehicles/YK_motorized_01.mesh"
+		
+		animation = { id = "idle"			type = "YK_motorized_01_idle_animation" }
+		animation = { id = "move"			type = "YK_motorized_01_move_animation" }
+	}
+	
+	pdxmesh = {
+		name = "SOC_mechanized_mesh"
+		file = "gfx/models/units/vehicles/SOC_mechanized_01.mesh"
+		
+		animation = { id = "idle"			type = "SOC_mechanized_01_idle_animation" }
+		animation = { id = "move"			type = "SOC_mechanized_01_move_animation" }
+		animation = { id = "attack"			type = "SOC_mechanized_01_attack_animation" }
+	}
+	
+}

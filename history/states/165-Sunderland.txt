@@ -1,0 +1,39 @@
+state={
+	id=165
+	name="STATE_165"
+	
+	resources={
+		oil = 16.000
+		steel = 16.000
+	}
+
+	history={
+		owner = SON
+		add_core_of = SON
+		add_claim_by = ROY
+		add_claim_by = YRK
+		add_claim_by = ANG
+		victory_points = { 1510 10 }
+		victory_points = { 1533 10 }
+		buildings = {
+			infrastructure = 8
+			industrial_complex = 2
+			arms_factory = 2
+			dockyard = 4
+			1510 = {
+				naval_base = 3
+			}
+			1533 = {
+				naval_base = 4
+			}
+		}
+	}
+	
+	provinces={
+		1510 1517 1522 1533 
+	}
+	
+	manpower=200000
+	buildings_max_level_factor=1.000
+	state_category=large_city
+}

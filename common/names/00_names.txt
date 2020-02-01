@@ -1,0 +1,134 @@
+﻿### Names generation for aces ###
+# Surnames can be male/female dependent or general. Fe. in Polish some surnames has different endings depending on the gender.
+# Names and Surnames are randomly picked and will sometimes repeat, but will never repeat in combinations for example there will never be generated another "John Smith".
+# Assigning the callsign is random - may be assigned or not. If we use the callsign, it will never be assigned to anyone again. Callsigns are not obligatory to script.
+# Picking up a gender is random, and is influenced by the amount of names scripted.
+
+default = {
+	male = {
+		names = { Albert Alexander Alfred Archibald Arthur Bernard Cecil Charles Colin Cyril David Dennis Donald Douglas Edmund Edward Francis Geoffrey George Graham Henrey Herbert Horatio Hubert Hugh Ian James Jeremy John Leopold Lester Martin Neville Nigel Oswald Max Percy Reginald Richard Robert Russell Stanley Thomas Wallace William Winston Reginald }
+		surnames = { }
+		callsigns = { }
+	}
+	surnames = { Allenby Battenberg Beatty Beresford Brown Buller Butler Campbell Cardigan Churchill Cochrane Cockburn Dundas Fairfax Fisher French Gough Grant Grenfell Haig Murphy Hamilton Hardinge Havelock Hope Jellicoe Kitchener Lyons Madden Milne Montgomery Moresby Mundy Napier Plummer Ragland Roberts Seaton Seymour Collin Smith Stewart Tyron Tyrwhitt Williams Windsor Wolseley Wood Roberts }
+	
+	callsigns = {  }
+}
+
+
+ROY = {
+	male = {
+		names = { Albert Alexander Alfred Archibald Arthur Bernard Cecil Charles Colin Cyril David Dennis Donald Douglas Edmund Edward Francis Geoffrey George Graham Henrey Herbert Horatio Hubert Hugh Ian James Jeremy John Leopold Lester Martin Neville Nigel Oswald Max Percy Reginald Richard Robert Russell Stanley Thomas Wallace William Winston Reginald Rupert Freddie Seabury Sydney Edgar Charles Oswald Eustace Oofy Wilmot  }
+	}
+	female = {
+		names = { }
+	}
+	surnames = { Allenby Battenberg Beatty Beresford Brown Buller Butler Campbell Cardigan Churchill Cochrane Cockburn Dundas Fairfax Fisher French Gough Grant Grenfell Haig Murphy Hamilton Hardinge Havelock Hope Jellicoe Kitchener Lyons Madden Milne Montgomery Moresby Mundy Napier Plummer Ragland Roberts Seaton Seymour Collin Smith Stewart Tyron Tyrwhitt Williams Windsor Wolseley Wood Roberts Fink-Nottle Bassington-Bassington Bickersteth Chuffnell Fotheringay-Phipps Potter-Pirbright Prosser Glossop Steggles Wooster Winkworth Wickhammersley }
+	callsigns = { }
+}
+
+
+IRL = {
+	male = {
+		names = { Albert Alfred Bernard John James William Robert Brian Cathal Connor Éamon Eoghan Edward Finnbar Fionán Frank Kevin Liam Michael Patrick Peter Séan William Tadhg Derry Pierce Mick Séamus }
+	}
+	female = {
+		names = { }
+	}
+	surnames = { Aiken Ashe Breen Brugha Byrne Collins Connolly Cosgrave Craig Donnelly Doyle FitzGerald Griffith Kelly Kennedy Larkin Lynch Mallin McCartan McCullough McGarry Mulcahy Murphy O'Brien O'Connor O'Doherty O'Higgins O'Leary O'Mara O'Toole O'Duibhghiolla Pearse Plunket White Hogan }
+	callsigns = { }
+}
+
+IRA = {
+	male = {
+		names = { Albert Alfred Bernard John James William Robert Brian Cathal Connor Éamon Eoghan Edward Finnbar Fionán Frank Kevin Liam Michael Patrick Peter Séan William Tadhg Derry Pierce Mick Séamus }
+	}
+	female = {
+		names = { }
+	}
+	surnames = { Aiken Ashe Breen Brugha Byrne Collins Connolly Cosgrave Craig Donnelly Doyle FitzGerald Griffith Kelly Kennedy Larkin Lynch Mallin McCartan McCullough McGarry Mulcahy Murphy O'Brien O'Connor O'Doherty O'Higgins O'Leary O'Mara O'Toole O'Duibhghiolla Pearse Plunket White Hogan }
+	callsigns = { }
+}
+
+ULS = {
+	male = {
+		names = { Albert Alfred Bernard Charles Edmund John James William Robert Alexander Thomas David Andrew Charles Duncan Donald Angus Malcolm Douglas Iain Finlay Arthur Edward Graham Hugh Ian }
+	}
+	female = {
+		names = { }
+	}
+	surnames = { Campbell Stewart Scott Murray MacDonald Reid Reith Ross Abercrombie Abernathy Balfour Angus Arbuthnot Buchanan Cruickshank Dalziel Donaldson Dougal Duff Fairbairn Fraser Ferguson Innis Lawrie MacAulay MacAdam MacDougal MacLean MacLeod MacPherson McAllister McAndrew McCaskill McDougal McDuff McIntosh Fraser }
+	callsigns = { }
+}
+
+
+WAL = {
+	male = {
+		names = { Aled Alun Aneurin Billy Bryn Caerwyn Dafydd Dai David Dylan Ellis Emrys Esyr Gareth Gawain George Geraint Glyn Gwyn Gwynfor Harry Huw Hywel Iago Ianto Idris Idwal Iestyn Ieuan Ifan Ifor Ioan Iolo Iorwerth James John Llew Meic Meredydd Mervyn Morgan Mostyn Osian Owain Owen Rhodri Rhys Roy Thomas Trevor Tudor Vaughan William Wyn }
+	}
+	female = {
+		names = { Carys Enid Gwen Mair Megan Nia Sian Vivian }
+	}
+	surnames = { Barry Bevan Bowen Collins Davies Driscoll Edwards Ellis Evans Griffiths Gruffudd Harris Howell Hughes Humphries Ifans James Jenkins Jones Lewis Llewelyn Lloyd Morgan Moss Owen Owens Parry Philips Phillips Price Pritchard Probert Pryce Pugh Rees Roberts Rowlands Smith Thomas Williams }
+	callsigns = { Taffy }
+}
+
+
+SOC = {
+	male = {
+		names = { Aled Alun Aneurin Billy Bryn Caerwyn Dafydd Dai David Dylan Ellis Emrys Esyr Gareth Gawain George Geraint Glyn Gwyn Gwynfor Harry Huw Hywel Iago Ianto Idris Idwal Iestyn Ieuan Ifan Ifor Ioan Iolo Iorwerth James John Llew Meic Meredydd Mervyn Morgan Mostyn Osian Owain Owen Rhodri Rhys Roy Thomas Trevor Tudor Vaughan William Wyn }
+	}
+	female = {
+		names = { Carys Enid Gwen Mair Megan Nia Sian Vivian }
+	}
+	surnames = { Barry Bevan Bowen Collins Davies Driscoll Edwards Ellis Evans Griffiths Gruffudd Harris Howell Hughes Humphries Ifans James Jenkins Jones Lewis Llewelyn Lloyd Morgan Moss Owen Owens Parry Philips Phillips Price Pritchard Probert Pryce Pugh Rees Roberts Rowlands Smith Thomas Williams }
+	callsigns = { Taffy }
+}
+
+
+SCO = {
+	male = {
+		names = { Albert Alec Alex Alexander Alfred Allan Andrew Andy Angus Archibald Arthur Bernard Bob Brian Campbell Charles David Donald Douglas Duncan Edmund Edward Ewan Finlay George Gordon Graham Hugh Iain Ian Jack James John Joseph Kenneth Lachlan Lawrence Lewis Malcolm Neil Peter Robert Ronald Thomas William }
+	}
+	female = {
+		names = { Agnes Annie Betsy Catherinea Eliza Elizabeth Ellen Ethel Helen Isabella Jane Janet Jemima Maggie Margaret Mary Nellie }
+	}
+	surnames = { Abercrombie Abernathy Angus Arbuthnot Baird Balfour Ballantyne Blair Boyd Brown Bruce Buchanan Burns Calhoun Cameron Campbell Carr Carson Clacher Clarke Coburn Cockburn Cooper Cowden Craig Croft Cruickshank Cunningham Dalziel David Davies Donaghue Donaldson Dougal Douglas Drummond Drysdale Duff Duffy Dunbar Duncan Dunn Edwards Evans Fairbairn Faulkner Ferguson Findlay Fraiser Fraser Gibbs Glenn Gordon Graeme Green Greer Hughes Hume Innis Jack Jackson Johnson Johnston Jones Keir Keith Kelly Kendrick Kidd Kinley Kinnaird Kyles Lawrie Leiper Lennox Leslie Lester Lewis Limond Logan Lowe Lowry Lyon MacAdam MacAulay MacDonald MacDougal MacLean MacLeod MacPherson Martin Masters Maxwell McAdams McAfee McAlister McAllister McAndrew McArthur McCabe McCaig McCallum McCaskill McClellan McConnell McCormick McCoy McCracken McCrae McCreery McDonald McDougal McDougall McDuff McEwan McFarlane McFee McGee McGill McGregor McIntosh McIntyre McIver McKay McKellar McKendick McKenna McKenzie McKinley McLain McLean McLeod McNab McNeill McQueen McReynolds Milligan Monroe Montgomery Moray Morris Murdoch Murray Neil Ness Nevin Norris Oliver Patton Payne Ralston Ramsey Reid Reith Ritchie Roberts Robinson Ross Roy Rutherford Scott Skeates Smith Sterling Steward Stewart Stirling Stroud Stuart Taggart Taylor Thomas Thomson Turner Urquhart Walker Wallace Wallis Ward White Williams Wilson Wood Wright }
+	callsigns = { }
+}
+
+
+SOG = {
+	male = {
+		names = { Albert Alec Alex Alexander Alfred Allan Andrew Andy Angus Archibald Arthur Bernard Bob Brian Campbell Charles David Donald Douglas Duncan Edmund Edward Ewan Finlay George Gordon Graham Hugh Iain Ian Jack James John Joseph Kenneth Lachlan Lawrence Lewis Malcolm Neil Peter Robert Ronald Thomas William }
+	}
+	female = {
+		names = { Agnes Annie Betsy Catherinea Eliza Elizabeth Ellen Ethel Helen Isabella Jane Janet Jemima Maggie Margaret Mary Nellie }
+	}
+	surnames = { Abercrombie Abernathy Angus Arbuthnot Baird Balfour Ballantyne Blair Boyd Brown Bruce Buchanan Burns Calhoun Cameron Campbell Carr Carson Clacher Clarke Coburn Cockburn Cooper Cowden Craig Croft Cruickshank Cunningham Dalziel David Davies Donaghue Donaldson Dougal Douglas Drummond Drysdale Duff Duffy Dunbar Duncan Dunn Edwards Evans Fairbairn Faulkner Ferguson Findlay Fraiser Fraser Gibbs Glenn Gordon Graeme Green Greer Hughes Hume Innis Jack Jackson Johnson Johnston Jones Keir Keith Kelly Kendrick Kidd Kinley Kinnaird Kyles Lawrie Leiper Lennox Leslie Lester Lewis Limond Logan Lowe Lowry Lyon MacAdam MacAulay MacDonald MacDougal MacLean MacLeod MacPherson Martin Masters Maxwell McAdams McAfee McAlister McAllister McAndrew McArthur McCabe McCaig McCallum McCaskill McClellan McConnell McCormick McCoy McCracken McCrae McCreery McDonald McDougal McDougall McDuff McEwan McFarlane McFee McGee McGill McGregor McIntosh McIntyre McIver McKay McKellar McKendick McKenna McKenzie McKinley McLain McLean McLeod McNab McNeill McQueen McReynolds Milligan Monroe Montgomery Moray Morris Murdoch Murray Neil Ness Nevin Norris Oliver Patton Payne Ralston Ramsey Reid Reith Ritchie Roberts Robinson Ross Roy Rutherford Scott Skeates Smith Sterling Steward Stewart Stirling Stroud Stuart Taggart Taylor Thomas Thomson Turner Urquhart Walker Wallace Wallis Ward White Williams Wilson Wood Wright }
+	callsigns = { }
+}
+
+
+JAC = {
+	male = {
+		names = { Albert Alec Alex Alexander Alfred Allan Andrew Andy Angus Archibald Arthur Bernard Bob Brian Campbell Charles David Donald Douglas Duncan Edmund Edward Ewan Finlay George Gordon Graham Hugh Iain Ian Jack James John Joseph Kenneth Lachlan Lawrence Lewis Malcolm Neil Peter Robert Ronald Thomas William  }
+	}
+	female = {
+		names = { Agnes Annie Betsy Catherinea Eliza Elizabeth Ellen Ethel Helen Isabella Jane Janet Jemima Maggie Margaret Mary Nellie }
+	}
+	surnames = { Abercrombie Abernathy Angus Arbuthnot Baird Balfour Ballantyne Blair Boyd Brown Bruce Buchanan Burns Calhoun Cameron Campbell Carr Carson Clacher Clarke Coburn Cockburn Cooper Cowden Craig Croft Cruickshank Cunningham Dalziel David Davies Donaghue Donaldson Dougal Douglas Drummond Drysdale Duff Duffy Dunbar Duncan Dunn Edwards Evans Fairbairn Faulkner Ferguson Findlay Fraiser Fraser Gibbs Glenn Gordon Graeme Green Greer Hughes Hume Innis Jack Jackson Johnson Johnston Jones Keir Keith Kelly Kendrick Kidd Kinley Kinnaird Kyles Lawrie Leiper Lennox Leslie Lester Lewis Limond Logan Lowe Lowry Lyon MacAdam MacAulay MacDonald MacDougal MacLean MacLeod MacPherson Martin Masters Maxwell McAdams McAfee McAlister McAllister McAndrew McArthur McCabe McCaig McCallum McCaskill McClellan McConnell McCormick McCoy McCracken McCrae McCreery McDonald McDougal McDougall McDuff McEwan McFarlane McFee McGee McGill McGregor McIntosh McIntyre McIver McKay McKellar McKendick McKenna McKenzie McKinley McLain McLean McLeod McNab McNeill McQueen McReynolds Milligan Monroe Montgomery Moray Morris Murdoch Murray Neil Ness Nevin Norris Oliver Patton Payne Ralston Ramsey Reid Reith Ritchie Roberts Robinson Ross Roy Rutherford Scott Skeates Smith Sterling Steward Stewart Stirling Stroud Stuart Taggart Taylor Thomas Thomson Turner Urquhart Walker Wallace Wallis Ward White Williams Wilson Wood Wright }
+	callsigns = { }
+}
+
+KER = {
+	male = {
+		names = { Albert Alexander Alfred Archibald Arthur Bernard Cecil Charles Colin Cyril David Dennis Donald Douglas Edmund Edward Francis Geoffrey George Graham Henrey Herbert Horatio Hubert Hugh Ian James Jeremy John Leopold Lester Martin Neville Nigel Oswald Max Percy Reginald Richard Robert Russell Stanley Thomas Wallace William Winston Reginald Daveth Jago Jory }
+	}
+	female = {
+		names = { }
+	}
+	surnames = { Trevithick Trescothick Chegwin Penberthy Penrose Penhale Bolitho Chenoweth Hammett Menhenick Nancarrow Nance Nancekivell Trembath Trudgeon Spargo Chegwidden Barkle Odgers Sincock Prisk Williams Roberts Stephens Richards Thomas Martin Pearce Pascoe }
+	callsigns = { }
+}
+

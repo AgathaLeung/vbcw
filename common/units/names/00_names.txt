@@ -1,0 +1,220 @@
+﻿# Names are based on equipment types (picking equipment with highest amount from the pool)
+# Generic are used for countries that are not scripted in.
+generic = {
+	# Ships
+	submarine = {
+		prefix = ""
+		generic = { "Submarine" }
+		unique = { "SS-01" "SS-02" "SS-03" "SS-04" "SS-05" "SS-06" "SS-07" "SS-08" "SS-09" "SS-10" "SS-11" "SS-12" "SS-13" "SS-14" "SS-15" "SS-16" "SS-17" "SS-18" "SS-19" "SS-20" "SS-21" "SS-22" "SS-23" "SS-24" "SS-25" "SS-26" "SS-27" "SS-28" "SS-29" "SS-30" "SS-31" "SS-32" "SS-33" "SS-34" "SS-35" "SS-36" "SS-37" "SS-38" "SS-39" "SS-40" "SS-41" "SS-42" "SS-43" "SS-44" "SS-45" "SS-46" "SS-47" "SS-48" "SS-49" "SS-50" "SS-51" "SS-52" "SS-53" "SS-54" "SS-55" "SS-56" "SS-57" "SS-58" "SS-59" "SS-60" "SS-61" "SS-62" "SS-63" "SS-64" "SS-65" "SS-66" "SS-67" "SS-68" "SS-69" "SS-70" "SS-71" "SS-72" "SS-73" "SS-74" "SS-75" "SS-76" "SS-77" "SS-78" "SS-79" "SS-80" "SS-81" "SS-82" "SS-83" "SS-84" "SS-85" "SS-86" "SS-87" "SS-88" "SS-89" "SS-90" "SS-91" "SS-92" "SS-93" "SS-94" "SS-95" "SS-96" "SS-97" "SS-98" "SS-99" "SS-100" "SS-101" "SS-102" "SS-103" "SS-104" "SS-105" "SS-106" "SS-107" "SS-108" "SS-109" "SS-110" "SS-111" "SS-112" "SS-113" "SS-114" "SS-115" "SS-116" "SS-117" "SS-118" "SS-119" "SS-120" "SS-121" "SS-122" "SS-123" "SS-124" "SS-125" "SS-126" "SS-127" "SS-128" "SS-129" "SS-130" "SS-131" "SS-132" "SS-133" "SS-134" "SS-135" "SS-136" "SS-137" "SS-138" "SS-139" "SS-140" "SS-141" "SS-142" "SS-143" "SS-144" "SS-145" "SS-146" "SS-147" "SS-148" "SS-149" "SS-150" "SS-151" "SS-152" "SS-153" "SS-154" "SS-155" "SS-156" "SS-157" "SS-158" "SS-159" "SS-160" "SS-161" "SS-162" }
+	}
+	gunboat = {
+		prefix = ""
+		generic = { "MGB" }
+		unique = { "MGB-01" "MGB-02" "MGB-03" "MGB-04" "MGB-05" "MGB-06" "MGB-07" "MGB-08" "MGB-09" "MGB-10" "MGB-11" "MGB-12" "MGB-13" "MGB-14" "MGB-15" "MGB-16" "MGB-17" "MGB-18" "MGB-19" "MGB-20" "MGB-21" "MGB-22" "MGB-23" "MGB-24" "MGB-25" "MGB-26" "MGB-27" "MGB-28" "MGB-29" "MGB-30" "MGB-31" "MGB-32" "MGB-33" "MGB-34" "MGB-35" "MGB-36" "MGB-37" "MGB-38" "MGB-39" "MGB-40" "MGB-41" "MGB-42" "MGB-43" "MGB-44" "MGB-45" "MGB-46" "MGB-47" "MGB-48" "MGB-49" "MGB-50" "MGB-51" "MGB-52" "MGB-53" "MGB-54" "MGB-55" "MGB-56" "MGB-57" "MGB-58" "MGB-59" "MGB-60" "MGB-61" "MGB-62" "MGB-63" "MGB-64" "MGB-65" "MGB-66" "MGB-67" "MGB-68" "MGB-69" "MGB-70" "MGB-71" "MGB-72" "MGB-73" "MGB-74" "MGB-75" "MGB-76" "MGB-77" "MGB-78" "MGB-79" "MGB-80" "MGB-81" "MGB-82" "MGB-83" "MGB-84" "MGB-85" "MGB-86" "MGB-87" "MGB-88" "MGB-89" "MGB-90" "MGB-91" "MGB-92" "MGB-93" "MGB-94" "MGB-95" "MGB-96" "MGB-97" "MGB-98" "MGB-99" "MGB-100" "MGB-101" "MGB-102" "MGB-103" "MGB-104" "MGB-105" "MGB-106" "MGB-107" "MGB-108" "MGB-109" "MGB-110" "MGB-111" "MGB-112" "MGB-113" "MGB-114" "MGB-115" "MGB-116" "MGB-117" "MGB-118" "MGB-119" "MGB-120" "MGB-121" "MGB-122" "MGB-123" "MGB-124" "MGB-125" "MGB-126" "MGB-127" "MGB-128" "MGB-129" "MGB-130" "MGB-131" "MGB-132" "MGB-133" "MGB-134" "MGB-135" "MGB-136" "MGB-137" "MGB-138" "MGB-139" "MGB-140" "MGB-141" "MGB-142" "MGB-143" "MGB-144" "MGB-145" "MGB-146" "MGB-147" "MGB-148" "MGB-149" "MGB-150" "MGB-151" "MGB-152" "MGB-153" "MGB-154" "MGB-155" "MGB-156" "MGB-157" "MGB-158" "MGB-159" "MGB-160" "MGB-161" "MGB-162" }
+	}
+	torpedo_boat = {
+		prefix = ""
+		generic = { "MTB" }
+		unique = { "MTB-01" "MTB-02" "MTB-03" "MTB-04" "MTB-05" "MTB-06" "MTB-07" "MTB-08" "MTB-09" "MTB-10" "MTB-11" "MTB-12" "MTB-13" "MTB-14" "MTB-15" "MTB-16" "MTB-17" "MTB-18" "MTB-19" "MTB-20" "MTB-21" "MTB-22" "MTB-23" "MTB-24" "MTB-25" "MTB-26" "MTB-27" "MTB-28" "MTB-29" "MTB-30" "MTB-31" "MTB-32" "MTB-33" "MTB-34" "MTB-35" "MTB-36" "MTB-37" "MTB-38" "MTB-39" "MTB-40" "MTB-41" "MTB-42" "MTB-43" "MTB-44" "MTB-45" "MTB-46" "MTB-47" "MTB-48" "MTB-49" "MTB-50" "MTB-51" "MTB-52" "MTB-53" "MTB-54" "MTB-55" "MTB-56" "MTB-57" "MTB-58" "MTB-59" "MTB-60" "MTB-61" "MTB-62" "MTB-63" "MTB-64" "MTB-65" "MTB-66" "MTB-67" "MTB-68" "MTB-69" "MTB-70" "MTB-71" "MTB-72" "MTB-73" "MTB-74" "MTB-75" "MTB-76" "MTB-77" "MTB-78" "MTB-79" "MTB-80" "MTB-81" "MTB-82" "MTB-83" "MTB-84" "MTB-85" "MTB-86" "MTB-87" "MTB-88" "MTB-89" "MTB-90" "MTB-91" "MTB-92" "MTB-93" "MTB-94" "MTB-95" "MTB-96" "MTB-97" "MTB-98" "MTB-99" "MTB-100" "MTB-101" "MTB-102" "MTB-103" "MTB-104" "MTB-105" "MTB-106" "MTB-107" "MTB-108" "MTB-109" "MTB-110" "MTB-111" "MTB-112" "MTB-113" "MTB-114" "MTB-115" "MTB-116" "MTB-117" "MTB-118" "MTB-119" "MTB-120" "MTB-121" "MTB-122" "MTB-123" "MTB-124" "MTB-125" "MTB-126" "MTB-127" "MTB-128" "MTB-129" "MTB-130" "MTB-131" "MTB-132" "MTB-133" "MTB-134" "MTB-135" "MTB-136" "MTB-137" "MTB-138" "MTB-139" "MTB-140" "MTB-141" "MTB-142" "MTB-143" "MTB-144" "MTB-145" "MTB-146" "MTB-147" "MTB-148" "MTB-149" "MTB-150" "MTB-151" "MTB-152" "MTB-153" "MTB-154" "MTB-155" "MTB-156" "MTB-157" "MTB-158" "MTB-159" "MTB-160" "MTB-161" "MTB-162" }
+	}
+	trawler = {
+		prefix = ""
+		generic = { "Trawler" }
+		unique = { "Acacia" "Almond" "Ash" "Bay" "Birch" "Blackthorn" "Chestnut" "Deodar" "Elm" "Fir" "Hazel" "Hickory" "Juniper" "Mangrove" "Olive" "Pine" "Rowan" "Walnut" "Whitethorn" "Wistaria" "Celia" "Coriolanus" "Fluellen" "Hamlet" "Horatio" "Juliet" "Laertes" "Macbeth" "Ophelia" "Othello" "Romeo" "Rosalind" "Cotillion" "Coverley" "Fandango" "Foxtrot" "Gavotte" "Hornpipe" "Mazurka" "Minuet" "Morris" "Pirouette" "Polka" "Quadrille" "Rumba" "Sarabande" "Saltarelo" "Tango" "Valse" "Annet" "Anticosti" "Arran" "Baffin" "Balta" "Bardsey" "Benbecula" "Bern" "Biggal" "Bressay" "Brora" "Bruray" "Bryher" "Burra" "Bute" "Cailiff" "Caldy" "Campobello" "Copinsay" "Crowlin" "Cumbrae" "Damsay" "Dochet" "Eday" "Egilsay" "Ensay" "Eriskay" "Fara" "Farne" "Fetlar" "Fiaray" "Filla" "Flatholm" "Flint" "Flotta" "Foula" "Foulness" "Fuday" "Gairsay" "Ganilly" "Gateshead" "Gillstone" "Gorregan" "Graemsay" "Grain" "Grassholm" "Gruinard" "Gulland" "Hannaray" "Harris" "Hascosay" "Hayling" "Hellisay" "Hermetray" "Herschell" "Hildasay" "Hoxa" "Hoy" "Hunda" "Imersay" "Inchcolm" "Inchmarnock" "Ironbound" "Islay" "Jura" "Kerrera" "Kintyre" "Kittern" "Lindisfarne" "Lingay" "Liscomb" "Longa" "Lundy" "Magdalen" "Mewstone" "Minalto" "Mincarlo" "Mousa" "Mull" "Neave" "Orfasy" "Oronsay" "Oxna" "Pladda" "Porcher" "Prospect" "Ronaldsay" "Rosevean" "Rousay" "Ruskholm" "Rysa" "Scalpay" "Shapinsay" "Shiant" "Skokholm" "Skomer" "Skye" "Sluna" "Staffa" "Steepholm" "Stroma" "Stronsay" "Switha" "Texada" "Tiree" "Trondra" "Ulva" "Unst" "Vatersay" "Wallasea" "Westray" "Whalsay" }
+	}
+	corvette = {
+		prefix = ""
+		generic = { "Corvette" }
+		unique = { "Abelia" "Acanthus" "Aconite" "Alisma" "Alyssum" "Amaranthus" "Anchusa" "Anemone" "Arabis" "Arbutus" "Armeria" "Arrowhead" "Asphodel" "Aster" "Aubretia" "Auricula" "Azalea" "Balsam" "Begonia" "Bellwort" "Bergamot" "Bittersweet" "Bluebell" "Borage" "Bryony" "Burdock" "Buttercup" "Calendula" "Camellia" "Campanula" "Campion" "Candytuft" "Carnation" "Celandine" "Chrysanthemum" "Clarkia" "Clematis" "Clover" "Coltsfoot" "Columbine" "Convolvulus" "Coreopsis" "Coriander" "Cowslip" "Crocus" "Cyclamen" "Dahlia" "Delphinium" "Dianella" "Dianthus" "Eglantine" "Erica" "Eyebright" "Fennel" "Freesia" "Fritillary" "Gardenia" "Genista" "Gentian" "Geranium" "Gladiolus" "Gloriosa" "Gloxinia" "Godetia" "Godetia" "Harebell" "Heartsease" "Heather" "Heliotrope" "Hemlock" "Hepatica" "Hibiscus" "Hollyhock" "Honeysuckle" "Hyacinth" "Hyderabad" "Hydrangea" "Ivy" "Jasmine" "Jonquil" "Kingcup" "La" "Malouine" "Larkspur" "Lavender" "Ling" "Lobelia" "Loosestrife" "Lotus" "Lotus" "Mallow" "Marguerite" "Marigold" "Marjoram" "Mayflower" "Meadowsweet" "Mignonette" "Mimosa" "Monkshood" "Montbretia" "Myosotis" "Narcissus" "Nasturtium" "Nigella" "Orchis" "Oxlip" "Pennywort" "Pentstemon" "Peony" "Periwinkle" "Petunia" "Picotee" "Pimpernel" "Pink" "Polyanthus" "Poppy" "Potentilla" "Primrose" "Primula" "Ranonculus" "Rhododendron" "Rockrose" "Rose" "Salvia" "Samphire" "Saxifrage" "Snapdragon" "Snowberry" "Snowdrop" "Snowflake" "Spikenard" "Spiraea" "Starwort" "Stonecrop" "Sundew" "Sunflower" "Sweetbriar" "Tamarisk" "Thyme" "Trillium" "Tulip" "Verbena" "Veronica" "Vervain" "Vetch" "Violet" "Wallflower" "Windflower" "Woodruff" "Zinnia" "Arabis" "Arbutus" "Balm" "Betony" "Buddleia" "Bugloss" "Bullrush" "Burnet" "Candytuft" "Ceanothos" "Charlock" "Comfrey" "Cornel" "Dittany" "Flax" "Honesty" "Linaria" "Mandrake" "Milfoil" "Musk" "Nepeta" "Privet" "Rosebay" "Smilax" "Statice" "Willowherb" }
+	}
+	sloop = {
+		prefix = ""
+		generic = { "Sloop" }
+		unique = { "Actaeon" "Alacrity" "Amethyst" "Black" "Swan" "Chanticleer" "Crane" "Cygnet" "Erne" "Flamingo" "Hart" "Hind" "Ibis" "Kite" "Lapwing" "Lark" "Magpie" "Mermaid" "Modeste" "Nereide" "Nonsuch" "Nymphe" "Opossum" "Partridge" "Peacock" "Pheasant" "Redpole" "Snipe" "Sparrow" "Starling" "Waterhen" "Weyneck" "Whimbrel" "Woodcock" "Woodpecker" "Wren" "Kingfisher" "Lark" "Mallard" "Puffin" "Kittiwake" "Shelduck" "Widgeon" "Shearwater" "Guillemot" "Pintail" "Bideford" "Dundee" "Falmouth" "Fowey" "Milford" "Rochester" "Shoreham" "Weston" "Cicero" "Donovan" "Galtee" "Iroquois" "Isinglass" "Ladas" "Minoru" "Orby" "Ormonde" "Persimmon" "Rocksand" "Sanfoin" "Sefton" "Silvio" "Spearmint" "Sunstar" }
+	}
+	monitor = {
+		prefix = ""
+		generic = { "monitor" }
+		unique = { "Actaeon" "Alacrity" "Amethyst" "Black" "Swan" "Chanticleer" "Crane" "Cygnet" "Erne" "Flamingo" "Hart" "Hind" "Ibis" "Kite" "Lapwing" "Lark" "Magpie" "Mermaid" "Modeste" "Nereide" "Nonsuch" "Nymphe" "Opossum" "Partridge" "Peacock" "Pheasant" "Redpole" "Snipe" "Sparrow" "Starling" "Waterhen" "Weyneck" "Whimbrel" "Woodcock" "Woodpecker" "Wren" "Kingfisher" "Lark" "Mallard" "Puffin" "Kittiwake" "Shelduck" "Widgeon" "Shearwater" "Guillemot" "Pintail" "Bideford" "Dundee" "Falmouth" "Fowey" "Milford" "Rochester" "Shoreham" "Weston" "Cicero" "Donovan" "Galtee" "Iroquois" "Isinglass" "Ladas" "Minoru" "Orby" "Ormonde" "Persimmon" "Rocksand" "Sanfoin" "Sefton" "Silvio" "Spearmint" "Sunstar" }
+	}
+	destroyer = {
+		prefix = ""
+		generic = { "Destroyer" }
+		unique = {}
+	}
+	light_cruiser = {
+		prefix = ""
+		generic = { "Light Cruiser" }
+		unique = {}
+	}
+	heavy_cruiser = {
+		prefix = ""
+		generic = { "Heavy Cruiser" }
+		unique = {}
+	}
+	battle_cruiser = {
+		prefix = ""
+		generic = { "Battlecruiser" }
+		unique = {}
+	}
+	battleship = {
+		prefix = ""
+		generic = { "Battleship" }
+		unique = {}
+	}
+	SH_battleship = {
+		prefix = ""
+		generic = { "Super Heavy Battleship" }
+		unique = {}
+	}
+	carrier = {
+		prefix = ""
+		generic = { "Carrier" }
+		unique = {}
+	}
+	light_carrier = {
+		prefix = ""
+		generic = { "Carrier" }
+		unique = {}
+	}
+	
+	# Land units
+	infantry = {
+		prefix = ""
+		generic = { "Infantry Division" }
+		generic_pattern = "UNIT_GENERIC_NAME_GENERIC_INFANTRY"
+		unique = {}
+	}
+	marine = {
+		prefix = ""
+		generic = { "Marine Division" }
+		generic_pattern = "UNIT_GENERIC_NAME_GENERIC_INFANTRY"
+		unique = {}
+	}
+	mountaineers = {
+		prefix = ""
+		generic = { "Mountain Division" }
+		generic_pattern = "UNIT_GENERIC_NAME_GENERIC_INFANTRY"
+		unique = {}
+	}
+	paratrooper = {
+		prefix = ""
+		generic = { "Airborne Division" }
+		generic_pattern = "UNIT_GENERIC_NAME_GENERIC_INFANTRY"
+		unique = {}
+	}
+	motorized = {
+		prefix = ""
+		generic = { "Motorized Division" }
+		generic_pattern = "UNIT_GENERIC_NAME_GENERIC_INFANTRY"
+		unique = {}
+	}
+	mechanized = {
+		prefix = ""
+		generic = { "Mechanized Division" }
+		generic_pattern = "UNIT_GENERIC_NAME_GENERIC_INFANTRY"
+		unique = {}
+	}
+	artillery_brigade = {
+		prefix = ""
+		generic = { "Artillery Brigade" }
+		generic_pattern = "UNIT_GENERIC_NAME_GENERIC_INFANTRY"
+		unique = {}
+	}
+	anti_tank_brigade = {
+		prefix = ""
+		generic = { "Anti-Tank Brigade" }
+		generic_pattern = "UNIT_GENERIC_NAME_GENERIC_INFANTRY"
+		unique = {}
+	}
+	anti_air_brigade = {
+		prefix = ""
+		generic = { "Anti-Air Brigade" }
+		generic_pattern = "UNIT_GENERIC_NAME_GENERIC_INFANTRY"
+		unique = {}
+	}
+	engineer = {
+		prefix = ""
+		generic = { "Engineer Company" }
+		generic_pattern = "UNIT_GENERIC_NAME_GENERIC_INFANTRY"
+		unique = {}
+	}
+	recon = {
+		prefix = ""
+		generic = { "Recon Company" }
+		generic_pattern = "UNIT_GENERIC_NAME_GENERIC_INFANTRY"
+		unique = {}
+	}
+	field_hospital = {
+		prefix = ""
+		generic = { "Field Hospital" }
+		generic_pattern = "UNIT_GENERIC_NAME_GENERIC_INFANTRY"
+		unique = {}
+	}
+	logistics_company = {
+		prefix = ""
+		generic = { "Logistics Company" }
+		generic_pattern = "UNIT_GENERIC_NAME_GENERIC_INFANTRY"
+		unique = {}
+	}
+	military_police = {
+		prefix = ""
+		generic = { "Police Company" }
+		generic_pattern = "UNIT_GENERIC_NAME_GENERIC_INFANTRY"
+		unique = {}
+	}	
+	signal_company = {
+		prefix = ""
+		generic = { "Signal Company" }
+		generic_pattern = "UNIT_GENERIC_NAME_GENERIC_INFANTRY"
+		unique = {}
+	}	
+	maintenance_company = {
+		prefix = ""
+		generic = { "Maintenance Company" }
+		generic_pattern = "UNIT_GENERIC_NAME_GENERIC_INFANTRY"
+		unique = {}
+	}	
+	cavalry = {
+		prefix = ""
+		generic = { "Cavalry Division" }
+		generic_pattern = "UNIT_GENERIC_NAME_GENERIC_INFANTRY"
+		unique = {}
+	}
+	light_armor = {
+		prefix = ""
+		generic = { "Light Tank Brigade" }
+		generic_pattern = "UNIT_GENERIC_NAME_GENERIC_INFANTRY"
+		unique = {}
+	}
+	medium_armor = {
+		prefix = ""
+		generic = { "Medium Tank Brigade" }
+		generic_pattern = "UNIT_GENERIC_NAME_GENERIC_INFANTRY"
+		unique = {}
+	}
+	heavy_armor = {
+		prefix = ""
+		generic = { "Heavy Tank Brigade" }
+		generic_pattern = "UNIT_GENERIC_NAME_GENERIC_INFANTRY"
+		unique = {}
+	}
+	modern_armor = {
+		prefix = ""
+		generic = { "Modern Tank Brigade" }
+		generic_pattern = "UNIT_GENERIC_NAME_GENERIC_INFANTRY"
+		unique = {}
+	}
+	super_heavy_armor = {
+		prefix = ""
+		generic = { "Super Heavy Tank Brigade" }
+		generic_pattern = "UNIT_GENERIC_NAME_GENERIC_INFANTRY"
+		unique = {}
+	}
+}
+
+# Country specific names.
+# Prefix is always appended at the begin of each generated name.
+# Unique - only one unit can carry it at a time.
+# Generic - are used when all unique are used. Those have numbers appended at the end.
+

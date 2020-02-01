@@ -1,0 +1,44 @@
+state={
+	id=57
+	name="STATE_57"
+	provinces={
+		238 239 253 259 270 280 297 299 304 313 322 337 341 352 2411 2412
+	}
+	manpower=800000
+	
+	resources = {
+		oil = 16
+		steel = 24
+		tungsten = 16
+		chromium = 48
+	}
+	
+	state_category = large_city
+	
+	history={
+		add_extra_state_shared_building_slots = 2
+		owner = SOC
+		add_core_of = SOC
+		add_claim_by = ROY
+		add_claim_by = WAL
+		add_claim_by = YRK
+		victory_points = { 253 25 }
+		victory_points = { 313 10 }
+		victory_points = { 322 5 }
+		victory_points = { 2411 10 }
+		victory_points = { 2412 10 }
+		buildings = {
+			infrastructure = 6
+			air_base = 2
+			industrial_complex = 3
+			arms_factory = 3
+			dockyard = 1
+			253 = {
+				naval_base = 4
+			}
+			313 = {
+				naval_base = 3
+			}
+		}
+	}
+}

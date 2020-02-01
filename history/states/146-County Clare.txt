@@ -1,0 +1,24 @@
+state={
+	id=146
+	name="STATE_146"
+	provinces={
+		697 700 728 743 747 770 771 789 810 816 839 
+	}
+	manpower=100000
+	
+	resources = {
+		tungsten = 4
+	}
+	
+	state_category = town
+	
+	history={
+		owner = IRL
+		add_core_of = IRL
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 2
+			arms_factory = 1
+		}
+	}
+}
