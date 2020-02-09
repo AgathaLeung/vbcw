@@ -1111,3 +1111,68 @@ country_event = {
 		}
 	}
 }
+country_event = {
+	id = vbcw.politics.46 #Mosleys Wykehamist Volunteers
+	immediate = {log = "[GetDateText]: [Root.GetName]: event vbcw.politics.46"}
+	title = vbcw.politics.46.t
+	desc = vbcw.politics.46.d
+	picture = GFX_event_winchester_college
+	trigger = {
+		TAG = BUF
+		BUF = {
+			controls_state = 5
+		}
+	}
+
+	is_triggered_only = no
+	fire_only_once = yes
+
+	option = {
+		name = vbcw.politics.46.a #We need everyone we can get!
+		add_stability = -0.05
+		add_political_power = -25
+		ai_chance = {
+			factor = 40
+		}
+		division_template = {
+			name = "Wykehamist Volunteers"
+			regiments = {
+				militia = { x = 0 y = 0 }
+				militia = { x = 0 y = 1 }
+				militia = { x = 0 y = 2 }
+				militia = { x = 0 y = 3 }
+			}
+			support = { 
+				marching_band = { x = 0 y = 0 }
+			} 
+		}
+		5 = {
+			create_unit = {
+				division = "name = \"1st Winchester Volunteers\" division_template = \"Wykehamist Volunteers\" start_experience_factor = 0.05 start_equipment_factor = 0.5"
+				owner = BUF
+			}
+			create_unit = {
+				division = "name = \"2nd Winchester Volunteers\" division_template = \"Wykehamist Volunteers\" start_experience_factor = 0.05 start_equipment_factor = 0.5"
+				owner = BUF
+			}
+			create_unit = {
+				division = "name = \"3rd Winchester Volunteers\" division_template = \"Wykehamist Volunteers\" start_experience_factor = 0.05 start_equipment_factor = 0.5"
+				owner = BUF
+			}
+			create_unit = {
+				division = "name = \"4th Winchester Volunteers\" division_template = \"Wykehamist Volunteers\" start_experience_factor = 0.05 start_equipment_factor = 0.5"
+				owner = BUF
+			}
+		}
+
+	}
+
+	option = {
+		name = vbcw.politics.46.b #We dont want their blood on our hands!
+		ai_chance = {
+			factor = 30
+		}
+		add_stability = 0.05
+		add_political_power = 25
+	}
+}

@@ -135,6 +135,10 @@ spriteTypes = {
 		name = "GFX_news_event_definetely_not_berlin_parade"
 		texturefile = "gfx/event_pictures/news_event_definetely_not_berlin_parade.dds"
 	}
+	spriteType = {
+		name = "GFX_event_winchester_college"
+		texturefile = "gfx/event_pictures/event_winchester_college.dds"
+	}
 }
 	
 	
