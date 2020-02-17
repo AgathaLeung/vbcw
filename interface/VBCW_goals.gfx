@@ -17,21 +17,110 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/goal_benito_brunch.dds"
 	}
 	spriteType = {
+		name = "GFX_goal_generic_party"
+		texturefile = "gfx/interface/goals/goal_generic_party.dds"
+	}
+	spriteType = {
 		name = "GFX_goal_franco_fish"
 		texturefile = "gfx/interface/goals/goal_franco_fish.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_generic_crown_box"
+		texturefile = "gfx/interface/goals/goal_generic_crown_box.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_generic_britannia"
+		texturefile = "gfx/interface/goals/goal_generic_britannia.dds"
 	}
 	spriteType = {
 		name = "GFX_goal_cornish_army"
 		texturefile = "gfx/interface/goals/goal_cornish_army.tga"
 	}
 	spriteType = {
+		name = "GFX_goal_generic_rightful_successors"
+		texturefile = "gfx/interface/goals/goal_generic_rightful_successors.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_generic_mr_peanut"
+		texturefile = "gfx/interface/goals/goal_generic_mr_peanut.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_anglican_guns"
+		texturefile = "gfx/interface/goals/goal_anglican_guns.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_socialist_guns"
+		texturefile = "gfx/interface/goals/goal_socialist_guns.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_yorkist_guns"
+		texturefile = "gfx/interface/goals/goal_yorkist_guns.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_fascist_guns"
+		texturefile = "gfx/interface/goals/goal_fascist_guns.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_royalist_guns"
+		texturefile = "gfx/interface/goals/goal_royalist_guns.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_generic_british_soldier"
+		texturefile = "gfx/interface/goals/goal_generic_british_soldier.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_generic_puppet_government"
+		texturefile = "gfx/interface/goals/goal_generic_puppet_government.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_generic_radio_station"
+		texturefile = "gfx/interface/goals/goal_generic_radio_station.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_fix_westminster"
+		texturefile = "gfx/interface/goals/goal_fix_westminster.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_tea_shortage"
+		texturefile = "gfx/interface/goals/goal_tea_shortage.dds"
+	}
+	spriteType = {
 		name = "GFX_goal_armored_tram"
 		texturefile = "gfx/interface/goals/goal_armored_tram.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_focus_cake"
+		texturefile = "gfx/interface/goals/goal_focus_cake.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_absolute_mess"
+		texturefile = "gfx/interface/goals/goal_absolute_mess.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_monarchy_eagle"
+		texturefile = "gfx/interface/goals/goal_monarchy_eagle.dds"
 	}
 	spriteType = {
 		name = "GFX_goal_york_generals"
 		texturefile = "gfx/interface/goals/goal_york_generals.dds"
 	}
+	SpriteType = {
+		name = "GFX_goal_bread_and_peace"
+		texturefile = "gfx/interface/goals/goal_bread_and_peace.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_fat_king"
+		texturefile = "gfx/interface/goals/goal_fat_king.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_faith_tears"
+		texturefile = "gfx/interface/goals/goal_faith_tears.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_love_them"
+		texturefile = "gfx/interface/goals/goal_love_them.dds"
+	}
+	
 	spriteType = {
 		name = "GFX_goal_ulster_pride"
 		texturefile = "gfx/interface/goals/goal_ulster_pride.dds"

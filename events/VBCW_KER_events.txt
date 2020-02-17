@@ -549,3 +549,24 @@ country_event = { ###The Tea War (Royalists)##
 	
 	
 }
+country_event = { ###The Tea War (Anglicans)##
+	id = KER_events.22
+	title = KER_events.22.t
+	desc = KER_events.22.d
+	picture = GFX_report_event_teacup
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { ###Yes##
+		ai_chance = {factor = 100}
+		KER = {country_event = { id = KER_events.22 days = 2} }
+		name = KER_events.22.a
+	 	
+	}
+	
+	
+
+	
+	
+}

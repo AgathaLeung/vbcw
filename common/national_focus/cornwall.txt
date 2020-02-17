@@ -12,7 +12,7 @@ focus_tree = {
 	####Political####
 	focus = {
 		id = KER_restructure_the_government
-		icon = GFX_goal_generic_defence
+		icon = GFX_goal_generic_puppet_government
 		cost = 5
 		x = 40
 		y = 0
@@ -20,7 +20,7 @@ focus_tree = {
 		continue_if_invalid = yes
 		available_if_capitulated = yes
 		completion_reward = {
-			
+			set_cosmetic_tag = KER_albion
 		}
 	}
 	focus = {
@@ -38,13 +38,295 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id =  KER_bishop_boys
-		icon = GFX_goal_bishops_boys
+		id =  KER_the_fat_king
+		icon = GFX_goal_generic_crown_box
 		cost = 5
 		x = 0
 		y = 2
 		relative_position_id = KER_restructure_the_government
-		prerequisite = {focus = KER_political_manoeuvres}
+		prerequisite = {focus =  KER_political_manoeuvres}
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id =  KER_the_feast_preparations
+		icon = GFX_goal_generic_britannia
+		cost = 5
+		x = -2
+		y = 1
+		relative_position_id =  KER_the_fat_king
+		prerequisite = {focus =  KER_the_fat_king}
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id =  KER_smash_westminster
+		icon = GFX_goal_fix_westminster
+		cost = 5
+		x = -3
+		y = 2
+		relative_position_id =  KER_the_fat_king
+		prerequisite = {focus =  KER_the_feast_preparations}
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id =  KER_prepare_for_the_worst
+		icon = GFX_goal_tea_shortage
+		cost = 5
+		x = -1
+		y = 2
+		relative_position_id =  KER_the_fat_king
+		prerequisite = {focus =  KER_the_feast_preparations}
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id =  KER_a_nation_united
+		icon = GFX_goal_generic_mr_peanut
+		cost = 5
+		x = -1
+		y = 3
+		relative_position_id =  KER_the_fat_king
+		prerequisite = {focus =  KER_prepare_for_the_worst}
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id =  KER_radio_cornwall
+		icon = GFX_goal_generic_radio_station
+		cost = 5
+		x = -3
+		y = 3
+		relative_position_id =  KER_the_fat_king
+		prerequisite = {focus =  KER_smash_westminster}
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id =  KER_trelawney_legacy
+		icon = GFX_goal_generic_british_soldier
+		cost = 5
+		x = 0
+		y = 4
+		relative_position_id =  KER_the_fat_king
+		prerequisite = {focus =  KER_radio_cornwall}
+		prerequisite = {focus =  KER_a_nation_united}
+		prerequisite = {focus =  KER_give_them_bread focus = KER_give_them_cake}
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id =  KER_fuck_cosmo
+		icon = GFX_goal_anglican_guns
+		cost = 5
+		x = -2
+		y = 6
+		relative_position_id =  KER_the_fat_king
+		available = {AND = {ANG = {exists = yes}} is_neighbor_of = ANG has_army_manpower {size > 20000} }
+		prerequisite = {focus =  KER_trelawney_legacy}
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		completion_reward = {
+			create_wargoal = {
+   					type = annex_everything
+    				target = ANG
+				}
+		}
+	}
+	focus = {
+		id =  KER_welsh_scum_1
+		icon = GFX_goal_socialist_guns
+		cost = 5
+		x = -1
+		y = 5
+		relative_position_id =  KER_the_fat_king
+		available = {AND = {SOC = {exists = yes}} is_neighbor_of = SOC has_army_manpower {size > 20000} }
+		prerequisite = {focus =  KER_trelawney_legacy}
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		completion_reward = {
+			create_wargoal = {
+   					type = annex_everything
+    				target = SOC
+				}
+		}
+	}
+	focus = {
+		id =  KER_yorkist
+		icon = GFX_goal_yorkist_guns
+		cost = 5
+		x = 1
+		y = 5
+		relative_position_id =  KER_the_fat_king
+		available = {AND = {YRK = {exists = yes}} is_neighbor_of = YRK has_army_manpower {size > 20000} }
+		prerequisite = {focus =  KER_trelawney_legacy}
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		completion_reward = {
+			create_wargoal = {
+   					type = annex_everything
+    				target = YRK
+				}
+		}
+	}
+	focus = {
+		id =  KER_onto_london_town
+		icon = GFX_goal_royalist_guns
+		cost = 5
+		x = 2
+		y = 6
+		relative_position_id =  KER_the_fat_king
+		available = {AND = {ROY = {exists = yes}} is_neighbor_of = ROY has_army_manpower {size > 40000} }
+		prerequisite = {focus =  KER_trelawney_legacy}
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		completion_reward = {
+			create_wargoal = {
+   					type = annex_everything
+    				target = ROY
+				}
+		}
+	}
+	focus = {
+		id =  KER_bash_the_fash
+		icon = GFX_goal_fascist_guns
+		cost = 5
+		x = 0
+		y = 6
+		relative_position_id =  KER_the_fat_king
+		available = {AND = {BUF = {exists = yes}} is_neighbor_of = BUF has_army_manpower {size > 35000} }
+		prerequisite = {focus =  KER_trelawney_legacy}
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		completion_reward = {
+			create_wargoal = {
+   					type = annex_everything
+    				target = BUF
+				}
+		}
+	}
+	focus = {
+		id =  KER_eternal_kernow
+		icon = GFX_goal_generic_rightful_successors
+		cost = 5
+		x = 0
+		y = 7
+		relative_position_id =  KER_the_fat_king
+		prerequisite = {focus =  KER_bash_the_fash}
+		prerequisite = {focus =  KER_onto_london_town}
+		prerequisite = {focus =  KER_yorkist}
+		prerequisite = {focus =  KER_welsh_scum_1}
+		prerequisite = {focus =  KER_fuck_cosmo}
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		completion_reward = {
+			set_cosmetic_tag = KER_albion
+		}
+	}
+	focus = {
+		id =  KER_organising_the_nation
+		icon = GFX_goal_absolute_mess
+		cost = 5
+		x = 2
+		y = 1
+		relative_position_id =  KER_the_fat_king
+		prerequisite = {focus =  KER_the_fat_king}
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id =  KER_bishop_power
+		icon = GFX_goal_faith_tears
+		cost = 5
+		x = -1
+		y = 1
+		relative_position_id =  KER_organising_the_nation
+		prerequisite = {focus =  KER_organising_the_nation}
+		mutually_exclusive = {focus = KER_feast_power}
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id =  KER_give_them_bread
+		icon = GFX_goal_bread_and_peace
+		cost = 5
+		x = -1
+		y = 2
+		relative_position_id =  KER_organising_the_nation
+		prerequisite = {focus =  KER_bishop_power}
+		
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id =  KER_give_them_cake
+		icon = GFX_goal_focus_cake
+		cost = 5
+		x = 1
+		y = 2
+		relative_position_id =  KER_organising_the_nation
+		prerequisite = {focus =  KER_feast_power}
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id =  KER_feast_power
+		icon = GFX_goal_monarchy_eagle
+		cost = 5
+		x = 1
+		y = 1
+		relative_position_id =  KER_organising_the_nation
+		prerequisite = {focus =  KER_organising_the_nation}
+		mutually_exclusive = {focus = KER_bishop_power}
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id =  KER_bishop_boys
+		icon = GFX_goal_bishops_boys
+		cost = 5
+		x = 60
+		y = 0
+		
+		prerequisite = {}
 		continue_if_invalid = yes
 		available_if_capitulated = yes
 		completion_reward = {
@@ -56,8 +338,8 @@ focus_tree = {
 		icon = GFX_goal_wine
 		cost = 5
 		x = 0
-		y = 3
-		relative_position_id = KER_restructure_the_government
+		y = 1
+		relative_position_id = KER_bishop_boys
 		prerequisite = {focus =  KER_bishop_boys}
 		continue_if_invalid = yes
 		available_if_capitulated = yes
