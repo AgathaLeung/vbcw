@@ -570,3 +570,133 @@ country_event = { ###The Tea War (Anglicans)##
 	
 	
 }
+###The Election of the King##
+country_event = { 
+	id = KER_events.23
+	title = KER_events.23.t
+	desc = KER_events.23.d
+	picture = GFX_report_event_palace
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { ###Yes##
+		ai_chance = {factor = 100}
+		
+		name = KER_events.23.a
+	 	
+	}
+	
+	
+
+	
+	
+}
+country_event = { 
+	id = KER_events.24
+	title = KER_events.24.t
+	desc = KER_events.24.d
+	picture = GFX_report_event_ace_died
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { ###Yes##
+		ai_chance = {factor = 100}
+		
+		name = KER_events.24.a
+	 	
+	}
+	
+	
+
+	
+	
+}
+country_event = { 
+	id = KER_events.25
+	title = KER_events.25.t
+	desc = KER_events.25.d
+	picture = GFX_report_event_merchant_ship_01
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { ###Yes##
+		ai_chance = {factor = 100}
+		
+		name = KER_events.25.a
+	 	
+	}
+	
+	
+
+	
+	
+}
+country_event = { 
+	id = KER_events.26
+	title = KER_events.26.t
+	desc = KER_events.26.d
+	picture = GFX_report_event_coronation
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { ###Yes##
+		ai_chance = {factor = 100}
+		
+		name = KER_events.26.a
+	 	
+	}
+	
+	
+
+	
+	
+}
+country_event = { 
+	id = KER_events.27
+	title = KER_events.27.t
+	desc = KER_events.27.d
+	picture = GFX_report_event_feast_brawl
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { ###Yes##
+		ai_chance = {factor = 50}
+		
+		name = KER_events.27.a
+	 	create_country_leader = {
+		name = "King Frederich I von Hohenzollern"
+		desc = "POLITICS_FRIEDERICH_HOH_DESC"
+		picture = "gfx/leaders/VBCW/KER/KER_Frederick.dds"
+		expire = "1965.1.1"
+		ideology = civic_nationalist_subtype
+		traits = {
+			#
+		}
+}
+	}
+	option = { ###Yes##
+		ai_chance = {factor = 50}
+		
+		name = KER_events.27.b
+	 	create_country_leader = {
+		name = "King Frederich I von Wettin"
+		desc = "POLTIICS_FRED_WETTIN_DESC"
+		picture = "gfx/leaders/VBCW/KER/KER_Wetting.tga"
+		expire = "1965.1.1"
+		ideology = civic_nationalist_subtype
+		traits = {
+			#
+		}
+}
+	}
+	
+	
+
+	
+	
+}
