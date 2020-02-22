@@ -848,3 +848,86 @@ country_event = {
 }
 	}
 }
+country_event = { 
+	id = KER_events.33
+	title = KER_events.33.t
+	desc = KER_events.33.d
+	picture = GFX_report_event_franco_wave
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { ###Yes##
+		ai_chance = {factor = 100}
+		 add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 500 producer = CIV }
+			
+		name = KER_events.33.a
+	 	
+	}
+}
+country_event = { 
+	id = KER_events.34
+	title = KER_events.34.t
+	desc = KER_events.34.d
+	picture = GFX_report_event_musollini_jog
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { ###Yes##
+		ai_chance = {factor = 100}
+		 add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 1000 producer = ITA }
+			
+		name = KER_events.34.a
+	 	
+	}
+}
+country_event = { 
+	id = KER_events.35
+	title = KER_events.35.t
+	desc = KER_events.35.d
+	picture = GFX_report_event_hitler_food
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { ###Yes##
+		ai_chance = {factor = 100}
+		 add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 1000 producer = GER }
+		 add_equipment_to_stockpile = { type = tac_bomber_equipment_0 amount = 1 producer = GER }	
+		  add_equipment_to_stockpile = { type = fighter_equipment_1 amount = 20 producer = GER }
+		  add_equipment_to_stockpile = { type = light_tank_equipment_1 amount = 50 producer = GER }	
+		name = KER_events.35.a
+	 	
+	}
+}
+country_event = { 
+	id = KER_events.36
+	title = KER_events.36.t
+	desc = KER_events.36.d
+	picture = GFX_report_event_spode
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { ###Yes##
+		add_political_power = 50
+		name = KER_events.36.a
+	 	
+	}
+}
+country_event = { 
+	id = KER_events.37
+	title = KER_events.37.t
+	desc = KER_events.37.d
+	picture = GFX_report_event_palace
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { ###Yes##
+		add_stability = 0.1
+		name = KER_events.37.a
+	 	
+	}
+}

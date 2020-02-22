@@ -24,6 +24,30 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/idea_generic_child_soldiers.dds"
 	}
 	spriteType = {
+		name = "GFX_idea_KER_special_research_divison"
+		texturefile = "gfx/interface/ideas/generic_research_bonus.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_KER_trelawney_legacy"
+		texturefile = "gfx/interface/ideas/idea_hand_grab.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_KER_kernow_stronk"
+		texturefile = "gfx/interface/ideas/idea_get_off_my_lawn.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_KER_kernow_stronk_2"
+		texturefile = "gfx/interface/ideas/idea_get_off_my_lawn.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_KER_radio_cornwall"
+		texturefile = "gfx/interface/ideas/idea_radio_cornwall.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_KER_london_connections"
+		texturefile = "gfx/interface/ideas/generic_spy_political.dds"
+	}
+	spriteType = {
 		name = "GFX_idea_KER_pasty_service_external_2"
 		texturefile = "gfx/interface/ideas/idea_generic_secret_police.dds"
 	}

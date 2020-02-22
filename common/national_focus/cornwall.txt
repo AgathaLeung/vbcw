@@ -1126,8 +1126,8 @@ focus = {
 		id = KER_form_the_css
 		icon = GFX_goal_secret_pasty_service
 		cost = 5
-		x = 4
-		y = 7
+		x = -7
+		y = 0
 		
 		continue_if_invalid = yes
 		available = {KER = {has_political_power > 75}
@@ -1139,31 +1139,15 @@ focus = {
 			add_political_power = -50
 		}
 	}
-focus = {
-		id = KER_internal_matters
-		icon = GFX_goal_little_green_men
-		cost = 5
-		x = 2
-		y = 8
-		prerequisite = {focus = KER_form_the_css}
-		mutually_exclusive = {focus = KER_external_matters}
-		continue_if_invalid = yes
-		
-		available_if_capitulated = yes
-		completion_reward = {
-			swap_ideas = {remove_idea = KER_pasty_service
-					 add_idea = KER_pasty_service_internal
-		}	
-	}
-}
+
 focus = {
 		id = KER_external_matters
 		icon = GFX_goal_anti_commie_spy
 		cost = 5
-		x = 7
-		y = 8
+		x = -7
+		y = 1
 		prerequisite = {focus = KER_form_the_css}
-		mutually_exclusive = {focus = KER_internal_matters}
+		
 		continue_if_invalid = yes
 		
 		available_if_capitulated = yes
@@ -1177,8 +1161,8 @@ focus = {
 		id = KER_foreign_volunteers
 		icon = GFX_goal_conscription_act
 		cost = 5
-		x = 7
-		y = 9
+		x = -5
+		y = 2
 		prerequisite = {focus = KER_external_matters}
 		
 		continue_if_invalid = yes
@@ -1192,8 +1176,8 @@ focus = {
 		id = KER_black_cats
 		icon = GFX_goal_black_cats
 		cost = 5
-		x = 6
-		y = 10
+		x = -6
+		y = 3
 		prerequisite = {focus = KER_foreign_volunteers}
 		
 		continue_if_invalid = yes
@@ -1209,60 +1193,60 @@ focus = {
 		id = KER_deep_sleep
 		icon = GFX_goal_operation_eulalie
 		cost = 5
-		x = 6
-		y = 11
+		x = -6
+		y = 4
 		prerequisite = {focus = KER_black_cats}
 		
 		continue_if_invalid = yes
 		
 		available_if_capitulated = yes
 		completion_reward = {
-			add_political_power = 15	
+			country_event = KER_events.36
 	}
 }
 focus = {
 		id = KER_operation_pasty
 		icon = GFX_goal_big_ben
 		cost = 5
-		x = 8
-		y = 10
+		x = -4
+		y = 3
 		prerequisite = {focus = KER_foreign_volunteers}
 		
 		continue_if_invalid = yes
 		
 		available_if_capitulated = yes
 		completion_reward = {
-			country_event = KER.1	
+			country_event = KER_events.37
 	}
 }
 focus = {
 		id = KER_remember_remember
-		icon = GFX_goal_burning_parliament
+		icon = GFX_goal_spy_programme
 		cost = 5
-		x = 8
-		y = 11
+		x = -4
+		y = 4
 		prerequisite = {focus = KER_operation_pasty}
 		
 		continue_if_invalid = yes
 		
 		available_if_capitulated = yes
 		completion_reward = {
-			country_event = KER.2	
+			add_ideas = KER_london_connections
 	}
 }
 focus = {
 		id = KER_special_research_division 
 		icon = GFX_goal_research_councils
 		cost = 8
-		x = 4
-		y = 9
-		prerequisite = {focus = KER_external_matters focus = KER_internal_matters}
+		x = -9
+		y = 2
+		prerequisite = {focus = KER_external_matters }
 		mutually_exclusive = {}
 		continue_if_invalid = yes
 		
 		available_if_capitulated = yes
 		completion_reward = {
-			custom_effect_tooltip = reminder_tt_1
+			add_ideas = KER_special_research_divison
 				
 	}
 }
@@ -1270,12 +1254,12 @@ focus = {
 		id = KER_predict_their_moves
 		icon = GFX_goal_upset_the_balance
 		cost = 8
-		x = 4
-		y = 10
+		x = -9
+		y = 3
 		prerequisite = {focus = KER_special_research_division }
 		mutually_exclusive = {}
 		continue_if_invalid = yes
-		available = {has_idea = KER_science_investments}
+		
 		available_if_capitulated = yes
 		completion_reward = {
 			add_tech_bonus = {
@@ -1291,12 +1275,12 @@ focus = {
 		id = KER_final_checkmate
 		icon = GFX_goal_checkmate
 		cost = 20
-		x = 4
-		y = 11
+		x = -9
+		y = 4
 		prerequisite = {focus = KER_predict_their_moves }
 		mutually_exclusive = {}
 		continue_if_invalid = yes
-		available = {has_idea = KER_science_investments}
+		
 		available_if_capitulated = yes
 		completion_reward = {
 			add_tech_bonus = {

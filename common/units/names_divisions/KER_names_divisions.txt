@@ -163,7 +163,7 @@ KER_VOL_01 = {name = "Volunteer Brigades"
 	{
 		1 = { "1.Brigada de Voluntarios Celta" }
 		2 = { "2.Brigada de Voluntarios Celta" }
-		3 = { "1.Breton Volunteer Brigade" }
+		3 = { "1.Breton Volunteer Brigade 'Morven' " }
 		4 = { "1.Irish Celtic Brigade" }
 		5 = { "2.Irish Celtic Brigade" }
 		6 = { "3.Irish Celtic Brigade" }
