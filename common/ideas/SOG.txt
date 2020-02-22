@@ -20,7 +20,82 @@ ideas = {
 				conscription_factor = -0.1
 			}
 		}
+		
+		
+		SOG_Mobilise_the_People = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = GFX_idea_MPT
+			
+			modifier = {
+				conscription_factor = 0.01
+			}
+		}
+		
+		SOG_infantry_core = {
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = GFX_idea_SOG_infantry_core
+			
+			modifier = {
+				defence = 0.2
+				offence = 0.2
+		}
+
 	}
+	
+		SOG_peoples_officer_core = {
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = GFX_idea_SOG_infantry_core
+			
+			modifier = {
+				political_power_factor = 0.05
+				army_org_factor = 0.15
+		}
+
+	}
+	
+		SOG_intergrated_support = {
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = GFX_idea_SOG_intergrated_support
+			
+			modifier = {
+				artillery_brigade = {
+					soft_attack = 0.2
+			}
+		}
+
+	}
+
+}
+
+
 	
 	political_advisor = {
 	
