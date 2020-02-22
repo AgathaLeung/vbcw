@@ -275,7 +275,7 @@ focus_tree = {
 
 	focus = {
 			id = SOG_worker's_canal
-			icon = 
+			icon = GFX_goal_peoples_canal
 			cost = 5
 			x = 2
 			y = 5
@@ -484,7 +484,7 @@ focus_tree = {
 	
 	focus = {
 		id = SOG_labour_commune
-		icon = GFX_goal_generic_support_democracy
+		icon = GFX_goal_support_democracy
 		cost = 5
 		x = 15
 		y = 2
@@ -508,7 +508,7 @@ focus_tree = {
 	
 	focus = {
 		id = SOG_indigenous_production
-		icon = GFX_goal_generic_construct_civillian
+		icon = GFX_goal_generic_construct_civilian
 		cost = 5
 		x = 15
 		y = 3
@@ -798,7 +798,244 @@ focus_tree = {
 		continue_if_invalid = yes
 		available_if_capitulated = yes
 		completion_reward = {
-			#fuck this i'm doing that later#
+			custom_effect_tooltip = SOG_build_forts
+			hidden_effect = {
+				101 = {
+					add_building_construction = {
+						type = bunker
+						level = 5
+						province = 1701
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 3
+						province = 1685
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 3
+						province = 1700
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 3
+						province = 1704
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 3
+						province = 1723
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 3
+						province = 2423
+						instant_build = yes
+					}
+				}
+				100 = {
+					add_building_construction = {
+						type = bunker
+						level = 1
+						province = 1642
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 1
+						province = 1654
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 1
+						province = 1663
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 1
+						province = 1671
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 1
+						province = 1674
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 1
+						province = 1695
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 1
+						province = 1698
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 1
+						province = 1705
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 1
+						province = 1708
+						instant_build = yes
+					}
+				}
+				102 = {
+					add_building_construction = {
+						type = bunker
+						level = 1
+						province = 1659
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 1
+						province = 1673
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 1
+						province = 1681
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 1
+						province = 1688
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 1
+						province = 1710
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 1
+						province = 1719
+						instant_build = yes
+					}
+				}
+				100 = {
+					add_building_construction = {
+						type = bunker
+						level = 3
+						province = 1739
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 3
+						province = 1754
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 1
+						province = 1720
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 1
+						province = 1725
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 1
+						province = 1726
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 1
+						province = 1740
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 1
+						province = 1745
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 1
+						province = 1748
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 1
+						province = 1753
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 1
+						province = 1763
+						instant_build = yes
+					}
+
+				}
+				104 = {
+					add_building_construction = {
+						type = bunker
+						level = 1
+						province = 1722
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 1
+						province = 1727
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 1
+						province = 1738
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 1
+						province = 1742
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 1
+						province = 1751
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 1
+						province = 2128
+						instant_build = yes
+					}
+				}
+
+
+			}
 		}
 	}
 
