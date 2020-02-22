@@ -730,7 +730,7 @@ focus_tree = {
     			popularity = 0.05
 				}
 				add_political_power = 50
-				add_opinion_modifier = { target = YRK modifier = SCO_constitutional_monarch_opinion }
+				add_opinion_modifier = { target = YRK modifier = medium_increase } #SCO_constitutional_monarch_opinion
 			}
 		}
 
@@ -872,7 +872,7 @@ focus_tree = {
 			continue_if_invalid = yes
 			available_if_capitulated = yes
 			completion_reward = {
-				add_opinion_modifier = { target = ROY modifier = SCO_support_the_royalists_opinion }
+				add_opinion_modifier = { target = ROY modifier = medium_increase } #SCO_support_the_royalists_opinion
 				ROY = { add_to_faction = SCO }
 			}
 		}
@@ -888,7 +888,7 @@ focus_tree = {
 			continue_if_invalid = yes
 			available_if_capitulated = yes
 			completion_reward = {
-				add_opinion_modifier = { target = YRK modifier = SCO_support_the_royalists_opinion }
+				add_opinion_modifier = { target = YRK modifier = medium_increase } #SCO_support_the_royalists_opinion
 				YRK = { add_to_faction = SCO }
 			}
 		}
@@ -1044,7 +1044,7 @@ focus_tree = {
 				}
 				add_stability = 0.1
 				add_political_power = 100
-				add_opinion_modifier = { target = BUF modifier = SCO_bash_the_fash_opinion }
+				add_opinion_modifier = { target = BUF modifier = large_decrease } #SCO_bash_the_fash_opinion
 			}
 		}
 
@@ -1075,7 +1075,7 @@ focus_tree = {
 			continue_if_invalid = yes
 			available_if_capitulated = yes
 			completion_reward = {
-				add_opinion_modifier = { target = SOG modifier = SCO_unity_with_clydeside_opinion }
+				add_opinion_modifier = { target = SOG modifier = large_increase } #SCO_unity_with_clydeside_opinion
 				SOM = { add_to_faction = SCO }
 			}
 		}
@@ -1111,7 +1111,7 @@ focus_tree = {
 			continue_if_invalid = yes
 			available_if_capitulated = yes
 			completion_reward = {
-				add_opinion_modifier = { target = SOG modifier = SCO_split_with_clydeside_opinion }
+				add_opinion_modifier = { target = SOG modifier = large_decrease } #SCO_split_with_clydeside_opinion
 				add_political_power = 100
 			}
 		}	
@@ -1249,7 +1249,7 @@ focus_tree = {
 			continue_if_invalid = yes
 			available_if_capitulated = yes
 			completion_reward = {
-				add_opinion_modifier = { target = BUF modifier = SCO_reconcile_the_BUF_opinion }
+				add_opinion_modifier = { target = BUF modifier = large_increase } #SCO_reconcile_the_BUF_opinion
 				BUF = { add_to_faction = SCO }
 			}
 		}
@@ -1265,7 +1265,7 @@ focus_tree = {
 			continue_if_invalid = yes
 			available_if_capitulated = yes
 			completion_reward = {
-				add_opinion_modifier = { target = BUF modifier = SCO_scottish_fascism_opinion }
+				add_opinion_modifier = { target = BUF modifier = large_increase } #SCO_scottish_fascism_opinion
 				set_rule = {
     				can_create_factions = yes
 				}
@@ -1515,6 +1515,7 @@ focus_tree = {
 							division = "name = \"Atholl Highlanders\" division_template = \"Infantry Regiment\" start_experience_factor = 0.5"
 							owner = SCO
 						}
+						}
 						create_corps_commander = {
 							name = "John Stewart-Murray, 8th Duke of Atholl"
 							picture = "gfx/leaders/VBCW/SCO/SCO-Atholl.dds"
@@ -1525,7 +1526,6 @@ focus_tree = {
 							planning_skill = 2
 							logistics_skill = 3
 						}
-					}
 				}
 			}
 		}

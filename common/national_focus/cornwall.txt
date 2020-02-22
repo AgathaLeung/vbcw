@@ -1696,7 +1696,8 @@ focus = {
 		
 		available_if_capitulated = yes
 		completion_reward = {
-			1 = {
+			random_owned_controlled_state = {
+				prioritize = { 1 }
 				limit = {
 					free_building_slots = {
 						building = arms_factory
