@@ -29,6 +29,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/goal_generic_crown_box.dds"
 	}
 	spriteType = {
+		name = "GFX_goal_generic_child_soldiers"
+		texturefile = "gfx/interface/goals/goal_generic_child_soldiers.dds"
+	}
+	spriteType = {
 		name = "GFX_goal_generic_britannia"
 		texturefile = "gfx/interface/goals/goal_generic_britannia.dds"
 	}

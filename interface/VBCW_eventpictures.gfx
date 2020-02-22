@@ -30,6 +30,26 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/event_feast_brawl.dds"
 	}
 	spriteType = {
+		name = "GFX_report_event_street_battle"
+		texturefile = "gfx/event_pictures/event_street_battle.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_matilda_convoy"
+		texturefile = "gfx/event_pictures/event_matilda_convoy.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_soldiers_outside"
+		texturefile = "gfx/event_pictures/event_soldiers_outside.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_deployment"
+		texturefile = "gfx/event_pictures/event_deployment.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_militia"
+		texturefile = "gfx/event_pictures/event_milita.dds"
+	}
+	spriteType = {
 		name = "GFX_report_event_cosmo_and_friend"
 		texturefile = "gfx/event_pictures/event_cosmo_and_friend.dds"
 	}
