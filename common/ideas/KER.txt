@@ -18,6 +18,25 @@ ideas = {
 				army_core_defence_factor = 0.25
 			}
 		}
+		KER_trelawney_legacy = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1			
+			
+			modifier = {
+				army_core_attack_factor = 0.25
+				army_core_defence_factor = 0.25
+				army_attack_factor	= 0.2
+				army_speed_factor = 0.1
+			}
+		}
 		KER_science_investments = {
 
 			allowed = {
@@ -316,6 +335,127 @@ ideas = {
 				
 			}
 		}
+		KER_kernow_stronk = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			
+			
+			modifier = {
+				stability_factor = 0.1
+				surrender_limit	= 0.2
+				
+			}
+		}
+		KER_kernow_stronk_2 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			
+			
+			modifier = {
+				stability_factor = 0.1
+				surrender_limit	= 0.2
+				conscription = 0.05
+				
+			}
+		}
+		KER_radio_cornwall = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			
+			
+			modifier = {
+				recon_factor = 0.05
+				war_support_factor	= 0.1
+			}
+		}
+		KER_every_cornish_boy = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			
+			
+			modifier = {
+				conscription =0.1
+				training_time_army_factor = 0.05
+				minimum_training_level = -0.2
+
+			}
+		}
+		KER_give_them_cake = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			
+			
+			modifier = {
+				stability_weekly = 0.01
+				political_power_gain = 0.1
+
+			}
+		}
+		KER_prepare_for_tea_shortages = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			
+			
+			modifier = {
+				attrition = -0.1
+				no_supply_grace	= 96 
+			}
+		}
+
 		KER_militia_armed = {
 
 			allowed = {

@@ -20,7 +20,7 @@ focus_tree = {
 		continue_if_invalid = yes
 		available_if_capitulated = yes
 		completion_reward = {
-			set_cosmetic_tag = KER_albion
+			add_political_power = 50
 		}
 	}
 	focus = {
@@ -35,6 +35,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		completion_reward = {
 			custom_effect_tooltip = KER_crown_king_tt
+			country_event = KER_events.23
 		}
 	}
 	focus = {
@@ -43,6 +44,7 @@ focus_tree = {
 		cost = 5
 		x = 0
 		y = 2
+		available = {has_country_flag = KER_fat_king}
 		relative_position_id = KER_restructure_the_government
 		prerequisite = {focus =  KER_political_manoeuvres}
 		continue_if_invalid = yes
@@ -63,7 +65,7 @@ focus_tree = {
 		continue_if_invalid = yes
 		available_if_capitulated = yes
 		completion_reward = {
-			
+			add_ideas = KER_kernow_stronk
 		}
 	}
 	focus = {
@@ -77,7 +79,7 @@ focus_tree = {
 		continue_if_invalid = yes
 		available_if_capitulated = yes
 		completion_reward = {
-			
+			swap_ideas = {remove_idea = KER_kernow_stronk add_idea = KER_kernow_stronk_2}
 		}
 	}
 	focus = {
@@ -91,12 +93,12 @@ focus_tree = {
 		continue_if_invalid = yes
 		available_if_capitulated = yes
 		completion_reward = {
-			
+			add_ideas = KER_prepare_for_tea_shortages
 		}
 	}
 	focus = {
 		id =  KER_a_nation_united
-		icon = GFX_goal_generic_mr_peanut
+		icon = GFX_goal_generic_child_soldiers
 		cost = 5
 		x = -1
 		y = 3
@@ -105,7 +107,7 @@ focus_tree = {
 		continue_if_invalid = yes
 		available_if_capitulated = yes
 		completion_reward = {
-			
+			add_ideas = KER_every_cornish_boy
 		}
 	}
 	focus = {
@@ -119,7 +121,7 @@ focus_tree = {
 		continue_if_invalid = yes
 		available_if_capitulated = yes
 		completion_reward = {
-			
+			add_ideas = KER_radio_cornwall
 		}
 	}
 	focus = {
@@ -135,7 +137,9 @@ focus_tree = {
 		continue_if_invalid = yes
 		available_if_capitulated = yes
 		completion_reward = {
-			
+			swap_ideas = {remove_idea = KER_kernow_bys_vykken
+					 add_idea = KER_trelawney_legacy
+		}	
 		}
 	}
 	focus = {
@@ -243,6 +247,7 @@ focus_tree = {
 		continue_if_invalid = yes
 		available_if_capitulated = yes
 		completion_reward = {
+		every_state = {add_core_of = KER}
 			set_cosmetic_tag = KER_albion
 		}
 	}
@@ -257,7 +262,8 @@ focus_tree = {
 		continue_if_invalid = yes
 		available_if_capitulated = yes
 		completion_reward = {
-			
+			add_war_support = 0.05
+			add_stability = 0.05
 		}
 	}
 	focus = {
@@ -272,7 +278,7 @@ focus_tree = {
 		continue_if_invalid = yes
 		available_if_capitulated = yes
 		completion_reward = {
-			
+			custom_effect_tooltip = KER_bishop_coup_warning
 		}
 	}
 	focus = {
@@ -287,7 +293,7 @@ focus_tree = {
 		continue_if_invalid = yes
 		available_if_capitulated = yes
 		completion_reward = {
-			
+			country_event = KER_events.28
 		}
 	}
 	focus = {
@@ -301,7 +307,7 @@ focus_tree = {
 		continue_if_invalid = yes
 		available_if_capitulated = yes
 		completion_reward = {
-			
+			add_ideas = KER_give_them_cake
 		}
 	}
 	focus = {
@@ -316,16 +322,16 @@ focus_tree = {
 		continue_if_invalid = yes
 		available_if_capitulated = yes
 		completion_reward = {
-			
+			add_stability = 0.1
 		}
 	}
 	focus = {
 		id =  KER_bishop_boys
 		icon = GFX_goal_bishops_boys
 		cost = 5
-		x = 60
+		x = 48
 		y = 0
-		
+		available = {has_country_flag = KER_the_bishops_boy}
 		prerequisite = {}
 		continue_if_invalid = yes
 		available_if_capitulated = yes
@@ -387,6 +393,22 @@ focus_tree = {
 		available_if_capitulated = yes
 		completion_reward = {
 			
+		}
+	}
+	focus = {
+		id = KER_the_tea_party
+		icon = GFX_goal_generic_party
+		cost = 5
+		x = 0
+		y = 2
+		relative_position_id = KER_dinner_diplomacy
+		prerequisite = {focus =  KER_franco_fish }
+		prerequisite = { focus = KER_hitler_strudel}
+		prerequisite = {focus = KER_brunch_with_benito}
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		completion_reward = {
+			country_event = KER_events.9
 		}
 	}
 	####Army####

@@ -649,7 +649,7 @@ focus_tree = {
     			ideology = communist
     			popularity = 0.25
 				}
-				country_event = SCO_events.4
+			
 			}
 		}
 
@@ -660,7 +660,7 @@ focus_tree = {
 			x = 16
 			y = 5
 			bypass = {has_government = democratic_socialist}
-			available = { SOG = { exists = no }}
+			
 			mutually_exclusive = {focus = SCO_compromise_with_clydeside}
 			prerequisite = {focus = SCO_special_elections}
 			continue_if_invalid = yes
@@ -1478,7 +1478,7 @@ focus_tree = {
 			available_if_capitulated = yes
 			completion_reward = {
 				army_experience = 10
-				custom_effect_tooltip = SCO_highland_levies
+				custom_effect_tooltip = SCO_highland_levies_1
 					hidden_effect = {
 					random_owned_controlled_state = {
 						limit = { ROOT = { has_full_control_of_state = PREV } }
@@ -1537,7 +1537,7 @@ focus_tree = {
 			cost = 5
 			x = 35
 			y = 3
-			prerequisite = {focus = SCO_scottish_armed_forces}
+			prerequisite = {focus = SCO_highland_levies}
 			continue_if_invalid = yes
 			available_if_capitulated = yes
 			completion_reward = {

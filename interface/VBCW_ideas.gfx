@@ -20,6 +20,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/idea_generic_secret_police.dds"
 	}
 	spriteType = {
+		name = "GFX_idea_KER_every_cornish_boy"
+		texturefile = "gfx/interface/ideas/idea_generic_child_soldiers.dds"
+	}
+	spriteType = {
 		name = "GFX_idea_KER_pasty_service_external_2"
 		texturefile = "gfx/interface/ideas/idea_generic_secret_police.dds"
 	}
