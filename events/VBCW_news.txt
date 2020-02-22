@@ -56,12 +56,6 @@ news_event = {
 	is_triggered_only = yes
 	fire_only_once = yes
 	
-	
-	
-	mean_time_to_happen = {
-		days = 2
-	}
-	
 	option = {
 		name = vbcw_news.2.a
 		trigger = {
@@ -90,12 +84,6 @@ news_event = {
 	
 	is_triggered_only = yes
 	fire_only_once = yes
-	
-	
-	
-	mean_time_to_happen = {
-		days = 3
-	}
 	
 	option = {
 		name = vbcw_news.3.a

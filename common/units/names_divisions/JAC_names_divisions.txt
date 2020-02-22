@@ -742,3 +742,127 @@ JAC_PAR_01 =
 		53 = { "%drd Airborne Battalion" }
 	}
 }
+
+
+JAC_GER_INF_01 = 
+{
+	name = "Infantry Regiments"
+
+	for_countries = { JAC }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { GER_Gar_01 }
+
+	fallback_name = "%d Infantry Regiment"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "%dst Freiwilligenabteilung" }
+		2 = { "%dnd Freiwilligenabteilung" }
+		3 = { "%drd Freiwilligenabteilung" }
+		4 = { "%dth Freiwilligenabteilung" }
+		5 = { "%dth Freiwilligenabteilung" }
+		6 = { "%dth Freiwilligenabteilung" }
+		7 = { "%dth Freiwilligenabteilung" }
+		8 = { "%dth Freiwilligenabteilung" }
+		9 = { "%dth Freiwilligenabteilung" }
+		10 = { "%dth Freiwilligenabteilung" }
+		11 = { "%dth Freiwilligenabteilung" }
+		12 = { "%dth Freiwilligenabteilung" }
+		13 = { "%dth Freiwilligenabteilung" }
+		14 = { "%dth Freiwilligenabteilung" }
+		15 = { "%dth Freiwilligenabteilung" }
+		16 = { "%dth Freiwilligenabteilung" }
+		17 = { "%dth Freiwilligenabteilung" }
+		18 = { "%dth Freiwilligenabteilung" }
+		19 = { "%dth Freiwilligenabteilung" }
+		20 = { "%dth Freiwilligenabteilung" }
+		21 = { "%dst Freiwilligenabteilung" }
+		22 = { "%dnd Freiwilligenabteilung" }
+		23 = { "%drd Freiwilligenabteilung" }
+		24 = { "%dth Freiwilligenabteilung" }
+		25 = { "%dth Freiwilligenabteilung" }
+		26 = { "%dth Freiwilligenabteilung" }
+		27 = { "%dth Freiwilligenabteilung" }
+		28 = { "%dth Freiwilligenabteilung" }
+		29 = { "%dth Freiwilligenabteilung" }
+		30 = { "%dth Freiwilligenabteilung" }
+		31 = { "%dst Freiwilligenabteilung" }
+		32 = { "%dnd Freiwilligenabteilung" }
+		33 = { "%drd Freiwilligenabteilung" }
+		34 = { "%dth Freiwilligenabteilung" }
+		35 = { "%dth Freiwilligenabteilung" }
+		36 = { "%dth Freiwilligenabteilung" }
+		37 = { "%dth Freiwilligenabteilung" }
+		38 = { "%dth Freiwilligenabteilung" }
+		39 = { "%dth Freiwilligenabteilung" }
+		40 = { "%dth Freiwilligenabteilung" }
+		41 = { "%dst Freiwilligenabteilung" }
+		42 = { "%dnd Freiwilligenabteilung" }
+		43 = { "%drd Freiwilligenabteilung" }
+		44 = { "%dth Freiwilligenabteilung" }
+		45 = { "%dth Freiwilligenabteilung" }
+		46 = { "%dth Freiwilligenabteilung" }
+		47 = { "%dth Freiwilligenabteilung" }
+		48 = { "%dth Freiwilligenabteilung" }
+		49 = { "%dth Freiwilligenabteilung" }
+		50 = { "%dth Freiwilligenabteilung" }
+		51 = { "%dst Freiwilligenabteilung" }
+		52 = { "%dnd Freiwilligenabteilung" }
+		53 = { "%drd Freiwilligenabteilung" }
+		54 = { "%dth Freiwilligenabteilung" }
+		55 = { "%dth Freiwilligenabteilung" }
+		56 = { "%dth Freiwilligenabteilung" }
+		57 = { "%dth Freiwilligenabteilung" }
+		58 = { "%dth Freiwilligenabteilung" }
+		59 = { "%dth Freiwilligenabteilung" }
+		60 = { "%dth Freiwilligenabteilung" }
+		61 = { "%dst Freiwilligenabteilung" }
+		62 = { "%dnd Freiwilligenabteilung" }
+		63 = { "%drd Freiwilligenabteilung" }
+		64 = { "%dth Freiwilligenabteilung" }
+		65 = { "%dth Freiwilligenabteilung" }
+		66 = { "%dth Freiwilligenabteilung" }
+		67 = { "%dth Freiwilligenabteilung" }
+		68 = { "%dth Freiwilligenabteilung" }
+		69 = { "%dth Freiwilligenabteilung" }
+		70 = { "%dth Freiwilligenabteilung" }
+		71 = { "%dst Freiwilligenabteilung" }
+		72 = { "%dnd Freiwilligenabteilung" }
+		73 = { "%drd Freiwilligenabteilung" }
+		74 = { "%dth Freiwilligenabteilung" }
+		75 = { "%dth Freiwilligenabteilung" }
+		76 = { "%dth Freiwilligenabteilung" }
+		77 = { "%dth Freiwilligenabteilung" }
+		78 = { "%dth Freiwilligenabteilung" }
+		79 = { "%dth Freiwilligenabteilung" }
+		80 = { "%dth Freiwilligenabteilung" }
+		81 = { "%dst Freiwilligenabteilung" }
+		82 = { "%dnd Freiwilligenabteilung" }
+		83 = { "%drd Freiwilligenabteilung" }
+		84 = { "%dth Freiwilligenabteilung" }
+		85 = { "%dth Freiwilligenabteilung" }
+		86 = { "%dth Freiwilligenabteilung" }
+		87 = { "%dth Freiwilligenabteilung" }
+		88 = { "%dth Freiwilligenabteilung" }
+		89 = { "%dth Freiwilligenabteilung" }
+		90 = { "%dth Freiwilligenabteilung" }
+		91 = { "%dst Freiwilligenabteilung" }
+		92 = { "%dnd Freiwilligenabteilung" }
+		93 = { "%drd Freiwilligenabteilung" }
+		94 = { "%dth Freiwilligenabteilung" }
+		95 = { "%dth Freiwilligenabteilung" }
+		96 = { "%dth Freiwilligenabteilung" }
+		97 = { "%dth Freiwilligenabteilung" }
+		98 = { "%dth Freiwilligenabteilung" }
+		99 = { "%dth Freiwilligenabteilung" }
+		100 = { "%dth Freiwilligenabteilung" }
+		101 = { "%dst Freiwilligenabteilung" }
+	}
+}
