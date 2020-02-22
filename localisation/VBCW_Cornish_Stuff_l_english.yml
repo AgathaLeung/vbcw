@@ -337,6 +337,13 @@ vbcw_news.3.d:0 "What seemed to have been a slight argument over some table etiq
 vbcw_news.3.a:0 "Two Vicars bickering over Tea"
 vbcw_news.3.c:0 "Onwards, Tea and Biscuits awaits at Bishop Hunkin's house"
 vbcw_news.3.b:0 "Not one step further - our pasties shall remain ours" 
+KER_fat_king:0 "§YThe Cornish Assembly has §GElected a King§!§!"
+KER_kernow_stronk:0 "Kernow Stand Alone"
+KER_kernow_stronk_desc:0 "We stand alone on this Island. With no help from others in sight, nor support of our independence, we must rely on our own devices to defend our sovereignity and our pasties!"
+KER_kernow_stronk_2:0 "Cornwall is NOT England"
+KER_kernow_stronk_2_desc:0 "We stand alone on this Island. With no help from others in sight, nor support of our independence, we must rely on our own devices to defend our sovereignity and our pasties!"
+KER_prepare_for_tea_shortages:0 "Prepare for the Teas Shortage"
+KER_prepare_for_tea_shortages_desc:0 "Amongst all of this chaos, all the nations of the British Isles seem to have forgotten the gravest crisis we face - not the Civil War, not the attack on our borders, not even Herr Hitler's rampage across Europe ; it is the possible shortage of Tea! We must secure our supply of tea, and until we can secure a trade route, we must stockpile our tea!"
 ####DECISIONS###
 recruit_breton_volunteers:0 "Recruit Breton Volunteers"
 ###TECHS###

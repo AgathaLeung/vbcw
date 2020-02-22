@@ -316,6 +316,86 @@ ideas = {
 				
 			}
 		}
+		KER_kernow_stronk = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			
+			
+			modifier = {
+				stability_factor = 0.1
+				surrender_limit	= 0.2
+				
+			}
+		}
+		KER_kernow_stronk_2 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			
+			
+			modifier = {
+				stability_factor = 0.1
+				surrender_limit	= 0.2
+				conscription = 0.05
+				
+			}
+		}
+		KER_radio_cornwall = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			
+			
+			modifier = {
+				recon_factor = 0.05
+				war_support_factor	= 0.1
+			}
+		}
+		KER_prepare_for_tea_shortages = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			
+			
+			modifier = {
+				attrition = -0.1
+				no_supply_grace	= 96 
+			}
+		}
+
 		KER_militia_armed = {
 
 			allowed = {

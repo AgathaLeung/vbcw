@@ -20,7 +20,7 @@ focus_tree = {
 		continue_if_invalid = yes
 		available_if_capitulated = yes
 		completion_reward = {
-			set_cosmetic_tag = KER_albion
+			add_political_power = 50
 		}
 	}
 	focus = {
@@ -43,6 +43,7 @@ focus_tree = {
 		cost = 5
 		x = 0
 		y = 2
+		available = {has_country_flag = KER_fat_king}
 		relative_position_id = KER_restructure_the_government
 		prerequisite = {focus =  KER_political_manoeuvres}
 		continue_if_invalid = yes
@@ -63,7 +64,7 @@ focus_tree = {
 		continue_if_invalid = yes
 		available_if_capitulated = yes
 		completion_reward = {
-			
+			add_ideas = KER_kernow_stronk
 		}
 	}
 	focus = {
@@ -77,7 +78,7 @@ focus_tree = {
 		continue_if_invalid = yes
 		available_if_capitulated = yes
 		completion_reward = {
-			
+			swap_ideas = {remove_idea = KER_kernow_stronk add_idea = KER_kernow_stronk_2}
 		}
 	}
 	focus = {
@@ -91,7 +92,7 @@ focus_tree = {
 		continue_if_invalid = yes
 		available_if_capitulated = yes
 		completion_reward = {
-			
+			add_ideas = KER_prepare_for_tea_shortages
 		}
 	}
 	focus = {
@@ -119,7 +120,7 @@ focus_tree = {
 		continue_if_invalid = yes
 		available_if_capitulated = yes
 		completion_reward = {
-			
+			add_ideas = KER_radio_cornwall
 		}
 	}
 	focus = {

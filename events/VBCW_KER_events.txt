@@ -582,7 +582,7 @@ country_event = {
 
 	option = { ###Yes##
 		ai_chance = {factor = 100}
-		
+		hidden_effect= { KER = {country_event = { id = KER_events.24 days = 14} } }
 		name = KER_events.23.a
 	 	
 	}
@@ -603,7 +603,7 @@ country_event = {
 
 	option = { ###Yes##
 		ai_chance = {factor = 100}
-		
+		hidden_effect= { KER = {country_event = { id = KER_events.25 hours = 6} } }
 		name = KER_events.24.a
 	 	
 	}
@@ -624,7 +624,7 @@ country_event = {
 
 	option = { ###Yes##
 		ai_chance = {factor = 100}
-		
+		hidden_effect= { KER = {country_event = { id = KER_events.26 days = 2} } }
 		name = KER_events.25.a
 	 	
 	}
@@ -645,7 +645,7 @@ country_event = {
 
 	option = { ###Yes##
 		ai_chance = {factor = 100}
-		
+		hidden_effect= { KER = {country_event = { id = KER_events.27 days = 1} } }
 		name = KER_events.26.a
 	 	
 	}
@@ -677,7 +677,10 @@ country_event = {
 		traits = {
 			#
 		}
+
 }
+set_country_flag = KER_fat_king
+		complete_national_focus = KER_the_fat_king
 	}
 	option = { ###Yes##
 		ai_chance = {factor = 50}
@@ -692,7 +695,10 @@ country_event = {
 		traits = {
 			#
 		}
+		
 }
+set_country_flag = KER_fat_king
+		complete_national_focus = KER_the_fat_king
 	}
 	
 	
