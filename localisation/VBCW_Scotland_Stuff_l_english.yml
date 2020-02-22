@@ -169,6 +169,12 @@ SCO_events.1.d:0 "Our beloved leader, Alexander MacEwan, has passed away. At the
 SCO_events.1.a:0 "John MacCormick's Devolutionists!"
 SCO_events.1.b:0 "Andrew Dewar Gibb's Nationalists!"
 SCO_events.1.c:0 "Robert McIntyre's Socialists!"
+SCO_events.3.t:0 "The Special Elections"
+SCO_events.3.d:0 "With the Jacobite menace to the north defeated, Scotland has held a round of special elections to decide the country’s fate, with various minor skirmishes breaking out at balloting areas. In one reported incident, the fascist club of Ayr set up barricades outside of polling stations and burnt ballot boxes as they arrived. This was countered by a local Nationalist and Socialist militia, who bravley fought those who saught to undermine democracy.\n \n There are many other reports like this coming up from around the country. In another, more peculiar incident taking place in Campbeltown, in Kintyre. A trade union had organized its workers to all vote as a unit for David Kirkwood's SLP. However, in an act of revenge for defeating their faction, a rouge band of Jacobites tried to neutralize them. However, after a minor shootout, hostilities were ceased for an unusual reason- most of the trade unionists were to play in the scheduled football game. The Jacobite enemy were invited to the game, and after the scheduled the game was called off because the opposing team had been killed in a mortar strike, The Jacobites offered to play against them. After the game finished, the Trade Union beat them 11-0. This lead to a bitter Jacobite army opening fire on the Trade Union. \n \n Despite the various odd stories, The election has proved a success, and..."
+SCO_events.3.a:0 "The SNP have continued in government!"
+SCO_events.3.b:0 "The Liberals have swept to power!"
+SCO_events.3.c:0 "The Labour Party have swept to power!"
+
 ###IDEAS###
 SCO_irish_reconciled:0 "Edinburgh Irish Reconciled"
 SCO_national_consolidation_idea:0 "National Consolidation"
@@ -183,15 +189,12 @@ SCO_officer_schools_idea:0 "Officer Schools"
 
 
 ###OTHER###
-SCO_build_railway_tt:0 "The railway will be built from Berwick to Aberdeen, providing services all along the way."
-SCO_highland_levies_tt:0 "8 units of militiamen soley from clans will be raised, along with the famous Atholl Highlanders."
+SCO_build_railway_tt:0 "§YThe railway will be built from Berwick to Aberdeen, providing services all along the way."
+SCO_highland_levies_1:0 "§G8 units of militiamen §Ysoley from clans will be raised, along with the famous Atholl Highlanders."
+SCO_SNP_loyalists:0 "§G4 units §Yof militiamen consisting of only the most loyal to the republic and fierce in combat will be raised."
+SCO_fash_win:0 "§RThe Fascists §Whave been victorious in the §YBattle of Edinburgh!§W"
+SCO_commies_win:0 "§RThe Communists §Whave been victorious in the §YBattle of Edinburgh!§W"
 
-###EVENTS###
-SCO_events.1.t:0 "The Death of Alexander MacEwan"
-SCO_events.1.d:0 "Our beloved leader, Alexander MacEwan, has passed away. At the age of 65, it seems he had numerous health complications he had hid for a lengthy amount of time in order to govern the SNP and Scotland. This also raises more questions, over succession. \n The most likely candidate is John McCormick. However, he favours Scotland becoming a dominion of England rather than full independence. \n Another very strong candidate is Andrew Dewar Gibb, who favours the status quo and continuing MacEwan’s legacy. \n A young outsider is Robert Mcintyre, a more left wing choice that favours more radical change and rapprochement with the People’s Armies. \n Who wins the vote?
-SCO_events.1.a:0 "John MacCormick's Devolutionists!"
-SCO_events.1.b:0 "Andrew Dewar Gibb's Nationalists!"
-SCO_events.1.c:0 "Robert McIntyre's Socialists!"
-###IDEAS###
+
 
 
