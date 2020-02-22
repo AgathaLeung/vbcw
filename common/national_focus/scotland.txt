@@ -1537,7 +1537,7 @@ focus_tree = {
 			cost = 5
 			x = 35
 			y = 3
-			prerequisite = {focus = SCO_scottish_armed_forces}
+			prerequisite = {focus = SCO_highland_levies}
 			continue_if_invalid = yes
 			available_if_capitulated = yes
 			completion_reward = {

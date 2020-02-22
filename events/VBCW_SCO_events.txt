@@ -1,6 +1,6 @@
-﻿add_namespace = SCO_events
+add_namespace = SCO_events
 
-#MacEwan fucking dies
+
 country_event = {
 	id = SCO_events.1
 	title = SCO_events.1.t
@@ -65,3 +65,87 @@ country_event = {
 		}
 	}
 }
+
+
+country_event = {
+	id = SCO_events.3
+	title = SCO_events.3.t
+	desc = SCO_events.3.d
+	picture = GFX_report_event_election_vote
+
+	fire_only_once = yes
+	
+		
+	mean_time_to_happen = {
+		days = 1
+		
+	}
+
+
+	option = {
+		name = SCO_events.3.a
+		add_popularity = {
+   				ideology = civic_nationalist
+    			popularity = 0.1
+		}
+		add_stability = 0.05
+	}
+
+	option = {
+		name = SCO_events.3.b
+	set_politics = {
+			ruling_party = liberal
+		}
+			add_popularity = {
+   					ideology = liberal
+    				popularity = 0.2
+		}
+	}	
+
+	option = {
+		name = SCO_events.3.c
+		set_politics = {
+			ruling_party = democratic_socialist
+		}
+		add_popularity = {
+   					ideology = democratic_socialist
+    				popularity = 0.2
+		}
+	}
+
+
+
+country_event = {
+	id = SCO.events.5
+	title = SCO_events.5.t
+	desc = SCO_events.5.d
+	picture = GFX_report_event_saf_coup
+
+	fire_only_once = yes
+	is_triggered_only = yes
+		
+	mean_time_to_happen = {
+		days = 1
+		
+	}
+
+
+	option = {
+		name = SCO_events.5.a
+	
+		custom_effect_tooltip = SCO_steal_the_stone_event
+			hidden_effect = {
+				random_list = {
+					50 = {country_event = {
+    				id = SCO.events.5a
+    				days = 10
+							}			}
+					50 = {country_event = {
+    				id = SCO.events.5b
+    				days = 10
+						}		
+					}
+				}
+			}
+		}
+	}
