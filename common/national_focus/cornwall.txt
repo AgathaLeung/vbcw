@@ -35,6 +35,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		completion_reward = {
 			custom_effect_tooltip = KER_crown_king_tt
+			country_event = KER_events.23
 		}
 	}
 	focus = {
