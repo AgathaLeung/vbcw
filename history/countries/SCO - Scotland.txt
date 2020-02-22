@@ -187,16 +187,7 @@ create_country_leader = {
 	}
 }
 
-create_field_marshal = {
-	name = "Charles Fergusson"
-	portrait_path = "gfx/leaders/VBCW/SCO/SCO-CFergusson.dds"
-	traits = { infantry_officer cavalry_leader }
-	skill = 4
-	attack_skill = 2
-    defense_skill = 5
-    planning_skill = 3
-    logistics_skill = 3
-}
+
 
 create_field_marshal = {
 	name = "Bernard Fergusson"
