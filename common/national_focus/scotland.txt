@@ -1721,7 +1721,7 @@ focus_tree = {
 			continue_if_invalid = yes
 			available_if_capitulated = yes
 			completion_reward = {
-				unlock_decision_tooltip = SCO_french_aid_decision
+				unlock_decision_tooltip = SCO_irish_aid_decision
 			}
 		}
 
@@ -1735,7 +1735,7 @@ focus_tree = {
 			continue_if_invalid = yes
 			available_if_capitulated = yes
 			completion_reward = {
-				unlock_decision_tooltip = SCO_french_aid_decision
+				unlock_decision_tooltip = SCO_scandinavian_aid_decision
 			}
 		}
 	}
