@@ -10,10 +10,12 @@ desperate_measures = {
 
 		available = {
 			has_war = yes
+			tag = JAC
 		}
 
 		visible = {
 			has_war = yes
+			tag = JAC
 		}
 
         cost = 15
