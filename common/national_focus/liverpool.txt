@@ -2,10 +2,7 @@ focus_tree = {
 	id = LIV_Coolstuff
 	country = {
 		factor = 0
-		modifier = {
-			add = 10
-			tag = LIV
-		}
+		
 	}
 	
 	default = no

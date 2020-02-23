@@ -2,10 +2,7 @@ focus_tree = {
 	id = YRK_Coolstuff
 	country = {
 		factor = 0
-		modifier = {
-			add = 10
-			tag = YRK
-		}
+		
 	}
 	
 	default = no

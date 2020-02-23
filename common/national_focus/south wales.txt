@@ -2,10 +2,7 @@ focus_tree = {
 	id = SOC_Coolstuff
 	country = {
 		factor = 0
-		modifier = {
-			add = 10
-			tag = SOC
-		}
+		
 	}
 	
 	default = no

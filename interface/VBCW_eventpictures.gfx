@@ -26,6 +26,34 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/event_vestments_suit.dds"
 	}
 	spriteType = {
+		name = "GFX_report_event_franco_wave"
+		texturefile = "gfx/event_pictures/event_franco_wave.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_franco_parade"
+		texturefile = "gfx/event_pictures/event_franco_parade.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_hitler_food"
+		texturefile = "gfx/event_pictures/event_hitler_food.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_spode"
+		texturefile = "gfx/event_pictures/event_spode.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_musollini_lunch"
+		texturefile = "gfx/event_pictures/event_musollini_lunch.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_musollini_jog"
+		texturefile = "gfx/event_pictures/report_event_musollini_jog.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_hitler_car"
+		texturefile = "gfx/event_pictures/event_hitler_car.dds"
+	}
+	spriteType = {
 		name = "GFX_report_event_feast_brawl"
 		texturefile = "gfx/event_pictures/event_feast_brawl.dds"
 	}

@@ -37,7 +37,7 @@ ideas = {
 				army_speed_factor = 0.1
 			}
 		}
-		KER_science_investments = {
+		KER_special_research_divison = {
 
 			allowed = {
 				always = no
@@ -52,7 +52,25 @@ ideas = {
 			
 			
 			modifier = {
-				consumer_goods_factor = 0.05
+				research_speed_factor = 0.1
+			}
+		}
+		KER_london_connections = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			
+			
+			modifier = {
+				decryption_factor = 0.1
 			}
 		}
 		KER_pasty_service = {
