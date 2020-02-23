@@ -132,7 +132,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		completion_reward = {
 			YRK = {
-					country_event =  YRK_events.1		
+					country_event =  JAC_events.25	
 			}  
 		}
 	}
@@ -144,13 +144,15 @@ focus_tree = {
 		x = 0
 		y = 6
 		prerequisite = {focus = JAC_york_treaty}
-		available = { is_puppet = no }
+		available = { is_puppet = no is_neighbor_of = JAC }
 		bypass = { has_war_with = YRK }
 		cancel = { NOT = { country_exists = YRK }}
 		continue_if_invalid = yes
 		available_if_capitulated = yes
 		completion_reward = {
+		leave_faction = yes
 			create_wargoal = {
+
 				type = annex_everything
 				target = YRK
 			}
@@ -698,17 +700,17 @@ focus_tree = {
 		y = 1
 		prerequisite = {focus = JAC_royal_scottish_army}
 		continue_if_invalid = yes
-		
+		available {AND = { is_neighbor_of = BUF is_neighbor_of = ROY}}
 		available_if_capitulated = yes
 		completion_reward = {
 			create_wargoal = {
 				type = annex_everything
-				target = ROY
-			}
+				target = BUF
+			} 
 			create_wargoal = {
 				type = annex_everything
-				target = BUF        
-			}
+				target = ROY
+			} 
 		}
 	}
 	
@@ -720,12 +722,33 @@ focus_tree = {
 		y = 2
 		prerequisite = {focus = JAC_stand_against_fascism}
 		continue_if_invalid = yes
-		
+		available = {is_neighbor_of = SOM}
 		available_if_capitulated = yes
 		completion_reward = {
 			create_wargoal = {
 				type = annex_everything
 				target = SOM    	    
+			}
+		}
+	}
+	focus = {
+		id = JAC_consolidate_scotland
+		icon = GFX_goal_generic_mr_peanut
+		cost = 10
+		x = 19
+		y = 2
+		prerequisite = {focus = JAC_royal_scottish_army focus = JAC_muir_mohr_fleet}
+		continue_if_invalid = yes
+		available = {OR = { is_neighbor_of = SCO is_neighbor_of = SOG } }
+		available_if_capitulated = yes
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = SOG    	    
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = SCO    	    
 			}
 		}
 	}
