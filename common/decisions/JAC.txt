@@ -19,6 +19,8 @@ desperate_measures = {
 		}
 
         cost = 15
+	
+	days_remove = 20
         
         complete_effect = {
 		    custom_effect_tooltip = JAC_german_divisions_tt
