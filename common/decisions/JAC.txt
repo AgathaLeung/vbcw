@@ -10,13 +10,17 @@ desperate_measures = {
 
 		available = {
 			has_war = yes
+			tag = JAC
 		}
 
 		visible = {
 			has_war = yes
+			tag = JAC
 		}
 
         cost = 15
+	
+	days_remove = 20
         
         complete_effect = {
 		    custom_effect_tooltip = JAC_german_divisions_tt
