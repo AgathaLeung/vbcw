@@ -147,4 +147,24 @@ spriteTypes = {
 		name = "GFX_idea_KER_rifle_reliability"
 		texturefile = "gfx/interface/ideas/idea_ast_volunteer_defence_corps.dds"
 	}
+	
+	spriteType = {
+		name = "GFX_idea_SOG_Mobilise_the_People"
+		texturefile = "gfx/interface/ideas/idea_MTP.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_SOG_infantry_core"
+		texturefile = "gfx/interface/ideas/infantry_core.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_SOG_peoples_officer_core"
+		texturefile = "gfx/interface/ideas/idea_POC.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_SOG_intergrated_support"
+		texturefile = "gfx/interface/ideas/idea_Intergrated_Support.dds"
+	}
 }

@@ -20,6 +20,7 @@ ideas = {
 				conscription_factor = -0.1
 			}
 		}
+
 		SOG_mobilise_the_people = {
 
 			allowed = {
@@ -120,6 +121,10 @@ ideas = {
 		}
 		SOG_radical_protestantism = {
 
+		
+		
+		
+
 			allowed = {
 				always = no
 			}
@@ -129,6 +134,7 @@ ideas = {
 			}
 
 			removal_cost = -1
+
 
 		
 			
@@ -305,9 +311,14 @@ ideas = {
 		}
 		SOG_enlist_scw_vets = {
 
+		
+		
+
+
 			allowed = {
 				always = no
 			}
+
 
 			allowed_civil_war = {
 				always = yes
@@ -342,7 +353,17 @@ ideas = {
 				consumer_goods_factor = -0.03
 			}
 		}
-	}
+
+			
+
+
+	
+	
+		
+		
+}
+
+
 	
 	political_advisor = {
 	
