@@ -41,6 +41,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/goal_generic_child_soldiers.dds"
 	}
 	spriteType = {
+		name = "GFX_goal_liberal_reform_scots"
+		texturefile = "gfx/interface/goals/goal_liberal_reform_scots.dds"
+	}
+	spriteType = {
 		name = "GFX_goal_worker_democracy"
 		texturefile = "gfx/interface/goals/goal_worker_democracy.dds"
 	}

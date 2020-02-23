@@ -702,7 +702,7 @@ focus_tree = {
 
 		focus = {
 			id = SCO_scotland_the_brave
-			icon = GFX_goal_scotland_the_brave
+			icon = GFX_goal_liberal_reform_scots
 			cost = 5
 			x = 15
 			y = 7
@@ -734,25 +734,25 @@ focus_tree = {
 			}
 		}
 
-		focus = {
-			id = SCO_steal_the_stone
-			icon = GFX_focus_SCO_steal_the_stone
-			cost = 5
-			x = 17
-			y = 4
-			prerequisite = {
-			focus = SCO_constitutional_monarch
-			focus = SCO_maintain_the_republic
-			}
-			continue_if_invalid = yes
-			available_if_capitulated = yes
-			completion_reward = {
-				country_event = {
-    				id = SCO.events.5
-    				days = 10
-				}
-    		}
-		}
+		#focus = {
+		#	id = SCO_steal_the_stone
+		#	icon = GFX_focus_SCO_steal_the_stone
+		#	cost = 5
+		#	x = 17
+		#	y = 4
+		#	prerequisite = {
+		#	focus = SCO_constitutional_monarch
+		#	focus = SCO_maintain_the_republic
+		#	}
+		#	continue_if_invalid = yes
+		#	available_if_capitulated = yes
+		#	completion_reward = {
+		#		country_event = {
+    	#			id = SCO.events.5
+    	#			days = 10
+		#		}
+    	#	}
+		#}
 
 		focus = {
 			id = SCO_new_constitution
@@ -791,7 +791,7 @@ focus_tree = {
 			id = SCO_the_coronation
 			icon = GFX_focus_rom_royal_dictatorship
 			cost = 5
-			x = 18
+			x = 19
 			y = 6
 			available = { JAC = { exists = no } }
 			prerequisite = {focus = SCO_invite_albert}
