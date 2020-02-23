@@ -32,6 +32,70 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/idea_hand_grab.dds"
 	}
 	spriteType = {
+		name = "GFX_idea_SOG_mobilise_the_people"
+		texturefile = "gfx/interface/ideas/idea_generic_communist_army.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_SOG_infantry_core"
+		texturefile = "gfx/interface/ideas/idea_hun_secret_rearmament.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_SOG_integrated_support"
+		texturefile = "gfx/interface/ideas/idea_generic_artillery_regiments.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_SOG_small_arms_production"
+		texturefile = "gfx/interface/ideas/idea_generic_infantry_equipment_manufacturer_3.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_SOG_automotive_workshops"
+		texturefile = "gfx/interface/ideas/FRA_motorized_focus.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_SOG_radical_protestantism"
+		texturefile = "gfx/interface/ideas/idea_commie_cross.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_SOG_indigenous_production"
+		texturefile = "gfx/interface/ideas/FRA_factory_strikes.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_equal_before_god"
+		texturefile = "gfx/interface/ideas/generic_intel_bonus.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_SOG_people's_officer_corps"
+		texturefile = "gfx/interface/ideas/trotskyite_plot_purged.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_SOG_enlist_scw_vets"
+		texturefile = "gfx/interface/ideas/idea_mex_politicised_army_2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_SOG_glasgow_textile_mills"
+		texturefile = "gfx/interface/ideas/generic_production_bonus.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_SOG_religous_tolerance"
+		texturefile = "gfx/interface/ideas/generic_volunteer_expedition_bonus.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_SOG_institutional_atheism"
+		texturefile = "gfx/interface/ideas/idea_generic_deal_with_the_devil.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_SOG_political_commissars"
+		texturefile = "gfx/interface/ideas/idea_saf_soviet_advisers.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_SOG_meritocracy"
+		texturefile = "gfx/interface/ideas/idea_manifest_destiny.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_SOG_christian_socialism"
+		texturefile = "gfx/interface/ideas/idea_commie_cross.dds"
+	}
+	spriteType = {
 		name = "GFX_idea_KER_kernow_stronk"
 		texturefile = "gfx/interface/ideas/idea_get_off_my_lawn.dds"
 	}
