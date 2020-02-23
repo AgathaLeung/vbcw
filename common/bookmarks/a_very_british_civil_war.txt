@@ -4,37 +4,37 @@ bookmarks = {
 		desc = "VBCW_DESC"
 		date = 1937.12.24.12
 		picture = "GFX_select_date_1936"
-		default_country = "ROY"
+		default_country = "KER"
 		default = yes
 		
-		"ROY"={
-			history = "ROY_VBCW_DESC"
-			ideology = conservative
-			ideas = {
-				ROY_cavalry_elan
-			}
-		}
-		"BUF"={
-			history = "BUF_VBCW_DESC"
-			ideology = fascist
-			ideas = {
-				BUF_auxiliary_constabularies
-			}
-		}
-		"ANG"={
-			history = "ANG_VBCW_DESC"
-			ideology = conservative
-			ideas = {
-				ANG_jam_and_jerusalem
-			}
-		}
-		"YRK"={
-			history = "YRK_VBCW_DESC"
-			ideology = conservative
-			ideas = {
-				YRK_peoples_prince
-			}
-		}
+		#"ROY"={
+		#	history = "ROY_VBCW_DESC"
+		#	ideology = conservative
+		#	ideas = {
+		#		ROY_cavalry_elan
+		#	}
+		#}
+		#"BUF"={
+		#	history = "BUF_VBCW_DESC"
+		#	ideology = fascist
+		#	ideas = {
+		#		BUF_auxiliary_constabularies
+		#	}
+		#}
+		#"ANG"={
+		#	history = "ANG_VBCW_DESC"
+		#	ideology = conservative
+		#	ideas = {
+		#		ANG_jam_and_jerusalem
+		#	}
+		#}
+		#"YRK"={
+		#	history = "YRK_VBCW_DESC"
+		#	ideology = conservative
+		#	ideas = {
+		#		YRK_peoples_prince
+		#	}
+		#}
 		"SCO"={
 			history = "SCO_VBCW_DESC"
 			ideology = civic_nationalist
@@ -43,14 +43,27 @@ bookmarks = {
 				SCO_unionist_officers
 			}
 		}
-		"SOM"={
-			history = "SOM_VBCW_DESC"
-			ideology = democratic_socialist	
+		#"SOM"={
+		#	history = "SOM_VBCW_DESC"
+		#	ideology = democratic_socialist	
+		#	ideas = {
+		#		SOM_strike_up_the_band
+		#		SOM_foundries_and_forges
+		#	}		
+		#}	
+		"KER"={
+			
+			history = "KER_VBCW_DESC"
+			ideology = civic_nationalist
 			ideas = {
-				SOM_strike_up_the_band
-				SOM_foundries_and_forges
-			}		
-		}		
+				KER_kernow_bys_vykken
+			}
+		}	
+		"SOG"={
+			
+			history = "SOG_VBCW_DESC"
+			ideology = communist
+		}
 		"JAC"={
 			history = "JAC_VBCW_DESC"
 			ideology = autocratic
@@ -78,14 +91,7 @@ bookmarks = {
 			history = "WAL_VBCW_DESC"
 			ideology = civic_nationalist
 		}	
-		"KER"={
-			minor = yes
-			history = "KER_VBCW_DESC"
-			ideology = civic_nationalist
-			ideas = {
-				KER_kernow_bys_vykken
-			}
-		}
+		
 		"LIV"={
 			minor = yes
 			history = "LIV_VBCW_DESC"
@@ -94,11 +100,7 @@ bookmarks = {
 				LIV_city_under_siege
 			}
 		}
-		"SOG"={
-			minor = yes
-			history = "SOG_VBCW_DESC"
-			ideology = communist
-		}
+		
 		"SOD"={
 			minor = yes
 			history = "SOD_VBCW_DESC"
