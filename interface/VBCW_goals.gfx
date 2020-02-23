@@ -9,6 +9,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/goal_wine.dds"
 	}
 	spriteType = {
+		name = "GFX_goal_socialist_revoluton"
+		texturefile = "gfx/interface/goals/goal_socialist_revoluton.dds"
+	}
+	spriteType = {
 		name = "GFX_goal_hitler_strudel"
 		texturefile = "gfx/interface/goals/goal_hitler_strudel.dds"
 	}
@@ -29,8 +33,24 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/goal_generic_crown_box.dds"
 	}
 	spriteType = {
+		name = "GFX_goal_big_red_star"
+		texturefile = "gfx/interface/goals/goal_big_red_star.dds"
+	}
+	spriteType = {
 		name = "GFX_goal_generic_child_soldiers"
 		texturefile = "gfx/interface/goals/goal_generic_child_soldiers.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_worker_democracy"
+		texturefile = "gfx/interface/goals/goal_worker_democracy.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_red_parliament"
+		texturefile = "gfx/interface/goals/goal_red_parliament.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_socialist_volunteers"
+		texturefile = "gfx/interface/goals/goal_socialist_volunteers.dds"
 	}
 	spriteType = {
 		name = "GFX_goal_generic_britannia"

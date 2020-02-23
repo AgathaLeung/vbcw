@@ -1,0 +1,78 @@
+ SOG_aid_from_IWW = {
+	
+
+   	small_arms_IWW = {
+
+		icon = generic_operation
+
+		
+
+		cost = 50
+		fire_only_once = no
+		days_re_enable = 60
+		available = {
+			has_completed_focus = SOG_aid_from_IWW
+        }
+
+        visible = {
+			has_completed_focus = SOG_aid_from_IWW
+            }
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+
+			add_equipment_to_stockpile = { type = infantry_equipment amount = 1500 producer = USA }
+		}
+	}
+	artillery_IWW = {
+
+		icon = generic_operation
+
+		
+
+		cost = 50
+		fire_only_once = no
+		days_re_enable = 60
+		available = {
+			has_completed_focus = SOG_aid_from_IWW
+        }
+
+        visible = {
+			has_completed_focus = SOG_aid_from_IWW
+            }
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+
+			add_equipment_to_stockpile = { type = artillery_equipment amount = 100 producer = USA }
+		}
+	}
+	IWW_volunteers = {
+
+		icon = generic_operation
+
+		
+
+		cost = 250
+		fire_only_once = yes
+		
+		available = {
+			has_completed_focus = SOG_aid_from_IWW
+        }
+
+        visible = {
+			has_completed_focus = SOG_aid_from_IWW
+            }
+		ai_will_do = {
+			factor = 100
+		}
+		complete_effect = {
+			hidden_effect= {load_oob = SOG_IWW}
+			custom_effect_tooltip = IWW_volunteers_tt
+		}
+	}
+}
+
+

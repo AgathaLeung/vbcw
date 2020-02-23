@@ -162,6 +162,34 @@ SOG_INF_01 =
 		
 	}
 }
+SOG_VOL_01 = 
+{
+	name = "IWW Volunteers"
+
+	for_countries = { SOG }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { GER_Gar_01 }
+
+	fallback_name = "%d IWW Brigade"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "Baltimore Volunteer Brigade" }
+		2 = { "New York Volunteers Brigade" }
+		3 = { "Vermont Volunteer Brigade" }
+		4 = { "Indiana Rifles" }
+		
+		
+		
+	}
+}
 
 SOG_CAV_01 = 
 {

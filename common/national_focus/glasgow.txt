@@ -15,7 +15,7 @@ focus_tree = {
 
 	focus = {
 		id = SOG_prepare_for_the_struggle
-		icon = GFX_goal_generic_propaganda
+		icon = GFX_goal_socialist_revolution
 		cost = 2
 		x = 12
 		y = 0
@@ -273,21 +273,7 @@ focus_tree = {
 		}
 	}
 
-	focus = {
-			id = SOG_worker's_canal
-			icon = GFX_goal_peoples_canal
-			cost = 5
-			x = 2
-			y = 5
-			prerequisite = {focus = SOG_outsource_small_craft_construction}
-			prerequisite = {focus = SOG_automotive_workshops}
-			prerequisite = {focus = SOG_reopen_falkirk_foundries}
-			continue_if_invalid = yes
-			available_if_capitulated = yes
-			completion_reward = {
-				unlock_decision_tooltip = SOG_worker's_canal_decision
-			}
-		}
+	
 
 	
 
@@ -295,7 +281,7 @@ focus_tree = {
 	
 	focus = {
 		id = SOG_political_alignment
-		icon = GFX_goal_generic_neutrality_focus
+		icon = GFX_goal_red_parliament
 		cost = 2
 		x = 12
 		y = 1
@@ -309,7 +295,7 @@ focus_tree = {
 	
 	focus = {
 		id = SOG_anarchist_commune
-		icon = GFX_goal_generic_national_unity
+		icon = GFX_goal_big_red_star
 		cost = 5
 		x = 9
 		y = 2
@@ -486,7 +472,7 @@ focus_tree = {
 	
 	focus = {
 		id = SOG_labour_commune
-		icon = GFX_goal_support_democracy
+		icon = GFX_goal_worker_democracy
 		cost = 5
 		x = 15
 		y = 2
@@ -784,7 +770,7 @@ focus_tree = {
 
 	focus = {
 		id = SOG_enlist_scw_vets
-		icon = GFX_focus_generic_strike_at_democracy2
+		icon = GFX_goal_socialist_volunteers
 		cost = 5
 		x = 22
 		y = 3

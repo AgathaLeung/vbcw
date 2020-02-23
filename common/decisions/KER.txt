@@ -15,8 +15,8 @@ KER_foreign_volunteers = {
         }
 
         visible = {
-			has_completed_focus = KER_foreign_volunteers}
-
+			has_completed_focus = KER_foreign_volunteers
+            }
         complete_effect = {			
 			load_oob = 	KER_breton	
 		}
