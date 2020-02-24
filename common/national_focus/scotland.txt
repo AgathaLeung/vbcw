@@ -635,7 +635,7 @@ focus_tree = {
 			cost = 5
 			x = 14
 			y = 5
-			available = {has_government = democratic_socialist}
+			available = {has_government = democratic_socialist  SOG = { is_ai = yes }  }
 			mutually_exclusive = {focus = SCO_crush_clydeside}
 			prerequisite = {focus = SCO_special_elections}
 			continue_if_invalid = yes
@@ -720,11 +720,13 @@ focus_tree = {
 			cost = 5
 			x = 19
 			y = 3
+			available = {always = no}
 			mutually_exclusive = {focus = SCO_maintain_the_republic}
 			prerequisite = {focus = SCO_secure_the_nation}
 			continue_if_invalid = yes
 			available_if_capitulated = yes
 			completion_reward = {
+			custom_effect_tooltip = currently_WIP_tt
 				add_popularity = {
     			ideology = conservative
     			popularity = 0.05
@@ -764,6 +766,7 @@ focus_tree = {
 			continue_if_invalid = yes
 			available_if_capitulated = yes
 			completion_reward = {
+			custom_effect_tooltip = currently_WIP_tt
 				add_ideas = SCO_new_constitution_idea
     		}
 		}
@@ -778,6 +781,7 @@ focus_tree = {
 			continue_if_invalid = yes
 			available_if_capitulated = yes
 			completion_reward = {
+			custom_effect_tooltip = currently_WIP_tt
 				YRK = {
 					country_event = {
     					id = YRK.events.5
@@ -798,6 +802,7 @@ focus_tree = {
 			continue_if_invalid = yes
 			available_if_capitulated = yes
 			completion_reward = {
+			custom_effect_tooltip = currently_WIP_tt
 				country_event = {
     				id = SCO.events.6
     				days = 10
@@ -816,6 +821,7 @@ focus_tree = {
 			continue_if_invalid = yes
 			available_if_capitulated = yes
 			completion_reward = {
+			custom_effect_tooltip = currently_WIP_tt
 				create_wargoal = {
    					type = annex_everything
     				target = SOG
@@ -834,6 +840,7 @@ focus_tree = {
 			continue_if_invalid = yes
 			available_if_capitulated = yes
 			completion_reward = {
+			custom_effect_tooltip = currently_WIP_tt
 				unlock_national_focus = SCO_maintain_the_republic
 			}
 		}
@@ -1559,10 +1566,12 @@ focus_tree = {
 			x = 37
 			y = 3
 			prerequisite = {focus = SCO_scottish_armed_forces}
+			available = {has_government	 = communist always = no}
 			continue_if_invalid = yes
 			available_if_capitulated = yes
 			completion_reward = {
 				unlock_decision_tooltip = SCO_soviet_aid_decision
+				custom_effect_tooltip = currently_WIP_tt
 			}
 		}
 
@@ -1690,10 +1699,12 @@ focus_tree = {
 			x = 43
 			y = 3
 			prerequisite = {focus = SCO_scottish_armed_forces}
+			available = {has_government	= fascist always = no}
 			continue_if_invalid = yes
 			available_if_capitulated = yes
 			completion_reward = {
 				unlock_decision_tooltip = SCO_german_aid_decision
+				custom_effect_tooltip = currently_WIP_tt
 			}
 		}
 
@@ -1704,10 +1715,12 @@ focus_tree = {
 			x = 45
 			y = 1
 			prerequisite = {focus = SCO_scottish_armed_forces}
+			available = { OR = { has_government	= civic_nationalist has_government = liberal has_government	= democratic_socialist has_government = conservative} always = no}
 			continue_if_invalid = yes
 			available_if_capitulated = yes
 			completion_reward = {
 				unlock_decision_tooltip = SCO_french_aid_decision
+				custom_effect_tooltip = currently_WIP_tt
 			}
 		}
 
@@ -1722,6 +1735,7 @@ focus_tree = {
 			available_if_capitulated = yes
 			completion_reward = {
 				unlock_decision_tooltip = SCO_irish_aid_decision
+				custom_effect_tooltip = currently_WIP_tt
 			}
 		}
 
@@ -1736,6 +1750,7 @@ focus_tree = {
 			available_if_capitulated = yes
 			completion_reward = {
 				unlock_decision_tooltip = SCO_scandinavian_aid_decision
+				custom_effect_tooltip = currently_WIP_tt
 			}
 		}
 	}

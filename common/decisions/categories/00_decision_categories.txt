@@ -21,3 +21,23 @@ KER_foreign_volunteers = {
 	icon = generic_army_support
 	
 }
+SCO_aid_from_FRA = {
+	icon = generic_army_support
+	
+}
+SCO_aid_from_IRA = {
+	icon = generic_army_support
+	
+}
+SCO_aid_from_SCA = {
+	icon = generic_army_support
+	
+}
+SCO_aid_from_GER = {
+	icon = generic_army_support
+	
+}
+SCO_aid_from_SOV = {
+	icon = generic_army_support
+	
+}
