@@ -7,15 +7,15 @@
 fascist_peace = {
 	enable = {
 		OR = {
-			has_government = fascism
+			has_government = fascist
 			AND = {
-				NOT = { has_government = communism }
+				NOT = { has_government = communist }
 				NOT = { has_government = democratic }
 				OR = {
 					any_country = {
 						is_in_faction_with = ROOT
 						is_faction_leader = yes
-						has_government = fascism
+						has_government = fascist
 					}
 					is_in_faction = no
 					is_faction_leader = yes
@@ -79,37 +79,7 @@ fascist_peace = {
 				NOT = { any_owned_state = { OR = { is_claimed_by = ROOT is_core_of = ROOT } } }
 			}
 		}
-		modifier = { #For now, only the Chinese will completely annex non-PRC China proper.
-			factor = 0
-			FROM = { tag = CHI }
-			#China
-			NOT = {
-				OR = {
-					tag = CHI
-					tag = PRC
-					tag = GXC
-					tag = YUN
-					tag = SHX
-					tag = XSM
-				}
-			}
-			FROM = {
-				any_owned_state = { 
-					NOT = {
-						OR = { 
-							is_claimed_by = ROOT
-							is_core_of = ROOT
-							has_claimed_state_in_peace_conference = ROOT
-						}
-					}
-				}
-			}
-			#Independent fascist versions of these countries can take land from inland China
-			NOT = { tag = MON }
-			NOT = { tag = TIB }
-			NOT = { tag = SIK }
-			NOT = { tag = MEN }
-		}
+		
 		
 		modifier = {
 			factor = 0
@@ -153,7 +123,7 @@ fascist_peace = {
 					NOT = { tag = ITA }
 					NOT = { tag = FRA }
 					NOT = { tag = USA }
-					NOT = { tag = JAP }
+					
 					NOT = { tag = SOV }
 				}
 				is_puppet = yes
@@ -163,30 +133,11 @@ fascist_peace = {
 			factor = 0 #0.5 - only liberate fascists!
 			NOT = {
 				FROM = {
-					has_government = fascism
+					has_government = fascist
 				}
 			}
 		}
-		modifier = { #Don't release these nations
-			factor = 0
-			FROM = {
-				OR = { 
-					tag = SIK
-					tag = PRC
-					tag = GXC
-					tag = YUN
-					tag = SHX
-					tag = XSM
-					AND = { #Only Japan can release Meng.
-						OR = {
-							tag = MEN
-							#tag = MAN #Manchukuo
-						}
-						ROOT = { NOT = { tag = JAP } }
-					}
-				}
-			}
-		}
+		
 	}
 
 	# ROOT = Taker, FROM = Giver
@@ -201,7 +152,7 @@ fascist_peace = {
 			NOT = { tag = ITA }
 			NOT = { tag = FRA }
 			NOT = { tag = USA }
-			NOT = { tag = JAP }
+			
 			NOT = { tag = SOV }
 			NOT = { is_owner_neighbor_of = FROM }
 		}
@@ -216,47 +167,20 @@ fascist_peace = {
 					}
 				}
 			}
-			OR = {
-				tag = JAP
-				tag = GER
-			}
-			OR = {
-				tag = JAP
-				581 = { is_owned_by = ROOT }
-			}
+			
+			
 		}
 		modifier = {
 			factor = 0
 			tag = TUR
 			FROM = { tag = GRE }
 		}
-		modifier = { #Japan wants PUPPETS for it's co-prosperity sphere instead of direct control.
-			factor = 100
-			tag = JAP
-			#FROM = { capital_scope = { is_on_continent = asia } }
-			FROM = {
-				OR = {
-					tag = BHU
-					tag = MEN
-					tag = NEP
-					tag = SIA
-					tag = SIK
-					tag = TIB
-					tag = YUN
-					tag = MON
-					tag = RAJ
-					tag = PHI
-				}
-			}
-		}
+		
 		modifier = {
 			factor = 0
 			is_puppet = yes
 		}
-		modifier = { #Dismantle Yugoslavia (revisit in the future)
-			factor = 0
-			FROM = { tag = YUG }
-		}
+		
 		modifier = { #Do not puppet Soviet Union unless a border with Moscow is established...
 			factor = 0
 			FROM = { tag = SOV }
@@ -415,37 +339,7 @@ fascist_peace = {
 				}
 			}
 		}
-		modifier = { #If Japan is in faction, leave Asia and Australia to Japan.
-			factor = 0
-			is_in_faction_with = JAP
-			JAP = { is_puppet = no }
-			NOT = { tag = JAP }
-			FROM = {
-				capital_scope = {
-					OR = {
-						is_on_continent = asia
-						is_on_continent = australia
-					}
-				}
-			}
-		}
-		modifier = { #Japan doesn't puppet non-Asian nations if in faction with a major fascist European power
-			factor = 0
-			tag = JAP
-			OR = {
-				is_in_faction_with = GER
-				is_in_faction_with = FRA
-				is_in_faction_with = ITA
-			}
-			FROM = {
-				OR = {
-					NOT = { capital_scope = { is_on_continent = asia } }
-					tag = FRA
-					tag = ENG
-					tag = HOL
-				}
-			}
-		}
+		
 		modifier = {
 			factor = 0
 			tag = ITA
@@ -501,35 +395,7 @@ fascist_peace = {
 	# ROOT = Taker, FROM = State
 	take_states = {
 		factor = 600 #Up from 500 #200 - vanilla		
-		modifier = { #Japan prefers puppets for it's co-prosperity sphere instead of direct control.
-			factor = 0
-			OR = {
-				tag = JAP
-				is_in_faction_with = JAP
-			}
-			NOT = {
-				FROM = {
-					OR = {
-						is_claimed_by = ROOT
-						is_core_of = ROOT
-					}
-				}
-			}
-			FROM = {
-				OR = {
-					is_core_of = BHU
-					is_core_of = MEN
-					is_core_of = NEP
-					is_core_of = SIA
-					is_core_of = SIK
-					is_core_of = TIB
-					is_core_of = YUN
-					is_core_of = MON
-					is_core_of = RAJ
-					is_core_of = PHI
-				}
-			}
-		}
+		
 		modifier = { # prefer not to take from humans in our own faction
 			factor = 0.5
 			NOT = { 
@@ -549,63 +415,7 @@ fascist_peace = {
 				}
 			}
 		}
-		modifier = { #Do not take inland Chinese territories unless Chinese.
-			factor = 0
-			FROM = {
-				NOT = {
-					OR = {
-						is_island_state = yes
-						is_coastal = yes
-					}
-				}
-			}
-			NOT = { 
-				FROM = { 
-					OR = {
-						is_claimed_by = ROOT
-						is_core_of = ROOT
-					}
-				} 
-			}
-			FROM = {
-				OR = {
-					is_claimed_by = PRC
-					is_claimed_by = CHI
-					is_core_of = CHI
-					is_core_of = PRC
-				}
-			}
-			#Can annex Chinese Warlords.
-			NOT = { 
-				FROM = { 
-					owner = { 
-						OR = {
-							tag = GXC
-							tag = PRC
-							tag = YUN
-							tag = SHX
-							tag = XSM
-						}
-					} 
-				} 
-			}
-			NOT = {
-				OR = {
-					tag = CHI
-					tag = PRC
-					tag = GXC
-					tag = YUN
-					tag = SHX
-					tag = XSM
-				}
-			}
-
-			#Fascist versions of these countries can take Chinese land
-			NOT = { tag = MON }
-			NOT = { tag = TIB }
-			NOT = { tag = SIK }
-			NOT = { tag = MEN }
-		}
+		
 		modifier = { #Only majors can take non-neighboring coastal territories for now to prevent weird results with 1.1
 			factor = 0
 			FROM = {
@@ -645,66 +455,10 @@ fascist_peace = {
 			NOT = { tag = ITA }
 			NOT = { tag = FRA }
 			NOT = { tag = USA }
-			NOT = { tag = JAP }
+			
 			NOT = { tag = SOV }			
 		}
-		modifier = { #If in axis, Japan doesn't take territory out of Asia or Australia or South America or North America (to do)
-			factor = 0
-			tag = JAP
-			OR = {
-				is_in_faction_with = GER
-				is_in_faction_with = FRA
-				is_in_faction_with = ITA
-			}
-			NOT = {
-				FROM = {
-					OR = {
-						is_claimed_by = ROOT
-						is_core_of = ROOT
-					}
-				}
-			}
-			NOT = {
-				FROM = {
-					OR = {
-						is_on_continent = asia
-						is_on_continent = australia
-						#is_on_continent = south_america
-						#AND = { #Deal with this with Japanese specific AI instead, not restrictive enough here
-						#	is_on_continent = north_america
-						#	is_coastal = yes
-						#}
-					}
-				}			
-			}
-		}
-		modifier = { #If Japan is in faction, leave Asia and Australia to Japan.
-			factor = 0
-			OR = {
-				is_in_faction_with = JAP
-				AND = { #Workaround for a puppeted USA being given land in Asia
-					tag = USA
-					JAP = { has_government = fascism }
-				}
-			}
-			JAP = { is_puppet = no }
-			NOT = { tag = JAP }
-			NOT = {
-				FROM = {
-					OR = {
-						is_claimed_by = ROOT
-						is_core_of = ROOT
-					}
-				}
-			}
-			NOT = { FROM = { is_core_of = SOV } }
-			FROM = {
-				OR = {
-					is_on_continent = asia
-					is_on_continent = australia
-				}
-			}
-		}
+		
 		modifier = { #Don't steal claims and cores from faction members unless we also have a right to that clay unless they are puppets
 			factor = 0
 			NOT = { 
@@ -956,7 +710,7 @@ fascist_peace = {
 					NOT = { tag = ITA }
 					NOT = { tag = FRA }
 					NOT = { tag = USA }
-					NOT = { tag = JAP }
+					
 					NOT = { tag = SOV }
 					OR = {
 						AND = {
@@ -1002,54 +756,7 @@ fascist_peace = {
 		}
 
 		
-		modifier = {# Italy doesn't care about Asia, but might consider taking south american colonies held by the allies.
-			factor = 0
-			tag = ITA
-			OR = {
-				#For now don't take Russian or Northern European lands at all if in the same faction as germany.
-				AND = {
-					is_faction_leader = no
-					is_in_faction_with = GER
-					OR = {
-						FROM = { owner = { tag = SOV } }
-						FROM = {
-							is_island_state = no
-							is_core_of = ENG
-						}
-						FROM = { 
-							OR = {
-								is_core_of = DEN
-								is_core_of = IRE
-								is_core_of = SWE
-								is_core_of = NOR
-								is_core_of = GER
-								is_core_of = FIN
-								owner = { tag = SWE }
-							}
-						}
-					}
-				}
-				FROM = {
-					NOT = {
-						OR = {
-							is_on_continent = africa
-							is_on_continent = europe
-							is_on_continent = middle_east
-							AND = {
-								is_on_continent = south_america
-								OR = {
-									owner = { tag = ENG }
-									owner = { tag = FRA }
-									owner = { tag = HOL }
-									is_island_state = yes
-								}
-							}
-						}
-					}
-				}
-			}
-		}
-
+		
 		modifier = { #Deter expansion outside of continent
 			factor = 0.1
 			OR = {
@@ -1140,7 +847,7 @@ fascist_peace = {
 		modifier = { #Old World AI will generally stick to the old world and new world to the new.
 			factor = 0
 			NOT = { tag = ITA }
-			NOT = { tag = JAP }
+			
 			OR = { #Danish territories can be taken by these nations
 				NOT = { FROM = { is_core_of = DEN } }
 				AND = {
