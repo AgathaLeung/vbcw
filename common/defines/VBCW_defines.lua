@@ -8,7 +8,7 @@ NDefines.NBuildings.AIRBASE_CAPACITY_MULT = 50
 NDefines.NBuildings.RADAR_RANGE_MIN = 150
 NDefines.NBuildings.RADAR_RANGE_MAX = 1500
 
-NDefines.NMilitary.LAND_SPEED_MODIFIER = 0.75
+NDefines.NMilitary.LAND_SPEED_MODIFIER = 0.25
 
 NDefines.NAir.AIR_WING_FLIGHT_SPEED_MULT = 0.3
 NDefines.NAir.AIR_WING_MAX_SIZE = 50

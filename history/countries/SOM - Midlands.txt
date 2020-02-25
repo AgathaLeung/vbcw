@@ -64,6 +64,7 @@ set_popularities = {
 add_ideas = {
 	SOM_strike_up_the_band
 	SOM_foundries_and_forges
+	vbcw_slow_the_fuck_doon
 }
 
 create_faction = "People's Armies"

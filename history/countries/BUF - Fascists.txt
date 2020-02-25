@@ -105,6 +105,7 @@ set_popularities = {
 
 add_ideas = {
 	BUF_auxiliary_constabularies
+	vbcw_slow_the_fuck_doon
 }
 
 set_convoys = 50

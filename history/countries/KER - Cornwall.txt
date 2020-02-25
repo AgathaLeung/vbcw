@@ -68,7 +68,7 @@ if = {
 		basic_depth_charges = 1
 		basic_secondary_battery = 1
 		mtg_transport = 1
-		basic_fire_control_system = 1
+		
 	}
 }
 
@@ -104,6 +104,7 @@ add_ideas = {
 	limited_conscription
 	KER_kernow_bys_vykken
 	no_man_an_island
+	vbcw_slow_the_fuck_doon
 }
 
 set_convoys = 10

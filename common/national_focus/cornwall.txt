@@ -149,6 +149,7 @@ focus_tree = {
 		x = -2
 		y = 6
 		relative_position_id =  KER_the_fat_king
+		bypass = {ANG = {exists = no}}
 		available = {AND = {ANG = {exists = yes}} is_neighbor_of = ANG has_army_manpower {size > 20000} }
 		prerequisite = {focus =  KER_trelawney_legacy}
 		continue_if_invalid = yes
@@ -167,6 +168,7 @@ focus_tree = {
 		x = -1
 		y = 5
 		relative_position_id =  KER_the_fat_king
+		bypass = {SOC = {exists = no}}
 		available = {AND = {SOC = {exists = yes}} is_neighbor_of = SOC has_army_manpower {size > 20000} }
 		prerequisite = {focus =  KER_trelawney_legacy}
 		continue_if_invalid = yes
@@ -185,6 +187,7 @@ focus_tree = {
 		x = 1
 		y = 5
 		relative_position_id =  KER_the_fat_king
+		bypass = {YRK = {exists = no}}
 		available = {AND = {YRK = {exists = yes}} is_neighbor_of = YRK has_army_manpower {size > 20000} }
 		prerequisite = {focus =  KER_trelawney_legacy}
 		continue_if_invalid = yes
@@ -203,6 +206,7 @@ focus_tree = {
 		x = 2
 		y = 6
 		relative_position_id =  KER_the_fat_king
+		bypass = {ROY = {exists = no}}
 		available = {AND = {ROY = {exists = yes}} is_neighbor_of = ROY has_army_manpower {size > 40000} }
 		prerequisite = {focus =  KER_trelawney_legacy}
 		continue_if_invalid = yes
@@ -221,6 +225,7 @@ focus_tree = {
 		x = 0
 		y = 6
 		relative_position_id =  KER_the_fat_king
+		bypass = {BUF = {exists = no}}
 		available = {AND = {BUF = {exists = yes}} is_neighbor_of = BUF has_army_manpower {size > 35000} }
 		prerequisite = {focus =  KER_trelawney_legacy}
 		continue_if_invalid = yes
@@ -364,7 +369,7 @@ focus_tree = {
 		continue_if_invalid = yes
 		available_if_capitulated = yes
 		completion_reward = {
-			
+			country_event = KER_events.34
 		}
 	}
 	focus = {
@@ -378,7 +383,7 @@ focus_tree = {
 		continue_if_invalid = yes
 		available_if_capitulated = yes
 		completion_reward = {
-			
+			country_event = KER_events.35
 		}
 	}
 	focus = {
@@ -392,7 +397,7 @@ focus_tree = {
 		continue_if_invalid = yes
 		available_if_capitulated = yes
 		completion_reward = {
-			
+			country_event = KER_events.33
 		}
 	}
 	focus = {

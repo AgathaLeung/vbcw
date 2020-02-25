@@ -113,6 +113,7 @@ set_popularities = {
 
 add_ideas = {
 	ANG_jam_and_jerusalem
+	vbcw_slow_the_fuck_doon
 }
 
 set_convoys = 50

@@ -124,6 +124,7 @@ set_popularities = {
 add_ideas = {
 	YRK_peoples_prince
 	limited_conscription
+	vbcw_slow_the_fuck_doon
 }
 
 set_convoys = 50

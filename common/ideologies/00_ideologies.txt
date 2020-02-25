@@ -88,7 +88,7 @@ ideologies = {
 			join_faction_tension = 0.80
 			generate_wargoal_tension = 0.75
 		}
-		ai_democratic = yes
+		ai_fascist = yes
 		can_be_boosted = no
 	}
 	
@@ -111,7 +111,7 @@ ideologies = {
 			join_faction_tension = 0.80
 			generate_wargoal_tension = 0.75
 		}
-		ai_communist = yes
+		ai_fascist = yes
 		can_be_boosted = no
 	}
 
@@ -134,7 +134,7 @@ ideologies = {
 			join_faction_tension = 0.80
 			generate_wargoal_tension = 0.50
 		}
-		ai_communist = yes
+		ai_fascist = yes
 		can_be_boosted = no
 	}	
 	
@@ -157,7 +157,7 @@ ideologies = {
 			join_faction_tension = 0.80
 			generate_wargoal_tension = 0.50
 		}
-		ai_communist = yes
+		ai_fascist = yes
 		can_be_boosted = no
 	}
 	

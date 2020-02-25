@@ -108,6 +108,7 @@ add_ideas = {
 	SOH_fishermens_friends
 	SOM_strike_up_the_band
 	limited_conscription
+	vbcw_slow_the_fuck_doon
 }
 
 set_convoys = 50

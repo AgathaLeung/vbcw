@@ -126,6 +126,7 @@ set_popularities = {
 add_ideas = {
 	ROY_cavalry_elan
 	limited_conscription
+	vbcw_slow_the_fuck_doon
 }
 
 create_faction = Legitimists

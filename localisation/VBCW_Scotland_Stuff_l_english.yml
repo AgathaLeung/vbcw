@@ -3,7 +3,8 @@
 ###FOCUSES###
 
 l_english:
-
+vbcw_slow_the_fuck_doon:0 "A Very British Civil War"
+vbcw_slow_the_fuck_doon_desc:0 "The nation is fractured, civil strife is rife, and the tea is running short - but that still doesn't mean that we should be rude and run very fast across the island! Let everyone travel at their own pace, let's all slow doon and give this whole walking thing a shot!"
 ###FOCUSES###
 SCO_prepare_for_the_struggle:0 "Prepare for the Struggle"
 SCO_prepare_for_the_struggle_desc:0 "Scotland is ill-prepared for an industrial war effort. We must put in motion emergency measures to set the gears turning."
@@ -174,6 +175,10 @@ SCO_events.3.d:0 "With the Jacobite menace to the north defeated, Scotland has h
 SCO_events.3.a:0 "The SNP have continued in government!"
 SCO_events.3.b:0 "The Liberals have swept to power!"
 SCO_events.3.c:0 "The Labour Party have swept to power!"
+SCO_events.7.t:0 "The March on Holyrood"
+SCO_events.7.d:0 "In a series of running battles, communist and fascist factions today struggled for control in Edinburgh, with the two vying for control over government buildings. As the days slowly turns to night, the streets become ever more crowded and the shouting becomes ever louder...\n\nAs a single rock is thrown from the communist crowd, suddenly the street erupts into a riot as both sides begin to fight. As the fascists fight communists, Scot fights Scot and Labour fight Blackshirt, the streets descends into total chaos - and by the end only one victor remains:"
+SCO_events.7.a:0 "The Communists overpower the Fascists!"
+SCO_events.7.b:0 "Weir Gilmour's Fascist prevail!"
 
 ###IDEAS###
 SCO_irish_reconciled:0 "Edinburgh Irish Reconciled"
@@ -186,6 +191,9 @@ SCO_anti_catholocism_idea:0 "Anti-Papist State"
 SCO_smash_the_jacobites_idea:0 "Anti-Jacobite Offensive"
 SCO_defeat_the_pretender_idea:0 "Defeat the Pretender"
 SCO_officer_schools_idea:0 "Officer Schools"
+JAC_seize_orkney_idea:0 "Seize the Orkneys"
+JAC_secure_orkney_mission:0 "Secure the Orkneys"
+JAC_seize_orkneys_tt:0 "§MIf we can Capture and Hold the Orkneys within 180 days, we will become their Owner§!"
 
 
 ###OTHER###

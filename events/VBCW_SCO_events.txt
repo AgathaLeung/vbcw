@@ -112,7 +112,36 @@ country_event = {
     				popularity = 0.2
 		}
 	}
+}
 
+country_event = {
+	id = SCO_events.7
+	title = SCO_events.7.t
+	desc = SCO_events.7.d
+	picture = GFX_report_event_generic_riot
+
+	fire_only_once = yes
+	
+		
+	mean_time_to_happen = {
+		days = 1
+		
+	}
+
+
+	option = {
+		name = SCO_events.7.a
+		add_political_power = -100
+		set_global_flag =  SCO_commies_win
+	}
+
+	option = {
+		name = SCO_events.7.b
+	add_political_power = -150
+	set_global_flag =   SCO_fash_win
+	}	
+
+}
 
 
 country_event = {

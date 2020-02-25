@@ -15,6 +15,25 @@ ideas = {
 
 			picture = generic_war_preparation
 		}
+		JAC_seize_orkney_idea = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_war_preparation
+			modifier = {
+			invasion_preparation = -0.2
+			amphibious_invasion = 0.1
+
+			}
+		}
 	
 		JAC_undivided_nation = {
 

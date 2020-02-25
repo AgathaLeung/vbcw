@@ -105,9 +105,46 @@ desperate_measures = {
 			factor = 1
 		}
 		complete_effect = {
-			country_event = JAC_secure_orkney_event.1
+			add_timed_idea = {idea = JAC_seize_orkney_idea days = 180}
+			set_country_flag = JAC_seize_orkney_flag
+			declare_war_on = { target = ROY    type = annex_everything }
+			activate_mission = JAC_secure_orkney_mission
 		}
 	}
+	JAC_secure_orkney_mission = {
+
+		icon = generic_independence
+
+		allowed = { always = no }
+		
+		available = {
+			always = no
+		}
+
+		activation = {
+			has_country_flag = JAC_seize_orkney_flag
+		}
+		
+		days_mission_timeout = 10
+		is_good = yes
+		fire_only_once = yes
+
+		cancel_trigger = {
+			
+		}
+
+		days_remove = 10 
+
+		complete_effect = {
+			IF = {limit = { 119 = { is_controlled_by = JAC } } white_peace = ROY JAC = {transfer_state = 119}}
+			custom_effect_tooltip = JAC_seize_orkneys_tt
+		}
+
+		timeout_effect = {
+			
+		}
+	}
+}
 }
 
 

@@ -109,7 +109,7 @@ set_popularities = {
 }
 
 set_convoys = 50
-
+add_ideas = { vbcw_slow_the_fuck_doon}
 create_country_leader = {
 	name = "Rotha Linton-Orman"
 	desc = "POLITICS_KING_ZOG_DESC"

@@ -87,6 +87,7 @@ add_ideas = {
 	no_man_an_island
 	JAC_highlanders
 	limited_conscription
+	vbcw_slow_the_fuck_doon
 }
 
 set_convoys = 50

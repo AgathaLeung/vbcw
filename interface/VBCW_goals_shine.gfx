@@ -62,6 +62,37 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
+		name = "GFX_goal_secret_pasty_service_shine"
+		texturefile = "gfx/interface/goals/goal_secret_pasty_service.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/goal_secret_pasty_service.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.tga"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/goal_secret_pasty_service.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.tga"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
 		name = "GFX_goal_worker_democracy_shine"
 		texturefile = "gfx/interface/goals/goal_worker_democracy.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
@@ -930,7 +961,7 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX_goal_wine_shine"
+		name = "GFX_goal_wine_shine_shine"
 		texturefile = "gfx/interface/goals/goal_wine.dds"			
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -1084,39 +1115,9 @@ spriteTypes = {
 		}
 		legacy_lazy_load = no
 	}	
+	
 	SpriteType = {
-		name = "GFX_goal_secret_pasty_service"
-		texturefile = "gfx/interface/goals/goal_secret_pasty_service.dds"
-		effectFile = "gfx/FX/buttonstate.lua"
-		animation = {
-			animationmaskfile = "gfx/interface/goals/goal_secret_pasty_service.dds"
-			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
-			animationrotation = -90.0
-			animationlooping = no
-			animationtime = 0.75
-			animationdelay = 0
-			animationblendmode = "add"
-			animationtype = "scrolling"
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 }
-		}
-
-		animation = {
-			animationmaskfile = "gfx/interface/goals/goal_secret_pasty_service.dds"
-			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
-			animationrotation = 90.0
-			animationlooping = no
-			animationtime = 0.75
-			animationdelay = 0
-			animationblendmode = "add"
-			animationtype = "scrolling"
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 }
-		}
-		legacy_lazy_load = no
-	}
-	SpriteType = {
-		name = "GFX_goal_cornish_army"
+		name = "GFX_goal_cornish_army_shine"
 		texturefile = "gfx/interface/goals/goal_cornish_army.tga"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -1147,7 +1148,7 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX_goal_generic_ammunition_assembly"
+		name = "GFX_goal_generic_ammunition_assembly_shine"
 		texturefile = "gfx/interface/goals/goal_generic_ammunition_assembly.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -1178,7 +1179,7 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX_goal_armored_tram"
+		name = "GFX_goal_armored_tram_shine"
 		texturefile = "gfx/interface/goals/goal_armored_tram.tga"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -1209,7 +1210,7 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX_goal_operation_eulalie"
+		name = "GFX_goal_operation_eulalie_shine"
 		texturefile = "gfx/interface/goals/goal_operation_eulalie.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -1240,7 +1241,7 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX_goal_york_generals"
+		name = "GFX_goal_york_generals_shine"
 		texturefile = "gfx/interface/goals/goal_york_generals.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -1271,7 +1272,7 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX_goal_generic_military_factories"
+		name = "GFX_goal_generic_military_factories_shine"
 		texturefile = "gfx/interface/goals/goal_generic_military_factories.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -1302,7 +1303,7 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX_goal_generic_tank_factory"
+		name = "GFX_goal_generic_tank_factory_shine"
 		texturefile = "gfx/interface/goals/goal_generic_tank_factory.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -1333,7 +1334,7 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX_goal_generic_aircraft_factory"
+		name = "GFX_goal_generic_aircraft_factory_shine"
 		texturefile = "gfx/interface/goals/goal_generic_aircraft_factory.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -1364,7 +1365,7 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX_goal_generic_underground_facilities"
+		name = "GFX_goal_generic_underground_facilities_shine"
 		texturefile = "gfx/interface/goals/goal_generic_underground_facilities.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -1395,7 +1396,7 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX_goal_generic_construction"
+		name = "GFX_goal_generic_construction_shine"
 		texturefile = "gfx/interface/goals/goal_generic_construction.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -1426,7 +1427,7 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX_goal_generic_investments"
+		name = "GFX_goal_generic_investments_shine"
 		texturefile = "gfx/interface/goals/goal_generic_investments.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -1457,7 +1458,7 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX_goal_generic_arsenal_of_freedom"
+		name = "GFX_goal_generic_arsenal_of_freedom_shine"
 		texturefile = "gfx/interface/goals/goal_generic_arsenal_of_freedom.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -1488,7 +1489,7 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX_goal_generic_royal_factories"
+		name = "GFX_goal_generic_royal_factories_shine"
 		texturefile = "gfx/interface/goals/goal_generic_royal_factories.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -1519,7 +1520,7 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX_goal_ulster_pride"
+		name = "GFX_goal_ulster_pride_shine"
 		texturefile = "gfx/interface/goals/goal_ulster_pride.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -1550,7 +1551,7 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX_goal_yorkist_advisors"
+		name = "GFX_goal_yorkist_advisors_shine"
 		texturefile = "gfx/interface/goals/goal_yorkist_advisors.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -1581,7 +1582,7 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX_goal_york_troops"
+		name = "GFX_goal_york_troops_shine"
 		texturefile = "gfx/interface/goals/goal_york_troops.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -1612,7 +1613,7 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX_goal_cornish_priesthood"
+		name = "GFX_goal_cornish_priesthood_shine"
 		texturefile = "gfx/interface/goals/goal_cornish_priesthood.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -1643,7 +1644,7 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX_goal_york_socialism"
+		name = "GFX_goal_york_socialism_shine"
 		texturefile = "gfx/interface/goals/goal_york_socialism.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -1674,7 +1675,7 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX_goal_cornwall_anglican"
+		name = "GFX_goal_cornwall_anglican_shine"
 		texturefile = "gfx/interface/goals/goal_cornwall_anglican.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -1705,7 +1706,7 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX_goal_cornish_militiaman"
+		name = "GFX_goal_cornish_militiaman_shine"
 		texturefile = "gfx/interface/goals/goal_cornish_militiaman.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -1736,7 +1737,7 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX_goal_cornish_airforce"
+		name = "GFX_goal_cornish_airforce_shine"
 		texturefile = "gfx/interface/goals/goal_cornish_airforce.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -1767,7 +1768,7 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX_goal_cornish_navy"
+		name = "GFX_goal_cornish_navy_shine"
 		texturefile = "gfx/interface/goals/goal_cornish_navy.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -1798,7 +1799,7 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX_goal_cornish_big_brother"
+		name = "GFX_goal_cornish_big_brother_shine"
 		texturefile = "gfx/interface/goals/goal_cornish_big_brother.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -1829,7 +1830,7 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX_goal_norwegian_relations"
+		name = "GFX_goal_norwegian_relations_shine"
 		texturefile = "gfx/interface/goals/goal_norwegian_relations.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -1860,7 +1861,7 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX_goal_irish_relations"
+		name = "GFX_goal_irish_relations_shine"
 		texturefile = "gfx/interface/goals/goal_irish_relations.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -1891,7 +1892,7 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX_goal_german_industry"
+		name = "GFX_goal_german_industry_shine"
 		texturefile = "gfx/interface/goals/goal_german_industry.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -1924,7 +1925,7 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_goal_french_industry"
+		name = "GFX_goal_french_industry_shine"
 		texturefile = "gfx/interface/goals/goal_french_industry.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -1956,7 +1957,7 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX_goal_opel_investments"
+		name = "GFX_goal_opel_investments_shine"
 		texturefile = "gfx/interface/goals/goal_opel_investments.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -1988,7 +1989,7 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}	
 	SpriteType = {
-		name = "GFX_goal_renault_car"
+		name = "GFX_goal_renault_car_shine"
 		texturefile = "gfx/interface/goals/goal_renault_car.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -2020,7 +2021,7 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}	
 	SpriteType = {
-		name = "GFX_goal_anti_commie_spy"
+		name = "GFX_goal_anti_commie_spy_shine"
 		texturefile = "gfx/interface/goals/goal_anti_commie_spy.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -2052,7 +2053,7 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}	
 	SpriteType = {
-		name = "GFX_goal_big_ben"
+		name = "GFX_goal_big_ben_shine"
 		texturefile = "gfx/interface/goals/goal_big_ben.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -2084,7 +2085,7 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}	
 	SpriteType = {
-		name = "GFX_goal_black_cats"
+		name = "GFX_goal_black_cats_shine"
 		texturefile = "gfx/interface/goals/goal_black_cats.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -2116,7 +2117,7 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}	
 	SpriteType = {
-		name = "GFX_goal_blessed_soldiers"
+		name = "GFX_goal_blessed_soldiers_shine"
 		texturefile = "gfx/interface/goals/goal_blessed_soldiers.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -2148,7 +2149,7 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}	
 	SpriteType = {
-		name = "GFX_goal_blood_for_blood"
+		name = "GFX_goal_blood_for_blood_shine"
 		texturefile = "gfx/interface/goals/goal_blood_for_blood.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -2180,7 +2181,7 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX_goal_burning_parliament"
+		name = "GFX_goal_burning_parliament_shine"
 		texturefile = "gfx/interface/goals/goal_burning_parliament.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -2212,7 +2213,7 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}				
 	SpriteType = {
-		name = "GFX_goal_charge_building"
+		name = "GFX_goal_charge_building_shine"
 		texturefile = "gfx/interface/goals/goal_charge_building.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -2244,7 +2245,7 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}		
 	SpriteType = {
-		name = "GFX_goal_conscription_act"
+		name = "GFX_goal_conscription_act_shine"
 		texturefile = "gfx/interface/goals/goal_conscription_act.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -2276,7 +2277,7 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}		
 	SpriteType = {
-		name = "GFX_goal_crush_resistance"
+		name = "GFX_goal_crush_resistance_shine"
 		texturefile = "gfx/interface/goals/goal_crush_resistance.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -2308,7 +2309,7 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}		
 	SpriteType = {
-		name = "GFX_goal_dark_arms"
+		name = "GFX_goal_dark_arms_shine"
 		texturefile = "gfx/interface/goals/goal_dark_arms.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -2340,7 +2341,7 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}		
 	SpriteType = {
-		name = "GFX_goal_foreign_diplomacy"
+		name = "GFX_goal_foreign_diplomacy_shine"
 		texturefile = "gfx/interface/goals/goal_foreign_diplomacy.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -2372,7 +2373,7 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}		
 	SpriteType = {
-		name = "GFX_goal_gunpoint_diplomacy"
+		name = "GFX_goal_gunpoint_diplomacy_shine"
 		texturefile = "gfx/interface/goals/goal_gunpoint_diplomacy.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -2404,7 +2405,7 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}		
 	SpriteType = {
-		name = "GFX_goal_holy_war"
+		name = "GFX_goal_holy_war_shine"
 		texturefile = "gfx/interface/goals/goal_holy_war.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -2436,7 +2437,7 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}	
 	SpriteType = {
-		name = "GFX_goal_human_wave"
+		name = "GFX_goal_human_wave_shine"
 		texturefile = "gfx/interface/goals/goal_human_wave.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -2468,7 +2469,7 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}	
 	SpriteType = {
-		name = "GFX_goal_little_green_men"
+		name = "GFX_goal_little_green_men_shine"
 		texturefile = "gfx/interface/goals/goal_little_green_men.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -2500,7 +2501,7 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}	
 	SpriteType = {
-		name = "GFX_goal_manipulate_the_poor"
+		name = "GFX_goal_manipulate_the_poor_shine"
 		texturefile = "gfx/interface/goals/goal_manipulate_the_poor.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -2532,7 +2533,7 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}	
 	SpriteType = {
-		name = "GFX_goal_military_government"
+		name = "GFX_goal_military_government_shine"
 		texturefile = "gfx/interface/goals/goal_military_government.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -2564,7 +2565,7 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}		
 	SpriteType = {
-		name = "GFX_goal_nothing_left"
+		name = "GFX_goal_nothing_left_shine"
 		texturefile = "gfx/interface/goals/goal_nothing_left.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -2596,7 +2597,7 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}	
 	SpriteType = {
-		name = "GFX_goal_press_barons"
+		name = "GFX_goal_press_barons_shine"
 		texturefile = "gfx/interface/goals/goal_press_barons.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -2628,7 +2629,7 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}	
 	SpriteType = {
-		name = "GFX_goal_purge_dissenters"
+		name = "GFX_goal_purge_dissenters_shine"
 		texturefile = "gfx/interface/goals/goal_purge_dissenters.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -2660,7 +2661,7 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}	
 	SpriteType = {
-		name = "GFX_goal_research_councils"
+		name = "GFX_goal_research_councils_shine"
 		texturefile = "gfx/interface/goals/goal_research_councils.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -2692,7 +2693,7 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}	
 	SpriteType = {
-		name = "GFX_goal_royal_edicts"
+		name = "GFX_goal_royal_edicts_shine"
 		texturefile = "gfx/interface/goals/goal_royal_edicts.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -2724,7 +2725,7 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}	
 	SpriteType = {
-		name = "GFX_goal_spy_programme"
+		name = "GFX_goal_spy_programme_shine"
 		texturefile = "gfx/interface/goals/goal_spy_programme.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -2756,7 +2757,7 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}	
 	SpriteType = {
-		name = "GFX_goal_the_noose"
+		name = "GFX_goal_the_noose_shine"
 		texturefile = "gfx/interface/goals/goal_the_noose.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -2788,7 +2789,7 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}	
 	SpriteType = {
-		name = "GFX_goal_the_scourge"
+		name = "GFX_goal_the_scourge_shine"
 		texturefile = "gfx/interface/goals/goal_the_scourge.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -2820,7 +2821,7 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX_goal_total_war"
+		name = "GFX_goal_total_war_shine"
 		texturefile = "gfx/interface/goals/goal_total_war.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -2852,7 +2853,7 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}	
 	SpriteType = {
-		name = "GFX_goal_upset_the_balance"
+		name = "GFX_goal_upset_the_balance_shine"
 		texturefile = "gfx/interface/goals/goal_upset_the_balance.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -2884,7 +2885,7 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX_goal_business_men"
+		name = "GFX_goal_business_men_shine"
 		texturefile = "gfx/interface/goals/goal_business_men.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -2916,7 +2917,7 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX_goal_death_calls"
+		name = "GFX_goal_death_calls_shine"
 		texturefile = "gfx/interface/goals/goal_death_calls.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -2948,7 +2949,7 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX_goal_checkmate"
+		name = "GFX_goal_checkmate_shine"
 		texturefile = "gfx/interface/goals/goal_checkmate.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {

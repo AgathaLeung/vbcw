@@ -471,7 +471,7 @@ focus_tree = {
 			x = 12
 			y = 3
 			available = {controls_state = 97}
-			prerequisite = {focus = SCO_southern_industry}
+			prerequisite = {focus = SCO_edinburgh_industries}
 			continue_if_invalid = yes
 			available_if_capitulated = yes
 			completion_reward = {
@@ -966,7 +966,7 @@ focus_tree = {
 			completion_reward = {
 				add_stability = -0.2
 				country_event = {
-    				id = SCO.events.7
+    				id = SCO_events.7
     				days = 10
 				}
 			}

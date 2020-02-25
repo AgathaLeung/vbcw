@@ -114,6 +114,7 @@ set_popularities = {
 
 add_ideas = {
 	SOG_collectivised_shipyards
+	vbcw_slow_the_fuck_doon
 }
 
 set_convoys = 50

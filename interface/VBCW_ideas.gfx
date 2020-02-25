@@ -28,8 +28,12 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/generic_research_bonus.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_KER_trelawney_legacy"
-		texturefile = "gfx/interface/ideas/idea_hand_grab.dds"
+		name = "GFX_idea_KER_special_research_divison"
+		texturefile = "gfx/interface/ideas/generic_research_bonus.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_vbcw_slow_the_fuck_doon"
+		texturefile = "gfx/interface/ideas/idea_eng_guided_by_britain.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_SOG_mobilise_the_people"

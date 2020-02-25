@@ -117,6 +117,7 @@ add_ideas = {
 	SCO_renaissance
 	SCO_unionist_officers
 	limited_conscription
+	vbcw_slow_the_fuck_doon
 }
 
 set_convoys = 50

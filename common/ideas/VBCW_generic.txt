@@ -20,6 +20,24 @@ ideas = {
 				conscription_factor = 0.25
 			}
 		}
+		vbcw_slow_the_fuck_doon = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			
+			
+			modifier = {
+				army_speed_factor = -0.9
+			}
+		}
+		
 	
 ###TOG###		
 
