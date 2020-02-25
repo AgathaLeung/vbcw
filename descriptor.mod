@@ -1,4 +1,4 @@
-version="1.8.2"
+version="1.9.*"
 picture="thumbnail.png"
 tags={
 	"Alternative History"
@@ -11,6 +11,9 @@ tags={
 	"National Focuses"
 }
 replace_path="common/units/names_ships"
+replace_path="common/units/air"
+replace_path="common/operations/LaR_historical_operations"
+replace_path="common/operations/LaR_FRA_operations"
 replace_path="common/abilities"
 replace_path="common/ai_focuses"
 replace_path="common/ai_peace"
@@ -39,5 +42,5 @@ replace_path="map/strategicregions"
 replace_path="map/supplyareas"
 replace_path="common/ai_equipment"
 name="1938 : A Very British Civil War "
-supported_version="1.8.2"
+supported_version="1.9.*"
 remote_file_id="2005727910"

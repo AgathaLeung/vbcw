@@ -714,6 +714,8 @@ focus_tree = {
 			}
 		}
 
+		focus = {}
+
 		focus = {
 			id = SCO_constitutional_monarch
 			icon = GFX_goal_generic_intelligence_exchange
@@ -1570,7 +1572,7 @@ focus_tree = {
 			continue_if_invalid = yes
 			available_if_capitulated = yes
 			completion_reward = {
-				unlock_decision_tooltip = SCO_soviet_aid_decision
+				
 				custom_effect_tooltip = currently_WIP_tt
 			}
 		}
@@ -1703,7 +1705,7 @@ focus_tree = {
 			continue_if_invalid = yes
 			available_if_capitulated = yes
 			completion_reward = {
-				unlock_decision_tooltip = SCO_german_aid_decision
+				
 				custom_effect_tooltip = currently_WIP_tt
 			}
 		}
@@ -1719,7 +1721,7 @@ focus_tree = {
 			continue_if_invalid = yes
 			available_if_capitulated = yes
 			completion_reward = {
-				unlock_decision_tooltip = SCO_french_aid_decision
+				
 				custom_effect_tooltip = currently_WIP_tt
 			}
 		}
@@ -1734,7 +1736,7 @@ focus_tree = {
 			continue_if_invalid = yes
 			available_if_capitulated = yes
 			completion_reward = {
-				unlock_decision_tooltip = SCO_irish_aid_decision
+				
 				custom_effect_tooltip = currently_WIP_tt
 			}
 		}
@@ -1749,7 +1751,7 @@ focus_tree = {
 			continue_if_invalid = yes
 			available_if_capitulated = yes
 			completion_reward = {
-				unlock_decision_tooltip = SCO_scandinavian_aid_decision
+				
 				custom_effect_tooltip = currently_WIP_tt
 			}
 		}
