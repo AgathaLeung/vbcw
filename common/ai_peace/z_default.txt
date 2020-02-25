@@ -121,7 +121,7 @@ default_peace = {
 							tag = ITA
 							tag = FRA
 							tag = USA
-							tag = JAP
+							
 							tag = SOV
 						}
 					}
@@ -132,7 +132,7 @@ default_peace = {
 					NOT = { tag = ITA }
 					NOT = { tag = FRA }
 					NOT = { tag = USA }
-					NOT = { tag = JAP }
+					
 					NOT = { tag = SOV }
 				}
 			}
@@ -141,17 +141,7 @@ default_peace = {
 			factor = 0
 			FROM = { has_civil_war = yes }
 		}
-		modifier = { #Don't break up Czechoslovakia or Yugoslavia
-			factor = 0
-			YUG = { exists = yes }
-			FROM = {
-				OR = {
-					tag = CRO
-					tag = SER
-					tag = SLO
-				}
-			}
-		}
+		
 		modifier = {
 			factor = 0.2 #Strip colonies/liberate first - important vs GER and JAP
 			FROM = {
@@ -391,7 +381,7 @@ default_peace = {
 					NOT = { tag = ITA }
 					NOT = { tag = FRA }
 					NOT = { tag = USA }
-					NOT = { tag = JAP }
+					
 					NOT = { tag = SOV }
 					NOT = {
 						any_owned_state = { is_on_continent = africa }

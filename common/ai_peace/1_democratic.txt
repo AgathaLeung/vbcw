@@ -92,29 +92,8 @@ civic_nationalist_peace = {
 				value < 0
 			}
 		}
-		modifier = { #Don't release fascist states in Europe
-			factor = 0
-			FROM = {
-				OR = {
-					tag = CRO
-					tag = SER
-					tag = SLO
-				}
-			}
-		}
-		modifier = { #Don't liberate PRC or warlords.
-			factor = 0
-			FROM = {
-				OR = {
-					tag = SIK
-					tag = PRC
-					tag = GXC
-					tag = YUN
-					tag = SHX
-					tag = XSM
-				}
-			}
-		}
+	
+		
 	#	modifier = {
 	#		factor = 0
 	#		#Is NOT a major
@@ -189,37 +168,7 @@ civic_nationalist_peace = {
 				value > 0
 			}
 		}
-		modifier = {
-			factor = 0
-			#Is NOT a major
-			NOT = { num_of_factories > 100 }
-			NOT = { tag = GER }
-			NOT = { tag = ENG }
-			NOT = { tag = ITA }
-			NOT = { tag = FRA }
-			NOT = { tag = USA }
-			NOT = { tag = JAP }
-			NOT = { tag = SOV }
-			NOT = { is_owner_neighbor_of = FROM }
-		}
-		modifier = {
-			factor = 10
-			tag = USA
-			FROM = { 
-				tag = JAP
-				any_owned_state = { NOT = { is_core_of = FROM } }
-			}
-		}
-		modifier = { #Don't break up Czechoslovakia or Yugoslavia
-			factor = 0
-			FROM = {
-				OR = {
-					tag = CRO
-					tag = SER
-					tag = SLO
-				}
-			}
-		}
+		
 		modifier = { #Don't puppet nations in civil war... this is too buggy.
 			factor = 0
 			FROM = { has_civil_war = yes }
@@ -273,18 +222,7 @@ civic_nationalist_peace = {
 			FROM = { tag = DDR }
 		}
 		#Don't force on GER if Yalta conference happened until release.
-		modifier = {
-			factor = 0
-			FROM = {
-				tag = GER
-				any_owned_state = {
-					OR = {
-						is_core_of = WGR
-						is_core_of = DDR
-					}
-				}
-			}
-		}
+		
 		#modifier = { #Not if we claim anything
 		#	factor = 0
 		#	NOT = {
@@ -509,50 +447,6 @@ civic_nationalist_peace = {
 
 		}
 
-		modifier = { #Only take claims - and colonial states (ie unclaimed) as well if major or if already colonial.
-			factor = 0
-			NOT = { 
-				FROM = { 
-					OR = {
-						is_claimed_by = ROOT
-						is_core_of = ROOT
-					}
-				} 
-			}
-			OR = {
-				AND = {
-					#Is NOT a major
-					NOT = { num_of_factories > 100 }
-					NOT = { tag = GER }
-					NOT = { tag = ENG }
-					NOT = { tag = ITA }
-					NOT = { tag = FRA }
-					NOT = { tag = USA }
-					NOT = { tag = JAP }
-					NOT = { tag = SOV }
-					NOT = { 
-						OR = {	
-							AND = {
-								capital_scope = { is_on_continent = europe }
-								any_owned_state = {
-									NOT = { is_on_continent = europe }
-								}
-							}
-							AND = {
-								tag = OMA
-								FROM = { is_on_continent = africa }
-							}
-							tag = JAP
-						}
-					}
-				}
-				FROM = {
-					owner = {
-						FROM = { is_core_of = PREV }
-					}
-				}
-			}
-		}
 		modifier = { #Only European states with african colonies or middle eastern states should take anything in africa
 			factor = 0
 			NOT = {
@@ -592,25 +486,7 @@ civic_nationalist_peace = {
 			}
 		}
 		#Don't force on GER if Yalta conference happened until release.
-		modifier = {
-			factor = 0
-			FROM = {
-				tag = GER
-				any_owned_state = {
-					OR = {
-						is_core_of = WGR
-						is_core_of = DDR
-					}
-				}
-			}
-		}
-		modifier = {
-			factor = 0
-			FROM = {
-				OR = { tag = PRC is_independent_china_or_warlord = yes }
-				NOT = { tag = CHI }
-			}
-		}
+		
 		#modifier = { #Not if we claim anything - not working... need a workaround
 		#	factor = 0
 		#	NOT = {
