@@ -37,10 +37,9 @@
  SOC_victory_in_the_valleys_desc:0 "Having shaken off English interference, the men of the Valleys will defend their homeland by any means, whether in the field, in the factory, or down the mine."
  SOG_Mobilise_the_People:0 "Mobilise the People"
  SOG_Mobilise_the_People_desc:0 "To win this war we must mobilise as many people to our cause!"
- SOG_infantry_core:0 "Infantry Core"
- SOG_infantry_core_desc:0 "We must use our strengths to our advantage! which is a mass infantry army."
+ 
  SOG_peoples_officer_core:0 "People's Unionist Officers"
- SOG_peoples_officer_core:0 "The people shall lead our struggle, since our struggle is for the people!"
+ SOG_peoples_officer_core_desc:0 "The people shall lead our struggle, since our struggle is for the people!"
  SOD_miners_militia:0 "Miners' Militia"
  SOD_miners_militia_desc:0 "Almost to a man, the rank and file of the Durham People’s Armies have spent years down the pit,following in their fathers’ hobnailed footsteps.\n\nIf this mining tradition has taught them anything, it’s how to dig."
  IRL_limited_intervention:0 "Limited Intervention"

@@ -9,8 +9,7 @@
  RURAL_WARFAR_LABEL_TT:0 "Focus on defending the countryside"
  URBAN_WARFARE_LABEL:0 "THE STREETS"
  URBAN_WARFARE_LABEL_TT:0 "Focus on defending our towns and cities"
- guerilla_warfare:0 "Guerrilla Warfare"
- guerilla_warfare_desc:0 "We can't hope to fight on an equal footing. Instead, let us resist and harrass the enemy."
+
  local_knowledge:0 "Local Knowledge"
  local_knowledge_desc:0 "Our knowledge of the local terrain allows us to choose where to fight, and when."
  homeland_defence:0 "Homeland Defence"

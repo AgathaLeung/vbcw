@@ -212,7 +212,7 @@ KER_means_tech_boost:0 "The Cornish Means"
  KER_remember_remember_desc:0 "With our power now truly shown to the BUF, we must ensure that we can see their every movement. We must hire, buy out or bribe members of the BUF or place our own agents on the streets of London."
  KER_special_research_divison:0 "The Special Research Divison"
  KER_pasty_service_external_2:0 "The Black Cats"
- KER_pasty_service_external:0 "The Cornish Secret Service"
+ 
  KER_restructure_the_government:0 "Restructure the Government"
  KER_restructure_the_government_desc:0 "It is clear that the current system of districts under the county council is inadequate for a wartime situation and merely slows down the effectiveness of the war effort. We must alter the governing system and set in stone constitutional rules to better govern Kernow."
  KER_political_manoeuvres:0 "The Game of Thrones"
@@ -375,7 +375,7 @@ vbcw_news.3.c:0 "Onwards, Tea and Biscuits awaits at Bishop Hunkin's house"
 vbcw_news.3.b:0 "Not one step further - our pasties shall remain ours" 
 KER_fat_king:0 "§YThe Cornish Assembly has §GElected a King§!§!"
 KER_the_bishops_boy:0 "§YThe Bishop of Truro has §GCouped the Nation§!§!"
-KER_give_them_cake:0 "Give them Cake"
+
 KER_the_tea_party:0 "The Truro Tea Party"
 KER_the_tea_party_desc:0 ""
 KER_kernow_stronk:0 "Kernow Stand Alone"
@@ -389,7 +389,7 @@ KER_every_cornish_boy_desc:0 "Our Army is woefully undermanned. Though every val
 ####DECISIONS###
 recruit_breton_volunteers:0 "Recruit Breton Volunteers"
 recruit_basque_volunteers:0 "Recruit Basque Volunteers"
-recruit_basque_volunteers:0 "Recruit Irish Volunteers"
+recruit_irish_volunteers:0 "Recruit Irish Volunteers"
 ###TECHS###
  KER_early_armoured_car_equipment:0 "Mole"
  KER_early_armoured_car_equipment_short:0 "Mole"

@@ -98,32 +98,12 @@ SOM_people's_army_desc:0 "Ragged and ramshackle it may be, but our army is a tru
 
 
 ###EVENTS###
-JAC_events.1.t:0 "Rupprecht Returns!"
-JAC_events.1.d:0 "The letter was sent in the middle of night. Via dangerous backchannels, unreliable sources and general blind luck, it was sent. Our response came late last week. Rupprecht will come to Inverness with his misteress to be crowned King of Scotland, England and Ireland. He arrived two nights ago, after being flown in a plane that took heavy fire as it flew from Munich to a small airfield in the isles. After being rushed to our seat of power in Inverness, he was crowned 'Robert I and IV' with all the pomp our king derserves. Compton MacKenzie has stepped down as leader of our forces, becoming the Prime Minister."
-JAC_events.1.a:0 "Long live the King!"
-JAC_events.2.t:0 "The Midnight Coup!"
-JAC_events.2.d:0 "As the moonlight shone over the Moray Firth by the newly-renovated Fort George, much was afoot. Queen Antonia, Robert's wife, was setting plans in action. First, she secured the loyalty of the armed forces, and sent a platoon of royal guardsmen to detain King Robert. After this, she made with haste to the to the clan council to proclaim herself Queen Annies I, citing 'rising dictatorial tendencies' in Robert's rule. After a vote, the council clarified the Queen's claims. Robert was allowed to stay in Scotland, and is expected to remain a senior military figure."
-JAC_events.2.a:0 "The king is....well, not dead, but still, Long live the Queen!"
-JAC_events.3.t:0 "The writing of the constitution"
-JAC_events.3.d:0 "Queen Annies I has authorised the writing of a legitamite constitution. Shall we:\n\n A. Claim the entirety of Britain, or \n\n B. Stick to Scotland?"
-JAC_events.3.a:0 "Go big or go home, let's take the whole of Britain!"
-JAC_events.3.b:0 "Eh, I'll stay here, thank you very much."
-JAC_events.4.t:0 "The pope responds!"
-JAC_events.4.d:0 "The pope has authorised the sending of equipment and men to our cause. Catholics from all around the world are flocking to our cause!"
-JAC_events.4.a:0 "Hurrah for the pope!"
 ###OTHER###
 SOM_railway_desc:0 "Infastructure shall be added to every state we own."
 SOM_cores_on_england:0 "We shall gain cores on every English state, Red Clydeside shall gain cores on every Scottish state, and South Wales shall gain cores on every Welsh state."
 SOM_cores_on_britain:0 "We shall gain cores on every state on the Island of Great Britain."
-SOD_armed_unions_tt:0 "We shall arm every union in Durham. This will slightly increase our armed forces."
-SOD_christian_socialism:0 "Christian Socialism"
-equal_before_god:0 "Equal Before God" 
-SOD_duhram_university:0 "Duhram University"
-SOD_outlawed_church:0 "Outlawed Church"
-SOD_meritocracy:0 "Meritocracy"
-SOD_tolerant_society:0 "Tolerant Society"
-SOD_local_power:0 "Local Power"
-SOD_dli_veterans:0 "DLI Veterans"
-militarised_colliery_bands:0 "Militarised Colliery Bands"
-SOD_bash_the_fash:0 "¡no pasarán!"
+
+
+
+
 
