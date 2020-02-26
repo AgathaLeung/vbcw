@@ -684,7 +684,7 @@ technologies = {
 		xp_research_bonus = 1.00
 		
 		#Increased Partisan effect on your land occupied by others
-		partisan_effect = 0.1 #10% more partisan effects
+		resistance_damage_to_garrison_on_our_occupied_states = 0.1 #10% more partisan effects
 		
 		enable_tactic = tactic_guerrilla_tactics
 		
@@ -2072,7 +2072,7 @@ technologies = {
 		}
 		
 		land_reinforce_rate = 0.02
-		partisan_effect = 0.2
+		resistance_damage_to_garrison_on_our_occupied_states = 0.2
 		
 		enable_tactic = tactic_guerrilla_tactics	
 
