@@ -160,6 +160,8 @@ ideas = {
 		}
 		
 		ROY_leyland = {
+		
+			picture = designer_leyland
 			
 			allowed = {
 				original_TAG = ROY
