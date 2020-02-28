@@ -28,6 +28,8 @@ ideas = {
 		
 		ANG_greener = {
 			
+			picture = generic_infantry_equipment_manufacturer_3
+			
 			allowed = {
 				original_TAG = ANG
 			}
@@ -43,6 +45,8 @@ ideas = {
 		}
 		
 		ANG_bmarc = {
+			
+			picture = generic_artillery_manufacturer_1
 			
 			allowed = {
 				original_TAG = ANG
@@ -122,6 +126,8 @@ ideas = {
 		}
 		
 		ANG_dover_dockyard = {
+			
+			picture = generic_naval_manufacturer_1
 					
 			allowed = {
 				original_TAG = ANG
@@ -198,6 +204,8 @@ ideas = {
 		}	
 		
 		ANG_crystalate = {
+			
+			picture = generic_electronics_concern_3
 			
 			allowed = {
 				original_TAG = ANG

@@ -452,6 +452,42 @@ ideas = {
 			}
 		}
 		
+		SOM_riley = {
+		
+			picture = designer_riley
+			
+			allowed = {
+				original_TAG = SOM
+			}
+			
+			research_bonus = {
+				motorized_equipment = 0.10
+			}
+			
+			traits = { motorised_manufacturer_2 }
+			
+			modifier = {
+			}
+		}
+		
+		SOM_singer = {
+		
+			picture = designer_singer
+			
+			allowed = {
+				original_TAG = SOM
+			}
+			
+			research_bonus = {
+				motorized_equipment = 0.10
+			}
+			
+			traits = { motorised_manufacturer_1 }
+			
+			modifier = {
+			}
+		}
+		
 		SOM_nuffield = {
 		
 			picture = designer_nuffield

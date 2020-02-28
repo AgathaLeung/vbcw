@@ -28,6 +28,8 @@ ideas = {
 		
 		ROY_barclay = {
 			
+			picture = generic_naval_manufacturer_2
+			
 			allowed = {
 				original_TAG = ROY
 			}
@@ -41,6 +43,8 @@ ideas = {
 		}
 		
 		ROY_appledore = {
+			
+			picture = generic_naval_manufacturer_3
 			
 			allowed = {
 				original_TAG = ROY
