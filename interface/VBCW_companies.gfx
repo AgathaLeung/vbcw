@@ -1,4 +1,5 @@
 spriteTypes = {	
+### NAMED ###
 	spriteType = {
 		name = "GFX_idea_designer_aec"
 		texturefile = "gfx/interface/ideas/companies/idea_aec.dds"
@@ -90,6 +91,14 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_designer_raleigh"
 		texturefile = "gfx/interface/ideas/companies/idea_raleigh.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_designer_riley"
+		texturefile = "gfx/interface/ideas/companies/idea_riley.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_designer_singer"
+		texturefile = "gfx/interface/ideas/companies/idea_singer.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_designer_telsen"

@@ -28,6 +28,8 @@ ideas = {
 		
 		BUF_dudgeon = {
 			
+			picture = generic_naval_manufacturer_3
+			
 			allowed = {
 				original_TAG = BUF
 			}
@@ -41,6 +43,8 @@ ideas = {
 		}
 		
 		BUF_thames_ironworks = {
+			
+			picture = generic_naval_manufacturer_2
 			
 			allowed = {
 				original_TAG = BUF
@@ -102,6 +106,8 @@ ideas = {
 		
 		BUF_london_small_arms = {
 			
+			picture = generic_infantry_equipment_manufacturer_1
+			
 			allowed = {
 				original_TAG = BUF
 			}
@@ -117,6 +123,8 @@ ideas = {
 		}
 		
 		BUF_woolwich = {
+			
+			picture = generic_artillery_manufacturer_1
 			
 			allowed = {
 				original_TAG = BUF
@@ -177,6 +185,8 @@ ideas = {
 	industrial_concern = {
 		
 		BUF_btr = {
+			
+			picture = generic_industrial_concern_2
 			
 			allowed = {
 				original_TAG = BUF

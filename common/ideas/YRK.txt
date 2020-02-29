@@ -453,6 +453,8 @@ ideas = {
 		
 		YRK_holland_and_holland = {
 			
+			picture = generic_infantry_equipment_manufacturer_2
+			
 			allowed = {
 				original_TAG = YRK
 			}
@@ -468,6 +470,8 @@ ideas = {
 		}
 		
 		YRK_ROF = {
+			
+			picture = generic_artillery_manufacturer_1
 			
 			allowed = {
 				original_TAG = YRK
@@ -528,6 +532,8 @@ ideas = {
 	industrial_concern = {
 		
 		YRK_lind = {
+			
+			picture = generic_industrial_concern_1
 			
 			allowed = {
 				original_TAG = YRK
