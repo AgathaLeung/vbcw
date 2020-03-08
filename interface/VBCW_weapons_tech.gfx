@@ -65,6 +65,128 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/MG_1.dds"
 	}
 	
+	###MINORS###		
+
+	SpriteType = {
+		name = "GFX_SCO_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/infantry/minors_1914_enfield.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_SCO_infantry_weapons1_medium"
+		texturefile = "gfx/interface/technologies/infantry/minors_ross.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_SCO_improved_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/infantry/minors_lanchester.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_SCO_advanced_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/infantry/minors_delisle.dds"
+	}	
+
+	SpriteType = {
+		name = "GFX_JAC_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/infantry/minors_1914_enfield.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_JAC_infantry_weapons1_medium"
+		texturefile = "gfx/interface/technologies/infantry/minors_ross.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_JAC_improved_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/infantry/minors_lanchester.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_JAC_advanced_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/infantry/minors_delisle.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_IRL_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/infantry/minors_1914_enfield.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_IRL_infantry_weapons1_medium"
+		texturefile = "gfx/interface/technologies/infantry/minors_ross.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_IRL_improved_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/infantry/minors_lanchester.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_IRL_advanced_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/infantry/minors_delisle.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_WAL_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/infantry/minors_1914_enfield.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_WAL_infantry_weapons1_medium"
+		texturefile = "gfx/interface/technologies/infantry/minors_ross.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_WAL_improved_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/infantry/minors_lanchester.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_WAL_advanced_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/infantry/minors_delisle.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KER_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/infantry/minors_1914_enfield.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_KER_infantry_weapons1_medium"
+		texturefile = "gfx/interface/technologies/infantry/minors_ross.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KER_improved_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/infantry/minors_lanchester.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_KER_advanced_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/infantry/minors_delisle.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_LIV_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/infantry/minors_1914_enfield.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_LIV_infantry_weapons1_medium"
+		texturefile = "gfx/interface/technologies/infantry/minors_ross.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_LIV_improved_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/infantry/minors_lanchester.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_LIV_advanced_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/infantry/minors_delisle.dds"
+	}
+	
 	###ROYALISTS###	
 
 	SpriteType = {
