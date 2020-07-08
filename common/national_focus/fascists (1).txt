@@ -1,0 +1,1094 @@
+focus_tree = {
+	id = BUF_Coolstuff
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = BUF
+		}
+	}
+	continuous_focus_position = { x = 20 y = 2000 }
+	default = no
+	
+
+
+	####Political####
+	focus = {
+		id = BUF_assess_sit
+		#icon = x
+		cost = 5
+		x = 30
+		y = 0
+		
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		completion_reward = {
+			#
+		}
+	}
+
+	focus = {
+		id =  BUF_support_BUF
+		#icon = x
+		cost = 5
+		x = 0
+		y = 1
+
+		relative_position_id = BUF_assess_sit
+		prerequisite = {focus = BUF_assess_sit}
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		completion_reward = {
+			#
+		}
+	}
+
+	###Following BUF
+
+	focus = {
+		id = BUF_mitford
+		#icon = x
+		cost = 5
+		x = 0
+		y = 1
+
+		relative_position_id = BUF_support_BUF
+		prerequisite = {focus = BUF_support_BUF}
+		continue_if_invalid = yes
+
+		mutually_exclusive = {
+			focus = BUF_mosley
+			focus = BUF_picton_bryant
+		}
+		completion_reward = {
+			#
+		}
+	}
+
+	#Mitford
+
+	focus = {
+		id = BUF_steel_pact
+		#icon = x
+		cost = 5
+		x = 0
+		y = 1
+
+		relative_position_id = BUF_mitford
+		prerequisite = {focus = BUF_mitford}
+		continue_if_invalid = yes
+		completion_reward = {
+			#
+		}
+	}
+
+	focus = {
+		id = BUF_mitford_contacts
+		#icon = x
+		cost = 5
+		x = 0
+		y = 1
+
+		relative_position_id = BUF_steel_pact
+		prerequisite = {focus = BUF_steel_pact}
+		continue_if_invalid = yes
+		completion_reward = {
+			#
+		}
+	}
+
+	focus = {
+		id = BUF_break_with_ROY
+		#icon = x
+		cost = 5
+		x = 2
+		y = 1
+
+		relative_position_id = BUF_steel_pact
+		prerequisite = {focus = BUF_steel_pact}
+		continue_if_invalid = yes
+		completion_reward = {
+			#
+		}
+	}
+
+	focus = {
+		id = BUF_muster_rural_support
+		#icon = x
+		cost = 5
+		x = -2
+		y = 1
+
+		relative_position_id = BUF_steel_pact
+		prerequisite = {focus = BUF_steel_pact}
+		continue_if_invalid = yes
+		completion_reward = {
+			#
+		}
+	}
+
+	focus = {
+		id = BUF_build_eu_support
+		#icon = x
+		cost = 5
+		x = 0
+		y = 1
+
+		relative_position_id = BUF_mitford_contacts
+		prerequisite = {focus = BUF_mitford_contacts}
+		continue_if_invalid = yes
+		completion_reward = {
+			#
+		}
+	}
+
+	focus = {
+		id = BUF_speak_designers
+		#icon = x
+		cost = 5
+		x = 0
+		y = 1
+
+		relative_position_id = BUF_muster_rural_support
+		prerequisite = {focus = BUF_muster_rural_support}
+		continue_if_invalid = yes
+		completion_reward = {
+			#
+		}
+	}
+
+	focus = {
+		id = BUF_div_oswald
+		#icon = x
+		cost = 5
+		x = 1
+		y = 1
+
+		relative_position_id = BUF_speak_designers
+		prerequisite = { focus = BUF_speak_designers }
+		prerequisite = { focus = BUF_build_eu_support }
+		continue_if_invalid = yes
+		completion_reward = {
+			#
+		}
+	}
+
+	focus = {
+		id = BUF_unite_isles
+		#icon = x
+		cost = 5
+		x = 0
+		y = 1
+
+		relative_position_id = BUF_break_with_ROY
+		prerequisite = {focus = BUF_break_with_ROY}
+		continue_if_invalid = yes
+		completion_reward = {
+			#
+		}
+	}
+
+	focus = {
+		id = BUF_eugenics
+		#icon = x
+		x = 0
+		y = 2
+
+		relative_position_id = BUF_unite_isles
+		prerequisite = { focus = BUF_unite_isles }
+		continue_if_invalid = yes
+		completion_reward = {
+			#
+		}
+	}
+
+	###Diminish Mosley Tree
+
+	focus = {
+		id = BUF_dim_mosley
+		#icon = x
+		x = -5
+		y = 1
+
+		relative_position_id = BUF_steel_pact
+		prerequisite = {
+			focus = BUF_steel_pact
+			focus = BUF_expand_facisiti
+		}
+		continue_if_invalid = yes
+		completion_reward = {
+			#
+		}
+	}
+
+	focus = {
+		id = BUF_reap_benefits
+		#icon = x
+		x = 0
+		y = 1
+
+		relative_position_id = BUF_dim_mosley
+		prerequisite = { focus = BUF_dim_mosley }
+		continue_if_invalid = yes
+		completion_reward = {
+			#
+		}
+	}
+
+	focus = {
+		id = BUF_expert_advisors
+		#icon = x
+		x = 0
+		y = 1
+
+		relative_position_id = BUF_reap_benefits
+		prerequisite = { focus = BUF_reap_benefits }
+		continue_if_invalid = yes
+		completion_reward = {
+			#
+		}
+	}
+
+	focus = {
+		id = BUF_picton_bryant
+		#icon = x
+		x = -12
+		y = 1
+
+		relative_position_id = BUF_support_BUF
+		prerequisite = { focus = BUF_support_BUF }
+		continue_if_invalid = yes
+
+		mutually_exclusive = {
+			focus = BUF_mitford
+			focus = BUF_mosley
+		}
+		completion_reward = {
+			#
+		}
+	}
+
+	#Picton-Bryant
+
+	focus = {
+		id = BUF_expand_facisiti
+		#icon = x
+		x = 0
+		y = 1
+
+		relative_position_id = BUF_picton_bryant
+		prerequisite = { focus = BUF_picton_bryant }
+		continue_if_invalid = yes
+		completion_reward = {
+			#
+		}
+	}
+
+	focus = {
+		id = BUF_allow_white_russians
+		#icon = x
+		x = -2
+		y = 1
+
+		relative_position_id = BUF_expand_facisiti
+		prerequisite = { focus = BUF_expand_facisiti }
+		continue_if_invalid = yes
+
+		mutually_exclusive = {
+			focus = BUF_remain_insula
+		}
+
+		completion_reward = {
+			#
+		}
+	}
+
+	focus = {
+		id = BUF_remain_insula
+		#icon = x
+		x = 2
+		y = 1
+
+		relative_position_id = BUF_expand_facisiti
+		prerequisite = { focus = BUF_expand_facisiti }
+		continue_if_invalid = yes
+
+		mutually_exclusive = {
+			focus = BUF_allow_white_russians
+		}
+
+		completion_reward = {
+			#
+		}
+	}
+
+	focus = {
+		id = BUF_encourage_fund
+		#icon = x
+		x = 0
+		y = 1
+
+		relative_position_id = BUF_remain_insula
+		prerequisite = { focus = BUF_remain_insula }
+		continue_if_invalid = yes
+		completion_reward = {
+			#
+		}
+	}
+
+	focus = {
+		id = BUF_ENG_struggle
+		#icon = x
+		x = 0
+		y = 1
+
+		relative_position_id = BUF_encourage_fund
+		prerequisite = { focus = BUF_encourage_fund }
+		continue_if_invalid = yes
+		completion_reward = {
+			#
+		}
+	}
+
+	focus = {
+		id = BUF_recruit_russians
+		#icon = x
+		x = -1
+		y = 1
+
+		relative_position_id = BUF_allow_white_russians
+		prerequisite = { focus = BUF_allow_white_russians }
+		continue_if_invalid = yes
+		completion_reward = {
+			#
+		}
+	}
+
+	focus = {
+		id = BUF_accept_euros
+		#icon = x
+		x = 1
+		y = 1
+
+		relative_position_id = BUF_allow_white_russians
+		prerequisite = { focus = BUF_allow_white_russians }
+		continue_if_invalid = yes
+		completion_reward = {
+			#
+		}
+	}
+
+	focus = {
+		id = BUF_global_struggle
+		#icon = x
+		x = -1
+		y = 1
+
+		relative_position_id = BUF_accept_euros
+		prerequisite = { focus = BUF_accept_euros }
+		prerequisite = { focus = BUF_recruit_russians }
+		continue_if_invalid = yes
+		completion_reward = {
+			#
+		}
+	}
+
+	focus = {
+		id = BUF_hit_n_run_tactics
+		#icon = x
+		x = 2
+		y = 1
+
+		relative_position_id = BUF_global_struggle
+		prerequisite = {
+			focus = BUF_global_struggle
+			focus = BUF_ENG_struggle
+		}
+		continue_if_invalid = yes
+		completion_reward = {
+			#
+		}
+	}
+
+	focus = {
+		id = BUF_buy_GER_books
+		#icon = x
+		x = 0
+		y = 1
+
+		relative_position_id = BUF_hit_n_run_tactics
+		prerequisite = { focus = BUF_hit_n_run_tactics }
+		continue_if_invalid = yes
+		completion_reward = {
+			#
+		}
+	}
+
+	#King Loyalty Tree
+
+	focus = {
+		id = BUF_absolute_loyalty_king
+		#icon = x
+		x = 4
+		y = 1
+
+		relative_position_id = BUF_expand_facisiti
+		prerequisite = { focus = BUF_expand_facisiti }
+		continue_if_invalid = yes
+		completion_reward = {
+			#
+		}
+	}
+
+	focus = {
+		id = BUF_expand_joint_mil
+		#icon = x
+		x = 0
+		y = 1
+
+		relative_position_id = BUF_absolute_loyalty_king
+		prerequisite = { focus = BUF_absolute_loyalty_king }
+		continue_if_invalid = yes
+		completion_reward = {
+			#
+		}
+	}
+
+	focus = {
+		id = BUF_first_ENG_conference
+		#icon = x
+		x = 0
+		y = 1
+
+		relative_position_id = BUF_expand_joint_mil
+		prerequisite = { focus = BUF_expand_joint_mil }
+		continue_if_invalid = yes
+		completion_reward = {
+			#
+		}
+	}
+
+	focus = {
+		id = BUF_lasting_union
+		#icon = x
+		x = 0
+		y = 1
+
+		relative_position_id = BUF_first_ENG_conference
+		prerequisite = { focus = BUF_first_ENG_conference }
+		continue_if_invalid = yes
+		completion_reward = {
+			#
+		}
+	}
+
+	focus = {
+		id = BUF_mosley
+		#icon = x
+		x = 10
+		y = 1
+
+		relative_position_id = BUF_support_BUF
+		prerequisite = { focus = BUF_support_BUF }
+		continue_if_invalid = yes
+
+		mutually_exclusive = {
+			focus = BUF_picton_bryant
+			focus = BUF_mitford
+		}
+		completion_reward = {
+			#
+		}
+	}
+
+	###Mosley
+
+	focus = {
+		id = BUF_mosley_youth
+		#icon = x
+		x = 0
+		y = 1
+
+		relative_position_id = BUF_mosley
+		prerequisite = { focus = BUF_mosley }
+		continue_if_invalid = yes
+		completion_reward = {
+			#
+		}
+	}
+
+	focus = {
+		id = BUF_enact_mosley_manifesto
+		#icon = x
+		x = 0
+		y = 1
+
+		relative_position_id = BUF_mosley_youth
+		prerequisite = { focus = BUF_mosley_youth }
+		continue_if_invalid = yes
+		completion_reward = {
+			#
+		}
+	}
+
+	focus = {
+		id = BUF_mosley_speech
+		#icon = x
+		x = 0
+		y = 1
+
+		relative_position_id = BUF_enact_mosley_manifesto
+		prerequisite = { focus = BUF_enact_mosley_manifesto }
+		continue_if_invalid = yes
+		completion_reward = {
+			#
+		}
+	}
+
+	focus = {
+		id = BUF_unite_FDF
+		#icon = x
+		x = 0
+		y = 1
+
+		relative_position_id = BUF_mosley_speech
+		prerequisite = { focus = BUF_mosley_speech }
+		continue_if_invalid = yes
+		completion_reward = {
+			#
+		}
+	}
+
+	focus = {
+		id = BUF_trade_specific_rep
+		#icon = x
+		x = 0
+		y = 1
+
+		relative_position_id = BUF_unite_FDF
+		prerequisite = { focus = BUF_unite_FDF }
+		continue_if_invalid = yes
+		completion_reward = {
+			#
+		}
+	}
+
+	focus = {
+		id = BUF_ITA_assistance
+		#icon = x
+		x = -4
+		y = 1
+
+		relative_position_id = BUF_mosley
+		prerequisite = { focus = BUF_mosley }
+		continue_if_invalid = yes
+		completion_reward = {
+			#
+		}
+	}
+
+	focus = {
+		id = BUF_ITA_volunteers
+		#icon = x
+		x = 0
+		y = 1
+
+		relative_position_id = BUF_ITA_assistance
+		prerequisite = { focus = BUF_ITA_assistance }
+		continue_if_invalid = yes
+		completion_reward = {
+			#
+		}
+	}
+
+	focus = {
+		id = BUF_new_direction
+		#icon = x
+		x = -1
+		y = 1
+
+		relative_position_id = BUF_ITA_volunteers
+		prerequisite = { focus = BUF_ITA_volunteers }
+		continue_if_invalid = yes
+
+		mutually_exclusive = {
+			focus = BUF_god_save_king
+		}
+
+		completion_reward = {
+			#
+		}
+	}
+
+	focus = {
+		id = BUF_god_save_king
+		#icon = x
+		x = 1
+		y = 1
+
+		relative_position_id = BUF_ITA_volunteers
+		prerequisite = { focus = BUF_ITA_volunteers }
+		continue_if_invalid = yes
+
+		mutually_exclusive = {
+			focus = BUF_new_direction
+		}
+
+		completion_reward = {
+			#
+		}
+	}
+
+	focus = {
+		id = BUF_discredit_ed
+		#icon = x
+		x = 0
+		y = 1
+
+		relative_position_id = BUF_new_direction
+		prerequisite = { focus = BUF_new_direction }
+		continue_if_invalid = yes
+		completion_reward = {
+			#
+		}
+	}
+
+	focus = {
+		id = BUF_brit_republic
+		#icon = x
+		x = 0
+		y = 1
+
+		relative_position_id = BUF_discredit_ed
+		prerequisite = { focus = BUF_discredit_ed }
+		continue_if_invalid = yes
+		completion_reward = {
+			#
+		}
+	}
+
+	focus = {
+		id = BUF_countryside_recruit
+		#icon = x
+		x = 0
+		y = 1
+
+		relative_position_id = BUF_god_save_king
+		prerequisite = { focus = BUF_god_save_king }
+		continue_if_invalid = yes
+		completion_reward = {
+			#
+		}
+	}
+
+	focus = {
+		id = BUF_mosley_soldier
+		#icon = x
+		x = 0
+		y = 1
+
+		relative_position_id = BUF_countryside_recruit
+		prerequisite = { focus = BUF_countryside_recruit }
+		continue_if_invalid = yes
+		completion_reward = {
+			#
+		}
+	}
+
+	focus = {
+		id = BUF_abolish_cofe
+		#icon = x
+		x = 4
+		y = 1
+
+		relative_position_id = BUF_mosley
+		prerequisite = { focus = BUF_mosley }
+		continue_if_invalid = yes
+		completion_reward = {
+			#
+		}
+	}
+
+	focus = {
+		id = BUF_united_fascist_church
+		#icon = x
+		x = 1
+		y = 1
+
+		relative_position_id = BUF_abolish_cofe
+		prerequisite = { focus = BUF_abolish_cofe }
+		continue_if_invalid = yes
+		completion_reward = {
+			#
+		}
+	}
+
+	focus = {
+		id = BUF_weaken_ANG_ranks
+		#icon = x
+		x = 0
+		y = 1
+
+		relative_position_id = BUF_united_fascist_church
+		prerequisite = { focus = BUF_united_fascist_church }
+		continue_if_invalid = yes
+		completion_reward = {
+			#
+		}
+	}
+
+	focus = {
+		id = BUF_ally_franco
+		#icon = x
+		x = -1
+		y = 1
+
+		relative_position_id = BUF_abolish_cofe
+		prerequisite = { focus = BUF_abolish_cofe }
+		continue_if_invalid = yes
+		completion_reward = {
+			#
+		}
+	}
+
+	focus = {
+		id = BUF_exchange_soldiers
+		#icon = x
+		x = 0
+		y = 1
+
+		relative_position_id = BUF_ally_franco
+		prerequisite = { focus = BUF_ally_franco }
+		continue_if_invalid = yes
+		completion_reward = {
+			#
+		}
+	}
+
+	focus = {
+		id = BUF_irish_question
+		#icon = x
+		x = 0
+		y = 1
+
+		relative_position_id = BUF_exchange_soldiers
+		prerequisite = { focus = BUF_exchange_soldiers }
+		continue_if_invalid = yes
+		completion_reward = {
+			#
+		}
+	}
+
+	focus = {
+		id = BUF_fund_IRA
+		#icon = x
+		x = -1
+		y = 1
+
+		relative_position_id = BUF_irish_question
+		prerequisite = { focus = BUF_irish_question }
+		continue_if_invalid = yes
+
+		mutually_exclusive = {
+			focus = BUF_contact_billy_boys
+		}
+
+		completion_reward = {
+			#
+		}
+	}
+
+	focus = {
+		id = BUF_contact_billy_boys
+		#icon = x
+		x = 1
+		y = 1
+
+		relative_position_id = BUF_irish_question
+		prerequisite = { focus = BUF_irish_question }
+		continue_if_invalid = yes
+
+		mutually_exclusive = {
+			focus = BUF_fund_IRA
+		}
+
+		completion_reward = {
+			#
+		}
+	}
+
+	focus = {
+		id = BUF_mission_to_IRE
+		#icon = x
+		x = 1
+		y = 1
+
+		relative_position_id = BUF_fund_IRA
+		prerequisite = {
+			focus = BUF_fund_IRA
+			focus = BUF_contact_billy_boys
+		}
+
+		mutually_exclusive = {
+			focus = BUF_fund_blueshirts
+		}
+		continue_if_invalid = yes
+		completion_reward = {
+			#
+		}
+	}
+
+
+	focus = {
+		id = BUF_subjugate_LON
+		#icon = x
+		x = 1
+		y = 1
+
+		relative_position_id = BUF_eugenics
+		prerequisite = { focus = BUF_eugenics }
+		continue_if_invalid = yes
+		completion_reward = {
+			#
+		}
+	}
+
+	focus = {
+		id = BUF_fund_blueshirts
+		#icon = x
+		x = -1
+		y = 1
+
+		relative_position_id = BUF_trade_specific_rep
+		prerequisite = { focus = BUF_trade_specific_rep }
+
+		mutually_exclusive = {
+			focus = BUF_mission_to_IRE
+		}
+		continue_if_invalid = yes
+		completion_reward = {
+			#
+		}
+	}
+
+	focus = {
+		id = BUF_anti_communism
+		#icon = x
+		x = -3
+		y = 1
+
+		relative_position_id = BUF_fund_blueshirts
+		prerequisite = {
+			focus = BUF_fund_blueshirts
+			focus = BUF_subjugate_LON
+		}
+		continue_if_invalid = yes
+		completion_reward = {
+			#
+		}
+	}
+
+
+	###English Array
+
+	focus = {
+		id = BUF_english_array
+		#icon = x
+		x = -20
+		y = 1
+
+		relative_position_id = BUF_assess_sit
+		prerequisite = {
+			focus = BUF_assess_sit
+		}
+
+		mutually_exclusive = {
+			focus = BUF_support_BUF
+		}
+		continue_if_invalid = yes
+		completion_reward = {
+			#
+		}
+	}
+
+	focus = {
+		id = BUF_peace_SCO
+		#icon = x
+		x = -2
+		y = 1
+
+		relative_position_id = BUF_english_array
+		prerequisite = {
+			focus = BUF_english_array
+		}
+		continue_if_invalid = yes
+		completion_reward = {
+			#
+		}
+	}
+
+	focus = {
+		id = BUF_peace_WAL
+		#icon = x
+		x = 0
+		y = 1
+
+		relative_position_id = BUF_peace_SCO
+		prerequisite = {
+			focus = BUF_peace_SCO
+		}
+		continue_if_invalid = yes
+		completion_reward = {
+			#
+		}
+	}
+
+	focus = {
+		id = BUF_seed_old_guard
+		#icon = x
+		x = 2
+		y = 1
+
+		relative_position_id = BUF_english_array
+		prerequisite = {
+			focus = BUF_english_array
+		}
+
+		continue_if_invalid = yes
+		completion_reward = {
+			#
+		}
+	}
+
+	focus = {
+		id = BUF_agriculture_develop
+		#icon = x
+		x = 0
+		y = 1
+
+		relative_position_id = BUF_seed_old_guard
+		prerequisite = {
+			focus = BUF_seed_old_guard
+		}
+		continue_if_invalid = yes
+		completion_reward = {
+			#
+		}
+	}
+
+	#main tree
+
+	focus = {
+		id = BUF_lure_YRK
+		#icon = x
+		x = 0
+		y = 1
+
+		relative_position_id = BUF_english_array
+		prerequisite = {
+			focus = BUF_english_array
+		}
+
+		continue_if_invalid = yes
+		completion_reward = {
+			#
+		}
+	}
+
+	focus = {
+		id = BUF_total_transformation
+		#icon = x
+		x = 0
+		y = 1
+
+		relative_position_id = BUF_lure_YRK
+		prerequisite = {
+			focus = BUF_lure_YRK
+		}
+		continue_if_invalid = yes
+		completion_reward = {
+			#
+		}
+	}
+
+	focus = {
+		id = BUF_define_elite
+		#icon = x
+		x = 0
+		y = 1
+
+		relative_position_id = BUF_total_transformation
+		prerequisite = {
+			focus = BUF_total_transformation
+		}
+		continue_if_invalid = yes
+		completion_reward = {
+			#
+		}
+	}
+
+	focus = {
+		id = BUF_racial_theory
+		#icon = x
+		x = 0
+		y = 1
+
+		relative_position_id = BUF_define_elite
+		prerequisite = {
+			focus = BUF_define_elite
+		}
+		continue_if_invalid = yes
+		completion_reward = {
+			#
+		}
+	}
+
+	focus = {
+		id = BUF_edwardian_customs
+		#icon = x
+		x = -2
+		y = 1
+
+		relative_position_id = BUF_total_transformation
+		prerequisite = {
+			focus = BUF_total_transformation
+		}
+		continue_if_invalid = yes
+		completion_reward = {
+			#
+		}
+	}
+
+	focus = {
+		id = BUF_second_ed_era
+		#icon = x
+		x = 0
+		y = 1
+
+		relative_position_id = BUF_edwardian_customs
+		prerequisite = {
+			focus = BUF_edwardian_customs
+		}
+		continue_if_invalid = yes
+		completion_reward = {
+			#
+		}
+	}
+
+	focus = {
+		id = BUF_total_transformation
+		#icon = x
+		x = 0
+		y = 1
+
+		relative_position_id = BUF_lure_YRK
+		prerequisite = {
+			focus = BUF_lure_YRK
+		}
+		continue_if_invalid = yes
+		completion_reward = {
+			#
+		}
+	}
+
+}
