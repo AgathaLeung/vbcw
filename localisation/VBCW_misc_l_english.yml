@@ -33,3 +33,16 @@
  modifier_army_sub_unit_category_irregular_attack_factor:0 "Militia & Yeomanry Attack"
  modifier_army_sub_unit_category_irregular_defence_factor:0 "Militia & Yeomanry Defense"
  modifier_army_sub_unit_category_irregular_speed_factor:0 "Militia & Yeomanry Movement"
+
+
+ANG_appointment_commission:0 "The Appointment Comission"
+ANG_appointment_commission_desc:0 "The Civil War has begun! The decadence of the so-called King has led to the breakdown of order across the country! The Church of England must decide on its path for the dark times ahead. The Lords Spiritual of the House of Lords have met in Canterbury, and over the next week they will decide on who will be nominated as Supreme Governor of the Anglican League and its followers. "
+ANG_go_with_york:0 "Temple's Socialist Temples"
+ANG_go_with_york_desc:0 "The Appointment Commission has decided to appoint William Temple, Archbishop of York, as the Supreme Governor of the Anglican League. A former Labour party member, it is expected that Temple will attempt to seek a compromise with the Socialist leaders of the Midlands and the North."
+ANG_go_with_cantenbury:0 "By Cosmo's Orders"
+ANG_go_with_cantenbury_desc:0 "The Appointment Commission has decided to appoint Cosmo Gordon Lang, Archbishop of Canterbury, as the Supreme Governor of the Anglican League. Vehemently opposed to Edward VIII, it is expected that Lang will attempt to come to a compromise with Prince Albert and his Yorkist movement."
+ANG_go_with_durham:0 "Henson's Peace Game"
+
+FOCUS_FILTER_YORK:0 "Go with York"
+FOCUS_FILTER_DURHAM:0 "Go with Durham"
+FOCUS_FILTER_CANTENBURY:0 "Go with Cantenbury"

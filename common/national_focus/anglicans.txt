@@ -1,0 +1,107 @@
+focus_tree = {
+	id = ANG_holy
+	country = {
+		factor = 0
+		modifier = {
+			add = 100
+			tag = ANG
+		}
+	}
+	continuous_focus_position = { x = 20 y = 2000 }
+	
+	
+	focus = {
+		id = ANG_appointment_commission
+		icon = GFX_focus_por_concordat
+		cost = 1
+		x = 10
+		y = 0
+		prerequisite = {}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		continue_if_invalid = yes
+		
+  		
+		
+		available_if_capitulated = yes
+		completion_reward = {
+			
+		}
+	
+	}
+	focus = {
+		id = ANG_go_with_york
+		icon = GFX_goal_worker_democracy
+		cost = 1
+		x = -5
+		y = 1
+		prerequisite = {focus = ANG_appointment_commission}
+		search_filters = { FOCUS_FILTER_YORK }
+		
+		relative_position_id = ANG_appointment_commission
+
+		continue_if_invalid = yes
+		
+		mutually_exclusive = {focus = ANG_go_with_durham focus = ANG_go_with_cantenbury}
+		
+		available_if_capitulated = yes
+		completion_reward = {
+			set_politics = { ruling_party = democratic_socialist }
+			}
+		}
+	
+	focus = {
+		id = ANG_go_with_durham
+		icon = GFX_goal_liberal
+		cost = 1
+		x = 5
+		y = 1
+		prerequisite = {focus = ANG_appointment_commission}
+		search_filters = { FOCUS_FILTER_DURHAM }
+		
+		continue_if_invalid = yes
+		
+		mutually_exclusive = {focus = ANG_go_with_york focus = ANG_go_with_cantenbury}
+
+  		relative_position_id = ANG_appointment_commission
+		
+		available_if_capitulated = yes
+		completion_reward = {
+			set_politics = { ruling_party = liberal}
+			}
+		}
+	
+	
+	focus = {
+		id = ANG_go_with_cantenbury
+		icon = GFX_goal_bishops_boys
+		cost = 1
+		x = 0
+		y = 1
+		prerequisite = {focus = ANG_appointment_commission}
+		search_filters = { FOCUS_FILTER_CANTENBURY }
+		
+		continue_if_invalid = yes
+		
+  		relative_position_id = ANG_appointment_commission
+		
+  		mutually_exclusive = {focus = ANG_go_with_durham focus = ANG_go_with_york}
+
+		available_if_capitulated = yes
+		completion_reward = {
+			create_country_leader = {
+					name = "Cosmon Gordon Lang"
+					desc = "POLITICS_COSMO_LANG_DESC"
+					picture = "gfx/leaders/VBCW/ANG/ANG-Lang.dds"
+					expire = "1965.1.1"
+					ideology = conservative_subtype
+					traits = {
+						
+					}
+					
+				}
+			}
+		}
+	
+	}
+}
